@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+         <record id="view_presta_currency_form" model="ir.ui.view">
+            <field name="name">res.presta.currency.form</field>
+            <field name="model">res.currency</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base.view_currency_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/group/field[@name='name']" position="after">
+                    <field name="description"/>
+                    <field name="iso_code_number"/>
+                </xpath>
+                <xpath expr="/form/group/field[@name='active']" position="after">
+                    <field name="decimals"/>
+                    <field name="deleted"/>
+                    <field name="format"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

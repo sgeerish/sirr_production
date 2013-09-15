@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_financial_report/wizard/wizard_general_ledger_report.py

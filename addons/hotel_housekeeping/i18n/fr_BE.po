@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hotel_housekeeping/i18n/fr_BE.po

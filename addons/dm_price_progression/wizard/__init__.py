@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_price_progression/wizard/__init__.py

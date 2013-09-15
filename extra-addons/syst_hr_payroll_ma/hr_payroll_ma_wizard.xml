@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<wizard id="wizard_journal_paie_report" model="hr.payroll_ma"
+			name="wizard.journal.paie" string="Journal de paie" />
+		<wizard id="wizard_net_payer_report" model="hr.payroll_ma"
+			name="wizard.net.payer" string="Ordre Virement" />
+			
+		<menuitem icon="STOCK_PRINT" action="wizard_journal_paie_report"
+			id="menu_journal_paie" parent="hr.menu_hr_reporting" type="wizard" />
+	  
+		
+			
+		<menuitem icon="STOCK_PRINT" action="wizard_net_payer_report"
+			id="menu_net_payer" parent="hr.menu_hr_reporting" type="wizard" />
+		
+		<wizard id="wizard_etat_9421_report" model="hr.payroll_ma"
+			name="wizard.etat.9421" string="Etat 9421" />
+			
+		<menuitem icon="STOCK_PRINT" action="wizard_etat_9421_report"
+			id="menu_etat_9421" parent="hr.menu_hr_reporting" type="wizard" />
+
+	</data>
+</openerp>

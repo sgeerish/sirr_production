@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="discount_tree_view">
+            <field name="name">discount.tree</field>
+            <field name="model">socolait.discount</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="remises">
+                <field name="name"/>
+                <field name="product_id"/>
+                <field name="discount"/>
+                <field name="date_start"/>
+                <field name="date_end"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="discount_form_view">
+            <field name="name">discount.form</field>
+            <field name="model">socolait.discount</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Remise">
+                    <field name="name"/>
+                    <field name="product_id"/>
+                    <field name="discount"/>
+                    <field name="date_start"/>
+                    <field name="date_end"/>  
+			<newline/>                  
+                    <field name="partner_ids" widget="many2many"/>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="action_discount_tree">
+            <field name="name">discount</field>
+            <field name="res_model">socolait.discount</field>
+        </record>
+        
+        <menuitem name="Remise" icon="terp-project" id="discount_menu"/>
+        <menuitem name="Remises" parent="discount_menu" id="discount_menu_main" action="action_discount_tree"/>
+    </data>
+</openerp>

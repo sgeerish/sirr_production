@@ -1,0 +1,862 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Medical\n"
+"Report-Msgid-Bugs-To: https://sourceforge.net/apps/mantisbt/medical\n"
+"POT-Creation-Date: 2010-12-05 21:19:29+0000\n"
+"PO-Revision-Date: 2011-02-05 17:57+0000\n"
+"Last-Translator: Selene <scordara@thymbra.com>\n"
+"Language-Team: Italian <None>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,vaginal_tearing:0
+msgid "Vaginal tearing"
+msgstr "Strappo vaginale"
+
+#. module: medical_gyneco
+#: field:medical.newborn,test_toxo:0
+msgid "Toxoplasmosis"
+msgstr "Toxoplasmosi"
+
+#. module: medical_gyneco
+#: help:medical.patient,full_term:0
+msgid "Full term pregnancies"
+msgstr "Gravidanze a termine"
+
+#. module: medical_gyneco
+#: field:medical.newborn,responsible:0
+msgid "Doctor in charge"
+msgstr "Medico responsabile"
+
+#. module: medical_gyneco
+#: view:medical.perinatal:0
+msgid "Labor"
+msgstr "Travaglio"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,name:0
+msgid "code"
+msgstr "codice"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,fetus_presentation:0
+msgid "Fetus Presentation"
+msgstr "Presentazione del feto"
+
+#. module: medical_gyneco
+#: field:medical.patient,pap_test_last:0
+msgid "Last PAP test"
+msgstr "Ultimo PAP test"
+
+#. module: medical_gyneco
+#: help:medical.patient,breast_self_examination:0
+msgid "Check if the patient does and knows how to self examine her breasts"
+msgstr "Marcare se il paziente sa come realizzare una autopalpazione del seno"
+
+#. module: medical_gyneco
+#: selection:medical.puerperium.monitor,lochia_amount:0
+msgid "abundant"
+msgstr "abbondante"
+
+#. module: medical_gyneco
+#: field:medical.perinatal.monitor,name:0
+#: field:medical.puerperium.monitor,name:0
+msgid "Internal code"
+msgstr "Codice interno"
+
+#. module: medical_gyneco
+#: help:medical.patient,deaths_2nd_week:0
+msgid "Number of babies that die after the second week"
+msgstr "Numero di bebè morti dopo la seconda settimana"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,puerperium_monitor:0
+msgid "Puerperium monitor"
+msgstr "Controllo del Puerperio"
+
+#. module: medical_gyneco
+#: help:medical.perinatal,prenatal_evaluations:0
+msgid "Number of visits to the doctor during pregnancy"
+msgstr "Numero di visite mediche durante la gravidanza"
+
+#. module: medical_gyneco
+#: model:ir.module.module,description:medical_gyneco.module_meta_information
+msgid ""
+"\n"
+"\n"
+"This module includes :\n"
+"\n"
+"- Gynecological Information\n"
+"- Obstetric information \n"
+"- Perinatal Information and monitoring\n"
+"- Puerperium\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"Questo modulo comprende :\n"
+"\n"
+"- Informazione Ginecologica\n"
+"- Informazione Obstetrica\n"
+"- Informazione e Monitoraggio Prenatale\n"
+"- Puerperio\n"
+"\n"
+
+#. module: medical_gyneco
+#: field:medical.newborn,cephalic_perimeter:0
+msgid "Cephalic Perimeter"
+msgstr "Perimetro Cefalico"
+
+#. module: medical_gyneco
+#: field:medical.newborn,apgar1:0
+msgid "APGAR 1st minute"
+msgstr "APGAR 1º. minuto"
+
+#. module: medical_gyneco
+#: field:medical.newborn,apgar5:0
+msgid "APGAR 5th minute"
+msgstr "APGAR 5to. minuto"
+
+#. module: medical_gyneco
+#: field:medical.perinatal.monitor,fetus_position:0
+msgid "Fetus Position"
+msgstr "Posizione del feto"
+
+#. module: medical_gyneco
+#: selection:medical.perinatal,fetus_presentation:0
+#: selection:medical.perinatal.monitor,fetus_position:0
+msgid "Transverse Lie"
+msgstr "Posizione Trasversale"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,placenta_incomplete:0
+msgid "Incomplete Placenta"
+msgstr "Placenta Incompleta"
+
+#. module: medical_gyneco
+#: model:ir.module.module,shortdesc:medical_gyneco.module_meta_information
+msgid "Medical : Gynecology and obstetrics module"
+msgstr "Medical: Modulo di Ginecologia e Obstetricia"
+
+#. module: medical_gyneco
+#: help:medical.patient,fertile:0
+msgid "Check if patient is in fertile age"
+msgstr "Controllare che il paziente sia in età fertile"
+
+#. module: medical_gyneco
+#: view:medical.newborn:0 field:medical.newborn,notes:0
+#: field:medical.perinatal,notes:0
+msgid "Notes"
+msgstr "Note"
+
+#. module: medical_gyneco
+#: view:medical.patient:0
+msgid "Obstetric"
+msgstr "Obstetricia"
+
+#. module: medical_gyneco
+#: field:medical.patient,gpa:0
+msgid "GPA"
+msgstr "GPA"
+
+#. module: medical_gyneco
+#: view:medical.puerperium.monitor:0
+msgid "Lochia"
+msgstr "Lochia"
+
+#. module: medical_gyneco
+#: selection:medical.perinatal,start_labor_mode:0
+msgid "Normal"
+msgstr "Normale"
+
+#. module: medical_gyneco
+#: field:medical.newborn,length:0
+msgid "Length"
+msgstr "lunghezza"
+
+#. module: medical_gyneco
+#: field:medical.newborn,meconium:0 field:medical.perinatal.monitor,meconium:0
+msgid "Meconium"
+msgstr "Meconio"
+
+#. module: medical_gyneco
+#: view:medical.perinatal.monitor:0
+msgid "Mother"
+msgstr "Madre"
+
+#. module: medical_gyneco
+#: field:medical.newborn,sex:0
+msgid "Sex"
+msgstr "Sesso"
+
+#. module: medical_gyneco
+#: help:medical.newborn,died_being_transferred:0
+msgid "The baby died being transferred to another health institution"
+msgstr "Il bambino è morto mentre veniva trasferito a un`altro istituto sanitario"
+
+#. module: medical_gyneco
+#: field:medical.newborn,code:0
+msgid "Newborn ID"
+msgstr "Identità del neonato"
+
+#. module: medical_gyneco
+#: field:medical.perinatal.monitor,frequency:0
+msgid "Mother's Heart Frequency"
+msgstr "Frecuenza cardiaca della Madre"
+
+#. module: medical_gyneco
+#: field:medical.perinatal.monitor,contractions:0
+msgid "Contractions"
+msgstr "Contrazioni"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,gestational_days:0
+msgid "Gestational days"
+msgstr "Età gestazionale"
+
+#. module: medical_gyneco
+#: help:medical.patient,colposcopy:0
+msgid "Check if the patient has done a colposcopy exam"
+msgstr "Marcare se il paziente ha realizzato una colposcopia"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,newborn:0
+msgid "Newborn info"
+msgstr "Informazioni del neonato"
+
+#. module: medical_gyneco
+#: selection:medical.newborn,sex:0
+msgid "Female"
+msgstr "Femmina"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,gravida_number:0
+msgid "Gravida #"
+msgstr "Gravidanza #"
+
+#. module: medical_gyneco
+#: field:medical.newborn,died_at_delivery:0
+#: field:medical.perinatal,died_at_delivery:0
+msgid "Died at delivery room"
+msgstr "Morto in sala parto"
+
+#. module: medical_gyneco
+#: field:medical.newborn,name:0
+msgid "Baby's name"
+msgstr "Nome del bebè"
+
+#. module: medical_gyneco
+#: view:medical.newborn:0
+msgid "Medications"
+msgstr "Medicamenti"
+
+#. module: medical_gyneco
+#: field:medical.patient,mammography_last:0
+msgid "Last mammography"
+msgstr "ultima mammografia"
+
+#. module: medical_gyneco
+#: view:medical.perinatal:0
+msgid "Medication and notes"
+msgstr "farmaci e note"
+
+#. module: medical_gyneco
+#: model:ir.model,name:medical_gyneco.model_medical_newborn
+msgid "newborn information"
+msgstr "informazioni del neonato"
+
+#. module: medical_gyneco
+#: field:medical.newborn,reanimation_intubation:0
+msgid "Intubation"
+msgstr "Intubazione"
+
+#. module: medical_gyneco
+#: help:medical.patient,gravida:0
+msgid "Number of pregnancies"
+msgstr "Numero di gravidanze"
+
+#. module: medical_gyneco
+#: field:medical.patient,menopausal:0
+msgid "Menopausal"
+msgstr "Menopausa"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,prenatal_evaluations:0
+msgid "Prenatal evaluations"
+msgstr "Vautazioni prenatale"
+
+#. module: medical_gyneco
+#: help:medical.patient,colposcopy_last:0
+msgid "Enter the date of the last colposcopy"
+msgstr "data ultima colposcopia"
+
+#. module: medical_gyneco
+#: selection:medical.perinatal,fetus_presentation:0
+#: selection:medical.perinatal.monitor,fetus_position:0
+msgid "Footling Breech"
+msgstr "Presentazione Podalica"
+
+#. module: medical_gyneco
+#: field:medical.newborn,photo:0
+msgid "Picture"
+msgstr "Foto"
+
+#. module: medical_gyneco
+#: selection:medical.perinatal,fetus_presentation:0
+#: selection:medical.perinatal.monitor,fetus_position:0
+msgid "Complete Breech"
+msgstr "Presentazione Podalica Completa"
+
+#. module: medical_gyneco
+#: field:medical.perinatal.monitor,systolic:0
+#: field:medical.puerperium.monitor,systolic:0
+msgid "Systolic Pressure"
+msgstr "Pressione sistolica"
+
+#. module: medical_gyneco
+#: field:medical.patient,gravida:0
+msgid "Gravida"
+msgstr "Gravidanze"
+
+#. module: medical_gyneco
+#: view:medical.newborn:0
+msgid "APGAR"
+msgstr "APGAR"
+
+#. module: medical_gyneco
+#: field:medical.patient,menarche:0
+msgid "Menarche age"
+msgstr "Menarca"
+
+#. module: medical_gyneco
+#: field:medical.newborn,birth_date:0
+msgid "Date of Birth"
+msgstr "Data di nascita"
+
+#. module: medical_gyneco
+#: field:medical.newborn,test_metabolic:0
+msgid "The metabolic / genetic (\"heel stick\")"
+msgstr "metabolico / genetico (puntura neonatale del tallone)"
+
+#. module: medical_gyneco
+#: field:medical.puerperium.monitor,lochia_amount:0
+msgid "Lochia amount"
+msgstr "Quantità di Lochia"
+
+#. module: medical_gyneco
+#: field:medical.newborn,test_chagas:0
+msgid "Chagas"
+msgstr "Chagas"
+
+#. module: medical_gyneco
+#: model:ir.model,name:medical_gyneco.model_medical_perinatal_monitor
+msgid "Perinatal monitor"
+msgstr "Monitoraggio Prenatale"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,episiotomy:0
+msgid "Episiotomy"
+msgstr "Ipisiotomia"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,placenta_retained:0
+msgid "Retained Placenta"
+msgstr "Placenta Ritenuta"
+
+#. module: medical_gyneco
+#: field:medical.patient,full_term:0
+msgid "Full Term"
+msgstr "A termine"
+
+#. module: medical_gyneco
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML invalido per la definizione della vista"
+
+#. module: medical_gyneco
+#: field:medical.newborn,reanimation_aspiration:0
+msgid "Aspiration"
+msgstr "Aspirazione"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,abortion:0
+msgid "Abortion"
+msgstr "Aborto"
+
+#. module: medical_gyneco
+#: view:medical.patient:0 view:medical.perinatal:0
+msgid "Perinatal"
+msgstr "Prenatale"
+
+#. module: medical_gyneco
+#: view:medical.newborn:0
+msgid "Newborn Info"
+msgstr "Informazione del neonato"
+
+#. module: medical_gyneco
+#: field:medical.perinatal.monitor,f_frequency:0
+msgid "Fetus Heart Frequency"
+msgstr "Frecuenza cardiaca del feto"
+
+#. module: medical_gyneco
+#: help:medical.patient,premature:0
+msgid "Premature Deliveries"
+msgstr "Parti Prematuri"
+
+#. module: medical_gyneco
+#: selection:medical.newborn,sex:0
+msgid "Male"
+msgstr "Maschio"
+
+#. module: medical_gyneco
+#: selection:medical.puerperium.monitor,lochia_color:0
+msgid "rubra"
+msgstr "rubra"
+
+#. module: medical_gyneco
+#: view:medical.perinatal:0
+msgid "Perinatal Information"
+msgstr "Informazione perinatale"
+
+#. module: medical_gyneco
+#: view:medical.perinatal.monitor:0
+msgid "Fetus"
+msgstr "Feto"
+
+#. module: medical_gyneco
+#: field:medical.newborn,weight:0
+msgid "Weight"
+msgstr "Peso"
+
+#. module: medical_gyneco
+#: field:medical.patient,menopause:0
+msgid "Menopause age"
+msgstr "Età della Menopausa"
+
+#. module: medical_gyneco
+#: field:medical.perinatal.monitor,bleeding:0
+msgid "Bleeding"
+msgstr "Emorragia"
+
+#. module: medical_gyneco
+#: field:medical.puerperium.monitor,frequency:0
+msgid "Heart Frequency"
+msgstr "Frecuenza Cardiaca"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,admission_date:0
+msgid "Admission date"
+msgstr "Data di ammissione"
+
+#. module: medical_gyneco
+#: field:medical.patient,deaths_1st_week:0
+msgid "Deceased during 1st week"
+msgstr "Deceduto durante la 1ª. settimana"
+
+#. module: medical_gyneco
+#: field:medical.perinatal.monitor,dilation:0
+msgid "Cervix dilation"
+msgstr "Dilatazione del collo dell`utero"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,monitoring:0
+msgid "Monitors"
+msgstr "Monitoraggi"
+
+#. module: medical_gyneco
+#: view:medical.perinatal.monitor:0
+msgid "Perinatal Monitor"
+msgstr "Monitoraggio Prenatale"
+
+#. module: medical_gyneco
+#: field:medical.patient,breast_self_examination:0
+msgid "Breast self-examination"
+msgstr "Autopalpazione del seno"
+
+#. module: medical_gyneco
+#: help:medical.patient,deaths_1st_week:0
+msgid "Number of babies that die in the first week"
+msgstr "Numero di bebè morti durante la 1ª settimana"
+
+#. module: medical_gyneco
+#: field:medical.patient,deaths_2nd_week:0
+msgid "Deceased after 2nd week"
+msgstr "Morto dopo la 2ª settimana"
+
+#. module: medical_gyneco
+#: view:medical.perinatal:0
+msgid "Monitoring"
+msgstr "Monitoraggio"
+
+#. module: medical_gyneco
+#: field:medical.puerperium.monitor,temperature:0
+msgid "Temperature"
+msgstr "Temperatura"
+
+#. module: medical_gyneco
+#: field:medical.puerperium.monitor,lochia_color:0
+msgid "Lochia color"
+msgstr "Colore della Lochia"
+
+#. module: medical_gyneco
+#: field:medical.newborn,reanimation_stimulation:0
+msgid "Stimulation"
+msgstr "Stimolo"
+
+#. module: medical_gyneco
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Il nome dell`oggetto deve iniziare con x_ e non contenere nessun carattere speciale!"
+
+#. module: medical_gyneco
+#: field:medical.perinatal.monitor,date:0
+#: field:medical.puerperium.monitor,date:0
+msgid "Date and Time"
+msgstr "Data e Ora"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,start_labor_mode:0
+msgid "Labor mode"
+msgstr "Tipo di Parto"
+
+#. module: medical_gyneco
+#: view:medical.newborn:0
+msgid "Tests"
+msgstr "Tests"
+
+#. module: medical_gyneco
+#: field:medical.newborn,tod:0
+msgid "Time of Death"
+msgstr "Ora del Decesso"
+
+#. module: medical_gyneco
+#: field:medical.newborn,test_audition:0
+msgid "Audition"
+msgstr "Audizione"
+
+#. module: medical_gyneco
+#: field:medical.newborn,test_billirubin:0
+msgid "Billirubin"
+msgstr "Bilirubina"
+
+#. module: medical_gyneco
+#: field:medical.newborn,medication:0 field:medical.perinatal,medication:0
+msgid "Medicaments and anesthesics"
+msgstr "Medicine e anestetici"
+
+#. module: medical_gyneco
+#: field:medical.newborn,bd:0
+msgid "Born dead"
+msgstr "Nato morto"
+
+#. module: medical_gyneco
+#: view:medical.patient:0
+msgid "Prevention and Screening"
+msgstr "Prevenzione e Screening"
+
+#. module: medical_gyneco
+#: field:medical.patient,abortions:0
+msgid "Abortions"
+msgstr "Aborti"
+
+#. module: medical_gyneco
+#: field:medical.newborn,died_at_the_hospital:0
+#: field:medical.perinatal,died_at_the_hospital:0
+msgid "Died at the hospital"
+msgstr "Morto all`ospedale"
+
+#. module: medical_gyneco
+#: help:medical.perinatal,died_being_transferred:0
+msgid "The mother died being transferred to another health institution"
+msgstr "La madre è deceduta mentre veniva traferita in un altro ospedale"
+
+#. module: medical_gyneco
+#: selection:medical.perinatal,start_labor_mode:0
+msgid "c-section"
+msgstr "cesareo"
+
+#. module: medical_gyneco
+#: field:medical.newborn,died_being_transferred:0
+#: field:medical.perinatal,died_being_transferred:0
+msgid "Died being transferred"
+msgstr "Deceduto mentre veniva trasferito"
+
+#. module: medical_gyneco
+#: view:medical.patient:0
+msgid "Gyneco / Obs"
+msgstr "Gineco / Obs"
+
+#. module: medical_gyneco
+#: field:medical.patient,premature:0
+msgid "Premature"
+msgstr "Prematuro"
+
+#. module: medical_gyneco
+#: model:ir.model,name:medical_gyneco.model_medical_puerperium_monitor
+#: view:medical.puerperium.monitor:0
+msgid "Puerperium Monitor"
+msgstr "Controllo del Puerperio"
+
+#. module: medical_gyneco
+#: field:medical.perinatal.monitor,diastolic:0
+#: field:medical.puerperium.monitor,diastolic:0
+msgid "Diastolic Pressure"
+msgstr "Pressione Diastolica"
+
+#. module: medical_gyneco
+#: view:medical.newborn:0
+msgid "Newborn Information"
+msgstr "Informazion del neonato"
+
+#. module: medical_gyneco
+#: help:medical.patient,mammography_last:0
+msgid "Enter the date of the last mammography"
+msgstr "Data ultima mammografia"
+
+#. module: medical_gyneco
+#: view:medical.perinatal.monitor:0
+msgid "Complications"
+msgstr "Complicazioni"
+
+#. module: medical_gyneco
+#: help:medical.patient,mammography:0
+msgid "Check if the patient does periodic mammographys"
+msgstr "Marcare se il paziente realizza mammografie periodiche"
+
+#. module: medical_gyneco
+#: help:medical.perinatal,admission_date:0
+msgid "Date when she was admitted to give birth"
+msgstr "Data ammissione per parto"
+
+#. module: medical_gyneco
+#: help:medical.patient,pap_test_last:0
+msgid "Enter the date of the last Papanicolau test"
+msgstr "Data ultimo PAP test"
+
+#. module: medical_gyneco
+#: field:medical.patient,colposcopy_last:0
+msgid "Last colposcopy"
+msgstr "Ultima colposcopia"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,forceps:0
+msgid "Use of forceps"
+msgstr "Uso del forcipe"
+
+#. module: medical_gyneco
+#: view:medical.perinatal:0
+msgid "Misc"
+msgstr "Varie"
+
+#. module: medical_gyneco
+#: view:medical.patient:0
+msgid "General"
+msgstr "Generale"
+
+#. module: medical_gyneco
+#: selection:medical.puerperium.monitor,lochia_color:0
+msgid "serosa"
+msgstr "serosa"
+
+#. module: medical_gyneco
+#: field:medical.patient,pap_test:0
+msgid "PAP test"
+msgstr "PAP test"
+
+#. module: medical_gyneco
+#: view:medical.newborn:0 field:medical.newborn,congenital_diseases:0
+msgid "Congenital diseases"
+msgstr "Malattie congenite"
+
+#. module: medical_gyneco
+#: field:medical.patient,perinatal:0 view:medical.perinatal:0
+msgid "Perinatal Info"
+msgstr "Informazione Prenatale"
+
+#. module: medical_gyneco
+#: selection:medical.puerperium.monitor,lochia_amount:0
+msgid "hemorrhage"
+msgstr "emorragia"
+
+#. module: medical_gyneco
+#: selection:medical.puerperium.monitor,lochia_color:0
+msgid "alba"
+msgstr "alba"
+
+#. module: medical_gyneco
+#: view:medical.perinatal:0
+msgid "Gestational period (weeks / days)"
+msgstr "Periodo gestazionale (Settimane / giorni)"
+
+#. module: medical_gyneco
+#: selection:medical.perinatal,fetus_presentation:0
+#: selection:medical.perinatal.monitor,fetus_position:0
+msgid "Frank Breech"
+msgstr "Presentazione Podalica Franca"
+
+#. module: medical_gyneco
+#: field:medical.patient,born_alive:0
+msgid "Born Alive"
+msgstr "Nato Vivo"
+
+#. module: medical_gyneco
+#: help:medical.puerperium.monitor,uterus_involution:0
+msgid "Distance between the symphysis pubis and the uterine fundus (S-FD) in cm"
+msgstr "Distanza tra la sinfisi pubica e il fondo uterino (S-FD) in cm."
+
+#. module: medical_gyneco
+#: view:medical.newborn:0
+msgid "Other"
+msgstr "Altro"
+
+#. module: medical_gyneco
+#: field:medical.patient,colposcopy:0
+msgid "Colposcopy"
+msgstr "Colposcopia"
+
+#. module: medical_gyneco
+#: help:medical.patient,pap_test:0
+msgid "Check if the patient does periodic cytologic pelvic smear screening"
+msgstr "Marcare se il paziente si realizza screening periodici citologici-striscia pelvica"
+
+#. module: medical_gyneco
+#: view:medical.newborn:0 view:medical.perinatal:0
+#: view:medical.puerperium.monitor:0
+msgid "Main"
+msgstr "Principale"
+
+#. module: medical_gyneco
+#: selection:medical.perinatal,fetus_presentation:0
+#: selection:medical.perinatal.monitor,fetus_position:0
+msgid "Correct"
+msgstr "Corretto"
+
+#. module: medical_gyneco
+#: selection:medical.perinatal,start_labor_mode:0
+msgid "Induced"
+msgstr "Indotto"
+
+#. module: medical_gyneco
+#: help:medical.newborn,test_metabolic:0
+msgid "Test for Fenilketonuria, Congenital Hypothyroidism, Quistic Fibrosis, Galactosemia"
+msgstr "Controllare per Fenilketonuria, ipotiroidismo congenito, fibrosi cistica, galattosemia"
+
+#. module: medical_gyneco
+#: field:medical.newborn,reanimation_oxygen:0
+msgid "Oxygen"
+msgstr "Ossigeno"
+
+#. module: medical_gyneco
+#: selection:medical.puerperium.monitor,lochia_odor:0
+msgid "offensive"
+msgstr "offensivo"
+
+#. module: medical_gyneco
+#: field:medical.patient,mammography:0
+msgid "Mammography"
+msgstr "mammografia"
+
+#. module: medical_gyneco
+#: help:medical.newborn,responsible:0
+msgid "Signed by the health professional"
+msgstr "Firmato da un esperto"
+
+#. module: medical_gyneco
+#: field:medical.newborn,dismissed:0 field:medical.perinatal,dismissed:0
+msgid "Dismissed from hospital"
+msgstr "Dimesso dall`ospedale"
+
+#. module: medical_gyneco
+#: view:medical.perinatal:0
+msgid "Puerperium"
+msgstr "puerperio"
+
+#. module: medical_gyneco
+#: field:medical.patient,currently_pregnant:0
+msgid "Currently Pregnant"
+msgstr "Attualmente incinta"
+
+#. module: medical_gyneco
+#: view:medical.newborn:0
+msgid "Reanimation"
+msgstr "Rianimazione"
+
+#. module: medical_gyneco
+#: field:medical.newborn,cod:0
+msgid "Cause of death"
+msgstr "Causa del decesso"
+
+#. module: medical_gyneco
+#: selection:medical.perinatal,fetus_presentation:0
+#: selection:medical.perinatal.monitor,fetus_position:0
+msgid "Occiput / Cephalic Posterior"
+msgstr "Occipitale / Posteriore Cefalica"
+
+#. module: medical_gyneco
+#: selection:medical.puerperium.monitor,lochia_amount:0
+#: selection:medical.puerperium.monitor,lochia_odor:0
+msgid "normal"
+msgstr "normale"
+
+#. module: medical_gyneco
+#: field:medical.newborn,test_vdrl:0
+msgid "VDRL"
+msgstr "VDRL"
+
+#. module: medical_gyneco
+#: field:medical.newborn,reanimation_mask:0
+msgid "Mask"
+msgstr "Maschera"
+
+#. module: medical_gyneco
+#: field:medical.puerperium.monitor,lochia_odor:0
+msgid "Lochia odor"
+msgstr "Odore della Lochia"
+
+#. module: medical_gyneco
+#: model:ir.model,name:medical_gyneco.model_medical_perinatal
+msgid "perinatal information"
+msgstr "Informazione prenatale"
+
+#. module: medical_gyneco
+#: help:medical.patient,gpa:0
+msgid "Gravida, Para, Abortus Notation. For example G4P3A1 : 4 Pregnancies, 3 viable and 1 abortion"
+msgstr "Nomenclatura Gravida, Para, Abortus. Per esempio G4P3A1 : 4 Gravidanze, 3 vitali e 1 aborto"
+
+#. module: medical_gyneco
+#: view:medical.newborn:0 view:medical.perinatal:0
+msgid "Deceased"
+msgstr "Deceduto"
+
+#. module: medical_gyneco
+#: field:medical.perinatal,gestational_weeks:0
+msgid "Gestational weeks"
+msgstr "Settimane di gestazione"
+
+#. module: medical_gyneco
+#: field:medical.perinatal.monitor,fundal_height:0
+#: field:medical.puerperium.monitor,uterus_involution:0
+msgid "Fundal Height"
+msgstr "Altezza del Fundus"
+
+#. module: medical_gyneco
+#: field:medical.patient,fertile:0
+msgid "Fertile"
+msgstr "Fertile"
+
+#. module: medical_gyneco
+#: view:medical.perinatal:0
+msgid "Newborn"
+msgstr "Neonato"
+
+#. module: medical_gyneco
+#: model:ir.model,name:medical_gyneco.model_medical_patient
+msgid "Patient related information"
+msgstr "Informazioni correlate al paziente"

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/reminder/__terp__.py

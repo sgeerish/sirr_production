@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/board_service/__init__.py

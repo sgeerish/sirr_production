@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_catalog_report/report/product_catalog.py

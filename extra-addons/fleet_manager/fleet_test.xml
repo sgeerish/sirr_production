@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="wkf_wo" model="workflow">
+			<field name="name">fleet.wo.tasks.simple</field>
+			<field name="osv">fleet.wo.tasks</field>
+			<field name="on_create">True</field>
+		</record>
+
+		<!-- Activity -->
+		<record id="act_notstarted" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_wo" />
+			<field name="flow_start">True</field>
+			<field name="name">notstarted</field>
+		</record>
+
+		<record id="act_complete" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_wo" />
+			<field name="name">complete</field>
+			<field name="flow_stop">True</field>
+			<field name="kind">function</field>
+			<field name="action">write({'status':'complete'})</field>
+		</record>
+
+		<!-- Transistion -->
+
+		<record id="notstarted_to_complete"
+			model="workflow.transition">
+			<field name="act_from" ref="act_notstarted" />
+			<field name="act_to" ref="act_complete" />
+			<field name="signal">start_work</field>
+		</record>
+	</data>
+</openerp>

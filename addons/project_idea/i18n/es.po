@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/project_idea/i18n/es.po

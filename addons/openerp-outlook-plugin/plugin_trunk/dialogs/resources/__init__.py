@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/openerp-outlook-plugin/plugin_trunk/dialogs/resources/__init__.py

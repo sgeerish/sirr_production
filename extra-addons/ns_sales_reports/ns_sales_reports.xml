@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report string="Revenue per customer" model="account.invoice" auto="True" name="ns_sales_reports.liste_factures_clients" rml="ns_sales_reports/report/liste_factures_clients.jrxml" id="ns_sales_reports_fac_liste_factures_clients" menu="False" header="False" />
+        <report string="Revenue per customer per Product" model="account.invoice.line" auto="True" name="ns_sales_reports.liste_factures_clients_produits" rml="ns_sales_reports/report/liste_factures_clients_produits.jrxml" id="ns_sales_reports_fac_liste_factures_clients_produits" menu="False" header="False" />
+        <report string="Revenue per Product" model="account.invoice.line" auto="True" name="ns_sales_reports.liste_factures_produits_c" rml="ns_sales_reports/report/liste_factures_produits_c.jrxml" id="ns_sales_reports_fac_liste_factures_produits_c" menu="False" header="False" />
+        <report string="Revenue Product-Commercial" model="account.invoice.line" auto="True" name="ns_sales_reports.liste_factures_produits_c_com" rml="ns_sales_reports/report/liste_factures_produits_c_com.jrxml" id="ns_sales_reports_fac_liste_factures_produits_c_com" menu="False" header="False" />
+        <report string="Revenue Product-Commercial-Resume" model="account.invoice.line" auto="True" name="ns_sales_reports.liste_factures_produits_c_com_summ" rml="ns_sales_reports/report/liste_factures_produits_c_com_summ.jrxml" id="ns_sales_reports_fac_liste_factures_produits_c_com_summ" menu="False" header="False" />
+        <report string="Mouvement Stock" model="stock.move" auto="True" name="ns_sales_reports.stock_move" rml="ns_sales_reports/report/stock_move.jrxml" id="ns_sales_reports_stock_move" menu="False" header="False" />
+        <report string="Impayes" model="account.move.line" auto="True" name="report.debtors_list" rml="ns_sales_reports/report/debtors_list.jrxml" id="debtors_list_report" menu="False" header="False" />
+        <report string="Achats" model="account.invoice.line" auto="True" name="report.achats" rml="ns_sales_reports/report/achats.jrxml" id="achats_report" menu="False" header="False" />
+        <report string="Journal" model="account.voucher" auto="True" name="report.voucher" rml="" id="voucher_report" menu="False" header="False" />
+        <report string="Revenue Product-Chef de Departement" model="account.invoice.line" auto="True" name="ns_sales_reports.liste_factures_produits_c_cat" rml="ns_sales_reports/report/liste_factures_produits_c_cat.jrxml" id="ns_sales_reports_fac_liste_factures_produits_c_cat" menu="False" header="False" />
+        <report string="Revenue Vehicules IDC" model="account.invoice.line" auto="True" name="ns_sales_reports.liste_factures_produits_c_idc" rml="ns_sales_reports/report/liste_factures_produits_c_idc.jrxml" id="ns_sales_reports_fac_liste_factures_produits_c_idc" menu="False" header="False" />
+        <report string="Situation" model="account.invoice.line" auto="True" name="ns_sales_reports.situation" rml="ns_sales_reports/report/situation.jrxml" id="ns_sales_reports_situation" menu="False" header="False" />
+        <report string="Situation MFI" model="account.move.line" auto="True" name="report.situation_mfi" rml="ns_sales_reports/report/situation_mfi.jrxml" id="situation_mfi_report" menu="False" header="False" />
+        </data>
+</openerp>

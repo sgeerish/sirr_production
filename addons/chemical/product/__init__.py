@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/chemical/product/__init__.py

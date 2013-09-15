@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_electronic/__terp__.py

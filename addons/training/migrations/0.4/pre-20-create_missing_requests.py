@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training/migrations/0.4/pre-20-create_missing_requests.py

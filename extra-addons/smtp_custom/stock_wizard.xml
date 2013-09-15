@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+        <!--
+        <wizard string="UPS xml file" model="stock.move.lot" name="stock.ups_xml" />
+        -->
+    <wizard
+        id="location_product"
+        model="stock.location"
+        name="product_by_location"
+        string="Produit par emplacements"/> 
+    </data>
+</openerp>

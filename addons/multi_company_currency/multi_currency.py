@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/multi_company_currency/multi_currency.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hotel_housekeeping/wizard/housekeeping_wizard.py

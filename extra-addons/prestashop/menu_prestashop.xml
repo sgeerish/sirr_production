@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<menuitem icon="terp-account" id="menu_presta" name="Prestashop" action="open_board_sales"
+            web_icon="images/openerp_prestashop.png"
+            web_icon_hover="images/openerp_prestashop_hover.png"/>
+
+        <menuitem id="menu_shop_main" name="Shop"
+			parent="menu_presta" sequence="1" />
+			
+		<record id="action_shop_form" model="ir.actions.act_window">
+            <field name="name">Shop</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.shop</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="sale.view_shop_tree"/>
+            <field name="help">If you have more than one shop reselling your company products, you can create and manage that from here. Whenever you will record a new quotation or sales order, it has to be linked to a shop. The shop also defines the warehouse from which the products will be delivered for each particular sales.</field>
+        </record>
+        <menuitem action="action_shop_form" id="menu_action_shop_form"
+            parent="menu_shop_main" sequence="0" />
+			
+		<menuitem id="menu_shop_lang" name="Language"
+			parent="menu_presta" sequence="1" />
+		<menuitem action="prestashop_lang_act_window" id="menu_prestashop_lang_act_window" parent="menu_shop_lang" groups="base.group_extended" sequence="2"/>
+		
+		<menuitem id="menu_shop_address" name="Address"
+			parent="menu_presta" sequence="1" />
+		
+		<menuitem action="action_zone" id="menu_zone" parent="menu_shop_address" sequence="0"/>
+		
+		<record id="action_country" model="ir.actions.act_window">
+            <field name="name">Countries</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.country</field>
+            <field name="view_type">form</field>
+            <field name="help">Display and manage the list of all countries that can be assigned to your partner records. You can create or delete countries to make sure the ones you are working on will be maintained.</field>
+        </record>
+		<menuitem action="action_country" id="menu_country_partner" parent="menu_shop_address" sequence="0"/>
+		
+		<record id="action_country_state" model="ir.actions.act_window">
+            <field name="name">Fed. States</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.country.state</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="base.view_country_state_tree"/>
+            <field name="help">If you are working on the American market, you can manage the different federal states you are working on from here. Each state is attached to one country.</field>
+        </record>
+        <menuitem action="action_country_state" id="menu_country_state_partner" parent="menu_shop_address" sequence="1"/>
+		
+		
+		<menuitem id="menu_shop_partner" name="Partner"
+			parent="menu_presta" sequence="1" />
+			
+		<record id="action_partner_form" model="ir.actions.act_window">
+            <field name="name">Customers</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_type">form</field>
+            <field name="context">{"search_default_customer":1}</field>
+            <field name="search_view_id" ref="base.view_res_partner_filter"/>
+            <field name="help">A customer is an entity you do business with, like a company or an organization. A customer can have several contacts or addresses which are the people working for this company. You can use the history tab, to follow all transactions related to a customer: sales order, emails, opportunities, claims, etc. If you use the email gateway, the Outlook or the Thunderbird plugin, don't forget to register emails to each contact so that the gateway will automatically attach incoming emails to the right partner.</field>
+        </record>
+        <menuitem
+            action="action_partner_form"
+            id="menu_partner_form"
+            parent="menu_shop_partner"
+            sequence="1"/>
+			
+		<record id="action_partner_address_form" model="ir.actions.act_window">
+            <field name="name">Addresses</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner.address</field>
+            <field name="view_type">form</field>
+            <field name="context">{"search_default_customer":1}</field>
+            <field name="search_view_id" ref="base.view_res_partner_address_filter"/>
+            <field name="help">Customers (also called Partners in other areas of the system) helps you manage your address book of companies whether they are prospects, customers and/or suppliers. The partner form allows you to track and record all the necessary information to interact with your partners from the company address to their contacts as well as pricelists, and much more. If you installed the CRM, with the history tab, you can track all the interactions with a partner such as opportunities, emails, or sales orders issued.</field>
+        </record>
+		<menuitem action="action_partner_address_form" id="menu_partner_address_form"
+            groups="base.group_extended"
+            parent="menu_shop_partner" sequence="5"/>
+            
+       	
+       	<record id="action_partner_category_form1" model="ir.actions.act_window">
+            <field name="name">Partner Categories</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner.category</field>
+            <field name="view_type">form</field>
+            <field name="help">Manage the partner categories in order to better classify them for tracking and analysis purposes. A partner may belong to several categories and categories have a hierarchy structure: a partner belonging to a category also belong to his parent category.</field>
+        </record>
+        <menuitem action="action_partner_category_form1" id="menu_partner_category_form1" name="Partner Categories" sequence="7" parent="menu_shop_partner"/>
+        
+        
+		<menuitem id="menu_shop_product" name="Product"
+			parent="menu_presta" sequence="5" />
+			
+		<record id="product_normal_action1" model="ir.actions.act_window">
+            <field name="name">Products</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.product</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="product.product_product_tree_view"/>
+            <field name="help">You must define a Product for everything you buy or sell. Products can be raw materials, stockable products, consumables or services. The Product form contains detailed information about your products related to procurement logistics, sales price, product category, suppliers and so on.</field>
+        </record>
+        <menuitem action="product_normal_action1" id="menu_products" parent="menu_shop_product" sequence="1"/>
+        <menuitem id="image_menu_id" parent="menu_shop_product" name="Images" sequence="5"/>
+        <menuitem id="menu_prod_config" name="Configuration" parent="menu_shop_product" sequence="30"/>
+		<menuitem action="prestashop_product_feature_act_window" id="menu_prestashop_product_feature_act_window" parent="menu_prod_config"/>
+		<menuitem action="prestashop_product_feature_values_act_window" id="menu_prestashop_product_feature_values_act_window" parent="menu_prod_config"/>	
+		<record id="product_category_action_form1" model="ir.actions.act_window">
+            <field name="name">Product Categories</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.category</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="product.product_category_list_view"/>
+        </record>
+        <menuitem action="product_category_action_form1"
+            id="menu_product_category_action_form1"
+            parent="menu_prod_config"/>
+		<menuitem action="prestashop_tag_act_window" id="menu_prestashop_tag_act_window" parent="menu_prod_config" sequence="10"/>
+		<menuitem action="product_options_act_window" id="menu_product_options_act_window" parent="menu_prod_config" sequence="15"/>
+		<menuitem action="product_options_value_act_window" id="menu_product_options_value_act_window" parent="menu_prod_config"  sequence="20"/>
+		
+		<menuitem id="menu_shop_order" name="Orders"
+			parent="menu_presta" sequence="1" />
+		<menuitem action="prestashop_sale_order_state_act_window" id="menu_prestashop_sale_order_state_act_window" parent="menu_shop_order"/>
+		<record id="action_order_form1" model="ir.actions.act_window">
+            <field name="name">Sales Orders</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,calendar,graph</field>
+            <field name="search_view_id" ref="sale.view_sales_order_filter"/>
+            <field name="context">{"search_default_user_id":uid}</field>
+            <field name="help">Sales Orders help you manage quotations and orders from your customers. OpenERP suggests that you start by creating a quotation. Once it is confirmed, the quotation will be converted into a Sales Order. OpenERP can handle several types of products so that a sales order may trigger tasks, delivery orders, manufacturing orders, purchases and so on. Based on the configuration of the sales order, a draft invoice will be generated so that you just have to confirm it when you want to bill your customer.</field>
+        </record>
+        <menuitem action="action_order_form1" id="menu_sale_order" parent="menu_shop_order" sequence="2"/>
+		<menuitem id="base.menu_sales_order_lines" action="action_order_line_tree_presta" name="Sale Order Lines" parent="menu_shop_order" sequence="3"/>
+		
+				
+		<menuitem id="menu_shop_account" name="Account"
+			parent="menu_presta" sequence="7" />
+			
+			<menuitem action="prestashop_tax_rule_group_act_window" id="menu_prestashop_tax_rule_group_act_window" parent="menu_shop_account"/>
+			<menuitem action="prestashop_tax_rules_act_window" id="menu_prestashop_tax_rules_act_window" parent="menu_shop_account"/> 
+			<record id="action_currency_form1" model="ir.actions.act_window">
+            <field name="name">Currencies</field>
+            <field name="res_model">res.currency</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="base.view_currency_tree"/>
+        	</record>
+
+        	<menuitem action="action_currency_form1" id="menu_action_currency_form1" parent="menu_shop_account" sequence="3"/>
+		
+        <record model="ir.actions.act_window.view" id="act_open_image_types_view_tree">
+            <field name="act_window_id" ref="act_open_image_types_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_image_types_tree"/>
+        </record>
+        
+        <menuitem id="menu_image_types"
+            parent="image_menu_id"
+            sequence="20"
+            action="act_open_image_types_view"/>
+        <record model="ir.actions.act_window.view" id="act_open_image_image_view_tree">
+            <field name="act_window_id" ref="act_open_image_image_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_image_image_tree"/>
+        </record>
+        
+        <menuitem id="menu_image_image"
+            parent="image_menu_id"
+            sequence="20"
+            action="act_open_image_image_view"/>
+
+    </data>
+</openerp>

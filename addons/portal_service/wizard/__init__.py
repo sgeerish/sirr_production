@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/portal_service/wizard/__init__.py

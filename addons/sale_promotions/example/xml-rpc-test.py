@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sale_promotions/example/xml-rpc-test.py

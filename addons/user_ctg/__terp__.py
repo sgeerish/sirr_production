@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/user_ctg/__terp__.py

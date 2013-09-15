@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sale_supplier_direct_delivery/__terp__.py

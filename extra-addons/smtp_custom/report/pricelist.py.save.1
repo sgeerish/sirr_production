@@ -1,0 +1,63 @@
+# -*- coding: utf-8 -*-
+##############################################################################
+#
+#    OpenERP, Open Source Management Solution
+#    Copyright (C) 2004-2010 Tiny SPRL (<http://tiny.be>).
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+
+import time
+import datetime
+import tools
+import pooler
+import netsvc
+from mx import DateTime
+
+logger = netsvc.Logger()
+
+from report import report_sxw
+
+class pricelist_ver(report_sxw.rml_parse):
+    def __init__(self, cr, uid, name, context):
+        super(pricelist_ver, self).__init__(cr, uid, name, context)    
+        self.localcontext.update({
+		'time':time,
+            	'get_qty':self._get_qty,
+        })
+        self.context = context
+
+    def _get_qty(self,item):
+        product=item.product_id.id
+        start=item.price_version_id.date_start
+        end=item.price_version_id.date_end
+        #start=start.strftime('%Y-%m-%d')
+        #end=end.strftime('%Y-%m-%d')
+	qty=self.pool.get('sale.report').search(self.cr,self.uid,[
+					('product_id','=',product),
+					('date','>=',start),
+					])
+	print qty
+	qty=self.pool.get('sale.report').browse(self.cr,self.uid,qty)
+	print qty
+	quantity=0
+	value=0
+	for q in qty:
+		quantity+=q.product_uom_qty
+		value+=q.price_total
+        return {'quantity':quantity,'value':value}
+        
+report_sxw.report_sxw('report.product.pricelist.version.rndLNpBi', 'product.pricelist.version', '', parser=pricelist_ver)
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

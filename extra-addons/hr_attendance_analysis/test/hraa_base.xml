@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!--
+	     Organization
+	     -->
+	<record id="test_dep_operative" model="hr.department">
+            <field name="name">Operative hr.test</field>
+            <field name="company_id" ref="base.main_company"/>
+	    <field name="manager_id">1</field>
+        </record>
+
+        <record id="test_dep_administrative" model="hr.department">
+            <field name="name">Administrative hr.test</field>
+            <field name="company_id" ref="base.main_company"/>
+	    <field name="manager_id">1</field>
+        </record>
+
+	<!--
+	     Employee functions
+	     -->
+	<record id="test_function_operator" model="res.partner.function">
+		<field name="name">Operator hr.test</field>
+		<field name="code">OPE</field>
+	</record>
+
+	<record id="test_function_administrative" model="res.partner.function">
+		<field name="name">Administrative hr.test</field>
+		<field name="code">ADM</field>
+	</record>
+
+	<!--
+	     Turns and timesheets
+	     -->
+        <record id="test_timesheet_group_dia_0618" model="hr.timesheet.group">
+            <field name="name">hr.test Dia 06-18</field>
+        </record>
+
+		<record id="test_timesheet_group_dia_0618_lu" model="hr.timesheet">
+			<field name="name">hr.test Monday</field>
+			<field name="dayofweek">0</field>
+			<field name="hour_from">06</field>
+			<field name="hour_to">18</field>
+			<field name="tgroup_id" ref="test_timesheet_group_dia_0618"/>
+		</record>
+
+		<record id="test_timesheet_group_dia_0618_ma" model="hr.timesheet">
+			<field name="name">hr.test Tuesday</field>
+			<field name="dayofweek">1</field>
+			<field name="hour_from">06</field>
+			<field name="hour_to">18</field>
+			<field name="tgroup_id" ref="test_timesheet_group_dia_0618"/>
+		</record>
+
+		<record id="test_timesheet_group_dia_0618_mi" model="hr.timesheet">
+			<field name="name">hr.test Wednesday</field>
+			<field name="dayofweek">2</field>
+			<field name="hour_from">06</field>
+			<field name="hour_to">18</field>
+			<field name="tgroup_id" ref="test_timesheet_group_dia_0618"/>
+		</record>
+
+		<record id="test_timesheet_group_dia_0618_ju" model="hr.timesheet">
+			<field name="name">hr.test Thursday</field>
+			<field name="dayofweek">3</field>
+			<field name="hour_from">06</field>
+			<field name="hour_to">18</field>
+			<field name="tgroup_id" ref="test_timesheet_group_dia_0618"/>
+		</record>
+
+		<record id="test_timesheet_group_dia_0618_vi" model="hr.timesheet">
+			<field name="name">hr.test Friday</field>
+			<field name="dayofweek">4</field>
+			<field name="hour_from">06</field>
+			<field name="hour_to">18</field>
+			<field name="tgroup_id" ref="test_timesheet_group_dia_0618"/>
+		</record>
+
+        <record id="test_timesheet_group_noche_1806" model="hr.timesheet.group">
+            <field name="name">hr.test Noche 18-06</field>
+        </record>
+
+		<record id="test_timesheet_group_noche_1806_lu" model="hr.timesheet">
+			<field name="name">hr.test Monday</field>
+			<field name="dayofweek">0</field>
+			<field name="hour_from">18</field>
+			<field name="hour_to">06</field>
+			<field name="tgroup_id" ref="test_timesheet_group_noche_1806"/>
+		</record>
+
+		<record id="test_timesheet_group_noche_1806_ma" model="hr.timesheet">
+			<field name="name">hr.test Tuesday</field>
+			<field name="dayofweek">1</field>
+			<field name="hour_from">18</field>
+			<field name="hour_to">06</field>
+			<field name="tgroup_id" ref="test_timesheet_group_noche_1806"/>
+		</record>
+
+		<record id="test_timesheet_group_noche_1806_mi" model="hr.timesheet">
+			<field name="name">hr.test Wednesday</field>
+			<field name="dayofweek">2</field>
+			<field name="hour_from">18</field>
+			<field name="hour_to">06</field>
+			<field name="tgroup_id" ref="test_timesheet_group_noche_1806"/>
+		</record>
+
+		<record id="test_timesheet_group_noche_1806_ju" model="hr.timesheet">
+			<field name="name">hr.test Thursday</field>
+			<field name="dayofweek">3</field>
+			<field name="hour_from">18</field>
+			<field name="hour_to">06</field>
+			<field name="tgroup_id" ref="test_timesheet_group_noche_1806"/>
+		</record>
+
+		<record id="test_timesheet_group_noche_1806_vi" model="hr.timesheet">
+			<field name="name">hr.test Friday</field>
+			<field name="dayofweek">4</field>
+			<field name="hour_from">18</field>
+			<field name="hour_to">06</field>
+			<field name="tgroup_id" ref="test_timesheet_group_noche_1806"/>
+		</record>
+
+        <!--
+         Action reason
+         -->
+        <record model="hr.action.reason" id="test_at_time_in">
+            <field name="name">hr.test At time</field>
+            <field name="action_type">sign_in</field>
+        </record>
+
+        <record model="hr.action.reason" id="test_at_time_out">
+            <field name="name">hr.test At time</field>
+            <field name="action_type">sign_out</field>
+        </record>
+
+        <record model="hr.action.reason" id="test_lunch_in">
+            <field name="name">hr.test Back from lunch</field>
+            <field name="action_type">sign_in</field>
+        </record>
+
+        <record model="hr.action.reason" id="test_lunch_out">
+            <field name="name">hr.test Go to lunch</field>
+            <field name="action_type">sign_out</field>
+        </record>
+
+        <record model="hr.action.reason" id="test_late_wa">
+            <field name="name">hr.test Late with advise</field>
+            <field name="action_type">sign_in</field>
+        </record>
+
+        <record model="hr.action.reason" id="test_late_woa">
+            <field name="name">hr.test Late without advise</field>
+            <field name="action_type">sign_in</field>
+        </record>
+
+        <record model="hr.action.reason" id="test_late_wp">
+            <field name="name">hr.test Late with permission</field>
+            <field name="action_type">sign_in</field>
+        </record>
+
+        <record model="hr.action.reason" id="test_early_wa">
+            <field name="name">hr.test Early with advise</field>
+            <field name="action_type">sign_out</field>
+        </record>
+
+        <record model="hr.action.reason" id="test_early_woa">
+            <field name="name">hr.test Early without advise</field>
+            <field name="action_type">sign_out</field>
+        </record>
+
+        <record model="hr.action.reason" id="test_early_wp">
+            <field name="name">hr.test Early with permission</field>
+            <field name="action_type">sign_out</field>
+        </record>
+
+        <!--
+          Holidays
+          -->
+        <record model="hr.holidays.status" id="test_national_holiday">
+            <field name="name">hr.test National Holiday</field>
+            <field name="color_name">red</field>
+        </record>
+
+        <record model="hr.holidays.status" id="test_vacation">
+            <field name="name">hr.test Vacation</field>
+            <field name="color_name">red</field>
+        </record>
+
+        <record model="hr.holidays.status" id="test_sikness">
+            <field name="name">hr.test Sikness</field>
+            <field name="color_name">red</field>
+        </record>
+
+        <record model="hr.holidays.status" id="test_preagned">
+            <field name="name">hr.test Preagned</field>
+            <field name="color_name">red</field>
+        </record>
+
+        <record model="hr.holidays.status" id="test_preagned">
+            <field name="name">hr.test ART</field>
+            <field name="color_name">red</field>
+        </record>
+
+        <record model="hr.holidays.status" id="test_freeday">
+            <field name="name">hr.test Free day</field>
+            <field name="color_name">red</field>
+        </record>
+
+        <record model="hr.holidays.status" id="test_late_advise">
+            <field name="name">hr.test Late Advise</field>
+            <field name="color_name">red</field>
+        </record>
+
+        <record model="hr.holidays.status" id="test_early_advise">
+            <field name="name">hr.test Early Advise</field>
+            <field name="color_name">red</field>
+        </record>
+
+        <record model="hr.holidays.status" id="test_out_advise">
+            <field name="name">hr.test Out Advise</field>
+            <field name="color_name">red</field>
+        </record>
+
+        <!--
+             Rules
+             -->
+        <record id="test_sign_in_at_time" model="hr.aa.action_reason_rule">
+            <field name="name">hr.test Sign In - At time</field>
+            <field name="action" ref="test_at_time_in"/>
+            <field name="rule">
+	    lambda att: (
+		att.turn_start and
+		dt(att.turn_start) - timedelta(hours=1) &lt; dt(att.datetime) and
+		dt(att.datetime) &lt; dt(att.turn_start) + timedelta(minutes=15)
+	    )
+            </field>
+            <field name="seq">10</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="test_sign_in_from_lunch" model="hr.aa.action_reason_rule">
+            <field name="name">hr.test Sign In - Back from lunch</field>
+            <field name="action" ref="test_lunch_in"/>
+            <field name="rule">
+	    lambda att: (
+	        att.turn_date and
+		dt(att.turn_date) + timedelta(hours=12) &lt; dt(att.datetime) and
+		dt(att.datetime) &lt; dt(att.turn_date) + timedelta(hours=14)
+	    )
+	    </field>
+            <field name="seq">5</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="test_sign_in_from_lunch_night" model="hr.aa.action_reason_rule">
+            <field name="name">hr.test Sign In - Back from lunch at night</field>
+            <field name="action" ref="test_lunch_in"/>
+            <field name="rule">
+	    lambda att: (
+	        att.turn_date and
+		dt(att.turn_date) + timedelta(hours=23) &lt; dt(att.datetime) and
+		dt(att.datetime) &lt; dt(att.turn_date) + timedelta(hours=25)
+	    )
+	    </field>
+            <field name="seq">5</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="test_sign_out_late_wa" model="hr.aa.action_reason_rule">
+            <field name="name">hr.test Sign In - Late with advise</field>
+            <field name="action" ref="test_late_wa"/>
+            <field name="rule">
+	    lambda att: (
+		att.turn_start and
+		dt(att.turn_start) + timedelta(minutes=15) &lt; dt(att.datetime) and
+		dt(att.datetime) &lt; dt(att.turn_end) + timedelta(hours=10) and
+		(att.has_confirmed_holidays, att.has_refused_holidays,att.has_validated_holidays)
+		in [(True,False,False), (False,True,False)]
+	    )
+            </field>
+            <field name="seq">10</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="test_sign_out_late_woa" model="hr.aa.action_reason_rule">
+            <field name="name">hr.test Sign In - Late without advise</field>
+            <field name="action" ref="test_late_woa"/>
+            <field name="rule">
+	    lambda att: (
+		att.turn_start and
+		dt(att.turn_start) + timedelta(minutes=15) &lt; dt(att.datetime) and
+		dt(att.datetime) &lt; dt(att.turn_end) + timedelta(hours=10) and
+		(att.has_confirmed_holidays, att.has_refused_holidays,att.has_validated_holidays)
+		in [(False,False,False)]
+	    )
+            </field>
+            <field name="seq">10</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="test_sign_out_late_wp" model="hr.aa.action_reason_rule">
+            <field name="name">hr.test Sign In - Late with permission</field>
+            <field name="action" ref="test_late_wp"/>
+            <field name="rule">
+	    lambda att: (
+		att.turn_start and
+		dt(att.turn_start) + timedelta(minutes=15) &lt; dt(att.datetime) and
+		dt(att.datetime) &lt; dt(att.turn_end) + timedelta(hours=10) and
+		(att.has_confirmed_holidays, att.has_refused_holidays,att.has_validated_holidays)
+		in [(False,False,True)]
+	    )
+            </field>
+            <field name="seq">10</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="test_sign_out_at_time" model="hr.aa.action_reason_rule">
+            <field name="name">hr.test Sign Out - At time</field>
+            <field name="action" ref="test_at_time_out"/>
+            <field name="rule">
+	    lambda att: (
+		att.turn_end and
+		dt(att.turn_end) - timedelta(minutes=15) &lt; dt(att.datetime) and
+		dt(att.datetime) &lt; dt(att.turn_end) + timedelta(hours=1)
+	    )
+		    </field>
+            <field name="seq">10</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="test_sign_out_for_lunch" model="hr.aa.action_reason_rule">
+            <field name="name">hr.test Sign Out - Go to lunch</field>
+            <field name="action" ref="test_lunch_out"/>
+            <field name="rule">
+	    lambda att: (
+	        att.turn_date and
+		dt(att.turn_date) + timedelta(hours=12) &lt; dt(att.datetime) and
+		dt(att.datetime) &lt; dt(att.turn_date) + timedelta(hours=14)
+	    )
+	    </field>
+            <field name="seq">5</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="test_sign_out_for_lunch_night" model="hr.aa.action_reason_rule">
+            <field name="name">hr.test Sign Out - Back from lunch at night</field>
+            <field name="action" ref="test_lunch_out"/>
+            <field name="rule">
+	    lambda att: (
+	        att.turn_date and
+		dt(att.turn_date) + timedelta(hours=23) &lt; dt(att.datetime) and
+		dt(att.datetime) &lt; dt(att.turn_date) + timedelta(hours=25)
+	    )
+	    </field>
+            <field name="seq">5</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="test_sign_out_early_wa" model="hr.aa.action_reason_rule">
+            <field name="name">hr.test Sign Out - Early with advise</field>
+            <field name="action" ref="test_early_wa"/>
+            <field name="rule">
+	    lambda att: (
+		att.turn_start and
+		dt(att.turn_start) - timedelta(hours=10) &lt; dt(att.datetime) and
+		dt(att.datetime) &lt; dt(att.turn_end) - timedelta(minutes=15) and
+		(att.has_confirmed_holidays, att.has_refused_holidays,att.has_validated_holidays)
+		in [(True,False,False), (False, True, False)]
+	    )
+            </field>
+            <field name="seq">10</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="test_sign_out_early_woa" model="hr.aa.action_reason_rule">
+            <field name="name">hr.test Sign Out - Early without advise</field>
+            <field name="action" ref="test_early_woa"/>
+            <field name="rule">
+	    lambda att: (
+		att.turn_start and
+		dt(att.turn_start) - timedelta(hours=10) &lt; dt(att.datetime) and
+		dt(att.datetime) &lt; dt(att.turn_end) - timedelta(minutes=15) and
+		(att.has_confirmed_holidays, att.has_refused_holidays,att.has_validated_holidays)
+		in [(False,False,False)]
+	    )
+            </field>
+            <field name="seq">10</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="test_sign_out_early_wp" model="hr.aa.action_reason_rule">
+            <field name="name">hr.test Sign Out - Early with permission</field>
+            <field name="action" ref="test_early_wp"/>
+            <field name="rule">
+	    lambda att: (
+		att.turn_start and
+		dt(att.turn_start) - timedelta(hours=10) &lt; dt(att.datetime) and
+		dt(att.datetime) &lt; dt(att.turn_end) - timedelta(minutes=15) and
+		(att.has_confirmed_holidays, att.has_refused_holidays,att.has_validated_holidays)
+		in [(False,False,True)]
+	    )
+            </field>
+            <field name="seq">10</field>
+            <field name="active">True</field>
+        </record>
+
+	<!--
+	     Employees
+	     -->
+        <record id="test_employee_1" model="hr.employee">
+		<field name="otherid">5000</field>
+		<field name="name">Employee hr.test 1</field>
+	</record>
+
+        <record id="test_employee_2" model="hr.employee">
+		<field name="otherid">5001</field>
+		<field name="name">Employee hr.test 2</field>
+	</record>
+
+	<!--
+	     Contracts
+	     -->
+	<record id="test_contract_employee_1" model="hr.contract">
+		<field name="employee_id" ref="test_employee_1"/>
+		<field name="name">Employee hr.test 1 (2001-02-01)</field>
+		<field name="turn_id" ref="test_timesheet_group_dia_0618"/>
+		<field name="department_id" ref="test_dep_operative"/>
+		<field name="function" ref="test_function_operator"/>
+		<field name="date_start">2001-02-01 00:00:00</field>
+		<field name="wage_type_id" ref="hr_contract.hr_contract_monthly_gross"/>
+		<field name="wage">0</field>
+		<field name="working_hours_per_day">9</field>
+	</record>
+
+	<record id="test_contract_employee_2" model="hr.contract">
+		<field name="employee_id" ref="test_employee_2"/>
+		<field name="name">Employee hr.test 2 (2001-02-01)</field>
+		<field name="turn_id" ref="test_timesheet_group_noche_1806"/>
+		<field name="department_id" ref="test_dep_operative"/>
+		<field name="function" ref="test_function_operator"/>
+		<field name="date_start">2001-02-01 00:00:00</field>
+		<field name="wage_type_id" ref="hr_contract.hr_contract_monthly_gross"/>
+		<field name="wage">0</field>
+		<field name="working_hours_per_day">9</field>
+	</record>
+    </data>
+</openerp>
+

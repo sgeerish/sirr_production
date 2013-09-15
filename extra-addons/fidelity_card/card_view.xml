@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <menuitem id="base.menu_card" name="Gestion de carte de fidelite" groups="base.group_sale_salesman,base.group_sale_manager" sequence="0"/>
+        <menuitem id="base.menu_card_config" name="Configuration" parent="base.menu_card" sequence="9" groups="base.group_sale_manager"/>
+        
+        <record id="action_card_config" model="ir.actions.act_window">
+            <field name="name">Configuration</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fidelity.card.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem action="action_card_config" id="menu_action_card_config" parent="base.menu_card_config" sequence="0" />
+        
+        <record id="action_card_issue" model="ir.actions.act_window">
+            <field name="name">Livraison</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fidelity.card.issue</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem action="action_card_issue" id="menu_action_card_issue" parent="base.menu_card" sequence="0" />
+        
+        
+        
+        <record id="action_card" model="ir.actions.act_window">
+            <field name="name">Cartes</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fidelity.card</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem action="action_card" id="menu_action_card" parent="base.menu_card" sequence="0" />
+
+        <record id="action_card_sales" model="ir.actions.act_window">
+            <field name="name">Ventes</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fidelity.card.sales</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem action="action_card_sales" id="menu_action_card_sales" parent="base.menu_card" sequence="1" />        
+        
+        <record id="action_card_redemption" model="ir.actions.act_window">
+            <field name="name">Bon D'Achats</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fidelity.card.redemption</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem action="action_card_redemption" id="menu_action_card_redemption" parent="base.menu_card" sequence="1" />        
+        
+        
+	<record model="ir.ui.view" id="invoice_card_info">
+		<field name="name">fidelity_card.infoice.tree</field>
+		<field name="model">account.invoice</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="account.invoice_form"/>
+        <field name="arch" type="xml">
+			<field name="period_id" position="after">
+				<field name="card_redemption_id"/>
+			</field>
+		</field>
+	</record>
+    
+    <record id="view_card_type_form" model="ir.ui.view">
+            <field name="name">fidelity.card.type.form</field>
+            <field name="model">fidelity.card.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="PArametrage de carte de fidelite">
+                    <group col="6" colspan="4">
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+                    <notebook colspan="5">
+                        <page string="Baremes">
+                        <field name="card_limit_ids" nolabel="1">
+                        <tree editable="top" string="Baremes">
+                            <field name="name"/>
+                            <field name="marks"/>
+                            <field name="validity_period"/>                        
+                        </tree>
+                        </field>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+    </record>
+    
+    <record id="view_card_form" model="ir.ui.view">
+            <field name="name">fidelity.card.form</field>
+            <field name="model">fidelity.card</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Carte de Fidelite">
+                    <group col="6" colspan="4">
+                        <field name="name"/>
+                        <field name="type"/>
+                        <field name="partner_id" readonly="1"/>                        
+                        <field name="state" readonly="1"/>
+                    </group>
+                        
+                        <newline/>
+                        <button name="button_cancel"
+                            string="Cancel" type="object"
+                            icon="gtk-cancel"/>                        
+                </form>
+            </field>
+    </record>    
+    <record id="view_card_tree" model="ir.ui.view">
+            <field name="name">fidelity.card.tree</field>
+            <field name="model">fidelity.card</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Carte de Fidelite">
+                        <field name="name"/>
+                        <field name="type"/>
+                        <field name="partner_id"/>                        
+                        <field name="state"/>                     
+                </tree>
+            </field>
+    </record>       
+    <record id="view_card_search" model="ir.ui.view">
+            <field name="name">fidelity.card.search</field>
+            <field name="model">fidelity.card</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Carte de Fidelite">
+                    <group col="6" colspan="4">
+                        <field name="name"/>
+                        <field name="type"/>
+                        <field name="partner_id"/>                        
+                        <field name="state"/>                     
+                    </group>
+                </search>
+            </field>
+    </record>       
+
+    
+    <record id="view_card_issue_form" model="ir.ui.view">
+            <field name="name">fidelity.card.issue.form</field>
+            <field name="model">fidelity.card.issue</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Livraison Carte de Fidelite">
+                    <group col="6" colspan="4">
+                        <field name="date"/>                    
+                        <field name="name"/>
+                        <field name="fidelity_card_id"/>
+                        <field name="email"/> 
+                        <newline/>
+                        <field name="user_id" widget="selection" readonly="1"/>
+                        <field name="valid_user_id" widget="selection" readonly="1"/>
+                        <newline/>
+                        <button name="validate"
+                            string="Valider" type="object"
+                            icon="gtk-apply" groups="base.group_sale_manager"/>   
+                        <button name="button_cancel"
+                            string="Cancel" type="object"
+                            icon="gtk-cancel"/>  
+                    </group>
+                </form>
+            </field>
+    </record>    
+    <record id="view_card_issue_tree" model="ir.ui.view">
+            <field name="name">fidelity.card.issue.tree</field>
+            <field name="model">fidelity.card.issue</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Carte de Fidelite">
+                    <field name="date"/>                    
+                        <field name="name"/>
+                        <field name="fidelity_card_id"/>
+                        <field name="email"/> 
+                        <field name="user_id"/>
+                        <field name="valid_user_id"/>
+                </tree>
+            </field>
+    </record>       
+    <record id="view_card_issue_search" model="ir.ui.view">
+            <field name="name">fidelity.card.issue.search</field>
+            <field name="model">fidelity.card.issue</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Carte de Fidelite">
+                    <field name="date"/>                    
+                        <field name="name"/>
+                        <field name="fidelity_card_id"/>
+                        <field name="email"/> 
+                        <field name="user_id"/>
+                        <field name="valid_user_id"/>
+                </search>
+            </field>
+    </record>     
+
+    <record id="view_card_sales_form" model="ir.ui.view">
+            <field name="name">fidelity.card.sales.form</field>
+            <field name="model">fidelity.card.sales</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Ventes sur Carte de Fidelite" >
+                    <group col="6" colspan="4">
+                        <field name="date" readonly="1" />                    
+                        <field name="name" readonly="1"/>
+                        <field name="fidelity_card_id" readonly="1"/>
+                        <field name="partner_id" readonly="1"/>
+                        <field name="marks" readonly="1"/>
+                        <field name="card_redemption_id" readonly="1"/>
+                        <field name="state" readonly="1"/>
+                    </group>
+                </form>
+            </field>
+    </record>    
+    <record id="view_card_sales_tree" model="ir.ui.view">
+            <field name="name">fidelity.card.sales.tree</field>
+            <field name="model">fidelity.card.sales</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Carte de Fidelite">
+                    <field name="date"/>                    
+                    <field name="name"/>
+                    <field name="fidelity_card_id"/>
+                    <field name="partner_id"/>
+                    <field name="marks"/>
+                    <field name="card_redemption_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+    </record>       
+    <record id="view_card_sales_search" model="ir.ui.view">
+            <field name="name">fidelity.card.sales.search</field>
+            <field name="model">fidelity.card.sales</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Carte de Fidelite">
+                        <field name="date"/>                    
+                        <field name="name"/>
+                        <field name="fidelity_card_id"/>
+                        <field name="partner_id"/>
+                        <field name="marks"/>
+                        <field name="card_redemption_id"/>
+                        <field name="state"/>
+                </search>
+            </field>
+    </record>      
+
+    <record id="view_card_redemption_form" model="ir.ui.view">
+            <field name="name">fidelity.card.redemption.form</field>
+            <field name="model">fidelity.card.redemption</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Ventes sur Carte de Fidelite" >
+                    <group col="6" colspan="4">
+                        <field name="date"/>                    
+                        <field name="name"/>
+                        <field name="fidelity_card_id"/>
+                        <field name="partner_id"/>
+                        <newline/>
+                        
+                        <field name="card_sales_ids" widget="many2many"/>
+                        <newline/>
+                        <field name="marks"/>
+                        <field name="value"/>
+                        
+                        <field name="user_id"/>
+                        <field name="valid_user_id"/>
+                        <newline/>
+                        <field name="state" readonly="1"/>
+                        <newline/>
+                        <button name="validate"
+                            string="Valider" type="object"
+                            icon="gtk-apply" groups="base.group_sale_manager"/>   
+                        <button name="calculate"
+                            string="Calculer" type="object"
+                            icon="gtk-execute"/>    
+                        <button name="cancel"
+                            string="Annuler" type="object"
+                            icon="gtk-cancel"/>                              
+                    </group>
+                </form>
+            </field>
+    </record>    
+    <record id="view_card_redemption_tree" model="ir.ui.view">
+            <field name="name">fidelity.card.redemption.tree</field>
+            <field name="model">fidelity.card.redemption</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Carte de Fidelite">
+                    <field name="date"/>                    
+                        <field name="name"/>
+                        <field name="fidelity_card_id"/>
+                        <field name="partner_id"/>
+                        <field name="marks"/>
+                        <field name="value"/>
+                        <field name="user_id"/>
+                        <field name="valid_user_id"/>
+                        <field name="state"/>
+                </tree>
+            </field>
+    </record>       
+    <record id="view_card_redemption_search" model="ir.ui.view">
+            <field name="name">fidelity.card.redemption.search</field>
+            <field name="model">fidelity.card.redemption</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Carte de Fidelite">
+                        <field name="date"/>                    
+                        <field name="name"/>
+                        <field name="fidelity_card_id"/>
+                        <field name="partner_id"/>
+                        <field name="marks"/>
+                        <field name="state"/>
+                </search>
+            </field>
+    </record>  
+
+    
+    
+    </data>
+</openerp>

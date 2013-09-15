@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/jasper_server/migrations/0.4.2/pre-10-remove-old-wizard.py

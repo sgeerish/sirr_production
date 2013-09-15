@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_performance/__init__.py

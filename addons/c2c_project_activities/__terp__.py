@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/c2c_project_activities/__terp__.py

@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<menuitem id="cal_income_tax_menu" name="Income Tax Calculation" parent="hr.menu_hr_root"/>
+		<record id="view_income_tax_tree" model="ir.ui.view">
+			<field name="name">cal.income.tax.tree</field>
+			<field name="model">cal.income.tax</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Income Tax">
+					<field name="employee" select="1"/>
+					<field name="pan_no" select="1"/>
+					<field name="esi" select="1"/>
+					<field name="pf" select="1"/>
+					<field name="gross_salary" />
+					<field name="balance_tax" />
+					<field name="state" select="2"/>
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_income_tax_form" model="ir.ui.view">
+			<field name="name">cal.income.tax.form</field>
+			<field name="model">cal.income.tax</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Calculation of Income Tax">
+					<group col="4" colspan="4">
+					<field name="name"/>
+			        <field name="employee" on_change="onchange_emp_id(employee)" select="1"/>
+			        <field name="year_detail"/>
+			        <field name="dob"/>
+			        <field name="gender"/>
+			        <field name="pan_no" select="1"/>
+					<field name="esi" select="1"/>
+					<field name="pf" select="1"/>
+					<separator  string="Documents" colspan="4"/> 
+					<field name="docs" nolabel="1" colspan="4" context="{'default_emp_id':employee}" domain="[('emp_id', '=', employee)]"/>
+                    <separator  string="1. Gross Annual Income/Salary(include all allowances)" colspan="4"/> 
+					<field name="gross_salary" />
+					<field name="gross_salary_approx" />
+					<field name="basic" />
+					</group>
+					<notebook colspan="4">
+						<page string = "Main Detail"> 
+							<field name="less" context="{'default_emp_id':employee}" domain="[('emp_id', '=', employee)]"/>
+							<field name="income_head_salary" />
+							<separator  string="Add: Any other income from other sources" colspan="4"/> 
+							<field name="add_any_other_income" context="{'default_emp_id':employee}" domain="[('emp_id', '=', employee)]"/>
+							<field name="income_other"/>
+							<field name="inc_h_pro" colspan="4" context="{'default_emp_id':employee}" domain="[('emp_id', '=', employee)]"/>
+							<field name="gross_tol_inc" colspan="4"/>
+							<separator colspan="4"/>
+							<field name="dec_und_sec" context="{'default_emp_id':employee}" domain="[('emp_id', '=', employee)]"/>
+							<field name="ded_under_chp" context="{'default_emp_id':employee}" domain="[('emp_id', '=', employee)]"/>
+							<separator string="Total Income" colspan="4"/>
+							<field name="tot_income_" />
+							<field name="tot_tax_inc" />
+							<separator colspan="4"/>
+							<field name="tax_rule"/>
+							<field name="tax_on_tol" />
+							<separator colspan="4"/>
+							<field name="surcharge" context="{'default_emp_id':employee}" domain="[('emp_id', '=', employee)]"/>
+							<field name="tol_tax_pay" />
+							<separator colspan="4"/>
+							<field name="edu_cess_perc" />
+							<field name="add_edn_cess" />
+							<separator string="Tax Payable/Refundable" colspan="4"/>
+							<field name="net_tax_pay" />
+							<field name="balance_tax" />
+						</page>
+						<page string="Approximate Detail">
+							<field name="income_head_salary_approx" colspan="4"/>
+							<field name="income_other_approx" colspan="4"/>
+							<field name="gross_tol_inc_approx" colspan="4"/>
+							<field name="tot_income_approx" colspan="4"/>
+							<field name="tot_tax_inc_approx" colspan="4"/>
+							<field name="tax_on_tol_approx" colspan="4"/>
+							<field name="tol_tax_pay_approx" colspan="4"/>
+							<field name="add_edn_cess_approx" colspan="4"/>
+							<separator string="Tax Payable/Refundable(Approximate)" colspan="4"/>
+							<field name="net_tax_pay_approx" colspan="4"/>
+							<field name="balance_tax_approx" colspan="4"/>
+						</page>
+					</notebook>
+					<group colspan="2" col="8">
+                       <field name="state" select="2"/>
+                       <button name="tax_confirm" type="object" string="Confirm" states="draft" icon='gtk-ok' />
+                       <button name="tax_cancel" type="object" string="Cancel" states="confirm" icon='gtk-ok' />                      
+					   <button name="tax_draft" type="object" string="Reopen" states="cancel" icon='gtk-cancel'  />
+                   </group>
+				</form>
+			</field>
+		</record>
+		
+		
+		<record id="action_income_tax_form" model="ir.actions.act_window">
+			<field name="name">Income Tax</field>
+			<field name="res_model">cal.income.tax</field>
+			<field name="view_type">form</field>
+  			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem parent="cal_income_tax_menu" action="action_income_tax_form" id="menu_action_income_tax_form"/>
+		
+		<!--2. HRA Client Account View -->
+		<record id="view_allowance_tax_tree" model="ir.ui.view">
+			<field name="name">cal.allowance.tax.tree</field>
+			<field name="model">cal.allowance.tax</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Income Tax Allowance">
+					<field name="emp_id" select = "1"/>
+					<field name="final_exemption_amt"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_allowance_tax_form" model="ir.ui.view">
+			<field name="name">cal.allowance.tax.form</field>
+			<field name="model">cal.allowance.tax</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Income Tax Allowance">
+					<field name="emp_id" select = "1"/>
+					<field name="count_month" />
+					<notebook colspan="4">
+						<page string = "Basic HRA Exemption">
+							<field name="rent_paid_hra"/>
+							<field name="basic_hra"/>
+							<field name="hra_rec"/>
+							<field name="ded_pec1"/>
+							<field name="ded_pec2"/>
+							<field name="exemption_amt"/>
+							<newline/>
+							<field name="python_compute" nolabel="1" colspan="4"/>
+						</page>
+						<page string = "Other HRA Exemption">
+							<field name="con_all_hra" />
+							<field name="med_reimbersement" />
+							<field name="lta_paid"/>
+							<field name="lta"/>
+							<field name="le"/>
+							<field name="vma"/>
+							<field name="ea"/>
+							<field name="aa"/>
+							<field name="ua"/>
+							<field name="eda"/>
+							<field name="ha"/>
+							<field name="na"/>
+							<field name="professional_tax" />
+							<newline/>
+							<field name="python_compute_cov" nolabel="1" colspan="2"/>
+							<field name="python_compute_mr" nolabel="1"  colspan="2"/>
+							<field name="python_compute_lta" nolabel="1" colspan="2"/>
+							<field name="python_compute_vma" nolabel="1" colspan="2"/>
+							<field name="python_compute_eda" nolabel="1" colspan="2"/>
+							<field name="python_compute_ha" nolabel="1" colspan="2"/>
+						</page>
+					</notebook>
+					<field name="final_exemption_amt"/>
+				</form>
+			</field>
+		</record>
+		<record id="action_allowance_tax_form" model="ir.actions.act_window">
+			<field name="name">Allowance</field>
+			<field name="res_model">cal.allowance.tax</field>
+			<field name="view_type">form</field>
+  			<field name="view_id" ref="view_allowance_tax_form"/>
+		</record>
+		<menuitem parent="cal_income_tax_menu" action="action_allowance_tax_form" id="menu_action_allowance_tax_form"/>
+
+
+		<record model="ir.ui.view" id="view_document_proof_type_form">
+			<field name="name">document.proof.type.form</field>
+			<field name="model">document.proof.type</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Document Proof Type">
+					<field name="name" select="1"/>
+					<field name="shortcut" select="1"/>
+				</form>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="view_document_proof_type_tree">
+			<field name="name">document.proof.type.tree</field>
+			<field name="model">document.proof.type</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Document Proof Type">
+					<field name="name" select="1"/>
+					<field name="shortcut" select="1"/>
+				</tree>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="action_document_proof_type">
+			<field name="name">Document Type</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">document.proof.type</field>
+			<field name="view_type">form</field>
+			<field name="view_id" ref="view_document_proof_type_form"/>
+		</record>
+		<menuitem parent="cal_income_tax_menu" action="action_document_proof_type" id="menu_document_proof_type"/>
+
+		<record id="view_documents_tree" model="ir.ui.view">
+			<field name="name">documents.tree</field>
+			<field name="model">documents</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Proof Document">
+					<field name="emp_id" select="1"/>
+					<field name="name" select="1"/>
+					<field name="type" select="1"/>
+					<field name="state" select="1"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_documents_form" model="ir.ui.view">
+			<field name="name">documents.form</field>
+			<field name="model">documents</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Proof Document">
+					<field name="emp_id" select="1"/>
+					<field name="name" select="1"/>
+					<field name="type" select="1"/>
+					<newline />
+					<field name="note" select="1" colspan="4"/>
+					<newline />
+					<field name="document" colspan="4"/>
+					<newline />
+					<group col="7" colspan="4">
+						<field name="state" select="1"/>
+						<button name="apply_varification" type="object" states="draft" string="Apply For Varification"/>
+						<button name="proof_varified" type="object" states="apply" string="Accept"/>
+						<button name="proof_canceled" type="object" states="apply" string="Refuse"/>
+						<button name="reopen" type="object" string="Reopen" states="cancel"/>
+					</group>
+				</form>
+			</field>
+		</record>
+		<record id="action_documents_form" model="ir.actions.act_window">
+			<field name="name">Documents</field>
+			<field name="res_model">documents</field>
+			<field name="view_type">form</field>
+  			 <field name="view_id" ref="view_documents_form"/>
+		</record>
+		<menuitem parent="cal_income_tax_menu" action="action_documents_form" id="menu_document_type"/>
+<!--		 4. Other Income  -->
+		<record id="view_other_income_tax_tree" model="ir.ui.view">
+			<field name="name">cal.other.income.tax.tree</field>
+			<field name="model">cal.other.income.tax</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Income Tax Other Income">
+					<field name="emp_id" select="1"/>
+					<field name="name" select="1"/>
+					<field name="amt"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_other_income_tax_form" model="ir.ui.view">
+			<field name="name">cal.other.income.tax.form</field>
+			<field name="model">cal.other.income.tax</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Income Tax Other Income">
+					<field name="emp_id" select="1"/>
+					<field name="name" select="1"/>
+					<field name="amt"/>
+				</form>
+			</field>
+		</record>
+		<record id="action_other_income_tax_form" model="ir.actions.act_window">
+			<field name="name">Other Income</field>
+			<field name="res_model">cal.other.income.tax</field>
+			<field name="view_type">form</field>
+  			 <field name="view_id" ref="view_other_income_tax_form"/>
+		</record>
+
+<!--		 4(clield) Interest Received  -->
+		<record id="view_interest_received_tax_tree" model="ir.ui.view">
+			<field name="name">cal.interest.received.tax.tree</field>
+			<field name="model">cal.interest.received.tax</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Income Tax Interest Received">
+						<field name="emp_id" select="1"/>
+						<field name="other_total"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_interest_received_tax_form" model="ir.ui.view">
+			<field name="name">cal.interest.received.tax.form</field>
+			<field name="model">cal.interest.received.tax</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Income Tax Interest Received">
+						<field name="emp_id" select="1" />
+						<field name="bank" />
+						<field name="nsc" />
+						<field name="mis" />
+						<field name="post_off_recuring" />
+						<field name="term_dep" />
+						<field name="saving" />
+						<field name="kishan" />
+						<field name="other_income" colspan="4" nolabel="1" context="{'default_emp_id':emp_id}" domain="[('emp_id', '=', emp_id)]"/>
+						<field name="other_total" />
+				</form>
+			</field>
+		</record>
+		<record id="action_interest_received_tax_form" model="ir.actions.act_window">
+			<field name="name">Interest Received</field>
+			<field name="res_model">cal.interest.received.tax</field>
+			<field name="view_type">form</field>
+  			 <field name="view_id" ref="view_interest_received_tax_form"/>
+		</record>
+		<menuitem parent="cal_income_tax_menu" action="action_interest_received_tax_form" id="menu_action_interest_received_tax_form"/>
+
+
+		<record id="view_cal_house_property_tree" model="ir.ui.view">
+			<field name="name">cal.house.property.tree</field>
+			<field name="model">cal.house.property</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Calculation of House Property">
+						<field name="emp_id" select="1"/>
+						<field name="name" select="1"/>
+						<field name="total_net_amt"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_cal_house_property_form" model="ir.ui.view">
+			<field name="name">cal.house.property.form</field>
+			<field name="model">cal.house.property</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Calculation of House Property">
+						<field name="emp_id" select="1"/>
+						<field name="name" select="1"/>
+						<field name="loan_date" />
+						<field name="loan_amt" />
+						<field name="type" on_change="onchange_type(type,av,mt,nav,r_c_charges,i_h_loan)"/>
+						<field name="av" attrs="{'readonly':[('type','=','self_occupied'),]}"/>
+						<field name="mt" attrs="{'readonly':[('type','=','self_occupied'),]}"/>
+						<field name="nav" />
+						<field name="r_c_charges" />
+						<field name="i_h_loan" />
+						<field name="python_compute_ihl" colspan="4" nolabel="1"/>
+						<field name="total_net_amt" colspan="4" />
+				</form>
+			</field>
+		</record>
+		<record id="action_cal_house_property_form" model="ir.actions.act_window">
+			<field name="name">Calculation of House Property</field>
+			<field name="res_model">cal.house.property</field>
+			<field name="view_type">form</field>
+  			 <field name="view_id" ref="view_cal_house_property_form"/>
+		</record>
+		<menuitem parent="cal_income_tax_menu" action="action_cal_house_property_form" id="menu_cal_house_property_form"/>
+
+
+		<record id="view_other_ded_tax_tree" model="ir.ui.view">
+			<field name="name">cal.other.deduction.tax.tree</field>
+			<field name="model">cal.other.deduction.tax</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Income Tax Other Deduction">
+					<field name="emp_id" select="1"/>
+					<field name="name" select="1"/>
+					<field name="amt"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_other_ded_tax_form" model="ir.ui.view">
+			<field name="name">cal.other.deduction.tax.form</field>
+			<field name="model">cal.other.deduction.tax</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Income Tax Other Deduction">
+					<field name="emp_id" select="1"/>
+					<field name="name" select="1"/>
+					<field name="amt"/>
+				</form>
+			</field>
+		</record>
+		<record id="action_other_ded_tax_form" model="ir.actions.act_window">
+			<field name="name">OTHER DEDECTION</field>
+			<field name="res_model">cal.other.deduction.tax</field>
+			<field name="view_type">form</field>
+  			 <field name="view_id" ref="view_other_ded_tax_form"/>
+		</record>
+
+
+
+<!--		 7. Deduction Under 80C View  -->
+		<record id="view_deduction_tax_tree" model="ir.ui.view">
+			<field name="name">cal.deduction.tax.tree</field>
+			<field name="model">cal.deduction.tax</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Deduction Under 80C">
+					<field name="emp_id" select="1"/>
+					<field name="total_ded" />
+				</tree>
+			</field>
+		</record>
+		<record id="view_deduction_tax_form" model="ir.ui.view">
+			<field name="name">cal.deduction.tax.form</field>
+			<field name="model">cal.deduction.tax</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Deduction Under 80C">
+					<field name="emp_id" select="1"/>
+					<field name="pf_vpf" />
+					<field name="lif" />
+					<field name="ppf" />
+					<field name="nsc1" />
+					<field name="house_loan" />
+					<field name="tut_fees" />
+					<field name="elss" />
+					<field name="tax_sav_bond" />
+					<field name="fd" />
+					<field name="pension_plan" />
+					<field name="other_ded" colspan="4" nolabel="1" context="{'default_emp_id':emp_id}" domain="[('emp_id', '=', emp_id)]"/>
+					<field name="total_ded" />
+				</form>
+			</field>
+		</record>
+		<record id="action_deduction_tax_form" model="ir.actions.act_window">
+			<field name="name">Deduction Under 80C</field>
+			<field name="res_model">cal.deduction.tax</field>
+			<field name="view_type">form</field>
+  			<field name="view_id" ref="view_deduction_tax_form"/>
+		</record>
+		<menuitem parent="cal_income_tax_menu" action="action_deduction_tax_form" id="menu_deduction_tax_form"/>
+
+
+		<record id="view_other_ded6a_tax_tree" model="ir.ui.view">
+			<field name="name">cal.other.deduction6a.tax.tree</field>
+			<field name="model">cal.other.deduction6a.tax</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Income Tax Other Deduction-6a">
+					<field name="emp_id" select="1"/>
+					<field name="name" select="1"/>
+					<field name="amt"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_other_ded6a_tax_form" model="ir.ui.view">
+			<field name="name">cal.other.deduction6a.tax.form</field>
+			<field name="model">cal.other.deduction6a.tax</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Income Tax Other Deduction-6a">
+					<field name="emp_id" select="1"/>
+					<field name="name" select="1"/>
+					<field name="amt"/>
+				</form>
+			</field>
+		</record>
+		<record id="action_other_ded6a_tax_form" model="ir.actions.act_window">
+			<field name="name">OTHER DEDECTION-6A</field>
+			<field name="res_model">cal.other.deduction6a.tax</field>
+			<field name="view_type">form</field>
+  			 <field name="view_id" ref="view_other_ded6a_tax_form"/>
+		</record>
+		
+<!--		 8. Deduction Under VI-A View  -->
+		<record id="view_deduction_6_a_tax_tree" model="ir.ui.view">
+			<field name="name">cal.deduction.6.a.tax.tree</field>
+			<field name="model">cal.deduction.6.a.tax</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Deduction Under 6-a">
+						<field name="emp_id" select="1"/>
+						<field name="total_ded1" />
+				</tree>
+			</field>
+		</record>
+		<record id="view_deduction_6_a_tax_form" model="ir.ui.view">
+			<field name="name">cal.deduction.6.a.tax.tree</field>
+			<field name="model">cal.deduction.6.a.tax</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Deduction Under 6-a">
+						<field name="emp_id" select="1"/>
+						<field name="mip" />
+						<field name="mipp" />
+						<field name="int_paid_edu" />
+						<field name="donation_app" />
+						<field name="other_ded6a" colspan="4" nolabel="1" context="{'default_emp_id':emp_id}" domain="[('emp_id', '=', emp_id)]"/>
+						<field name="total_ded1" />
+				</form>
+			</field>
+		</record>
+		<record id="action_deduction_6_a_tax_form" model="ir.actions.act_window">
+			<field name="name">Deduction Under 6-a</field>
+			<field name="res_model">cal.deduction.6.a.tax</field>
+			<field name="view_type">form</field>
+  			<field name="view_id" ref="view_deduction_6_a_tax_form"/>
+		</record>
+		<menuitem parent="cal_income_tax_menu" action="action_deduction_6_a_tax_form" id="menu_deduction_6_a_tax_form"/>
+		
+		
+		<!-- level.category -->
+		<record id="view_level_category_tree" model="ir.ui.view">
+			<field name="name">level.category.tree</field>
+			<field name="model">level.category</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Level Category">
+					<field name="seq_no" select="1"/>
+					<field name="name" select="1"/>
+					<field name="st_amt"/>
+					<field name="end_amt"/>
+					<field name="perc"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_level_category_form" model="ir.ui.view">
+			<field name="name">level.category.form</field>
+			<field name="model">level.category</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Level Category">
+					<field name="seq_no" select="1"/>
+					<field name="name" select="1"/>
+					<field name="st_amt"/>
+					<field name="end_amt"/>
+					<field name="perc"/>
+				</form>
+			</field>
+		</record>
+		<record id="action_level_category_form" model="ir.actions.act_window">
+			<field name="name">Level Category</field>
+			<field name="res_model">level.category</field>
+			<field name="view_type">form</field>
+  			 <field name="view_id" ref="view_level_category_form"/>
+		</record>
+
+
+		<!-- income.tax.rule -->
+		<record id="view_income_tax_rule_tree" model="ir.ui.view">
+			<field name="name">income.tax.rule.tree</field>
+			<field name="model">income.tax.rule</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="INCOME TAX RULE">
+					<field name="gender" select="1"/>
+					<field name="fully_exampt_amt"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_income_tax_rule_form" model="ir.ui.view">
+			<field name="name">income.tax.rule.form</field>
+			<field name="model">income.tax.rule</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="INCOME TAX RULE">
+					<field name="gender" select="1"/>
+					<field name="fully_exampt_amt"/>
+					<field colspan="4" name="l_cat" nolabel="1" widget="one2many_list"/>
+					<separator string="Applied Rule" colspan="4"/>
+					<field name="rule" colspan="4" nolabel="1"/>
+				</form>
+			</field>
+		</record>
+		<record id="action_income_tax_rule_form" model="ir.actions.act_window">
+			<field name="name">INCOME TAX RULE</field>
+			<field name="res_model">income.tax.rule</field>
+			<field name="view_type">form</field>
+  			 <field name="view_id" ref="view_income_tax_rule_form"/>
+		</record>
+		
+		
+		<record id="view_surcharge_on_tax_tree" model="ir.ui.view">
+			<field name="name">income.tax.surcharge.tree</field>
+			<field name="model">income.tax.surcharge</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Total Surcharge">
+					<field name="emp_id" select="1"/>
+					<field name="sur_amt"/>
+					<field name="perc"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_surcharge_on_tax_form" model="ir.ui.view">
+			<field name="name">income.tax.surcharge.form</field>
+			<field name="model">income.tax.surcharge</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Total Surcharge">
+					<field name="emp_id" select="1"/>
+					<field name="sur_amt"/>
+					<field name="perc"/>
+				</form>
+			</field>
+		</record>
+		<record id="action_surcharge_on_tax_form" model="ir.actions.act_window">
+			<field name="name">Total Surcharge</field>
+			<field name="res_model">income.tax.surcharge</field>
+			<field name="view_type">form</field>
+  			 <field name="view_id" ref="view_surcharge_on_tax_form"/>
+		</record>
+
+
+	</data>
+</openerp>

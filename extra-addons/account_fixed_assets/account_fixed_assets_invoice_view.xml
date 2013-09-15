@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+#----------------------------------------------------------------------------
+# Invoice line
+#----------------------------------------------------------------------------
+
+    <record model="ir.ui.view" id="view_account_invoice_asset_form">
+        <field name="name">account.invoice.line.form</field>
+        <field name="model">account.invoice.line</field>
+        <field name="inherit_id" ref="account.view_invoice_line_form"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <field name="account_id" position="before">
+                <field name="asset_track" context="name=name" on_change="track_asset(asset_track)"/>
+            </field>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_account_invoice_asset_form1">
+        <field name="name">account.invoice.line.form</field>
+        <field name="model">account.invoice.line</field>
+        <field name="inherit_id" ref="account.view_invoice_line_form"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <field name="account_id" position="after">
+                <field name="asset_category_id" context="name=name" domain ="[('state','in', ['draft','open'])]" on_change="asset_category_id_change(asset_category_id, parent.type)" attrs="{'invisible':[('asset_track','!=',True)], 'required':[('asset_track','=',True)]}"/>
+            </field>
+        </field>
+    </record>
+
+#----------------------------------------------------------------------------
+# Journal Entry - line TODO is it meaningful? 1. invoice > many lines > 1/many assets
+#----------------------------------------------------------------------------
+
+    <record model="ir.ui.view" id="view_account_move_line_form">
+        <field name="name">account.move.line.form</field>
+        <field name="model">account.move.line</field>
+        <field name="inherit_id" ref="account.view_move_line_form"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <field name="account_id" position="after">
+                <field name="asset_id" context="name=name"/>
+            </field>
+        </field>
+    </record>
+
+#----------------------------------------------------------------------------
+# Journal Item TODO - same comment as above
+#----------------------------------------------------------------------------
+
+    <record model="ir.ui.view" id="view_account_move_form">
+        <field name="name">account.move.form</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <field name="quantity" position="after">
+                <field name="asset_id" context="name=name"/>
+            </field>
+        </field>
+    </record>
+
+</data>
+</openerp>

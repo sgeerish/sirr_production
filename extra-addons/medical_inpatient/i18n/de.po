@@ -1,0 +1,273 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Medical\n"
+"Report-Msgid-Bugs-To: https://sourceforge.net/apps/mantisbt/medical\n"
+"POT-Creation-Date: 2010-12-05 21:31:28+0000\n"
+"PO-Revision-Date: 2011-02-05 18:10+0000\n"
+"Last-Translator: Markster <hoeller@it-science-center.de>\n"
+"Language-Team: German <None>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#. module: medical_inpatient
+#: view:medical.inpatient.registration:0
+msgid "Discharge Patient"
+msgstr "Entlassung"
+
+#. module: medical_inpatient
+#: model:ir.model,name:medical_inpatient.model_medical_appointment
+msgid "medical.appointment"
+msgstr "medical.appointment"
+
+#. module: medical_inpatient
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Das Objekt muss mit x_ beginnen und darf keine Sonderzeichen enthalten!"
+
+#. module: medical_inpatient
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Ungültiger Name des Models in der Definition der <action>"
+
+#. module: medical_inpatient
+#: model:ir.module.module,description:medical_inpatient.module_meta_information
+msgid ""
+"\n"
+"This module will hold all the processes related to Inpatient (Patient hospitalization and bed assignment )\n"
+"\n"
+"- Patient Registration\n"
+"- Bed reservation\n"
+"- Hospitalization\n"
+"- Nursing Plan\n"
+"- Discharge Plan\n"
+"- Reporting\n"
+"\n"
+msgstr ""
+"\n"
+"Dieses Modul ist für die Dokumentation des Prozesses der Stationören Behandlung im Krankenhaus geeignet\n"
+"\n"
+"- Patienten Registrierung\n"
+"- Bettenreservierung\n"
+"- Einweisungen\n"
+"- Pflegeplan\n"
+"- Entlassungsplan\n"
+"- Berichtswesen\n"
+"\n"
+
+#. module: medical_inpatient
+#: field:medical.patient,patient_status:0
+msgid "Hospitalization Status"
+msgstr "Einweisungsstatus"
+
+#. module: medical_inpatient
+#: selection:medical.inpatient.registration,admission_type:0
+msgid "Routine"
+msgstr "Routine"
+
+#. module: medical_inpatient
+#: model:ir.ui.menu,name:medical_inpatient.medical_inpatient_menu
+msgid "Inpatient Administration"
+msgstr "stationäre Aufnahme"
+
+#. module: medical_inpatient
+#: field:medical.inpatient.registration,discharge_plan:0
+msgid "Discharge Plan"
+msgstr "Entlassungsplan"
+
+#. module: medical_inpatient
+#: field:medical.inpatient.registration,operating_physician:0
+msgid "Operating Physician"
+msgstr "Operierender Arzt"
+
+#. module: medical_inpatient
+#: view:medical.inpatient.registration:0
+msgid "Administrative data"
+msgstr "Administrative Daten"
+
+#. module: medical_inpatient
+#: constraint:ir.ui.menu:0
+msgid "Error ! You can not create recursive Menu."
+msgstr "Fehler! Sie können keine rekursiven Menüe erstellen"
+
+#. module: medical_inpatient
+#: view:medical.inpatient.registration:0
+msgid "Inpatient Registration Information"
+msgstr "Stationäre Registrierungsinformationen"
+
+#. module: medical_inpatient
+#: view:medical.inpatient.registration:0
+msgid "Hospitalizations"
+msgstr "Stationäre Aufenthalte"
+
+#. module: medical_inpatient
+#: field:medical.inpatient.registration,hospitalization_date:0
+msgid "Hospitalization date"
+msgstr "Aufnahmedatum"
+
+#. module: medical_inpatient
+#: field:medical.inpatient.registration,state:0
+msgid "Status"
+msgstr "Status"
+
+#. module: medical_inpatient
+#: field:medical.inpatient.registration,discharge_date:0
+msgid "Discharge date"
+msgstr "Entlassungsdatum"
+
+#. module: medical_inpatient
+#: field:medical.inpatient.registration,patient:0
+msgid "Patient"
+msgstr "Patient"
+
+#. module: medical_inpatient
+#: selection:medical.inpatient.registration,admission_type:0
+msgid "Emergency"
+msgstr "Notfall"
+
+#. module: medical_inpatient
+#: model:ir.module.module,shortdesc:medical_inpatient.module_meta_information
+msgid "Medical Inpatient : Hospitalization module for Medical"
+msgstr "Medical Staionär : Stationäre Aufenthalte für das Medical Modul"
+
+#. module: medical_inpatient
+#: view:medical.inpatient.registration:0
+msgid "Cancel Registration"
+msgstr "Registrierung löschen"
+
+#. module: medical_inpatient
+#: model:ir.actions.act_window,name:medical_inpatient.medical_action_form_inpatient
+#: model:ir.ui.menu,name:medical_inpatient.medical_conf_inpatient_add
+msgid "Patient Hospitalization Administration"
+msgstr "Patient Krankenhausaufenthalte"
+
+#. module: medical_inpatient
+#: field:medical.appointment,inpatient_registration_code:0
+msgid "Inpatient Registration"
+msgstr "stationäre Registrierung"
+
+#. module: medical_inpatient
+#: help:medical.patient,patient_status:0
+msgid "Shows whether the patient is hospitalized"
+msgstr "Zeigt an, ob der Patient in stationärer Behandlung ist"
+
+#. module: medical_inpatient
+#: selection:medical.inpatient.registration,admission_type:0
+msgid "Maternity"
+msgstr "Geburtshilfe"
+
+#. module: medical_inpatient
+#: help:medical.appointment,inpatient_registration_code:0
+msgid "Enter the patient hospitalization code"
+msgstr "Geben Sie den Einweisungscode an"
+
+#. module: medical_inpatient
+#: view:medical.inpatient.registration:0
+msgid "Inpatient Registration Info"
+msgstr "Info stationöre Registrierung"
+
+#. module: medical_inpatient
+#: field:medical.inpatient.registration,name:0
+msgid "Registration Code"
+msgstr "Registrierungs Code"
+
+#. module: medical_inpatient
+#: model:ir.model,name:medical_inpatient.model_medical_inpatient_registration
+msgid "Patient admission History"
+msgstr "Aufnahmehistorie des Patienten"
+
+#. module: medical_inpatient
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Ungültige XML für die Architektur der View"
+
+#. module: medical_inpatient
+#: selection:medical.inpatient.registration,state:0
+msgid "hospitalized"
+msgstr "aufgenommen"
+
+#. module: medical_inpatient
+#: model:ir.model,name:medical_inpatient.model_medical_patient
+msgid "Patient related information"
+msgstr "Patientenrelevante Informationen"
+
+#. module: medical_inpatient
+#: selection:medical.inpatient.registration,state:0
+msgid "confirmed"
+msgstr "Bestätigt"
+
+#. module: medical_inpatient
+#: selection:medical.inpatient.registration,state:0
+msgid "free"
+msgstr "Frei"
+
+#. module: medical_inpatient
+#: view:medical.inpatient.registration:0
+msgid "Confirm Registration"
+msgstr "Registireirung bestätigen"
+
+#. module: medical_inpatient
+#: view:medical.inpatient.registration:0
+msgid "Patient Admission"
+msgstr "Patientenaufnahme"
+
+#. module: medical_inpatient
+#: selection:medical.inpatient.registration,admission_type:0
+msgid "Elective"
+msgstr "Geplant"
+
+#. module: medical_inpatient
+#: field:medical.inpatient.registration,admission_type:0
+msgid "Admission type"
+msgstr "Aufnahmetyp"
+
+#. module: medical_inpatient
+#: field:medical.inpatient.registration,attending_physician:0
+msgid "Attending Physician"
+msgstr "Anwesender Arzt"
+
+#. module: medical_inpatient
+#: field:medical.inpatient.registration,admission_reason:0
+#: help:medical.inpatient.registration,admission_reason:0
+msgid "Reason for Admission"
+msgstr "Grund der Aufnahme"
+
+#. module: medical_inpatient
+#: view:medical.inpatient.registration:0
+msgid "Care Plan"
+msgstr "Behandlungsplan"
+
+#. module: medical_inpatient
+#: selection:medical.inpatient.registration,admission_type:0
+msgid "Urgent"
+msgstr "Dringend"
+
+#. module: medical_inpatient
+#: field:medical.inpatient.registration,info:0
+msgid "Extra Info"
+msgstr "Extra Info"
+
+#. module: medical_inpatient
+#: field:medical.inpatient.registration,bed:0
+msgid "Hospital Bed"
+msgstr "Krankenhausbett"
+
+#. module: medical_inpatient
+#: selection:medical.inpatient.registration,state:0
+msgid "cancelled"
+msgstr "annuliert"
+
+#. module: medical_inpatient
+#: view:medical.inpatient.registration:0
+msgid "Search Hospitalizations"
+msgstr "Suche Aufnahmen"
+
+#. module: medical_inpatient
+#: field:medical.inpatient.registration,nursing_plan:0
+msgid "Nursing Plan"
+msgstr "Pflegeplan"

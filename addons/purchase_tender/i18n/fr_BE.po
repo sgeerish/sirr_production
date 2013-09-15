@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/purchase_tender/i18n/fr_BE.po

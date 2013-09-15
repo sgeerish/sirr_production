@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/car_followup/__init__.py

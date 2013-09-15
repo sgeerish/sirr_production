@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/huissier/report/label_invoices.py

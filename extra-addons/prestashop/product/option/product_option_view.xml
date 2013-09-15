@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+<!-- PRESTASHOP product_options VIEWS -->
+
+	<record id="product_options_tree" model="ir.ui.view">
+	    <field name="name">product.options.tree</field>
+	    <field name="model">product.options</field>
+	    <field name="type">tree</field>
+	    <field name="arch" type="xml">
+	        <tree string="Product Options">
+	            <field name="name" select="1"/>
+	            <field name="public_name" select="1"/>
+            </tree>
+	    </field>
+	</record>
+
+	<record id="product_options_form" model="ir.ui.view">
+	    <field name="name">product.options.form</field>
+	    <field name="model">product.options</field>
+	    <field name="type">form</field>
+	    <field name="arch" type="xml">
+	        <form string="Product Options">
+				<field name="name"/>
+	   		    <field name="public_name"/>
+	   		    <field name="prod_opt_value_lines" colspan="4"/>
+	   		    <separator colspan="4"/>
+	        </form>
+		</field>
+	</record>
+
+  	<record id="product_options_act_window" model="ir.actions.act_window">
+	    <field name="name">Product Options</field>
+	    <field name="type">ir.actions.act_window</field>
+	    <field name="res_model">product.options</field>
+	    <field name="view_type">form</field>
+	</record>
+	
+<!-- PRESTASHOP product_options_value VIEWS -->
+
+	<record id="product_options_value_tree" model="ir.ui.view">
+	    <field name="name">product.options.value.tree</field>
+	    <field name="model">product.options.value</field>
+	    <field name="type">tree</field>
+	    <field name="arch" type="xml">
+	        <tree string="Product Options Value">
+	            <field name="name" select="1"/>
+            </tree>
+	    </field>
+	</record>
+
+	<record id="product_options_value_form" model="ir.ui.view">
+	    <field name="name">product.options_value.form</field>
+	    <field name="model">product.options.value</field>
+	    <field name="type">form</field>
+	    <field name="arch" type="xml">
+	        <form string="Product Options Values">
+				<field name="name" colspan="4"/>
+				<field name="prod_opt_id" colspan="4"/>
+	   		    <separator colspan="4"/>
+	        </form>
+		</field>
+	</record>
+
+	<record id="product_options_value_act_window" model="ir.actions.act_window">
+	    <field name="name">Product Options Value</field>
+	    <field name="type">ir.actions.act_window</field>
+	    <field name="res_model">product.options.value</field>
+	    <field name="view_type">form</field>
+	</record>
+
+	</data>
+</openerp>

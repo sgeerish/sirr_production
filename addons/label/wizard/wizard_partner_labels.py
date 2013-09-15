@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/label/wizard/wizard_partner_labels.py

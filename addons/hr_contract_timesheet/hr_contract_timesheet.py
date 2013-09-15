@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_contract_timesheet/hr_contract_timesheet.py

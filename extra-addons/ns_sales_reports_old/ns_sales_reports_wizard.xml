@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	<menuitem  name ="Sales Reports" id="menu_ns_sales_reports" parent="base.menu_base_partner" />
+
+	<wizard
+		menu="True"
+		id="jreports_liste_factures_clients_wizard"
+		name="jreports.ns_sales_clients.wizard"
+		string="Revenue per customer"
+		keyword="client_print_multi"
+		model="account.invoice"/>
+
+		<menuitem action="jreports_liste_factures_clients_wizard" id="jreports_liste_factures_clients_menu" icon="STOCK_PRINT" type="wizard" parent="menu_ns_sales_reports" />
+
+	<wizard
+		menu="True"
+		id="jreports_liste_factures_clients_produits_wizard"
+		name="jreports.ns_sales_clients_products.wizard"
+		string="Revenue per customer per product"
+		keyword="client_print_multi"
+		model="account.invoice"/>
+
+		<menuitem action="jreports_liste_factures_clients_produits_wizard" id="jreports_liste_factures_clients_produits_menu" icon="STOCK_PRINT" type="wizard" parent="menu_ns_sales_reports" />
+
+	<wizard
+		menu="True"
+		id="jreports_liste_factures_produits_wizard"
+		name="jreports.ns_sales_products.wizard"
+		string="Revenue per Product"
+		keyword="client_print_multi"
+		model="account.invoice"/>
+
+		<menuitem action="jreports_liste_factures_produits_wizard" id="jreports_liste_factures_produits_menu" icon="STOCK_PRINT" type="wizard" parent="menu_ns_sales_reports" />
+
+	<wizard
+		menu="True"
+		id="jreports_liste_factures_produits_com_wizard"
+		name="jreports.ns_sales_products_com.wizard"
+		string="Revenue Produit/Commercial"
+		keyword="client_print_multi"
+		model="account.invoice"/>
+
+		<menuitem action="jreports_liste_factures_produits_com_wizard" id="jreports_liste_factures_produits_com_menu" icon="STOCK_PRINT" type="wizard" parent="menu_ns_sales_reports" />
+
+	<wizard
+		menu="True"
+		id="jreports_liste_journal_caisse_wizard"
+		name="jreports.ns_sales_liste_journal_caisse.wizard"
+		string="Journal Caisse"
+		keyword="client_print_multi"
+		model="account.voucher"/>
+
+		<menuitem action="jreports_liste_journal_caisse_wizard" id="jreports_journal_caisse_menu" icon="STOCK_PRINT" type="wizard" parent="menu_ns_sales_reports" />
+
+    </data>
+</openerp>

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/partner_spam/__terp__.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/webmail/wizard/wizard_mail_account.py

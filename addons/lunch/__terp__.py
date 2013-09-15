@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/lunch/__terp__.py

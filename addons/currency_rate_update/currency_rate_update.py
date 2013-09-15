@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/currency_rate_update/currency_rate_update.py

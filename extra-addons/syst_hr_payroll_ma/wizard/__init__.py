@@ -1,0 +1,4 @@
+import wizard_journal_paie
+import wizard_net_payer
+import wizard_etat_ir
+import wizard_etat_9421

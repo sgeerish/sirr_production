@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/analytic_secondaxis/__init__.py

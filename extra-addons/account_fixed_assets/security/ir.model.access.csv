@@ -1,0 +1,11 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_account_fixed_assets_category","account.fixed.assets.category","model_account_fixed_assets_category","account.group_account_user",1,0,0,0
+"access_account_fixed_assets_asset","account.fixed.assets.asset","model_account_fixed_assets_asset","account.group_account_user",1,0,0,0
+"access_account_fixed_assets_method","account.fixed.assets.method","model_account_fixed_assets_method","account.group_account_user",1,0,0,0
+"access_account_fixed_assets_method_usage","account.fixed.assets.method.usage","model_account_fixed_assets_method_usage","account.group_account_user",1,0,0,0
+"access_account_fixed_assets_history","account.fixed.assets.history","model_account_fixed_assets_history","account.group_account_user",1,0,0,0
+"access_account_fixed_assets_category_manager","account.fixed.assets.category","model_account_fixed_assets_category","account.group_account_manager",1,1,1,1
+"access_account_fixed_assets_asset_manager","account.fixed.assets.asset","model_account_fixed_assets_asset","account.group_account_manager",1,1,1,1
+"access_account_fixed_assets_method_manager","account.fixed.assets.method","model_account_fixed_assets_method","account.group_account_manager",1,1,1,1
+"access_account_fixed_assets_method_usage_manager","account.fixed.assets.method.usage","model_account_fixed_assets_method_usage","account.group_account_manager",1,1,1,1
+"access_account_fixed_assets_history_manager","account.fixed.assets.history","model_account_fixed_assets_history","account.group_account_manager",1,1,1,1

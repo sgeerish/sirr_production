@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training_joomla/wizard/export_table.py

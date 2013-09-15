@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hotel/__init__.py

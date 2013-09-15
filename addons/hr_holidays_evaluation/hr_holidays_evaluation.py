@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_holidays_evaluation/hr_holidays_evaluation.py

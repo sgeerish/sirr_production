@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_invoice_india/wizard/wizard_third_party_ledger.py

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+<!-- PRESTASHOP tax groups -->
+    <record id="prestashop_tax_rule_group_tree" model="ir.ui.view">
+        <field name="name">tax.rule.group.tree</field>
+        <field name="model">tax.rule.group</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Tax Rule Groups">
+                <field name="name" select="1"/>
+            </tree>
+        </field>
+    </record>
+
+<!--<button name="import_from_prestashop" string="import" type="object"/>-->
+<!--                    <button name="export_to_prestashop" string="export" type="object"/> -->
+    <record id="prestashop_tax_rule_group_form" model="ir.ui.view">
+        <field name="name">tax_rule_group.form</field>
+        <field name="model">tax.rule.group</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Tax Rule Groups">
+                <field name="name" colspan="4"/>
+<!--                <button name="import_from_prestashop" string="Import" type="object" icon="gtk-ok"/>-->
+<!--                <button name="export_to_prestashop" string="export" type="object"/>-->
+            </form>
+        </field>
+    </record>
+
+   
+    <record id="prestashop_tax_rule_group_act_window" model="ir.actions.act_window">
+        <field name="name">Tax Rule Groups</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">tax.rule.group</field>
+        <field name="view_type">form</field>
+    </record>
+    
+    
+    
+<!--  PRESTASHOP TAX RULES  -->
+      <record id="prestashop_tax_rules_tree" model="ir.ui.view">
+        <field name="name">tax.rule.tree</field>
+        <field name="model">tax.rules</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Tax Rules">
+                <field name="tax_id" select="1"/>
+                <field name="tax_rule_group_id" select="1"/>
+                <field name="state_id" select="1"/>
+                <field name="country_id" select="1"/>
+                <field name="state_behavior" select="1"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="prestashop_tax_rules_form" model="ir.ui.view">
+        <field name="name">tax.rules.form</field>
+        <field name="model">tax.rules</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Tax Rules">
+                <field name="tax_id" select="1"/>
+                <field name="tax_rule_group_id" select="1"/>
+                <field name="state_id" select="1"/>
+                <field name="country_id" select="1"/>
+                <field name="state_behavior" select="1"/>
+<!--                <button name="import_from_prestashop" string="Import" type="object" icon="gtk-ok"/>-->
+<!--                <button name="export_to_prestashop" string="export" type="object"/>-->
+            </form>
+        </field>
+    </record>
+
+   
+    <record id="prestashop_tax_rules_act_window" model="ir.actions.act_window">
+        <field name="name">Tax Rules</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">tax.rules</field>
+        <field name="view_type">form</field>
+    </record>
+    
+    
+        
+<!--   ACCOUNT TAX -->
+        <record id="view_tax_form_presta" model="ir.ui.view">
+            <field name="name">account.tax.form</field>
+            <field name="model">account.tax</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="account.view_tax_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/group/field[@name='active']" position="after">
+<!--                    <button name="import_from_prestashop" string="import" type="object"/>-->
+<!--                    <button name="export_to_prestashop" string="export" type="object"/>   -->
+                </xpath>
+                </field>
+                </record>
+    </data>
+</openerp>

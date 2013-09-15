@@ -1,0 +1,5 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_medical_perinatal_monitor","medical.perinatal.monitor","model_medical_perinatal_monitor","medical.group_medical_user",1,1,1,1
+"access_medical_newborn","medical.newborn","model_medical_newborn","medical.group_medical_user",1,1,1,1
+"access_medical_puerperium_monitor","medical.puerperium.monitor","model_medical_puerperium_monitor","medical.group_medical_user",1,1,1,1
+"access_medical_perinatal","medical.perinatal","model_medical_perinatal","medical.group_medical_user",1,1,1,1

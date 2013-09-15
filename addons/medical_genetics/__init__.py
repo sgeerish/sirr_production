@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/medical_genetics/__init__.py

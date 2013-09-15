@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/zarafa/wizard/wizard_zarafa_contacts.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/game_scenario/__terp__.py

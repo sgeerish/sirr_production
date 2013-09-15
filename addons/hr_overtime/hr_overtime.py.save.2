@@ -1,0 +1,85 @@
+from osv import fields, osv
+import time
+
+
+class hr_employee(osv.osv):
+    _inherit = "hr.employee"
+    def _get_cur_function_id(self, cr, uid, ids, field_name, arg, context):
+        res={}
+        att_obj=self.pool.get('hr.attendance')
+        for id in ids:
+            att=att_obj.search(cr,uid,[('employee_id','=',id)])
+            if len(att)>0:
+                res[id]=att_obj.browse(cr,uid,att)[0].name
+            else:
+                res[id]=False
+        return res
+    _columns = {
+        'dernier_pointage' : fields.function(
+            _get_cur_function_id,
+            type='datetime',
+            method=True,
+            string='Dernier Pointage'),
+	'product_id':fields.many2one('product.product','Produit'),
+    }
+hr_employee()
+
+class hr_overtime(osv.osv):
+    _name = "hr.overtime"
+    _description = "Calcul Heures Supplementaires"
+    
+    _columns={
+        'name':fields.many2one('hr.employee','Employee'),
+        'period_id':fields.many2one('account.period','Period'),
+        'valid_user_id':fields.many2one('res.users','Validation'),
+        'heures':fields.float('Heures supplementaires'),
+        'hs_normal':fields.float('HS Normal'),
+        'hs_extra':fields.float('HS Extra'),
+        'state': fields.selection([
+            ('draft', 'Demande'),
+            ('valid', 'Valide'),
+            ('refused', 'Refuse'),
+            ], 'Etat', readonly=True, select=True)
+        }
+    def calculate_hs(self,cr,uid,ids,context=None):
+        emp_obj=self.pool.get('hr.employee')
+        att_obj=self.pool.get('hr.attendance')
+        now=datetime.datetime.now()
+        days=6
+        monday=1
+        days=now.isoweekday()+days
+        start=str((datetime.datetime.now()-datetime.timedelta(days=days)).date())
+        end=str(datetime.datetime.now().date())
+        employees=emp_obj.search(cr,uid,[])
+        absent_employees=[]
+        for employee in employees:
+            atts=att_obj.search(cr,uid,[('employee_id','=',employee.id),('day','>=',start),('day','<',end)])
+            atts=att_obj.browse(cr,uid,atts)
+            dates=[]
+            hours=0
+            for att in atts:
+                if att.day not in days:
+                    days.append(att.day)
+            for date in dates:
+                atts=att_obj.search(cr,uid,[('employee_id','=',employee.id),('day','=',date)])
+                atts=att_obj.browse(cr,uid,atts)
+                end_time=False
+                for att in atts:
+                    if len(atts)>1:
+                        if end_time:
+                            start_time=att.name
+                        else:
+                            end_time=att.name
+                if len(atts)>1:
+                    hours+=(end_time-start_time).seconds/(60*60)
+            print hours
+        return True  
+hr_overtime()
+
+class hr_overtime_wiz(osv.osv_memory):
+    _name='hr.overtime.wiz'
+    _columns={
+        'name':fields.many2one('account.period','Periode')
+	}
+
+hr_overtime_wiz()

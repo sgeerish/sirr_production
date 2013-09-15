@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/clock_reader/lib/clock_zkem.py

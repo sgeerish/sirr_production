@@ -1,0 +1,540 @@
+# -*- encoding: utf-8 -*-
+##############################################################################
+#
+#    OpenERP, Open Source Management Solution
+#    Copyright (c) 2008 Zikzakmedia S.L. (http://zikzakmedia.com) All Rights Reserved.
+#                       Jordi Esteve <jesteve@zikzakmedia.com>
+#    $Id$
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+
+import time
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
+import convertion
+from osv import fields, osv
+from tools.translate import _
+
+class purchase_order(osv.osv):
+    _inherit = 'purchase.order'
+    
+    def get_shop(self, cr, uid, ids):
+        user=self.pool.get('res.users').browse(cr,uid,uid)
+        if user.shop.name=='Importation':
+            return user.shop.name
+        else:
+            return 'Locaux'
+    
+    _columns = {
+        'order_line': fields.one2many('purchase.order.line', 'order_id', 'Order Lines', readonly=True, states={'draft': [('readonly', False)],'start': [('readonly', False)]}),
+        'create':fields.many2one('res.users', 'Demandeur'),
+        'daf':fields.many2one('res.users', 'Direction Financiere'),
+        'dg':fields.many2one('res.users', 'Direction Generale'),
+        'sb':fields.many2one('res.users', 'Service Budget'),
+        'date_daf':fields.date('Date Appr. DAF'),
+        'date_dg':fields.date('Date Appr. DG'),
+        'date_sb':fields.date('Date Appr. SB'),
+        'ref':fields.char('Reference Commande', size=64),
+        'cur_rate':fields.float('Cours Devise'),
+        'containers':fields.float('Conteneurs'),
+        'estimated_freight':fields.float('Meilleur taux de fret Estimatif'),
+        'incoterm':fields.many2one('stock.incoterms', 'Incoterm'),
+        'product_origin':fields.many2one('res.country', 'Origine'),
+        'shop_id': fields.many2one('sale.shop', 'Souche', required=True, readonly=True, states={'draft': [('readonly', False)]}),
+        'payment_term': fields.many2one('account.payment.term', 'Condition de Reglement'),
+    }
+    
+    def onchange_partner_id(self, cr, uid, ids, part):
+
+        if not part:
+            return {'value':{'partner_address_id': False, 'fiscal_position': False}}
+        addr = self.pool.get('res.partner').address_get(cr, uid, [part], ['default'])
+        part = self.pool.get('res.partner').browse(cr, uid, part)
+        pricelist = part.property_product_pricelist_purchase.id
+        fiscal_position = part.property_account_position and part.property_account_position.id or False
+        payment_term = part.property_payment_term and part.property_payment_term.id or False
+        return {'value':{'partner_address_id': addr['default'], 'pricelist_id': pricelist, 'fiscal_position': fiscal_position,'payment_term':payment_term}}
+    
+    _defaults = {
+        'create': lambda obj, cr, uid, context: uid,
+        'name': lambda obj, cr, uid, context: obj.pool.get('ir.sequence').get(cr, uid, obj.get_shop(cr,uid,obj)),
+    }
+    
+purchase_order()
+
+class sale_order(osv.osv):
+    _inherit = 'sale.order'
+    _columns = {
+        'create':fields.many2one('res.users', 'Vendeur'),
+        'validate':fields.many2one('res.users', 'Dir. Com.'),
+        'date_create':fields.date('Date Creation'),
+        'date_validate':fields.date('Date Appr. DC'),
+        'name_divers':fields.char('Nom Occasionel', size=64),
+        'tel_divers':fields.char('Telephone Occasionel', size=64),
+        'address_divers':fields.char('Addresse Occasionel', size=64),
+    }
+    
+    _defaults = {
+        'create': lambda obj, cr, uid, context: uid,
+    }
+    
+sale_order()
+
+class procurement_order(osv.osv):
+    _inherit = 'procurement.order'
+    _columns = {
+        'th_weight':fields.float('M. Lineare'),
+    }
+procurement_order()
+
+class mrp_production(osv.osv):
+    _inherit = 'mrp.production'
+    _columns = {
+        'th_weight':fields.float('M. Lineare'),
+    }
+mrp_production()
+
+class sale_order_line(osv.osv):
+    _inherit = 'sale.order.line'
+    _columns = {
+        'location':fields.many2one('stock.location', 'Emplacement'),
+    }
+    
+    def product_discount_change(self, cr, uid, ids, discount,max):
+        warning={}
+        if discount>max:
+            warning = {
+                    'title': _('Remise incorrect !'),
+                    'message': _('Remise Maximum atteint!!!') 
+            }
+        discount=min(discount,10)   
+        return {'value':{'discount': discount},'warning':warning}
+        
+    def onchange_price_unit(self, cr, uid, ids, pricelist,product,qty,uom,partner_id,date_order,price_unit):
+        warning={}
+        price=price_unit
+        if product:
+            price = self.pool.get('product.pricelist').price_get(cr, uid, [pricelist],
+                product, qty or 1.0, partner_id, {
+                    'uom': uom,
+                    'date': date_order,
+                    })[pricelist]
+        
+        if price is False:
+            warning = {
+                'title': 'No valid pricelist line found !',
+                'message':
+                    "Couldn't find a pricelist line matching this product and quantity.\n"
+                    "You have to change either the product, the quantity or the pricelist."
+                }
+        if price_unit<price:
+            warning = {
+                    'title': _('Prix incorrect !'),
+                    'message': _('Peux pas dimunuer les prix atteint!!!') 
+            }
+        prix=max(price,price_unit)   
+        if product:
+            return {'value':{'price_unit': prix},'warning':warning}
+        else:
+            pass
+            
+sale_order_line()
+
+
+class account_voucher(osv.osv):
+    _inherit = 'account.voucher'
+    def move_line_id_payment_get(self, cr, uid, ids, *args):
+        if not ids: return []
+        result = self.move_line_id_payment_gets(cr, uid, ids, *args)
+        return result.get(ids[0], [])
+
+    def move_line_id_payment_gets(self, cr, uid, ids, *args):
+        res = {}
+        if not ids: return res
+        cr.execute('SELECT i.id, l.id '\
+                   'FROM account_move_line l '\
+                   'LEFT JOIN account_voucher i ON (i.move_id=l.move_id) '\
+                   'WHERE i.id IN %s '\
+                   'AND l.account_id=i.account_id',
+                   (tuple(ids),))
+        for r in cr.fetchall():
+            res.setdefault(r[0], [])
+            res[r[0]].append( r[1] )
+        return res
+    def _get_invoice_from_reconcile(self, cr, uid, ids, context=None):
+        move = {}
+        for r in self.pool.get('account.move.reconcile').browse(cr, uid, ids, context=context):
+            for line in r.line_partial_ids:
+                move[line.move_id.id] = True
+            for line in r.line_id:
+                move[line.move_id.id] = True
+
+        invoice_ids = []
+        if move:
+            invoice_ids = self.pool.get('account.invoice').search(cr, uid, [('move_id','in',move.keys())], context=context)
+        return invoice_ids
+        
+    def test_paid(self, cr, uid, ids, *args):
+        res = self.move_line_id_payment_get(cr, uid, ids)
+        # print res
+        if not res:
+            return False
+        ok = True
+        for id in res:
+            cr.execute('select reconcile_id from account_move_line where id=%s', (id,))
+            ok = ok and  bool(cr.fetchone()[0])
+        return ok
+    
+    def _reconciled(self, cr, uid, ids, name, args, context=None):
+        res = {}
+        for id in ids:
+            res[id] = self.test_paid(cr, uid, [id])
+        return res
+    
+    def deposit_check(self, cr, uid, ids, context=None):             
+        self.write(cr, uid, ids, {'state':'check_deposit'})
+        return True
+        
+    def confirm_deposit(self, cr, uid, ids, context=None):
+        self.write(cr, uid, ids, {'state':'check_bank'})
+        return True
+
+    def action_cancel_check(self, cr, uid, ids, context=None):
+        self.write(cr, uid, ids, {'state':'check_return'})
+        return True
+    def action_check_escompte(self,cr,uid,ids,context=None):
+        self.write(cr, uid, ids, {'journal_id':'ESC'})
+        self.write(cr, uid, ids, {'account_id':'511400'})
+        return True
+
+    _columns = {
+        'instrument_type':fields.char('Type', size=64),
+        'instrument_date':fields.date('Date'),
+        'transmitted':fields.date('Transmis'),
+        'ref': fields.related('partner_id','ref', type='char', relation='res.partner', string='Code', readonly=1),
+        'reconciled': fields.function(_reconciled, method=True,string='Reconciled', type='boolean'),
+        'instrument_bank':fields.many2one('res.bank','Banquue'),
+        'banking_date':fields.date('Mise En Banque'),
+        'banking_bank':fields.many2one('res.bank','Banque'),
+        'banking_number':fields.char('N° bordereau', size=64),
+        'check_return':fields.boolean('Retourné'),
+        'balance':fields.float('Balance'),
+        'tire':fields.char('Tire', size=64),
+        'state':fields.selection(
+            [('draft','Draft'),
+             ('proforma','Pro-forma'),
+             ('check_deposit','En Reglement'),
+             ('check_return','Reglement Retourné'),
+             ('check_bank','Reglement deposée en banque'),
+             ('posted','Posted'),
+             ('cancel','Cancel')], 'State', readonly=True, size=32,),
+        }       
+    
+    def onchange_bank(self, cr, uid, ids, move_ids,bank):
+        move_lines=self.pool.get('account.move.line')
+        for voucher in self.browse(cr, uid, ids):
+            recs = []
+            for line in voucher.move_ids:
+                recs += [line.id]
+        move_lines.write(cr, uid, recs,{'bank':bank})
+        return True
+                
+                
+account_voucher()
+
+class account_voucher_line(osv.osv):
+    _inherit='account.voucher.line'
+    def onchange_move_line_id(self, cr, user, ids, move_line_id,reference,amount,context=None):
+        """
+        Returns a dict that contains new values and context
+
+        @param move_line_id: latest value from user input for field move_line_id
+        @param args: other arguments
+        @param context: context arguments, like lang, time zone
+
+        @return: Returns a dict which contains new values, and context
+        """
+        res = {}
+        instrument=reference
+        voucher_line=self.pool.get('account.voucher.line')
+        
+        move_line_pool = self.pool.get('account.move.line')
+        if move_line_id:
+            move_line = move_line_pool.browse(cr, user, move_line_id, context=context)
+            if move_line.credit:
+                ttype = 'dr'
+            else:
+                ttype = 'cr'
+                
+            account_id = move_line.account_id.id
+            res.update({
+                'account_id':account_id,
+                'type': ttype, 
+            })
+        return {
+            'value':res,
+        } 
+account_voucher_line()
+
+
+class account_invoice(osv.osv):
+    _inherit = 'account.invoice'
+    def check_printed(self,cr,uid,id):
+        if self.printed:
+            return True
+        else:
+            sql="UPDATE account_invoice set printed=True where id=%d" % (id)
+            self.cr.execute(sql)
+            res = self.cr.commit()
+            # print '>>>>>>>>>>>>>>>>>>'
+            return False
+    
+    def _check_paid(self, cr, uid, ids, name, args, context=None):
+        res={}
+        voucher_lines=self.pool.get('account.voucher.line')
+        res[id]=True
+        return res
+
+    def test_check(self, cr, uid, ids, *args):
+        ok = False
+        voucher_lines=self.pool.get('account.voucher.line')
+        for line in self.browse(cr, uid, ids):
+            res=voucher_lines.search(cr, uid, [('name', 'like', line.number), ('instrument_number', '!=', '')])
+            if res:
+                ok= True
+            else:
+                ok= False
+        return ok
+    def test_allowed(self, cr, uid, ids, *args):
+        ok = False
+        inv=self.pool.get('account.invoice')
+        for line in self.browse(cr, uid, ids):
+            allowed=line.allow_out
+            # print allowed
+        return allowed
+
+    def _reconciled_check(self, cr, uid, ids, name, args, context=None):
+            res = {}
+            for id in ids:
+                res[id] = self.test_check(cr, uid, [id])
+            return res
+    def _check_allow_out(self, cr, uid, ids, name, args, context=None):
+            res = {}
+            for id in ids:
+                res[id] = self.test_allowed(cr, uid, [id])
+            return res
+
+    _columns = {
+	'transmitted':fields.date('Transmis'),
+        'check_state': fields.function(_reconciled_check, method=True, string='Reglé', type='boolean'),
+        'out_allowed': fields.function(_check_allow_out, method=True, string='Sortie Autorisee', type='boolean'),
+        'allow_out': fields.boolean('Autorisation de Sortie'),    
+        'transmitted': fields.boolean('Transmis'),    
+        'name_divers':fields.char('Nom Occasionel', size=64),
+        'tel_divers':fields.char('Telephone Occasionel', size=64),
+        'address_divers':fields.char('Addresse Occasionel', size=64),   
+        'validator':fields.many2one('res.users','Validation'),
+        'printed': fields.boolean('Printed'), 
+        'reviens_state':fields.selection(
+            [('calculated','Calculé'),
+             ('fixed','Prix de vente établie'),
+             ('confirmed','Confirmé')], 'Calcul du reviens', readonly=True, size=32,),        
+        'cur_rate':fields.float('Cours Devise'),
+        }
+    _defaults = {
+        'cur_rate': 1,
+    }
+
+    
+    def printed(self,cr,uid,ids,context=None):
+        return 'Printing'
+    
+account_invoice()
+
+class res_partner(osv.osv):
+    _inherit = 'res.partner'
+    _columns ={
+        'local_supplier':fields.boolean('Fournisseur Local'),
+        'foreign_supplier':fields.boolean('Fournisseur Import'),
+        'group_supplier':fields.boolean('Fournisseur Group'), 
+    }
+ #   _sql_constraints = [ ('name', 'UNIQUE (name)', 'The name of the partner must be unique !')] 
+res_partner()
+
+class account_bank_statement_line(osv.osv):
+    _inherit = 'account.bank.statement.line'
+    _columns ={
+        'move_line':fields.many2one('account.move.line'),
+    }
+ #   _sql_constraints = [ ('name', 'UNIQUE (name)', 'The name of the partner must be unique !')] 
+account_bank_statement_line()
+
+
+class account_invoice_line(osv.osv):
+    _inherit = 'account.invoice.line'
+    
+    def _product_margin(self, cr, uid, ids, field_name, arg, context=None):
+        res = {}
+        for line in self.browse(cr, uid, ids, context=context):
+            res[line.id] = 0
+            if line.product_id:
+#                if line.product_id.purchase_price:
+#                   res[line.id] = round((line.price_unit*line.product_uos_qty*(100.0-line.discount)/100.0) -(line.product_id.purchase_price*line.product_uos_qty), 2)
+#                else:
+                res[line.id] = round((line.price_unit*line.quantity*(100.0-line.discount)/100.0) -(line.product_id.standard_price*line.quantity), 2)
+        return res
+    def _product_margin_perc(self, cr, uid, ids, field_name, arg, context=None):
+        res = {}
+        for line in self.browse(cr, uid, ids, context=context):
+            res[line.id] = 0
+            if line.product_id:
+#                if line.purchase_price:
+#                    res[line.id] = (round(((line.price_unit*line.product_uos_qty*(100.0-line.discount)/100.0) -(line.product_id.purchase_price*line.product_uos_qty))/(line.price_unit*line.product_uos_qty*(100.0-line.discount)/100.0), 2))*100
+#                else:
+                # print line.margin
+                # print line.price_unit*line.quantity*(100.0-line.discount)/100.0
+                res[line.id] = (round(line.margin/max(0.01,(line.price_unit*line.quantity*(100.0-line.discount)/100.0)), 2))*100
+        return res
+        
+        
+    _columns ={
+        'th_weight':fields.float('M. Linere'),
+        'margin': fields.function(_product_margin, type='float', method=True, string='Marge',store=True),
+        'margin_perc': fields.function(_product_margin_perc, type='float',method=True, string='% Mar',store=True),
+        'location':fields.many2one('stock.location','Emplacement'),
+
+    }
+ #   _sql_constraints = [ ('name', 'UNIQUE (name)', 'The name of the partner must be unique !')] 
+account_invoice_line()
+
+class product_brand(osv.osv):
+    _name = "product.brand"
+    _description = "Branding"
+    _columns={
+        'name':fields.char('Marque',size=64),
+}
+product_brand()
+
+class product_product(osv.osv):
+    _inherit = 'product.product'
+    _columns ={
+        'prix1':fields.float('Prix 1'),
+        'prix2':fields.float('Prix 2'),
+        'prix3':fields.float('Prix 3'),
+        'prix4':fields.float('Prix 4'),
+        'prix5':fields.float('Prix 5'),
+        'prix6':fields.float('Prix 6'),
+        'prix7':fields.float('Prix 7'),
+        'prix8':fields.float('Prix 8'),
+        'prix9':fields.float('Prix 9'),
+        'prix10':fields.float('Prix 10'),
+        'prix11':fields.float('Prix 11'),
+        'marque':fields.many2one('product.brand', 'Marque'),
+    }
+    _sql_constraints = [('ref','unique(ref)', 'Unique!')]
+product_product()
+
+class res_company(osv.osv):
+    _inherit = 'res.company'
+    
+    _columns = {
+        'local_purchase':fields.char('local_purchase',store=True, size=64),
+        'import_purchase':fields.char('import_purchase',store=True, size=64),
+    }
+res_company()
+
+
+class account_move_line(osv.osv):
+    _inherit = 'account.move.line'
+
+    def _amount_residual(self, cr, uid, ids, field_names, args, context=None):
+        """
+           This function returns the residual amount on a receivable or payable account.move.line.
+           By default, it returns an amount in the currency of this journal entry (maybe different
+           of the company currency), but if you pass 'residual_in_company_currency' = True in the
+           context then the returned amount will be in company currency.
+        """
+        res = {}
+        if context is None:
+            context = {}
+        cur_obj = self.pool.get('res.currency')
+        for move_line in self.browse(cr, uid, ids, context=context):
+            res[move_line.id] = {
+                'amount_residual': 0.0,
+                'amount_residual_currency': 0.0,
+                'amount_balance':0,
+            }
+
+            if move_line.reconcile_id:
+                continue
+            if not move_line.account_id.type in ('payable', 'receivable'):
+                #this function does not suport to be used on move lines not related to payable or receivable accounts
+                continue
+
+            if move_line.currency_id:
+                move_line_total = move_line.amount_currency
+                sign = move_line.amount_currency < 0 and -1 or 1
+            else:
+                move_line_total = move_line.debit - move_line.credit
+                sign = (move_line.debit - move_line.credit) < 0 and -1 or 1
+            line_total_in_company_currency =  move_line.debit - move_line.credit
+            context_unreconciled = context.copy()
+            if move_line.reconcile_partial_id:
+                for payment_line in move_line.reconcile_partial_id.line_partial_ids:
+                    if payment_line.id == move_line.id:
+                        continue
+                    if payment_line.currency_id and move_line.currency_id and payment_line.currency_id.id == move_line.currency_id.id:
+                            move_line_total += payment_line.amount_currency
+                    else:
+                        if move_line.currency_id:
+                            context_unreconciled.update({'date': payment_line.date})
+                            amount_in_foreign_currency = cur_obj.compute(cr, uid, move_line.company_id.currency_id.id, move_line.currency_id.id, (payment_line.debit - payment_line.credit), round=False, context=context_unreconciled)
+                            move_line_total += amount_in_foreign_currency
+                        else:
+                            move_line_total += (payment_line.debit - payment_line.credit)
+                    line_total_in_company_currency += (payment_line.debit - payment_line.credit)
+
+            result = move_line_total
+            res[move_line.id]['amount_residual_currency'] =  sign * (move_line.currency_id and self.pool.get('res.currency').round(cr, uid, move_line.currency_id, result) or result)
+            res[move_line.id]['amount_residual'] = sign * line_total_in_company_currency
+            res[move_line.id]['amount_balance']= line_total_in_company_currency
+            print res[move_line.id]['amount_balance'] 
+        return res
+    
+    
+    _columns = {
+        'instrument_number':fields.char('Instrument', size=64),
+        'bank': fields.many2one('res.bank','Banque'),
+        'amount_balance': fields.function(_amount_residual, method=True, string='Solde', multi="residual"),
+    }
+account_move_line()
+
+class account_move(osv.osv):
+    _inherit = 'account.move'
+    
+    _columns = {
+        'ref': fields.char('Reference', size=64,fnct_search=True),
+        }
+account_move()
+
+
+class res_users(osv.osv):
+    _inherit = 'res.users'
+    _columns = {
+        'location':fields.many2one('stock.location','Emplacement'),
+        'shop':fields.many2one('sale.shop','Souche'),
+    }
+res_users()

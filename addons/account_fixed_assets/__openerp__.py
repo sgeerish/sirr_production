@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_fixed_assets/__openerp__.py

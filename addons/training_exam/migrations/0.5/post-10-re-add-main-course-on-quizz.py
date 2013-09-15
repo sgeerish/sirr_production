@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training_exam/migrations/0.5/post-10-re-add-main-course-on-quizz.py

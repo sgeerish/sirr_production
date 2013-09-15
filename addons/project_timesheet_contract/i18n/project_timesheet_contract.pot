@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/project_timesheet_contract/i18n/project_timesheet_contract.pot

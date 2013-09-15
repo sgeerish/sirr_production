@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_financial_report/wizard/wizard_invoice_list_report.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/django/example/xml-rpc-test.py

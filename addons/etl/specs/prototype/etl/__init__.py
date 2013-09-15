@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl/specs/prototype/etl/__init__.py

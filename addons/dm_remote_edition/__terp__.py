@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_remote_edition/__terp__.py

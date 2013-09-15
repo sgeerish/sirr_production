@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/fashion/wizard/__init__.py

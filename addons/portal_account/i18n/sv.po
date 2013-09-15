@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/portal_account/i18n/sv.po

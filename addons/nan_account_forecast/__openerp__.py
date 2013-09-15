@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/nan_account_forecast/__openerp__.py

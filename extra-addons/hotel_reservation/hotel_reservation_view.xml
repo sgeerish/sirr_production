@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+        <menuitem name="Reservations" 
+                  id="menu_hotel_reservation" 
+                  parent="hotel.hotel_management_menu"
+                  sequence="0"/>
+    <!--============================================================
+                                Reservation
+        ============================================================ -->
+
+        <record id="view_hotel_reservation_filter" model="ir.ui.view">
+            <field name="name">hotel.reservation.search.form</field>
+            <field name="model">hotel.reservation</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Reservation">
+                   <filter string="Draft" icon="terp-document-new" domain="[('state','=','draft')]"/>
+                   <filter string="Reserved" icon="terp-check" domain="[('state','=','confirm')]"/>
+                   <filter string="Created Folio" icon="terp-dialog-close" domain="[('state','=','done')]"/>
+                   <separator orientation="vertical"/>
+                   <field name="reservation_no" />
+                   <field name="partner_id" />
+                   <field name="date_order" />
+                   <newline/>
+                   <group expand="0" string="Extended Filters..." colspan="4" col="4" groups="base.group_extended">
+                       <field name="checkin" />
+                       <field name="checkout" />
+                   </group>
+                   <newline/>
+                   <group expand='0' string='Group by...' groups="base.group_extended">
+                       <filter string='Guest' icon="terp-stock_symbol-selection" domain="[]" context="{'group_by' : 'partner_id'}" />
+                       <filter string='Creation' icon="terp-go-month" domain="[]" context="{'group_by' : 'date_order'}" />
+                       <filter string='Shop' icon="terp-stock_symbol-selection" domain="[]" context="{'group_by' : 'shop_id'}" />
+                   </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_hotel_reservation_form">
+            <field name="name">hotel.reservation.form</field>
+            <field name="model">hotel.reservation</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Reservation">
+                <notebook>
+                    <page string="Reservation">
+                        <field name="reservation_no" colspan="1"/>
+                        <field name="date_order" select="1"/>
+                        <field name="shop_id" select="2"/>
+                        <field name="pricelist_id"/>
+                        <field name="partner_id" on_change="onchange_partner_id(partner_id)" select="1"/>
+                        <field name="partner_order_id" domain="[('partner_id','=',partner_id)]"/>
+                        <field name="partner_invoice_id" domain="[('partner_id','=',partner_id)]"/>
+                        <field name="partner_shipping_id" domain="[('partner_id','=',partner_id)]"/>
+                        <field name="checkin" colspan="1"/>
+                        <field name="checkout" on_change="on_change_checkout(checkin,checkout)"/>
+                        <field name="adults"/>
+                        <field name="childs"/>
+                        <field name="agent"/>
+                        <field name="billing"/>
+                        <field name="reservation_line" colspan="4" nolabel="1" default_get="{'checkin': checkin,'checkout':checkout}">
+                            <form string="Reservation Line">
+                                <separator string="Room"/>
+								<newline/>
+                                <field name="product_id" select="1" on_change="product_id_change(parent.pricelist_id,product_id,product_uom_qty,product_uom,product_uos_qty,product_uos,name,parent.partner_id, 'lang' in context and context['lang'], True, parent.date_order, product_packaging, parent.fiscal_position, False,parent.agent)"/>
+                                <field name="categ_id" select="1" />
+
+								<newline/>
+
+                                <field name="price_unit" />
+                                <field name="cost_price" />
+
+								<newline/>
+
+                                <field name="tax_id" />
+
+                            </form>
+                            <tree string="Reservation Line">
+                                <field name="product_id" />
+                                <field name="categ_id" />
+                                <field name="price_unit" />
+                            </tree>
+                        </field>
+                        <group colspan="4">
+                            <field name="state"/>
+                            <button name="confirm" string="Confirm" states="draft"/>
+                            <button name="done" string="Generate Guest Register" states="confirm"/>
+                        </group>
+                    </page>
+                </notebook>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_hotel_reservation_tree">
+            <field name="name">hotel.reservation.tree</field>
+            <field name="model">hotel.reservation</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Reservation" colors="blue:state=='draft' and checkin==current_date;red:state=='confirm' and checkout==current_date">
+                    <field name="reservation_no"/>
+                    <field name="date_order" />
+                    <field name="partner_id" select="1"/>
+                    <field name="checkin"/>
+                    <field name="checkout"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_hotel_reservation_graph">
+            <field name="name">hotel.reservation.graph</field>
+            <field name="model">hotel.reservation</field>
+            <field name="type">graph</field>
+            <field name="arch" type="xml">
+                <graph string="Reservation" type="bar">
+                    <field name="state"/>
+                    <field name="reservation_no"/>
+                </graph>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="hotel_reservation_calendar_view">
+            <field name="name">Room Reservation</field>
+            <field name="model">hotel.reservation</field>
+            <field name="type">calendar</field>
+            <field name="priority" eval="2"/>
+            <field name="arch" type="xml">
+               <calendar string="Current Reservation" date_start="checkin" date_stop="checkout" color="state" >
+                    <field name="partner_id"/>
+                    <field name="product_id"/>
+               </calendar>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="open_hotel_reservation_form_tree">
+            <field name="name">Reservation</field>
+            <field name="res_model">hotel.reservation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,graph,calendar</field>
+            <field name="search_view_id" ref="view_hotel_reservation_filter"/>
+        </record>
+
+        <menuitem name="Reservations"
+                  id="menu_open_hotel_reservation_form_tree" 
+                  action="open_hotel_reservation_form_tree"
+                  parent="menu_hotel_reservation"/>
+
+        <record model="ir.ui.view" id="hotel_reservation_line_calendar_view">
+            <field name="name">Room Reservations</field>
+            <field name="model">hotel_reservation.line</field>
+            <field name="type">calendar</field>
+            <field name="priority" eval="2"/>
+            <field name="arch" type="xml">
+               <calendar string="Reservations" date_start="checkin" date_stop="checkout" color="state" >
+                    <field name="product_id"/>
+                    <field name="partner_id"/>
+               </calendar>
+            </field>
+        </record>
+    </data>
+</openerp>

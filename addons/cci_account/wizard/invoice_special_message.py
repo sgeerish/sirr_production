@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_account/wizard/invoice_special_message.py

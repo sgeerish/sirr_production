@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/google_translate/wizard/term_translate.py

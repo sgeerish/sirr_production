@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training/migrations/0.4/pre-40-drop-views.py

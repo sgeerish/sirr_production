@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_brand/product_brand.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/marketing/__terp__.py

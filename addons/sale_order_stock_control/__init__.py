@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sale_order_stock_control/__init__.py

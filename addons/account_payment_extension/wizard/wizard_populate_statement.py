@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_payment_extension/wizard/wizard_populate_statement.py

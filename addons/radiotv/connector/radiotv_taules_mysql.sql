@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/radiotv/connector/radiotv_taules_mysql.sql

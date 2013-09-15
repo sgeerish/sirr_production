@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/reverse_bom/wizard/mrp_bom_reverted.py

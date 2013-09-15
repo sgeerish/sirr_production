@@ -1,0 +1,897 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Medical\n"
+"Report-Msgid-Bugs-To: https://sourceforge.net/apps/mantisbt/medical\n"
+"POT-Creation-Date: 2010-12-05 21:35:20+0000\n"
+"PO-Revision-Date: 2011-02-05 18:31+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: Vietnamese <None>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,legal_status:0
+msgid "Illegal"
+msgstr "Bất hợp pháp"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,dea_schedule_v:0
+msgid "V"
+msgstr "V"
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Smoking and Alcohol"
+msgstr "Hút thuốc lá và rượu"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,route_sniffing:0
+msgid "Also called snorting - inhaling through the nares  "
+msgstr "  "
+
+#. module: medical_lifestyle
+#: help:medical.patient,age_start_drugs:0
+msgid "Age of start drugs"
+msgstr "Tuổi bắt đầu dùng thuốc"
+
+#. module: medical_lifestyle
+#: help:medical.patient,age_quit_drinking:0
+msgid "Date to stop drinking"
+msgstr "Ngày ngưng uống rượu"
+
+#. module: medical_lifestyle
+#: help:medical.patient,sex_with_prostitutes:0
+msgid "Check if the patient (he or she) has sex with prostitutes"
+msgstr "Đánh dấu nếu bệnh nhân có quan hệ tình dục với gái mại dâm"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,street_name:0
+msgid "Street names"
+msgstr "Tên lóng đường phố"
+
+#. module: medical_lifestyle
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Tên mô hình không hợp lệ trong định nghĩa hành động"
+
+#. module: medical_lifestyle
+#: field:medical.patient,age_quit_drugs:0
+msgid "Age quit drugs "
+msgstr "Tuổi ngưng sử dụng thuốc "
+
+#. module: medical_lifestyle
+#: field:medical.patient,sex_oral:0
+msgid "Oral Sex"
+msgstr "Khẩu dâm"
+
+#. module: medical_lifestyle
+#: field:medical.patient,number_of_meals:0
+msgid "Meals per day"
+msgstr "Số bữa ăn mỗi ngày"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,route_injection:0
+msgid "Injection - Intravenous, Intramuscular..."
+msgstr "Tiêm - Ven, bắp, ..."
+
+#. module: medical_lifestyle
+#: field:medical.patient,car_child_safety:0
+msgid "Car Child Safety"
+msgstr "An toàn giao thông cho trẻ em"
+
+#. module: medical_lifestyle
+#: help:medical.patient,sleep_during_daytime:0
+msgid "Check if the patient sleep hours are during daylight rather than at night"
+msgstr "Đánh dấu nếu bệnh nhân thường ngủ vào ban ngày hơn là ban đêm không"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,reinforcement_level:0
+msgid ""
+"A measure of the substance's ability to get users to take it again and again, and in preference to other substances.\n"
+"Using Henningfield rating. 1=highest and 6=lowest"
+msgstr ""
+"Một thước đo về khả năng gây nghiện của chất để người sử dụng dùng đi dùng lại và với độ ưu tiên hơn với các chất khác.\n"
+"Sử dụng thang đánh giá Henningfield. 1=cao nhất, 6=thấp nhất"
+
+#. module: medical_lifestyle
+#: field:medical.patient,salt:0
+msgid "Salt"
+msgstr "Muối"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Skin Patch"
+msgstr "Vết đốm trên da"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Female sterilisation"
+msgstr "Khử trùng nữ"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,category:0
+msgid "Others"
+msgstr "Khác"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,route_injection:0
+msgid "Injection"
+msgstr "Tiêm"
+
+#. module: medical_lifestyle
+#: field:medical.patient,prostitute:0
+msgid "Prostitute"
+msgstr "Gái mại dâm"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sex_anal:0 selection:medical.patient,sex_oral:0
+msgid "Both"
+msgstr "Cả hai"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,category:0
+msgid "Opioids"
+msgstr "Thuốc phiện/Ma túy"
+
+#. module: medical_lifestyle
+#: help:medical.patient,traffic_laws:0
+msgid "Check if the patient is a safe driver"
+msgstr "Đánh dấu nếu bệnh nhân là một người lái xe an toàn"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,category:0
+msgid "Depressants"
+msgstr "Trầm cảm"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Pill / Minipill"
+msgstr "Pill / Minipill"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,reinforcement_level:0
+msgid "Reinforcement"
+msgstr "Mức kiên cố"
+
+#. module: medical_lifestyle
+#: view:medical.drugs_recreational:0
+msgid "Administration Routes"
+msgstr "Đường dùng"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_partners:0
+msgid "Monogamous"
+msgstr "Một vợ, một chồng"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,addiction_level:0
+#: selection:medical.drugs_recreational,toxicity:0
+#: selection:medical.patient,anticonceptive:0
+#: selection:medical.patient,sex_anal:0 selection:medical.patient,sex_oral:0
+msgid "None"
+msgstr "Không"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sexual_partners_number:0
+msgid "Number of sexual partners"
+msgstr "Số lượng bạn tình"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,tolerance_level:0
+msgid ""
+"How much of the substance is needed to satisfy increasing cravings for it, and the level of stable need that is eventually reached.\n"
+"Using Henningfield rating. 1=highest and 6=lowest"
+msgstr ""
+"Mức độ Lượng cần thiết để đáp ứng cơn thèm thuốc ngày càng tăng, và mức độ cuối cùng đạt được cho nhu cầu ổn định.\n"
+"Sử dụng thang đánh giá Henningfield. 1=cao nhất, 6=thấp nhất"
+
+#. module: medical_lifestyle
+#: help:medical.patient,excercise_minutes_day:0
+msgid "How many minutes a day the patient excersises"
+msgstr "Mỗi ngày bệnh nhân luyện tập bao nhiêu phút?"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Fertility cycle awareness"
+msgstr "Nhận thức chu kỳ sinh sản"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Withdrawal method"
+msgstr "Phương pháp rút "
+
+#. module: medical_lifestyle
+#: field:medical.patient,ex_smoker:0
+msgid "Ex-smoker"
+msgstr "Đã bỏ thuốc lá"
+
+#. module: medical_lifestyle
+#: help:medical.patient,drugs:0
+msgid "Name of drugs that the patient consumes"
+msgstr "Tên các loại thuốc mà bệnh nhân đang dùng"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,info:0
+msgid "Extra Info"
+msgstr "Thông tin thêm"
+
+#. module: medical_lifestyle
+#: field:medical.patient,lifestyle_info:0
+#: field:medical.patient,sexuality_info:0
+msgid "Extra Information"
+msgstr "Thông tin thêm"
+
+#. module: medical_lifestyle
+#: model:ir.actions.act_window,name:medical_lifestyle.medical_action_drugs_recreational
+#: model:ir.ui.menu,name:medical_lifestyle.medical_conf_drugs_recreational
+#: view:medical.drugs_recreational:0 view:medical.patient:0
+msgid "Recreational Drugs"
+msgstr "Thuốc kích thích"
+
+#. module: medical_lifestyle
+#: field:medical.patient,age_start_drinking:0
+msgid "Age started to drink "
+msgstr "Tuổi bắt đầu uống rượu/bia "
+
+#. module: medical_lifestyle
+#: field:medical.patient,drug_iv:0
+msgid "IV drug user"
+msgstr "người dùng thuốc dạng tiêm ven"
+
+#. module: medical_lifestyle
+#: help:medical.patient,soft_drinks:0
+msgid "Check if the patient consumes soft drinks with sugar"
+msgstr "Đánh dấu nếu bệnh nhân có tiêu thụ nước giải khát có gas có đường không"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sex_anal:0
+msgid "Anal Sex"
+msgstr "Quan hệ tình dục qua đường hậu môn"
+
+#. module: medical_lifestyle
+#: help:medical.patient,age_quit_smoking:0
+msgid "Age of quitting smoking"
+msgstr "Tuổi ngưng hút thuốc"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,dea_schedule_i:0
+msgid "DEA schedule I"
+msgstr "DEA schedule I"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_preferences:0
+msgid "Transexual"
+msgstr "Chuyển giới tính"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Male condom"
+msgstr "Bao cao su nam"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,legal_status:0
+msgid "Legal"
+msgstr "Hợp pháp"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,dea_schedule_i:0
+#: help:medical.drugs_recreational,dea_schedule_ii:0
+#: help:medical.drugs_recreational,dea_schedule_iii:0
+#: help:medical.drugs_recreational,dea_schedule_iv:0
+#: help:medical.drugs_recreational,dea_schedule_v:0
+msgid "Schedule I and II drugs have a high potential for abuse. They require greater storage security and have a quota on manufacturing, among other restrictions. Schedule I drugs are available for research only and have no approved medical use; Schedule II drugs are available only by prescription (unrefillable) and require a form for ordering. Schedule III and IV drugs are available by prescription, may have five refills in 6 months, and may be ordered orally. Some Schedule V drugs are available over the counter"
+msgstr "Schedule I and II drugs have a high potential for abuse. They require greater storage security and have a quota on manufacturing, among other restrictions. Schedule I drugs are available for research only and have no approved medical use; Schedule II drugs are available only by prescription (unrefillable) and require a form for ordering. Schedule III and IV drugs are available by prescription, may have five refills in 6 months, and may be ordered orally. Some Schedule V drugs are available over the counter"
+
+#. module: medical_lifestyle
+#: help:medical.patient,helmet:0
+msgid "The patient uses the proper motorcycle helmet"
+msgstr "Bệnh nhân sử dụng mũ bảo hiểm đạt tiêu chuẩn dành cho xe máy"
+
+#. module: medical_lifestyle
+#: help:medical.patient,second_hand_smoker:0
+msgid "Check it the patient is a passive / second-hand smoker"
+msgstr "Kiểm tra xem bệnh nhân có phải là người hút thuốc thụ động"
+
+#. module: medical_lifestyle
+#: view:medical.drugs_recreational:0
+msgid "Search Recreational Drugs"
+msgstr "Tìm kiếm thuốc kích thích"
+
+#. module: medical_lifestyle
+#: model:ir.module.module,shortdesc:medical_lifestyle.module_meta_information
+msgid "Medical : Lifestyle"
+msgstr "Y khoa : Lối sống"
+
+#. module: medical_lifestyle
+#: field:medical.patient,coffee_cups:0
+msgid "Cups per day"
+msgstr "Ly/ngày"
+
+#. module: medical_lifestyle
+#: help:medical.patient,diet_info:0
+msgid "Short description on the diet"
+msgstr "Mô tả ngắn gọn về chế độ dinh dưỡng"
+
+#. module: medical_lifestyle
+#: field:medical.patient,coffee:0
+msgid "Coffee"
+msgstr "Café"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_preferences:0
+msgid "Homosexual"
+msgstr "Đồng tính"
+
+#. module: medical_lifestyle
+#: view:medical.drugs_recreational:0
+msgid "DEA Schedule Level"
+msgstr "Mức độ của DEA"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sleep_during_daytime:0
+msgid "Sleeps at daytime"
+msgstr "Ngủ ban ngày"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_partners:0
+msgid "Polygamous"
+msgstr "Đa thê/đa phu/đa phối"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sexual_preferences:0
+msgid "Sexual Preferences"
+msgstr "Sở thích tình dục"
+
+#. module: medical_lifestyle
+#: field:medical.patient,eats_alone:0
+msgid "Eats alone"
+msgstr "Ăn một mình"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,intoxication_level:0
+msgid "Intoxication"
+msgstr "Độ độc hại"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,withdrawal_level:0
+msgid ""
+"Presence and severity ofcharacteristic withdrawal symptoms.\n"
+"Using Henningfield rating. 1=highest and 6=lowest"
+msgstr ""
+"Sự hiện diện và mức độ nghiêm trọng của triệu chứng từ bỏ thuốc đặc trưng.\n"
+"Sử dụng thang đánh giá Henningfield. 1=cao nhất, 6=thấp nhất"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,addiction_level:0
+#: selection:medical.drugs_recreational,toxicity:0
+msgid "Extreme"
+msgstr "Quá mức"
+
+#. module: medical_lifestyle
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML không hợp lệ cho Kiến trúc Xem!"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,route_popping:0
+msgid "Subcutaneous or Intradermical administration"
+msgstr "Subcutaneous or Intradermical administration"
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Lifestyle"
+msgstr "Lối sống"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,route_inhaling:0
+msgid "Insufflation, exluding nasal"
+msgstr "Hít vào, không dùng mũi"
+
+#. module: medical_lifestyle
+#: help:medical.patient,drug_iv:0
+msgid "Check this option if the patient injects drugs"
+msgstr "Đánh dấu nếu bệnh nhân tiêm thuốc kích thích"
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Other sexual practices"
+msgstr "Các thực hành tình dục khác"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,route_sniffing:0
+msgid "Sniffing"
+msgstr "Hít"
+
+#. module: medical_lifestyle
+#: field:medical.patient,age_quit_drinking:0
+msgid "Age quit drinking "
+msgstr "Tuổi ngưng uống rượu"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,category:0
+msgid "Cannabinoids"
+msgstr "Cannabinoids"
+
+#. module: medical_lifestyle
+#: field:medical.patient,smoking_number:0
+msgid "Cigarretes a day"
+msgstr "Số điếu thuốc lá một ngày"
+
+#. module: medical_lifestyle
+#: field:medical.patient,alcohol:0
+msgid "Drinks Alcohol"
+msgstr "Uống bia rượu"
+
+#. module: medical_lifestyle
+#: field:medical.patient,ex_drug_addict:0
+msgid "Ex drug addict"
+msgstr "Đã từng nghiện thuốc kích thích"
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Safety and extra info"
+msgstr "An toàn và thông tin bổ sung"
+
+#. module: medical_lifestyle
+#: field:medical.patient,anticonceptive:0
+msgid "Anticonceptive Method"
+msgstr "Phương pháp ngừa thai"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_preferences:0
+msgid "Bisexual"
+msgstr "Lưỡng tính"
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Extra info about the patient sexuality"
+msgstr "Thông tin bổ sung về hoạt động tình dục của bệnh nhân"
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Prostitution"
+msgstr "Mại dâm"
+
+#. module: medical_lifestyle
+#: field:medical.patient,traffic_laws:0
+msgid "Obeys Traffic Laws"
+msgstr "Tuân thủ luật giao thông"
+
+#. module: medical_lifestyle
+#: help:medical.patient,coffee_cups:0
+msgid "Number of cup of coffee a day"
+msgstr "Số lượng ly cà phê một ngày"
+
+#. module: medical_lifestyle
+#: field:medical.patient,diet:0
+msgid "Currently on a diet"
+msgstr "Hiện tại đang theo chế độ ăn kiêng "
+
+#. module: medical_lifestyle
+#: help:medical.patient,age_quit_drugs:0
+msgid "Date of quitting drugs"
+msgstr "Ngày ngưng sử dụng thuốc"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,category:0
+msgid "Category"
+msgstr "Loại"
+
+#. module: medical_lifestyle
+#: field:medical.patient,alcohol_liquor_number:0
+msgid "Liquor / day"
+msgstr "Rượu /ngày"
+
+#. module: medical_lifestyle
+#: field:medical.patient,first_sexual_encounter:0
+msgid "Age first sexual encounter"
+msgstr "Tuổi quan hệ tình dục lần đầu tiên"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_practices:0
+msgid "Risky / Unprotected sex"
+msgstr "Tình dục không an toàn/không bảo vệ"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sex_anal:0 selection:medical.patient,sex_oral:0
+msgid "Passive"
+msgstr "Âm tính"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sexual_partners:0
+msgid "Sexual Partners"
+msgstr "Những người có quan hệ tình dục"
+
+#. module: medical_lifestyle
+#: field:medical.patient,second_hand_smoker:0
+msgid "Passive smoker"
+msgstr "Người hút thuốc thụ động"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_preferences:0
+msgid "Heterosexual"
+msgstr "Tình dục hướng giới tính khác."
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,addiction_level:0
+#: selection:medical.drugs_recreational,toxicity:0
+msgid "Low"
+msgstr "Thấp"
+
+#. module: medical_lifestyle
+#: constraint:ir.ui.menu:0
+msgid "Error ! You can not create recursive Menu."
+msgstr "Lỗi ! Bạn không thể tạo trình đơn đệ quy."
+
+#. module: medical_lifestyle
+#: field:medical.patient,motorcycle_rider:0
+msgid "Motorcycle Rider"
+msgstr "Đi xe máy"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,route_popping:0
+msgid "Skin Popping"
+msgstr "Skin Popping"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,name:0
+msgid "Name of the drug"
+msgstr "Tên thuốc kích thích"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,category:0
+msgid "Dissociative Anesthetics"
+msgstr "Dissociative Anesthetics"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Intra-uterine device"
+msgstr "Thiết bị trong tử cung"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sexual_practices:0
+msgid "Sexual Practices"
+msgstr "Thói quen quan hệ tình dục"
+
+#. module: medical_lifestyle
+#: field:medical.patient,drugs:0
+msgid "Drugs"
+msgstr "Thuốc/Ma túy"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sex_with_prostitutes:0
+msgid "Sex with prostitutes"
+msgstr "Quan hệ tình dục với gái mại dâm"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sex_anal:0 selection:medical.patient,sex_oral:0
+msgid "Active"
+msgstr "Có hiệu lực"
+
+#. module: medical_lifestyle
+#: model:ir.module.module,description:medical_lifestyle.module_meta_information
+msgid ""
+"\n"
+"\n"
+"Gathers information about the habits and sexuality of the patient\n"
+"\n"
+"- Eating habits and diets\n"
+"- Sleep patterns\n"
+"- Drug / alcohol addictions\n"
+"- Physical activity (workout / excercise )\n"
+"- Sexuality and sexual behaviours\n"
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"\"Thu thập thông tin về thói quen và tình dục của bệnh nhân\"\n"
+"\n"
+"- Thói quen ăn uống và chế độ ăn kiêng\n"
+"- Thói quen ngủ\n"
+"- Nghiện ma túy / rượu\n"
+"- Hoạt động thể chất (vận động / tập thể dục)\n"
+"- Tình dục và hành vi tình dục\n"
+"\n"
+"\n"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,legal_status:0
+msgid "Legal Status"
+msgstr "Tình trạng pháp lý"
+
+#. module: medical_lifestyle
+#: help:medical.patient,age_start_drinking:0
+msgid "Date to start drinking"
+msgstr "Ngày bắt đầu uống rượu"
+
+#. module: medical_lifestyle
+#: help:medical.patient,prostitute:0
+msgid "Check if the patient (he or she) is a prostitute"
+msgstr "Đánh dấu nếu bệnh nhân làm nghề mại dâm"
+
+#. module: medical_lifestyle
+#: help:medical.patient,car_seat_belt:0
+msgid "Safety measures when driving : safety belt"
+msgstr "Các biện pháp an toàn khi lái xe: đai an toàn"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,intoxication_level:0
+msgid ""
+"the level of intoxication is associated with addiction and increases the personal and social damage a substance may do. \n"
+"Using Henningfield rating. 1=highest and 6=lowest"
+msgstr ""
+"mức độ nhiễm độc có liên quan đến nghiện và làm tăng thiệt hại cá nhân và xã hội mà một chất có thể làm. \n"
+"Sử dụng thang đánh giá Henningfield. 1=cao nhất, 6=thấp nhất"
+
+#. module: medical_lifestyle
+#: field:medical.patient,smoking:0
+msgid "Smokes"
+msgstr "Hút thuốc lá"
+
+#. module: medical_lifestyle
+#: field:medical.patient,car_revision:0
+msgid "Car Revision"
+msgstr "Thay đổi xe"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sleep_hours:0
+msgid "Hours of sleep"
+msgstr "Thời gian ngủ (giờ)"
+
+#. module: medical_lifestyle
+#: field:medical.patient,age_start_smoking:0
+msgid "Age started to smoke"
+msgstr "Tuổi bắt đầu hút thuốc"
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Sexuality"
+msgstr "Tình dục"
+
+#. module: medical_lifestyle
+#: field:medical.patient,home_safety:0
+msgid "Home safety"
+msgstr "An ninh gia đình"
+
+#. module: medical_lifestyle
+#: field:medical.patient,age_start_drugs:0
+msgid "Age started drugs "
+msgstr "Tuổi bắt đầu sử dụng thuốc "
+
+#. module: medical_lifestyle
+#: field:medical.patient,excercise:0
+msgid "Excersise"
+msgstr "Luyện tập"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,toxicity:0
+msgid "Toxicity"
+msgstr "Độc tính"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,route_oral:0
+msgid "Oral"
+msgstr "Miệng"
+
+#. module: medical_lifestyle
+#: field:medical.patient,car_seat_belt:0
+msgid "Seat belt"
+msgstr "Đai an toàn"
+
+#. module: medical_lifestyle
+#: help:medical.patient,diet:0
+msgid "Check if the patient is currently on a diet"
+msgstr "Đánh dấu nếu bệnh nhân đang thực hiện chế độ ăn kiêng"
+
+#. module: medical_lifestyle
+#: field:medical.patient,alcohol_beer_number:0
+msgid "Beer / day"
+msgstr "Bia / ngày"
+
+#. module: medical_lifestyle
+#: view:medical.drugs_recreational:0
+msgid "General Information"
+msgstr "Thông tin tổng quát"
+
+#. module: medical_lifestyle
+#: field:medical.patient,ex_alcoholic:0
+msgid "Ex alcoholic"
+msgstr "Đã từng nghiện rượu"
+
+#. module: medical_lifestyle
+#: field:medical.patient,drug_usage:0
+msgid "Drug Habits"
+msgstr "Thói quen dùng thuốc"
+
+#. module: medical_lifestyle
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Tên phải được bắt đầu bằng x_ và không bao gồm bất kỳ ký tự đặc biệt nào !"
+
+#. module: medical_lifestyle
+#: help:medical.patient,home_safety:0
+msgid "Keep safety measures for kids in the kitchen, correct storage of chemicals, ..."
+msgstr "Giữ biện pháp an toàn cho trẻ em trong nhà bếp, lưu trữ chính xác của hóa chất, v.v."
+
+#. module: medical_lifestyle
+#: field:medical.patient,alcohol_wine_number:0
+msgid "Wine / day"
+msgstr "Rượu / Ngày"
+
+#. module: medical_lifestyle
+#: field:medical.patient,excercise_minutes_day:0
+msgid "Minutes / day"
+msgstr "Phút / ngày"
+
+#. module: medical_lifestyle
+#: model:ir.model,name:medical_lifestyle.model_medical_drugs_recreational
+msgid "medical.drugs_recreational"
+msgstr "medical.drugs_recreational"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_practices:0
+msgid "Safe / Protected sex"
+msgstr "Quan hệ tình dục an toàn/có bảo vệ"
+
+#. module: medical_lifestyle
+#: help:medical.patient,salt:0
+msgid "Check if patient consumes salt with the food"
+msgstr "Đánh dấu nếu bệnh nhân có tiêu thụ muối với thực phẩm"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,addiction_level:0
+#: field:medical.drugs_recreational,dependence_level:0
+msgid "Dependence"
+msgstr "Phụ thuộc"
+
+#. module: medical_lifestyle
+#: view:medical.drugs_recreational:0
+msgid "Additional Info and Effects"
+msgstr "Thông tin thêm và hiệu ứng"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,tolerance_level:0
+msgid "Tolerance"
+msgstr "Mức độ chịu thuốc"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,dependence_level:0
+msgid ""
+"How difficult it is for the user to quit, the relapse rate, the percentage of people who eventually become dependent, the rating users give their own need for the substance and the degree to which the substance will be used in the face of evidence that it causes harm.\n"
+"Using Henningfield rating. 1=highest and 6=lowest"
+msgstr ""
+"Mức độ khó khăn cho người sử dụng để từ bỏ, tỷ lệ tái nghiện, tỷ lệ phần trăm của những người cuối cùng trở nên phụ thuộc, người dùng tự đánh giá theo nhu cầu riêng của họ cho các chất và mức độ mà các chất này sẽ được sử dụng khi đối mặt với bằng chứng là nó gây hại.\n"
+"Sử dụng thang đánh giá Henningfield. 1=cao nhất, 6=thấp nhất"
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Physical Excersise, Eating habits and Sleep"
+msgstr "Vận động thể chất, thói quen ăn uống và ngủ"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,dea_schedule_iii:0
+msgid "III"
+msgstr "III"
+
+#. module: medical_lifestyle
+#: help:medical.patient,eats_alone:0
+msgid "Check this box if the patient eats by him / herself."
+msgstr "Đánh dấu nếu bệnh nhân tự ăn"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,category:0
+msgid "Hallucinogens"
+msgstr "Chất gây ảo giác"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,name:0
+msgid "Name"
+msgstr "Tên"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,route_inhaling:0
+msgid "Smoke / Inhale"
+msgstr "Hút / Hít"
+
+#. module: medical_lifestyle
+#: field:medical.patient,age_quit_smoking:0
+msgid "Age of quitting"
+msgstr "Tuổi ngưng sử dụng"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,dea_schedule_iv:0
+msgid "IV"
+msgstr "IV"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,dea_schedule_ii:0
+msgid "II"
+msgstr "II"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Contraceptive injection"
+msgstr "Tiêm thuốc tránh thụ thai"
+
+#. module: medical_lifestyle
+#: help:medical.patient,motorcycle_rider:0
+msgid "The patient rides motorcycles"
+msgstr "Bệnh nhân lái xe gắn máy"
+
+#. module: medical_lifestyle
+#: help:medical.patient,car_revision:0
+msgid "Maintain the vehicle. Do periodical checks - tires, engine, breaks ..."
+msgstr "Bảo dưỡng xe cộ. Thực hiện kiểm tra định kỳ - lốp, động cơ, phanh ..."
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,withdrawal_level:0
+msgid "Withdrawal"
+msgstr "Rút lui"
+
+#. module: medical_lifestyle
+#: help:medical.patient,sleep_hours:0
+msgid "Average hours of sleep per day"
+msgstr "Số giờ ngủ trung bình mỗi ngày"
+
+#. module: medical_lifestyle
+#: field:medical.patient,soft_drinks:0
+msgid "Soft drinks (sugar)"
+msgstr "Nước giải khát (có đường)"
+
+#. module: medical_lifestyle
+#: view:medical.drugs_recreational:0
+msgid "Henningfield Rating"
+msgstr "Thang Henningfield"
+
+#. module: medical_lifestyle
+#: field:medical.patient,helmet:0
+msgid "Uses helmet"
+msgstr "Sử dụng mũ bảo hiểm"
+
+#. module: medical_lifestyle
+#: help:medical.patient,car_child_safety:0
+msgid "Safety measures when driving : child seats, proper seat belting, not seating on the front seat, ...."
+msgstr "Các biện pháp an toàn khi lái xe: ghế ngồi cho trẻ em, cài dây an toàn đúng quy định, không ngồi trên ghế trước, ...."
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Female condom"
+msgstr "Bao cao su nữ"
+
+#. module: medical_lifestyle
+#: field:medical.patient,diet_info:0
+msgid "Diet info"
+msgstr "Thông tin về chê độ dinh dưỡng"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,addiction_level:0
+#: selection:medical.drugs_recreational,toxicity:0
+msgid "High"
+msgstr "Cao"
+
+#. module: medical_lifestyle
+#: model:ir.model,name:medical_lifestyle.model_medical_patient
+msgid "Patient related information"
+msgstr "Thông tin liên quan đến bệnh nhân"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Vasectomy"
+msgstr "Thắt ống dẫn tinh"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,category:0
+msgid "Stimulants"
+msgstr "Chất kích thích"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,street_name:0
+msgid "Common name of the drug in street jargon"
+msgstr "Tên thông dụng của thuốc trong biệt ngữ đường phố"

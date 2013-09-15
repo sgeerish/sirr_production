@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="stock_compare_tree_view">
+            <field name="name">stock.compare.tree</field>
+            <field name="model">stock.compare</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+            <tree string="Verifications">
+                    <field name="name"/>
+                    <field name="date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="stock_compare_form_view">
+            <field name="name">stock.compare.form</field>
+            <field name="model">stock.compare</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                    <form string="Verification">
+                    <group col="2" colspan="3">
+                    <field name="name"/>
+                    <field name="date"/>
+                    <newline/>
+                    <field name="product_id" widget="many2many" colspan="1"/>
+                    <button colspan="2" type="object" name="add_product" states="draft" string="Ajouter" icon="gtk-apply"/>
+                    </group>
+                    <newline/>
+                    <field name="stock_line" mode="tree,form" editable="bottom" widget="one2many_list"/>
+                    <newline/>
+                    <button colspan="2" name="confirm_stock" type="object" states="draft" string="Validation Mouvement" icon="gtk-apply"/>
+                    <newline/>
+                    <field name="state"/>
+                </form>
+                </field>
+        </record>
+
+         <record model="ir.ui.view" id="stock_compare_line_tree_view">
+            <field name="name">stock.compare.line.tree</field>
+            <field name="model">stock.compare.line</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+            <tree string="Verification" editable="bottom" colors="red:old_qty>new_qty">
+                    <field name="name"/>
+                    <field name="location_id"/>
+                    <field name="old_qty" sum="Total Depot"/>
+                    <field name="new_qty" sum="Total Physique"/>
+                    <field name="diff" sum="Total Ecart"/>                    
+                </tree>
+            </field>
+        </record>
+        
+        
+        <record model="ir.actions.act_window" id="action_stock_compare_form">
+            <field name="name">stock.compare</field>
+            <field name="res_model">stock.compare</field>
+        </record>
+
+        <menuitem name="Verification Stock" icon="terp-project" id="stock_compare_menu"/>
+
+        <menuitem name="Verifications" parent="stock_compare_menu" id="stock_compare_menu_mainform" action="action_stock_compare_form"/>
+    </data>
+</openerp>

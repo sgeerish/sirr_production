@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/maintenance_editor/wizard/wizard_print_maintenance_contract.py

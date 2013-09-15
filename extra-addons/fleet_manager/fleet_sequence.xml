@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<!-- Fuel Log -->
+		<record model="ir.sequence.type" id="seq_type_fleet_fuel_log">
+			<field name="name">Fuel log entry number</field>
+			<field name="code">fleet.fuel</field>
+
+		</record>
+		<record model="ir.sequence" id="seq_fleet_fuel_log">
+			<field name="name">Fleet Log Voucher</field>
+			<field name="code">fleet.fuel</field>
+			<field name="padding" eval="3" />
+			<field name="prefix">FL/%(year)s/LV</field>
+		</record>
+		<!-- Work Orders -->
+		<record model="ir.sequence.type" id="seq_type_fleet_wo">
+			<field name="name">Work Order No</field>
+			<field name="code">fleet.wo</field>
+
+		</record>
+		<record model="ir.sequence" id="seq_fleet_wo">
+			<field name="name">Fleet Work Order</field>
+			<field name="code">fleet.wo</field>
+			<field name="padding" eval="3" />
+			<field name="prefix">FL/%(year)s/WO</field>
+		</record>
+		<!-- Work Order Tasks -->
+		<record model="ir.sequence.type" id="seq_type_fleet_wo_tasks">
+			<field name="name">Work Order Tasks No</field>
+			<field name="code">fleet.wo.tasks</field>
+
+		</record>
+		<record model="ir.sequence" id="seq_fleet_wo_tasks">
+			<field name="name">Fleet Work Order Tasks</field>
+			<field name="code">fleet.wo.tasks</field>
+			<field name="padding" eval="3" />
+			<field name="prefix">FL/%(year)s/WT</field>
+		</record>
+		<!-- Work Order Tasks Spares Requisition-->
+		<record model="ir.sequence.type" id="seq_type_fleet_wo_tasks_spares">
+			<field name="name">Work Order Tasks Spare Req</field>
+			<field name="code">fleet.wo.tasks.spares</field>
+
+		</record>
+		<record model="ir.sequence" id="seq_fleet_wo_tasks_spares">
+			<field name="name">Fleet Work Order Tasks Spares</field>
+			<field name="code">fleet.wo.tasks.spares</field>
+			<field name="padding" eval="3" />
+			<field name="prefix">FL/%(year)s/WTS</field>
+		</record>
+		<!--Fleet Order-->
+		<record model="ir.sequence.type" id="seq_type_fleet_order">
+			<field name="name">Fleet Order</field>
+			<field name="code">fleet.order</field>
+
+		</record>
+		<record model="ir.sequence" id="seq_fleet_order">
+			<field name="name">Fleet Order</field>
+			<field name="code">fleet.order</field>
+			<field name="padding" eval="3" />
+			<field name="prefix">FL/%(year)s/ORD</field>
+		</record>
+	</data>
+</openerp>

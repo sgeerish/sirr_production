@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_sale_multichannels/wizard/__init__.py

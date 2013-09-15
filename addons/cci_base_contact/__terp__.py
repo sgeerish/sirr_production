@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_base_contact/__terp__.py

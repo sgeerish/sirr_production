@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_listprice_upgrade/i18n/product_listprice_upgrade.pot

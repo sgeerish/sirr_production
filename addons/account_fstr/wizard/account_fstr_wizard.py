@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_fstr/wizard/account_fstr_wizard.py

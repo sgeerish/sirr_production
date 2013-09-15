@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/membership_card/__init__.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training/migrations/0.3.1/pre-10-force_recompute_confirmed_lecturer.py

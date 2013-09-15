@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_catalog_report/wizard/__init__.py

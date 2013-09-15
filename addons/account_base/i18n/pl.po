@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_base/i18n/pl.po

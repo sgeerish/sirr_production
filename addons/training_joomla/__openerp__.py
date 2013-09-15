@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training_joomla/__openerp__.py

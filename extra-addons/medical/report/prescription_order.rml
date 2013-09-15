@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="15.0" y1="42.0" width="539" height="758"/>
+    </pageTemplate>
+   
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="CENTER"/>
+
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockBackground colorName="lightgrey" start="0,0" stop="1,1"/>
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <lineStyle kind="GRID" colorName="grey"/>
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+
+    <paraStyle name="P1" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P2" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="RIGHT"/>
+    <paraStyle name="P3" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="LEFT"/>
+    <paraStyle name="P4" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P12" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="RIGHT"/>
+    <paraStyle name="P6" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="LEFT"/>
+    <paraStyle name="P7" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P8" fontName="Times-Roman" fontSize="22.0" leading="27" alignment="CENTER"/>
+    <paraStyle name="P9" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P10" fontName="Times-Bold" fontSize="13.0" leading="16"/>
+    <paraStyle name="P11" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P12" fontName="Times-Roman" fontSize="10.0" leading="16"/>
+    <paraStyle name="P13" fontName="Times-Roman" fontSize="10.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P14" fontName="Times-Bold" fontSize="10.0" leading="16"/>
+                
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <paraStyle name="P12" fontName="Times-Roman"/>
+    <paraStyle name="Table Heading" fontName="Times-Roman" alignment="CENTER"/>
+    <images/>
+  </stylesheet>
+  <story>
+
+    <para style="P1">[[repeatIn(objects,'prescription')]]</para>
+ 
+    <blockTable colWidths="250.0,250.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P12"><b>Prescription ID :</b> [[ prescription.prescription_id ]]</para>
+          <para style="P12">Prescription date : [[ prescription.prescription_date ]]</para>
+
+
+        </td>
+        <td>
+          <para style="P12"><b>[[ prescription.name.lastname and prescription.name.lastname + ', ' or '']] [[ prescription.name.name.name ]]</b></para>
+          <para style="P12">Age : [[ prescription.name.age ]]</para>
+          <para style="P12">DoB : [[ prescription.name.dob ]]</para>
+          <para style="P12">[[ prescription.name.current_insurance and 'Insurance : ' + prescription.name.current_insurance.company.name ]] [[ prescription.name.current_insurance and prescription.name.current_insurance.number ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P12"><b>Prescribing Doctor</b></para>
+          <para style="P12">[[ prescription.user_id.name ]]</para>
+          <para style="P12">[[ prescription.user_id.signature ]]</para>
+<!--
+          <para style="P12">[[ prescription.doctor.name and prescription.doctor.name.lastname + ', ' or '']] [[ prescription.doctor.name.name ]]</para>
+          <para style="P12">Lic. ID : [[ prescription.doctor.code or removeParentNode('para')]]</para>
+          <para style="P12">Tel: [[ prescription.doctor.name.address.phone[0] or removeParentNode('para')]]</para>
+          <para style="P12">email : [[ prescription.doctor.name.address.email[0] or removeParentNode('para')]]</para>                    
+-->
+        </td>
+      <td>
+          <para style="P12"><b>Patient Contact Information</b></para>
+          <para style="P12">ID  : [[ prescription.name.name.ref or removeParentNode('para')]]</para>
+          <para style="P12">Address : [[ prescription.name.current_address.street or removeParentNode('para')]]</para>
+          <para style="P12">Tel : [[ prescription.name.current_address.phone or removeParentNode('para')]]</para>
+          <para style="P12">email : [[ prescription.name.current_address.email or removeParentNode('para')]]</para>
+        </td>
+      </tr>
+ 
+ 
+    </blockTable>
+
+   <para style="P8"><font color="white"> </font></para>
+
+   <section>
+    <para style="P1">[[repeatIn(prescription.prescription_line,'lines')]]</para>
+
+
+    <blockTable colWidths="100,220,180" style="Table2">
+	  <para style="P12">[[ lines.prnt or removeParentNode('blockTable') ]]</para>
+      <tr>
+        <td>
+	  <para style="P12">Qty : [[ lines.quantity or removeParentNode('para')]]</para>
+          <para style="P12">Start : [[  (lines.start_treatment == 'False') and removeParentNode('para') or lines.start_treatment.split()[0] ]]</para>
+          <para style="P12">Stop : [[ (lines.end_treatment == 'False') and removeParentNode('para') or lines.end_treatment.split()[0] ]]</para>          
+          <para style="P12">Refills : [[ lines.refills or removeParentNode('para')]]</para>
+          <para style="P12">[[ lines.allow_substitution and 'Substitution Allowed' ]]</para>
+          <para style="P12">Review : [[ (lines.review == 'False') and removeParentNode('para') or lines.review.split()[0] ]]</para>
+        </td>
+
+        <td>
+          <para style="P12"><b>[[ lines.medicament.name.name ]] [[ lines.dose ]] [[ lines.dose_unit.name ]]</b></para>
+          <para style="P12">Form : [[ lines.form.name and lines.form.name + 's' or removeParentNode('para')]]</para>
+          <para style="P12">Indication : [[ lines.indication.name or removeParentNode('para')]]</para>
+          <para style="P12">Remarks : <font color="red">[[ lines.short_comment or removeParentNode('para')]]</font></para>
+        </td>
+
+
+        <td>
+          <para style="P12">Take during [[ lines.duration or removeParentNode('para')]] [[ lines.duration_period ]]</para>
+          <para style="P12">[[ lines.qty ]] [[ lines.form.name ]][[lines.qty &gt;1 and 's' or '' ]]</para>
+          <para style="P12">[[ lines.common_dosage.name or removeParentNode('para')]] [[ lines.admin_times and '(' + lines.admin_times + ')' ]]</para>
+          <para style="P12">Every [[ lines.frequency or removeParentNode('para')]] [[ lines.frequency_unit=='wr' and 'as needed' or lines.frequency_unit ]]</para>
+          <para style="P12">Route : [[ lines.route.name or removeParentNode('para')]]</para>
+        </td>
+
+      </tr>
+    </blockTable>
+    <para style="P12"><font color="white"> </font></para>
+
+    </section>
+
+
+
+    <section>
+        
+    <blockTable colWidths="400,100" style="Table3">
+      <tr>
+        <td>
+          <para style="P12">Notes:</para>
+          <para style="P12">[[ prescription.notes ]]</para>
+        </td>
+        <td>
+          <para style="P12">Doctor signature</para>
+          <para style="P8"><font color="white"> </font></para>
+          <para style="P8"><font color="white"> </font></para>
+
+        </td>
+
+       </tr>
+  
+    </blockTable>    
+    
+    
+    </section>
+   </story>
+</document>
+

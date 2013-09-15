@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="diary" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.331000000000002"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="end_date" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="STANDARD_DIR" class="java.lang.String"/>
+	<parameter name="SUBTITLE" class="java.lang.String"/>
+	<parameter name="HEADER_DS" class="java.lang.Object"/>
+	<queryString language="xPath">
+		<![CDATA[/data/record]]>
+	</queryString>
+	<field name="date" class="java.util.Date">
+		<fieldDescription><![CDATA[date]]></fieldDescription>
+	</field>
+	<field name="journal_name" class="java.lang.String">
+		<fieldDescription><![CDATA[journal_id/code]]></fieldDescription>
+	</field>
+	<field name="account_name" class="java.lang.String">
+		<fieldDescription><![CDATA[account_id/name]]></fieldDescription>
+	</field>
+	<field name="move_name" class="java.lang.String">
+		<fieldDescription><![CDATA[move_id/name]]></fieldDescription>
+	</field>
+	<field name="debit" class="java.lang.Double">
+		<fieldDescription><![CDATA[debit]]></fieldDescription>
+	</field>
+	<field name="credit" class="java.lang.Double">
+		<fieldDescription><![CDATA[credit]]></fieldDescription>
+	</field>
+	<field name="account_number" class="java.lang.String">
+		<fieldDescription><![CDATA[account_id/code]]></fieldDescription>
+	</field>
+	<field name="Type_interne-type" class="java.lang.String">
+		<fieldDescription><![CDATA[Compte-account_id/Type_interne-type]]></fieldDescription>
+	</field>
+	<field name="Code-code" class="java.lang.String">
+		<fieldDescription><![CDATA[Compte-account_id/Type_de_compte-user_type/Code-code]]></fieldDescription>
+	</field>
+	<field name="Nom_du_journal-name" class="java.lang.String">
+		<fieldDescription><![CDATA[Journal-journal_id/Nom_du_journal-name]]></fieldDescription>
+	</field>
+	<field name="Nom-name" class="java.lang.String">
+		<fieldDescription><![CDATA[Partenaire-partner_id/Nom-name]]></fieldDescription>
+	</field>
+	<field name="Nombre-number" class="java.lang.String">
+		<fieldDescription><![CDATA[Facture-invoice/Nombre-number]]></fieldDescription>
+	</field>
+	<field name="Reference-ref" class="java.lang.String">
+		<fieldDescription><![CDATA[Reference-ref]]></fieldDescription>
+	</field>
+	<field name="Nom-name2" class="java.lang.String">
+		<fieldDescription><![CDATA[Nom-name]]></fieldDescription>
+	</field>
+	<sortField name="journal_name"/>
+	<variable name="debit_1" class="java.lang.Double" resetType="Group" resetGroup="journal" calculation="Sum">
+		<variableExpression><![CDATA[$F{debit}]]></variableExpression>
+	</variable>
+	<variable name="credit_1" class="java.lang.Double" resetType="Group" resetGroup="journal" calculation="Sum">
+		<variableExpression><![CDATA[$F{credit}]]></variableExpression>
+	</variable>
+	<variable name="debit_2" class="java.lang.Double" resetType="Group" resetGroup="journal" calculation="Sum">
+		<variableExpression><![CDATA[(($F{date}.toGMTString()).equals( $V{formated_end_date} ))?$F{debit}:0]]></variableExpression>
+	</variable>
+	<variable name="credit_2" class="java.lang.Double" resetType="Group" resetGroup="journal" calculation="Sum">
+		<variableExpression><![CDATA[(($F{date}.toGMTString()).equals( $V{formated_end_date} ))?$F{credit}:0]]></variableExpression>
+	</variable>
+	<variable name="L" class="java.util.Locale">
+		<variableExpression><![CDATA[$P{REPORT_LOCALE}]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{REPORT_LOCALE}]]></initialValueExpression>
+	</variable>
+	<variable name="date" class="java.lang.String">
+		<variableExpression><![CDATA[$F{date}.toGMTString()]]></variableExpression>
+	</variable>
+	<variable name="end_date" class="java.util.Date">
+		<variableExpression><![CDATA[new SimpleDateFormat("yyyy-MM-dd").parse($P{end_date})]]></variableExpression>
+	</variable>
+	<variable name="formated_end_date" class="java.lang.String">
+		<variableExpression><![CDATA[$V{end_date}.toGMTString()]]></variableExpression>
+	</variable>
+	<filterExpression><![CDATA[$F{Code-code}=="cash" || $F{Code-code}=="bank"]]></filterExpression>
+	<group name="journal" isStartNewPage="true" isReprintHeaderOnEachPage="true">
+		<groupExpression><![CDATA[$F{Nom_du_journal-name}]]></groupExpression>
+		<groupHeader>
+			<band/>
+		</groupHeader>
+		<groupFooter>
+			<band height="28">
+				<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+					<reportElement mode="Opaque" x="444" y="13" width="111" height="15" forecolor="#FFFFFF" backcolor="#999999"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{debit_2}-$V{credit_2}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+					<reportElement mode="Opaque" x="422" y="0" width="75" height="13" forecolor="#000000" backcolor="#F0F0F0"/>
+					<textElement textAlignment="Right">
+						<font size="8" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{debit_2}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+					<reportElement mode="Opaque" x="497" y="0" width="58" height="13" forecolor="#000000" backcolor="#F0F0F0"/>
+					<textElement textAlignment="Right">
+						<font size="8" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{credit_2}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="329" y="0" width="33" height="13" forecolor="#000000" backcolor="#F0F0F0"/>
+					<textElement verticalAlignment="Bottom">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Total]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="329" y="13" width="115" height="15" forecolor="#FFFFFF" backcolor="#999999"/>
+					<textElement verticalAlignment="Bottom">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Balance]]></text>
+				</staticText>
+				<textField>
+					<reportElement mode="Opaque" x="362" y="0" width="60" height="13" backcolor="#F0F0F0"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{end_date}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="27"/>
+	</title>
+	<pageHeader>
+		<band height="22">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Nom_du_journal-name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20">
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="0" width="51" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Date")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="193" y="0" width="136" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Client")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="51" y="0" width="86" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Numero")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="329" y="0" width="115" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Description")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="444" y="0" width="53" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Debit")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="497" y="0" width="58" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Credit")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="137" y="0" width="56" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Facture")]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="13">
+			<printWhenExpression><![CDATA[$F{date}.toGMTString()).equals( $V{formated_end_date})]]></printWhenExpression>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement x="444" y="0" width="53" height="13"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{debit}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement x="497" y="0" width="58" height="13"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{credit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="193" y="0" width="136" height="13"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Nom-name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="137" y="0" width="56" height="13"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Nombre-number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="329" y="0" width="115" height="13"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Nom-name2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="51" y="0" width="86" height="13"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Reference-ref}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="51" height="13"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="15"/>
+	</columnFooter>
+	<pageFooter>
+		<band/>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

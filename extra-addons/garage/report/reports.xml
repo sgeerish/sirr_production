@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report auto="False" id="cheque_bni" model="cheque.print" name="cheque.print.bni" rml="cheque_print/report/bni.rml" string="BNI" />
+    </data>
+</openerp>

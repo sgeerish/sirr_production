@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<!-- Parent Menu on Right Panes -->
+		<menuitem id="menu_fleet_manager" name="Fleet Manager" />
+
+		<!-- Master menus (tree parent) -->
+		<menuitem id="menu_fleet_manager_config" name="Configuration"
+			parent="menu_fleet_manager" sequence="1" />
+		<menuitem id="menu_fleet_manager_cmms" name="C.M.M.S"
+			parent="menu_fleet_manager" sequence="2" />
+		<menuitem id="menu_fleet_manager_oms"
+			name="Operations Management" parent="menu_fleet_manager"
+			sequence="3" />
+
+		<!-- Sub menus of Configuration -->
+		<menuitem id="menu_fleet_vehicles" name="Vehicles"
+			parent="menu_fleet_manager_config" action="fleet_vehicles_form_act" />
+
+		<!-- Sub menus of CMMS -->
+		<menuitem id="menu_fleet_manager_config_service"
+			name="Service Configuration" parent="menu_fleet_manager_cmms" sequence="1"/>
+		<menuitem id="menu_fleet_sm" name="Service Management"
+			parent="menu_fleet_manager_cmms" sequence="2" />
+			
+		<!-- Sub menus of Service Configuration -->
+		<menuitem id="menu_fleet_serv_templ" name="Service Templates"
+			parent="menu_fleet_manager_config_service"
+			action="fleet_serv_templ_view" />
+		<menuitem id="menu_fleet_serv_items" name="Service Items"
+			parent="menu_fleet_manager_config_service" action="fleet_serv_items" />
+
+		<!-- Sub menus of Service Management -->
+		<menuitem id="menu_fleet_wo" name="Work Orders"
+			parent="menu_fleet_sm" action="fleet_wo_form_act" />
+			
+		<menuitem id="menu_fleet_fuellog" name="Fuel Log"
+			parent="menu_fleet_manager_oms" sequence="5"
+			action="fleet_fuellog_form_act" />
+		<menuitem id="menu_fleet_odometer" name="Odometer Statements"
+			parent="menu_fleet_manager_oms" sequence="6"
+			action="fleet_odometer_form_act" />
+		<menuitem id="temp_menu_fleet_wo_task" name="Work Order Tasks"
+			parent="menu_fleet_manager_oms" sequence="7" action="fleet_wo_tasks_act" />
+	</data>
+</openerp>

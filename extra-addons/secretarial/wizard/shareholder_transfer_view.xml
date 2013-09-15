@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_share_transfer" model="ir.ui.view">
+            <field name="name">Share Transfer</field>
+            <field name="model">shareholder.transfer</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+              <form string="Share Transfer">
+                <separator colspan="4" string="Share Transfer" />
+                <field name="partner_id"/>
+                <field name="num_shares_transfer"/>
+                <field name="date"/>
+                <newline/>
+                <separator colspan="4" />
+                <group colspan="2" col="4">
+	                <button special="cancel" string="Cancel" />
+	                <button name="transfer" string="Transfer" type="object" />
+                </group>
+               </form>
+            </field>
+        </record>
+
+
+        <act_window name="Share Transfer"
+            res_model="shareholder.transfer"
+            src_model="shareholders"
+            key2="client_action_multi"
+            multi="True"
+            view_mode="form"
+            view_type="form"
+            target="new"
+            id="action_share_transfer"/>
+    </data>
+</openerp>

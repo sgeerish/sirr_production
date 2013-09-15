@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/personal_base/account_entry.py

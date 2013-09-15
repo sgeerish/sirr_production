@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/productivity_analysis/productivity_analysis.py

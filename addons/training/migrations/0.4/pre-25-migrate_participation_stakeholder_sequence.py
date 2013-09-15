@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training/migrations/0.4/pre-25-migrate_participation_stakeholder_sequence.py

@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+write_allow_out,account.invoice.allow_out,model_account_invoice,base.group_allow_out,1,1,1,1
+read_allow_out_user,account.invoice.allow_out,model_account_invoice,base.group_user,1,0,0,0

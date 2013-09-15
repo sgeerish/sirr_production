@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/smtp_custom/smtp_custom25012012.py

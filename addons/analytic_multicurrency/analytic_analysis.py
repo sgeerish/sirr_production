@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/analytic_multicurrency/analytic_analysis.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/actions_server_mako_email/__init__.py

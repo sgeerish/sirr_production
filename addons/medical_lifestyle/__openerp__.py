@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/medical_lifestyle/__openerp__.py

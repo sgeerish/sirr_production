@@ -1,0 +1,15 @@
+lxml
+mako
+python-dateutil
+psycopg2
+pychart
+pydot
+pytz
+reportlab
+caldav
+pyyaml
+pywebdav
+feedparser
+
+[SSL]
+pyopenssl

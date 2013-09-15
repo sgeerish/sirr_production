@@ -1,0 +1,256 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Medical\n"
+"Report-Msgid-Bugs-To: https://sourceforge.net/apps/mantisbt/medical\n"
+"POT-Creation-Date: 2010-12-05 21:26:21+0000\n"
+"PO-Revision-Date: 2011-02-05 18:04+0000\n"
+"Last-Translator: sergiodl <sergio.dl@hotmail.com>\n"
+"Language-Team: Portuguese (Brazilian) <None>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+
+#. module: medical_genetics
+#: field:medical.genetic.risk,info:0
+msgid "Information"
+msgstr "Informação"
+
+#. module: medical_genetics
+#: model:ir.ui.menu,name:medical_genetics.medical_conf_genetics
+msgid "Genetics"
+msgstr "Genética"
+
+#. module: medical_genetics
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nome de modelo inválido na definição da ação."
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Mother"
+msgstr "Mãe"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Father"
+msgstr "Pai"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Sister"
+msgstr "Irmã"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,xory:0
+msgid "Paternal"
+msgstr "Paternal"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Grandmother"
+msgstr "Avó"
+
+#. module: medical_genetics
+#: field:medical.genetic.risk,location:0
+msgid "Location"
+msgstr "Localização"
+
+#. module: medical_genetics
+#: constraint:ir.ui.menu:0
+msgid "Error ! You can not create recursive Menu."
+msgstr "Erro ! Você não pode criar um menu recursivo."
+
+#. module: medical_genetics
+#: model:ir.module.module,shortdesc:medical_genetics.module_meta_information
+msgid "Medical : Genetics"
+msgstr "Medical : Genética"
+
+#. module: medical_genetics
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "O nome do Objeto deve começar com x_ e não conter nenhum caracter especial !"
+
+#. module: medical_genetics
+#: help:medical.genetic.risk,gene_id:0
+msgid "default code from NCBI Entrez database."
+msgstr "código padrão da base de dados NCBI Entrez."
+
+#. module: medical_genetics
+#: view:medical.family.diseases:0
+msgid "Genetic Family Diseases"
+msgstr "Doenças Genéticas da Família"
+
+#. module: medical_genetics
+#: field:medical.genetic.risk,dominance:0
+msgid "Dominance"
+msgstr "Dominância"
+
+#. module: medical_genetics
+#: model:ir.model,name:medical_genetics.model_medical_family_diseases
+msgid "Family Diseases"
+msgstr "Doenças da Família"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,xory:0
+msgid "Maternal"
+msgstr "Maternal"
+
+#. module: medical_genetics
+#: model:ir.module.module,description:medical_genetics.module_meta_information
+msgid ""
+"\n"
+"\n"
+"Family history and genetic risks\n"
+"\n"
+"The module includes hereditary risks, family history and genetic disorders.\n"
+"\n"
+"In this module we include the NCBI and Genecard information, more than 4200 genes associated to diseases\n"
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"Histórico familiar e riscos genéticos\n"
+"\n"
+"O módulo inclui riscos hereditários, histórico da família e desordens genéticas.\n"
+"\n"
+"Neste módulo nós incluímos informações da NCBI e Genecard, mais de 4200 genes associados com doenças."
+
+#. module: medical_genetics
+#: help:medical.genetic.risk,chromosome:0
+msgid "Name of the affected chromosome"
+msgstr "Nome do cromossomo afetado"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Uncle"
+msgstr "Tio"
+
+#. module: medical_genetics
+#: field:medical.genetic.risk,gene_id:0
+msgid "Gene ID"
+msgstr "ID do gênero"
+
+#. module: medical_genetics
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML inválido para a arquitetura da Visão"
+
+#. module: medical_genetics
+#: help:medical.genetic.risk,location:0
+msgid "Locus of the chromosome"
+msgstr "Locus do cromossomo"
+
+#. module: medical_genetics
+#: selection:medical.genetic.risk,dominance:0
+msgid "dominant"
+msgstr "Dominante"
+
+#. module: medical_genetics
+#: help:medical.family.diseases,relative:0
+msgid "First degree = siblings, mother and father; second degree = Uncles, nephews and Nieces; third degree = Grandparents and cousins"
+msgstr "Primeiro grau = irmãos, mãe e pai; segunda grau = Tios, sobrinhos e sobrinhas; Terceiro grau = Avós e primos"
+
+#. module: medical_genetics
+#: field:medical.family.diseases,name:0
+msgid "Disease"
+msgstr "Doença"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Brother"
+msgstr "Irmão"
+
+#. module: medical_genetics
+#: field:medical.genetic.risk,long_name:0
+msgid "Official Long Name"
+msgstr "Nome longo oficial"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Aunt"
+msgstr "Tia"
+
+#. module: medical_genetics
+#: field:medical.patient,family_history:0
+msgid "Family History"
+msgstr "Histórico da família"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Cousin"
+msgstr "Primo"
+
+#. module: medical_genetics
+#: field:medical.family.diseases,xory:0
+msgid "Maternal or Paternal"
+msgstr "Maternal ou Patenal"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Grandfather"
+msgstr "Avô"
+
+#. module: medical_genetics
+#: selection:medical.genetic.risk,dominance:0
+msgid "recessive"
+msgstr "recessivo"
+
+#. module: medical_genetics
+#: field:medical.genetic.risk,name:0
+msgid "Official Symbol"
+msgstr "Símbolo Oficial"
+
+#. module: medical_genetics
+#: view:medical.genetic.risk:0
+msgid "Medical Genetic Risks"
+msgstr "Riscos Médicos Genéticos"
+
+#. module: medical_genetics
+#: help:medical.genetic.risk,info:0
+msgid "Name of the protein(s) affected"
+msgstr "Nome da(s) proteína(s) afetada(s)"
+
+#. module: medical_genetics
+#: field:medical.family.diseases,relative:0
+msgid "Relative"
+msgstr "Parente"
+
+#. module: medical_genetics
+#: model:ir.model,name:medical_genetics.model_medical_patient
+msgid "Patient related information"
+msgstr "Informação relacionada ao paciente"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Nephew"
+msgstr "Sobrinho"
+
+#. module: medical_genetics
+#: field:medical.genetic.risk,chromosome:0
+msgid "Affected Chromosome"
+msgstr "Cromossomo Afetado"
+
+#. module: medical_genetics
+#: model:ir.actions.act_window,name:medical_genetics.medical_action_genetic_risks
+#: model:ir.model,name:medical_genetics.model_medical_genetic_risk
+#: model:ir.ui.menu,name:medical_genetics.medical_conf_genetic_risks
+#: view:medical.genetic.risk:0 view:medical.patient:0
+#: field:medical.patient,genetic_risks:0
+msgid "Genetic Risks"
+msgstr "Riscos Genéticos"
+
+#. module: medical_genetics
+#: view:medical.genetic.risk:0
+msgid "Search Patient Genetic Risks"
+msgstr "Pesquisar Riscos Genéticos do Paciente"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Niece"
+msgstr "Sobrinha"

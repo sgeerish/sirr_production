@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		<menuitem name="Synchronization" id="menu_prestashop_synchronization" parent="menu_main_prestashop" />
+
+		<!-- Synchronize Categories -->
+		<wizard string="Synchronize Categories" model="product.category"
+			name="prestashop.categories.sync" id="wizard_prestashop_categories" />
+		<menuitem
+			name="Synchronize Categories" parent="menu_prestashop_synchronization"
+			action="wizard_prestashop_categories" type="wizard" id="menu_prestashop_categories" />
+
+        <!-- Synchronize Products -->
+		<wizard string="Synchronize Products" model="product.product"
+			name="prestashop.products.sync" id="wizard_prestashop_products" />
+		<menuitem
+			name="Synchronize Products" parent="menu_prestashop_synchronization"
+			action="wizard_prestashop_products" type="wizard" id="menu_prestashop_products" />
+		
+		<!-- Synchronize Tax -->
+		<wizard string="Synchronize Tax" model="account.tax"
+			name="prestashop.tax.sync" id="wizard_prestashop_tax" menu="False"/>
+		<menuitem
+			name="Synchronize Tax" parent="menu_prestashop_synchronization"
+			action="wizard_prestashop_tax" type="wizard" id="menu_prestashop_tax" />
+
+	</data>
+</openerp>

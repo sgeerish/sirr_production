@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+    <record model="ir.ui.view" id="view_hr_employee_children_form">
+        <field name="name">hr.employee.children.form</field>
+        <field name="model">hr.employee.children</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="hr.employee.children">
+                <field name="name" select="1"/>
+                <field name="prenom" select="2"/>
+                <field name="date_birth" select="0"/>
+                <field name="age" select="0"/>
+                <field name="employee_id" select="0"/>
+                <field name="sex" select="0"/>
+
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_hr_employee_children_tree">
+        <field name="name">hr.employee.children.tree</field>
+        <field name="model">hr.employee.children</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="hr.employee.children">
+                <field name="name"/>
+                <field name="prenom"/>
+                <field name="date_birth"/>
+                <field name="age"/>
+                <field name="employee_id"/>
+                <field name="sex"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_hr_employee_children">
+        <field name="name">children</field>
+        <field name="res_model">hr.employee.children</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem name="hr/employee/children" id="menu_hr_employee_children" action="action_hr_employee_children"/>
+
+        
+</data>
+</openerp>

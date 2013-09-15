@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl/lib/etl/component/input/openobject_in.py

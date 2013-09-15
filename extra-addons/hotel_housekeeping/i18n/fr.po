@@ -1,0 +1,350 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 07:34:09+0000\n"
+"PO-Revision-Date: 2009-11-26 07:34:09+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hotel_housekeeping
+#: rml:activity.detail:0
+msgid "From"
+msgstr "À partir de"
+
+#. module: hotel_housekeeping
+#: model:ir.module.module,description:hotel_housekeeping.module_meta_information
+msgid "\n"
+"    Module for Hotel/Hotel Housekeeping. You can manage:\n"
+"    * Housekeeping process\n"
+"    * Housekeeping history room wise\n"
+"\n"
+"      Different reports are also provided, mainly for hotel statistics.\n"
+"    "
+msgstr "\ N Module pour Hôtel / Ménage. Vous pouvez gérer:. \ N * Ménage processus \ n * Ménage salle historique sage \ n \ n Les différents rapports sont également prévues, notamment pour les statistiques hôtelières \ n    "
+
+#. module: hotel_housekeeping
+#: model:ir.model,name:hotel_housekeeping.model_hotel_housekeeping_activities
+msgid "Housekeeping Activities "
+msgstr "Activités d'entretien ménager "
+
+#. module: hotel_housekeeping
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Le nom d'objet doit commencer avec x_ et ne pas contenir n'importe quel caractère spécial!"
+
+#. module: hotel_housekeeping
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML non valide pour l'architecture View!"
+
+#. module: hotel_housekeeping
+#: model:ir.ui.menu,name:hotel_housekeeping.menu_open_hotel_housekeeping_form_tree_new
+msgid "New HouseKeeping"
+msgstr "HouseKeeping Nouveau"
+
+#. module: hotel_housekeeping
+#: view:h.activity:0
+#: field:hotel.housekeeping.activities,activity_name:0
+#: model:ir.actions.act_window,name:hotel_housekeeping.action_h_activity_form
+#: model:ir.model,name:hotel_housekeeping.model_h_activity
+msgid "Housekeeping Activity"
+msgstr "Activité Ménage"
+
+#. module: hotel_housekeeping
+#: model:product.category,name:hotel_housekeeping.hotel_housekeeping_activity_type_2_product_category
+msgid "Bed Activity"
+msgstr "Activité lit"
+
+#. module: hotel_housekeeping
+#: rml:activity.detail:0
+msgid "Room Activities Report"
+msgstr "Signaler chambre Activités"
+
+#. module: hotel_housekeeping
+#: model:product.category,name:hotel_housekeeping.hotel_housekeeping_activity_type_0_product_category
+msgid "All Activities"
+msgstr "Toutes les activités"
+
+#. module: hotel_housekeeping
+#: field:hotel.housekeeping.activity.type,activity_id:0
+msgid "category"
+msgstr "catégorie"
+
+#. module: hotel_housekeeping
+#: selection:hotel.housekeeping,clean_type:0
+msgid "Checkout"
+msgstr "Caisse"
+
+#. module: hotel_housekeeping
+#: field:hotel.housekeeping,room_no:0
+msgid "Room No"
+msgstr "Aucune chambre"
+
+#. module: hotel_housekeeping
+#: view:hotel.housekeeping:0
+#: model:ir.actions.act_window,name:hotel_housekeeping.open_hotel_housekeeping_form_tree
+#: model:ir.ui.menu,name:hotel_housekeeping.menu_open_hotel_housekeeping_form_tree
+msgid "Housekeeping"
+msgstr "Ménagère"
+
+#. module: hotel_housekeeping
+#: model:product.category,name:hotel_housekeeping.hotel_housekeeping_activity_type_1_product_category
+msgid "Room Activity"
+msgstr "Salle d'Activités"
+
+#. module: hotel_housekeeping
+#: rml:activity.detail:0
+#: field:hotel.housekeeping,activity_lines:0
+#: model:ir.ui.menu,name:hotel_housekeeping.menu_open_h_activity_form
+msgid "Activities"
+msgstr "Activités"
+
+#. module: hotel_housekeeping
+#: selection:hotel.housekeeping,quality:0
+msgid "Good"
+msgstr "Bon"
+
+#. module: hotel_housekeeping
+#: rml:activity.detail:0
+#: field:hotel.housekeeping.activities,clean_end_time:0
+msgid "Clean End Time"
+msgstr "Fin Clean"
+
+#. module: hotel_housekeeping
+#: rml:activity.detail:0
+#: field:hotel.housekeeping.activities,clean_start_time:0
+msgid "Clean Start Time"
+msgstr "Nettoyez Heure de début"
+
+#. module: hotel_housekeeping
+#: model:ir.model,name:hotel_housekeeping.model_hotel_housekeeping_activity_type
+msgid "Activity Type"
+msgstr "Type d'activité"
+
+#. module: hotel_housekeeping
+#: field:hotel.housekeeping.activities,a_list:0
+msgid "unknown"
+msgstr "inconnu"
+
+#. module: hotel_housekeeping
+#: selection:hotel.housekeeping,clean_type:0
+msgid "Checkin"
+msgstr "Checkin"
+
+#. module: hotel_housekeeping
+#: view:hotel.housekeeping:0
+#: selection:hotel.housekeeping,state:0
+msgid "Inspect"
+msgstr "Inspecter"
+
+#. module: hotel_housekeeping
+#: model:ir.ui.menu,name:hotel_housekeeping.wizard_activity_menu
+msgid "Activity Report"
+msgstr "Rapport d'activité"
+
+#. module: hotel_housekeeping
+#: rml:activity.detail:0
+msgid "to"
+msgstr "à"
+
+#. module: hotel_housekeeping
+#: field:hotel.housekeeping,state:0
+msgid "state"
+msgstr "état"
+
+#. module: hotel_housekeeping
+#: model:ir.actions.act_window,name:hotel_housekeeping.open_hotel_housekeeping_form_tree_new
+msgid "New Housekeeping"
+msgstr "Ménage Nouveau"
+
+#. module: hotel_housekeeping
+#: model:ir.actions.wizard,name:hotel_housekeeping.wizard_hotel_housekeeping_activity_report
+msgid "Activity Details"
+msgstr "Fiche d'une activité"
+
+#. module: hotel_housekeeping
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nom du modèle non valide dans la définition d'action."
+
+#. module: hotel_housekeeping
+#: rml:activity.detail:0
+msgid "Date"
+msgstr "Date"
+
+#. module: hotel_housekeeping
+#: model:ir.model,name:hotel_housekeeping.model_hotel_housekeeping
+msgid "Reservation"
+msgstr "Réservation"
+
+#. module: hotel_housekeeping
+#: field:hotel.housekeeping,clean_type:0
+msgid "Clean Type"
+msgstr "Type de cours Clean"
+
+#. module: hotel_housekeeping
+#: model:ir.module.module,shortdesc:hotel_housekeeping.module_meta_information
+msgid "Hotel Housekeeping"
+msgstr "Hôtel Ménage"
+
+#. module: hotel_housekeeping
+#: wizard_field:hotel.housekeeping.activity_list,init,date_end:0
+msgid "End Date"
+msgstr "Date de fin"
+
+#. module: hotel_housekeeping
+#: view:hotel.housekeeping:0
+msgid "Housekeeping12"
+msgstr "Housekeeping12"
+
+#. module: hotel_housekeeping
+#: rml:activity.detail:0
+msgid "Housekeeper Name"
+msgstr "Nom de femme de ménage"
+
+#. module: hotel_housekeeping
+#: selection:hotel.housekeeping,quality:0
+msgid "Ok"
+msgstr "D'accord"
+
+#. module: hotel_housekeeping
+#: rml:activity.detail:0
+msgid "Duration"
+msgstr "Durée"
+
+#. module: hotel_housekeeping
+#: field:h.activity,h_id:0
+msgid "Product_id"
+msgstr "ID produit"
+
+#. module: hotel_housekeeping
+#: wizard_view:hotel.housekeeping.activity_list,init:0
+#: wizard_button:hotel.housekeeping.activity_list,init,print_activity_list:0
+msgid "Activity List"
+msgstr "Liste des activités"
+
+#. module: hotel_housekeeping
+#: field:hotel.housekeeping.activities,housekeeper:0
+msgid "Housekeeper"
+msgstr "Gouvernante"
+
+#. module: hotel_housekeeping
+#: field:hotel.housekeeping,inspect_date_time:0
+msgid "Inspect Date Time"
+msgstr "Inspectez Date Heure"
+
+#. module: hotel_housekeeping
+#: field:hotel.housekeeping,current_date:0
+msgid "Today's Date"
+msgstr "Date du jour"
+
+#. module: hotel_housekeeping
+#: selection:hotel.housekeeping,clean_type:0
+msgid "Daily"
+msgstr "Tous les jours"
+
+#. module: hotel_housekeeping
+#: view:hotel.housekeeping:0
+msgid "Activity Lines"
+msgstr "Lignes d'activité"
+
+#. module: hotel_housekeeping
+#: model:ir.ui.menu,name:hotel_housekeeping.menu_action_hotel_housekeeping_activity_type_view_form
+msgid "Activity Types"
+msgstr "Types d'activité"
+
+#. module: hotel_housekeeping
+#: selection:hotel.housekeeping,state:0
+#: field:hotel.housekeeping.activities,dirty:0
+msgid "Dirty"
+msgstr "Sale"
+
+#. module: hotel_housekeeping
+#: view:hotel.housekeeping:0
+#: selection:hotel.housekeeping,state:0
+#: field:hotel.housekeeping.activities,clean:0
+msgid "Clean"
+msgstr "Nettoyer"
+
+#. module: hotel_housekeeping
+#: selection:hotel.housekeeping,state:0
+msgid "Cancelled"
+msgstr "Annulé"
+
+#. module: hotel_housekeeping
+#: wizard_field:hotel.housekeeping.activity_list,init,date_start:0
+msgid "Start Date"
+msgstr "Date de début"
+
+#. module: hotel_housekeeping
+#: rml:activity.detail:0
+msgid "For Room :"
+msgstr "Pour chambre:"
+
+#. module: hotel_housekeeping
+#: wizard_field:hotel.housekeeping.activity_list,init,room_no:0
+msgid "Room No."
+msgstr "Room No."
+
+#. module: hotel_housekeeping
+#: constraint:product.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "Erreur! Vous ne pouvez pas créer de nouvelles catégories récursives."
+
+#. module: hotel_housekeeping
+#: field:product.category,isactivitytype:0
+msgid "Is Activity Type"
+msgstr "Est-type d'activité"
+
+#. module: hotel_housekeeping
+#: view:hotel.housekeeping.activity.type:0
+#: model:ir.actions.act_window,name:hotel_housekeeping.action_hotel_housekeeping_activity_type_view_form
+msgid "Housekeeping Activity Types"
+msgstr "Types d'activités d'entretien ménager"
+
+#. module: hotel_housekeeping
+#: view:hotel.housekeeping:0
+#: selection:hotel.housekeeping,state:0
+msgid "Done"
+msgstr "Fait"
+
+#. module: hotel_housekeeping
+#: field:product.product,isact:0
+msgid "Is Activity"
+msgstr "Est-activité"
+
+#. module: hotel_housekeeping
+#: view:hotel.housekeeping:0
+#: wizard_button:hotel.housekeeping.activity_list,init,end:0
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: hotel_housekeeping
+#: field:hotel.housekeeping,inspector:0
+msgid "Inspector"
+msgstr "Les inspecteurs"
+
+#. module: hotel_housekeeping
+#: view:hotel.housekeeping:0
+msgid "Set to Dirty"
+msgstr "Réglez sale"
+
+#. module: hotel_housekeeping
+#: field:hotel.housekeeping,quality:0
+msgid "Quality"
+msgstr "Assurance de "
+
+#. module: hotel_housekeeping
+#: model:ir.actions.report.xml,name:hotel_housekeeping.housekeeping_activity_detail
+msgid "Activity Detail"
+msgstr "Détail de l'activité"
+

@@ -1,0 +1,3 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_card_type","fidelity.card.type","model_fidelity_card_type","base.group_sale_salesman",1,0,0,0
+"access_card","fidelity.card","model_fidelity_card","base.group_sale_salesman",1,1,1,0

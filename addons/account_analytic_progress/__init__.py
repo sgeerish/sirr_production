@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_analytic_progress/__init__.py

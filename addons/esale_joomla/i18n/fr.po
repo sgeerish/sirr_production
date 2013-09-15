@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/esale_joomla/i18n/fr.po

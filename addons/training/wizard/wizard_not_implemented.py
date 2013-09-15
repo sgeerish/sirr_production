@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training/wizard/wizard_not_implemented.py

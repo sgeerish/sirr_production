@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/personal_base/wizard/create_account_types.py

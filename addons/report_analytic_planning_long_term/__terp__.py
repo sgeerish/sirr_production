@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/report_analytic_planning_long_term/__terp__.py

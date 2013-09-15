@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+	<!--
+	     Verifico una salida al almuerzo
+	     -->
+	<record id="test_attendance_1_5" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_1"/>
+		<field name="name">2001-02-02 05:54:01</field>
+		<field name="action">sign_in</field>
+	</record>
+
+	<record id="test_attendance_1_6" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_1"/>
+		<field name="name">2001-02-02 12:14:01</field>
+		<field name="action">sign_out</field>
+	</record>
+
+	<function name="compute_reason_rules" model="hr.attendance" >
+		<value eval="[ref('test_attendance_1_6')]"/>
+	</function>
+        <assert id="test_attendance_1_6" model="hr.attendance" string="Computing Sing out to lunch">
+		<test expr="action_desc.name">hr.test Go to lunch</test>
+        </assert>
+
+	<!--
+	     Verifico una vuelta del almuerzo
+	     -->
+	<record id="test_attendance_1_7" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_1"/>
+		<field name="name">2001-02-02 13:01:00</field>
+		<field name="action">sign_in</field>
+	</record>
+
+	<function name="compute_reason_rules" model="hr.attendance" >
+		<value eval="[ref('test_attendance_1_7')]"/>
+	</function>
+        <assert id="test_attendance_1_7" model="hr.attendance" string="Computing Sing in from lunch">
+		<test expr="action_desc.name">hr.test Back from lunch</test>
+        </assert>
+
+	<record id="test_attendance_1_8" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_1"/>
+		<field name="name">2001-02-02 17:54:01</field>
+		<field name="action">sign_out</field>
+	</record>
+
+	<!--
+	     Verifico una salida al descanzo nocturno
+	     -->
+	<record id="test_attendance_2_5" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_2"/>
+		<field name="name">2001-02-07 17:55:12</field>
+		<field name="action">sign_in</field>
+	</record>
+
+	<record id="test_attendance_2_6" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_2"/>
+		<field name="name">2001-02-07 23:14:01</field>
+		<field name="action">sign_out</field>
+	</record>
+
+	<function name="compute_reason_rules" model="hr.attendance" >
+		<value eval="[ref('test_attendance_2_6')]"/>
+	</function>
+        <assert id="test_attendance_2_6" model="hr.attendance" string="Computing Sing out to lunch at night">
+		<test expr="action_desc.name">hr.test Go to lunch</test>
+        </assert>
+
+	<!--
+	     Verifico una vuelta del descanzo nocturno
+	     -->
+	<record id="test_attendance_2_7" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_2"/>
+		<field name="name">2001-02-08 00:01:00</field>
+		<field name="action">sign_in</field>
+	</record>
+
+	<function name="compute_reason_rules" model="hr.attendance" >
+		<value eval="[ref('test_attendance_2_7')]"/>
+	</function>
+        <assert id="test_attendance_2_7" model="hr.attendance" string="Computing Sing in from lunch at night">
+		<test expr="action_desc.name">hr.test Back from lunch</test>
+        </assert>
+    </data>
+</openerp>
+

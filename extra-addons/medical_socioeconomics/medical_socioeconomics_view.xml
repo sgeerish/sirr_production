@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<openerp>
+        <data>
+
+<!-- Include the Socioeconomics page into the Patient History -->
+
+		<record model="ir.ui.view" id="medical_patient_view">
+			<field name="name">Patient</field>
+			<field name="model">medical.patient</field>
+                        <field name="inherit_id" ref="medical.medical_patient_view" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<notebook>
+					<page string="Socioeconomics">
+
+						<notebook>
+
+							<page string="Main">
+								<group colspan="6">
+									<group col="4" string="Main">
+										<group col="4">
+										<field name="ses"></field>
+										<newline/>
+										<field name="education"></field>
+										<newline/>
+										<field name="housing"></field>
+										<newline/>
+										<field name="occupation"></field>
+										<newline/>
+										</group>
+										<newline/>
+										<group col="6">
+										<field name="works_at_home"></field>
+										<field name="hours_outside"></field>
+										<field name="hostile_area"></field>
+
+										</group>
+
+									</group>
+
+									<group col="6" string="Infrastructure">
+										<field name="sewers"></field>
+										<field name="water"></field>
+
+										<field name="trash"></field>
+										<field name="electricity"></field>
+										<field name="gas"></field>
+
+										<field name="telephone"></field>
+										<field name="television"></field>
+										<field name="internet"></field>
+
+										<newline/>
+
+										<field colspan="6" name="ses_notes" nolabel="1"></field>
+
+									</group>
+								</group>
+							</page>
+
+							<page string="Family">
+								<group string="Family APGAR">
+									<field name="fam_apgar_help" ></field>
+									<newline/>
+									<field name="fam_apgar_discussion"></field>
+									<newline/>
+									<field name="fam_apgar_decisions"></field>
+									<newline/>
+									<field name="fam_apgar_timesharing"></field>
+									<newline/>
+									<field name="fam_apgar_affection"></field>
+								</group>
+
+								<group string="Other Family Issues">
+
+									<field name="single_parent"></field>
+									<field name="domestic_violence"></field>
+									<field name="working_children"></field>
+									<field name="teenage_pregnancy"></field>
+									<field name="sexual_abuse"></field>
+									<field name="drug_addiction"></field>
+									<field name="school_withdrawal"></field>
+									<field name="prison_past"></field>
+									<field name="prison_current"></field>
+
+									<field name="relative_in_prison"></field>
+
+								</group>
+							</page>
+
+						</notebook>
+
+					</page>						
+				</notebook>
+
+			</field>
+		</record>
+	</data>
+</openerp>

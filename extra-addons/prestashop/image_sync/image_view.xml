@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    <record id="view_image_types_tree" model="ir.ui.view">
+        <field name="name">image.types.tree</field>
+        <field name="model">image.types</field>
+        <field name="type">tree</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+        <tree string="Image Types">
+            <field name="name"/>
+            <field name="width"/>
+            <field name="height"/>
+            <field name="products"/>
+            <field name="categories"/>
+            <field name="suppliers"/>
+            <field name="scenes"/>
+            <field name="stores"/>
+        </tree>
+        </field>
+    </record>
+    
+    <record id="view_image_types_form" model="ir.ui.view">
+        <field name="name">image.types.form</field>
+        <field name="model">image.types</field>
+        <field name="type">form</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+        <form string="Image Types">
+            <field name="name" select="1"/>
+            <field name="width" select="1"/>
+            <field name="height" select="1"/>
+            <field name="products" select="1"/>
+            <field name="categories" select="1"/>
+            <field name="suppliers" select="1"/>
+            <field name="scenes" select="1"/>
+            <field name="stores" select="1"/>
+        </form>
+        </field>
+    </record>
+    
+    <record id="view_image_types_search" model="ir.ui.view">
+        <field name="name">image.types.search</field>
+        <field name="model">image.types</field>
+        <field name="type">search</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+        <search string="Image Types">
+            <field name="name" select="True"/>
+            <field name="width" select="True"/>
+            <field name="height" select="True"/>
+            <field name="products" select="True"/>
+            <field name="categories" select="True"/>
+            <field name="suppliers" select="True"/>
+            <field name="scenes" select="True"/>
+            <field name="stores" select="True"/>
+        </search>
+        </field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="act_open_image_types_view">
+        <field name="name">Image Types</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">image.types</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_image_types_search"/>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+    
+    <record model="ir.actions.act_window.view" id="act_open_image_types_view_form">
+        <field name="act_window_id" ref="act_open_image_types_view"/>
+        <field name="sequence" eval="20"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_image_types_form"/>
+    </record>
+    
+
+    <record id="view_image_image_tree" model="ir.ui.view">
+        <field name="name">image.image.tree</field>
+        <field name="model">image.image</field>
+        <field name="type">tree</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+        <tree string="Images">
+            <field name="product_id"/>
+            <field name="categ_id"/>
+            <field name="supplier_id"/>
+            <field name="manufacturer_id"/>
+            <field name="language_id"/>
+            <field name="attachment_id"/>
+            <field name="type_id"/>
+        </tree>
+        </field>
+    </record>
+    
+    <record id="view_image_image_form" model="ir.ui.view">
+        <field name="name">image.image.form</field>
+        <field name="model">image.image</field>
+        <field name="type">form</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+        <form string="Images">
+            <field name="product_id"/>
+            <field name="categ_id"/>
+            <field name="supplier_id"/>
+            <field name="manufacturer_id"/>
+            <field name="language_id"/>
+            <field name="attachment_id"/>
+            <field name="type_id"/>
+        </form>
+        </field>
+    </record>
+    
+    <record id="view_image_image_search" model="ir.ui.view">
+        <field name="name">image.image.search</field>
+        <field name="model">image.image</field>
+        <field name="type">search</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+        <search string="Images">
+            <field name="product_id"/>
+            <field name="categ_id"/>
+            <field name="supplier_id"/>
+            <field name="manufacturer_id"/>
+            <field name="language_id"/>
+            <field name="attachment_id"/>
+            <field name="attachment_id"/>
+            <field name="type_id"/>
+        </search>
+        </field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="act_open_image_image_view">
+        <field name="name">Images</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">image.image</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_image_image_search"/>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+    
+    <record model="ir.actions.act_window.view" id="act_open_image_image_view_form">
+        <field name="act_window_id" ref="act_open_image_image_view"/>
+        <field name="sequence" eval="20"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_image_image_form"/>
+    </record>
+    
+
+    </data>
+</openerp>

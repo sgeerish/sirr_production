@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl/lib/etl/component/input/sql_in.py

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+    <record id="view_account_fixed_assets_abandon_form" model="ir.ui.view">
+        <field name="name">Abandon Fixed Asset</field>
+        <field name="model">account.fixed.assets.abandon</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Abandonment">
+              <group col="4" colspan="4" states="init" fill="0">
+                <separator string="Abandon Method" colspan="4"/>
+                <field name="period_id"/>
+                <field name="date"/>
+                <newline/>
+                <field name="name" colspan="4"/>
+                <field name="acc_abandon" colspan = "4"/>
+                <field name="whole_asset"/>
+                <separator string="Notes" colspan="4"/>
+                <field name="note" nolabel="1" colspan="4"/>
+                <field name="state" invisible="1"/>
+              </group>
+              <group colspan="4">
+                <button icon="gtk-cancel" special="cancel" states="init" string="Cancel"/>
+                <button icon="gtk-execute" name="act_asset_abandon" states="init" string="Abandon" type="object"/>
+              </group>
+            </form>
+      </field>
+    </record>
+
+    <record id="action_account_fixed_assets_abandon" model="ir.actions.act_window">
+      <field name="name">Abandon</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">account.fixed.assets.abandon</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="view_account_fixed_assets_abandon_form"/>
+      <field name="target">new</field>
+    </record>
+
+	</data>
+</openerp>

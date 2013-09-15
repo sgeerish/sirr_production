@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl/lib/demo/gcalendar_openerp.py

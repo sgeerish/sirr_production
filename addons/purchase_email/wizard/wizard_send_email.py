@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/purchase_email/wizard/wizard_send_email.py

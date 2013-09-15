@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_journal_visibility/account_journal.py

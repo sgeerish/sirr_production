@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/maintenance_editor/__init__.py

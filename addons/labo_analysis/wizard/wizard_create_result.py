@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/labo_analysis/wizard/wizard_create_result.py

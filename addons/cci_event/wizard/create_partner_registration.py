@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_event/wizard/create_partner_registration.py

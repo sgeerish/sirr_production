@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_invoice_number/account_invoice_number.py

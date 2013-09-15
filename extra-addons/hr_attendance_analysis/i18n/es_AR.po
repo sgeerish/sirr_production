@@ -1,0 +1,737 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* hr_attendance_analysis
+# Cristian S. Rocha <cristian.rocha@moldeointeractive.com.ar>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.15\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-04-14 14:12:48+0000\n"
+"PO-Revision-Date: 2011-04-14 11:56-0300\n"
+"Last-Translator: Cristian S. Rocha <cristian.rocha@moldeointeractive.com."
+"ar>\n"
+"Language-Team: es_AR <cristian.rocha@moldeointeractive.com.ar>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: UTF-8\n"
+"Plural-Forms: X\n"
+
+#. module: hr_attendance_analysis
+#: code:addons/hr_attendance_analysis/hr_journal.py:0
+#, python-format
+msgid "Attendance don 't belong to this journal"
+msgstr "La asistencia no pertenece al este diario"
+
+#. module: hr_attendance_analysis
+#: model:ir.actions.wizard,name:hr_attendance_analysis.print_journal_report
+msgid "Print Attendance Journal Report"
+msgstr "Reporte de Asistencias Diarias"
+
+#. module: hr_attendance_analysis
+#: wizard_field:hr.aa.attendance_process,init,errors:0
+msgid "Errors"
+msgstr "Errores"
+
+#. module: hr_attendance_analysis
+#: constraint:hr.department:0
+msgid "Error! You can not create recursive departments."
+msgstr "Error! No puedes crear departamentos recursivos."
+
+#. module: hr_attendance_analysis
+#: model:hr.holidays.status,name:hr_attendance_analysis.test_sikness
+msgid "hr.test Sikness"
+msgstr "hr.test Enfermo"
+
+#. module: hr_attendance_analysis
+#: field:hr.attendance,next:0
+msgid "Next attendance"
+msgstr "Próxima asistencia"
+
+#. module: hr_attendance_analysis
+#: code:addons/hr_attendance_analysis/hr_journal.py:0
+#, python-format
+msgid "You must define the holiday date range witch overlaps the turn range"
+msgstr ""
+"Debes definir el rango de fecha de la licencia que se superponga en el rango "
+"del turno."
+
+#. module: hr_attendance_analysis
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre del modelo inválido en la definición de la acción."
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal,department_id:0 field:hr.contract,department_id:0
+msgid "Department"
+msgstr "Sector"
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.journal:0 field:hr.aa.journal,holiday_ids:0
+#: field:hr.attendance,confirmed_holidays:0 field:hr.attendance,holidays:0
+msgid "Holidays"
+msgstr "Licencias"
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.journal.formula:0
+#: model:ir.actions.act_window,name:hr_attendance_analysis.open_view_hr_aa_journal_formula
+#: model:ir.ui.menu,name:hr_attendance_analysis.menu_view_hr_aa_journal_formula_form
+msgid "Journal Formula"
+msgstr "Formula del Diario"
+
+#. module: hr_attendance_analysis
+#: wizard_view:hr.aa.print_journal_report,init:0
+msgid "Setup report"
+msgstr "Configuración del Reporte"
+
+#. module: hr_attendance_analysis
+#: model:hr.holidays.status,name:hr_attendance_analysis.test_national_holiday
+msgid "hr.test National Holiday"
+msgstr "hr.test Feriado Nacional"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.action_reason_rule,action:0
+msgid "Action Reason"
+msgstr "Razón de la Acción"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal,turn_start:0
+msgid "Start of the turn"
+msgstr "Comienzo del Turno"
+
+#. module: hr_attendance_analysis
+#: model:ir.model,name:hr_attendance_analysis.model_hr_aa_journal_formula
+msgid "Day Processor Function"
+msgstr "Función de procesamiento del dia"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal.value,value:0 field:hr.aa.payroll.value,value:0
+msgid "Value"
+msgstr "Valor"
+
+#. module: hr_attendance_analysis
+#: code:addons/hr_attendance_analysis/wizard/journal_report.py:0
+#, python-format
+msgid "Error!"
+msgstr "Error"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal.value,name:0
+msgid "Value Name"
+msgstr "Nombre del Valor"
+
+#. module: hr_attendance_analysis
+#: field:hr.attendance,has_refused_holidays:0
+msgid "Has Refused Holidays?"
+msgstr "Tiene una licencia rechazada?"
+
+#. module: hr_attendance_analysis
+#: wizard_button:hr.aa.attendance_process,init,end:0
+msgid "OK"
+msgstr "OK"
+
+#. module: hr_attendance_analysis
+#: field:hr.attendance,turn_date:0
+msgid "Turn date"
+msgstr "Fecha del Turno"
+
+#. module: hr_attendance_analysis
+#: model:ir.model,name:hr_attendance_analysis.model_hr_aa_payroll_line
+msgid "Payroll Line"
+msgstr "Linea de Liquidación"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.payroll,date_from:0
+msgid "Date from"
+msgstr "Desde"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal,day_end:0
+msgid "End of the day"
+msgstr "Fin del día"
+
+#. module: hr_attendance_analysis
+#: model:ir.actions.act_window,name:hr_attendance_analysis.open_view_hr_aa_payroll_formula
+#: model:ir.ui.menu,name:hr_attendance_analysis.menu_open_view_hr_aa_payroll_formula_form
+msgid "Payroll formulas"
+msgstr "Formula de Liquidación"
+
+#. module: hr_attendance_analysis
+#: selection:hr.aa.journal,state:0 selection:hr.aa.payroll,state:0
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal,value_ids:0
+msgid "Day values"
+msgstr "Valores del Día"
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.journal:0 view:hr.aa.payroll:0
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: hr_attendance_analysis
+#: wizard_field:hr.aa.attendance_process,init,count:0
+msgid "Number of generated items"
+msgstr "Número de entradas generadas"
+
+#. module: hr_attendance_analysis
+#: model:ir.model,name:hr_attendance_analysis.model_hr_aa_journal
+msgid "Attendance of a day"
+msgstr "Asistencias del día"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal.formula,label:0 field:hr.aa.payroll.formula,label:0
+msgid "Label"
+msgstr "Etiqueta"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.action_reason_rule,seq:0 field:hr.aa.payroll.formula,seq:0
+msgid "Priority"
+msgstr "Prioridad"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal,state:0 field:hr.aa.payroll,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: hr_attendance_analysis
+#: code:addons/hr_attendance_analysis/report/payroll_report.py:0
+#: field:hr.aa.journal,employee_id:0 field:hr.aa.payroll.line,employee_id:0
+#, python-format
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.journal:0 view:hr.aa.payroll:0
+msgid "General"
+msgstr "General"
+
+#. module: hr_attendance_analysis
+#: code:addons/hr_attendance_analysis/wizard/journal_report.py:0
+#, python-format
+msgid "Begin date must be before the end day"
+msgstr "La fecha debe antes del fin del día"
+
+#. module: hr_attendance_analysis
+#: help:hr.aa.journal.formula,code:0 help:hr.aa.payroll.formula,code:0
+msgid "Used to get the value in other formulas"
+msgstr "Usado para obtener valores de otras fórmulas"
+
+#. module: hr_attendance_analysis
+#: constraint:hr.holidays:0
+msgid ""
+"The Holiday request seems invalid due to one of the following reasons:\n"
+"1. Start date is greater than End date!\n"
+"2. Number of Day(s) asked for leave(s) are zero!\n"
+"3. You are requesting more holidays by putting negative days,but both the "
+"dates are not same! "
+msgstr ""
+"La licencia aparenta estar equivocada por las siguientes razones:\n"
+"1. La fecha de inicio es mayor a la fecha final\n"
+"2. El número de días es zero\n"
+"3. Esta requiriendo más licencia usando números negativos, pero ambas fechas "
+"no son iguales."
+
+#. module: hr_attendance_analysis
+#: wizard_field:hr.aa.print_journal_report,init,date_to:0
+msgid "Last day"
+msgstr "Último día"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.payroll.formula,formula:0
+msgid "formula"
+msgstr "formula"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.payroll.value,line_id:0
+msgid "Line"
+msgstr "Línea"
+
+#. module: hr_attendance_analysis
+#: model:hr.holidays.status,name:hr_attendance_analysis.test_preagned
+msgid "hr.test ART"
+msgstr "hr.test ART"
+
+#. module: hr_attendance_analysis
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML inválido para una vista!"
+
+#. module: hr_attendance_analysis
+#: model:ir.actions.act_window,name:hr_attendance_analysis.open_module_hr_journal_tree
+#: model:ir.ui.menu,name:hr_attendance_analysis.menu_hr_journal
+msgid "Attendance Journals"
+msgstr "Diarios de asistencia"
+
+#. module: hr_attendance_analysis
+#: model:ir.module.module,description:hr_attendance_analysis.module_meta_information
+msgid ""
+"\n"
+"    Module to do analisis over human resources attendances.\n"
+"    "
+msgstr ""
+"\n"
+"    Módulo de análisis de asistencias de recursos humanos.\n"
+"    "
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal.formula,seq:0
+msgid "Solve Sequence"
+msgstr "Secuencia resuelta"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal,contract_hours:0
+msgid "Contract time"
+msgstr "Tiempo del Contrato"
+
+#. module: hr_attendance_analysis
+#: code:addons/hr_attendance_analysis/hr_journal.py:0
+#, python-format
+msgid "You must assign holiday to the same employee of the journal"
+msgstr "Debe asignar licencia al mismo empleado del diario"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal.value,formula_id:0
+msgid "Function type"
+msgstr "Tipo de la función"
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.payroll.formula:0
+msgid "Payroll formula"
+msgstr "Fórmula de la liquidación"
+
+#. module: hr_attendance_analysis
+#: field:hr.attendance,has_holidays:0
+msgid "Has Holidays?"
+msgstr "Tiene licencias?"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal,turn_end:0
+msgid "End of the turn"
+msgstr "Fin del turno"
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.journal:0
+msgid "Attendance Journal"
+msgstr "Diario de asistencia"
+
+#. module: hr_attendance_analysis
+#: help:hr.aa.action_reason_rule,rule:0
+msgid ""
+"Must be a lambda function with one parameter.\n"
+"This example calc if the employee sing in at time:\n"
+"\n"
+"    lambda att: lambda att: ( turn_start and turn_end and turn_start -\n"
+"    timedelta(hours=1) < dt(att.name) and dt(att.name) < turn_start + "
+"timedelta(minutes=15))\n"
+"\n"
+"The input of the lambda function is the attendance to check.\n"
+"\n"
+"The following functions are available:\n"
+"\n"
+"    dt: convert a string to datetime.\n"
+"    d: convert a string to date.\n"
+"\n"
+"And the following objetcs are available:\n"
+"\n"
+"    timedelta: A delta of time\n"
+"    date:      A date, without hour, minutes and seconds.\n"
+"    datetime:  A date, with hour, minutes and seconds.\n"
+"    time:      Just a time.\n"
+"\n"
+"Following properties are availables for att:\n"
+"\n"
+"    att.date:                   The date of the attendance.\n"
+"    att.datetime:               The datetime of the attendance.\n"
+"    att.action:                 The action of the attendance.\n"
+"    att.turn_date:              The date associated to the enabled turn.\n"
+"    att.turn_start:             The time when the turn start.\n"
+"    att.turn_end:               The time when the turn end.\n"
+"    att.previus:                The previuos attendance.\n"
+"    att.next:                   The next attendance.\n"
+"    att.has_confirmed_holidays: The employee has a request for holiday.\n"
+"    att.has_refused_holidays:   The employee has a refused holiday.\n"
+"    att.has_validated_holidays: The employee has a validated holiday.\n"
+"    att.has_canceled_holidays:  The employee has a canceled holiday.\n"
+msgstr ""
+"Debe ser una función lambda con un parámetro.\n"
+"El ejemplo calcula si el empleado llegó a tiempo:\n"
+"\n"
+"    lambda att: lambda att: ( turn_start and turn_end and turn_start -\n"
+"    timedelta(hours=1) < dt(att.name) and dt(att.name) < turn_start + "
+"timedelta(minutes=15))\n"
+"\n"
+"La entrada la función lambda es una asistencia a computar.\n"
+"\n"
+"Las siguientes funciones están disponibles:\n"
+"\n"
+"    dt: convierte un string a datetime.\n"
+"    d: convierte un string a date.\n"
+"\n"
+"Como también estos objetos:\n"
+"\n"
+"    timedelta: Diferencia entre tiempos\n"
+"    date:      Una fecha con resolución a días.\n"
+"    datetime:  Una fecha con resolución a segundos.\n"
+"    time:      Un tiempo.\n"
+"\n"
+"Los siguientes atributos están disponibles en una asistencia:\n"
+"\n"
+"    att.name:                   Fecha de la asistencia.\n"
+"    att.action:                 Acción de la asistencia: sign_in, sign_out.\n"
+"    att.turn_date:              Fecha del turno asociado a la asistencia.\n"
+"    att.turn_start:             Momento cuando comienza el turno.\n"
+"    att.turn_end:               Momento en que termina el turno.\n"
+"    att.previus:                Asistencia previa.\n"
+"    att.next:                   Próxima asistencia.\n"
+"    att.has_confirmed_holidays: El empleado tiene licencias confirmadas.\n"
+"    att.has_refused_holidays:   El empleado tiene licencias rechazadas.\n"
+"    att.has_validated_holidays: El empleado tiene licencias validadas.\n"
+"    att.has_canceled_holidays:  El empleado tiene licencias canceladas.\n"
+
+#. module: hr_attendance_analysis
+#: field:hr.attendance,turn_end:0
+msgid "Turn end"
+msgstr "Fin del turno"
+
+#. module: hr_attendance_analysis
+#: code:addons/hr_attendance_analysis/hr_journal.py:0
+#, python-format
+msgid "I expect process attendance just for one journal"
+msgstr "Espero solo procesar asistencias de un diario"
+
+#. module: hr_attendance_analysis
+#: code:addons/hr_attendance_analysis/report/payroll_report.py:0
+#: view:hr.aa.journal:0 field:hr.aa.journal,note:0 view:hr.aa.payroll:0
+#: field:hr.aa.payroll,note:0 field:hr.aa.payroll.line,note:0
+#, python-format
+msgid "Note"
+msgstr "Nota"
+
+#. module: hr_attendance_analysis
+#: model:ir.model,name:hr_attendance_analysis.model_hr_aa_payroll
+msgid "Payroll Document"
+msgstr "Documento de liquidación"
+
+#. module: hr_attendance_analysis
+#: selection:hr.aa.journal,state:0 selection:hr.aa.payroll,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.payroll.value,formula_id:0
+msgid "Formula type"
+msgstr "Tipo de formulas"
+
+#. module: hr_attendance_analysis
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"El nombre del objeto debe comenzar con x_ y no debe contener ningún caracter "
+"especial."
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.payroll,date_to:0
+msgid "Date to"
+msgstr "Hasta"
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.payroll.formula:0
+msgid "Day line"
+msgstr "Linea del dia"
+
+#. module: hr_attendance_analysis
+#: model:ir.actions.act_window,name:hr_attendance_analysis.hr_contract_action_tree
+#: model:ir.ui.menu,name:hr_attendance_analysis.menu_hr_contract
+msgid "Contracts"
+msgstr "Contratos"
+
+#. module: hr_attendance_analysis
+#: code:addons/hr_attendance_analysis/hr_journal.py:0
+#, python-format
+msgid "Overlaped turn for the journal %s."
+msgstr "Superposición del turno para el diario %s."
+
+#. module: hr_attendance_analysis
+#: wizard_view:hr.aa.attendance_process,init:0
+msgid "Process final status"
+msgstr "Estado final del proceso"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.action_reason_rule,active:0
+#: field:hr.aa.journal.formula,active:0 field:hr.aa.payroll.formula,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: hr_attendance_analysis
+#: help:hr.aa.payroll.formula,seq:0
+msgid "Solve first low values"
+msgstr "Resolver primero valores bajos"
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.journal:0 view:hr.aa.payroll:0
+msgid "Compute"
+msgstr "Computar"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal.formula,default:0 field:hr.aa.payroll.formula,default:0
+msgid "Default"
+msgstr "Por defecto"
+
+#. module: hr_attendance_analysis
+#: model:hr.holidays.status,name:hr_attendance_analysis.test_freeday
+msgid "hr.test Free day"
+msgstr "hr.test Dia libre"
+
+#. module: hr_attendance_analysis
+#: field:hr.attendance,contract:0
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: hr_attendance_analysis
+#: model:hr.holidays.status,name:hr_attendance_analysis.test_late_advise
+msgid "hr.test Late Advise"
+msgstr "hr.test Llegada tarde"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal,date:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: hr_attendance_analysis
+#: field:hr.attendance,previous:0
+msgid "Previous attendance"
+msgstr "Asistencia Previa"
+
+#. module: hr_attendance_analysis
+#: code:addons/hr_attendance_analysis/hr_journal.py:0
+#, python-format
+msgid "Error"
+msgstr "Error"
+
+#. module: hr_attendance_analysis
+#: help:hr.aa.journal.formula,default:0 help:hr.aa.payroll.formula,default:0
+msgid "First value without evaluation"
+msgstr "Primer valor sin evaluación"
+
+#. module: hr_attendance_analysis
+#: model:ir.actions.wizard,name:hr_attendance_analysis.wizard_attendance_process
+#: model:ir.ui.menu,name:hr_attendance_analysis.menu_attendance_process
+msgid "Process Attendance for Analysis"
+msgstr "Procesar asistencias para análisis"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal.formula,code:0 field:hr.aa.payroll.formula,code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: hr_attendance_analysis
+#: model:hr.holidays.status,name:hr_attendance_analysis.test_out_advise
+msgid "hr.test Out Advise"
+msgstr "hr.test Salida"
+
+#. module: hr_attendance_analysis
+#: field:hr.attendance,has_validated_holidays:0
+msgid "Has Validated Holidays?"
+msgstr "Tiene Licencias Validadas?"
+
+#. module: hr_attendance_analysis
+#: help:hr.aa.journal.formula,label:0 help:hr.aa.payroll.formula,label:0
+msgid "Label used in reports. If null the value not visible."
+msgstr "Etiqueta usada en reportes. Si es nulo el valor no es visible."
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.journal:0 view:hr.aa.payroll:0
+#: wizard_button:hr.aa.print_journal_report,init,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.payroll.line,wage:0
+msgid "Wage"
+msgstr "Salario"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal,day_start:0
+msgid "Start of the day"
+msgstr "Inicio del día"
+
+#. module: hr_attendance_analysis
+#: help:hr.aa.action_reason_rule,seq:0
+msgid "Low values have more priority"
+msgstr "Valores bajos tienen menor prioridad"
+
+#. module: hr_attendance_analysis
+#: model:ir.actions.report.xml,name:hr_attendance_analysis.hr_aa_payroll_print
+msgid "Print Payroll Document"
+msgstr "Imprimir Liquidaciones"
+
+#. module: hr_attendance_analysis
+#: code:addons/hr_attendance_analysis/hr_journal.py:0
+#, python-format
+msgid "I expect process holidays just for one journal"
+msgstr "Espero procesar licencias de un solo diario"
+
+#. module: hr_attendance_analysis
+#: wizard_button:hr.aa.print_journal_report,init,print:0
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: hr_attendance_analysis
+#: field:hr.attendance,turn_start:0
+msgid "Turn start"
+msgstr "Inicio del turno"
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.journal.value:0
+#: model:ir.model,name:hr_attendance_analysis.model_hr_aa_journal_value
+msgid "Journal Value"
+msgstr "Valor del Diario"
+
+#. module: hr_attendance_analysis
+#: model:ir.model,name:hr_attendance_analysis.model_hr_aa_payroll_formula
+msgid "hr.aa.payroll.formula"
+msgstr ""
+
+#. module: hr_attendance_analysis
+#: field:hr.attendance,refused_holidays:0
+msgid "Refused Holidays"
+msgstr "Rechazar Licencias"
+
+#. module: hr_attendance_analysis
+#: field:hr.attendance,date:0
+msgid "Attendance date"
+msgstr "Fecha de la asistencia"
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.journal:0 field:hr.aa.journal,attendance_ids:0
+msgid "Attendances"
+msgstr "Asistencias"
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.action_reason_rule:0
+#: model:ir.model,name:hr_attendance_analysis.model_hr_aa_action_reason_rule
+msgid "Action Reason Rule"
+msgstr "Regla de razón de acción"
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.payroll:0 field:hr.aa.payroll.line,payroll_id:0
+#: model:ir.actions.act_window,name:hr_attendance_analysis.open_view_hr_aa_payroll
+#: model:ir.ui.menu,name:hr_attendance_analysis.menu_open_view_hr_aa_payroll_form
+msgid "Payroll"
+msgstr "Liquidación"
+
+#. module: hr_attendance_analysis
+#: code:addons/hr_attendance_analysis/report/payroll_report.py:0
+#: field:hr.aa.payroll.line,wage_type_id:0
+#, python-format
+msgid "Wage Type"
+msgstr "Tipo de Salario"
+
+#. module: hr_attendance_analysis
+#: wizard_field:hr.aa.print_journal_report,init,date_from:0
+msgid "First day"
+msgstr "Primer día"
+
+#. module: hr_attendance_analysis
+#: model:ir.model,name:hr_attendance_analysis.model_hr_aa_payroll_value
+msgid "hr.aa.payroll.value"
+msgstr ""
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal.formula,function:0
+msgid "Function"
+msgstr "Función"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.action_reason_rule,name:0 field:hr.aa.journal,name:0
+#: field:hr.aa.journal.formula,name:0 field:hr.aa.payroll,name:0
+#: field:hr.aa.payroll.formula,name:0 field:hr.aa.payroll.line,name:0
+#: field:hr.aa.payroll.value,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: hr_attendance_analysis
+#: field:hr.attendance,validated_holidays:0
+msgid "Validated Holidays"
+msgstr "Licencias Validadas"
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.journal:0 field:hr.aa.payroll,line_ids:0
+msgid "Lines"
+msgstr "Lineas"
+
+#. module: hr_attendance_analysis
+#: help:hr.aa.journal.formula,seq:0
+msgid "Solve low values first"
+msgstr "Resuelve primero valores bajos"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.payroll.line,value_ids:0
+msgid "Values"
+msgstr "Valores"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.action_reason_rule,rule:0
+msgid "Rule"
+msgstr "Regla"
+
+#. module: hr_attendance_analysis
+#: model:hr.holidays.status,name:hr_attendance_analysis.test_vacation
+msgid "hr.test Vacation"
+msgstr "hr.test Vacaciones"
+
+#. module: hr_attendance_analysis
+#: model:ir.actions.act_window,name:hr_attendance_analysis.open_view_action_reason_rule
+#: model:ir.ui.menu,name:hr_attendance_analysis.menu_view_action_reason_rule_form
+msgid "Action Reason Rules"
+msgstr "Reglas de razón de acción"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal,turn_id:0 field:hr.contract,turn_id:0
+msgid "Turn"
+msgstr "Turno"
+
+#. module: hr_attendance_analysis
+#: code:addons/hr_attendance_analysis/report/payroll_report.py:0
+#, python-format
+msgid "Id"
+msgstr "Id"
+
+#. module: hr_attendance_analysis
+#: model:ir.actions.wizard,name:hr_attendance_analysis.attendance_reason_compute
+msgid "Compute Reasons for Attendances"
+msgstr "Computa Razones de Asistencias"
+
+#. module: hr_attendance_analysis
+#: model:ir.module.module,shortdesc:hr_attendance_analysis.module_meta_information
+msgid "Human Resources Attendance Annalysis"
+msgstr "Análizador de Asistencias de Recursos Humanos"
+
+#. module: hr_attendance_analysis
+#: field:hr.attendance,datetime:0
+msgid "Attendance datetime"
+msgstr "Fecha de asistencias"
+
+#. module: hr_attendance_analysis
+#: model:hr.holidays.status,name:hr_attendance_analysis.test_early_advise
+msgid "hr.test Early Advise"
+msgstr "hr.test Salida Temprano"
+
+#. module: hr_attendance_analysis
+#: field:hr.aa.journal.value,journal_id:0
+msgid "Journal"
+msgstr "Diario"
+
+#. module: hr_attendance_analysis
+#: field:hr.attendance,has_confirmed_holidays:0
+msgid "Has Confirmed Holidays?"
+msgstr "Tienes licencias confirmadas?"
+
+#. module: hr_attendance_analysis
+#: view:hr.aa.payroll:0
+msgid "Fill"
+msgstr "Llenar"

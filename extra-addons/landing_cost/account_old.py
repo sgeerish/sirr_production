@@ -1,0 +1,173 @@
+# -*- coding: utf-8 -*-
+"""
+Landing Cost implementation
+
+:copyright: (c) 2011 by Openlabs Technologies & Consulting (P) Limited.
+:license: AGPL, see LICENSE for more details.
+
+"""
+
+from osv import osv, fields
+import decimal_precision as dp
+
+class product(osv.osv):
+    """
+    Add the one2many to account.move
+    """
+    _inherit = "product.product"
+    _columns = {
+        'calculated_cost': fields.float('Reviens Calcule'),
+        }
+product()
+
+class Invoice(osv.osv):
+    """
+    Add the one2many to account.move
+    """
+    _inherit = "account.invoice"
+
+    def get_total_quantity(self, cursor, user, ids, 
+            name=None, args=None, context=None):
+        "Return the total quantity in an invoice"
+        result = {}
+        for invoice in self.browse(cursor, user, ids, context):
+            result[invoice.id] = sum(
+                [l.price_subtotal for l in invoice.invoice_line if l.product_id]
+                )
+        return result
+    def set_product_cost(self, cr, uid, ids,
+            name=None, args=None, context=None):
+        "Return the total quantity in an invoice"
+        inv_line_obj = self.pool.get('account.invoice.line')
+        prod=self.pool.get('product.product')
+        inv_obj = self.browse(cr,uid,ids)
+        for lines in inv_obj:
+            for line in lines.invoice_line:
+                if not line.product_id:
+                    continue
+                line.product_id.calculated_cost=line.landing_cost
+                prod_id=line.product_id.id
+                prod.write(cr, uid, prod_id, {'calculated_cost':line.landing_cost})
+                prod.write(cr, uid, prod_id, {'sale_ok': True})
+                prod.write(cr,uid,prod_id,{'list_price':line.new_sale_price})
+        return True
+
+    def get_total_additional_cost(self, cursor, user, ids,
+            name=None, args=None, context=None):
+        "Return the total cost"
+        result = {}
+	for invoice in self.browse(cursor, user, ids, context):
+		result[invoice.id]=sum([l.amount for l in invoice.additional_costs])
+	return result
+
+    _columns = {
+	'total_additional_cost': fields.function(get_total_additional_cost, type="float",method=True, string="Total Frais Additionels",digits_compute= dp.get_precision('Account')),
+        'total_quantity': fields.function(get_total_quantity, type="float",method=True, string="Montant Totale",digits_compute= dp.get_precision('Account')),
+        'additional_costs': fields.one2many('account.move', 'cost_for_invoice','Frais Additionels'),
+        }
+
+Invoice()
+
+
+class InvoiceLine(osv.osv):
+    """Show a computed L/C field"""
+    _inherit = "account.invoice.line"
+
+    def get_landing_cost(self, cursor, user, ids, name, args, context=None):
+        "Return the landing cost"
+        invoice_obj = self.pool.get('account.invoice')
+        result = { }
+        for line in self.browse(cursor, user, ids, context):
+            if not line.product_id:
+                result[line.id] = line.price_unit
+                continue
+            total_addn_cost = line.invoice_id.total_additional_cost
+            total_quantity = line.invoice_id.total_quantity
+            dist_cost = 0.00
+            frais_mga=total_addn_cost
+	    cours=line.invoice_id.cur_rate
+            fac_dev=line.invoice_id.amount_total
+            coeff=((frais_mga)+(fac_dev*cours))/fac_dev
+            reviens=0
+            if total_quantity > 0.00:
+                reviens = line.price_unit*coeff
+            result[line.id] = reviens
+        return result
+    def get_sale_price(self, cursor, user, ids, name, args, context=None):
+        invoice_obj = self.pool.get('account.invoice')
+        result = { }
+        l=self.browse(cursor,user,ids)
+        type=l[0].invoice_id.type
+        if type=='in_invoice':
+            for line in self.browse(cursor, user, ids, context):
+                if line.invoice_id.x_po:
+                    if line.x_qty_bc>0:
+                        print 't'
+                    else:
+                        po_lines=self.pool.get('purchase.order.line').search(cursor,user,[('order_id','=',line.invoice_id.x_po.id)])
+                        for pl in po_lines:
+                            po_line=self.pool.get('purchase.order.line').browse(cursor,user,pl)
+                            product=po_line.product_id
+                            if product==line.product_id:
+                                self.write(cursor, user, line.id, {'x_qty_bc': po_line.product_qty})
+                if line.invoice_id.x_picking_id:
+                    if line.x_qty_bc>0:
+                        print 't'
+                    else:
+                        po_lines=self.pool.get('stock.move').search(cursor,user,[('picking_id','=',line.invoice_id.x_picking_id.id)])
+                        for pl in po_lines:
+                            po_line=self.pool.get('stock.move').browse(cursor,user,pl)
+                            product=po_line.product_id
+                            if product==line.product_id:
+                                self.write(cursor, user, line.id, {'x_qty_recu': po_line.product_qty })                            
+                result[line.id]=line.product_id.lst_price
+                if not line.new_sale_price:
+                    self.write(cursor, user, line.id, {'new_sale_price': line.product_id.lst_price})
+        return result  
+ 
+    def get_new_marge(self, cursor, user, ids, name, args, context=None):
+        invoice_obj = self.pool.get('account.invoice')
+        result = { }
+        for line in self.browse(cursor, user, ids, context):
+		if(line.new_sale_price>0):
+                    result[line.id]=(line.new_sale_price-line.landing_cost)/line.new_sale_price*100
+		else:
+    		    self.write(cursor,user,line.id,{'new_sale_price':line.product_id.lst_price})
+	            result[line.id]=0
+        return result  
+
+    def get_old_reviens(self, cursor, user, ids, name, args, context=None):
+        invoice_obj = self.pool.get('account.invoice')
+        result = { }
+
+        for line in self.browse(cursor, user, ids, context):
+		if line.actual_sale_price>0:
+	       		result[line.id]=(line.actual_sale_price-line.landing_cost)/line.actual_sale_price*100
+        	else:
+			result[line.id]=0
+	return result
+
+    _columns = {
+        'landing_cost': fields.function(get_landing_cost, method=True,
+            string='Reviens', type="float",
+            digits_compute= dp.get_precision('Account'),),
+        'actual_sale_price':fields.function(get_sale_price,method=True,string="P. Vente Act."),
+        'new_sale_price':fields.float('Nouv. P. Vente'),
+        'nouv_marge':fields.function(get_new_marge,method=True,string="Nouv. Marge"),
+        'marge':fields.float('marge'),
+        'marge_achat':fields.function(get_old_reviens,method=True,string="Anciens. Marge"),
+        'stock_actual': fields.related('product_id','virtual_available', type='float', string='Stock Actuel'),
+	}
+InvoiceLine()
+
+
+class AccountMove(osv.osv):
+    "Relate account move to invoice"
+    _inherit = "account.move"
+
+    _columns = {
+        # TODO: Set domain as supplier invoice only
+        'cost_for_invoice': fields.many2one('account.invoice', 
+            'Cost for Invoice', )
+        }
+AccountMove()

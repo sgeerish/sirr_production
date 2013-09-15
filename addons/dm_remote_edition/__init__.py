@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_remote_edition/__init__.py

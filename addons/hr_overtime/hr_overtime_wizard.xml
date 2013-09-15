@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+	<wizard id="wizard_hr_overtime_calculation"
+		model="hr.overtime.wiz"
+		name="hr_overtime_wiz"
+		string="Calculer les heures sup" />
+
+       <act_window name="Calculer Heures Sup"
+        res_model="hr.overtime.wiz"
+        src_model="hr.overtime.wiz"
+        view_mode="form"
+        target="new"
+        key2="client_action_multi"
+        id="hr_overtime_wiz_act_window"/>
+
+	<menuitem action="hr_overtime_wiz_act_window"
+		id="menu_hr_overtime_calculation"
+		groups="base.group_hr_manager" parent="hr_attendance.menu_hr_attendance"/>
+	
+        <record model="ir.ui.view" id="wizard_hr_overtime_form">
+            <field name="name">wizard.hr.overtime.form</field>
+            <field name="model">hr.overtime.wiz</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Calculer" col="2">
+                    <field name="name" />
+                    <separator string="" colspan="2"/>
+                    <group col="2" colspan="2">
+                        <button name="calculate_hs" type="object" string="Calculer" icon="gtk-apply"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+     </data>
+</openerp>
+

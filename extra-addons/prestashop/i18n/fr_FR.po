@@ -1,0 +1,307 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* openerp-prestashop-sync
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.9\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-06-03 10:43:57+0000\n"
+"PO-Revision-Date: 2010-06-03 10:43:57+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openerp-prestashop-sync
+#: field:product.category,exportable:0
+msgid "Active on Prestashop"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: wizard_button:prestashop.categories.sync,init,end:0
+#: wizard_button:prestashop.products.sync,init,end:0
+msgid "End"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: field:product.category,prestashop_id:0
+msgid "Prestashop category id"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: model:ir.module.module,description:openerp-prestashop-sync.module_meta_information
+msgid "\n"
+"    This is the integration module of Open ERP with prestashop website.\n"
+"    \n"
+"    Features:\n"
+"        * Category Synchronization\n"
+"        * Product Synchronization\n"
+"\n"
+"    ToDo:\n"
+"        * Enhance Category and Product Synchronization\n"
+"        * Customer Synchronization\n"
+"        * Sale order Synchronization\n"
+"        * Translation Support\n"
+"    \n"
+"    This module is tested only in prestashop version 1.2.X\n"
+"\n"
+"    This module is contributed by the NJconsultancy (www.njconsultancy.com)\n"
+"and Techreceptives (www.techreceptives.com/)\n"
+"    "
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: wizard_field:prestashop.categories.sync,init,categ_update:0
+msgid "Updated Categories"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: code:addons/openerp-prestashop-sync/prestashop.py:0
+#, python-format
+msgid "Error : %s"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: model:ir.ui.menu,name:openerp-prestashop-sync.menu_main_prestashop
+#: view:product.product:0
+msgid "Prestashop"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: wizard_view:prestashop.categories.sync,init:0
+msgid "Categories exported"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: field:prestashop.config,prestashop_host:0
+msgid "Prestashop Web URL"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: code:addons/openerp-prestashop-sync/product.py:0
+#, python-format
+msgid "You must have one shop \\n"
+"                            with Prestashop flag turned on"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: model:ir.actions.act_window,name:openerp-prestashop-sync.action_prestashop_web_form
+#: model:ir.ui.menu,name:openerp-prestashop-sync.menu_prestashop_web_form
+#: view:prestashop.config:0
+msgid "Prestashop Web"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: wizard_field:prestashop.categories.sync,init,categ_new:0
+msgid "New Categories"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Le nom de l'objet doit commencer avec x_ et ne pas contenir de charactères spéciaux !"
+
+#. module: openerp-prestashop-sync
+#: model:ir.module.module,shortdesc:openerp-prestashop-sync.module_meta_information
+msgid "Prestashop Openerp Integration"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: wizard_view:prestashop.products.sync,init:0
+msgid "Product exported"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: view:product.category:0
+msgid "Product Categories"
+msgstr "Catégories de produits"
+
+#. module: openerp-prestashop-sync
+#: field:product.category,description:0
+msgid "Description"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: help:prestashop.config,prestashop_flag:0
+msgid "The Prestashop active web must have this box checked."
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: code:addons/openerp-prestashop-sync/product.py:0
+#, python-format
+msgid "No products to update."
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: model:ir.ui.menu,name:openerp-prestashop-sync.menu_prestashop_synchronization
+msgid "Synchronization"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: view:product.product:0
+msgid "Short Description"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: field:prestashop.config,price_list_id:0
+msgid "Price List"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: model:ir.actions.wizard,name:openerp-prestashop-sync.wizard_prestashop_categories
+#: model:ir.ui.menu,name:openerp-prestashop-sync.menu_prestashop_categories
+msgid "Synchronize Categories"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML non valide pour l'architecture de la vue"
+
+#. module: openerp-prestashop-sync
+#: field:product.product,prestashop_id:0
+msgid "Prestashop product id"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: view:product.product:0
+msgid "Sale Description"
+msgstr "Description vente"
+
+#. module: openerp-prestashop-sync
+#: wizard_field:prestashop.products.sync,init,prod_fail:0
+msgid "Failed to export Products"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: model:ir.actions.wizard,name:openerp-prestashop-sync.wizard_prestashop_products
+#: model:ir.ui.menu,name:openerp-prestashop-sync.menu_prestashop_products
+msgid "Synchronize Products"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: field:product.product,exportable:0
+msgid "Export to website"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: view:prestashop.config:0
+msgid "Prestashop Connection Information"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: view:product.product:0
+msgid "Products"
+msgstr "Produits"
+
+#. module: openerp-prestashop-sync
+#: wizard_view:prestashop.products.sync,init:0
+msgid "Product Synchronization"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: code:addons/openerp-prestashop-sync/product.py:0
+#, python-format
+msgid "Error"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: wizard_view:prestashop.categories.sync,init:0
+msgid "Categories Synchronization"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: field:prestashop.config,prestashop_name:0
+msgid "Prestashop connection name"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: code:addons/openerp-prestashop-sync/prestashop.py:0
+#, python-format
+msgid "You must have a declared website with a valid URL"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: code:addons/openerp-prestashop-sync/product.py:0
+#, python-format
+msgid "Products Already updated"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: code:addons/openerp-prestashop-sync/prestashop.py:0
+#, python-format
+msgid "UserError"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: model:ir.model,name:openerp-prestashop-sync.model_prestashop_config
+msgid "Prestashop Configuration"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: field:product.product,updated:0
+msgid "Product updated on Prestashop"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: field:product.category,updated:0
+msgid "Category updated on Prestashop"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: wizard_field:prestashop.products.sync,init,prod_new:0
+msgid "New Produts"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: wizard_field:prestashop.products.sync,init,prod_update:0
+msgid "Updated Products"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: view:product.category:0
+#: view:product.product:0
+msgid "Prestashop Information"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: help:product.category,description:0
+msgid "Description of product in prestashop"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: help:prestashop.config,prestashop_host:0
+msgid "URL to Magento shop ending with /"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: code:addons/openerp-prestashop-sync/prestashop.py:0
+#, python-format
+msgid "You must have only one shop \\n"
+"                            with Prestashop flag turned on"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: code:addons/openerp-prestashop-sync/prestashop.py:0
+#, python-format
+msgid "Connection Error with prestashop"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: field:prestashop.config,prestashop_flag:0
+msgid "Prestashop sync flag"
+msgstr ""
+
+#. module: openerp-prestashop-sync
+#: wizard_field:prestashop.categories.sync,init,categ_fail:0
+msgid "Failed to export Categories"
+msgstr ""
+

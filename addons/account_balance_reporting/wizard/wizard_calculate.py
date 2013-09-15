@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_balance_reporting/wizard/wizard_calculate.py

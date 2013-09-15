@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="notebook_tree_view">
+            <field name="name">notebook.tree</field>
+            <field name="model">notebook</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Notebook">
+                    <field name="title"/>
+                    <field name="note"/>
+                    <field name="note_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="notebook_form_view">
+            <field name="name">notebook.form</field>
+            <field name="model">notebook</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Notebook">
+                    <field name="title"/>
+                    <field name="note"/>
+                    <field name="note_date"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_notebook_form">
+            <field name="name">notebook</field>
+            <field name="res_model">notebook</field>
+        </record>
+
+        <menuitem name="Notebook" icon="terp-project" id="notebook_menu"/>
+
+        <menuitem name="Notes" parent="notebook_menu" id="notebook_menu_mainform" action="action_notebook_form"/>
+    </data>
+</openerp>

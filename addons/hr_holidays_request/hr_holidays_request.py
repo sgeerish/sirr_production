@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_holidays_request/hr_holidays_request.py

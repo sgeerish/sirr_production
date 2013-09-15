@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!--
+	     Function calculation
+	     -->
+	<record id="test_formula_worked_hours" model="hr.aa.journal.formula">
+            <field name="name">hr.test Worked hours</field>
+            <field name="code">worked_hours</field>
+            <field name="function">
+	    lambda journal: (
+	        sum(
+	    	    map(
+	    	        lambda b: total_hours(b.name - journal.date) *
+		        (b.action == 'sign_in' and -1 or 1),
+		        journal.attendance_ids
+		    )
+		)
+	    )
+            </field>
+            <field name="default">.0</field>
+            <field name="seq">0</field>
+            <field name="active">True</field>
+	</record>
+
+	<record id="test_formula_day_hours" model="hr.aa.journal.formula">
+            <field name="name">hr.test Day hours</field>
+            <field name="code">day_hours</field>
+            <field name="label">Day Hours</field>
+            <field name="function">
+	    lambda day: (
+		    day.day_end and
+		    total_hours(day.day_end - day.day_start)
+	    )
+            </field>
+            <field name="default">.0</field>
+            <field name="seq">0</field>
+            <field name="active">True</field>
+	</record>
+
+	<record id="test_formula_turn_hours" model="hr.aa.journal.formula">
+            <field name="name">hr.test Turn hours</field>
+            <field name="code">turn_hours</field>
+            <field name="function">
+	    lambda day: (
+		    day.day_end and
+		    total_hours(day.day_end - max(day.turn_start, day.day_start))
+	    )
+            </field>
+            <field name="default">.0</field>
+            <field name="seq">0</field>
+            <field name="active">True</field>
+	</record>
+
+	<record id="test_formula_night_hours" model="hr.aa.journal.formula">
+            <field name="name">hr.test Night hours</field>
+            <field name="code">night_hours</field>
+            <field name="label">Night Hours</field>
+            <field name="function">
+	    lambda day: (
+		    day.day_start and
+		    day.day_start &lt; day.date + timedelta(hours=22) and
+		    day.date + timedelta(hours=22) &lt; day.day_end
+	    )
+            </field>
+            <field name="default">.0</field>
+            <field name="seq">0</field>
+            <field name="active">True</field>
+	</record>
+
+	<record id="test_formula_free_hours" model="hr.aa.journal.formula">
+            <field name="name">hr.test Free hours</field>
+            <field name="code">free_hours</field>
+            <field name="function">
+	    lambda day: (
+                day.v_day_hours - day.v_worked_hours
+	    )
+            </field>
+            <field name="default">.0</field>
+            <field name="seq">50</field>
+            <field name="active">True</field>
+        </record>
+
+	<record id="test_formula_extra_hours" model="hr.aa.journal.formula">
+            <field name="name">hr.test Extra hours</field>
+            <field name="code">extra_hours</field>
+            <field name="label">Extra Hours</field>
+            <field name="function">
+	    lambda day: (
+                max([0, day.v_turn_hours - day.contract_hours])
+	    )
+            </field>
+            <field name="default">.0</field>
+            <field name="seq">50</field>
+            <field name="active">True</field>
+	</record>
+
+	<record id="test_formula_normal_hours" model="hr.aa.journal.formula">
+            <field name="name">hr.test Normal hours</field>
+            <field name="code">normal_hours</field>
+            <field name="label">Normal Hours</field>
+            <field name="function">
+	    lambda day: (
+	        min(day.contract_hours, day.v_day_hours - day.v_extra_hours)
+	    )
+            </field>
+            <field name="default">.0</field>
+            <field name="seq">100</field>
+            <field name="active">True</field>
+	</record>
+
+
+    </data>
+</openerp>
+
+

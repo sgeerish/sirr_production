@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/smtpclient/__init__.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/l10n_lu_report/__init__.py

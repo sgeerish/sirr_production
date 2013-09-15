@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="stock_compare_form_view_imp">
+            <field name="name">pip.form</field>
+            <field name="model">pub.analysis</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                    <form string="Campagne">
+                    <group col="2" colspan="3">
+                    <field name="name"/>
+                    <field name="date_debut" required="True"/>
+                    <field name="date_fin" required="True"/>
+                    <field name="amount" required="True"/>
+                    <newline/>
+                    <field name="product_id" widget="many2many" colspan="1"/>
+                    <field name="publication_line" colspan="1"/>
+                    <field name="product_line" colspan="1"/>
+                    <button colspan="2" type="object" name="get_sales_lines" string="Analyser" icon="gtk-apply"/>
+                    </group>
+                </form>
+                </field>
+        </record>
+
+         <record model="ir.ui.view" id="stock_pip_view">
+            <field name="name">pip.tree</field>
+            <field name="model">pub.analysis</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+            <tree string="Campagnes">
+                    <field name="name"/>
+                    <field name="date_debut"/>
+                    <field name="date_fin"/>
+                    <field name="amount" sum="Total Cout"/>
+                </tree>
+            </field>
+        </record>
+
+         <record model="ir.ui.view" id="stock_pip_view">
+            <field name="name">product.line.tree</field>
+            <field name="model">product.line</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+            <tree string="Analyse" >
+                    <field name="date"/>
+                    <field name="name"/>
+                    <field name="quantite" string="QTE Vendu"/>
+                    <field name="virtual_quantity"/>                    
+                    <field name="cost_unit"/>
+                    <field name="cost"/>                    
+                    <field name="sale_price"/>
+                    <field name="amount"/>
+                </tree>
+            </field>
+        </record>        
+        
+         <record model="ir.ui.view" id="stock_pub_view">
+            <field name="name">publication.tree</field>
+            <field name="model">publication</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+            <tree string="Publications" editable="bottom">
+                    <field name="date"/>
+                    <field name="type"/>
+                    <field name="name"/>
+                    <field name="amount" sum="Total Cout"/>
+                </tree>
+            </field>
+        </record>  
+        <record model="ir.actions.act_window" id="action_pip_form">
+            <field name="name">pub.analysis</field>
+            <field name="res_model">pub.analysis</field>
+        </record>
+
+        <menuitem name="Impact Publicitaire" icon="terp-project" id="product_impact_pub_menu"/>
+
+        <menuitem name="Impact Pub" parent="product_impact_pub_menu" id="pip_mainform" action="action_pip_form"/>
+    </data>
+</openerp>

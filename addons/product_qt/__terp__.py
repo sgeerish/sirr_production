@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_qt/__terp__.py

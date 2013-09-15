@@ -1,0 +1,888 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Medical\n"
+"Report-Msgid-Bugs-To: https://sourceforge.net/apps/mantisbt/medical\n"
+"POT-Creation-Date: 2010-12-05 21:35:20+0000\n"
+"PO-Revision-Date: 2011-02-05 18:29+0000\n"
+"Last-Translator: sergiodl <sergio.dl@hotmail.com>\n"
+"Language-Team: Portuguese (Brazilian) <None>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,legal_status:0
+msgid "Illegal"
+msgstr "ilegal"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,dea_schedule_v:0
+msgid "V"
+msgstr "V"
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Smoking and Alcohol"
+msgstr "Tabagismo e Álcool"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,route_sniffing:0
+msgid "Also called snorting - inhaling through the nares  "
+msgstr "Inalação - Inspirar pelo nariz"
+
+#. module: medical_lifestyle
+#: help:medical.patient,age_start_drugs:0
+msgid "Age of start drugs"
+msgstr "Idade que começou a se drogar"
+
+#. module: medical_lifestyle
+#: help:medical.patient,age_quit_drinking:0
+msgid "Date to stop drinking"
+msgstr "Quando parou de beber "
+
+#. module: medical_lifestyle
+#: help:medical.patient,sex_with_prostitutes:0
+msgid "Check if the patient (he or she) has sex with prostitutes"
+msgstr "Veja se o paciente (ele ou ela) mantém relações  sexuais com prostitutas"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,street_name:0
+msgid "Street names"
+msgstr "Apelidos"
+
+#. module: medical_lifestyle
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nome Invalido"
+
+#. module: medical_lifestyle
+#: field:medical.patient,age_quit_drugs:0
+msgid "Age quit drugs "
+msgstr "Quando parou de usar drogas"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sex_oral:0
+msgid "Oral Sex"
+msgstr "Sexo Oral"
+
+#. module: medical_lifestyle
+#: field:medical.patient,number_of_meals:0
+msgid "Meals per day"
+msgstr "Refeiçoes por dia"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,route_injection:0
+msgid "Injection - Intravenous, Intramuscular..."
+msgstr "Injeção - Endovenoso, Intramúscular..."
+
+#. module: medical_lifestyle
+#: field:medical.patient,car_child_safety:0
+msgid "Car Child Safety"
+msgstr "Cadeira para bebe "
+
+#. module: medical_lifestyle
+#: help:medical.patient,sleep_during_daytime:0
+msgid "Check if the patient sleep hours are during daylight rather than at night"
+msgstr "Marca se o paciente dorme durante o dia e não a noite"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,reinforcement_level:0
+msgid ""
+"A measure of the substance's ability to get users to take it again and again, and in preference to other substances.\n"
+"Using Henningfield rating. 1=highest and 6=lowest"
+msgstr ""
+"Classificação de qual droga tem maior capacidade de viciar usando classificação de Henningfield\n"
+" 1=Alto e 6=Baixo"
+
+#. module: medical_lifestyle
+#: field:medical.patient,salt:0
+msgid "Salt"
+msgstr "Sal"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Skin Patch"
+msgstr "Cor de pele"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Female sterilisation"
+msgstr "Esterilização Feminina"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,category:0
+msgid "Others"
+msgstr "Outros"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,route_injection:0
+msgid "Injection"
+msgstr "Injeção"
+
+#. module: medical_lifestyle
+#: field:medical.patient,prostitute:0
+msgid "Prostitute"
+msgstr "Prostituta"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sex_anal:0 selection:medical.patient,sex_oral:0
+msgid "Both"
+msgstr "Ambos"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,category:0
+msgid "Opioids"
+msgstr "Opioides"
+
+#. module: medical_lifestyle
+#: help:medical.patient,traffic_laws:0
+msgid "Check if the patient is a safe driver"
+msgstr "Veja se o paciente é um bom motorista"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,category:0
+msgid "Depressants"
+msgstr "Depresivos"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Pill / Minipill"
+msgstr "Pilula, Minipilula"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,reinforcement_level:0
+msgid "Reinforcement"
+msgstr "Reforço"
+
+#. module: medical_lifestyle
+#: view:medical.drugs_recreational:0
+msgid "Administration Routes"
+msgstr "Via de administração"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_partners:0
+msgid "Monogamous"
+msgstr "Monógamo"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,addiction_level:0
+#: selection:medical.drugs_recreational,toxicity:0
+#: selection:medical.patient,anticonceptive:0
+#: selection:medical.patient,sex_anal:0 selection:medical.patient,sex_oral:0
+msgid "None"
+msgstr "Nenhum"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sexual_partners_number:0
+msgid "Number of sexual partners"
+msgstr "Numero de parceiro sexuais"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,tolerance_level:0
+msgid ""
+"How much of the substance is needed to satisfy increasing cravings for it, and the level of stable need that is eventually reached.\n"
+"Using Henningfield rating. 1=highest and 6=lowest"
+msgstr ""
+"Quanto da substância é necessária para satisfazer o crescente desejo por ela, e o nível de necessidade estável que é eventualmente alcançado.\n"
+"Usando classificação Henningfield, 1 = mais alto e 6 = mais baixo"
+
+#. module: medical_lifestyle
+#: help:medical.patient,excercise_minutes_day:0
+msgid "How many minutes a day the patient excersises"
+msgstr "Quantos minutos por dia exercita o paciente"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Fertility cycle awareness"
+msgstr "Conheciemento do ciclo fertil"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Withdrawal method"
+msgstr "Método de levantamento"
+
+#. module: medical_lifestyle
+#: field:medical.patient,ex_smoker:0
+msgid "Ex-smoker"
+msgstr "Ex-fumante"
+
+#. module: medical_lifestyle
+#: help:medical.patient,drugs:0
+msgid "Name of drugs that the patient consumes"
+msgstr "Nome das drogas que o paciente consume"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,info:0
+msgid "Extra Info"
+msgstr "Informaçoes extras"
+
+#. module: medical_lifestyle
+#: field:medical.patient,lifestyle_info:0
+#: field:medical.patient,sexuality_info:0
+msgid "Extra Information"
+msgstr "Informaçoes extras"
+
+#. module: medical_lifestyle
+#: model:ir.actions.act_window,name:medical_lifestyle.medical_action_drugs_recreational
+#: model:ir.ui.menu,name:medical_lifestyle.medical_conf_drugs_recreational
+#: view:medical.drugs_recreational:0 view:medical.patient:0
+msgid "Recreational Drugs"
+msgstr "Drogas "
+
+#. module: medical_lifestyle
+#: field:medical.patient,age_start_drinking:0
+msgid "Age started to drink "
+msgstr "Quando começou a beber"
+
+#. module: medical_lifestyle
+#: field:medical.patient,drug_iv:0
+msgid "IV drug user"
+msgstr "Usuário IV"
+
+#. module: medical_lifestyle
+#: help:medical.patient,soft_drinks:0
+msgid "Check if the patient consumes soft drinks with sugar"
+msgstr "Veja se ele toma bebidas com açúcar"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sex_anal:0
+msgid "Anal Sex"
+msgstr "Sexo anal"
+
+#. module: medical_lifestyle
+#: help:medical.patient,age_quit_smoking:0
+msgid "Age of quitting smoking"
+msgstr "Quando parou de Fumar"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,dea_schedule_i:0
+msgid "DEA schedule I"
+msgstr "Lista do DEA"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_preferences:0
+msgid "Transexual"
+msgstr "Transexual"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Male condom"
+msgstr "Camisinha Masculina"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,legal_status:0
+msgid "Legal"
+msgstr "Legal"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,dea_schedule_i:0
+#: help:medical.drugs_recreational,dea_schedule_ii:0
+#: help:medical.drugs_recreational,dea_schedule_iii:0
+#: help:medical.drugs_recreational,dea_schedule_iv:0
+#: help:medical.drugs_recreational,dea_schedule_v:0
+msgid "Schedule I and II drugs have a high potential for abuse. They require greater storage security and have a quota on manufacturing, among other restrictions. Schedule I drugs are available for research only and have no approved medical use; Schedule II drugs are available only by prescription (unrefillable) and require a form for ordering. Schedule III and IV drugs are available by prescription, may have five refills in 6 months, and may be ordered orally. Some Schedule V drugs are available over the counter"
+msgstr ""
+"As drogas dessa lista tem um alto potencial de abuso.\n"
+"É necessário segurança no armazenamento, e cota de fabricação entre outras restrições. Estas drogas estão disponíveis somente para pesquisa não possuem aprovação medica; as drogas dessa lista estão disponíveis somente com receita médica, podem ter reposição a cada Seis meses, e devem ser requeridos verbalmente, Alguns medicamentos estão disponíveis no mostrador \n"
+
+#. module: medical_lifestyle
+#: help:medical.patient,helmet:0
+msgid "The patient uses the proper motorcycle helmet"
+msgstr "O Paciente usa capacete"
+
+#. module: medical_lifestyle
+#: help:medical.patient,second_hand_smoker:0
+msgid "Check it the patient is a passive / second-hand smoker"
+msgstr "Veja se o paciente é fumante passivo"
+
+#. module: medical_lifestyle
+#: view:medical.drugs_recreational:0
+msgid "Search Recreational Drugs"
+msgstr "Procure por drogas recreativas"
+
+#. module: medical_lifestyle
+#: model:ir.module.module,shortdesc:medical_lifestyle.module_meta_information
+msgid "Medical : Lifestyle"
+msgstr "Medico : Estilo de Vida"
+
+#. module: medical_lifestyle
+#: field:medical.patient,coffee_cups:0
+msgid "Cups per day"
+msgstr "Copos por dia"
+
+#. module: medical_lifestyle
+#: help:medical.patient,diet_info:0
+msgid "Short description on the diet"
+msgstr "Descrição curta da dieta"
+
+#. module: medical_lifestyle
+#: field:medical.patient,coffee:0
+msgid "Coffee"
+msgstr "Café"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_preferences:0
+msgid "Homosexual"
+msgstr "Homosexual"
+
+#. module: medical_lifestyle
+#: view:medical.drugs_recreational:0
+msgid "DEA Schedule Level"
+msgstr "Nivel de controle do DEA"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sleep_during_daytime:0
+msgid "Sleeps at daytime"
+msgstr "Dorme ao Dia"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_partners:0
+msgid "Polygamous"
+msgstr "Poligamo"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sexual_preferences:0
+msgid "Sexual Preferences"
+msgstr "Preferencias Sexuais"
+
+#. module: medical_lifestyle
+#: field:medical.patient,eats_alone:0
+msgid "Eats alone"
+msgstr "Come Sozinho"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,intoxication_level:0
+msgid "Intoxication"
+msgstr "Intoxicação "
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,withdrawal_level:0
+msgid ""
+"Presence and severity ofcharacteristic withdrawal symptoms.\n"
+"Using Henningfield rating. 1=highest and 6=lowest"
+msgstr ""
+"Sintomas de Abstinência \n"
+"use a escala de Henningfield "
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,addiction_level:0
+#: selection:medical.drugs_recreational,toxicity:0
+msgid "Extreme"
+msgstr "Extremo"
+
+#. module: medical_lifestyle
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML inválido para visualização"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,route_popping:0
+msgid "Subcutaneous or Intradermical administration"
+msgstr "Administrarão subcutânea "
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Lifestyle"
+msgstr "Estilo de vida"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,route_inhaling:0
+msgid "Insufflation, exluding nasal"
+msgstr "Insuflação, excluindo nasal"
+
+#. module: medical_lifestyle
+#: help:medical.patient,drug_iv:0
+msgid "Check this option if the patient injects drugs"
+msgstr "Veja se usa drogas injetáveis"
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Other sexual practices"
+msgstr "Outras praticas sexuais"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,route_sniffing:0
+msgid "Sniffing"
+msgstr "Espirro"
+
+#. module: medical_lifestyle
+#: field:medical.patient,age_quit_drinking:0
+msgid "Age quit drinking "
+msgstr "Quando parou de beber"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,category:0
+msgid "Cannabinoids"
+msgstr "Canabinoides"
+
+#. module: medical_lifestyle
+#: field:medical.patient,smoking_number:0
+msgid "Cigarretes a day"
+msgstr "Cigarros por dia"
+
+#. module: medical_lifestyle
+#: field:medical.patient,alcohol:0
+msgid "Drinks Alcohol"
+msgstr "Bebe alcool "
+
+#. module: medical_lifestyle
+#: field:medical.patient,ex_drug_addict:0
+msgid "Ex drug addict"
+msgstr "Já foi viciado em drogas"
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Safety and extra info"
+msgstr "Segurançã"
+
+#. module: medical_lifestyle
+#: field:medical.patient,anticonceptive:0
+msgid "Anticonceptive Method"
+msgstr "Método anticoncepcional "
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_preferences:0
+msgid "Bisexual"
+msgstr "Bissexual "
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Extra info about the patient sexuality"
+msgstr "Informação sobre atividades sexuais do paciente"
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Prostitution"
+msgstr "Prostituição"
+
+#. module: medical_lifestyle
+#: field:medical.patient,traffic_laws:0
+msgid "Obeys Traffic Laws"
+msgstr "Obedece as leis de trânsito"
+
+#. module: medical_lifestyle
+#: help:medical.patient,coffee_cups:0
+msgid "Number of cup of coffee a day"
+msgstr "Numero de copos de café por dia"
+
+#. module: medical_lifestyle
+#: field:medical.patient,diet:0
+msgid "Currently on a diet"
+msgstr "Dieta atual"
+
+#. module: medical_lifestyle
+#: help:medical.patient,age_quit_drugs:0
+msgid "Date of quitting drugs"
+msgstr "Quando parou de se drogar"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,category:0
+msgid "Category"
+msgstr "Categoria"
+
+#. module: medical_lifestyle
+#: field:medical.patient,alcohol_liquor_number:0
+msgid "Liquor / day"
+msgstr "Doses / Dia"
+
+#. module: medical_lifestyle
+#: field:medical.patient,first_sexual_encounter:0
+msgid "Age first sexual encounter"
+msgstr "Primeira relação sexual"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_practices:0
+msgid "Risky / Unprotected sex"
+msgstr "Sexo sem proteção"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sex_anal:0 selection:medical.patient,sex_oral:0
+msgid "Passive"
+msgstr "Passivo"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sexual_partners:0
+msgid "Sexual Partners"
+msgstr "Parceiros Sexuais"
+
+#. module: medical_lifestyle
+#: field:medical.patient,second_hand_smoker:0
+msgid "Passive smoker"
+msgstr "Fumante passivo"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_preferences:0
+msgid "Heterosexual"
+msgstr "Heterosexual"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,addiction_level:0
+#: selection:medical.drugs_recreational,toxicity:0
+msgid "Low"
+msgstr "Baixo"
+
+#. module: medical_lifestyle
+#: constraint:ir.ui.menu:0
+msgid "Error ! You can not create recursive Menu."
+msgstr "Erro ! Você não pode criar um menu recursivo."
+
+#. module: medical_lifestyle
+#: field:medical.patient,motorcycle_rider:0
+msgid "Motorcycle Rider"
+msgstr "Motociclista"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,route_popping:0
+msgid "Skin Popping"
+msgstr "Injeção subcutenea"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,name:0
+msgid "Name of the drug"
+msgstr "Nome da droga"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,category:0
+msgid "Dissociative Anesthetics"
+msgstr "Anestésicos Dissociativos"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Intra-uterine device"
+msgstr "DIU"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sexual_practices:0
+msgid "Sexual Practices"
+msgstr "Praticas sexuais"
+
+#. module: medical_lifestyle
+#: field:medical.patient,drugs:0
+msgid "Drugs"
+msgstr "Drogas"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sex_with_prostitutes:0
+msgid "Sex with prostitutes"
+msgstr "Sexo com prostitutas"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sex_anal:0 selection:medical.patient,sex_oral:0
+msgid "Active"
+msgstr "Ativo"
+
+#. module: medical_lifestyle
+#: model:ir.module.module,description:medical_lifestyle.module_meta_information
+msgid ""
+"\n"
+"\n"
+"Gathers information about the habits and sexuality of the patient\n"
+"\n"
+"- Eating habits and diets\n"
+"- Sleep patterns\n"
+"- Drug / alcohol addictions\n"
+"- Physical activity (workout / excercise )\n"
+"- Sexuality and sexual behaviours\n"
+"\n"
+"\n"
+msgstr "Reúne informações sobre as praticas sexuais do paciente"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,legal_status:0
+msgid "Legal Status"
+msgstr "Status Legal"
+
+#. module: medical_lifestyle
+#: help:medical.patient,age_start_drinking:0
+msgid "Date to start drinking"
+msgstr "Quando parou de beber"
+
+#. module: medical_lifestyle
+#: help:medical.patient,prostitute:0
+msgid "Check if the patient (he or she) is a prostitute"
+msgstr "Verifique se o paciente (ele ou é ela) é prostituído(a)"
+
+#. module: medical_lifestyle
+#: help:medical.patient,car_seat_belt:0
+msgid "Safety measures when driving : safety belt"
+msgstr "Medida de segurança quando dirige : sinto de segurança"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,intoxication_level:0
+msgid ""
+"the level of intoxication is associated with addiction and increases the personal and social damage a substance may do. \n"
+"Using Henningfield rating. 1=highest and 6=lowest"
+msgstr ""
+"o nível de intoxicação é associado com vício e aumenta o dano pessoal e social que a substância pode provocar.\n"
+"Usando classificação Henningfield. 1 = mais alto e 6 = mais baixo"
+
+#. module: medical_lifestyle
+#: field:medical.patient,smoking:0
+msgid "Smokes"
+msgstr "Fuma"
+
+#. module: medical_lifestyle
+#: field:medical.patient,car_revision:0
+msgid "Car Revision"
+msgstr "Revisão do Carro"
+
+#. module: medical_lifestyle
+#: field:medical.patient,sleep_hours:0
+msgid "Hours of sleep"
+msgstr "Horas de sono"
+
+#. module: medical_lifestyle
+#: field:medical.patient,age_start_smoking:0
+msgid "Age started to smoke"
+msgstr "Idade em que começou a fumar"
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Sexuality"
+msgstr "Sexualidade"
+
+#. module: medical_lifestyle
+#: field:medical.patient,home_safety:0
+msgid "Home safety"
+msgstr "Segurança doméstica"
+
+#. module: medical_lifestyle
+#: field:medical.patient,age_start_drugs:0
+msgid "Age started drugs "
+msgstr "Idade em que começou a usar drogas"
+
+#. module: medical_lifestyle
+#: field:medical.patient,excercise:0
+msgid "Excersise"
+msgstr "Exercício"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,toxicity:0
+msgid "Toxicity"
+msgstr "Toxidade"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,route_oral:0
+msgid "Oral"
+msgstr "Oral"
+
+#. module: medical_lifestyle
+#: field:medical.patient,car_seat_belt:0
+msgid "Seat belt"
+msgstr "Sinto de segurança"
+
+#. module: medical_lifestyle
+#: help:medical.patient,diet:0
+msgid "Check if the patient is currently on a diet"
+msgstr "Verifique se o paciente está atualmente em uma dieta"
+
+#. module: medical_lifestyle
+#: field:medical.patient,alcohol_beer_number:0
+msgid "Beer / day"
+msgstr "Cerveja / dia"
+
+#. module: medical_lifestyle
+#: view:medical.drugs_recreational:0
+msgid "General Information"
+msgstr "Informação Geral"
+
+#. module: medical_lifestyle
+#: field:medical.patient,ex_alcoholic:0
+msgid "Ex alcoholic"
+msgstr "Ex alcoólatra  "
+
+#. module: medical_lifestyle
+#: field:medical.patient,drug_usage:0
+msgid "Drug Habits"
+msgstr "Hábitos com drogas"
+
+#. module: medical_lifestyle
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "O nome do Objeto deve começar com x_ e não conter nenhum caracter especial!"
+
+#. module: medical_lifestyle
+#: help:medical.patient,home_safety:0
+msgid "Keep safety measures for kids in the kitchen, correct storage of chemicals, ..."
+msgstr "Mantém medidas de segurança para crianças na cozinha, armazenamento correto de químicos, ..."
+
+#. module: medical_lifestyle
+#: field:medical.patient,alcohol_wine_number:0
+msgid "Wine / day"
+msgstr "Vinho / dia"
+
+#. module: medical_lifestyle
+#: field:medical.patient,excercise_minutes_day:0
+msgid "Minutes / day"
+msgstr "Minutos / dia"
+
+#. module: medical_lifestyle
+#: model:ir.model,name:medical_lifestyle.model_medical_drugs_recreational
+msgid "medical.drugs_recreational"
+msgstr "medical.drugs_recreational"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,sexual_practices:0
+msgid "Safe / Protected sex"
+msgstr "Sexo seguro / protegido"
+
+#. module: medical_lifestyle
+#: help:medical.patient,salt:0
+msgid "Check if patient consumes salt with the food"
+msgstr "Verifique se o paciente consome sal com a comida"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,addiction_level:0
+#: field:medical.drugs_recreational,dependence_level:0
+msgid "Dependence"
+msgstr "Dependência"
+
+#. module: medical_lifestyle
+#: view:medical.drugs_recreational:0
+msgid "Additional Info and Effects"
+msgstr "Informação Adicional e Efeitos"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,tolerance_level:0
+msgid "Tolerance"
+msgstr "Tolerância"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,dependence_level:0
+msgid ""
+"How difficult it is for the user to quit, the relapse rate, the percentage of people who eventually become dependent, the rating users give their own need for the substance and the degree to which the substance will be used in the face of evidence that it causes harm.\n"
+"Using Henningfield rating. 1=highest and 6=lowest"
+msgstr ""
+"O quão difícil é para o usuário parar, a taxa de reincidência, o percentual de pessoas que eventualmente se tornam dependentes, a classificação que os usuários dão a sua própria necessidade pela substância e o grau em que a substância será usada em face da evidência do mal que ela causa.\n"
+"Usando classificação Henningfield. 1 = mais alto e 6 = mais baixo"
+
+#. module: medical_lifestyle
+#: view:medical.patient:0
+msgid "Physical Excersise, Eating habits and Sleep"
+msgstr "Exercício físico, hábitos nutricionais e sono"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,dea_schedule_iii:0
+msgid "III"
+msgstr "III"
+
+#. module: medical_lifestyle
+#: help:medical.patient,eats_alone:0
+msgid "Check this box if the patient eats by him / herself."
+msgstr "Marque esta caixa se o(a) paciente come sozinho(a)"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,category:0
+msgid "Hallucinogens"
+msgstr "Alucinógenos"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,name:0
+msgid "Name"
+msgstr "Nome"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,route_inhaling:0
+msgid "Smoke / Inhale"
+msgstr "Fuma / Inala"
+
+#. module: medical_lifestyle
+#: field:medical.patient,age_quit_smoking:0
+msgid "Age of quitting"
+msgstr "Idade em que parou"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,dea_schedule_iv:0
+msgid "IV"
+msgstr "IV"
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,dea_schedule_ii:0
+msgid "II"
+msgstr "II"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Contraceptive injection"
+msgstr "Injeção anticoncepcional"
+
+#. module: medical_lifestyle
+#: help:medical.patient,motorcycle_rider:0
+msgid "The patient rides motorcycles"
+msgstr "O paciente anda de moto"
+
+#. module: medical_lifestyle
+#: help:medical.patient,car_revision:0
+msgid "Maintain the vehicle. Do periodical checks - tires, engine, breaks ..."
+msgstr "Mantém o veículo. Faz revisões periódicas - pneus, motor, freios ..."
+
+#. module: medical_lifestyle
+#: field:medical.drugs_recreational,withdrawal_level:0
+msgid "Withdrawal"
+msgstr "afastamento"
+
+#. module: medical_lifestyle
+#: help:medical.patient,sleep_hours:0
+msgid "Average hours of sleep per day"
+msgstr "Horas de sono, em média, por dia"
+
+#. module: medical_lifestyle
+#: field:medical.patient,soft_drinks:0
+msgid "Soft drinks (sugar)"
+msgstr "Refrigerantes (açúcar)"
+
+#. module: medical_lifestyle
+#: view:medical.drugs_recreational:0
+msgid "Henningfield Rating"
+msgstr "Classificação Henningfield"
+
+#. module: medical_lifestyle
+#: field:medical.patient,helmet:0
+msgid "Uses helmet"
+msgstr "Usa capacete"
+
+#. module: medical_lifestyle
+#: help:medical.patient,car_child_safety:0
+msgid "Safety measures when driving : child seats, proper seat belting, not seating on the front seat, ...."
+msgstr "Medidas de segurança quando dirigindo : assento para crianças, uso correto do sinto de segurança, não sentar no banco da frente, ..."
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Female condom"
+msgstr "Preservativo feminino"
+
+#. module: medical_lifestyle
+#: field:medical.patient,diet_info:0
+msgid "Diet info"
+msgstr "Informação da dieta"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,addiction_level:0
+#: selection:medical.drugs_recreational,toxicity:0
+msgid "High"
+msgstr "Alto"
+
+#. module: medical_lifestyle
+#: model:ir.model,name:medical_lifestyle.model_medical_patient
+msgid "Patient related information"
+msgstr "Informação relacionada ao paciente"
+
+#. module: medical_lifestyle
+#: selection:medical.patient,anticonceptive:0
+msgid "Vasectomy"
+msgstr "Vasectomia"
+
+#. module: medical_lifestyle
+#: selection:medical.drugs_recreational,category:0
+msgid "Stimulants"
+msgstr "Estimulantes"
+
+#. module: medical_lifestyle
+#: help:medical.drugs_recreational,street_name:0
+msgid "Common name of the drug in street jargon"
+msgstr "Nome comum da droga no jargão da rua"

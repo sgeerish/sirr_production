@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="cheque_tree_view">
+            <field name="name">cheque.tree</field>
+            <field name="model">cheque.print</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+            <tree string="Cheques">
+                <field name="sequence"/>
+                <field name="date"/>
+                <field name="name"/>
+                <field name="bank_id"/>
+                <field name="partner_id"/>
+                <field name="amount"/>
+                <field name="state"/>
+            </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="cheque_form_view">
+            <field name="name">cheque.form</field>
+            <field name="model">cheque.print</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Cheques">
+                <field name="sequence" readonly="1"/>
+                <field name="date"/>                
+                <field name="name"/>
+                <field name="bank_id"/>
+                <field name="partner_id"/>
+                <field name="amount"/>
+                
+                <field name="state"/>
+            </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="cheque_search_view">
+            <field name="name">cheque.search</field>
+            <field name="model">cheque.print</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+            <tree string="Cheques">
+                <field name="sequence"/>
+                <field name="date"/>
+                <field name="name"/>
+                <field name="bank_id"/>
+                <field name="partner_id"/>
+                <field name="amount"/>
+                <field name="state"/>
+            </tree>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_cheque_tree">
+            <field name="name">cheque</field>
+            <field name="res_model">cheque.print</field>
+        </record>
+        
+        <menuitem name="Cheques" icon="terp-project" id="cheque_menu"/>
+        <menuitem name="Cheques" parent="cheque_menu" id="cheque_menu_list" action="action_cheque_tree"/>
+        
+    </data>
+</openerp>

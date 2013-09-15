@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/asterisk_click2dial/scripts/get_cid_name.py

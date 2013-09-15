@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository 
+contains the full copyright notices and license terms. -->
+<openerp>
+    <data>
+        <record id="sequence_view_postgres" model="ir.ui.view">
+            <field name="name">ir.sequence.postgres</field>
+            <field name="model">ir.sequence</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base.sequence_view" />
+            <field name="arch" type="xml">
+                <xpath expr="/form/group/field[@name='active']"
+                                    position="before">
+                    <field name="type" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+    <data>
+        <record id="sequence_view_postgres_tree" model="ir.ui.view">
+            <field name="name">ir.sequence.postgres.list</field>
+            <field name="model">ir.sequence</field>
+            <field name="type">tree</field>
+            <field name="inherit_id" ref="base.sequence_view_tree" />
+            <field name="arch" type="xml">
+                <xpath expr="/tree/field[@name='name']"
+                                    position="after">
+                    <field name="type" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,258 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Medical\n"
+"Report-Msgid-Bugs-To: https://sourceforge.net/apps/mantisbt/medical\n"
+"POT-Creation-Date: 2010-12-05 21:26:21+0000\n"
+"PO-Revision-Date: 2011-02-05 18:03+0000\n"
+"Last-Translator: mangosteen <phong.nguyen_thanh@yahoo.com>\n"
+"Language-Team: Vietnamese <None>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. module: medical_genetics
+#: field:medical.genetic.risk,info:0
+msgid "Information"
+msgstr "Thông tin"
+
+#. module: medical_genetics
+#: model:ir.ui.menu,name:medical_genetics.medical_conf_genetics
+msgid "Genetics"
+msgstr "Di truyền học"
+
+#. module: medical_genetics
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Tên mô hình không hợp lệ trong định nghĩa hành động"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Mother"
+msgstr "Mẹ"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Father"
+msgstr "Cha"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Sister"
+msgstr "Chị/em gái"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,xory:0
+msgid "Paternal"
+msgstr "Thuộc về cha"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Grandmother"
+msgstr "Bà"
+
+#. module: medical_genetics
+#: field:medical.genetic.risk,location:0
+msgid "Location"
+msgstr "Vị trí"
+
+#. module: medical_genetics
+#: constraint:ir.ui.menu:0
+msgid "Error ! You can not create recursive Menu."
+msgstr "Lỗi ! Bạn không thể tạo trình đơn đệ quy."
+
+#. module: medical_genetics
+#: model:ir.module.module,shortdesc:medical_genetics.module_meta_information
+msgid "Medical : Genetics"
+msgstr "Y khoa: Di truyền học"
+
+#. module: medical_genetics
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Tên phải được bắt đầu bằng x_ và không bao gồm bất kỳ ký tự đặc biệt nào!"
+
+#. module: medical_genetics
+#: help:medical.genetic.risk,gene_id:0
+msgid "default code from NCBI Entrez database."
+msgstr "mã mặc định từ cơ sở dữ liệu NCBI Entrez."
+
+#. module: medical_genetics
+#: view:medical.family.diseases:0
+msgid "Genetic Family Diseases"
+msgstr "Các bệnh gia đình di truyền"
+
+#. module: medical_genetics
+#: field:medical.genetic.risk,dominance:0
+msgid "Dominance"
+msgstr "Tính trội"
+
+#. module: medical_genetics
+#: model:ir.model,name:medical_genetics.model_medical_family_diseases
+msgid "Family Diseases"
+msgstr "Các bệnh gia đình"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,xory:0
+msgid "Maternal"
+msgstr "Thuộc về mẹ"
+
+#. module: medical_genetics
+#: model:ir.module.module,description:medical_genetics.module_meta_information
+msgid ""
+"\n"
+"\n"
+"Family history and genetic risks\n"
+"\n"
+"The module includes hereditary risks, family history and genetic disorders.\n"
+"\n"
+"In this module we include the NCBI and Genecard information, more than 4200 genes associated to diseases\n"
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"Lịch sử gia đình và nguy cơ di truyền\n"
+"\n"
+"Mô-đun này bao gồm rủi ro di truyền, tiền sử gia đình và các rối loạn di truyền.\n"
+"\n"
+"Trong mô-đun này, chúng tôi bao gồm các NCBI và thông tin Genecard, hơn 4200 gen liên quan đến bệnh\n"
+"\n"
+"\n"
+
+#. module: medical_genetics
+#: help:medical.genetic.risk,chromosome:0
+msgid "Name of the affected chromosome"
+msgstr "Tên của nhiễm sắc thể bị ảnh hưởng"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Uncle"
+msgstr "Cậu/chú/bác"
+
+#. module: medical_genetics
+#: field:medical.genetic.risk,gene_id:0
+msgid "Gene ID"
+msgstr "Mã gen"
+
+#. module: medical_genetics
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML không hợp lệ cho Kiến trúc Xem"
+
+#. module: medical_genetics
+#: help:medical.genetic.risk,location:0
+msgid "Locus of the chromosome"
+msgstr "Vị trí của nhiễm sắc thể"
+
+#. module: medical_genetics
+#: selection:medical.genetic.risk,dominance:0
+msgid "dominant"
+msgstr "gen trội"
+
+#. module: medical_genetics
+#: help:medical.family.diseases,relative:0
+msgid "First degree = siblings, mother and father; second degree = Uncles, nephews and Nieces; third degree = Grandparents and cousins"
+msgstr "Mức độ 1 = anh chị em, cha và mẹ; mức độ 2 = cô, dì,chú, bác, cậu, cháu trai và cháu gái; mức độ 3 = ông bà và anh em họ"
+
+#. module: medical_genetics
+#: field:medical.family.diseases,name:0
+msgid "Disease"
+msgstr "Bệnh"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Brother"
+msgstr "Anh/em trai"
+
+#. module: medical_genetics
+#: field:medical.genetic.risk,long_name:0
+msgid "Official Long Name"
+msgstr "Tên chính thức đầy đủ"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Aunt"
+msgstr "Dì/Cô"
+
+#. module: medical_genetics
+#: field:medical.patient,family_history:0
+msgid "Family History"
+msgstr "Lịch sử Gia đình"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Cousin"
+msgstr "Anh em họ"
+
+#. module: medical_genetics
+#: field:medical.family.diseases,xory:0
+msgid "Maternal or Paternal"
+msgstr "Thuộc về mẹ hoặc cha"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Grandfather"
+msgstr "Ông (nội/ngoại)"
+
+#. module: medical_genetics
+#: selection:medical.genetic.risk,dominance:0
+msgid "recessive"
+msgstr "lặn"
+
+#. module: medical_genetics
+#: field:medical.genetic.risk,name:0
+msgid "Official Symbol"
+msgstr "Biểu tượng chính thức"
+
+#. module: medical_genetics
+#: view:medical.genetic.risk:0
+msgid "Medical Genetic Risks"
+msgstr "Các rủi ro y tế di truyền "
+
+#. module: medical_genetics
+#: help:medical.genetic.risk,info:0
+msgid "Name of the protein(s) affected"
+msgstr "Tên của các loại protein bị ảnh hưởng"
+
+#. module: medical_genetics
+#: field:medical.family.diseases,relative:0
+msgid "Relative"
+msgstr "Họ hàng"
+
+#. module: medical_genetics
+#: model:ir.model,name:medical_genetics.model_medical_patient
+msgid "Patient related information"
+msgstr "Thông tin liên quan đến bệnh nhân"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Nephew"
+msgstr "Cháu trai"
+
+#. module: medical_genetics
+#: field:medical.genetic.risk,chromosome:0
+msgid "Affected Chromosome"
+msgstr "Nhiễm sắc thể bị ảnh hưởng"
+
+#. module: medical_genetics
+#: model:ir.actions.act_window,name:medical_genetics.medical_action_genetic_risks
+#: model:ir.model,name:medical_genetics.model_medical_genetic_risk
+#: model:ir.ui.menu,name:medical_genetics.medical_conf_genetic_risks
+#: view:medical.genetic.risk:0 view:medical.patient:0
+#: field:medical.patient,genetic_risks:0
+msgid "Genetic Risks"
+msgstr "Các rủi ro di truyền"
+
+#. module: medical_genetics
+#: view:medical.genetic.risk:0
+msgid "Search Patient Genetic Risks"
+msgstr "Tìm kiếm các rủi ro di truyền của bệnh nhân"
+
+#. module: medical_genetics
+#: selection:medical.family.diseases,relative:0
+msgid "Niece"
+msgstr "Cháu gái"

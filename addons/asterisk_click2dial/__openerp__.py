@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/asterisk_click2dial/__openerp__.py

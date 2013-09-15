@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+  
+         <report id="report_patient_label" model="medical.patient" name="medical.patient.label" string="Patient Card" xml="medical/report/patient_label.xml" xsl="medical/report/patient_label.xsl"/>
+
+         <report id="report_patient_medications" auto="False" model="medical.patient" name="patient.medications" string="Medication History" rml="medical/report/patient_medications.rml"/> 
+
+         <report id="report_patient_vaccinations" auto="False" model="medical.patient" name="patient.vaccinations" string="Vaccination History" rml="medical/report/patient_vaccinations.rml"/> 
+
+         <report id="report_patient_diseases" 	auto="False" model="medical.patient" name="patient.diseases" string="Diseases Report" rml="medical/report/patient_diseases.rml"/> 
+
+         <report id="report_prescription_order" auto="False" model="medical.prescription.order" name="prescription.order" string="Prescription" rml="medical/report/prescription_order.rml"/> 
+    </data>
+</openerp>

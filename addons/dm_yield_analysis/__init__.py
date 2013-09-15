@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_yield_analysis/__init__.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/report_analytic_planning_delegate/__init__.py

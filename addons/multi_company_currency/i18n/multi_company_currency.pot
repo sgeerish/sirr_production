@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/multi_company_currency/i18n/multi_company_currency.pot

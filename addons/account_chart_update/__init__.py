@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_chart_update/__init__.py

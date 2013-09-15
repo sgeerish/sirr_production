@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_external_referentials/__init__.py

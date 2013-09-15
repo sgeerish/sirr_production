@@ -1,0 +1,45 @@
+<openerp>
+    <data noupdate="1">
+        <!--delete model="hr.aa.journal" search="[('date','&lt;','2001-02-28 00:00:00')]" /-->
+
+        <!--assert model="hr.aa.journal">
+            <test expr="fields_get() = []"/>
+        </assert-->
+
+        <function name="build" model="hr.aa.journal">
+            <value eval="'2001-02-01 00:00:00'"/>
+            <value eval="'2001-02-01 00:00:00'"/>
+        </function>
+
+        <assert search="[('name','=','Employee hr.test 1 (01/02/2001)')]" model="hr.aa.journal" string="Have one block">
+            <test expr="len(attendance_ids)==2"/>
+            <test expr="attendance_ids[0].name">2001-02-01 05:54:01</test>
+            <test expr="attendance_ids[1].name">2001-02-01 18:54:01</test>
+            <test expr="day_start">2001-02-01 05:54:01</test>
+            <test expr="day_end">2001-02-01 18:54:01</test>
+        </assert>
+
+        <assert search="[('name','=','Employee hr.test 1 (02/02/2001)')]" model="hr.aa.journal" string="Have two block">
+            <test expr="len(attendance_ids)==4"/>
+            <test expr="attendance_ids[0].name">2001-02-02 05:54:01</test>
+            <test expr="attendance_ids[1].name">2001-02-02 12:14:01</test>
+            <test expr="attendance_ids[2].name">2001-02-02 13:01:00</test>
+            <test expr="attendance_ids[3].name">2001-02-02 17:54:01</test>
+            <test expr="day_start">2001-02-02 05:54:01</test>
+            <test expr="day_end">2001-02-02 17:54:01</test>
+        </assert>
+
+        <!--assert search="[('name','=','Employee hr.test 1 (02/02/2001)')]" model="hr.aa.journal" string="Creating day lines">
+            <test expr="create_journal_values()"/>
+        </assert-->
+
+        <assert search="[('name','=','Employee hr.test 1 (02/02/2001)')]" model="hr.aa.journal" string="Check created lines">
+            <test expr="'%.2f' % v_worked_hours">11.22</test>
+        </assert>
+    </data>
+</openerp>
+
+<!--
+     vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+     -->
+

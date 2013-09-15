@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/stock_batch_picking/__openerp__.py

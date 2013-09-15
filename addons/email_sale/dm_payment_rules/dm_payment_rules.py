@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/email_sale/dm_payment_rules/dm_payment_rules.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_interview/wizard/wizard_send_interview_mail.py

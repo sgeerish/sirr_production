@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_extract_auto/__init__.py

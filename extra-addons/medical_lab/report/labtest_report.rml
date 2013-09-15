@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="15.0" y1="42.0" width="539" height="758"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <blockBackground colorName="#e6e6e6" start="0,0" stop="0,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table5">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table7">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table6">
+      <blockAlignment value="LEFT"/>
+      <lineStyle kind="GRID" colorName="black"/>
+      <blockValign value="TOP"/>
+ 
+    </blockTableStyle>
+    <blockTableStyle id="Table4">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P2" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="RIGHT"/>
+    <paraStyle name="P3" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="LEFT"/>
+    <paraStyle name="P4" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P5" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P6" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="RIGHT"/>
+    <paraStyle name="P7" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="LEFT"/>
+    <paraStyle name="P8" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P9" fontName="Times-Roman" fontSize="14.0" leading="17" alignment="CENTER"/>
+    <paraStyle name="P10" fontName="Times-Bold" fontSize="13.0" leading="16"/>
+    <paraStyle name="P11" fontName="Times-Roman" fontSize="6.0" leading="8" alignment="LEFT"/>
+    <paraStyle name="P12" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P13" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="RIGHT"/>
+    <paraStyle name="P14" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="LEFT"/>
+    <paraStyle name="P15" fontName="Times-Bold" fontSize="10.0" leading="16" alignment="RIGHT"/>    
+    <paraStyle name="P16" fontName="Times-Roman" fontSize="10.0" leading="16" alignment="LEFT"/>
+    <paraStyle name="P17" fontName="Times-Roman" fontSize="10.0" leading="16" alignment="CENTER"/>
+ 
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <paraStyle name="Table Contents" fontName="Times-Roman"/>
+    <paraStyle name="Table Heading" fontName="Times-Roman" alignment="CENTER"/>
+  </stylesheet>
+  <images/>
+  <story>
+    <para style="P1">[[repeatIn(objects,'test')]]</para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="499.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P4">LABORATORY REPORT</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    
+    <para style="P15">Date : [[ test.date_analysis ]]</para>
+        
+    
+    <blockTable colWidths="55.0,117.0,115.0,89.0,45.0,78.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P6">Patient :</para>
+        </td>
+        <td>
+          <para style="P10">[[ test.patient.lastname and test.patient.lastname + ', ' or '']]  [[ test.patient.name.name ]]</para>
+        </td>
+        <td>
+          <para style="P2">Patient ID :</para>
+        </td>
+        <td>
+          <para style="P1">[[ test.patient.patient_id ]]</para>
+        </td>
+      </tr>
+      <tr>
+        
+        <td>
+          <para style="P6">Age :</para>
+        </td>
+        <td>
+          <para style="P7">[[ test.patient.age ]]</para>
+        </td>
+        <td>
+          <para style="P6">Sex :</para>
+        </td>
+        <td>
+          <para style="P5">[[ test.patient.sex== 'm' and 'Male' or test.patient.sex=='f' and 'Female' ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P6">Doctor:</para>
+        </td>
+        <td>
+          <para style="P5">[[ test.requestor.name.name or removeParentNode('tr') ]]</para>
+        </td>
+        <td>
+          <para style="P6">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P7">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P6">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <blockTable colWidths="493.0" style="Table5">
+            <tr>
+              <td>
+                <para style="P9"><font color="blue">[[ test.test.name ]]</font></para>
+                <para style="P6"><font color="white"> </font> </para>
+              </td>
+            </tr>
+
+          </blockTable>
+          
+      </td>
+      </tr>
+    </blockTable>
+
+          <blockTable colWidths="121.0,124.0,125.0,121.0" style="Table6">
+            <tr>
+              <td>
+                <para style="P17">Analyte</para>
+              </td>
+              <td>
+                <para style="P17">Result</para>
+              </td>
+              <td>
+                <para style="P17">Normal Range</para>
+              </td>
+              <td>
+                <para style="P17">Units</para>
+              </td>
+            </tr>
+          </blockTable>
+  
+    <section>
+      <para style="P10">[[ repeatIn(test.critearea, 'case') ]]</para>
+      
+      <blockTable colWidths="121.0,124.0,125.0,121.0" style="Table6">
+        <tr>
+          <td>
+            <para style="P16">[[ case.name ]]</para>
+          </td>
+          <td>
+            <para style="P17">[[ case.result ]]</para>
+          </td>
+          <td>
+            <para style="P17">[[ case.normal_range ]]</para>
+          </td>
+          <td>
+            <para style="P17">[[ case.units.name ]]</para>
+          </td>
+        </tr>
+      </blockTable>
+    </section>
+    <blockTable colWidths="81.0,418.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P2">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P2">Pathologist :</para>
+        </td>
+        <td>
+          <para style="P1">[[ test.pathologist.name.name or removeParentNode('tr') ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P2">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+   </blockTable>
+    
+
+     <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para> 
+
+    <para style="P15">Signature : ____________________________</para>
+
+ 
+   
+
+  </story>
+</document>

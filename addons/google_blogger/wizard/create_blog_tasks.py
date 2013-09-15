@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/google_blogger/wizard/create_blog_tasks.py

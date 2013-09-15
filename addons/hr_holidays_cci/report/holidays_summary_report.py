@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_holidays_cci/report/holidays_summary_report.py

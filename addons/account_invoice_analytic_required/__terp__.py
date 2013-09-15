@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_invoice_analytic_required/__terp__.py

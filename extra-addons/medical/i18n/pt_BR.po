@@ -1,0 +1,6498 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Medical\n"
+"Report-Msgid-Bugs-To: https://sourceforge.net/apps/mantisbt/medical\n"
+"POT-Creation-Date: 2010-12-05 20:18:28+0000\n"
+"PO-Revision-Date: 2011-02-05 17:28+0000\n"
+"Last-Translator: bolligerneto <bolligerneto@yahoo.com.br>\n"
+"Language-Team: Portuguese (Brazilian) <None>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+
+#. module: medical
+#: model:product.template,name:medical.product_190_product_template
+msgid "lithium carbonate"
+msgstr "carbonato de lítio"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_reporting_menu
+msgid "Reporting"
+msgstr "Relatório"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.LEF
+msgid "Leaf"
+msgstr "Folha"
+
+#. module: medical
+#: help:medical.patient.evaluation,loc:0
+msgid "Level of Consciousness - on Glasgow Coma Scale :  1=coma - 15=normal"
+msgstr "Nível de Consciência - Escala de coma de Glasgow : 1=coma - 15=normal"
+
+#. module: medical
+#: model:product.template,name:medical.product_324_product_template
+msgid "tamoxifen"
+msgstr "tamoxifeno"
+
+#. module: medical
+#: model:product.template,name:medical.product_136_product_template
+msgid "flucytosine"
+msgstr "flucitosina"
+
+#. module: medical
+#: model:product.template,name:medical.product_169_product_template
+msgid "intraperitoneal dialysis solution (of appropriate composition)"
+msgstr "solução de diálise intraperitoneal (de composição apropriada)"
+
+#. module: medical
+#: help:medical.prescription.line,short_comment:0
+msgid "Short comment on the specific drug"
+msgstr "Breve comentário sobre a droga específica"
+
+#. module: medical
+#: view:medical.prescription.order:0
+msgid "Search Patient Prescriptions"
+msgstr "Pesquisar Prescrições de Pacientes"
+
+#. module: medical
+#: model:product.template,name:medical.product_288_product_template
+#: model:product.template,name:medical.product_289_product_template
+msgid "rifampicin + isoniazid + pyrazinamide"
+msgstr "rifampicina + isoniazida + pirazinamida"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_43
+msgid "Translingual"
+msgstr "Translingual"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Information on Diagnosis"
+msgstr "Informações sobre o diagnóstico"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_46
+msgid "Ventimask"
+msgstr "Ventimask"
+
+#. module: medical
+#: model:product.template,name:medical.product_105_product_template
+msgid "dithranol"
+msgstr "dithranol"
+
+#. module: medical
+#: model:product.template,name:medical.product_297_product_template
+msgid "senna"
+msgstr "sena"
+
+#. module: medical
+#: field:medical.patient.evaluation,jaundice:0
+msgid "Jaundice"
+msgstr "Icterícia"
+
+#. module: medical
+#: field:medical.medication.template,dose_unit:0
+#: field:medical.patient.medication,dose_unit:0
+#: field:medical.prescription.line,dose_unit:0
+msgid "dose unit"
+msgstr "dose unitária"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "Today"
+msgstr "Hoje"
+
+#. module: medical
+#: field:medical.patient.evaluation,mood:0
+msgid "Mood"
+msgstr "Humor"
+
+#. module: medical
+#: model:ir.model,name:medical.model_product_product
+msgid "Product"
+msgstr "Produto"
+
+#. module: medical
+#: model:product.template,name:medical.product_319_product_template
+msgid "sulfamethoxazole"
+msgstr "sulfametoxazol"
+
+#. module: medical
+#: model:product.template,name:medical.product_264_product_template
+msgid "procainamide"
+msgstr "procainamida"
+
+#. module: medical
+#: view:medical.medicament:0 view:medical.patient:0
+#: view:medical.patient.evaluation:0 view:medical.physician:0
+msgid "Main Info"
+msgstr "Informação Principal"
+
+#. module: medical
+#: help:res.partner,is_person:0
+msgid "Check if the partner is a person."
+msgstr "Verifique se o acompanhante é uma pessoa."
+
+#. module: medical
+#: model:medical.drug.form,name:medical.ONT
+msgid "Ointment"
+msgstr "Pomada"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PSSR
+msgid "Powder for suspension sustained release"
+msgstr "Pó para suspensão de liberação sustentada"
+
+#. module: medical
+#: model:product.template,name:medical.product_110_product_template
+msgid "efavirenz (EFV or EFZ)"
+msgstr "efavirenz (EFV ou EFZ)"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.LOT
+msgid "Lotion"
+msgstr "Loção"
+
+#. module: medical
+#: view:medical.procedure:0
+msgid "Search Medical Procedures"
+msgstr "Buscar Procedimentos Médicos"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.LIP
+msgid "Liposome"
+msgstr "Lipossomas"
+
+#. module: medical
+#: model:product.template,name:medical.product_153_product_template
+msgid "heparin sodium"
+msgstr "heparina sódica"
+
+#. module: medical
+#: selection:medical.medication.template,duration_period:0
+#: selection:medical.patient.medication,duration_period:0
+#: selection:medical.prescription.line,duration_period:0
+msgid "months"
+msgstr "meses"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Stop :"
+msgstr "Parar :"
+
+#. module: medical
+#: field:medical.prescription.line,quantity:0
+msgid "Quantity"
+msgstr "Quantidade"
+
+#. module: medical
+#: model:product.template,name:medical.product_224_product_template
+msgid "neostigmine"
+msgstr "neostigmina"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Prescription date :"
+msgstr "Data de prescrição:"
+
+#. module: medical
+#: field:medical.patient.evaluation,respiratory_rate:0
+msgid "Respiratory Rate"
+msgstr "Frequência respiratória"
+
+#. module: medical
+#: model:product.template,name:medical.product_351_product_template
+msgid "zidovudine"
+msgstr "zidovudina"
+
+#. module: medical
+#: field:medical.appointment,doctor:0 field:medical.appointment,user_id:0
+#: field:medical.patient.disease,doctor:0
+#: field:medical.patient.medication,doctor:0 view:medical.physician:0
+#: field:medical.physician,name:0
+msgid "Physician"
+msgstr "Médico"
+
+#. module: medical
+#: model:product.template,name:medical.product_339_product_template
+msgid "urea"
+msgstr "uréia"
+
+#. module: medical
+#: help:medical.patient.evaluation,cholesterol_total:0
+msgid "Last cholesterol reading. Can be approximative"
+msgstr "Última leitura do colesterol. Pode ser aproximada"
+
+#. module: medical
+#: model:product.template,name:medical.product_30_product_template
+msgid "atenolol"
+msgstr "atenolol"
+
+#. module: medical
+#: model:product.template,name:medical.product_139_product_template
+msgid "fluoxetine"
+msgstr "fluoxetina"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_arthralgia:0
+msgid "Arthralgia"
+msgstr "Artralgia"
+
+#. module: medical
+#: help:medical.patient.evaluation,loc_eyes:0
+msgid "Eyes Response - Glasgow Coma Scale - 1 to 4"
+msgstr "Resposta Ocular - Escala de coma de Glasgow - 1 a 4"
+
+#. module: medical
+#: help:medical.installer.modules,medical_gyneco:0
+msgid ""
+"This module includes :\n"
+"\n"
+"                - Gynecological Information\n"
+"\n"
+"                - Obstetric information\n"
+" \n"
+"                - Perinatal Information and monitoring\n"
+"\n"
+"                - Puerperium. "
+msgstr ""
+"Este módulo inclui: \n"
+"- Informação Ginecológica \n"
+"- Obstétríca \n"
+"- Informação e monitoramento perinatal\n"
+"- Puerpério."
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_orthopnea:0
+msgid "Orthopnea"
+msgstr "Ortopnéia"
+
+#. module: medical
+#: model:product.template,name:medical.product_249_product_template
+msgid "phenoxymethylpenicillin"
+msgstr "fenoximetilpenicilina"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Mental Status"
+msgstr "Estado Mental"
+
+#. module: medical
+#: report:patient.diseases:0 report:patient.medications:0
+#: report:patient.vaccinations:0
+msgid "Patient ID :"
+msgstr "ID do Paciente:"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Mental Assessment and Impairments"
+msgstr "Avaliação e deficiências mentais"
+
+#. module: medical
+#: model:product.template,name:medical.product_303_product_template
+msgid "sodium hydrogen carbonate"
+msgstr "bicarbonato de sódio"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_xerostomia:0
+msgid "Xerostomia"
+msgstr "Xerostomia"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_melena:0
+msgid "Melena"
+msgstr "Melena"
+
+#. module: medical
+#: field:medical.patient.evaluation,derived_from:0
+msgid "Derived from Doctor"
+msgstr "Encaminhado pelo Médico"
+
+#. module: medical
+#: view:medical.drug.route:0
+msgid "Search Drug Administration Route"
+msgstr "Pesquisar Via de Administração de Drogas"
+
+#. module: medical
+#: field:medical.medication.template,duration:0
+#: field:medical.patient.medication,duration:0
+#: field:medical.prescription.line,duration:0
+msgid "Treatment duration"
+msgstr "Duração do tratamento"
+
+#. module: medical
+#: field:medical.patient.evaluation,object_recognition:0
+msgid "Object Recognition"
+msgstr "Reconhecimento de Objetos"
+
+#. module: medical
+#: model:product.template,name:medical.product_93_product_template
+msgid "deferoxamine"
+msgstr "deferoxamina"
+
+#. module: medical
+#: view:medical.dose.unit:0
+msgid "Search Medicament Dose Units"
+msgstr "Pesquisar Unidades de Dose de Medicamentos"
+
+#. module: medical
+#: help:res.partner,is_doctor:0
+msgid "Check if the partner is a doctor"
+msgstr "Verificar se o acompanhante é um médico"
+
+#. module: medical
+#: model:product.template,name:medical.product_233_product_template
+msgid "norethisterone"
+msgstr "noretisterona"
+
+#. module: medical
+#: constraint:product.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "Erro! Não é possível criar categorias recursivas."
+
+#. module: medical
+#: model:product.template,name:medical.product_13_product_template
+msgid "amikacin"
+msgstr "amicacina"
+
+#. module: medical
+#: help:medical.patient.evaluation,vocabulary:0
+msgid "Check this box if the patient lacks basic intelectual capacity, when she/he can not describe elementary objects"
+msgstr "Marque esta caixa se o paciente não tem capacidade intelectual básica, quando ela/ele não puder descrever objetos elementares"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Form :"
+msgstr "Forma:"
+
+#. module: medical
+#: field:medical.patient.evaluation,ascites:0
+msgid "Ascites"
+msgstr "Ascite"
+
+#. module: medical
+#: model:product.template,name:medical.product_228_product_template
+msgid "nicotinamide"
+msgstr "nicotinamida"
+
+#. module: medical
+#: model:ir.model,name:medical.model_res_partner
+msgid "Partner"
+msgstr "Parceiro"
+
+#. module: medical
+#: model:product.template,name:medical.product_95_product_template
+msgid "dextran"
+msgstr "dextran"
+
+#. module: medical
+#: field:medical.patient.disease,is_infectious:0
+msgid "Infectious Disease"
+msgstr "Doenças Infecciosas"
+
+#. module: medical
+#: view:medical.occupation:0 field:medical.occupation,name:0
+msgid "Occupation"
+msgstr "Ocupação"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Tel :"
+msgstr "Fone:"
+
+#. module: medical
+#: model:product.template,name:medical.product_321_product_template
+msgid "sulfasalazine"
+msgstr "sulfassalazina"
+
+#. module: medical
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Modelo de nome inválido na definição da ação."
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TAB
+msgid "Tablet"
+msgstr "Tabletes"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_8
+msgid "Immerse (Soak) Body Part "
+msgstr "Mergulhe (Imersão) Parte do Corpo"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_paresthesia:0
+msgid "Paresthesia"
+msgstr "Parestesia"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TPT
+msgid "Toothpaste"
+msgstr "Creme dental"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SPCAP
+msgid "Sprinkle capsule"
+msgstr "Polvilhe cápsula"
+
+#. module: medical
+#: help:medical.patient.evaluation,erithema:0
+#: help:medical.patient.evaluation,hypertonia:0
+#: help:medical.patient.evaluation,hypotonia:0
+msgid "Please also encode the correspondent disease on the patient disease history."
+msgstr "Por favor, codifique também a doença correspondente sobre a história da doença do paciente."
+
+#. module: medical
+#: model:product.template,name:medical.product_290_product_template
+msgid "ritonavir"
+msgstr "ritonavir"
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "healed"
+msgstr "curado"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SUP
+msgid "Suppository"
+msgstr "Supositório"
+
+#. module: medical
+#: selection:medical.insurance,type:0
+msgid "State"
+msgstr "Estado"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TAP
+msgid "Tape"
+msgstr "Fita"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_22
+msgid "Intrauterine "
+msgstr "Intrauterino"
+
+#. module: medical
+#: view:medical.medication.dosage:0
+msgid "Search Medication Common Dosages"
+msgstr "Pesquisar Dosagens de Medicação Comum"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.DRE
+msgid "Dressing"
+msgstr "Curativo"
+
+#. module: medical
+#: field:medical.patient.evaluation,bpm:0
+msgid "Heart Rate"
+msgstr "Frequência Cardíaca"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_vomiting:0
+msgid "Vomiting"
+msgstr "Vômitos"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.IMP
+msgid "Implant"
+msgstr "Implante"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_13
+msgid "Intradermal "
+msgstr "Intradérmico"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_drug_route
+msgid "medical.drug.route"
+msgstr "medical.drug.route"
+
+#. module: medical
+#: field:medical.medicament,therapeutic_action:0
+msgid "Therapeutic effect"
+msgstr "Efeito terapêutico"
+
+#. module: medical
+#: field:medical.patient,rh:0
+msgid "Rh"
+msgstr "Rh"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_headache:0
+msgid "Headache"
+msgstr "Dor de cabeça"
+
+#. module: medical
+#: model:product.template,name:medical.product_222_product_template
+msgid "neomycin sulfate"
+msgstr "sulfato de neomicina"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GDR
+msgid "Granule for suspension delayed release"
+msgstr "Grânulos para suspensão de liberação lenta"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.act_appointment_patient
+#: field:medical.appointment,patient:0 view:medical.patient:0
+#: field:medical.patient,name:0 view:medical.patient.evaluation:0
+#: field:medical.patient.medication,patient_id:0
+#: field:res.partner,is_patient:0
+msgid "Patient"
+msgstr "Paciente"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.WAF
+msgid "Wafer"
+msgstr "Hóstia"
+
+#. module: medical
+#: field:medical.drug.form,name:0 field:medical.medication.template,form:0
+#: field:medical.patient.medication,form:0
+#: field:medical.prescription.line,form:0
+msgid "Form"
+msgstr "Forma"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_menorrhagia:0
+msgid "Menorrhagia"
+msgstr "Menorragia"
+
+#. module: medical
+#: selection:medical.patient,rh:0
+msgid "+"
+msgstr "+"
+
+#. module: medical
+#: model:product.template,name:medical.product_213_product_template
+msgid "metoclopramide"
+msgstr "metoclopramida"
+
+#. module: medical
+#: model:product.template,name:medical.product_246_product_template
+msgid "permethrin"
+msgstr "permetrina"
+
+#. module: medical
+#: help:medical.medication.dosage,abbreviation:0
+msgid "Dosage abbreviation, such as tid in the US or tds in the UK"
+msgstr "Abreviação da Dosagem, como tid nos EUA ou tds no Reino Unido"
+
+#. module: medical
+#: model:product.template,name:medical.product_106_product_template
+msgid "DL‐methionine"
+msgstr "DL-metionina"
+
+#. module: medical
+#: field:medical.patient.evaluation,heart_extra_sounds:0
+msgid "Heart Extra Sounds"
+msgstr "Sons Cardíacos Acessórios"
+
+#. module: medical
+#: field:medical.medication.template,qty:0
+#: field:medical.patient.medication,qty:0
+#: field:medical.prescription.line,qty:0
+msgid "x"
+msgstr "x"
+
+#. module: medical
+#: field:medical.patient,vaccinations:0
+msgid "Vaccinations"
+msgstr "Vacinações"
+
+#. module: medical
+#: model:product.template,name:medical.product_20_product_template
+msgid "amphotericin B"
+msgstr "Anfotericina B"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_conf_pathology_categories
+msgid "Categories"
+msgstr "Categorias"
+
+#. module: medical
+#: model:product.template,name:medical.product_298_product_template
+msgid "silver sulfadiazine"
+msgstr "sulfadiazina de prata"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_operational_area
+msgid "medical.operational_area"
+msgstr "medical.area_operacional"
+
+#. module: medical
+#: field:medical.patient.disease,diagnosed_date:0
+msgid "Date of Diagnosis"
+msgstr "Data do diagnóstico"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_prescription_order
+msgid "prescription order"
+msgstr "pedido de prescrição"
+
+#. module: medical
+#: help:medical.medication.dosage,name:0
+msgid "Common frequency name"
+msgstr "Nome mais comum"
+
+#. module: medical
+#: field:medical.patient.evaluation,ldl:0
+msgid "Last LDL"
+msgstr "Última LDL"
+
+#. module: medical
+#: constraint:product.template:0
+msgid "Error: UOS must be in a different category than the UOM"
+msgstr "Erro: UOS deve estar em uma categoria diferente da UOM"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "My Patients"
+msgstr "Meus pacientes"
+
+#. module: medical
+#: model:product.template,name:medical.product_282_product_template
+msgid "retinol"
+msgstr "retinol"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.BIS
+msgid "Biscuit"
+msgstr "Biscoito"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Periodic control"
+msgstr "Controle Periódico"
+
+#. module: medical
+#: model:product.template,name:medical.product_259_product_template
+msgid "potassium iodide"
+msgstr "iodeto de potássio"
+
+#. module: medical
+#: report:patient.diseases:0 report:patient.medications:0
+#: report:patient.vaccinations:0 report:prescription.order:0
+msgid "Age :"
+msgstr "Idade:"
+
+#. module: medical
+#: view:medical.patient.disease:0 report:patient.diseases:0
+msgid "Infectious"
+msgstr "Infecciosas"
+
+#. module: medical
+#: selection:medical.medication.template,duration_period:0
+#: selection:medical.medication.template,frequency_unit:0
+#: selection:medical.patient.medication,duration_period:0
+#: selection:medical.patient.medication,frequency_unit:0
+#: selection:medical.prescription.line,duration_period:0
+#: selection:medical.prescription.line,frequency_unit:0
+msgid "hours"
+msgstr "horas"
+
+#. module: medical
+#: model:product.template,name:medical.product_40_product_template
+msgid "benzoic acid"
+msgstr "ácido benzóico"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_medication_dosage
+msgid "Medicament Common Dosage combinations"
+msgstr "Combinações de Dose de Medicamentos Comuns"
+
+#. module: medical
+#: selection:medical.patient,blood_type:0
+msgid "O"
+msgstr "O"
+
+#. module: medical
+#: model:product.template,name:medical.product_124_product_template
+msgid "ethanol"
+msgstr "etanol"
+
+#. module: medical
+#: field:medical.medication.template,duration_period:0
+#: field:medical.patient.medication,duration_period:0
+#: field:medical.prescription.line,duration_period:0
+msgid "Treatment period"
+msgstr "Período de Tratamento"
+
+#. module: medical
+#: view:medical.medicament:0 view:medical.patient.medication:0
+#: view:medical.prescription.line:0
+msgid "Dosage"
+msgstr "Dosagem"
+
+#. module: medical
+#: help:medical.patient.evaluation,dehydration:0
+msgid "Check this box if the patient show signs of dehydration. If not associated to a disease, please encode the correspondent disease on the patient disease history. For example, Volume Depletion, E86 in ICD-10 encoding"
+msgstr "Marque esta opção se o paciente apresenta sinais de desidratação. Se não for associado a uma doença, por favor, codificar a doença correspondente sobre a história da doença do paciente. Por exemplo, Depleção de Volume, E86 na codificação CID-10"
+
+#. module: medical
+#: view:medical.hospital.building:0
+msgid "Health Center Building Info"
+msgstr "Informação da Central de Saúde"
+
+#. module: medical
+#: model:product.template,name:medical.product_292_product_template
+msgid "rubella vaccine"
+msgstr "vacina contra a rubéola"
+
+#. module: medical
+#: model:product.template,name:medical.product_83_product_template
+msgid "condoms"
+msgstr "preservativos"
+
+#. module: medical
+#: model:product.template,name:medical.product_21_product_template
+msgid "ampicillin"
+msgstr "ampicilina"
+
+#. module: medical
+#: help:medical.patient.evaluation,lung_adventitious_sounds:0
+msgid "Crackles, wheezes, ronchus.."
+msgstr "Estertores, sibilos, rocos.."
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_cervical_pain:0
+msgid "Cervical Pain"
+msgstr "Dor Cervical"
+
+#. module: medical
+#: model:product.template,name:medical.product_271_product_template
+msgid "protamine sulfate"
+msgstr "sulfato de protamina"
+
+#. module: medical
+#: help:medical.hospital.ward,private:0
+msgid "Check this option for private room"
+msgstr "Marque esta opção para quarto privado"
+
+#. module: medical
+#: view:medical.medicament:0 field:medical.medicament,adverse_reaction:0
+#: field:medical.patient.medication,adverse_reaction:0
+msgid "Adverse Reactions"
+msgstr "Reações adversas"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_20
+msgid "Intrasynovial "
+msgstr "Intrasinovial"
+
+#. module: medical
+#: model:product.template,name:medical.product_128_product_template
+msgid "ethionamide"
+msgstr "etionamida"
+
+#. module: medical
+#: view:medical.operational_sector:0
+msgid "Region Operational Sector"
+msgstr "Setor Operacional Regional"
+
+#. module: medical
+#: help:medical.medicament,presentation:0
+msgid "Packaging"
+msgstr "Embalagem"
+
+#. module: medical
+#: field:medical.family_code,operational_sector:0
+msgid "Operational Sector"
+msgstr "Setor Operacional"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_metrorrhagia:0
+msgid "Metrorrhagia"
+msgstr "Metrorragia"
+
+#. module: medical
+#: help:medical.patient.evaluation,respiratory_rate:0
+msgid "Respiratory rate expressed in breaths per minute"
+msgstr "Frequência respiratória expressa em respirações por minuto"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_prescription_line
+msgid "Basic prescription object"
+msgstr "Objeto de prescrição básica"
+
+#. module: medical
+#: model:product.template,name:medical.product_118_product_template
+msgid "epinephrine (adrenaline)"
+msgstr "epinefrina (adrenalina)"
+
+#. module: medical
+#: field:medical.insurance,name:0
+msgid "Owner"
+msgstr "Dono"
+
+#. module: medical
+#: field:medical.prescription.order,user_id:0 report:prescription.order:0
+msgid "Prescribing Doctor"
+msgstr "Médico que prescreveu"
+
+#. module: medical
+#: view:medical.operational_area:0
+msgid "Search Operational Area"
+msgstr "Pesquisar Área Operacional"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_patient_action_form
+#: model:ir.ui.menu,name:medical.medical_add_patient
+msgid "New Patient"
+msgstr "Novo Paciente"
+
+#. module: medical
+#: field:medical.patient.evaluation,hypotonia:0
+msgid "Hypotonia"
+msgstr "Hipotonia"
+
+#. module: medical
+#: field:medical.prescription.order,prescription_line:0
+msgid "Prescription line"
+msgstr "Linha de Prescrição"
+
+#. module: medical
+#: field:medical.insurance,category:0
+msgid "Category"
+msgstr "Categoria"
+
+#. module: medical
+#: model:product.template,name:medical.product_349_product_template
+msgid "yellow fever vaccine"
+msgstr "vacina contra febre amarela"
+
+#. module: medical
+#: field:medical.patient.evaluation,palpebral_ptosis:0
+msgid "Palpebral Ptosis"
+msgstr "Ptose palpebral"
+
+#. module: medical
+#: view:medical.appointment:0 view:medical.patient:0
+#: field:medical.patient,user_id:0 field:medical.patient.evaluation,user_id:0
+#: report:patient.medications:0 field:res.partner,is_doctor:0
+msgid "Doctor"
+msgstr "Médico"
+
+#. module: medical
+#: model:product.template,name:medical.product_335_product_template
+msgid "trimethoprim"
+msgstr "trimetoprim"
+
+#. module: medical
+#: model:product.template,name:medical.product_257_product_template
+msgid "potassium chloride"
+msgstr "cloreto de potássio"
+
+#. module: medical
+#: model:product.template,name:medical.product_328_product_template
+msgid "tetanus vaccine"
+msgstr "vacina contra tétano"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Pre-arraganged appointment"
+msgstr "Consulta pré-agendada"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Qty :"
+msgstr "Qtde:"
+
+#. module: medical
+#: model:product.category,name:medical.generic
+msgid "Generics"
+msgstr "Genéricos"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_weight_change:0
+msgid "Sudden weight change"
+msgstr "Mudança repentina do peso"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PEC
+msgid "Powder enteric coated"
+msgstr "Pó de revestimento entérico"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_polyuria:0
+msgid "Polyuria"
+msgstr "Poliúria"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PEF
+msgid "Powder effervescent"
+msgstr "Pó efervescente"
+
+#. module: medical
+#: selection:medical.hospital.bed,bed_type:0
+msgid "Low Air Loss"
+msgstr "Baixa perda de ar"
+
+#. module: medical
+#: field:medical.patient,evaluation_ids:0
+msgid "Evaluation"
+msgstr "Avaliação"
+
+#. module: medical
+#: model:product.template,name:medical.product_193_product_template
+msgid "lumefantrine"
+msgstr "lumefantrina"
+
+#. module: medical
+#: field:medical.insurance,member_exp:0
+#: field:medical.vaccination,vaccine_expiration_date:0
+msgid "Expiration date"
+msgstr "Data de validade"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.COR
+msgid "Cord"
+msgstr "Cabo"
+
+#. module: medical
+#: model:product.template,name:medical.product_338_product_template
+msgid "typhoid vaccine"
+msgstr "vacina contra febre tifóide"
+
+#. module: medical
+#: model:product.template,name:medical.product_201_product_template
+msgid "mefloquine"
+msgstr "mefloquina"
+
+#. module: medical
+#: help:medical.speciality,code:0
+msgid "ie, ADP"
+msgstr "ie, ADP"
+
+#. module: medical
+#: model:product.template,name:medical.product_115_product_template
+msgid "emtricitabine + tenofovir"
+msgstr "emtricitabina + tenofovir"
+
+#. module: medical
+#: view:medical.medicament:0
+msgid "Search Medicament"
+msgstr "Pesquisar Medicamento"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_19
+msgid "Intraperitoneal "
+msgstr "Intraperitoneal"
+
+#. module: medical
+#: help:medical.patient.evaluation,hba1c:0
+msgid "Last Glycated Hb level. Can be approximative."
+msgstr "Último nível de Hb glicada. Pode ser aproximado."
+
+#. module: medical
+#: help:medical.patient.evaluation,acropachy:0
+msgid "Check if the patient shows acropachy / clubbing"
+msgstr "Verifique se o paciente apresenta hipocratismo / baqueteamento digital"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TDL
+msgid "Teat dilator"
+msgstr ""
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.act_patient_appointments
+#: model:ir.actions.act_window,name:medical.medical_action_form_appointment
+#: model:ir.ui.menu,name:medical.medical_appointment_menu
+#: model:ir.ui.menu,name:medical.medical_conf_appointment_add
+#: view:medical.appointment:0
+msgid "Appointments"
+msgstr "Compromissos"
+
+#. module: medical
+#: help:medical.vaccination,vaccine:0
+msgid "Vaccine Name. Make sure that the vaccine (product) has all the proper information at product level. Information such as provider, supplier code, tracking number, etc.. This information must always be present. If available, please copy / scan the vaccine leaflet and attach it to this record"
+msgstr "Nome da Vacina. Certifique-se que a vacina (produto) tem toda a informação adequada ao nível do produto. Informações como provedor, o código do fornecedor, número de rastreamento, etc. Esta informação deve estar sempre presente. Se estiver disponível, por favor, copiar / digitalizar a bula da vacina e anexá-la ao registro"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SPS
+msgid "Suppository sustained release"
+msgstr "Supositório de liberação lenta"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GER
+msgid "Gel controlled release"
+msgstr "Gel de liberação controlada"
+
+#. module: medical
+#: model:product.template,name:medical.product_98_product_template
+msgid "didanosine (ddI)"
+msgstr "didanosina (ddI)"
+
+#. module: medical
+#: model:product.template,name:medical.product_43_product_template
+msgid "benzyl benzoate"
+msgstr "benzoato de benzila"
+
+#. module: medical
+#: help:product.product,is_bed:0
+msgid "Check if the product is a bed on the medical center"
+msgstr "Verifique se o produto é uma cama no centro médico"
+
+#. module: medical
+#: model:product.template,name:medical.product_127_product_template
+msgid "ethinylestradiol + norethisterone"
+msgstr "etinilestradiol + noretisterona"
+
+#. module: medical
+#: model:product.template,name:medical.product_207_product_template
+msgid "metformin"
+msgstr "metformina"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TDIS
+msgid "Tablet dispersible"
+msgstr "Comprimido dispersível"
+
+#. module: medical
+#: view:medical.family_code:0
+msgid "Family Members"
+msgstr "Membros da Família"
+
+#. module: medical
+#: model:product.template,name:medical.product_65_product_template
+msgid "chloroquine"
+msgstr "cloroquina"
+
+#. module: medical
+#: model:product.template,name:medical.product_35_product_template
+msgid "barium sulfate"
+msgstr "sulfato de bário"
+
+#. module: medical
+#: help:medical.patient,general_info:0
+msgid "General information about the patient"
+msgstr "Informações gerais sobre o paciente"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Glasgow Coma Scale"
+msgstr "Escala de Coma de Glasgow"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_myalgia:0
+msgid "Myalgia"
+msgstr "Mialgia"
+
+#. module: medical
+#: view:medical.hospital.bed:0 field:medical.hospital.bed,name:0
+#: field:product.product,is_bed:0
+msgid "Bed"
+msgstr "Leito"
+
+#. module: medical
+#: field:res.partner,is_person:0
+msgid "Person"
+msgstr "Pessoa"
+
+#. module: medical
+#: field:medical.pathology,protein:0
+msgid "Protein involved"
+msgstr "Proteína envolvida"
+
+#. module: medical
+#: view:medical.patient:0 view:medical.patient.medication:0
+msgid "Medication"
+msgstr "Medicação"
+
+#. module: medical
+#: view:medical.directions:0
+msgid "Search Medical Directions"
+msgstr "Procurar orientação médica"
+
+#. module: medical
+#: report:patient.vaccinations:0 field:product.product,is_vaccine:0
+msgid "Vaccine"
+msgstr "Vacina"
+
+#. module: medical
+#: field:medical.patient.evaluation,peau_dorange:0
+msgid "Peau d orange"
+msgstr "Pele semelhante a laranja"
+
+#. module: medical
+#: model:product.template,name:medical.product_240_product_template
+msgid "oxytocin"
+msgstr "ocitocina"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_dizziness:0
+msgid "Dizziness"
+msgstr "Tonturas"
+
+#. module: medical
+#: help:medical.patient,identifier:0
+msgid "Social Security Number or National ID"
+msgstr "Registro Geral "
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_34
+msgid "Oral"
+msgstr "Oral"
+
+#. module: medical
+#: field:medical.directions,procedure:0 view:medical.procedure:0
+msgid "Procedure"
+msgstr "Procedimento"
+
+#. module: medical
+#: field:medical.patient.evaluation,praxis:0
+msgid "Praxis"
+msgstr "Praxe"
+
+#. module: medical
+#: model:product.template,name:medical.product_96_product_template
+msgid "diaphragms"
+msgstr "diafragmas"
+
+#. module: medical
+#: model:product.template,name:medical.product_56_product_template
+msgid "cefazolin"
+msgstr "cefazolina"
+
+#. module: medical
+#: model:product.template,name:medical.product_304_product_template
+msgid "sodium lactate"
+msgstr "lactato de sódio"
+
+#. module: medical
+#: model:product.template,name:medical.product_24_product_template
+msgid "antivenom immunoglobulin"
+msgstr "imunoglobulina antiveneno"
+
+#. module: medical
+#: field:medical.patient,family_code:0
+msgid "Family"
+msgstr "Família"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_tree_operational_area
+#: model:ir.ui.menu,name:medical.medical_conf_edit_operational_area_tree
+#: model:ir.ui.menu,name:medical.medical_conf_operational_areas
+msgid "Operational Areas"
+msgstr "Áreas operacionais"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Start :"
+msgstr "Início:"
+
+#. module: medical
+#: help:medical.pathology,protein:0
+msgid "Name of the protein(s) affected"
+msgstr "Nome da(s) proteína(s) afetada(s)"
+
+#. module: medical
+#: model:product.template,name:medical.product_84_product_template
+msgid "copper‐containing device"
+msgstr "dispositivo contendo cobre"
+
+#. module: medical
+#: help:medical.medicament,active_component:0
+msgid "Active Component"
+msgstr "Princípio Ativo"
+
+#. module: medical
+#: field:medical.patient,marital_status:0
+msgid "Marital Status"
+msgstr "Estado civil"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_vaginal_discharge:0
+msgid "Vaginal Discharge"
+msgstr "Corrimento vaginal"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GUM
+msgid "Gum chewable"
+msgstr "Goma mastigável"
+
+#. module: medical
+#: model:product.template,name:medical.product_186_product_template
+msgid "levonorgestrel‐releasing implant"
+msgstr "implante liberador de levonorgestrel"
+
+#. module: medical
+#: field:medical.directions,name:0 view:medical.patient:0
+#: field:medical.patient.disease,name:0
+#: field:medical.patient.evaluation,name:0
+#: field:medical.patient.medication,name:0
+#: field:medical.prescription.order,name:0 field:medical.vaccination,name:0
+msgid "Patient ID"
+msgstr "Código do paciente"
+
+#. module: medical
+#: help:medical.physician,code:0
+msgid "MD License ID"
+msgstr "N° CRM"
+
+#. module: medical
+#: field:medical.patient.evaluation,height:0
+msgid "Height (cm)"
+msgstr "Altura (cm)"
+
+#. module: medical
+#: view:medical.ethnicity:0
+msgid "Ethnicity"
+msgstr "Etnia"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_anorexia:0
+msgid "Anorexia"
+msgstr "Anorexia"
+
+#. module: medical
+#: model:product.template,name:medical.product_196_product_template
+msgid "mannitol"
+msgstr "manitol"
+
+#. module: medical
+#: model:product.template,name:medical.product_166_product_template
+msgid "insulin"
+msgstr "insulina"
+
+#. module: medical
+#: model:product.template,name:medical.product_170_product_template
+msgid "iodine"
+msgstr "iodo"
+
+#. module: medical
+#: view:medical.medicament:0 field:medical.medicament,storage:0
+msgid "Storage Conditions"
+msgstr "Condições de armazenamento"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SWA
+msgid "Swab"
+msgstr "Swab"
+
+#. module: medical
+#: selection:medical.patient.disease,allergy_type:0
+msgid "Misc Allergy"
+msgstr "Alergia Diversas"
+
+#. module: medical
+#: view:medical.patient.disease:0
+msgid "Allergies"
+msgstr "Alergias"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_installer_modules
+msgid "medical.installer.modules"
+msgstr "medical.installer.modules"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_47
+msgid "Wound"
+msgstr "Ferida"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_12
+msgid "Intracervical (uterus) "
+msgstr "Intracervical (útero)"
+
+#. module: medical
+#: field:medical.hospital.ward,microwave:0
+msgid "Microwave"
+msgstr "Microondas"
+
+#. module: medical
+#: model:product.template,name:medical.product_268_product_template
+msgid "promethazine"
+msgstr "prometazina"
+
+#. module: medical
+#: model:product.template,name:medical.product_302_product_template
+msgid "sodium fluoride"
+msgstr "fluoreto de sódio"
+
+#. module: medical
+#: model:product.template,name:medical.product_265_product_template
+msgid "procaine benzylpenicillin"
+msgstr "benzilpenicilina procaína"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SUS
+msgid "Suspension"
+msgstr "Suspensão"
+
+#. module: medical
+#: view:medical.medicament:0 field:medical.medicament,composition:0
+msgid "Composition"
+msgstr "Composição"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_tree_medicament
+#: model:ir.ui.menu,name:medical.medical_conf_medicaments
+#: model:ir.ui.menu,name:medical.medical_edit_medicament
+#: model:product.category,name:medical.medicament
+msgid "Medicaments"
+msgstr "Medicamentos"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_39
+msgid "Sublingual"
+msgstr "Sublingual"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_3
+msgid "Dental "
+msgstr "Dentário"
+
+#. module: medical
+#: help:res.partner,is_patient:0
+msgid "Check if the partner is a patient"
+msgstr "Verifique se o acompanhante é um paciente"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_prescription
+#: model:ir.ui.menu,name:medical.medical_conf_prescription
+#: field:medical.patient,prescriptions:0
+msgid "Prescriptions"
+msgstr "Prescrição"
+
+#. module: medical
+#: model:product.template,name:medical.product_12_product_template
+msgid "amidotrizoate"
+msgstr "amidotrizoato"
+
+#. module: medical
+#: field:medical.installer.modules,medical_invoice:0
+msgid "Medical Invoicing"
+msgstr "Faturamento Médico"
+
+#. module: medical
+#: model:product.template,name:medical.product_347_product_template
+msgid "warfarin"
+msgstr "varfarina"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_orthostatic_hypotension:0
+msgid "Orthostatic hypotension"
+msgstr "hipotensão ortostática"
+
+#. module: medical
+#: model:product.template,name:medical.product_301_product_template
+msgid "sodium chloride"
+msgstr "cloreto de sódio"
+
+#. module: medical
+#: model:product.template,name:medical.product_125_product_template
+msgid "ethinylestradiol"
+msgstr "etinilestradiol"
+
+#. module: medical
+#: field:medical.patient.evaluation,nipple_discharge:0
+msgid "Nipple Discharge"
+msgstr "Bico de descarga"
+
+#. module: medical
+#: help:medical.medication.template,indication:0
+#: help:medical.patient.medication,indication:0
+#: help:medical.prescription.line,indication:0
+msgid "Choose a disease for this medicament from the disease list. It can be an existing disease of the patient or a prophylactic."
+msgstr "Escolha uma doença para este medicamento da lista de doenças. Pode ser uma doença pré-existente do paciente ou um profilático."
+
+#. module: medical
+#: model:product.template,name:medical.product_225_product_template
+msgid "nevirapine"
+msgstr "nevirapina"
+
+#. module: medical
+#: model:product.template,name:medical.product_209_product_template
+msgid "methotrexate"
+msgstr "metotrexato"
+
+#. module: medical
+#: model:product.template,name:medical.product_232_product_template
+msgid "nitrous oxide"
+msgstr "óxido nitroso"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_abdominal_pain:0
+msgid "Abdominal Pain"
+msgstr "Dor abdominal"
+
+#. module: medical
+#: model:product.template,name:medical.product_334_product_template
+msgid "triclabendazole"
+msgstr "triclabendazol"
+
+#. module: medical
+#: view:medical.prescription.order:0
+msgid "Patient and Doctor Information"
+msgstr "Informação Médica e do Paciente"
+
+#. module: medical
+#: field:medical.patient.evaluation,notes:0 view:medical.patient.medication:0
+#: view:medical.prescription.order:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: medical
+#: selection:medical.hospital.ward,gender:0
+msgid "Men Ward"
+msgstr "Leitos Masculinos"
+
+#. module: medical
+#: model:product.template,name:medical.product_108_product_template
+msgid "doxorubicin"
+msgstr "doxorrubicina"
+
+#. module: medical
+#: selection:medical.patient,blood_type:0
+msgid "A"
+msgstr "A"
+
+#. module: medical
+#: field:medical.hospital.ward,tv:0
+msgid "Television"
+msgstr "Televisão"
+
+#. module: medical
+#: model:product.template,name:medical.product_149_product_template
+msgid "griseofulvin"
+msgstr "griseofulvina"
+
+#. module: medical
+#: help:medical.medication.template,common_dosage:0
+#: help:medical.patient.medication,common_dosage:0
+#: help:medical.prescription.line,common_dosage:0
+msgid "Common / standard dosage frequency for this medicament"
+msgstr "Frequência de dosagem comum / padrão para este medicamento"
+
+#. module: medical
+#: view:medical.family_code:0
+msgid "Search Families"
+msgstr "Buscar Famílias"
+
+#. module: medical
+#: model:product.template,name:medical.product_279_product_template
+msgid "rabies immunoglobulin"
+msgstr "imunoglobulina anti-rábica"
+
+#. module: medical
+#: model:product.template,name:medical.product_113_product_template
+msgid "emtricitabine"
+msgstr "emtricitabina"
+
+#. module: medical
+#: help:medical.patient.evaluation,symptom_orthostatic_hypotension:0
+msgid "If not associated to a disease,please encode it on the patient disease history. For example,  I95.1 in ICD-10 encoding"
+msgstr "Se não for associado a uma doença, por favor, codificá-lo sobre a história da doença do paciente. Por exemplo, a codificação I95.1 na CID-10"
+
+#. module: medical
+#: view:medical.patient.disease:0 field:medical.patient.disease,pathology:0
+#: help:medical.patient.disease,pathology:0
+msgid "Disease"
+msgstr "Doença"
+
+#. module: medical
+#: model:product.template,name:medical.product_250_product_template
+msgid "phenytoin"
+msgstr "fenitoína"
+
+#. module: medical
+#: model:product.template,name:medical.product_33_product_template
+msgid "azithromycin"
+msgstr "azitromicina"
+
+#. module: medical
+#: field:medical.patient.evaluation,abstraction:0
+msgid "Abstraction"
+msgstr "Abstração"
+
+#. module: medical
+#: model:product.template,name:medical.product_8_product_template
+msgid "alcuronium"
+msgstr "alcurônio"
+
+#. module: medical
+#: help:medical.medication.template,duration:0
+#: help:medical.medication.template,duration_period:0
+#: help:medical.patient.medication,duration:0
+#: help:medical.patient.medication,duration_period:0
+#: help:medical.prescription.line,duration:0
+#: help:medical.prescription.line,duration_period:0
+msgid "Period that the patient must take the medication. in minutes, hours, days, months, years or indefinately"
+msgstr "Período em que o paciente deve tomar a medicação. em minutos, horas, dias, meses, anos ou por tempo indeterminado"
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "improving"
+msgstr "melhoria"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PATCH
+msgid "Patch"
+msgstr ""
+
+#. module: medical
+#: model:product.template,name:medical.product_285_product_template
+msgid "rifampicin"
+msgstr "rifampicina"
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "status quo"
+msgstr "status quo"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_stress:0
+msgid "Stressed-out"
+msgstr "Estressado"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.POR
+msgid "Pellet (oral)"
+msgstr "Pellet (oral)"
+
+#. module: medical
+#: field:medical.patient,cod:0
+msgid "Cause of Death"
+msgstr "Causa da morte"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_constipation:0
+msgid "Constipation"
+msgstr "Constipação"
+
+#. module: medical
+#: field:medical.patient.disease,is_active:0
+msgid "Active disease"
+msgstr "Doença ativa"
+
+#. module: medical
+#: field:medical.installer.modules,medical_gyneco:0
+msgid "Medical Gyneco / Obstetrics"
+msgstr "Médico Gineco / Obstetra"
+
+#. module: medical
+#: model:product.template,name:medical.product_141_product_template
+msgid "folic acid"
+msgstr "ácido fólico"
+
+#. module: medical
+#: model:product.template,name:medical.product_156_product_template
+msgid "human normal immunoglobulin"
+msgstr "imunoglobulina humana normal"
+
+#. module: medical
+#: model:product.template,name:medical.product_306_product_template
+msgid "sodium nitroprusside"
+msgstr "nitroprussiato de sódio"
+
+#. module: medical
+#: model:product.template,name:medical.product_326_product_template
+msgid "tenofovir disoproxil fumarate"
+msgstr "tenofovir disoproxil fumarato"
+
+#. module: medical
+#: field:res.partner,alias:0
+msgid "alias"
+msgstr "apelido"
+
+#. module: medical
+#: model:product.template,name:medical.product_189_product_template
+msgid "lidocaine + epinephrine (adrenaline)"
+msgstr "lidocaína + epinefrina (adrenalina)"
+
+#. module: medical
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Erro: Código EAN inválido"
+
+#. module: medical
+#: model:product.template,name:medical.product_208_product_template
+msgid "methadone"
+msgstr "metadona"
+
+#. module: medical
+#: field:medical.installer.modules,medical_genetics:0
+msgid "Medical Genetics"
+msgstr "Genética Médica"
+
+#. module: medical
+#: field:medical.patient.evaluation,weight:0
+msgid "Weight (kg)"
+msgstr "Peso (kg)"
+
+#. module: medical
+#: model:product.template,name:medical.product_29_product_template
+msgid "asparaginase"
+msgstr "asparaginase"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_vaccination
+msgid "medical.vaccination"
+msgstr "medical.vaccination"
+
+#. module: medical
+#: view:medical.patient.medication:0 view:medical.prescription.line:0
+msgid "Specific Dosage"
+msgstr "Dosagem específica"
+
+#. module: medical
+#: model:product.template,name:medical.product_60_product_template
+msgid "charcoal, activated"
+msgstr "carvão ativado"
+
+#. module: medical
+#: help:medical.patient,user_id:0
+msgid "Physician that logs in the local Medical system (HIS), on the health center. It doesn't necesarily has do be the same as the Primary Care doctor"
+msgstr "Médico que registra no sistema médico local (HIS), no centro de saúde. Não tem necessariamente que ser o mesmo médico que o da atenção primária"
+
+#. module: medical
+#: view:medical.hospital.unit:0
+msgid "Health Center Unit Info"
+msgstr "Informações da Unidade do Centro de Saúde"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PMD
+msgid "Metered dose pump"
+msgstr "Bomba de Infusão"
+
+#. module: medical
+#: help:medical.patient.evaluation,head_circumference:0
+msgid "Head circumference"
+msgstr "Circunferência cefálica"
+
+#. module: medical
+#: view:medical.physician:0
+msgid "Search Physician"
+msgstr "Buscar Médico"
+
+#. module: medical
+#: model:product.template,name:medical.product_341_product_template
+msgid "vancomycin"
+msgstr "vancomicina"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_patient
+msgid "Patient related information"
+msgstr "Informação relativa ao paciente"
+
+#. module: medical
+#: model:product.template,name:medical.product_151_product_template
+msgid "haloperidol"
+msgstr "haloperidol"
+
+#. module: medical
+#: help:medical.appointment,patient:0 help:medical.patient,name:0
+msgid "Patient Name"
+msgstr "Nome do paciente"
+
+#. module: medical
+#: model:ir.actions.report.xml,name:medical.report_patient_medications
+#: view:medical.patient:0
+msgid "Medication History"
+msgstr "História da medicação"
+
+#. module: medical
+#: selection:medical.medication.template,duration_period:0
+#: selection:medical.patient.medication,duration_period:0
+#: selection:medical.prescription.line,duration_period:0
+msgid "years"
+msgstr "anos"
+
+#. module: medical
+#: model:product.template,name:medical.product_16_product_template
+msgid "amlodipine"
+msgstr "amlodipina"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.JAM
+msgid "Jam"
+msgstr "Jam"
+
+#. module: medical
+#: field:medical.physician,info:0
+msgid "Extra info"
+msgstr "Informação extra"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_amnesia:0
+msgid "Amnesia"
+msgstr "Amnésia"
+
+#. module: medical
+#: selection:medical.patient.evaluation,mood:0
+msgid "Disgust"
+msgstr "Desgosto"
+
+#. module: medical
+#: model:product.template,name:medical.product_119_product_template
+msgid "ergocalciferol"
+msgstr "ergocalciferol"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Indication :"
+msgstr "Indicação:"
+
+#. module: medical
+#: model:product.template,name:medical.product_182_product_template
+msgid "levamisole"
+msgstr "levamisole"
+
+#. module: medical
+#: model:product.template,name:medical.product_242_product_template
+msgid "paracetamol"
+msgstr "paracetamol"
+
+#. module: medical
+#: view:medical.hospital.ward:0
+msgid "Health Center Ward Info"
+msgstr "Informação das Alas do Centro de Saúde "
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_2
+msgid "Buccal "
+msgstr "Bucal"
+
+#. module: medical
+#: model:product.template,name:medical.product_263_product_template
+msgid "primaquine"
+msgstr "primaquina"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_photophobia:0
+msgid "Photophobia"
+msgstr "Fotofobia"
+
+#. module: medical
+#: selection:medical.hospital.ward,state:0
+msgid "Full"
+msgstr "Cheio"
+
+#. module: medical
+#: help:medical.patient.evaluation,loc_motor:0
+msgid "Motor Response - Glasgow Coma Scale - 1 to 6"
+msgstr "Resposta Motora - Escala de Coma de Glasgow - 1 a 6"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Emergency"
+msgstr "Emergência"
+
+#. module: medical
+#: help:medical.hospital.ward,bio_hazard:0
+msgid "Check this option if there is biological hazard"
+msgstr "Marque esta opção se houver risco biológico"
+
+#. module: medical
+#: model:product.template,name:medical.product_184_product_template
+msgid "levodopa + carbidopa"
+msgstr "levodopa + carbidopa"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_24
+msgid "Mouth/Throat "
+msgstr "Boca / garganta"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "Specialty"
+msgstr "Especialidade"
+
+#. module: medical
+#: help:medical.installer.modules,medical_icd10:0
+msgid "This module will install WHO International Classification of Diseases 10th Revision."
+msgstr "Este módulo irá instalar a Classificação Internacional de Doenças da OMS - 10 ª Revisão."
+
+#. module: medical
+#: model:product.template,name:medical.product_235_product_template
+msgid "nystatin"
+msgstr "nistatina"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_21
+msgid "Intrathecal "
+msgstr "Intratecal"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_odynophagia:0
+msgid "Odynophagia"
+msgstr "Odinofagia"
+
+#. module: medical
+#: view:medical.drug.form:0
+msgid "Search Medicament Presentation"
+msgstr "Buscar Apresentação de Medicamento"
+
+#. module: medical
+#: model:product.template,name:medical.product_275_product_template
+msgid "pyridoxine"
+msgstr "piridoxina"
+
+#. module: medical
+#: field:medical.patient.evaluation,arritmia:0
+msgid "Arritmias"
+msgstr "Arritmias"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_32
+msgid "Other/Miscellaneous"
+msgstr "Outros / Diversos"
+
+#. module: medical
+#: selection:medical.medication.template,frequency_unit:0
+#: selection:medical.patient.medication,frequency_unit:0
+#: selection:medical.prescription.line,frequency_unit:0
+msgid "weeks"
+msgstr "semanas"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Take during"
+msgstr "Tomar durante"
+
+#. module: medical
+#: model:product.template,name:medical.product_17_product_template
+msgid "amodiaquine"
+msgstr "amodiaquina"
+
+#. module: medical
+#: field:medical.patient.evaluation,abdominal_circ:0
+msgid "Abdominal Circumference"
+msgstr "Cicunferência abdominal"
+
+#. module: medical
+#: model:product.template,name:medical.product_214_product_template
+msgid "metronidazole"
+msgstr "metronidazol"
+
+#. module: medical
+#: model:product.template,name:medical.product_300_product_template
+msgid "sodium calcium edetate"
+msgstr "edetato dissódico de cálcio"
+
+#. module: medical
+#: model:product.template,name:medical.product_51_product_template
+msgid "calcium folinate"
+msgstr "folinato de cálcio"
+
+#. module: medical
+#: model:product.template,name:medical.product_308_product_template
+msgid "sodium valproate"
+msgstr "valproato de sódio"
+
+#. module: medical
+#: view:medical.hospital.ward:0
+msgid "Search Health Center Wards"
+msgstr "Buscar Alas do Centro de Saúde"
+
+#. module: medical
+#: model:product.template,name:medical.product_58_product_template
+msgid "ceftazidime"
+msgstr "ceftazidima"
+
+#. module: medical
+#: field:medical.patient.evaluation,lung_adventitious_sounds:0
+msgid "Lung Adventitious sounds"
+msgstr "Ruídos adventícios pulmonares"
+
+#. module: medical
+#: model:product.template,name:medical.product_333_product_template
+msgid "timolol"
+msgstr "timolol"
+
+#. module: medical
+#: model:product.template,name:medical.product_273_product_template
+msgid "pyrazinamide"
+msgstr "pirazinamida"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SMD
+msgid "Spray metered dose"
+msgstr "Spray dosados"
+
+#. module: medical
+#: view:medical.patient.disease:0
+#: field:medical.patient.disease,short_comment:0 report:patient.diseases:0
+msgid "Remarks"
+msgstr "Observações"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_operational_sector
+msgid "medical.operational_sector"
+msgstr "medical.operational_sector"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SUT
+msgid "Suture"
+msgstr "Sutura"
+
+#. module: medical
+#: help:medical.patient.evaluation,masses:0
+msgid "Check when there are findings of masses / tumors / lumps"
+msgstr "Verifique quando houver descobertas de massas / tumores / nódulos"
+
+#. module: medical
+#: model:product.template,name:medical.product_200_product_template
+msgid "medroxyprogesterone acetate + estradiol"
+msgstr "acetato de medroxiprogesterona + estradiol"
+
+#. module: medical
+#: model:product.template,name:medical.product_256_product_template
+msgid "polyvidone iodine"
+msgstr "iodo povidona"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Vital Signs"
+msgstr "Sinais Vitais"
+
+#. module: medical
+#: model:product.template,name:medical.product_236_product_template
+msgid "ofloxacin"
+msgstr "ofloxacina"
+
+#. module: medical
+#: model:product.template,name:medical.product_261_product_template
+msgid "praziquantel"
+msgstr "praziquantel"
+
+#. module: medical
+#: report:patient.vaccinations:0
+msgid "PATIENT VACCINATION HISTORY"
+msgstr "HISTÓRICO DE VACINAÇÃO DO PACIENTE"
+
+#. module: medical
+#: model:product.template,name:medical.product_284_product_template
+msgid "riboflavin"
+msgstr "riboflavina"
+
+#. module: medical
+#: selection:medical.insurance,type:0
+msgid "Labour Union / Syndical"
+msgstr "União Sindical"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Immunizations"
+msgstr "Imunizações"
+
+#. module: medical
+#: model:product.template,name:medical.product_281_product_template
+msgid "ranitidine"
+msgstr "ranitidina"
+
+#. module: medical
+#: model:product.template,name:medical.product_239_product_template
+msgid "oxygen"
+msgstr "oxigênio"
+
+#. module: medical
+#: report:patient.medications:0
+msgid "Start"
+msgstr "Início"
+
+#. module: medical
+#: model:product.template,name:medical.product_255_product_template
+msgid "poliomyelitis vaccine"
+msgstr "vacina contra a poliomielite"
+
+#. module: medical
+#: model:product.template,name:medical.product_143_product_template
+msgid "gentamicin"
+msgstr "gentamicina"
+
+#. module: medical
+#: selection:medical.patient.evaluation,mood:0
+msgid "Sad"
+msgstr "Triste"
+
+#. module: medical
+#: field:medical.medication.dosage,abbreviation:0
+msgid "Abbreviation"
+msgstr "Abreviação"
+
+#. module: medical
+#: field:medical.patient.disease,pregnancy_warning:0
+msgid "Pregnancy warning"
+msgstr "Cuidados na gravidez"
+
+#. module: medical
+#: field:medical.patient.evaluation,loc_verbal:0
+msgid "Level of Consciousness - Verbal"
+msgstr "Nível de consciência"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "</para>           <para style=\"P12\">Tel:"
+msgstr "</para>           <para style=\"P12\">Tel:"
+
+#. module: medical
+#: view:medical.medicament:0
+msgid "medicament"
+msgstr "medicamento"
+
+#. module: medical
+#: selection:medical.hospital.bed,bed_type:0
+msgid "Low Bed"
+msgstr "Alojamento Baixo"
+
+#. module: medical
+#: model:product.template,name:medical.product_231_product_template
+msgid "nitrofurantoin"
+msgstr "nitrofurantoína"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SRS
+msgid "Syrup sustained release"
+msgstr "Xarope de liberação sustentada"
+
+#. module: medical
+#: help:medical.patient,current_address:0
+msgid "Contact information. You may choose from the different contacts and addresses this patient has"
+msgstr "Informações de contato. Você pode escolher entre os diferentes contatos e endereços que este paciente tem"
+
+#. module: medical
+#: help:medical.patient.evaluation,edema:0
+msgid "Please also encode the correspondent disease on the patient disease history. For example,  R60.1 in ICD-10 encoding"
+msgstr "Por favor, também codifique a doença correspondente na história da doença do paciente. Por exemplo, a codificação R60.1 na CID-10"
+
+#. module: medical
+#: view:medical.patient.disease:0 report:patient.medications:0
+msgid "End"
+msgstr "Fim"
+
+#. module: medical
+#: help:medical.patient.evaluation,alopecia:0
+msgid "Check when alopecia - including androgenic - is present"
+msgstr "Verifique quando alopecia - incluindo androgênicos - está presente"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.INS
+msgid "Insert"
+msgstr "Inserir"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PWSO
+msgid "Powder for solution"
+msgstr "Pó para solução"
+
+#. module: medical
+#: model:product.template,name:medical.product_142_product_template
+msgid "furosemide"
+msgstr "furosemida"
+
+#. module: medical
+#: model:product.template,name:medical.product_52_product_template
+msgid "calcium gluconate"
+msgstr "gluconato de cálcio"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.FLS
+msgid "Floss"
+msgstr ""
+
+#. module: medical
+#: field:medical.hospital.ward,bio_hazard:0
+msgid "Bio Hazard"
+msgstr "Risco Biológico"
+
+#. module: medical
+#: field:medical.patient.evaluation,pressure_ulcers:0
+msgid "Pressure Ulcers"
+msgstr "Úlceras de Pressão"
+
+#. module: medical
+#: view:medical.patient:0 field:medical.patient,identifier:0
+msgid "SSN"
+msgstr "SSN"
+
+#. module: medical
+#: field:medical.prescription.line,prnt:0
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_evaluation
+msgid "Patient Evaluation"
+msgstr "Avaliação do paciente"
+
+#. module: medical
+#: field:medical.medication.template,dose:0
+#: field:medical.patient.medication,dose:0
+#: field:medical.prescription.line,dose:0 report:patient.vaccinations:0
+msgid "Dose"
+msgstr "Dose"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_urethral_discharge:0
+msgid "Urethral Discharge"
+msgstr "Descarga Uretral"
+
+#. module: medical
+#: view:medical.pathology:0
+msgid "Search Diseases"
+msgstr "Buscar Doenças"
+
+#. module: medical
+#: model:product.template,name:medical.product_211_product_template
+msgid "methylrosanilinium chloride (gentian violet)"
+msgstr "cloreto methylrosanilinium (violeta genciana)"
+
+#. module: medical
+#: help:medical.patient.evaluation,osat:0
+msgid "Oxygen Saturation (arterial)."
+msgstr "Saturação de oxigênio (arterial)."
+
+#. module: medical
+#: selection:medical.patient.evaluation,mood:0
+msgid "Flat"
+msgstr "Plano"
+
+#. module: medical
+#: model:product.template,name:medical.product_312_product_template
+msgid "stavudine (d4T)"
+msgstr "estavudina (d4T)"
+
+#. module: medical
+#: model:product.template,name:medical.product_27_product_template
+msgid "artesunate"
+msgstr "artesunato"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_37
+msgid "Soaked Dressing"
+msgstr "Vestimenta Encharcada"
+
+#. module: medical
+#: field:medical.medicament,dosage:0
+msgid "Dosage Instructions"
+msgstr "Instruções de uso"
+
+#. module: medical
+#: field:medical.medicament,overdosage:0 help:medical.medicament,overdosage:0
+msgid "Overdosage"
+msgstr "Super-dosagem"
+
+#. module: medical
+#: selection:medical.appointment,patient_status:0
+msgid "Outpatient"
+msgstr "Consulta"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SPR
+msgid "Spray"
+msgstr "Spray"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "ID  :"
+msgstr "ID  :"
+
+#. module: medical
+#: field:medical.appointment,appointment_date:0
+msgid "Date and Time"
+msgstr "Data e hora"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_patient_evaluation
+msgid "evaluation"
+msgstr "avaliação"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_menu view:product.product:0
+#: view:res.partner:0
+msgid "Medical"
+msgstr "Medical"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_sore_throat:0
+msgid "Sore throat"
+msgstr "Dor de garganta"
+
+#. module: medical
+#: view:medical.patient.medication:0 view:medical.prescription.line:0
+msgid "Common Dosage"
+msgstr "Dosagem Comum"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.action_medical_installer
+msgid "Medical Management Configuration"
+msgstr "Configuração de Gerenciamento Médico"
+
+#. module: medical
+#: model:product.template,name:medical.product_28_product_template
+msgid "ascorbic acid"
+msgstr "ácido ascórbico"
+
+#. module: medical
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Arquitetura XML inválida"
+
+#. module: medical
+#: view:medical.pathology.category:0
+msgid "Search Disease Categories"
+msgstr "Pesquisar Categorias de Doenças"
+
+#. module: medical
+#: model:product.template,name:medical.product_39_product_template
+msgid "benznidazole"
+msgstr "benzonidazol"
+
+#. module: medical
+#: model:product.template,name:medical.product_26_product_template
+msgid "artemether + lumefantrine"
+msgstr "Arteméter + lumefantrina"
+
+#. module: medical
+#: help:medical.installer.modules,medical_inpatient:0
+msgid ""
+"This module will hold all the processes related to Inpatient (Patient hospitalization)\n"
+"\n"
+"                - Patient Registration\n"
+"\n"
+"                - Bed reservation\n"
+"\n"
+"                - Hospitalization\n"
+"\n"
+"                - Nursing Plan\n"
+"\n"
+"                - Discharge Plan\n"
+"\n"
+"                - Reporting"
+msgstr ""
+"Este módulo irá realizar todos os processos relacionados com a internação (internação do paciente)\n"
+"- Registro do Paciente \n"
+"- Reserva de Leito \n"
+"- Hospitalização \n"
+"- Plano de Enfermagem \n"
+"- Plano de Alta\n"
+"- Reportagem"
+
+#. module: medical
+#: model:product.template,name:medical.product_152_product_template
+msgid "halothane"
+msgstr "halotano"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "</para>           <para style=\"P12\">Lic. ID :"
+msgstr "</para> <para style=\"P12\"> Lic. ID:"
+
+#. module: medical
+#: model:product.template,name:medical.product_101_product_template
+msgid "diloxanide"
+msgstr "diloxanide"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "</para>"
+msgstr "</para>"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_hemoptysis:0
+msgid "Hemoptysis"
+msgstr "Hemoptise"
+
+#. module: medical
+#: model:product.template,name:medical.product_204_product_template
+msgid "melarsoprol"
+msgstr "melarsoprol"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Patient Contact Information"
+msgstr "Informação de Contato do Paciente"
+
+#. module: medical
+#: model:product.template,name:medical.product_221_product_template
+msgid "nelfinavir (NFV)"
+msgstr "nelfinavir (NFV)"
+
+#. module: medical
+#: model:product.template,name:medical.product_133_product_template
+msgid "ferrous salt"
+msgstr "sal ferroso"
+
+#. module: medical
+#: model:product.template,name:medical.product_191_product_template
+msgid "lopinavir"
+msgstr "lopinavir"
+
+#. module: medical
+#: view:medical.operational_sector:0
+msgid "Medical Operational Sector List"
+msgstr "Lista do setor operacional médico"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_6
+msgid "Gastrostomy Tube "
+msgstr "Tubo de Gastrostomia"
+
+#. module: medical
+#: field:medical.insurance,type:0
+msgid "Insurance Type"
+msgstr "Tipo de seguro"
+
+#. module: medical
+#: selection:medical.patient,sex:0
+msgid "Male"
+msgstr "Masculino"
+
+#. module: medical
+#: report:patient.diseases:0
+msgid "Important information about the patient diseases, allergies and procedures:"
+msgstr "Informações importantes sobre as doenças, alergias e procedimentos:"
+
+#. module: medical
+#: model:product.template,name:medical.product_94_product_template
+msgid "dexamethasone"
+msgstr "dexametasona"
+
+#. module: medical
+#: field:medical.dose.unit,name:0 field:medical.hospital.ward,unit:0
+msgid "Unit"
+msgstr "Unidade"
+
+#. module: medical
+#: help:medical.patient.evaluation,calculation_ability:0
+msgid "Check this box if the patient can not do simple arithmetic problems"
+msgstr "Marque se o paciente não pode fazer problemas aritméticos simples"
+
+#. module: medical
+#: field:medical.prescription.line,refills:0
+msgid "Refills #"
+msgstr "Refil #"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Phone call"
+msgstr "Ligação telefônica"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TRD
+msgid "Tablet rapid dissolve"
+msgstr "Tablet de rápida dissolução"
+
+#. module: medical
+#: selection:medical.medication.template,duration_period:0
+#: selection:medical.medication.template,frequency_unit:0
+#: selection:medical.patient.medication,duration_period:0
+#: selection:medical.patient.medication,frequency_unit:0
+#: selection:medical.prescription.line,duration_period:0
+#: selection:medical.prescription.line,frequency_unit:0
+msgid "days"
+msgstr "dias"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Signs"
+msgstr "Sinais"
+
+#. module: medical
+#: selection:medical.appointment,urgency:0
+msgid "Urgent"
+msgstr "Urgente"
+
+#. module: medical
+#: view:medical.drug.route:0
+msgid "Medicament Administration Routes"
+msgstr "Vias de Administração de Medicamento"
+
+#. module: medical
+#: model:product.template,name:medical.product_217_product_template
+msgid "misoprostol"
+msgstr "misoprostol"
+
+#. module: medical
+#: field:medical.patient.evaluation,hematoma:0
+msgid "Hematomas"
+msgstr "Hematomas"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TEA
+msgid "Tea herbal"
+msgstr "Chá medicinal"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_directions
+msgid "medical.directions"
+msgstr "medical.directions"
+
+#. module: medical
+#: view:medical.operational_area:0
+msgid "Region Operational Area"
+msgstr "Área de Região Operacional"
+
+#. module: medical
+#: help:medical.patient.evaluation,pressure_ulcers:0
+msgid "Check when Decubitus / Pressure ulcers are present"
+msgstr "Verifique quando úlceras de pressão/decúbito estão presentes"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_syncope:0
+msgid "Syncope"
+msgstr "Síncope"
+
+#. module: medical
+#: model:product.template,name:medical.product_251_product_template
+msgid "phytomenadione"
+msgstr "fitomenadiona"
+
+#. module: medical
+#: help:medical.medicament,dosage:0
+msgid "Dosage / Indications"
+msgstr "Dosagem / Indicações"
+
+#. module: medical
+#: field:medical.prescription.line,review:0
+msgid "Review"
+msgstr "Revisão"
+
+#. module: medical
+#: model:product.template,name:medical.product_100_product_template
+msgid "digoxin"
+msgstr "digoxina"
+
+#. module: medical
+#: model:product.template,name:medical.product_305_product_template
+msgid "sodium nitrite"
+msgstr "nitrito de sódio"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_hoarseness:0
+msgid "Hoarseness"
+msgstr "Rouquidão"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_family_code
+msgid "medical.family_code"
+msgstr "medical.family_code"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Route :"
+msgstr "Rota:"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Anthropometry"
+msgstr "Antropometria"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_4
+msgid "Epidural "
+msgstr "Epidural"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_9
+msgid "Intra-arterial "
+msgstr "Intra-arterial"
+
+#. module: medical
+#: selection:medical.hospital.bed,bed_type:0
+msgid "Clinitron"
+msgstr "Clinitron"
+
+#. module: medical
+#: help:medical.patient.medication,doctor:0
+msgid "Physician who prescribed the medicament"
+msgstr "Médico que prescreveu o medicamento"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Glucose"
+msgstr "Glicose"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Separated"
+msgstr "Separado"
+
+#. module: medical
+#: model:product.template,name:medical.product_72_product_template
+msgid "ciprofloxacin"
+msgstr "ciprofloxacina"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_insurance
+#: model:ir.ui.menu,name:medical.medical_conf_edit_insurance
+#: model:ir.ui.menu,name:medical.medical_conf_insurances
+#: view:medical.insurance:0
+msgid "Insurances"
+msgstr "Seguros"
+
+#. module: medical
+#: model:product.template,name:medical.product_19_product_template
+msgid "amoxicillin + clavulanic acid"
+msgstr "amoxicilina + ácido clavulânico"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.EVT
+msgid "Tablet effervescent"
+msgstr "Pastilha efervescente"
+
+#. module: medical
+#: help:medical.hospital.building,name:0
+msgid "Name of the building within the institution"
+msgstr "Nome do edifício dentro da instituição"
+
+#. module: medical
+#: help:medical.patient,primary_care_doctor:0
+msgid "Current primary care / family doctor"
+msgstr "Atual cuidado primário / médico de família"
+
+#. module: medical
+#: model:product.template,name:medical.product_129_product_template
+msgid "ethosuximide"
+msgstr "etossuximida"
+
+#. module: medical
+#: model:product.template,name:medical.product_78_product_template
+msgid "clomipramine"
+msgstr "clomipramina"
+
+#. module: medical
+#: field:medical.appointment,patient_status:0
+msgid "Patient status"
+msgstr "Estado do paciente"
+
+#. module: medical
+#: help:medical.hospital.ward,number_of_beds:0
+msgid "Number of patients per ward"
+msgstr "Número de pacientes por enfermaria"
+
+#. module: medical
+#: model:product.template,name:medical.product_316_product_template
+msgid "sulfadiazine"
+msgstr "sulfadiazina"
+
+#. module: medical
+#: model:product.template,name:medical.product_120_product_template
+msgid "ergometrine"
+msgstr "ergometrina"
+
+#. module: medical
+#: model:product.template,name:medical.product_187_product_template
+msgid "levothyroxine"
+msgstr "levotiroxina"
+
+#. module: medical
+#: view:medical.appointment:0 field:medical.vaccination,date:0
+#: report:patient.vaccinations:0
+msgid "Date"
+msgstr "Data"
+
+#. module: medical
+#: view:medical.patient.disease:0
+msgid "Therapy"
+msgstr "Terapia"
+
+#. module: medical
+#: field:medical.patient.evaluation,tag:0
+msgid "Last TAGs"
+msgstr "Últimas TAGs"
+
+#. module: medical
+#: model:product.template,name:medical.product_145_product_template
+msgid "glucose"
+msgstr "glicose"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_drug_form
+msgid "medical.drug.form"
+msgstr "medical.drug.form"
+
+#. module: medical
+#: field:medical.installer.modules,medical_lifestyle:0
+msgid "Medical Lifestyle"
+msgstr "Estilo de vida médica"
+
+#. module: medical
+#: selection:medical.patient,blood_type:0
+msgid "B"
+msgstr "B"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_astenia:0
+msgid "Astenia"
+msgstr "Astenia"
+
+#. module: medical
+#: model:ir.actions.report.xml,name:medical.report_patient_diseases
+msgid "Diseases Report"
+msgstr "Relatório de Doenças"
+
+#. module: medical
+#: help:medical.pathology,name:0
+msgid "Disease name"
+msgstr "Nome da doença"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Patient Critical Information"
+msgstr "Informações de Paciente Crítico"
+
+#. module: medical
+#: help:medical.patient.evaluation,symptom_pain_intensity:0
+msgid "Pain intensity from 0 (no pain) to 10 (worst possible pain)"
+msgstr "A intensidade da dor de 0 (sem dor) a 10 (pior dor possível)"
+
+#. module: medical
+#: model:product.template,name:medical.product_134_product_template
+msgid "ferrous salt + folic acid"
+msgstr "sal ferroso + ácido fólico"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_tree_operational_sector
+#: model:ir.ui.menu,name:medical.medical_conf_edit_operational_area_sector
+msgid "Operational Sectors"
+msgstr "Setores operacionais"
+
+#. module: medical
+#: help:medical.medication.template,dose:0
+#: help:medical.patient.medication,dose:0
+#: help:medical.prescription.line,dose:0
+msgid "Amount of medication (eg, 250 mg ) each time the patient takes it"
+msgstr "Quantidade de medicação (por exemplo, 250 mg) cada vez que o paciente toma"
+
+#. module: medical
+#: field:medical.patient.evaluation,diastolic:0
+msgid "Diastolic Pressure"
+msgstr "Pressão Diastólica"
+
+#. module: medical
+#: model:product.template,name:medical.product_293_product_template
+msgid "salbutamol"
+msgstr "salbutamol"
+
+#. module: medical
+#: model:product.template,name:medical.product_260_product_template
+msgid "potassium permanganate"
+msgstr "permanganato de potássio"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_amenorrhea:0
+msgid "Amenorrhea"
+msgstr "Amenorréia"
+
+#. module: medical
+#: field:medical.patient.evaluation,loc:0
+msgid "Level of Consciousness"
+msgstr "Nível de consciência"
+
+#. module: medical
+#: selection:medical.hospital.bed,state:0
+msgid "Reserved"
+msgstr "Reservado"
+
+#. module: medical
+#: field:medical.pathology,gene:0
+msgid "Gene"
+msgstr "Gen"
+
+#. module: medical
+#: selection:medical.medication.template,duration_period:0
+#: selection:medical.medication.template,frequency_unit:0
+#: selection:medical.patient.medication,duration_period:0
+#: selection:medical.patient.medication,frequency_unit:0
+#: selection:medical.prescription.line,duration_period:0
+#: selection:medical.prescription.line,frequency_unit:0
+msgid "minutes"
+msgstr "minutos"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_hospital_bed
+#: model:ir.ui.menu,name:medical.medical_conf_hospital_bed_add
+msgid "Health Center beds"
+msgstr "Leitos do Centro de Saúde"
+
+#. module: medical
+#: model:product.template,name:medical.product_174_product_template
+msgid "isoniazid + ethambutol"
+msgstr "isoniazida + etambutol"
+
+#. module: medical
+#: field:medical.patient,primary_care_doctor:0
+msgid "Primary Care Doctor"
+msgstr "Médico da Atenção Básica"
+
+#. module: medical
+#: field:medical.drug.form,code:0 field:medical.drug.route,code:0
+#: field:medical.ethnicity,code:0 field:medical.hospital.building,code:0
+#: field:medical.hospital.unit,code:0 field:medical.medication.dosage,code:0
+#: field:medical.occupation,code:0 field:medical.pathology,code:0
+#: field:medical.patient.disease,pcs_code:0 field:medical.procedure,name:0
+#: field:medical.speciality,code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: medical
+#: help:medical.patient,current_insurance:0
+msgid "Insurance information. You may choose from the different insurances belonging to the patient"
+msgstr "Informação do Seguro. Você pode escolher entre as diferentes seguradoras pertencentes ao paciente"
+
+#. module: medical
+#: field:medical.patient.evaluation,orientation:0
+msgid "Orientation"
+msgstr "Orientação"
+
+#. module: medical
+#: help:medical.patient,critical_info:0
+msgid "Write any important information on the patient's disease, surgeries, allergies, ..."
+msgstr "Escreva quaisquer informações importantes sobre a doença do paciente, cirurgias, alergias, ..."
+
+#. module: medical
+#: model:product.template,name:medical.product_36_product_template
+msgid "BCG vaccine"
+msgstr "Vacina BCG"
+
+#. module: medical
+#: view:medical.patient:0 field:medical.patient,sex:0
+msgid "Sex"
+msgstr "Sexo"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_15
+msgid "Intrahepatic Artery "
+msgstr "Artéria Intrahepática"
+
+#. module: medical
+#: field:medical.medication.dosage,name:0
+#: field:medical.medication.template,common_dosage:0
+#: field:medical.medication.template,frequency:0
+#: field:medical.patient.medication,common_dosage:0
+#: field:medical.patient.medication,frequency:0
+#: field:medical.prescription.line,common_dosage:0
+#: field:medical.prescription.line,frequency:0
+msgid "Frequency"
+msgstr "Frequência"
+
+#. module: medical
+#: field:medical.patient.evaluation,evaluation_endtime:0
+msgid "End of Evaluation"
+msgstr "Fim da avaliação"
+
+#. module: medical
+#: field:medical.hospital.bed,bed_type:0
+msgid "Bed Type"
+msgstr "Tipo de cama"
+
+#. module: medical
+#: field:medical.patient.medication,course_completed:0
+msgid "Course Completed"
+msgstr "Curso Completo"
+
+#. module: medical
+#: field:medical.patient,photo:0
+msgid "Picture"
+msgstr "Foto"
+
+#. module: medical
+#: model:product.template,name:medical.product_253_product_template
+msgid "pneumococcal vaccine"
+msgstr "vacina pneumocócica"
+
+#. module: medical
+#: model:product.template,name:medical.product_63_product_template
+msgid "chlorhexidine"
+msgstr "clorexidina"
+
+#. module: medical
+#: model:product.template,name:medical.product_173_product_template
+msgid "isoniazid"
+msgstr "isoniazida"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.EML
+msgid "Emulsion"
+msgstr "Emulsão"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Lipids"
+msgstr "Lipídios"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.BAR
+msgid "Bar chewable"
+msgstr "Barra mastigável"
+
+#. module: medical
+#: field:medical.patient.disease,age:0
+msgid "Age when diagnosed"
+msgstr "Idade quando diagnosticado"
+
+#. module: medical
+#: model:product.template,name:medical.product_180_product_template
+msgid "lamivudine"
+msgstr "lamivudina"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_pruritus:0
+msgid "Pruritus"
+msgstr "Prurido"
+
+#. module: medical
+#: model:product.template,name:medical.product_82_product_template
+msgid "codeine"
+msgstr "codeína"
+
+#. module: medical
+#: help:medical.patient,deceased:0
+msgid "Mark if the patient has died"
+msgstr "Marque se o paciente morreu"
+
+#. module: medical
+#: help:medical.physician,speciality:0
+msgid "Speciality Code"
+msgstr "Código da especialidade"
+
+#. module: medical
+#: model:product.template,name:medical.product_248_product_template
+msgid "phenobarbital"
+msgstr "fenobarbital"
+
+#. module: medical
+#: field:medical.medicament,active_component:0
+msgid "Active component"
+msgstr "Componente ativo"
+
+#. module: medical
+#: help:medical.patient.evaluation,praxis:0
+msgid "Check this box if the patient is unable to make voluntary movements"
+msgstr "Marque esta caixa se o paciente é incapaz de fazer movimentos voluntários"
+
+#. module: medical
+#: model:product.template,name:medical.product_47_product_template
+msgid "bleomycin"
+msgstr "bleomicina"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PAD
+msgid "Pad"
+msgstr "Almofada"
+
+#. module: medical
+#: model:product.template,name:medical.product_317_product_template
+msgid "sulfadoxine"
+msgstr "sulfadoxina"
+
+#. module: medical
+#: field:medical.patient.evaluation,loc_eyes:0
+msgid "Level of Consciousness - Eyes"
+msgstr "Nível de consciência - Olhos"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Doctor signature"
+msgstr "Assinatura médica"
+
+#. module: medical
+#: field:medical.prescription.order,notes:0
+msgid "Prescription Notes"
+msgstr "Notas da Prescrição"
+
+#. module: medical
+#: model:product.template,name:medical.product_97_product_template
+msgid "diazepam"
+msgstr "diazepam"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Address :"
+msgstr "Endereço:"
+
+#. module: medical
+#: field:medical.installer.modules,medical_inpatient:0
+msgid "Medical Inpatient"
+msgstr "Médico da internação"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.action_medical_pathology_tree
+#: model:ir.model,name:medical.model_medical_pathology
+#: model:ir.ui.menu,name:medical.medical_conf_pathology
+#: model:ir.ui.menu,name:medical.medical_conf_pathology_tree
+#: view:medical.patient:0 field:medical.patient,diseases:0
+#: view:medical.patient.disease:0
+msgid "Diseases"
+msgstr "Doenças"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.CART
+msgid "Cartridge"
+msgstr "Cartela"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+#: field:medical.patient.evaluation,symptom_pain:0
+msgid "Pain"
+msgstr "Dor"
+
+#. module: medical
+#: view:medical.insurance:0
+msgid "Insurance List"
+msgstr "Lista de seguro"
+
+#. module: medical
+#: selection:medical.patient,rh:0
+msgid "-"
+msgstr "-"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SPG
+msgid "Sponge"
+msgstr "Esponja"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.KIT
+msgid "Kit"
+msgstr "Kit"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_40
+msgid "Topical"
+msgstr "Tópico"
+
+#. module: medical
+#: model:product.template,name:medical.product_bed_320_product_template
+msgid "320"
+msgstr "320"
+
+#. module: medical
+#: help:medical.installer.modules,medical_lifestyle:0
+msgid "Allow to enter Patient's lifestyle details."
+msgstr "Permitir a introdução dos dados do estilo de vida do paciente"
+
+#. module: medical
+#: model:product.template,name:medical.product_283_product_template
+msgid "ribavirin"
+msgstr "ribavirina"
+
+#. module: medical
+#: help:product.product,is_medicament:0
+msgid "Check if the product is a medicament"
+msgstr "Verifique se o produto é um medicamento"
+
+#. module: medical
+#: help:medical.patient.evaluation,violent:0
+msgid "Check this box if the patient is agressive or violent at the moment"
+msgstr "Marque esta caixa se o paciente é agressivo ou violento no momento"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_hematemesis:0
+msgid "Hematemesis"
+msgstr "Hematemese"
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "worsening"
+msgstr "piora"
+
+#. module: medical
+#: model:product.template,name:medical.product_11_product_template
+msgid "aluminium hydroxide"
+msgstr "hidróxido de alumínio"
+
+#. module: medical
+#: help:res.partner.address,relationship:0
+msgid "Include the relationship with the patient - friend, co-worker, brother, ...- "
+msgstr "Inclua o relacionamento com o paciente - amigo, colega, irmão, ...-"
+
+#. module: medical
+#: help:medical.prescription.order,prescription_id:0
+msgid "Type in the ID of this prescription"
+msgstr "Digite o ID da prescrição"
+
+#. module: medical
+#: model:product.template,name:medical.product_199_product_template
+msgid "medroxyprogesterone acetate"
+msgstr "acetato de medroxiprogesterona"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_28
+msgid "Nasal Prongs"
+msgstr "Óculos Nasais"
+
+#. module: medical
+#: field:medical.family_code,name:0 field:medical.hospital.building,name:0
+#: field:medical.hospital.unit,name:0 field:medical.hospital.ward,name:0
+#: field:medical.medicament,name:0 field:medical.operational_area,name:0
+#: field:medical.operational_sector,name:0 field:medical.pathology,name:0
+#: field:medical.pathology.category,complete_name:0
+#: field:medical.vaccination,vaccine:0
+msgid "Name"
+msgstr "Nome"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_diplopia:0
+msgid "Diplopia"
+msgstr "Diplopia"
+
+#. module: medical
+#: selection:medical.patient.evaluation,mood:0
+msgid "Rage"
+msgstr "Raiva"
+
+#. module: medical
+#: model:product.template,name:medical.product_311_product_template
+msgid "stavudine"
+msgstr "estavudina"
+
+#. module: medical
+#: field:medical.installer.modules,medical_surgery:0
+msgid "Medical Surgery"
+msgstr "Médico Cirurgião"
+
+#. module: medical
+#: model:product.template,name:medical.product_59_product_template
+msgid "ceftriaxone"
+msgstr "ceftriaxona"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SOL
+msgid "Solution"
+msgstr "Solução"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_report_medicament
+#: model:ir.ui.menu,name:medical.medical_list_medicament
+msgid "Medicament List"
+msgstr "Lista de remédios"
+
+#. module: medical
+#: help:medical.installer.modules,medical_surgery:0
+msgid "Medical Surgery module used for patient's surgery details."
+msgstr "Módulo Médico Cirurgico usado para os detalhes da cirurgia do paciente."
+
+#. module: medical
+#: model:product.template,name:medical.product_188_product_template
+msgid "lidocaine"
+msgstr "lidocaína"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Diagnosis"
+msgstr "Diagnóstico"
+
+#. module: medical
+#: model:product.template,name:medical.product_313_product_template
+msgid "stavudine + lamivudine + nevirapine"
+msgstr "estavudina + lamivudina + nevirapina"
+
+#. module: medical
+#: field:medical.hospital.ward,refrigerator:0
+msgid "Refrigetator"
+msgstr "Geladeira"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Search Patients"
+msgstr "Buscar Pacientes"
+
+#. module: medical
+#: help:product.product,is_vaccine:0
+msgid "Check if the product is a vaccine"
+msgstr "Verifique se o produto é uma vacina"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_36
+msgid "Rebreather Mask"
+msgstr ""
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_dysphagia:0
+msgid "Dysphagia"
+msgstr "Disfagia"
+
+#. module: medical
+#: model:product.template,name:medical.product_167_product_template
+msgid "insulin injection (soluble)"
+msgstr "injeção de insulina (solúvel)"
+
+#. module: medical
+#: model:product.template,name:medical.product_320_product_template
+msgid "sulfamethoxazole + trimethoprim"
+msgstr "sulfametoxazol + trimetoprim"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GEF
+msgid "Granule effervescent"
+msgstr "grânulo efervescente"
+
+#. module: medical
+#: model:product.template,name:medical.product_336_product_template
+msgid "tropicamide"
+msgstr "tropicamida"
+
+#. module: medical
+#: selection:medical.patient.disease,disease_severity:0
+msgid "Severe"
+msgstr "Grave"
+
+#. module: medical
+#: field:medical.patient.evaluation,actions:0
+msgid "Actions"
+msgstr "Ações"
+
+#. module: medical
+#: model:product.template,name:medical.product_350_product_template
+msgid "zidovudine (ZDV or AZT)"
+msgstr "zidovudina (ZDV ou AZT)"
+
+#. module: medical
+#: field:medical.patient.evaluation,notes_complaint:0
+msgid "Complaint details"
+msgstr "Detalhes da reclamação"
+
+#. module: medical
+#: help:medical.insurance,category:0
+msgid "Insurance company plan / category"
+msgstr "Plano de seguro da empresa / categoria"
+
+#. module: medical
+#: help:medical.patient.evaluation,malnutrition:0
+msgid "Check this box if the patient show signs of malnutrition. If not associated to a disease, please encode the correspondent disease on the patient disease history. For example, Moderate protein-energy malnutrition, E44.0 in ICD-10 encoding"
+msgstr "Marque esta caixa se o paciente apresenta sinais de desnutrição. Se não for associado a uma doença, por favor, codificar a doença correspondente sobre a história da doença do paciente. Por exemplo, a codificação de desnutrição protéico-calórica moderada, E44.0 na CID-10"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_pathology
+#: model:ir.ui.menu,name:medical.medical_conf_pathology_pathology
+msgid "New Disease"
+msgstr "Nova Doença"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_dysuria:0
+msgid "Dysuria"
+msgstr "Disúria"
+
+#. module: medical
+#: model:product.template,name:medical.product_185_product_template
+msgid "levonorgestrel"
+msgstr "levonorgestrel"
+
+#. module: medical
+#: model:product.template,name:medical.product_327_product_template
+msgid "testosterone"
+msgstr "testosterona"
+
+#. module: medical
+#: model:product.template,name:medical.product_71_product_template
+msgid "cilastatin"
+msgstr "cilastatina"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.action_medical_procedure_report
+msgid "Medical Procedures Report"
+msgstr "Relatório de Procedimentos Médicos"
+
+#. module: medical
+#: model:product.template,name:medical.product_76_product_template
+msgid "clofazimine"
+msgstr "clofazimina"
+
+#. module: medical
+#: selection:medical.hospital.bed,state:0
+#: selection:medical.hospital.ward,state:0
+msgid "Not available"
+msgstr "Não disponível"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_33
+msgid "Perfusion"
+msgstr "Perfusão"
+
+#. module: medical
+#: view:medical.patient.disease:0
+#: field:medical.patient.disease,disease_severity:0 report:patient.diseases:0
+msgid "Severity"
+msgstr "Gravidade"
+
+#. module: medical
+#: field:medical.insurance,company:0
+msgid "Insurance Company"
+msgstr "Companhia de Seguro"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_pollakiuria:0
+msgid "Pollakiuiria"
+msgstr "Polaciúria"
+
+#. module: medical
+#: model:product.template,name:medical.product_92_product_template
+msgid "daunorubicin"
+msgstr "daunorrubicina"
+
+#. module: medical
+#: help:medical.patient.evaluation,cough:0
+msgid "If not associated to a disease, please encode it on the patient disease history."
+msgstr "Se não for associado a uma doença, por favor, codificá-lo sobre a história da doença do paciente."
+
+#. module: medical
+#: field:medical.appointment,comments:0 field:medical.directions,comments:0
+msgid "Comments"
+msgstr "Comentários"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.action_medical_procedure_tree
+#: model:ir.ui.menu,name:medical.medical_conf_procedure
+#: model:ir.ui.menu,name:medical.medical_procedure_list
+msgid "Medical Procedures"
+msgstr "Procedimentos Médicos"
+
+#. module: medical
+#: view:medical.appointment:0 view:medical.patient:0
+msgid "Group By..."
+msgstr "Agrupar por ..."
+
+#. module: medical
+#: help:medical.operational_sector,name:0
+msgid "Region included in an operational area"
+msgstr "Região incluída em uma área operacional"
+
+#. module: medical
+#: model:product.template,name:medical.product_7_product_template
+msgid "albendazole"
+msgstr "albendazol"
+
+#. module: medical
+#: view:medical.physician:0
+msgid "Physician Information"
+msgstr "Informação médica"
+
+#. module: medical
+#: model:product.template,name:medical.product_219_product_template
+msgid "mumps vaccine"
+msgstr "vacina contra caxumba"
+
+#. module: medical
+#: field:medical.hospital.ward,ac:0
+msgid "Air Conditioning"
+msgstr "Ar condicionado"
+
+#. module: medical
+#: help:medical.patient,patient_id:0
+msgid "Patient Identifier provided by the Health Center. Is not the patient id from the partner form"
+msgstr "Identificador do Paciente fornecido pelo Centro de Saúde. Não é o paciente id do formulário do acompanhante"
+
+#. module: medical
+#: field:medical.patient.evaluation,miosis:0
+msgid "Miosis"
+msgstr "Miose"
+
+#. module: medical
+#: model:product.template,name:medical.product_111_product_template
+msgid "efavirenz + emtricitabine + tenofovir"
+msgstr "efavirenz + emtricitabina + tenofovir"
+
+#. module: medical
+#: field:medical.medicament,pregnancy:0
+msgid "Pregnancy and Lactancy"
+msgstr "Gravidez e Amamentação"
+
+#. module: medical
+#: model:product.template,name:medical.product_69_product_template
+msgid "cholera vaccine"
+msgstr "vacina contra a cólera"
+
+#. module: medical
+#: view:medical.installer.modules:0
+msgid "title"
+msgstr "título"
+
+#. module: medical
+#: help:medical.medication.dosage,code:0
+msgid "Dosage Code, such as SNOMED, 229798009 = 3 times per day"
+msgstr "Código da Dosagem, como SNOMED, 229798009 = 3 vezes por dia"
+
+#. module: medical
+#: field:medical.patient.disease,treatment_description:0
+msgid "Treatment Description"
+msgstr "Descrição do tratamento"
+
+#. module: medical
+#: model:product.template,name:medical.product_168_product_template
+msgid "intermediate‐acting insulin"
+msgstr "insulina de ação intermediária"
+
+#. module: medical
+#: field:medical.vaccination,dose:0
+msgid "Dose Number"
+msgstr "Número da Dosagem"
+
+#. module: medical
+#: selection:medical.hospital.bed,state:0
+msgid "Free"
+msgstr "Livre"
+
+#. module: medical
+#: field:medical.patient.medication,discontinued:0
+msgid "Discontinued"
+msgstr "Descontinuado"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.CAP
+msgid "Capsule"
+msgstr "Cápsula"
+
+#. module: medical
+#: model:product.template,name:medical.product_25_product_template
+msgid "artemether"
+msgstr "artemether"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TABC
+msgid "Tablet chewable"
+msgstr "Comprimido mastigável"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.ELX
+msgid "Elixir"
+msgstr "Elixir"
+
+#. module: medical
+#: field:medical.patient.evaluation,jugular_engorgement:0
+msgid "Tremor"
+msgstr "Tremor"
+
+#. module: medical
+#: view:medical.hospital.bed:0
+msgid "Search Health Center Beds"
+msgstr "Buscar Camas do Centro de Saúde"
+
+#. module: medical
+#: model:ir.actions.report.xml,name:medical.report_patient_vaccinations
+msgid "Vaccination History"
+msgstr "Histórico de vacinação"
+
+#. module: medical
+#: model:product.template,name:medical.product_41_product_template
+msgid "benzoic acid + salicylic acid"
+msgstr "ácido benzóico + ácido salicílico"
+
+#. module: medical
+#: help:medical.patient.disease,is_infectious:0
+msgid "Check if the patient has an infectious / transmissible disease"
+msgstr "Verifique se o paciente tem uma doença infecciosas / transmissível"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_10
+msgid "Intrabursal "
+msgstr "Intrabursal"
+
+#. module: medical
+#: help:medical.medicament,therapeutic_action:0
+msgid "Therapeutic action"
+msgstr "Ação Terapêutica"
+
+#. module: medical
+#: model:product.template,name:medical.product_266_product_template
+msgid "procarbazine"
+msgstr "procarbazina"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_mood_swings:0
+msgid "Mood Swings"
+msgstr "Variações de humor"
+
+#. module: medical
+#: model:product.template,name:medical.product_6_product_template
+msgid "aciclovir"
+msgstr "aciclovir"
+
+#. module: medical
+#: help:medical.pathology,code:0
+msgid "Specific Code for the Disease (eg, ICD-10, SNOMED...)"
+msgstr "Código específico para a doença (por exemplo, a CID-10, SNOMED ...)"
+
+#. module: medical
+#: field:medical.patient.evaluation,hba1c:0
+msgid "Glycated Hemoglobin"
+msgstr "Hemoglobina glicada"
+
+#. module: medical
+#: help:medical.patient.medication,discontinued_reason:0
+msgid "Short description for discontinuing the treatment"
+msgstr "Breve descrição para interrupção do tratamento"
+
+#. module: medical
+#: field:medical.installer.modules,medical_icd10:0
+msgid "Medical ICD-10"
+msgstr "CID-10"
+
+#. module: medical
+#: help:medical.patient.evaluation,hdl:0
+msgid "Last HDL Cholesterol reading. Can be approximative"
+msgstr "Última leitura de Colesterol HDL. Pode ser aproximada"
+
+#. module: medical
+#: selection:medical.patient.disease,allergy_type:0
+msgid "Drug Allergy"
+msgstr "Alergia a Medicamentos"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_nocturia:0
+msgid "Nocturia"
+msgstr "Noctúria"
+
+#. module: medical
+#: model:product.template,name:medical.product_81_product_template
+msgid "coal tar"
+msgstr "alcatrão de carvão"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_pain_intensity:0
+msgid "Pain intensity"
+msgstr "Intensidade da dor"
+
+#. module: medical
+#: field:medical.installer.modules,medical_lab:0
+msgid "Medical Lab"
+msgstr "Laboratório"
+
+#. module: medical
+#: model:product.template,name:medical.product_226_product_template
+msgid "nevirapine (NVP)"
+msgstr "nevirapina (NVP)"
+
+#. module: medical
+#: model:product.template,name:medical.product_165_product_template
+msgid "influenza vaccine"
+msgstr "vacina contra a gripe"
+
+#. module: medical
+#: help:medical.patient.evaluation,ldl:0
+msgid "Last LDL Cholesterol reading. Can be approximative"
+msgstr "Última leitura do Colesterol LDL. Pode ser aproximada"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "Appointment Information"
+msgstr "Informação do agendamento"
+
+#. module: medical
+#: model:product.template,name:medical.product_90_product_template
+msgid "dactinomycin"
+msgstr "dactinomicina"
+
+#. module: medical
+#: field:medical.patient.evaluation,info_diagnosis:0
+msgid "Presumptive Diagnosis: Extra Info"
+msgstr "Diagnóstico Presuntivo: Informação Adicional"
+
+#. module: medical
+#: model:product.template,name:medical.product_79_product_template
+msgid "clotrimazole"
+msgstr "clotrimazol"
+
+#. module: medical
+#: field:medical.patient.evaluation,temperature:0
+msgid "Temperature (celsius)"
+msgstr "Temperatura (Celsius)"
+
+#. module: medical
+#: field:medical.hospital.ward,floor:0
+msgid "Floor Number"
+msgstr "Número do Andar"
+
+#. module: medical
+#: help:medical.hospital.bed,name:0
+msgid "Bed Number"
+msgstr "Número da Cama"
+
+#. module: medical
+#: field:medical.patient.evaluation,cholesterol_total:0
+msgid "Last Cholesterol"
+msgstr "Último Colesterol"
+
+#. module: medical
+#: model:product.template,name:medical.product_346_product_template
+msgid "vincristine"
+msgstr "vincristina"
+
+#. module: medical
+#: model:product.template,name:medical.product_22_product_template
+msgid "anti‐D immunoglobulin (human)"
+msgstr "imunoglobulina anti-D (humana)"
+
+#. module: medical
+#: model:product.template,name:medical.product_146_product_template
+msgid "glucose with sodium chloride"
+msgstr "glicose com cloreto de sódio"
+
+#. module: medical
+#: help:medical.hospital.bed,telephone_number:0
+msgid "Telephone number / Extension"
+msgstr "Telefone / Extensão"
+
+#. module: medical
+#: field:medical.hospital.bed,extra_info:0
+#: field:medical.hospital.building,extra_info:0
+#: field:medical.hospital.unit,extra_info:0
+#: field:medical.hospital.ward,extra_info:0 field:medical.insurance,notes:0
+#: view:medical.medicament:0 field:medical.medicament,notes:0
+#: view:medical.pathology:0 field:medical.pathology,info:0
+#: view:medical.patient.disease:0 field:medical.patient.disease,extra_info:0
+#: field:medical.patient.medication,notes:0 view:medical.physician:0
+msgid "Extra Info"
+msgstr "Informação adicional"
+
+#. module: medical
+#: model:product.template,name:medical.product_121_product_template
+msgid "erythromycin"
+msgstr "eritromicina"
+
+#. module: medical
+#: selection:medical.patient,sex:0
+msgid "Female"
+msgstr "Feminino"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_vesical_tenesmus:0
+msgid "Vesical Tenesmus"
+msgstr "Tenesmo vesical"
+
+#. module: medical
+#: model:product.template,name:medical.product_178_product_template
+msgid "kanamycin"
+msgstr "canamicina"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.ECT
+msgid "Tablet enteric coated"
+msgstr "Comprimido com revestimento entérico"
+
+#. module: medical
+#: model:product.template,name:medical.product_318_product_template
+msgid "sulfadoxine + pyrimethamine"
+msgstr "sulfadoxina + pirimetamina"
+
+#. module: medical
+#: report:patient.diseases:0
+msgid "Disease (ICD-10)"
+msgstr "Doença (CID-10)"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_eye_glasses:0
+msgid "Eye glasses"
+msgstr "óculos"
+
+#. module: medical
+#: field:medical.patient,medications:0
+msgid "Medications"
+msgstr "Medicações"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Evaluation Summary"
+msgstr "Sumário de Avaliação"
+
+#. module: medical
+#: model:product.template,name:medical.product_237_product_template
+msgid "oral rehydration salts"
+msgstr "sais de reidratação oral"
+
+#. module: medical
+#: model:product.template,name:medical.product_230_product_template
+msgid "nifurtimox"
+msgstr "nifurtimox"
+
+#. module: medical
+#: field:medical.hospital.ward,internet:0
+msgid "Internet Access"
+msgstr "Acesso à Internet"
+
+#. module: medical
+#: help:medical.installer.modules,medical_socioeconomics:0
+msgid "Allow to enter social economic details of Patient."
+msgstr "Permitir a entrada de detalhes sócioeconômicos do Paciente."
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_epistaxis:0
+msgid "Epistaxis"
+msgstr "Epistaxe"
+
+#. module: medical
+#: field:medical.ethnicity,name:0 field:medical.patient,ethnic_group:0
+msgid "Ethnic group"
+msgstr "Grupo Étnico"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_blurry_vision:0
+msgid "Blurry vision"
+msgstr "Visão embaçada"
+
+#. module: medical
+#: model:product.template,name:medical.product_205_product_template
+msgid "meningococcal meningitis vaccine"
+msgstr "vacina contra a meningite meningocócica"
+
+#. module: medical
+#: selection:medical.patient.evaluation,mood:0
+msgid "Euphoria"
+msgstr "Euforia"
+
+#. module: medical
+#: model:product.template,name:medical.product_50_product_template
+msgid "calamine lotion"
+msgstr "loção de calamina"
+
+#. module: medical
+#: help:medical.patient.disease,short_comment:0
+msgid "Brief, one-line remark of the disease. Longer description will go on the Extra info field"
+msgstr "Breve, uma linha de observação da doença. Descrição detalhada irá para o campo de informação extra"
+
+#. module: medical
+#: field:medical.patient.evaluation,violent:0
+msgid "Violent Behaviour"
+msgstr "Comportamento Violento"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_occupation
+msgid "Occupation / Job"
+msgstr "Ocupação / Profissão"
+
+#. module: medical
+#: help:medical.installer.modules,medical_lab:0
+msgid "Medical Lab module used for Lab Management and lab test reports and invoicing."
+msgstr "Módulo de Laboratório utilizado para a Gestão de Laboratório e relatórios de testes laboratoriais e faturamento."
+
+#. module: medical
+#: help:medical.patient.medication,is_active:0
+msgid "Check this option if the patient is currently taking the medication"
+msgstr "Marque essa opção se o paciente está tomando a medicação atualmente"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_dose_unit
+msgid "medical.dose.unit"
+msgstr "medical.dose.unit"
+
+#. module: medical
+#: field:medical.appointment,name:0
+msgid "Appointment ID"
+msgstr "ID do Compromisso"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PEN
+msgid "Pencil"
+msgstr "Lápis"
+
+#. module: medical
+#: field:medical.patient,blood_type:0
+msgid "Blood Type"
+msgstr "Tipo Sangüíneo"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_1
+msgid "Apply Externally "
+msgstr "Aplicar Externamente"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_tinnitus:0
+msgid "Tinnitus"
+msgstr "Zumbido"
+
+#. module: medical
+#: selection:medical.appointment,urgency:0
+msgid "Medical Emergency"
+msgstr "Emergência Médica"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.AEM
+msgid "Aerosol metered-dose"
+msgstr "Aerossol dosimetrado"
+
+#. module: medical
+#: field:res.partner.address,relative_id:0
+msgid "Relative Partner ID"
+msgstr "ID do Parente Acompanhante"
+
+#. module: medical
+#: field:medical.patient.disease,is_on_treatment:0
+msgid "Currently on Treatment"
+msgstr "Atualmente em tratamento"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_insomnia:0
+msgid "Insomnia"
+msgstr "Insônia"
+
+#. module: medical
+#: field:medical.patient.evaluation,lynphadenitis:0
+msgid "Linphadenitis"
+msgstr "Linfadenite"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_5
+msgid "Endotrachial Tube"
+msgstr "Tubo Endotraqueal"
+
+#. module: medical
+#: field:medical.appointment,institution:0
+msgid "Health Center"
+msgstr "Centro Médico"
+
+#. module: medical
+#: model:product.template,name:medical.product_323_product_template
+msgid "suxamethonium"
+msgstr ""
+
+#. module: medical
+#: field:medical.family_code,members_ids:0
+msgid "Members"
+msgstr "Membros"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_30
+msgid "Ophthalmic"
+msgstr "Oftálmico"
+
+#. module: medical
+#: field:medical.medicament,qty_available:0
+msgid "Quantity Available"
+msgstr "Quantidade disponível"
+
+#. module: medical
+#: help:medical.patient.evaluation,cyanosis:0
+msgid "If not associated to a disease, please encode it on the patient disease history. For example,  R23.0 in ICD-10 encoding"
+msgstr "Se não for associado a uma doença, por favor, codificá-lo sobre a história da doença do paciente. Por exemplo, a codificação R23.0 na CID-10"
+
+#. module: medical
+#: view:medical.patient:0 view:medical.patient.evaluation:0
+msgid "Evaluations"
+msgstr "Avaliações"
+
+#. module: medical
+#: field:medical.patient.evaluation,cough:0
+msgid "Cough"
+msgstr "Tosse"
+
+#. module: medical
+#: view:medical.drug.form:0
+msgid "Medicament Form"
+msgstr "Formulário de Medicamento"
+
+#. module: medical
+#: model:product.template,name:medical.product_67_product_template
+msgid "chlorphenamine"
+msgstr "clorfeniramina"
+
+#. module: medical
+#: model:product.template,name:medical.product_179_product_template
+msgid "ketamine"
+msgstr "cetamina"
+
+#. module: medical
+#: model:product.template,name:medical.product_45_product_template
+msgid "betamethasone"
+msgstr "betametasona"
+
+#. module: medical
+#: selection:medical.hospital.ward,state:0
+msgid "Beds available"
+msgstr "Leitos disponíveis"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_paralysis:0
+msgid "Paralysis"
+msgstr "Paralisia"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SOP
+msgid "Soap bar"
+msgstr "Sabonete"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_44
+msgid "Urethral"
+msgstr "Uretral"
+
+#. module: medical
+#: help:medical.patient.evaluation,orientation:0
+msgid "Check this box if the patient is disoriented in time and/or space"
+msgstr "Marque esta caixa se o paciente está desorientado no tempo e/ou espaço"
+
+#. module: medical
+#: model:product.template,name:medical.product_272_product_template
+msgid "pyrantel"
+msgstr "pirantel"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_chest_pain:0
+msgid "Chest Pain"
+msgstr "Dor Torácica"
+
+#. module: medical
+#: view:medical.patient.disease:0 report:patient.diseases:0
+msgid "Diagnosed"
+msgstr "Diagnosticados"
+
+#. module: medical
+#: model:product.template,name:medical.product_322_product_template
+msgid "suramin sodium"
+msgstr "sódio suramina"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_45
+msgid "Vaginal"
+msgstr "Vaginal"
+
+#. module: medical
+#: help:medical.patient.evaluation,miosis:0
+#: help:medical.patient.evaluation,mydriasis:0
+msgid "If not associated to a disease, please encode it on the patient disease history. For example,  H57.0 in ICD-10 encoding"
+msgstr "Se não for associado a uma doença, por favor, codificá-lo sobre a história da doença do paciente. Por exemplo, a codificação H57.0 na CID-10"
+
+#. module: medical
+#: field:medical.patient.evaluation,osat:0
+msgid "Oxygen Saturation"
+msgstr "Saturação de Oxigênio"
+
+#. module: medical
+#: model:product.template,name:medical.product_203_product_template
+msgid "meglumine iotroxate"
+msgstr "meglumina iotroxate"
+
+#. module: medical
+#: model:product.template,name:medical.product_296_product_template
+msgid "selenium sulfide"
+msgstr "sulfeto de selênio"
+
+#. module: medical
+#: model:product.template,name:medical.product_155_product_template
+msgid "hepatitis B vaccine"
+msgstr "vacina contra hepatite B"
+
+#. module: medical
+#: model:product.template,name:medical.product_314_product_template
+msgid "streptokinase"
+msgstr "estreptoquinase"
+
+#. module: medical
+#: model:product.template,name:medical.product_215_product_template
+msgid "miconazole"
+msgstr "miconazol"
+
+#. module: medical
+#: view:medical.hospital.unit:0
+msgid "Search Health Center Units"
+msgstr "Buscar Unidades do Centro de Saúde"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_physician
+msgid "Information about the doctor"
+msgstr "Informação sobre o médico"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.BLS
+msgid "Bolus"
+msgstr "Bolus"
+
+#. module: medical
+#: help:medical.patient.evaluation,abstraction:0
+msgid "Check this box if the patient presents abnormalities in abstract reasoning"
+msgstr "Marque esta caixa se o paciente apresenta alterações no raciocínio abstrato"
+
+#. module: medical
+#: model:product.template,name:medical.product_18_product_template
+msgid "amoxicillin"
+msgstr "amoxicilina"
+
+#. module: medical
+#: field:medical.patient.disease,weeks_of_pregnancy:0
+msgid "Contracted in pregnancy week #"
+msgstr "Contratado na semana de gravidez #"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_patient_action_tree
+#: model:ir.ui.menu,name:medical.medical_edit_patient
+#: model:ir.ui.menu,name:medical.medical_patients_menu
+msgid "Patients"
+msgstr "Pacientes"
+
+#. module: medical
+#: model:product.template,name:medical.product_150_product_template
+msgid "Haemophilus influenzae type b vaccine"
+msgstr "Vacina para haemophilus influenzae tipo b "
+
+#. module: medical
+#: model:medical.drug.form,name:medical.LOZ
+msgid "Lozenge"
+msgstr "Losango"
+
+#. module: medical
+#: field:medical.patient.evaluation,dehydration:0
+msgid "Dehydration"
+msgstr "Desidratação"
+
+#. module: medical
+#: field:medical.patient.evaluation,petechiae:0
+msgid "Petechiae"
+msgstr "Petéquias"
+
+#. module: medical
+#: model:product.template,name:medical.product_5_product_template
+msgid "acetylsalicylic acid"
+msgstr "ácido acetilsalicílico"
+
+#. module: medical
+#: model:product.template,name:medical.product_157_product_template
+msgid "hydralazine"
+msgstr "hidralazina"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GLO
+msgid "Globules"
+msgstr "Glóbulos"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GRT
+msgid "Graft"
+msgstr "Enxerto"
+
+#. module: medical
+#: selection:medical.patient.disease,allergy_type:0
+msgid "Misc Contraindication"
+msgstr "Contraindicações variadas"
+
+#. module: medical
+#: field:medical.patient.evaluation,loc_motor:0
+msgid "Level of Consciousness - Motor"
+msgstr "Nível de consciência - Motora"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "</para>           <para style=\"P12\">email :"
+msgstr "</para><para style=\"P12\"> e-mail:"
+
+#. module: medical
+#: model:product.template,name:medical.product_103_product_template
+msgid "diphtheria antitoxin"
+msgstr "antitoxina diftérica"
+
+#. module: medical
+#: view:medical.pathology:0
+msgid "Genetics"
+msgstr "Genética"
+
+#. module: medical
+#: field:medical.patient.evaluation,erithema:0
+msgid "Erithema"
+msgstr "Eritema"
+
+#. module: medical
+#: view:medical.speciality:0
+msgid "Medical Speciality"
+msgstr "Especialidade Médica"
+
+#. module: medical
+#: field:medical.patient.evaluation,increased_fremitus:0
+msgid "Increased Fremitus"
+msgstr "Frêmito Aumentado"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_11
+msgid "Intracardiac "
+msgstr "Intracardíaca"
+
+#. module: medical
+#: model:product.template,name:medical.product_171_product_template
+msgid "iohexol"
+msgstr "iohexol"
+
+#. module: medical
+#: model:product.template,name:medical.product_137_product_template
+msgid "fluorescein"
+msgstr "fluoresceína"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_diarrhea:0
+msgid "Diarrhea"
+msgstr "Diarréia"
+
+#. module: medical
+#: view:medical.ethnicity:0
+msgid "Search Ethnicities"
+msgstr "Buscar Etnias"
+
+#. module: medical
+#: help:medical.medication.template,frequency:0
+#: help:medical.patient.medication,frequency:0
+#: help:medical.prescription.line,frequency:0
+msgid "Time in between doses the patient must wait (ie, for 1 pill each 8 hours, put here 8 and select 'hours' in the unit field"
+msgstr "Tempo entre as doses que o paciente deve esperar (ou seja, para 1 comprimido a cada oito horas, colocar aqui 8 e selecione \"horas\" no campo unidade"
+
+#. module: medical
+#: model:product.category,name:medical.vaccine
+msgid "Vaccines"
+msgstr "Vacinas"
+
+#. module: medical
+#: model:product.template,name:medical.product_160_product_template
+msgid "hydroxocobalamin"
+msgstr "hidroxocobalamina"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_pathology_category
+#: view:medical.pathology.category:0
+msgid "Disease Categories"
+msgstr "Categoria das Doenças"
+
+#. module: medical
+#: constraint:ir.ui.menu:0
+msgid "Error ! You can not create recursive Menu."
+msgstr "Erro! Você não pode criar um Menu recursivo."
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_hospital_bed
+msgid "medical.hospital.bed"
+msgstr "medical.hospital.bed"
+
+#. module: medical
+#: selection:medical.patient.disease,disease_severity:0
+msgid "Moderate"
+msgstr "Moderada"
+
+#. module: medical
+#: model:product.template,name:medical.product_329_product_template
+msgid "tetracaine"
+msgstr "tetracaína"
+
+#. module: medical
+#: model:product.template,name:medical.product_164_product_template
+msgid "indinavir (IDV)"
+msgstr "indinavir (IDV)"
+
+#. module: medical
+#: help:res.partner.address,relative_id:0
+msgid "If the relative is also a patient, please include it here"
+msgstr "Se o parente é também um paciente, por favor incluí-lo aqui"
+
+#. module: medical
+#: model:product.template,name:medical.product_270_product_template
+msgid "propylthiouracil"
+msgstr "propiltiouracil"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_hospital_building
+#: model:ir.ui.menu,name:medical.medical_conf_hospital_building_add
+msgid "Health Center Buildings"
+msgstr "Construções do Centro de Saúde"
+
+#. module: medical
+#: model:product.template,name:medical.product_99_product_template
+msgid "diethylcarbamazine"
+msgstr "dietilcarbamazina"
+
+#. module: medical
+#: field:medical.patient.evaluation,head_circumference:0
+msgid "Head Circumference"
+msgstr "Circunferência da cabeça"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "Appointment"
+msgstr "Hora marcada"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_ear_discharge:0
+msgid "Ear Discharge"
+msgstr "Otorréia"
+
+#. module: medical
+#: field:medical.patient.evaluation,vocabulary:0
+msgid "Vocabulary"
+msgstr "Vocabulário"
+
+#. module: medical
+#: model:product.template,name:medical.product_337_product_template
+msgid "tuberculin, purified protein derivative (PPD)"
+msgstr "tuberculina, derivado proteico purificado (PPD)"
+
+#. module: medical
+#: help:medical.installer.modules,medical_invoice:0
+msgid "This module add functionality to create invoices for doctor's consulting charge."
+msgstr "Este módulo adiciona funcionalidades para criar notas fiscais para cobrar consultas médicas."
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PLS
+msgid "Plaster"
+msgstr "Gesso"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Refills :"
+msgstr "Refis:"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.CMT
+msgid "Cement"
+msgstr "Cimento"
+
+#. module: medical
+#: help:medical.patient.evaluation,bpm:0
+msgid "Heart rate expressed in beats per minute"
+msgstr "A freqüência cardíaca, expressa em batimentos por minuto"
+
+#. module: medical
+#: selection:medical.hospital.ward,gender:0
+msgid "Unisex"
+msgstr "Unissex"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SYR
+msgid "Syrup"
+msgstr "Xarope"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_16
+msgid "Intramuscular "
+msgstr "Intramuscular"
+
+#. module: medical
+#: view:medical.directions:0 field:medical.patient.evaluation,directions:0
+msgid "Plan"
+msgstr "Plano"
+
+#. module: medical
+#: model:product.template,name:medical.product_227_product_template
+msgid "niclosamide"
+msgstr "niclosamida"
+
+#. module: medical
+#: model:product.template,name:medical.product_267_product_template
+msgid "proguanil"
+msgstr "proguanil"
+
+#. module: medical
+#: field:medical.pathology.category,active:0 view:medical.patient.disease:0
+#: field:medical.patient.medication,is_active:0 report:patient.diseases:0
+msgid "Active"
+msgstr "Ativo"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_polydipsia:0
+msgid "Polydipsia"
+msgstr "Polidipsia"
+
+#. module: medical
+#: help:medical.prescription.line,prnt:0
+msgid "Check this box to print this line of the prescription."
+msgstr "Marque esta caixa para imprimir esta linha da prescrição."
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Review :"
+msgstr "Revisão:"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GEL
+msgid "Gel"
+msgstr "Gel"
+
+#. module: medical
+#: model:product.template,name:medical.product_57_product_template
+msgid "cefixime"
+msgstr "cefixima"
+
+#. module: medical
+#: model:product.template,name:medical.product_234_product_template
+msgid "norethisterone enantate"
+msgstr "enantato de noretisterona"
+
+#. module: medical
+#: model:product.template,name:medical.product_244_product_template
+msgid "penicillamine"
+msgstr "penicilamina"
+
+#. module: medical
+#: model:ir.actions.report.xml,name:medical.report_prescription_order
+#: view:medical.prescription.line:0 view:medical.prescription.order:0
+msgid "Prescription"
+msgstr "Prescrição"
+
+#. module: medical
+#: field:medical.medication.template,route:0
+#: field:medical.patient.medication,route:0
+#: field:medical.prescription.line,route:0
+msgid "Administration Route"
+msgstr "Via de Administração"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.LIQ
+msgid "Liquid"
+msgstr "Líquido"
+
+#. module: medical
+#: help:medical.vaccination,vaccine_lot:0
+msgid "Please check on the vaccine (product) production lot number and tracking number when available !"
+msgstr "Por favor, verifique na vacina (produto) o número do lote de produção e o número de rastreamento quando disponível!"
+
+#. module: medical
+#: field:medical.medicament,pregnancy_warning:0
+msgid "Pregnancy Warning"
+msgstr "Cuidados na gravidez"
+
+#. module: medical
+#: model:product.template,name:medical.product_345_product_template
+msgid "vinblastine"
+msgstr "vimblastina"
+
+#. module: medical
+#: field:medical.patient.evaluation,decreased_fremitus:0
+msgid "Decreased Fremitus"
+msgstr "Frêmito Diminuído"
+
+#. module: medical
+#: model:product.template,name:medical.product_70_product_template
+msgid "ciclosporin"
+msgstr "ciclosporina"
+
+#. module: medical
+#: field:medical.family_code,info:0 field:medical.operational_area,info:0
+#: field:medical.operational_sector,info:0
+msgid "Extra Information"
+msgstr "Informação adicional"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_speciality
+#: model:ir.ui.menu,name:medical.medical_conf_speciality
+msgid "Medical Specialties"
+msgstr "Especialidades médicas"
+
+#. module: medical
+#: model:product.template,name:medical.product_54_product_template
+msgid "carbamazepine"
+msgstr "carbamazepina"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PIC
+msgid "Piece chewable"
+msgstr "Pedaço mastigável"
+
+#. module: medical
+#: model:product.template,name:medical.product_15_product_template
+msgid "amitriptyline"
+msgstr "amitriptilina"
+
+#. module: medical
+#: model:product.template,name:medical.product_154_product_template
+msgid "hepatitis A vaccine"
+msgstr "vacina contra hepatite A"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_ethnicity
+msgid "medical.ethnicity"
+msgstr "medical.ethnicity"
+
+#. module: medical
+#: field:medical.pathology,category:0
+msgid "Disease Category"
+msgstr "Categoria da Doença"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_medication_template
+msgid "Template for medication"
+msgstr "Modelo de medicação"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_18
+msgid "Intraocular "
+msgstr "Intra-ocular"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.DPS
+msgid "Drops"
+msgstr "Gotas"
+
+#. module: medical
+#: model:product.template,name:medical.product_325_product_template
+msgid "tenofovir"
+msgstr "tenofovir"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_ethnicity
+#: model:ir.ui.menu,name:medical.medical_conf_ethnicity
+#: view:medical.ethnicity:0
+msgid "Ethnic Groups"
+msgstr "Grupos étnicos"
+
+#. module: medical
+#: help:medical.medication.template,form:0
+#: help:medical.patient.medication,form:0
+#: help:medical.prescription.line,form:0
+msgid "Drug form, such as tablet or gel"
+msgstr "Apresentação da droga, como comprimidos ou gel"
+
+#. module: medical
+#: help:medical.medicament,indications:0
+msgid "Indications"
+msgstr "Indicações"
+
+#. module: medical
+#: field:medical.installer.modules,medical_socioeconomics:0
+msgid "Medical Socioeconomics"
+msgstr "Socioeconomia Médica"
+
+#. module: medical
+#: model:product.template,name:medical.product_114_product_template
+msgid "emtricitabine (FTC)"
+msgstr "emtricitabina (FTC)"
+
+#. module: medical
+#: field:medical.medication.template,start_treatment:0
+#: field:medical.patient.disease,date_start_treatment:0
+#: field:medical.patient.medication,start_treatment:0
+#: field:medical.prescription.line,start_treatment:0
+msgid "Start of treatment"
+msgstr "Início do tratamento"
+
+#. module: medical
+#: field:medical.prescription.line,name:0
+#: field:medical.prescription.order,prescription_id:0
+msgid "Prescription ID"
+msgstr "Código da prescrição"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_patient_disease
+msgid "Disease info"
+msgstr "Informação sobre a doença"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_hospital_unit
+#: model:ir.ui.menu,name:medical.medical_conf_hospital_unit_add
+msgid "Health Center Units"
+msgstr "Unidades de Centros de Saúde"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_conf_misc
+msgid "Misc"
+msgstr "Diversos"
+
+#. module: medical
+#: field:medical.insurance,number:0
+msgid "Number"
+msgstr "Número"
+
+#. module: medical
+#: model:product.template,name:medical.product_64_product_template
+msgid "chlorine base compound"
+msgstr "composto com base de cloro"
+
+#. module: medical
+#: help:medical.patient.evaluation,derived_to:0
+msgid "Physician to whom escalate / derive the case"
+msgstr "Médico para quem foi escalado / encaminhado o caso"
+
+#. module: medical
+#: model:product.template,name:medical.product_310_product_template
+msgid "spironolactone"
+msgstr "espironolactona"
+
+#. module: medical
+#: field:res.partner,lastname:0 help:res.partner,lastname:0
+msgid "Last Name"
+msgstr "Sobrenome"
+
+#. module: medical
+#: model:product.template,name:medical.product_192_product_template
+msgid "lopinavir + ritonavir (LPV/r)"
+msgstr "lopinavir + ritonavir (LPV / r)"
+
+#. module: medical
+#: model:ir.actions.report.xml,name:medical.report_patient_label
+msgid "Patient Card"
+msgstr "Cartão do Paciente"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_abdominal_distension:0
+msgid "Abdominal Distension"
+msgstr "Distensão abdominal"
+
+#. module: medical
+#: field:medical.patient,admissions_ids:0
+msgid "Admission / Discharge"
+msgstr "Internação / Alta"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_gingival_bleeding:0
+msgid "Gingival Bleeding"
+msgstr "Sangramento gengival"
+
+#. module: medical
+#: model:product.template,name:medical.product_295_product_template
+msgid "saquinavir (SQV)"
+msgstr "saquinavir (SQV)"
+
+#. module: medical
+#: model:product.template,name:medical.product_307_product_template
+msgid "sodium thiosulfate"
+msgstr "tiossulfato de sódio"
+
+#. module: medical
+#: model:product.template,name:medical.product_87_product_template
+msgid "cypionate"
+msgstr "cipionato"
+
+#. module: medical
+#: view:medical.hospital.bed:0
+msgid "Health Center Bed Info"
+msgstr "Informação de leito do Centro de Saúde"
+
+#. module: medical
+#: field:medical.patient.disease,allergy_type:0
+msgid "Allergy type"
+msgstr "Tipo de Alergia"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_31
+msgid "Otic"
+msgstr "Ótico"
+
+#. module: medical
+#: model:product.template,name:medical.product_32_product_template
+msgid "azathioprine"
+msgstr "azatioprina"
+
+#. module: medical
+#: model:product.template,name:medical.product_86_product_template
+msgid "cycloserine"
+msgstr "cicloserina"
+
+#. module: medical
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "O nome do Objeto deve começar com x_ e não pode conter nenhum caracter especial !"
+
+#. module: medical
+#: help:medical.patient.medication,adverse_reaction:0
+msgid "Specific side effects or adverse reactions that the patient experienced"
+msgstr "Efeitos colaterais específicos ou reações adversas que o paciente teve"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_14
+msgid "Inhalation "
+msgstr "Inalação"
+
+#. module: medical
+#: model:product.template,name:medical.product_104_product_template
+msgid "diphtheria vaccine"
+msgstr "vacina contra a difteria"
+
+#. module: medical
+#: help:medical.medicament,name:0
+msgid "Commercial Name"
+msgstr "Nome comercial"
+
+#. module: medical
+#: field:medical.patient.evaluation,masses:0
+msgid "Masses"
+msgstr "Massas"
+
+#. module: medical
+#: view:medical.pathology:0 view:medical.patient.disease:0
+msgid "Main"
+msgstr "Principal"
+
+#. module: medical
+#: model:product.template,name:medical.product_62_product_template
+msgid "chloramphenicol"
+msgstr "cloranfenicol"
+
+#. module: medical
+#: help:medical.patient.evaluation,knowledge_current_events:0
+msgid "Check this box if the patient can not respond to public notorious events"
+msgstr "Marque esta caixa se o paciente nao responde a eventos públicos notórios"
+
+#. module: medical
+#: field:medical.patient.evaluation,breast_asymmetry:0
+msgid "Breast Asymmetry"
+msgstr "Assimetria da mama"
+
+#. module: medical
+#: report:patient.medications:0
+msgid "PATIENT MEDICATION HISTORY"
+msgstr "Histórico de Medicação do Paciente"
+
+#. module: medical
+#: model:product.template,name:medical.product_245_product_template
+msgid "pentamidine"
+msgstr "pentamidina"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.IER
+msgid "Insert extended release"
+msgstr "Inserir liberação estendida"
+
+#. module: medical
+#: help:medical.patient.evaluation,glycemia:0
+msgid "Last blood glucose level. Can be approximative."
+msgstr "Último nível de glicose no sangue. Pode ser aproximado."
+
+#. module: medical
+#: help:medical.appointment,institution:0
+#: help:medical.hospital.building,institution:0
+#: help:medical.hospital.unit,institution:0
+#: help:medical.hospital.ward,institution:0
+msgid "Medical Center"
+msgstr "Centro Médico"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_hospital_ward
+#: model:ir.ui.menu,name:medical.medical_conf_hospital_ward_add
+msgid "Health Center Wards"
+msgstr "Alas do Centro de Saúde"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GRA
+msgid "Granules"
+msgstr "Grânulos"
+
+#. module: medical
+#: model:ir.module.module,shortdesc:medical.module_meta_information
+msgid "Medical : Free Health and Hospital Information System"
+msgstr "Medical : Sistema de Informação Hospitalar e de Saúde Livre"
+
+#. module: medical
+#: field:medical.patient.evaluation,diagnosis:0
+#: help:medical.patient.evaluation,diagnosis:0
+msgid "Presumptive Diagnosis"
+msgstr "Diagnóstico Presuntivo"
+
+#. module: medical
+#: field:medical.patient,lastname:0
+msgid "Lastname"
+msgstr "Sobrenome"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PSU
+msgid "Powder for suspension"
+msgstr "Pó para suspensão"
+
+#. module: medical
+#: model:product.template,name:medical.product_9_product_template
+msgid "allopurinol"
+msgstr "alopurinol"
+
+#. module: medical
+#: field:medical.patient.evaluation,hdl:0
+msgid "Last HDL"
+msgstr "Último HDL"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_insurance
+msgid "medical.insurance"
+msgstr "medical.insurance"
+
+#. module: medical
+#: help:medical.medication.template,admin_times:0
+#: help:medical.patient.medication,admin_times:0
+#: help:medical.prescription.line,admin_times:0
+msgid "Suggested administration hours. For example, at 08:00, 13:00 and 18:00 can be encoded like 08 13 18"
+msgstr "Horas sugeridas para administração. Por exemplo, às 08:00, 13:00 e 18:00 pode ser codificado como 08 13 18"
+
+#. module: medical
+#: view:medical.occupation:0
+msgid "Patient Occupation"
+msgstr "Ocupação do paciente"
+
+#. module: medical
+#: field:medical.patient,current_address:0
+msgid "Address"
+msgstr "Endereço"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.BEA
+msgid "Bead"
+msgstr ""
+
+#. module: medical
+#: field:medical.patient.evaluation,bronchophony:0
+msgid "Bronchophony"
+msgstr "Broncofonia"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PST
+msgid "Paste"
+msgstr "Colar"
+
+#. module: medical
+#: help:medical.medication.template,dose_unit:0
+#: help:medical.patient.medication,dose_unit:0
+#: help:medical.prescription.line,dose_unit:0
+msgid "Unit of measure for the medication to be taken"
+msgstr "Unidade de medida para a medicação a ser tomada"
+
+#. module: medical
+#: view:medical.hospital.unit:0
+msgid "Health Center Building"
+msgstr "Prédio do Centro de Saúde"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.DCH
+msgid "Douche"
+msgstr "Ducha"
+
+#. module: medical
+#: view:medical.operational_area:0
+msgid "Medical Operational Areas List"
+msgstr "Lista de áreas operacionais médicas"
+
+#. module: medical
+#: model:product.template,name:medical.product_344_product_template
+msgid "verapamil"
+msgstr "verapamil"
+
+#. module: medical
+#: model:product.template,name:medical.product_107_product_template
+msgid "dopamine"
+msgstr "dopamina"
+
+#. module: medical
+#: field:medical.patient.evaluation,heart_murmurs:0
+msgid "Heart Murmurs"
+msgstr "Sopros Cardíacos"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PSS
+msgid "Powder sustained release"
+msgstr "Pó de liberação prolongada"
+
+#. module: medical
+#: model:product.template,name:medical.product_286_product_template
+msgid "rifampicin + isoniazid"
+msgstr "rifampicina + isoniazida"
+
+#. module: medical
+#: model:product.template,name:medical.product_53_product_template
+msgid "capreomycin"
+msgstr "capreomicina"
+
+#. module: medical
+#: help:medical.physician,name:0
+msgid "Physician's Name, from the partner list"
+msgstr "Nome do Médico, da lista de parceiros"
+
+#. module: medical
+#: field:medical.medicament,indications:0
+#: field:medical.medication.template,indication:0
+#: field:medical.patient.medication,indication:0
+#: field:medical.prescription.line,indication:0 report:patient.medications:0
+msgid "Indication"
+msgstr "Indicação"
+
+#. module: medical
+#: field:medical.patient,age:0
+msgid "Patient Age"
+msgstr "Idade do paciente"
+
+#. module: medical
+#: model:product.template,name:medical.product_91_product_template
+msgid "dapsone"
+msgstr "dapsona"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_sexual_dysfunction:0
+msgid "Sexual Dysfunction"
+msgstr "Disfunção Sexual"
+
+#. module: medical
+#: model:product.template,name:medical.product_353_product_template
+msgid "zidovudine + lamivudine + nevirapine"
+msgstr "zidovudina + lamivudina + nevirapina"
+
+#. module: medical
+#: model:product.template,name:medical.product_112_product_template
+msgid "eflornithine"
+msgstr "eflornitina"
+
+#. module: medical
+#: field:medical.insurance,member_since:0
+msgid "Member since"
+msgstr "Membro desde"
+
+#. module: medical
+#: field:medical.patient,patient_id:0 field:medical.physician,code:0
+msgid "ID"
+msgstr "Código"
+
+#. module: medical
+#: field:medical.patient,deceased:0
+msgid "Deceased"
+msgstr "Falecido"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TDR
+msgid "Tablet delayed release"
+msgstr "Comprimido de liberação retardada"
+
+#. module: medical
+#: model:product.template,name:medical.product_254_product_template
+msgid "podophyllum resin"
+msgstr "resina de podophyllum"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Widowed"
+msgstr "Viúvo(a)"
+
+#. module: medical
+#: model:ir.model,name:medical.model_res_partner_address
+msgid "Partner Addresses"
+msgstr "Endereços do parceiro"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Remarks :"
+msgstr "Observações:"
+
+#. module: medical
+#: help:medical.patient.evaluation,peau_dorange:0
+msgid "Check if the patient has prominent pores in the skin of the breast"
+msgstr "Verifique se o paciente possui poros proeminentes na pele da mama."
+
+#. module: medical
+#: field:medical.installer.modules,medical_icd10pcs:0
+msgid "Medical ICD-10-PCS"
+msgstr ""
+
+#. module: medical
+#: model:product.template,name:medical.product_144_product_template
+msgid "glibenclamide"
+msgstr "glibenclamida"
+
+#. module: medical
+#: report:patient.diseases:0 report:patient.medications:0
+#: report:patient.vaccinations:0
+msgid "Patient :"
+msgstr "Paciente:"
+
+#. module: medical
+#: selection:medical.hospital.bed,state:0
+msgid "Occupied"
+msgstr "Ocupado"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_procedure
+msgid "Medical Procedure"
+msgstr "Procedimento médico"
+
+#. module: medical
+#: help:medical.patient,family_code:0
+msgid "Family Code"
+msgstr "Código da família"
+
+#. module: medical
+#: selection:medical.hospital.bed,bed_type:0
+msgid "Circo Electric"
+msgstr "Circo Electric"
+
+#. module: medical
+#: model:product.template,name:medical.product_287_product_template
+msgid "rifampicin + isoniazid + ethambutol"
+msgstr "rifampicina + isoniazida + etambutol"
+
+#. module: medical
+#: help:medical.physician,institution:0
+msgid "Instituion where she/he works"
+msgstr "Instituição onde ele/ela trabalha"
+
+#. module: medical
+#: model:product.category,name:medical.product_category_bed1
+msgid "Hospital Bed"
+msgstr "Leito Hospitalar"
+
+#. module: medical
+#: model:product.template,name:medical.product_131_product_template
+msgid "factor IX complex (coagulation factors, II, VII, IX, X) concentrate"
+msgstr "concentrado de complexo fator IX (fatores de coagulação, II, VII, IX, X)"
+
+#. module: medical
+#: field:medical.medicament,price:0
+msgid "Price"
+msgstr "Preço"
+
+#. module: medical
+#: help:medical.patient.evaluation,evaluation_date:0
+msgid "Enter or select the date / ID of the appointment related to this evaluation"
+msgstr "Informe ou selecione a data / ID do compromisso relacionado à esta avaliação"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_dyspnea:0
+msgid "Dyspnea"
+msgstr "Dispnéia"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_hospital_unit
+msgid "medical.hospital.unit"
+msgstr "medical.hospital.unit"
+
+#. module: medical
+#: model:product.template,name:medical.product_176_product_template
+msgid "ivermectin"
+msgstr "ivermectina"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_appointment
+msgid "medical.appointment"
+msgstr "medical.appointment"
+
+#. module: medical
+#: model:product.template,name:medical.product_73_product_template
+msgid "cisplatin"
+msgstr "cisplatina"
+
+#. module: medical
+#: model:product.template,name:medical.product_126_product_template
+msgid "ethinylestradiol + levonorgestrel"
+msgstr "etinilestradiol + levonorgestrel"
+
+#. module: medical
+#: view:medical.vaccination:0
+msgid "Vaccination"
+msgstr "Vacinação"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_new_appointment
+#: model:ir.ui.menu,name:medical.medical_conf_new_appointment
+msgid "New Appointment"
+msgstr "Novo Compromisso"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_patient_medication
+msgid "Patient Medication"
+msgstr "Medicação do Paciente"
+
+#. module: medical
+#: field:medical.patient.disease,status:0
+msgid "Status of the disease"
+msgstr "Estado da doença"
+
+#. module: medical
+#: model:product.template,name:medical.product_10_product_template
+msgid "aluminium diacetate"
+msgstr "diacetato de alumínio"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_42
+msgid "Transdermal"
+msgstr "Transdermal"
+
+#. module: medical
+#: view:medical.prescription.line:0
+msgid "Prescription lines"
+msgstr "Linhas de Prescrição"
+
+#. module: medical
+#: model:product.template,name:medical.product_44_product_template
+msgid "benzylpenicillin"
+msgstr "benzilpenicilina"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_thoracic_pain:0
+msgid "Thoracic Pain"
+msgstr "Dor Torácica"
+
+#. module: medical
+#: view:medical.speciality:0
+msgid "Search Medical Specialties"
+msgstr "Procurar Especialidades Médicas"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "DoB :"
+msgstr ""
+
+#. module: medical
+#: field:medical.patient.evaluation,evaluation_type:0
+msgid "Evaluation Type"
+msgstr "Tipo de avaliação"
+
+#. module: medical
+#: model:product.template,name:medical.product_122_product_template
+msgid "estradiol cypionate"
+msgstr "cipionato de estradiol"
+
+#. module: medical
+#: selection:medical.patient.evaluation,mood:0
+msgid "Happy"
+msgstr "Feliz"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_41
+msgid "Tracheostomy"
+msgstr "Traqueostomia"
+
+#. module: medical
+#: field:medical.procedure,description:0
+msgid "Long Text"
+msgstr "Texto Longo"
+
+#. module: medical
+#: selection:medical.patient.disease,allergy_type:0
+msgid "Food Allergy"
+msgstr "Alergia Alimentar"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "email :"
+msgstr "email :"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Patient Information"
+msgstr "Informação do paciente"
+
+#. module: medical
+#: field:medical.patient.evaluation,mydriasis:0
+msgid "Mydriasis"
+msgstr "Midríase"
+
+#. module: medical
+#: model:product.template,name:medical.product_61_product_template
+msgid "chlorambucil"
+msgstr "clorambucil"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GAS
+msgid "Gas"
+msgstr "Gás"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SRC
+msgid "Sustained release capsule"
+msgstr "cápsula de liberação sustentada"
+
+#. module: medical
+#: model:product.template,name:medical.product_148_product_template
+msgid "glyceryl trinitrate"
+msgstr "Trinitrato de Glicerina"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_lumbar_pain:0
+msgid "Lumbar Pain"
+msgstr "Dor Lombar"
+
+#. module: medical
+#: field:medical.patient.evaluation,cyanosis:0
+msgid "Cyanosis"
+msgstr "Cianose"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SLT
+msgid "Tablet sublingual"
+msgstr "Comprimido sublingual"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PMX
+msgid "Drug premix"
+msgstr ""
+
+#. module: medical
+#: field:medical.patient.evaluation,chief_complaint:0
+#: help:medical.patient.evaluation,chief_complaint:0
+msgid "Chief Complaint"
+msgstr "Queixa Principal"
+
+#. module: medical
+#: field:medical.hospital.building,institution:0
+#: field:medical.hospital.unit,institution:0
+#: field:medical.hospital.ward,institution:0
+#: field:medical.physician,institution:0
+#: field:medical.vaccination,institution:0 field:res.partner,is_institution:0
+msgid "Institution"
+msgstr "Instituição"
+
+#. module: medical
+#: help:medical.patient.evaluation,symptom_eye_glasses:0
+msgid "Eye glasses or contact lenses"
+msgstr "Óculos ou lentes de contato"
+
+#. module: medical
+#: view:medical.hospital.building:0 field:medical.hospital.ward,building:0
+msgid "Building"
+msgstr "Construção"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_dose
+#: model:ir.ui.menu,name:medical.medical_conf_dose view:medical.dose.unit:0
+msgid "Medicament Units"
+msgstr "Unidades do medicamento"
+
+#. module: medical
+#: model:product.template,name:medical.product_277_product_template
+msgid "quinidine"
+msgstr "quinidina"
+
+#. module: medical
+#: model:product.template,name:medical.product_262_product_template
+msgid "prednisolone"
+msgstr "prednisolona"
+
+#. module: medical
+#: model:product.template,name:medical.product_138_product_template
+msgid "fluorouracil"
+msgstr "fluorouracil"
+
+#. module: medical
+#: selection:medical.medication.template,frequency_unit:0
+#: selection:medical.patient.medication,frequency_unit:0
+#: selection:medical.prescription.line,frequency_unit:0
+msgid "when required"
+msgstr "quando necessário"
+
+#. module: medical
+#: field:medical.hospital.bed,telephone_number:0
+msgid "Telephone Number"
+msgstr "Número de Telefone"
+
+#. module: medical
+#: model:product.template,name:medical.product_181_product_template
+msgid "lamivudine (3TC)"
+msgstr "lamivudina (3TC)"
+
+#. module: medical
+#: constraint:product.template:0
+msgid "Error: The default UOM and the purchase UOM must be in the same category."
+msgstr "Erro: O UOM padrão e o UOM compra deve ser feito na mesma categoria."
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Married"
+msgstr "Casado(a)"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SHP
+msgid "Shampoo"
+msgstr "Xampu"
+
+#. module: medical
+#: model:product.template,name:medical.product_218_product_template
+msgid "morphine"
+msgstr "morfina"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.WIP
+msgid "Wipe "
+msgstr "Limpar"
+
+#. module: medical
+#: model:product.template,name:medical.product_130_product_template
+msgid "etoposide"
+msgstr "etoposídeo"
+
+#. module: medical
+#: model:product.template,name:medical.product_340_product_template
+msgid "valproic acid"
+msgstr "ácido valpróico"
+
+#. module: medical
+#: report:patient.diseases:0
+msgid "PATIENT DISEASE SUMMARY REPORT"
+msgstr "RELATÓRIO DA SÍNTESE DA DOENÇA DO PACIENTE"
+
+#. module: medical
+#: model:product.template,name:medical.product_34_product_template
+msgid "bacitracin"
+msgstr "bacitracina"
+
+#. module: medical
+#: help:medical.medicament,composition:0
+msgid "Components"
+msgstr "Componentes"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.ENM
+msgid "Enema"
+msgstr "Enema"
+
+#. module: medical
+#: model:product.template,name:medical.product_175_product_template
+msgid "isosorbide dinitrate"
+msgstr "dinitrato de isossorbida"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_hospital_ward
+msgid "medical.hospital.ward"
+msgstr "medical.hospital.ward"
+
+#. module: medical
+#: model:product.template,name:medical.product_75_product_template
+msgid "clindamycin"
+msgstr "clindamicina"
+
+#. module: medical
+#: model:product.template,name:medical.product_109_product_template
+msgid "doxycycline"
+msgstr "doxiciclina"
+
+#. module: medical
+#: model:product.template,name:medical.product_332_product_template
+msgid "thiopental"
+msgstr "tiopental"
+
+#. module: medical
+#: view:medical.vaccination:0
+msgid "Patient Vaccinations"
+msgstr "Vacinação do Paciente"
+
+#. module: medical
+#: model:product.template,name:medical.product_172_product_template
+msgid "ipratropium bromide"
+msgstr "brometo de ipratrópio"
+
+#. module: medical
+#: view:medical.medicament:0
+msgid "Pregnancy / Lactancy"
+msgstr "Gravidez / Amamentação"
+
+#. module: medical
+#: help:medical.pathology,gene:0
+msgid "Name of the gene(s) affected"
+msgstr "Nome(s) do(s) gene(s) afetado(s)"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_pelvic_pain:0
+msgid "Pelvic Pain"
+msgstr "Dor Pélvica"
+
+#. module: medical
+#: help:medical.hospital.bed,ward:0
+msgid "Ward or room"
+msgstr "Enfermaria ou quarto"
+
+#. module: medical
+#: help:medical.appointment,doctor:0
+msgid "Physician's Name"
+msgstr "Nome do Médico"
+
+#. module: medical
+#: selection:medical.appointment,patient_status:0
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Inpatient"
+msgstr "Internamento"
+
+#. module: medical
+#: model:product.template,name:medical.product_210_product_template
+msgid "methyldopa"
+msgstr "metildopa"
+
+#. module: medical
+#: report:patient.diseases:0 report:patient.medications:0
+#: report:patient.vaccinations:0
+msgid "Sex :"
+msgstr "Sexo:"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.action_medical_pathology_category_form
+#: model:ir.actions.act_window,name:medical.action_medical_pathology_category_tree
+#: model:ir.ui.menu,name:medical.medical_conf_pathology_category
+#: model:ir.ui.menu,name:medical.medical_pathology_cat_struc
+#: view:medical.pathology.category:0
+msgid "Disease categories"
+msgstr "Categorias de doenças"
+
+#. module: medical
+#: model:product.template,name:medical.product_55_product_template
+msgid "carbidopa"
+msgstr "carbidopa"
+
+#. module: medical
+#: model:product.template,name:medical.product_315_product_template
+msgid "streptomycin"
+msgstr "estreptomicina"
+
+#. module: medical
+#: help:medical.patient.disease,pcs_code:0
+msgid "Procedure code, for example, ICD-10-PCS Code 7-character string"
+msgstr "Código de Processo, por exemplo, a CID-10-PCS Código seqüência de 7 caracteres"
+
+#. module: medical
+#: selection:medical.patient.evaluation,mood:0
+msgid "Fear"
+msgstr "Medo"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_nausea:0
+msgid "Nausea"
+msgstr "Náuseas"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_chest_pain_excercise:0
+msgid "Chest Pain on excercise only"
+msgstr "Dor torácica apenas durante exercício"
+
+#. module: medical
+#: report:patient.diseases:0 report:patient.medications:0
+#: report:patient.vaccinations:0
+msgid "Date :"
+msgstr "Data:"
+
+#. module: medical
+#: field:medical.patient,dod:0
+msgid "Date of Death"
+msgstr "Data da morte"
+
+#. module: medical
+#: model:product.template,name:medical.product_343_product_template
+msgid "vecuronium"
+msgstr "vecurônio"
+
+#. module: medical
+#: view:medical.medicament:0
+msgid "medicaments"
+msgstr "medicamentos"
+
+#. module: medical
+#: field:medical.patient.evaluation,gynecomastia:0
+msgid "Gynecomastia"
+msgstr "Ginecomastia"
+
+#. module: medical
+#: selection:medical.hospital.bed,bed_type:0
+msgid "Gatch Bed"
+msgstr "Leito"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Telemedicine"
+msgstr "Telemedicina"
+
+#. module: medical
+#: model:product.template,name:medical.product_247_product_template
+msgid "pertussis vaccine"
+msgstr "vacina contra coqueluche"
+
+#. module: medical
+#: model:product.template,name:medical.product_331_product_template
+msgid "thiamine"
+msgstr "tiamina"
+
+#. module: medical
+#: field:medical.prescription.order,pharmacy:0
+msgid "Pharmacy"
+msgstr "Farmácia"
+
+#. module: medical
+#: model:product.template,name:medical.product_159_product_template
+msgid "hydrocortisone"
+msgstr "hidrocortisona"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Notes:"
+msgstr "Notas:"
+
+#. module: medical
+#: field:medical.pathology.category,child_ids:0
+msgid "Children Category"
+msgstr "Categoria Infantil"
+
+#. module: medical
+#: view:medical.hospital.ward:0
+msgid "Health Center Ward"
+msgstr "Enfermaria do Centro de Saúde"
+
+#. module: medical
+#: help:medical.appointment,speciality:0
+msgid "Medical Speciality / Sector"
+msgstr "Especialidade Médica / Setor"
+
+#. module: medical
+#: help:medical.patient.evaluation,derived_from:0
+msgid "Physician who escalated / derived the case"
+msgstr "Médico que escalou / encaminhou o caso"
+
+#. module: medical
+#: model:product.template,name:medical.product_2_product_template
+msgid "abacavir (ABC)"
+msgstr "abacavir (ABC)"
+
+#. module: medical
+#: help:medical.patient.evaluation,loc_verbal:0
+msgid "Verbal Response - Glasgow Coma Scale - 1 to 5"
+msgstr "Resposta Verbal - Escala de Coma de Glasgow - 1-5"
+
+#. module: medical
+#: model:product.template,name:medical.product_135_product_template
+msgid "fluconazole"
+msgstr "fluconazol"
+
+#. module: medical
+#: view:medical.pathology:0
+msgid "Pathology Info"
+msgstr "Informação da Patologia"
+
+#. module: medical
+#: selection:medical.patient,blood_type:0
+msgid "AB"
+msgstr "AB"
+
+#. module: medical
+#: help:medical.patient.evaluation,tag:0
+msgid "Triacylglycerols (triglicerides) level. Can be approximative"
+msgstr "Nível de triacilgliceróis (triglicerídeos). Pode ser aproximada"
+
+#. module: medical
+#: selection:medical.medication.template,duration_period:0
+#: selection:medical.patient.medication,duration_period:0
+#: selection:medical.prescription.line,duration_period:0
+msgid "indefinite"
+msgstr "indeterminado"
+
+#. module: medical
+#: field:medical.prescription.line,allow_substitution:0
+msgid "Allow substitution"
+msgstr "Permitir substituição"
+
+#. module: medical
+#: field:res.partner.address,relationship:0
+msgid "Relationship"
+msgstr "Relacionamento"
+
+#. module: medical
+#: field:medical.patient,dob:0
+msgid "Date of Birth"
+msgstr "Data de nascimento"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_35
+msgid "Rectal"
+msgstr "Retal"
+
+#. module: medical
+#: field:medical.hospital.ward,number_of_beds:0
+msgid "Number of beds"
+msgstr "Número de leitos"
+
+#. module: medical
+#: selection:medical.patient.disease,disease_severity:0
+msgid "Mild"
+msgstr "Leve"
+
+#. module: medical
+#: help:medical.patient.evaluation,object_recognition:0
+msgid "Check this box if the patient suffers from any sort of gnosia disorders, such as agnosia, prosopagnosia ..."
+msgstr "Marque esta caixa se o paciente sofre de algum tipo de transtornos, tais como agnosia, prosopagnosia ..."
+
+#. module: medical
+#: model:product.template,name:medical.product_162_product_template
+msgid "imipenem + cilastatin"
+msgstr "imipenem + cilastatina"
+
+#. module: medical
+#: model:product.template,name:medical.product_354_product_template
+msgid "zinc sulfate"
+msgstr "sulfato de zinco"
+
+#. module: medical
+#: selection:medical.appointment,patient_status:0
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Ambulatory"
+msgstr "Ambulatório"
+
+#. module: medical
+#: view:medical.hospital.building:0
+msgid "Search Health Center Buildings"
+msgstr "Buscar Construções do Centro de Saúde"
+
+#. module: medical
+#: field:medical.medication.template,frequency_unit:0
+#: field:medical.patient.medication,frequency_unit:0
+#: field:medical.prescription.line,frequency_unit:0
+msgid "unit"
+msgstr "unidade"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_polyphagia:0
+msgid "Polyphagia"
+msgstr "Polifagia"
+
+#. module: medical
+#: model:product.template,name:medical.product_280_product_template
+msgid "rabies vaccine"
+msgstr "vacina anti-rábica"
+
+#. module: medical
+#: model:product.template,name:medical.product_197_product_template
+msgid "measles vaccine"
+msgstr "vacina contra o sarampo"
+
+#. module: medical
+#: field:medical.medication.template,end_treatment:0
+#: field:medical.patient.disease,date_stop_treatment:0
+#: field:medical.patient.medication,end_treatment:0
+#: field:medical.prescription.line,end_treatment:0
+msgid "End of treatment"
+msgstr "Final do tratamento"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_conf_menu
+msgid "Configuration"
+msgstr "Configuração"
+
+#. module: medical
+#: help:medical.family_code,name:0
+msgid "Family code within an operational sector"
+msgstr "Código familiar com um setor operacional"
+
+#. module: medical
+#: field:medical.patient.evaluation,judgment:0
+msgid "Jugdment"
+msgstr "Juízo"
+
+#. module: medical
+#: field:medical.patient.evaluation,bmi:0
+msgid "Body Mass Index"
+msgstr "Índice de massa corpórea - IMC"
+
+#. module: medical
+#: field:medical.hospital.bed,state:0 field:medical.hospital.ward,state:0
+#: view:medical.patient.disease:0 report:patient.diseases:0
+msgid "Status"
+msgstr "Status"
+
+#. module: medical
+#: model:product.template,name:medical.product_258_product_template
+msgid "potassium ferric hexacyano‐ferrate(II) ‐2H20 (Prussian blue)"
+msgstr "potássio férrico hexaciano-ferrato (II)-2H20 (azul da Prússia)"
+
+#. module: medical
+#: help:medical.medication.template,medicament:0
+#: help:medical.patient.medication,medicament:0
+#: help:medical.prescription.line,medicament:0
+msgid "Prescribed Medicament"
+msgstr "Medicamento Prescrito"
+
+#. module: medical
+#: model:product.template,name:medical.product_194_product_template
+msgid "magnesium hydroxide"
+msgstr "hidróxido de magnésio"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Divorced"
+msgstr "Divorciado"
+
+#. module: medical
+#: model:product.template,name:medical.product_212_product_template
+msgid "methylthioninium chloride (methylene blue)"
+msgstr "Cloreto de metiltionina (azul de metileno)"
+
+#. module: medical
+#: selection:medical.medication.template,frequency_unit:0
+#: selection:medical.patient.medication,frequency_unit:0
+#: selection:medical.prescription.line,frequency_unit:0
+msgid "seconds"
+msgstr "segundos"
+
+#. module: medical
+#: field:medical.patient.evaluation,hypertonia:0
+msgid "Hypertonia"
+msgstr "Hipertonia"
+
+#. module: medical
+#: field:medical.patient.evaluation,calculation_ability:0
+msgid "Calculation Ability"
+msgstr "Habilidade de Cálculo"
+
+#. module: medical
+#: field:medical.patient.evaluation,next_evaluation:0
+msgid "Next Appointment"
+msgstr "Próximo compromisso"
+
+#. module: medical
+#: model:product.template,name:medical.product_216_product_template
+msgid "mifepristone"
+msgstr "mifepristona"
+
+#. module: medical
+#: model:product.template,name:medical.product_4_product_template
+msgid "acetylcysteine"
+msgstr "acetilcisteína"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Patient General Information"
+msgstr "Informações Gerais do Paciente"
+
+#. module: medical
+#: field:medical.hospital.ward,guest_sofa:0
+msgid "Guest sofa-bed"
+msgstr "Sofá-cama de convidados"
+
+#. module: medical
+#: help:medical.operational_area,name:0
+msgid "Operational Area of the city or region"
+msgstr "Área operacional da cidade ou região"
+
+#. module: medical
+#: view:medical.pathology:0
+msgid "Pathology"
+msgstr "Patologia"
+
+#. module: medical
+#: help:medical.installer.modules,medical_genetics:0
+msgid "This module allows Family history and genetic risksThe module includes hereditary risks, family history and genetic disorders.In this module we include the NCBI and Genecard information, more than 4200 genes associated to diseases"
+msgstr "Este módulo permite a história da família e risco genético. O módulo inclui riscos hereditários, história familiar e desordens genéticas. Neste módulo nós incluimos informações NCBI e Genecard, mais de 4200 genes associados a doenças"
+
+#. module: medical
+#: selection:medical.hospital.bed,bed_type:0
+msgid "Electric"
+msgstr "Elétrico"
+
+#. module: medical
+#: field:medical.prescription.line,short_comment:0
+msgid "Comment"
+msgstr "Comentário"
+
+#. module: medical
+#: selection:medical.hospital.bed,bed_type:0
+msgid "Stretcher"
+msgstr "Esticador"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_rinorrhea:0
+msgid "Rinorrhea"
+msgstr "Rinorréia"
+
+#. module: medical
+#: field:medical.patient.evaluation,edema:0
+msgid "Edema"
+msgstr "Edema"
+
+#. module: medical
+#: model:product.template,name:medical.product_89_product_template
+msgid "dacarbazine"
+msgstr "dacarbazina"
+
+#. module: medical
+#: field:medical.installer.modules,config_logo:0
+msgid "Image"
+msgstr "Imagem"
+
+#. module: medical
+#: help:medical.vaccination,institution:0
+msgid "Medical Center where the patient is being or was vaccinated"
+msgstr "Centro Médico onde o paciente está sendo ou foi vacinado"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SDR
+msgid "Suspension delayed release"
+msgstr "Suspensão de liberação lenta"
+
+#. module: medical
+#: model:product.template,name:medical.product_276_product_template
+msgid "pyrimethamine"
+msgstr "pirimetamina"
+
+#. module: medical
+#: field:medical.hospital.bed,ward:0
+msgid "Ward"
+msgstr "Enfermaria"
+
+#. module: medical
+#: model:product.template,name:medical.product_195_product_template
+msgid "magnesium sulfate"
+msgstr "sulfato de magnésio"
+
+#. module: medical
+#: model:product.template,name:medical.product_352_product_template
+msgid "zidovudine + lamivudine"
+msgstr "zidovudina + lamivudina"
+
+#. module: medical
+#: field:medical.appointment,speciality:0 field:medical.physician,speciality:0
+msgid "Speciality"
+msgstr "Especialidade"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_medicament
+msgid "medical.medicament"
+msgstr "medical.medicament"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.POW
+msgid "Powder"
+msgstr "Pó"
+
+#. module: medical
+#: model:product.template,name:medical.product_274_product_template
+msgid "pyridostigmine"
+msgstr "piridostigmina"
+
+#. module: medical
+#: view:medical.patient.disease:0
+msgid "Pregnancy"
+msgstr "Gravidez"
+
+#. module: medical
+#: model:product.template,name:medical.product_102_product_template
+msgid "dimercaprol"
+msgstr "dimercaprol"
+
+#. module: medical
+#: field:medical.hospital.ward,telephone:0
+msgid "Telephone access"
+msgstr "Acesso a telefone"
+
+#. module: medical
+#: field:medical.appointment,urgency:0
+msgid "Urgency Level"
+msgstr "Nivel de urgência"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "Information"
+msgstr "Informação"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_disturb_sleep:0
+msgid "Disturbed Sleep"
+msgstr "Distúrbios do sono"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SRD
+msgid "Disc sustained release"
+msgstr "Disco de liberação sustentada"
+
+#. module: medical
+#: field:medical.patient.evaluation,acropachy:0
+msgid "Acropachy"
+msgstr "Acropaquia"
+
+#. module: medical
+#: model:product.template,name:medical.product_269_product_template
+msgid "propranolol"
+msgstr "propranolol"
+
+#. module: medical
+#: model:ir.module.module,description:medical.module_meta_information
+msgid ""
+"\n"
+"\n"
+"About Medical\n"
+"-------------\n"
+"Medical is a multi-user, highly scalable, centralized Electronic Medical Record (EMR) and Hospital Information System for openERP.\n"
+"\n"
+"Medical provides a free universal Health and Hospital Information System, so doctors and institutions all over the world, specially in developing countries will benefit from a centralized, high quality, secure and scalable system.\n"
+"\n"
+"\n"
+"Medical at a glance:\n"
+"\n"
+"\n"
+"    * Strong focus in family medicine and Primary Health Care\n"
+"\n"
+"    * Major interest in Socio-economics (housing conditions, substance abuse, education...)\n"
+"\n"
+"    * Diseases and Medical procedures standards (like ICD-10 / ICD-10-PCS ...)\n"
+"\n"
+"    * Patient Genetic and Hereditary risks : Over 4200 genes related to diseases (NCBI / Genecards)\n"
+"\n"
+"    * Epidemiological and other statistical reports\n"
+"\n"
+"    * 100% paperless patient examination and history taking\n"
+"\n"
+"    * Patient Administration (creation, evaluations / consultations, history ... )\n"
+"\n"
+"    * Doctor Administration\n"
+"\n"
+"    * Lab Administration\n"
+"\n"
+"    * Medicine / Drugs information (vademécum)\n"
+"\n"
+"    * Medical stock and supply chain management\n"
+"\n"
+"    * Hospital Financial Administration\n"
+"\n"
+"    * Designed with industry standards in mind\n"
+"\n"
+"    * Open Source : Licensed under GPL \n"
+"\n"
+"\n"
+"\n"
+"Most of the action should occur at sourceforge, so check the main page http://sourceforge.net/projects/medical for the latest news and developer releases. \n"
+"\n"
+msgstr ""
+
+#. module: medical
+#: field:medical.operational_sector,operational_area:0
+msgid "Operational Area"
+msgstr "Área operacional"
+
+#. module: medical
+#: field:medical.patient.evaluation,evaluation_date:0
+msgid "Evaluation Date"
+msgstr "Data da avaliação"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.action_partner_health_center
+#: model:ir.ui.menu,name:medical.medical_conf_hospital
+#: model:ir.ui.menu,name:medical.menu_health_center_form
+msgid "Health Centers"
+msgstr "Centros de Saúde"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Treatment Plan"
+msgstr "Plano de Tratamento"
+
+#. module: medical
+#: model:product.template,name:medical.product_85_product_template
+msgid "cyclophosphamide"
+msgstr "ciclofosfamida"
+
+#. module: medical
+#: model:product.template,name:medical.product_198_product_template
+msgid "mebendazole"
+msgstr "mebendazol"
+
+#. module: medical
+#: model:product.template,name:medical.product_309_product_template
+msgid "spectinomycin"
+msgstr "espectinomicina"
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "chronic"
+msgstr "crônico"
+
+#. module: medical
+#: field:medical.pathology.category,name:0
+msgid "Category Name"
+msgstr "Nome da categoria"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_38
+msgid "Subcutaneous"
+msgstr "Sub-cutâneo"
+
+#. module: medical
+#: model:product.template,name:medical.product_220_product_template
+msgid "naloxone"
+msgstr "naloxona"
+
+#. module: medical
+#: field:medical.patient.medication,discontinued_reason:0
+msgid "Reason for discontinuation"
+msgstr "Motivo do encerramento"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.ECC
+msgid "Capsule enteric-coated"
+msgstr "Cápsula com revestimento entérico"
+
+#. module: medical
+#: model:product.template,name:medical.product_14_product_template
+msgid "amiloride"
+msgstr "amilorida"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Nutrition"
+msgstr "Nutrição"
+
+#. module: medical
+#: help:medical.speciality,name:0
+msgid "ie, Addiction Psychiatry"
+msgstr "ou seja, Psiquiatria da Toxicodependência"
+
+#. module: medical
+#: field:medical.installer.modules,progress:0
+msgid "Configuration Progress"
+msgstr "Progresso da Configuração"
+
+#. module: medical
+#: selection:medical.appointment,urgency:0
+#: selection:medical.patient.evaluation,mood:0
+msgid "Normal"
+msgstr "Normal"
+
+#. module: medical
+#: view:medical.medication.dosage:0
+msgid "Medication Dosage"
+msgstr "Dosagem da Medicação"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_proctorrhagia:0
+msgid "Proctorrhagia"
+msgstr "Proctorragia "
+
+#. module: medical
+#: view:medical.operational_sector:0
+msgid "Search Operational Sector"
+msgstr "Pesquisar Setor Operacional"
+
+#. module: medical
+#: model:product.template,name:medical.product_3_product_template
+msgid "acetazolamide"
+msgstr "acetazolamida"
+
+#. module: medical
+#: model:product.template,name:medical.product_42_product_template
+msgid "benzoyl peroxide"
+msgstr "peróxido de benzoíla"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.MWH
+msgid "Mouthwash gargle"
+msgstr "Bochecho com enxaguante bucal"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Every"
+msgstr "cada"
+
+#. module: medical
+#: help:medical.hospital.ward,name:0
+msgid "Ward / Room code"
+msgstr "Código da Ala / Quarto"
+
+#. module: medical
+#: view:medical.occupation:0
+msgid "Search Occupations"
+msgstr "Pesquisar Ocupações"
+
+#. module: medical
+#: field:medical.medication.template,admin_times:0
+#: field:medical.patient.medication,admin_times:0
+#: field:medical.prescription.line,admin_times:0
+msgid "Admin hours"
+msgstr "Horas de administração"
+
+#. module: medical
+#: model:product.template,name:medical.product_74_product_template
+msgid "clavulanic acid"
+msgstr "ácido clavulânico"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Doctor user ID"
+msgstr "ID de usuário do Doutor"
+
+#. module: medical
+#: model:product.template,name:medical.product_348_product_template
+msgid "water for injection"
+msgstr "água para injeção"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.AER
+msgid "Aerosol with propellants"
+msgstr "Aerosol com propelentes"
+
+#. module: medical
+#: model:product.template,name:medical.product_241_product_template
+msgid "p‐aminosalicylic acid"
+msgstr "ácido p-aminossalicílico"
+
+#. module: medical
+#: help:medical.medicament,pregnancy_warning:0
+msgid "Check when the drug can not be taken during pregnancy or lactancy"
+msgstr "Marque quando o remédio não puder ser tomado durante a gravidez ou periodo de amamentação"
+
+#. module: medical
+#: model:product.template,name:medical.product_46_product_template
+msgid "biperiden"
+msgstr "biperideno"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.act_prescription_orders
+msgid "Prescription Orders"
+msgstr "Ordens Prescritas"
+
+#. module: medical
+#: field:medical.patient,critical_info:0
+msgid "Important disease, allergy or procedures information"
+msgstr "Informação importante sobre doença, alergia ou procedimentos"
+
+#. module: medical
+#: help:medical.patient.disease,age:0
+msgid "Patient age at the moment of the diagnosis. Can be estimative"
+msgstr "Idade do paciente no momento do diagnóstico. Pode ser estimativa"
+
+#. module: medical
+#: field:medical.hospital.ward,private_bathroom:0
+msgid "Private Bathroom"
+msgstr "Banheiro Privado"
+
+#. module: medical
+#: model:product.template,name:medical.product_117_product_template
+msgid "ephedrine"
+msgstr "efedrina"
+
+#. module: medical
+#: help:medical.patient,age:0
+msgid ""
+"It shows the age of the patient in years(y), months(m) and days(d).\n"
+"If the patient has died, the age shown is the age at time of death, the age corresponding to the date on the death certificate. It will show also \"deceased\" on the field"
+msgstr ""
+"Mostra a idade do paciente em anos(a), meses(m) e dias(d).\n"
+"Se o paciente faleceu, a idade mostrada é a idade no momento da morte, a idade correspondente à data de falecimento no certificado de óbito. Também será exibido \"falecido\" no campo."
+
+#. module: medical
+#: model:product.template,name:medical.product_202_product_template
+msgid "meglumine antimoniate"
+msgstr "antimoniato de meglumina"
+
+#. module: medical
+#: field:medical.patient.evaluation,breast_lump:0
+msgid "Breast Lumps"
+msgstr "Nódulos mamários"
+
+#. module: medical
+#: model:product.template,name:medical.product_123_product_template
+msgid "ethambutol"
+msgstr "etambutol"
+
+#. module: medical
+#: model:product.template,name:medical.product_48_product_template
+msgid "bupivacaine"
+msgstr "bupivacaína"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_occupation
+#: model:ir.ui.menu,name:medical.medical_conf_occupation
+msgid "Occupations"
+msgstr "Ocupações"
+
+#. module: medical
+#: model:product.template,name:medical.product_140_product_template
+msgid "fluphenazine"
+msgstr "flufenazina"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_25
+msgid "Mucous Membrane"
+msgstr "Membrana Mucosa"
+
+#. module: medical
+#: field:medical.prescription.order,prescription_date:0
+msgid "Prescription Date"
+msgstr "Data de Prescrição"
+
+#. module: medical
+#: model:product.template,name:medical.product_116_product_template
+msgid "enalapril"
+msgstr "enalapril"
+
+#. module: medical
+#: field:medical.patient.disease,is_allergy:0
+msgid "Allergic Disease"
+msgstr "Doença Alérgica"
+
+#. module: medical
+#: field:medical.vaccination,vaccine_lot:0
+msgid "Lot Number"
+msgstr "Número do Lote"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_23
+msgid "Intravenous "
+msgstr "Intravenosa"
+
+#. module: medical
+#: help:medical.pathology,chromosome:0
+msgid "chromosome number"
+msgstr "Número do cromossomo"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SRT
+msgid "Sustained release tablet"
+msgstr "Comprimido de Liberação Prolongada"
+
+#. module: medical
+#: view:medical.patient:0 field:medical.patient,general_info:0
+msgid "General Information"
+msgstr "Informação Geral"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.UNS
+msgid "Unassigned"
+msgstr "Não Atribuído"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_speciality
+msgid "medical.speciality"
+msgstr "medical.speciality"
+
+#. module: medical
+#: model:product.template,name:medical.product_23_product_template
+msgid "antitetanus immunoglobulin (human)"
+msgstr "imunoglobulina antitetânica (humana)"
+
+#. module: medical
+#: model:product.template,name:medical.product_158_product_template
+msgid "hydrochlorothiazide"
+msgstr "hidroclorotiazida"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_17
+msgid "Intranasal "
+msgstr "Intranasal "
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Prescription ID :"
+msgstr "ID da Prescrição :"
+
+#. module: medical
+#: help:medical.medication.template,route:0
+#: help:medical.patient.medication,route:0
+#: help:medical.prescription.line,route:0
+msgid "HL7 or other standard drug administration route code."
+msgstr "Código HL7 ou outro código de administração de rota de medicamento."
+
+#. module: medical
+#: field:medical.pathology,chromosome:0
+msgid "Affected Chromosome"
+msgstr "Cromossomo afetado"
+
+#. module: medical
+#: help:medical.medicament,pregnancy:0
+msgid "Warnings for Pregnant Women"
+msgstr "Recomendações para a grávida"
+
+#. module: medical
+#: field:medical.patient,current_insurance:0 field:res.partner,insurance:0
+msgid "Insurance"
+msgstr "Seguro"
+
+#. module: medical
+#: help:medical.patient.evaluation,memory:0
+msgid "Check this box if the patient has problems in short or long term memory"
+msgstr "Marque esta caixa se o paciente possui problemas na memória de curto ou longo prazo"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.CRM
+msgid "Cream"
+msgstr "Pomada"
+
+#. module: medical
+#: model:product.template,name:medical.product_229_product_template
+msgid "nifedipine"
+msgstr "nifedipina"
+
+#. module: medical
+#: model:product.template,name:medical.product_38_product_template
+msgid "benzathine benzylpenicillin"
+msgstr "benzilpenicilina benzatina"
+
+#. module: medical
+#: field:medical.pathology.category,parent_id:0
+msgid "Parent Category"
+msgstr "Categoria dos Pais"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_vertigo:0
+msgid "Vertigo"
+msgstr "Vertigem"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_29
+msgid "Nasotrachial Tube"
+msgstr "Tubo Nasotraqueal"
+
+#. module: medical
+#: field:medical.patient.evaluation,nipple_inversion:0
+msgid "Nipple Inversion"
+msgstr "Inversão de Mamilo"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "<para style=\"P12\">"
+msgstr "<para style=\"P12\">"
+
+#. module: medical
+#: model:product.template,name:medical.product_88_product_template
+msgid "cytarabine"
+msgstr "citarabina"
+
+#. module: medical
+#: model:product.template,name:medical.product_147_product_template
+msgid "glutaral"
+msgstr "glutaral"
+
+#. module: medical
+#: model:product.template,name:medical.product_161_product_template
+msgid "ibuprofen"
+msgstr "ibuprofen"
+
+#. module: medical
+#: field:medical.patient.evaluation,nystagmus:0
+msgid "Nystagmus"
+msgstr "Nistagmo"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_dysmenorrhea:0
+msgid "Dysmenorrhea"
+msgstr "Dismenorréia"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Symptoms"
+msgstr "Sintomas"
+
+#. module: medical
+#: help:medical.installer.modules,medical_icd10pcs:0
+msgid "Medical International Classification of Diseases 10th Revision - Procedure Coding System, used to code the surgical and therapeutic procedures"
+msgstr "Classificação Médica Internacional de Doenças 10ª Revisão - Sistema de Codificação Procedural, usado para codificar os procedimentos cirúrgicos e terapeuticos  "
+
+#. module: medical
+#: model:product.template,name:medical.product_291_product_template
+msgid "rotavirus vaccine"
+msgstr "vacina contra o rotavírus"
+
+#. module: medical
+#: model:product.template,name:medical.product_206_product_template
+msgid "mercaptopurine"
+msgstr "mercaptopurina"
+
+#. module: medical
+#: field:medical.vaccination,observations:0 report:patient.vaccinations:0
+msgid "Observations"
+msgstr "Observações"
+
+#. module: medical
+#: model:product.template,name:medical.product_177_product_template
+msgid "Japanese encephalitis vaccine"
+msgstr "Vacina contra a encefalite japonesa"
+
+#. module: medical
+#: field:medical.patient.evaluation,memory:0
+msgid "Memory"
+msgstr "Memória"
+
+#. module: medical
+#: model:product.template,name:medical.product_132_product_template
+msgid "factor VIII concentrate"
+msgstr "concentrado de fator VIII"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.OVU
+msgid "Ovules"
+msgstr "Óvulos"
+
+#. module: medical
+#: model:product.template,name:medical.product_80_product_template
+msgid "cloxacillin"
+msgstr "cloxacilina"
+
+#. module: medical
+#: view:medical.medicament:0 field:medical.medicament,presentation:0
+msgid "Presentation"
+msgstr "Apresentação"
+
+#. module: medical
+#: model:product.template,name:medical.product_68_product_template
+msgid "chlorpromazine"
+msgstr "clorpromazina"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.RING
+msgid "Ring slow release"
+msgstr "Anel de liberação lenta"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_tree_family_code
+#: model:ir.ui.menu,name:medical.medical_conf_edit_family_code
+msgid "Families"
+msgstr "Famílias"
+
+#. module: medical
+#: field:medical.dose.unit,desc:0 field:medical.speciality,name:0
+msgid "Description"
+msgstr "Descrição"
+
+#. module: medical
+#: field:medical.patient.evaluation,goiter:0
+msgid "Goiter"
+msgstr "Bócio"
+
+#. module: medical
+#: field:medical.patient.evaluation,alopecia:0
+msgid "Alopecia"
+msgstr "Alopecia"
+
+#. module: medical
+#: help:res.partner,is_institution:0
+msgid "Check if the partner is a Medical Center"
+msgstr "Marque se o parceiro está no Centro Médico"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_26
+msgid "Nasal"
+msgstr "Nasal"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Single"
+msgstr "Solteiro(a)"
+
+#. module: medical
+#: field:medical.patient.evaluation,derived_to:0
+msgid "Derived to Doctor"
+msgstr "Encaminhado para o médico"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_hospital_building
+msgid "medical.hospital.building"
+msgstr "medical.hospital.building"
+
+#. module: medical
+#: model:product.template,name:medical.product_163_product_template
+msgid "immunoglobulin"
+msgstr "imunoglobulina"
+
+#. module: medical
+#: field:medical.patient.evaluation,xerosis:0
+msgid "Xerosis"
+msgstr "Xerosis"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_27
+msgid "Nasogastric"
+msgstr "Nasogástrica"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.CDR
+msgid "Capsule delayed release"
+msgstr "Cápsula de liberação retardada"
+
+#. module: medical
+#: model:product.template,name:medical.product_31_product_template
+msgid "atropine"
+msgstr "atropina"
+
+#. module: medical
+#: field:medical.medication.template,medicament:0
+#: field:medical.patient.medication,medicament:0
+#: field:medical.prescription.line,medicament:0 report:patient.medications:0
+#: field:product.product,is_medicament:0
+msgid "Medicament"
+msgstr "Medicamento"
+
+#. module: medical
+#: model:product.template,name:medical.product_299_product_template
+msgid "simvastatin"
+msgstr "sinvastatina"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Procedures"
+msgstr "Procedimentos"
+
+#. module: medical
+#: selection:medical.hospital.ward,gender:0
+msgid "Women Ward"
+msgstr "Ala das Mulheres"
+
+#. module: medical
+#: model:product.template,name:medical.product_252_product_template
+msgid "pilocarpine"
+msgstr "pilocarpina"
+
+#. module: medical
+#: help:medical.patient.disease,doctor:0
+msgid "Physician who treated or diagnosed the patient"
+msgstr "Médico que tratou ou diagnosticou o paciente"
+
+#. module: medical
+#: view:medical.family_code:0
+msgid "Family List"
+msgstr "Lista de família"
+
+#. module: medical
+#: model:product.template,name:medical.product_342_product_template
+msgid "varicella vaccine"
+msgstr "Vacina contra Varicela"
+
+#. module: medical
+#: model:product.template,name:medical.product_278_product_template
+msgid "quinine"
+msgstr "Quinino"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_physician
+#: model:ir.ui.menu,name:medical.medical_conf_physician_list
+#: model:ir.ui.menu,name:medical.medical_conf_physicians
+msgid "Physicians"
+msgstr "Médicos"
+
+#. module: medical
+#: field:medical.patient.evaluation,knowledge_current_events:0
+msgid "Knowledge of Current Events"
+msgstr "Conhecimento dos Eventos Atuais"
+
+#. module: medical
+#: field:medical.hospital.ward,gender:0
+msgid "Gender"
+msgstr "Sexo"
+
+#. module: medical
+#: field:medical.drug.route,name:0
+msgid "Route"
+msgstr "Rota"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.STP
+msgid "Strip"
+msgstr "Tira"
+
+#. module: medical
+#: help:medical.patient.evaluation,nystagmus:0
+msgid "If not associated to a disease, please encode it on the patient disease history. For example,  H55 in ICD-10 encoding"
+msgstr "Se não associado a uma doença, por favor codifique-o no histórico de doenças do paciente, H55 em codificação ICD-10"
+
+#. module: medical
+#: model:product.template,name:medical.product_49_product_template
+msgid "caffeine citrate"
+msgstr "citrato de cafeína"
+
+#. module: medical
+#: help:medical.medication.template,qty:0
+#: help:medical.patient.medication,qty:0 help:medical.prescription.line,qty:0
+msgid "Quantity of units (eg, 2 capsules) of the medicament"
+msgstr "Quantidade de unidades (ex: 2 cápsulas) do medicamento"
+
+#. module: medical
+#: model:product.template,name:medical.product_330_product_template
+msgid "tetracycline"
+msgstr "tetraciclina"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_rectal_tenesmus:0
+msgid "Rectal Tenesmus"
+msgstr "Tenesmo retal"
+
+#. module: medical
+#: field:medical.patient.evaluation,malnutrition:0
+msgid "Malnutrition"
+msgstr "Desnutrição"
+
+#. module: medical
+#: report:patient.medications:0
+msgid "Act"
+msgstr "Lei"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_7
+msgid "GU Irrigant "
+msgstr "GU irrigante"
+
+#. module: medical
+#: field:medical.patient.evaluation,systolic:0
+msgid "Systolic Pressure"
+msgstr "Pressão Sistólica"
+
+#. module: medical
+#: model:product.template,name:medical.product_66_product_template
+msgid "chloroxylenol"
+msgstr "chloroxilenol"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "My appointments"
+msgstr "Minhas consultas"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "Search Appointments"
+msgstr "Buscar Nomeações"
+
+#. module: medical
+#: model:product.template,name:medical.product_238_product_template
+msgid "oxamniquine"
+msgstr "oxamniquina"
+
+#. module: medical
+#: help:medical.hospital.unit,name:0
+msgid "Name of the unit, eg Neonatal, Intensive Care, ..."
+msgstr "Nome da unidade, por exemplo, Neonatal, Terapia Intensiva, ..."
+
+#. module: medical
+#: model:product.template,name:medical.product_223_product_template
+msgid "neomycin sulfate + bacitracin"
+msgstr "sulfato de neomicina + bacitracina"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_otalgia:0
+msgid "Otalgia"
+msgstr "Otalgia"
+
+#. module: medical
+#: help:medical.patient.evaluation,arritmia:0
+#: help:medical.patient.evaluation,ascites:0
+#: help:medical.patient.evaluation,heart_extra_sounds:0
+#: help:medical.patient.evaluation,jaundice:0
+#: help:medical.patient.evaluation,jugular_engorgement:0
+#: help:medical.patient.evaluation,lynphadenitis:0
+#: help:medical.patient.evaluation,palpebral_ptosis:0
+msgid "If not associated to a disease, please encode it on the patient disease history"
+msgstr "Se não for associado a uma doença, por favor, codificá-lo sobre a história da doença do paciente"
+
+#. module: medical
+#: view:medical.insurance:0
+msgid "Search Insurances"
+msgstr "Buscar Seguros"
+
+#. module: medical
+#: view:medical.patient.disease:0
+msgid "Allergy"
+msgstr "Alergia"
+
+#. module: medical
+#: help:medical.patient.evaluation,judgment:0
+msgid "Check this box if the patient can not interpret basic scenario solutions"
+msgstr "Marque esta caixa se o paciente não consegue interpretar soluções de cenário básico"
+
+#. module: medical
+#: field:medical.hospital.ward,private:0 selection:medical.insurance,type:0
+msgid "Private"
+msgstr "Particular"
+
+#. module: medical
+#: field:medical.patient.disease,healed_date:0
+msgid "Healed"
+msgstr "Curado"
+
+#. module: medical
+#: model:product.template,name:medical.product_183_product_template
+msgid "levodopa"
+msgstr "levodopa"
+
+#. module: medical
+#: model:product.template,name:medical.product_37_product_template
+msgid "beclometasone"
+msgstr "beclometasona"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.STK
+msgid "Stick"
+msgstr "Bastão"
+
+#. module: medical
+#: model:product.template,name:medical.product_77_product_template
+msgid "clomifene"
+msgstr "clomifene"
+
+#. module: medical
+#: field:medical.patient.evaluation,glycemia:0
+msgid "Glycemia"
+msgstr "Glicemia"
+
+#. module: medical
+#: model:product.template,name:medical.product_294_product_template
+msgid "salicylic acid"
+msgstr "ácido salicílico"
+
+#. module: medical
+#: model:product.template,name:medical.product_243_product_template
+msgid "paromomycin"
+msgstr "paromomicina"

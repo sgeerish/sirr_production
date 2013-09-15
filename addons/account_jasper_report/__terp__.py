@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_jasper_report/__terp__.py

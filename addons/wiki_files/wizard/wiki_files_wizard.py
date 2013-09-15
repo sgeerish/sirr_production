@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/wiki_files/wizard/wiki_files_wizard.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/l10n_ch_vat_brut/__terp__.py

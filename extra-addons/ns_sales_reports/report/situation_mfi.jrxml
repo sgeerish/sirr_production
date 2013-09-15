@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.3310000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="New Dataset 1"/>
+	<parameter name="detail" class="java.lang.Boolean"/>
+	<parameter name="paid" class="java.lang.Boolean"/>
+	<parameter name="title" class="java.lang.String"/>
+	<parameter name="clients" class="java.lang.Double"/>
+	<parameter name="stock" class="java.lang.Double"/>
+	<parameter name="portefeuille" class="java.lang.Double"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="Date-date" class="java.util.Date">
+		<fieldDescription><![CDATA[/data/record/Date-date]]></fieldDescription>
+	</field>
+	<field name="Debit-debit" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Debit-debit]]></fieldDescription>
+	</field>
+	<field name="Credit-credit" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Credit-credit]]></fieldDescription>
+	</field>
+	<field name="Nom-name" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Nom-name]]></fieldDescription>
+	</field>
+	<field name="Reference-ref" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Reference-ref]]></fieldDescription>
+	</field>
+	<field name="Date_d_echeance-date_maturity" class="java.util.Date">
+		<fieldDescription><![CDATA[/data/record/Date_d_echeance-date_maturity]]></fieldDescription>
+	</field>
+	<field name="Range-range" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Partenaire-partner_id/Range-range]]></fieldDescription>
+	</field>
+	<field name="Montant_residuel-amount_residual_currency" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Montant_residuel-amount_residual_currency]]></fieldDescription>
+	</field>
+	<field name="Montant_a_payer-amount_to_pay" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Montant_a_payer-amount_to_pay]]></fieldDescription>
+	</field>
+	<field name="Rapprochement_partiel-reconcile_partial_id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[/data/record/Rapprochement_partiel-reconcile_partial_id]]></fieldDescription>
+	</field>
+	<field name="Nom-name2" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Partenaire-partner_id/Nom-name]]></fieldDescription>
+	</field>
+	<field name="Nombre-name" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/N_d_ecriture-move_id/Nombre-name]]></fieldDescription>
+	</field>
+	<field name="Type_interne-type" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Compte-account_id/Type_interne-type]]></fieldDescription>
+	</field>
+	<field name="Solde-amount_balance" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Solde-amount_balance]]></fieldDescription>
+	</field>
+	<field name="Nombre-number" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Facture-invoice/Nombre-number]]></fieldDescription>
+	</field>
+	<field name="reconcile_id" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Rapprocher-reconcile_id/Nom-name]]></fieldDescription>
+	</field>
+	<field name="Reference-ref2" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Partenaire-partner_id/Reference-ref]]></fieldDescription>
+	</field>
+	<sortField name="Reference-ref2"/>
+	<variable name="due" class="java.math.BigDecimal" resetType="None">
+		<variableExpression><![CDATA[$F{Type_interne-type} == "receivable" ? (($V{debit} != null) ? $V{debit} : new BigDecimal("0")) : ($F{Type_interne-type} == "payable" ? (($V{credit} != null) ? $V{credit}*-1 : new Float("0")): new BigDecimal("0"))]]></variableExpression>
+	</variable>
+	<variable name="paid" class="java.math.BigDecimal" resetType="None">
+		<variableExpression><![CDATA[$F{Type_interne-type} == "receivable" ? (($V{credit} != null) ? $V{credit} : new BigDecimal("0")) : (($F{Type_interne-type} == "payable" ? (($V{debit}!= null) ? ($V{debit}*-1) : new Float("0")): new BigDecimal("0"))  )]]></variableExpression>
+		<initialValueExpression><![CDATA[]]></initialValueExpression>
+	</variable>
+	<variable name="due_client" class="java.lang.Float" resetType="Group" resetGroup="Client" calculation="Sum">
+		<variableExpression><![CDATA[$V{due}]]></variableExpression>
+	</variable>
+	<variable name="paye_client" class="java.lang.Float" resetType="Group" resetGroup="Client" calculation="Sum">
+		<variableExpression><![CDATA[$V{paid}]]></variableExpression>
+	</variable>
+	<variable name="echu_client" class="java.lang.Float" resetType="Group" resetGroup="Client" calculation="Sum">
+		<variableExpression><![CDATA[$V{balance}]]></variableExpression>
+	</variable>
+	<variable name="reglement" class="java.lang.Float">
+		<variableExpression><![CDATA[]]></variableExpression>
+	</variable>
+	<variable name="credit" class="java.math.BigDecimal" resetType="None">
+		<variableExpression><![CDATA[($F{Credit-credit}.isEmpty())?new Float(0):new Float($F{Credit-credit})]]></variableExpression>
+	</variable>
+	<variable name="debit" class="java.math.BigDecimal" resetType="None">
+		<variableExpression><![CDATA[($F{Debit-debit}.isEmpty())?new Float(0):new Float($F{Debit-debit})]]></variableExpression>
+	</variable>
+	<variable name="balance" class="java.math.BigDecimal" resetType="None">
+		<variableExpression><![CDATA[($F{Solde-amount_balance}.isEmpty())?($P{paid}?($V{debit}-$V{credit}):new Float(0)):new Float($F{Solde-amount_balance})]]></variableExpression>
+	</variable>
+	<variable name="total_echhu" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$V{balance}]]></variableExpression>
+	</variable>
+	<group name="Client" keepTogether="true">
+		<groupExpression><![CDATA[$F{Nom-name2}]]></groupExpression>
+		<groupHeader>
+			<band height="40">
+				<printWhenExpression><![CDATA[$P{detail}]]></printWhenExpression>
+				<staticText>
+					<reportElement mode="Opaque" x="482" y="20" width="73" height="20" backcolor="#CCCCFF"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Echu]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="412" y="20" width="70" height="20" backcolor="#CCCCFF"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Paye]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="341" y="20" width="71" height="20" backcolor="#CCCCFF"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Montant Due]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="124" y="20" width="148" height="20" backcolor="#CCCCFF"/>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Reference]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="272" y="20" width="69" height="20" backcolor="#CCCCFF"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Echéance]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="20" width="68" height="20" backcolor="#CCCCFF"/>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Facture]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="68" y="20" width="56" height="20" backcolor="#CCCCFF"/>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Date]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="20">
+				<textField>
+					<reportElement mode="Opaque" x="68" y="0" width="344" height="20" backcolor="#F4F7FC"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{Reference-ref2}+','+$F{Nom-name2}+',']]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+					<reportElement mode="Opaque" x="412" y="0" width="143" height="20" backcolor="#F4F7FC"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{echu_client}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="208" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{title}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement x="136" y="59" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$P{clients}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement x="136" y="119" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$P{stock}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement x="136" y="99" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$P{portefeuille}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="59" width="136" height="20" backcolor="#CCCCFF"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Comptes Clients]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="119" width="136" height="20" backcolor="#CCCCFF"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stocks]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="99" width="136" height="20" backcolor="#CCCCFF"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Portefeuille]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="20" width="136" height="20" backcolor="#CCCCFF"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Banque]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<printWhenExpression><![CDATA[!$P{detail}]]></printWhenExpression>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<printWhenExpression><![CDATA[$P{detail}]]></printWhenExpression>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="68" y="0" width="56" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{Date-date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="124" y="0" width="148" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Reference-ref}+" "+$F{reconcile_id}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="272" y="0" width="69" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{Date_d_echeance-date_maturity}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement x="482" y="0" width="73" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$V{balance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="1" width="68" height="19"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Nombre-number}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement x="412" y="0" width="70" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$V{paid}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement x="341" y="0" width="71" height="19"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$V{due}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="20" splitType="Stretch"/>
+	</summary>
+</jasperReport>

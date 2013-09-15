@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_account/wizard/cci_wizard_partner_balance_report.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/document_rule/i18n/document_rule.pot

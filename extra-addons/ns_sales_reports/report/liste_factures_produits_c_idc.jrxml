@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="liste_commandes_produits" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="24"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<subDataset name="invoice_lines_2"/>
+	<parameter name="title" class="java.lang.String"/>
+	<parameter name="mode" class="java.lang.String"/>
+	<parameter name="detail" class="java.lang.Boolean">
+		<defaultValueExpression><![CDATA[true]]></defaultValueExpression>
+	</parameter>
+	<parameter name="level2" class="java.lang.Boolean">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="year" class="java.lang.Integer"/>
+	<parameter name="comm_rate" class="java.lang.Double">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="Ref" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Invoice_Ref-invoice_id/Description-name]]></fieldDescription>
+	</field>
+	<field name="Date" class="java.util.Date">
+		<fieldDescription><![CDATA[/data/record/Invoice_Ref-invoice_id/Date_Invoiced-date_invoice]]></fieldDescription>
+	</field>
+	<field name="Produit" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Product-product_id/Product_Template-product_tmpl_id/Name-name]]></fieldDescription>
+	</field>
+	<field name="Category_produit" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Product-product_id/Product_Template-product_tmpl_id/Category-categ_id/Name-name]]></fieldDescription>
+	</field>
+	<field name="Montant" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Montant-value]]></fieldDescription>
+	</field>
+	<field name="Qte" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Qte_vendue-sold_qty]]></fieldDescription>
+	</field>
+	<field name="Description" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Description-name]]></fieldDescription>
+	</field>
+	<field name="Marge-margin" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Marge-margin]]></fieldDescription>
+	</field>
+	<field name="Pr" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Product-product_id/Name-name]]></fieldDescription>
+	</field>
+	<field name="Stock_available-qty_dispo" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Product-product_id/Stock_available-qty_dispo]]></fieldDescription>
+	</field>
+	<field name="Virtual_Stock-virtual_available" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Product-product_id/Virtual_Stock-virtual_available]]></fieldDescription>
+	</field>
+	<field name="Nom_de_l_utilisateur-name" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Reference_facture-invoice_id/Commerciale-user_id/Nom_de_l_utilisateur-name]]></fieldDescription>
+	</field>
+	<field name="Commission-x_comm_cat" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Produit-product_id/Category-categ_id/Commission-x_comm_cat]]></fieldDescription>
+	</field>
+	<field name="Nom_de_l_utilisateur-name2" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Reference_facture-invoice_id/Commerciale-user_id/Nom_de_l_utilisateur-name]]></fieldDescription>
+	</field>
+	<sortField name="Nom_de_l_utilisateur-name2"/>
+	<sortField name="Category_produit"/>
+	<variable name="montant_cat" class="java.lang.Float" resetType="Group" resetGroup="Categorie Produit" calculation="Sum">
+		<variableExpression><![CDATA[$F{Montant}]]></variableExpression>
+	</variable>
+	<variable name="montant_user" class="java.lang.Float" resetType="Group" resetGroup="Users" calculation="Sum">
+		<variableExpression><![CDATA[$F{Montant}]]></variableExpression>
+	</variable>
+	<variable name="comm_cat" class="java.lang.Float" resetType="Group" resetGroup="Categorie Produit" calculation="Sum">
+		<variableExpression><![CDATA[($F{Montant}*$F{Commission-x_comm_cat})]]></variableExpression>
+	</variable>
+	<variable name="comm_user" class="java.lang.Float" resetType="Group" resetGroup="Users" calculation="Sum">
+		<variableExpression><![CDATA[($F{Montant}*$F{Commission-x_comm_cat})]]></variableExpression>
+	</variable>
+	<filterExpression><![CDATA[$F{Category_produit} == "VOITURE"
+||
+$F{Category_produit} == "LUBRIFIANT"
+||
+$F{Category_produit} == "PNEU"
+||
+$F{Category_produit} == "BATTERIE"]]></filterExpression>
+	<group name="Users" isStartNewPage="true">
+		<groupExpression><![CDATA[$F{Nom_de_l_utilisateur-name2}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="100" height="20" backcolor="#CCFFCC"/>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{Nom_de_l_utilisateur-name}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="100" y="0" width="152" height="20" backcolor="#CCFFCC"/>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Categorie]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="252" y="0" width="100" height="20" backcolor="#CCFFCC"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Montant HT]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="352" y="0" width="100" height="20" backcolor="#CCFFCC"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Commissions]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="20">
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="0" width="100" height="20" backcolor="#CCFFCC"/>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[TOTAL]]></text>
+				</staticText>
+				<textField>
+					<reportElement mode="Opaque" x="100" y="0" width="155" height="20" backcolor="#CCFFCC"/>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{Nom_de_l_utilisateur-name2}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00">
+					<reportElement mode="Opaque" x="255" y="0" width="100" height="20" backcolor="#CCFFCC"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{montant_user}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00">
+					<reportElement mode="Opaque" x="355" y="0" width="100" height="20" backcolor="#CCFFCC"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{comm_user}/100]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="Categorie Produit">
+		<groupExpression><![CDATA[$F{Produit}]]></groupExpression>
+		<groupHeader>
+			<band/>
+		</groupHeader>
+		<groupFooter>
+			<band height="20">
+				<textField pattern="#,##0.00" isBlankWhenNull="true">
+					<reportElement x="352" y="0" width="100" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{comm_cat}/100]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00">
+					<reportElement x="252" y="0" width="100" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{montant_cat}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="0" width="119" height="20"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{Category_produit}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00 %" isBlankWhenNull="true">
+					<reportElement x="452" y="0" width="100" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$F{Commission-x_comm_cat}/100]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="119" y="0" width="133" height="20"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{Produit}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="20"/>
+	</title>
+	<pageHeader>
+		<band height="17">
+			<textField>
+				<reportElement x="0" y="0" width="284" height="17"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="255" height="17" printWhenGroupChanges="Users"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Nom_de_l_utilisateur-name2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22"/>
+	</columnHeader>
+	<detail>
+		<band/>
+	</detail>
+	<columnFooter>
+		<band height="51"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="50"/>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="50"/>
+	</lastPageFooter>
+	<summary>
+		<band height="50"/>
+	</summary>
+	<noData>
+		<band height="50"/>
+	</noData>
+</jasperReport>

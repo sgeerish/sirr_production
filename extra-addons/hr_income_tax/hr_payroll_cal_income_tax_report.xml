@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+	<data>
+	<report 
+          auto="True" 
+          id="income_tax_report" 
+          model="cal.income.tax" 
+          name="income.tax.report" 
+          rml="hr_payroll_cal_income_tax/report/income_tax_report.rml" 
+          string="Income Tax Report"/>
+          
+    <report 
+          auto="True" 
+          id="income_tax_declaration_report" 
+          model="cal.income.tax" 
+          name="income.tax.declaration.report" 
+          rml="hr_payroll_cal_income_tax/report/income_tax_declaration_report.rml" 
+          string="Declaration Form Report"/>
+     </data>
+</openerp>

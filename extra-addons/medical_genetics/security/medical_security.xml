@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data noupdate="0">
+
+	<record model='ir.ui.menu' id='medical_reporting_menu'>
+		<field name="groups_id" eval="[(6,0,[ref('group_medical_user')])]"/>
+	</record>
+
+</data>
+</openerp>

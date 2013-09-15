@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_voucher_type/report/__init__.py

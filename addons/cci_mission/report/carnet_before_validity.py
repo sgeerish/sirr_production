@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_mission/report/carnet_before_validity.py

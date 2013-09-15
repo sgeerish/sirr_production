@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<openerp>
+        <data>
+
+
+	<menuitem name="Inpatient Administration" id="medical_inpatient_menu" parent="medical.medical_menu" sequence="2"/>
+
+<!-- Patient hospitalization and bed registration (in-patient registration) -->
+
+
+
+	<record model="ir.ui.view" id="medical_inpatient_registration_view">
+		<field name="name">Inpatient Registration</field>
+		<field name="model">medical.inpatient.registration</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Inpatient Registration Information">
+				<notebook>
+				<page string="Administrative data">
+				<group colspan="4">
+					<group colspan="2">
+						<field name="name" required="1"></field>		
+						<field name="patient" required="1"></field>		
+					</group>
+					<group colspan="2">
+						<field name="bed" required="1"></field>
+					</group>	
+					<newline/>
+					
+					<group colspan="4">
+						<field name="hospitalization_date" required="1" ></field>
+						<field name="discharge_date" required="1"></field>
+						<field name="attending_physician"></field>
+						<field name="operating_physician"></field>
+					</group>					
+					<group colspan="4">					
+						<field name="admission_type" required="1"></field>
+						<field name="admission_reason"></field>
+						<newline/>
+						<field name="info" colspan="4"></field>
+					</group>
+				</group>
+				<newline/>
+				<group colspan="4">
+					<group colspan="2">					
+						<field name="state" readonly="1"></field>
+						<button name="registration_confirm" states="free" string="Confirm Registration" icon="gtk-execute" type="object"/>
+					</group>
+					<group colspan="2">					
+						<button name="registration_cancel" states="confirmed" string="Cancel Registration" icon="gtk-cancel" type="object"/>
+						<button name="registration_admission" states="confirmed" string="Patient Admission" icon="gtk-execute" type="object"/>
+						<button name="patient_discharge" states="hospitalized" string="Discharge Patient" icon="gtk-go-forward" type="object"/>					
+					</group>
+					
+				</group>
+				</page>
+				<page string="Care Plan">
+				<field name="nursing_plan"></field>
+				<newline/>
+				<field name="discharge_plan"></field>
+				</page>
+				</notebook>
+			</form>
+		</field>
+	</record>
+
+
+
+	<record model="ir.ui.view" id="medical_inpatient_registration_tree">
+		<field name="name">Patient Registration Info</field>
+		<field name="model">medical.inpatient.registration</field>
+		<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree colors="red:admission_type=='emergency';blue:admission_type=='maternity'" string='Inpatient Registration Info'>
+					<field name="name"></field>
+					<field name="patient"></field>
+	 				<field name="hospitalization_date"></field>
+					<field name="discharge_date"></field>
+					<field name="bed"></field>
+					<field name="admission_type"></field>
+					<field name="state"></field>
+				</tree>
+			</field>
+	</record>
+
+
+	<record id="view_medical_inpatient_registration_filter" model="ir.ui.view">
+		<field name="name">medical.inpatient.registration.select</field>
+		<field name="model">medical.inpatient.registration</field>
+		<field name="type">search</field>
+		<field name="arch" type="xml">
+			<search string="Search Hospitalizations">
+
+				<separator orientation="vertical"/>
+				    <field name="name" select="1"/>
+				    <field name="patient" select="1"/>
+				    <field name="hospitalization_date" select="1"/>
+				    <field name="admission_type" select="1"/>
+				    <field name="bed" select="1"/>
+				<newline/>
+
+			</search>
+		</field>
+	</record>
+
+	<record id="view_medical_inpatient" model="ir.ui.view">
+		<field name="name">medical.inpatient.calendar</field>
+		<field name="model">medical.inpatient.registration</field>
+		<field name="type">calendar</field>
+		<field name="arch" type="xml">
+			<calendar string="Hospitalizations" color="patient" date_start="hospitalization_date" date_stop="discharge_date">
+				<field name="bed"/>
+				<field name="patient"/>
+			</calendar>
+		</field>
+	</record>
+
+	<record model="ir.actions.act_window" id="medical_action_form_inpatient">
+		<field name="name">Patient Hospitalization Administration</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">medical.inpatient.registration</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form,calendar</field>
+
+		<field name="view_id" ref="medical_inpatient_registration_tree"/>
+	</record>
+
+	<menuitem action="medical_action_form_inpatient" id="medical_conf_inpatient_add" parent="medical_inpatient_menu" sequence="1"/>
+
+
+<!-- Add the patient hospitalization registration code to the appointment view -->
+
+                <record model="ir.ui.view" id="view_partner_form">
+                        <field name="name">medical.appointment</field>
+                        <field name="model">medical.appointment</field>
+                        <field name="inherit_id" ref="medical.medical_appointment_view" />
+                        <field name="type">form</field>
+
+                        <field name="arch" type="xml">
+                               	<field name="institution" position="after">
+	                               	<field name="inpatient_registration_code"></field>
+                               	</field>
+	
+	                </field>
+               </record>
+
+
+
+
+<!-- Add the patient Hospitalization Status to the partner form -->
+
+		<record id="view_patient_form" model="ir.ui.view">
+			<field name="name">medical.patient.form</field>
+			<field name="model">medical.patient</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="medical.medical_patient_view"/>
+			<field name="arch" type="xml">
+				<field name="primary_care_doctor" position="after">
+				<newline/>
+                        	<field name="patient_status" attrs="{'invisible':[('deceased','=',True)]}"/>
+				</field>
+			</field>
+		</record>
+
+<!-- Add the patient Hospitalization Status to the tree -->
+
+		<record id="medical_patient_extd_tree" model="ir.ui.view">
+			<field name="name">Patient List</field>
+			<field name="model">medical.patient</field>
+			<field name="type">tree</field>
+			<field name="inherit_id" ref="medical.medical_patient_tree"/>
+			<field name="arch" type="xml">
+				<field name="patient_id" position="after">
+                        	<field name="patient_status" />
+				</field>
+			</field>
+		</record>
+
+
+	</data>
+</openerp>
+
+

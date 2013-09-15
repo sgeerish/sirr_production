@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_module_merge/wizard/base_module_merge.py

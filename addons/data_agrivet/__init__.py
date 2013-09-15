@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/data_agrivet/__init__.py

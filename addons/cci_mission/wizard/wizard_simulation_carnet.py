@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_mission/wizard/wizard_simulation_carnet.py

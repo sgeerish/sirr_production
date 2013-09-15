@@ -1,0 +1,69 @@
+<openerp>
+  <data>
+     <record model="workflow" id="doc_pf_wrkflow"> 
+         <field name="name">Doc Pf Workflow</field>
+         <field name="osv">Doc pf</field>
+         <field name="on_create">True</field>
+     </record>
+     
+     
+     <record model="workflow.activity" id="doc_pf_draft">
+          <field name="wkf_id" ref="tax_wrkflow"/>
+          <field name="flow_start">True</field>
+          <field name="name">Draft</field>
+          <field name="kind">function</field>
+          <field name="action">tax_draft()</field>
+    </record>
+    
+    <record model="workflow.activity" id="doc_pf_apply">
+          <field name="wkf_id" ref="tax_wrkflow"/>
+          <field name="flow_stop">True</field>
+          <field name="name">Under Varification</field>
+          <field name="kind">function</field>
+          <field name="action">apply_varification()</field>
+    </record>
+    
+    <record model="workflow.activity" id="doc_pf_cancel">
+          <field name="wkf_id" ref="tax_wrkflow"/>
+          <field name="name">Cancel</field>
+          <field name="kind">function</field>
+          <field name="action">proof_canceled()</field>
+    </record>  
+
+    <record model="workflow.activity" id="doc_pf_done">
+          <field name="wkf_id" ref="tax_wrkflow"/>
+          <field name="flow_stop">True</field>
+          <field name="name">Varified</field>
+          <field name="kind">function</field>
+          <field name="action">proof_varified()</field>
+    </record>
+    
+    
+    
+    <record model="workflow.transition" id="doc_pf_draft_apply_state">
+        <field name="act_from" ref="doc_pf_draft"/>
+        <field name="act_to" ref="doc_pf_apply"/>
+        <field name="signal">button_doc_pf_apply</field>
+   </record> 
+   
+   <record model="workflow.transition" id="doc_pf_apply_cancel_state">
+        <field name="act_from" ref="doc_pf_apply"/>
+        <field name="act_to" ref="doc_pf_cancel"/>
+        <field name="signal">button_doc_pf_cancel</field>
+   </record>
+
+   <record model="workflow.transition" id="doc_pf_apply_done_state">
+        <field name="act_from" ref="doc_pf_apply"/>
+        <field name="act_to" ref="doc_pf_done"/>
+        <field name="signal">button_doc_pf_done</field>
+   </record>
+   
+   <record model="workflow.transition" id="doc_pf_cancel_reopen_state">
+        <field name="act_from" ref="doc_pf_cancel"/>
+        <field name="act_to" ref="doc_pf_draft"/>
+        <field name="signal">button_doc_pf_reopen</field>
+   </record>
+        
+  </data>
+
+</openerp> 

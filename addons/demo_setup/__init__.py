@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/demo_setup/__init__.py

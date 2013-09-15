@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_reporting/report/__init__.py

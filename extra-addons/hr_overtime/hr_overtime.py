@@ -1,0 +1,109 @@
+from osv import fields, osv
+import time
+import datetime
+
+class hr_employee(osv.osv):
+    _inherit = "hr.employee"
+    def _get_cur_function_id(self, cr, uid, ids, field_name, arg, context):
+        res={}
+        att_obj=self.pool.get('hr.attendance')
+        for id in ids:
+            att=att_obj.search(cr,uid,[('employee_id','=',id)])
+            if len(att)>0:
+                res[id]=att_obj.browse(cr,uid,att)[0].name
+            else:
+                res[id]=False
+        return res
+    _columns = {
+        'dernier_pointage' : fields.function(
+            _get_cur_function_id,
+            type='datetime',
+            method=True,
+            string='Dernier Pointage'),
+        'allow_overtime':fields.boolean('Heures supplementaire '),
+	'product_id':fields.many2one('product.product','Produit'),
+    }
+hr_employee()
+
+class hr_overtime(osv.osv):
+    _name = "hr.overtime"
+    _description = "Calcul Heures Supplementaires"
+    
+    _columns={
+        'name':fields.many2one('hr.employee','Employee'),
+        'period_id':fields.many2one('account.period','Period'),
+        'valid_user_id':fields.many2one('res.users','Validation'),
+        'heures':fields.float('Heures supplementaires'),
+        'hs_normal':fields.float('HS Normal'),
+        'hs_extra':fields.float('HS Extra'),
+        'state': fields.selection([
+            ('draft', 'Demande'),
+            ('valid', 'Valide'),
+            ('refused', 'Refuse'),
+            ], 'Etat', readonly=True, select=True)
+        }
+hr_overtime()
+
+class hr_overtime_wiz(osv.osv_memory):
+    _name='hr.overtime.wiz'
+    _columns={
+        'name':fields.many2one('account.period','Periode')
+	}
+    def calculate_hs(self,cr,uid,ids,context=None):
+        emp_obj=self.pool.get('hr.employee')
+        att_obj=self.pool.get('hr.attendance')
+        overtime_obj=self.pool.get('hr.overtime')
+        overtimes=[]
+        now=datetime.datetime.now()
+        days=6
+        monday=1
+        days=now.isoweekday()+days
+        start=str((datetime.datetime.now()-datetime.timedelta(days=days)).date())
+        end=str(datetime.datetime.now().date())
+        employees=emp_obj.search(cr,uid,[('allow_overtime','=',True)])
+        print 'employees',employees
+        absent_employees=[]
+        for wiz in self.browse(cr,uid,ids):
+            period_id=wiz.name.id
+        for employee in employees:
+            atts=att_obj.search(cr,uid,[('employee_id','=',employee),('name','>=',start+' 01:00:00'),('name','<',end+' 23:59:59')])
+            atts=att_obj.browse(cr,uid,atts)
+            dates=[]
+            hours=0
+            for att in atts:
+                if att.day not in dates:
+                    dates.append(att.day)
+            for date in dates:
+                atts=att_obj.search(cr,uid,[('employee_id','=',employee),('name','>=',date+' 01:00:00'),('name','<',date+' 23:59:59')])
+                atts=att_obj.browse(cr,uid,atts)
+                end_time=False
+                for att in atts:	
+                    if len(atts)>1:
+                        if end_time:
+                            start_time=att.name
+                        else:
+                            end_time=att.name
+                if len(atts)>1:
+                    end_time=datetime.datetime.strptime(end_time,'%Y-%m-%d %H:%M:%S')
+                    start_time=datetime.datetime.strptime(start_time,'%Y-%m-%d %H:%M:%S')
+                    hour=(end_time-start_time).seconds/(60*60)
+                    if hour>7:
+                        hour-=1
+                    hours+=hour
+            hours=hours-40
+            overtime={'name':employee,'period_id':period_id,'heures':hours,'hs_normal':(min(8,hours)),'hs_extra':max(0,hours-8),'state':'valid'}
+            overtimes.append(overtime_obj.create(cr,uid,overtime))
+#        raise osv.except_osv('Lecture & Calcul Heures Supplementaires','Termine')
+        return {
+            'domain': "[('id','in', [" + ','.join(map(str, overtimes)) + "])]",
+            'name': 'Heures Supplementaires Calcule',
+            'view_type': 'form',
+            'view_mode': 'tree,form',
+            'res_model': 'hr.overtime',
+            'view_id': False,
+            'type': 'ir.actions.act_window'
+
+        #return{'type': 'ir.actions.act_window_close',
+     }  
+
+hr_overtime_wiz()

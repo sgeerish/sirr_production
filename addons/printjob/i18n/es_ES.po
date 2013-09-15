@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/printjob/i18n/es_ES.po

@@ -1,0 +1,5 @@
+".id","id","pricelist_id.id","name","warehouse_id/id","payment_default_id"
+1,"sale.shop",1,"Tamatave","stock.warehouse0","Comptant"
+2,"sale.tana",1,"Tana","stock.warehouse0","Comptant"
+,"sale.antsirabe",1,"Antsirabe","stock.warehouse0","Comptant"
+,"sale.ivandry",1,"Ivandry","stock.warehouse0","Comptant"

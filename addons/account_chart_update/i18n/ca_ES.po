@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_chart_update/i18n/ca_ES.po

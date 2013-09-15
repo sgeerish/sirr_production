@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	<!-- Workflow definition -->
+
+    <record id="hr_aa_journal_wk" model="workflow">
+        <field name="name">hr.aa.journal.wrf</field>
+        <field name="osv">hr.aa.journal</field>
+        <field name="on_create">True</field>
+    </record>
+
+    <record model="workflow.activity" id="hr_aa_journal_act_draft">
+        <field name="wkf_id" ref="hr_aa_journal_wk"/>
+        <field name="flow_start">True</field>
+        <field name="name">draft</field>
+    </record>
+
+	<record model="workflow.activity" id="hr_aa_journal_act_confirm">
+		<field name="wkf_id" ref="hr_aa_journal_wk" />
+		<field name="name">confirm</field>
+		<field name="kind">function</field>
+		<field name="action">confirm()</field>
+		<field name="split_mode">OR</field>
+	</record>
+
+	<record model="workflow.activity" id="hr_aa_journal_act_unconfirm">
+		<field name="wkf_id" ref="hr_aa_journal_wk" />
+		<field name="name">unconfirm</field>
+		<field name="flow_stop">True</field>
+		<field name="kind">stopall</field>
+		<field name="action">unconfirm()</field>
+		<field name="join_mode">XOR</field>
+	</record>
+
+	<record model="workflow.transition" id="t1">
+		<field name="act_from" ref="hr_aa_journal_act_draft" />
+		<field name="act_to" ref="hr_aa_journal_act_confirm" />
+		<field name="signal">confirm</field>
+	</record>
+
+	<record model="workflow.transition" id="t2">
+		<field name="act_from" ref="hr_aa_journal_act_confirm" />
+		<field name="act_to" ref="hr_aa_journal_act_draft" />
+		<field name="signal">unconfirm</field>
+		<field name="role_id" ref="hr_attendance_analysis"/>
+	</record>
+    </data>
+</openerp>
+
+<!--
+     vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+     -->
+

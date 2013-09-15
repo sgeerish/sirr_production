@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl_interface/etl/specs/prototype2/proto_new.py

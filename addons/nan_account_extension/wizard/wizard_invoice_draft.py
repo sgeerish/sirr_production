@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/nan_account_extension/wizard/wizard_invoice_draft.py

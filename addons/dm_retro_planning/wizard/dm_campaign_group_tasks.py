@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_retro_planning/wizard/dm_campaign_group_tasks.py

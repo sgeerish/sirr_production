@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/comparison/website/erpComparator/erpcomparator/config/__init__.py

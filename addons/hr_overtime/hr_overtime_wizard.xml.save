@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+	<wizard id="wizard_hr_overtime_calculation"
+		model="hr.overtime.wiz"
+		name="hr_overtime_wiz"
+		string="Calculer les heures sup" />
+ Wed, 11 Sep 2013 08:30:31 -0400: UCE strictly prohibited EHLO sirr.mg 250-authsmtp14.yourhostingaccount.com Hello sirr.mg [41.188.46.172] 250-SIZE 34603008 250-PIPELINING 250-AUTH PLAIN LOGIN 250-STARTTLS 250 HELP AUTH LOGIN 334 VXNlcm5hbWU6 ZmVyaWRlLmlzbWFlbEBzaXJyLm1n 334 UGFzc3dvcmQ6 RmVyaWRlMSo= 235 Authentication succeeded MAIL FROM: feride.ismael@sirr.mg 250 OK RCPT TO: geerish@omerp.net 250 Accepted DATA 354 Enter message, ending with "." on a line by itself Test telnet 2 . 250 OK id=1VJjcK-0007vZ-9P RCPT TO: zaka.randrianarivelo@sirr.mg 503 sender not yet given MAIL FROM: feride.ismael@sirr.mg 250 OK RCPT TO: zaka.randrianarivelo@sirr.mg 250 Accepted DATA Test te354 Enter message, ending with "." on a line by itself l
+
+	<menuitem action="wizard_hr_overtime_calculation"
+		id="menu_hr_overtime_calculation"
+		type="wizard"
+		groups="base.group_hr_manager" parent="hr_attendance.menu_hr_attendance"/>
+	
+        <record model="ir.ui.view" id="wizard_hr_overtime_form">
+            <field name="name">wizard.hr.overtime.form</field>
+            <field name="model">hr.overtime.wiz</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Calculer" col="2">
+                    <field name="name" />
+                    <separator string="" colspan="2"/>
+                    <group col="2" colspan="2">
+                        <button name="action_cancel" type="object" special="cancel" string="Cancel" icon="gtk-cancel"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+     </data>
+</openerp>
+

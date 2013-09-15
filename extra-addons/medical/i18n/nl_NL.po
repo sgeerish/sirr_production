@@ -1,0 +1,3651 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* medical
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-09-21 11:45:57+0000\n"
+"PO-Revision-Date: 2010-03-28 10:22:23+0000\n"
+"Last-Translator: Mark van Deursen <mark@neobis.nl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: medical
+#: field:medical.perinatal,name:0
+msgid "code"
+msgstr "BSN"
+
+#. module: medical
+#: help:medical.patient.evaluation,loc:0
+msgid "Level of Consciousness - on Glasgow Coma Scale :  1=coma - 15=normal"
+msgstr "Bewustzijnsniveau - op de Glasgow-comaschaal : 1=Coma - 1=Normaal"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.action_medical_pathology_category_form
+#: model:ir.actions.act_window,name:medical.action_medical_pathology_category_tree
+#: model:ir.ui.menu,name:medical.medical_conf_pathology_category
+#: model:ir.ui.menu,name:medical.medical_pathology_cat_struc
+#: view:medical.pathology.category:0
+msgid "Pathology categories"
+msgstr "Pathologie categorieën"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_specialty
+msgid "medical.specialty"
+msgstr "medical.specialty"
+
+#. module: medical
+#: help:medical.lab,requestor:0
+msgid "Doctor who requested the test"
+msgstr "Arts die opdracht geeft tot het uitvoeren van de test"
+
+#. module: medical
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Ongeldige naam van het model in de actie definitie."
+
+#. module: medical
+#: field:medical.lab.hemogram,lymphocytes:0
+msgid "Lymphocytes"
+msgstr "Lymfocyten"
+
+#. module: medical
+#: selection:medical.puerperium.monitor,lochia_amount:0
+msgid "abundant"
+msgstr "Overvloedig"
+
+#. module: medical
+#: help:medical.patient.disease,age:0
+msgid "Patient age at the moment of the diagnosis. Can be estimative"
+msgstr "Leeftijd van de patiënt op het moment van de diagnose. Kan worden een schatting zijn"
+
+#. module: medical
+#: field:medical.insurance,partner_id:0
+msgid "Owner"
+msgstr "Naam van de verzekerde"
+
+#. module: medical
+#: field:medical.patient.evaluation,mood:0
+msgid "Mood"
+msgstr "Stimmungslage"
+
+#. module: medical
+#: field:medical.perinatal.monitor,name:0
+#: field:medical.puerperium.monitor,name:0
+msgid "Internal code"
+msgstr "Interne Code"
+
+#. module: medical
+#: view:medical.lab:0
+#: view:medical.medicament:0
+#: view:medical.patient:0
+#: view:medical.patient.evaluation:0
+#: view:medical.physician:0
+#: view:medical.test:0
+msgid "Main Info"
+msgstr "Algemene Informatie"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_occupation
+msgid "Ocuppation / Job"
+msgstr "Beroep / Functie"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Other Family issues"
+msgstr "Andere Familiekwesties"
+
+#. module: medical
+#: field:medical.patient,gas:0
+msgid "Gas supply"
+msgstr "Gasaansluiting"
+
+#. module: medical
+#: selection:medical.patient,anticonceptive:0
+msgid "Skin Patch"
+msgstr "Pleister"
+
+#. module: medical
+#: field:medical.newborn,cephalic_perimeter:0
+msgid "Cephalic Perimeter"
+msgstr "Schedelomtrek"
+
+#. module: medical
+#: field:medical.perinatal.monitor,fetus_position:0
+msgid "Fetus Position"
+msgstr "Foetale Positie"
+
+#. module: medical
+#: field:medical.lab,test:0
+msgid "Test type"
+msgstr "Test type"
+
+#. module: medical
+#: view:medical.lab:0
+msgid "Laboratory Test"
+msgstr "Laboratoriumtest"
+
+#. module: medical
+#: help:medical.patient,works_at_home:0
+msgid "Check if the patient works at his / her house"
+msgstr "De patiënt werkt vanuit huis."
+
+#. module: medical
+#: help:medical.lab.hepatogram,bilirubin_bc:0
+msgid "Direct / Conjugated Bilirubin, (mg/dl)"
+msgstr "Direct / Geconjugeerd bilirubine, (mg/dl)"
+
+#. module: medical
+#: field:medical.lab,requestor:0
+#: view:medical.physician:0
+msgid "Physician"
+msgstr "Arts / Medicus"
+
+#. module: medical
+#: help:medical.patient.evaluation,loc_motor:0
+msgid "Eyes Response - Glasgow Coma Scale - 1 to 6"
+msgstr "Motorische reactie op de Glasgow-comaschaal - 1 tot 6"
+
+#. module: medical
+#: help:medical.patient.evaluation,loc_eyes:0
+msgid "Eyes Response - Glasgow Coma Scale - 1 to 4"
+msgstr "Oogreactie op de Glasgow-comaschaal - 1 tot 4"
+
+#. module: medical
+#: help:medical.patient.evaluation,loc_verbal:0
+msgid "Eyes Response - Glasgow Coma Scale - 1 to 5"
+msgstr "Verbale reactie op de Glasgow-comaschaal - 1 tot 5"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Obstetric"
+msgstr "Verloskundig"
+
+#. module: medical
+#: selection:medical.patient,anticonceptive:0
+msgid "Pill / Minipill"
+msgstr "Pil"
+
+#. module: medical
+#: view:medical.puerperium.monitor:0
+msgid "Lochia"
+msgstr "Lochia"
+
+#. module: medical
+#: help:medical.lab.hepatogram,triglycerides:0
+msgid "Triglycerides, (mg/dl)"
+msgstr "Triglyceriden, (mg/dl)"
+
+#. module: medical
+#: selection:medical.patient,sexual_partners:0
+msgid "Monogamous"
+msgstr "Monogaam"
+
+#. module: medical
+#: view:medical.medicament:0
+msgid "medicament"
+msgstr "Medicatie"
+
+#. module: medical
+#: field:medical.patient,works_at_home:0
+msgid "Works at home"
+msgstr "Werkt thuis"
+
+#. module: medical
+#: field:medical.patient,salt:0
+msgid "Salt"
+msgstr "Zout"
+
+#. module: medical
+#: field:medical.patient.evaluation,derived_from:0
+msgid "Derived from Doctor"
+msgstr "Doorverwezen door arts"
+
+#. module: medical
+#: field:medical.lab.hemogram,reticulocytes:0
+msgid "Reticulocytes"
+msgstr "Reticulocyten"
+
+
+#. module: medical
+#: help:res.partner,is_doctor:0
+msgid "Check if the partner is a doctor"
+msgstr "De relatie is een arts"
+
+#. module: medical
+#: constraint:medical.pathology.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "Fout ! Het is niet mogelijk om recursieve categorieën te maken."
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Basic Data"
+msgstr "Algemene Informatie"
+
+#. module: medical
+#: field:medical.perinatal,newborn:0
+msgid "Newborn info"
+msgstr "Pasgeborenen Info"
+
+#. module: medical
+#: field:medical.lab.hepatogram,bilirubin_bc:0
+msgid "Direct Bilirubin"
+msgstr "Direct Bilirubine"
+
+#. module: medical
+#: view:medical.occupation:0
+#: field:medical.occupation,name:0
+#: field:medical.patient,occupation:0
+msgid "Occupation"
+msgstr "Beroep"
+
+#. module: medical
+#: field:medical.lab.hemogram,monocytes:0
+msgid "Monocytes"
+msgstr "Monocyten"
+
+#. module: medical
+#: help:medical.family.diseases,relative:0
+msgid "First degree = sibblings, mother and father; second degree = Uncles, nephews and Nieces; third degree = Grandparents and cousins"
+msgstr "Eerste graad = broers en zussen, moeder en vader, in de tweede graad = Ooms, neven en nichten; derde graad = Grootouders en neven en nichten"
+
+#. module: medical
+#: view:medical.physician:0
+msgid "Physician Information"
+msgstr "Arts Informatie"
+
+#. module: medical
+#: selection:medical.drugs_recreational,addiction_level:0
+#: selection:medical.drugs_recreational,toxicity:0
+#: selection:medical.patient,anticonceptive:0
+#: selection:medical.patient,education:0
+#: selection:medical.patient,fam_apgar_affection:0
+#: selection:medical.patient,fam_apgar_decisions:0
+#: selection:medical.patient,fam_apgar_discussion:0
+#: selection:medical.patient,fam_apgar_help:0
+#: selection:medical.patient,fam_apgar_timesharing:0
+msgid "None"
+msgstr "Geen"
+
+#. module: medical
+#: help:medical.patient,fam_apgar_timesharing:0
+msgid "Is the patient satisfied with the level of time that they spend together ?"
+msgstr "Is de patiënt tevreden met de hoeveelheid tijd die wordt doorgebracht met de familie?"
+
+#. module: medical
+#: selection:medical.family.diseases,relative:0
+msgid "Grandmother"
+msgstr "Grootmoeder"
+
+#. module: medical
+#: selection:medical.insurance,type:0
+msgid "State"
+msgstr "Status"
+
+#. module: medical
+#: help:medical.lab.hepatogram,alt:0
+msgid "Alanine Transferase / GPT, (IU/L)"
+msgstr "Alani aminotransferase / GPT (IE/L)"
+
+#. module: medical
+#: view:medical.lab.hepatogram:0
+msgid "Lipids"
+msgstr "Lipiden"
+
+
+#. module: medical
+#: selection:medical.perinatal,start_labor_mode:0
+msgid "Induced"
+msgstr "Induceert"
+
+#. module: medical
+#: field:medical.medicament,therapeutic_action:0
+msgid "Therapeutic effect"
+msgstr "Therapeutisch effect"
+
+#. module: medical
+#: selection:medical.perinatal,fetus_presentation:0
+#: selection:medical.perinatal.monitor,fetus_position:0
+msgid "Complete Breech"
+msgstr "Stuitligging"
+
+#. module: medical
+#: field:medical.appointment,patient:0
+#: field:medical.lab,patient:0
+#: view:medical.patient:0
+#: field:medical.patient,name:0
+#: view:medical.patient.evaluation:0
+#: field:res.partner,is_patient:0
+#: field:res.partner.address,relative_id:0
+msgid "Patient"
+msgstr "Patiënt"
+
+#. module: medical
+#: view:medical.lab.hemogram:0
+msgid "Hemostasis"
+msgstr "Hemostase"
+
+#. module: medical
+#: field:medical.lab,date_analysis:0
+msgid "Date of the Analysis"
+msgstr "Analysedatum"
+
+#. module: medical
+#: field:medical.family.diseases,x_or_y:0
+msgid "Maternal/Paternal"
+msgstr "Moederlijk/Vaderlijk"
+
+#. module: medical
+#: selection:medical.patient,rh:0
+msgid "+"
+msgstr "+"
+
+#. module: medical
+#: help:medical.lab.hemogram,bt:0
+msgid "Bleeding time in minutes"
+msgstr "Bloedtijd in minunten"
+
+#. module: medical
+#: help:medical.genetic.risk,chromosome:0
+msgid "Name of the affected chromosome"
+msgstr "Naam van het getroffen chromosoom"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_conf_pathology_categories
+msgid "Categories"
+msgstr "Categorieën"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_operational_area
+msgid "medical.operational_area"
+msgstr "medical.operational_area"
+
+#. module: medical
+#: field:medical.patient.disease,diagnosed_date:0
+msgid "Date of Diagnosis"
+msgstr "Datum diagnose"
+
+#. module: medical
+#: help:medical.genetic.risk,location:0
+msgid "Locus of the chromosome"
+msgstr "Locatie van het chromosoom"
+
+#. module: medical
+#: field:medical.pathology.category,parent_id:0
+msgid "Parent Category"
+msgstr "Bovenliggende Categorie"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Periodic control"
+msgstr "Periodiek onderzoek"
+
+#. module: medical
+#: view:medical.patient:0
+#: view:medical.perinatal:0
+msgid "Perinatal"
+msgstr "Perinataal"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_patients_menu
+msgid "Patients"
+msgstr "Patiënten"
+
+#. module: medical
+#: view:medical.medicament:0
+msgid "Dosage"
+msgstr "Dosering"
+
+#. module: medical
+#: selection:medical.genetic.risk,dominance:0
+msgid "recessive"
+msgstr "recessief"
+
+#. module: medical
+#: help:medical.patient,relative_in_prison:0
+msgid "Check if someone from the nuclear family - parents / sibblings  is or has been in prison"
+msgstr "Een lid van de familie (ouders of broers en zussen) is of was in de gevangenis"
+
+#. module: medical
+#: field:medical.lab.hemogram,eosinophils_pct:0
+msgid "% Eosinophils"
+msgstr "% Eosinofielen"
+
+#. module: medical
+#: field:medical.patient,menopause:0
+msgid "Menopause age"
+msgstr "Leeftijd menopauze"
+
+#. module: medical
+#: field:res.partner,lastname:0
+#: help:res.partner,lastname:0
+msgid "Last Name"
+msgstr "Geboortenaam"
+
+#. module: medical
+#: view:medical.medicament:0
+#: field:medical.medicament,adverse_reaction:0
+msgid "Adverse Reactions"
+msgstr "Bijwerkingen"
+
+#. module: medical
+#: field:medical.lab.hemogram,inr:0
+msgid "INR"
+msgstr "INR"
+
+#. module: medical
+#: view:medical.operational_sector:0
+msgid "Region Operational Sector"
+msgstr "Te behandelen gebied"
+
+#. module: medical
+#: help:medical.medicament,presentation:0
+msgid "Packaging"
+msgstr "Verpakking"
+
+#. module: medical
+#: field:medical.family_code,operational_sector:0
+msgid "Operational Sector"
+msgstr "Inzet gebied"
+
+#. module: medical
+#: help:medical.lab.hemogram,basophils:0
+msgid "Basophils, x10^9/L"
+msgstr "Basofiele granulocyten, x10^9/l"
+
+#. module: medical
+#: field:medical.pathology.category,child_ids:0
+msgid "Childs Category"
+msgstr "Onderliggende categorie"
+
+#. module: medical
+#: field:medical.perinatal,monitoring:0
+msgid "Monitors"
+msgstr "Monitoring"
+
+#. module: medical
+#: view:medical.lab.hemogram:0
+msgid "Red Cells"
+msgstr "Rode bloedlichaampjes"
+
+#. module: medical
+#: field:medical.insurance,category:0
+msgid "Category"
+msgstr "Categorie"
+
+#. module: medical
+#: field:medical.patient,alcohol_liquor_number:0
+msgid "Liquor / day"
+msgstr "Sterkedrank / dag"
+
+#. module: medical
+#: help:medical.patient,deaths_1st_week:0
+msgid "Number of babies that die in the first week"
+msgstr "Aantal baby's die gestorven zijn in de eerste week"
+
+#. module: medical
+#: selection:medical.puerperium.monitor,lochia_color:0
+msgid "serosa"
+msgstr "Serosa"
+
+#. module: medical
+#: field:medical.patient,fam_apgar_decisions:0
+msgid "Family decision making"
+msgstr "Besluitvorming familie"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_tree_family_code
+#: model:ir.ui.menu,name:medical.medical_conf_edit_family_code
+msgid "Family Codes"
+msgstr "Familie Codes"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Pre-arraganged appointment"
+msgstr "Eerdere onderzoeken"
+
+#. module: medical
+#: field:medical.vaccination,dose:0
+msgid "Dose Number"
+msgstr "Aantal doseringen"
+
+#. module: medical
+#: help:medical.lab.hemogram,mch:0
+msgid "Mean Cell Hemoglobin, fL"
+msgstr "Gemiddelde hemoglobine inhoud van de cellen"
+
+#. module: medical
+#: field:medical.patient,evaluation_ids:0
+msgid "Evaluation"
+msgstr "Evaluatie"
+
+#. module: medical
+#: field:medical.insurance,member_exp:0
+msgid "Expiration Date"
+msgstr "Vervaldatum"
+
+#. module: medical
+#: field:medical.patient,menarche:0
+msgid "Menarche age"
+msgstr "Leeftijd Menarche"
+
+#. module: medical
+#: help:medical.specialty,code:0
+msgid "ie, ADP"
+msgstr "Bijv. , ADP"
+
+#. module: medical
+#: field:medical.patient,drugs:0
+msgid "Drugs"
+msgstr "Drugs"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_lab_hepatogram
+#: view:medical.lab.hepatogram:0
+msgid "Hepatogram"
+msgstr "Hepatogram"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_appointment
+#: model:ir.ui.menu,name:medical.medical_appointment_menu
+#: model:ir.ui.menu,name:medical.medical_conf_appointment_add
+#: view:medical.appointment:0
+msgid "Appointments"
+msgstr "Afspraken"
+
+#. module: medical
+#: field:medical.patient,abortions:0
+msgid "Abortions"
+msgstr "Abortussen"
+
+#. module: medical
+#: selection:medical.patient,housing:0
+msgid "Roomy and excellent sanitary conditions"
+msgstr "Ruim en uitstekende sanitaire voorzieningen"
+
+#. module: medical
+#: field:medical.patient,sewers:0
+msgid "Sanitary Sewers"
+msgstr "Rioleringen"
+
+#. module: medical
+#: view:medical.family_code:0
+msgid "Family Members"
+msgstr "Familieleden"
+
+#. module: medical
+#: help:medical.lab.hemogram,bneutrophils:0
+msgid "Band Neutrophils, x10^9/L"
+msgstr "Band Neutrofielen, x10^9/l"
+
+#. module: medical
+#: help:medical.lab.hemogram,hbg:0
+msgid "Glycosylated Hemoglobin , % of Hb"
+msgstr "Geglyceerd hemoglobine (HbA1c), % von Hb"
+
+#. module: medical
+#: field:medical.pathology,code:0
+msgid "ICD-10 Code"
+msgstr "ICD-10 Code"
+
+#. module: medical
+#: selection:medical.surgery,classification:0
+msgid "Required"
+msgstr "Verplicht"
+
+#. module: medical
+#: field:medical.newborn,reanimation_mask:0
+msgid "Mask"
+msgstr "Reanimatiemasker"
+
+#. module: medical
+#: selection:medical.family.diseases,relative:0
+msgid "Grandfather"
+msgstr "Grootvader"
+
+#. module: medical
+#: field:medical.pathology,protein:0
+msgid "Protein involved"
+msgstr "proteïnen transfers"
+
+#. module: medical
+#: view:medical.perinatal.monitor:0
+msgid "Complications"
+msgstr "Complicaties"
+
+#. module: medical
+#: help:medical.perinatal,admission_date:0
+msgid "Date when she was admitted to give birth"
+msgstr "Opnamedatum voor de geboorte"
+
+#. module: medical
+#: field:medical.patient.evaluation,evaluation_type:0
+msgid "Evaluation Type"
+msgstr "Evaluatie Type"
+
+#. module: medical
+#: view:medical.procedure:0
+msgid "Procedure"
+msgstr "Procedure"
+
+#. module: medical
+#: selection:medical.patient,fam_apgar_affection:0
+#: selection:medical.patient,fam_apgar_decisions:0
+#: selection:medical.patient,fam_apgar_discussion:0
+#: selection:medical.patient,fam_apgar_help:0
+#: selection:medical.patient,fam_apgar_timesharing:0
+msgid "Very much"
+msgstr "Zeer veel"
+
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_tree_operational_area
+#: model:ir.ui.menu,name:medical.medical_conf_edit_operational_area_tree
+#: model:ir.ui.menu,name:medical.medical_conf_operational_areas
+msgid "Operational Areas"
+msgstr "Behandelgebieden"
+
+#. module: medical
+#: help:medical.genetic.risk,info:0
+#: help:medical.pathology,protein:0
+msgid "Name of the protein(s) affected"
+msgstr "Beschrijving van de getroffen proteïnen:"
+
+#. module: medical
+#: selection:medical.patient,sexual_partners:0
+msgid "Poligamous"
+msgstr "Polygaam"
+
+#. module: medical
+#: field:medical.patient,housing:0
+msgid "Housing conditions"
+msgstr "Woonsituatie"
+
+#. module: medical
+#: field:medical.patient,marital_status:0
+msgid "Marital Status"
+msgstr "Burgelijkestaat"
+
+#. module: medical
+#: help:medical.lab,patient:0
+#: help:medical.patient,name:0
+#: field:medical.patient.evaluation,name:0
+#: help:res.partner.address,relative_id:0
+msgid "Patient ID"
+msgstr "Patient ID"
+
+#. module: medical
+#: selection:medical.family.diseases,relative:0
+msgid "Nephew"
+msgstr "Neef"
+
+#. module: medical
+#: help:medical.physician,code:0
+msgid "MD License ID"
+msgstr "BIG registratie nummer"
+
+
+#. module: medical
+#: view:medical.ethnicity:0
+msgid "Ethnicity"
+msgstr "Etniciteit"
+
+#. module: medical
+#: view:medical.medicament:0
+#: field:medical.medicament,storage:0
+msgid "Storage Conditions"
+msgstr "Bewaarcondities"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Sexty. and STDs"
+msgstr "Sexualiteit en SOA's"
+
+#. module: medical
+#: selection:medical.puerperium.monitor,lochia_color:0
+msgid "alba"
+msgstr "alba"
+
+#. module: medical
+#: field:medical.lab,date_requested:0
+msgid "Date requested"
+msgstr "Aanvraagdatum"
+
+#. module: medical
+#: field:medical.lab.hemogram,lymphocytes_pct:0
+msgid "% Lymphocytes"
+msgstr "% Lymfocyten"
+
+#. module: medical
+#: view:medical.lab:0
+#: help:medical.lab,test:0
+#: view:medical.lab.hemogram:0
+#: view:medical.test:0
+msgid "Lab test type"
+msgstr "Lab test type"
+
+#. module: medical
+#: help:medical.patient,hostile_area:0
+msgid "Check this box if the patient lives in a zone of high hostility (eg, war)"
+msgstr "De patiënt woont in een zeer vijandige omgeving (bijvoorbeeld oorlog)"
+
+#. module: medical
+#: field:medical.patient,perinatal:0
+#: view:medical.perinatal:0
+msgid "Perinatal Info"
+msgstr "Perinatale Informatie"
+
+#. module: medical
+#: view:medical.medicament:0
+#: field:medical.medicament,composition:0
+msgid "Composition"
+msgstr "Samenstelling"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_tree_medicament
+#: model:ir.ui.menu,name:medical.medical_edit_medicament
+#: field:medical.patient,medicament_ids:0
+msgid "Medicaments"
+msgstr "Medicamenten"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_perinatal
+msgid "perinatal information"
+msgstr "Perinatale Informatie"
+
+#. module: medical
+#: help:res.partner,is_patient:0
+msgid "Check if the partner is a patient"
+msgstr "De relatie is een patiënt"
+
+#. module: medical
+#: field:medical.patient.evaluation,prescriptions:0
+msgid "Prescriptions"
+msgstr "Recepten"
+
+#. module: medical
+#: selection:medical.appointment,urgency:0
+#: selection:medical.surgery,classification:0
+msgid "Urgent"
+msgstr "Dringend"
+
+#. module: medical
+#: help:medical.perinatal.monitor,name:0
+msgid "Institution case record"
+msgstr "Behandeldossier"
+
+#. module: medical
+#: field:medical.newborn,dismissed:0
+#: field:medical.perinatal,dismissed:0
+msgid "Dismissed from hospital"
+msgstr "Ontslagen uit het ziekenhuis"
+
+#. module: medical
+#: selection:medical.insurance,type:0
+msgid "Labor Union / Syndical"
+msgstr "Collectief"
+
+#. module: medical
+#: field:medical.patient,sexual_abuse:0
+msgid "Sexual abuse"
+msgstr "Seksueel misbruik"
+
+#. module: medical
+#: field:product.product,is_vaccine:0
+msgid "Vaccine"
+msgstr "Vaccin"
+
+#. module: medical
+#: selection:medical.patient,blood_type:0
+msgid "A"
+msgstr "A"
+
+#. module: medical
+#: help:medical.patient,eats_alone:0
+msgid "Check this box if the patient eats by him / herself."
+msgstr "De patiënt eet alleen."
+
+#. module: medical
+#: field:medical.newborn,birth_date:0
+#: field:medical.patient,dob:0
+msgid "Date of Birth"
+msgstr "Geboortedatum"
+
+#. module: medical
+#: field:medical.family.diseases,name:0
+#: view:medical.patient.disease:0
+#: help:medical.patient.disease,name:0
+msgid "Disease"
+msgstr "Aandoening"
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "improving"
+msgstr "verbeterd"
+
+#. module: medical
+#: selection:medical.patient,anticonceptive:0
+msgid "Intra-uterine device"
+msgstr "Spiraal (IUD)"
+
+#. module: medical
+#: help:medical.test,code:0
+msgid "Short name - code for the test"
+msgstr "Verkorte naam - code voor de test"
+
+#. module: medical
+#: field:medical.patient,cod:0
+msgid "Cause of Death"
+msgstr "Doodsoorzaak"
+
+#. module: medical
+#: field:medical.patient,fam_apgar_affection:0
+msgid "Family affection"
+msgstr "Familie genegenheid"
+
+#. module: medical
+#: field:medical.lab.hemogram,hb:0
+msgid "Hemoglobin"
+msgstr "Hemoglobine"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_genetic_risks
+#: model:ir.model,name:medical.model_medical_genetic_risk
+#: model:ir.ui.menu,name:medical.medical_conf_genetic_risks
+#: view:medical.genetic.risk:0
+#: view:medical.patient:0
+#: field:medical.patient,genetic_risks:0
+msgid "Genetic Risks"
+msgstr "Genetische risico's"
+
+#. module: medical
+#: field:medical.lab,results:0
+msgid "Results"
+msgstr "Uitslagen"
+
+#. module: medical
+#: selection:medical.patient,ses:0
+msgid "Middle"
+msgstr "Middelmatig"
+
+#. module: medical
+#: field:medical.appointment,urgency:0
+msgid "Urgency Level"
+msgstr "Urgentie niveau"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_patient
+msgid "Patient related information"
+msgstr "Patiënt gerelateerde informatie"
+
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_vaccination
+msgid "medical.vaccination"
+msgstr "medical.vaccination"
+
+#. module: medical
+#: help:medical.operational_sector,name:0
+msgid "Region included in an operational area"
+msgstr "Regio opgenomen in een operatieve omgeving"
+
+#. module: medical
+#: selection:medical.patient,education:0
+msgid "Primary School"
+msgstr "Basisschool"
+
+#. module: medical
+#: view:medical.perinatal:0
+msgid "Newborn"
+msgstr "Pasgeborenen"
+
+#. module: medical
+#: field:medical.newborn,test_toxo:0
+msgid "Toxoplasmosis"
+msgstr "Toxoplasmose"
+
+#. module: medical
+#: help:medical.patient,full_term:0
+msgid "Full term pregnancies"
+msgstr "à terme periodes"
+
+#. module: medical
+#: help:medical.appointment,patient:0
+msgid "Patient Name"
+msgstr "Patiënt"
+
+#. module: medical
+#: selection:medical.patient,anticonceptive:0
+msgid "Vasectomy"
+msgstr "Vasectomie"
+
+#. module: medical
+#: help:medical.newborn,died_being_transferred:0
+msgid "The baby died being transferred to another health institution"
+msgstr "De baby stierf tijdens het overbrengen naar een andere zorginstelling"
+
+#. module: medical
+#: selection:medical.patient,anticonceptive:0
+msgid "Withdrawal method"
+msgstr "Coïtus interruptus"
+
+#. module: medical
+#: field:medical.patient,ses_notes:0
+#: field:medical.physician,info:0
+msgid "Extra info"
+msgstr "Extra Info"
+
+#. module: medical
+#: field:medical.perinatal,fetus_presentation:0
+msgid "Fetus Presentation"
+msgstr "Foetushouding"
+
+#. module: medical
+#: field:medical.patient,income:0
+msgid "Income"
+msgstr "Inkomen"
+
+#. module: medical
+#: field:medical.patient,rh:0
+msgid "Rh"
+msgstr "RH"
+
+#. module: medical
+#: selection:medical.patient,ses:0
+msgid "Higher"
+msgstr "Hoger"
+
+#. module: medical
+#: selection:medical.family.diseases,x_or_y:0
+msgid "Maternal"
+msgstr "Moederlijk"
+
+#. module: medical
+#: help:medical.appointment,specialty:0
+msgid "Medical Specialty / Sector"
+msgstr "Medisch specialisme"
+
+#. module: medical
+#: view:medical.patient:0
+#: field:medical.patient,surgery:0
+msgid "Surgeries"
+msgstr "Operaties"
+
+#. module: medical
+#: field:medical.perinatal,puerperium_monitor:0
+msgid "Puerperium monitor"
+msgstr "Kraambed monitor"
+
+#. module: medical
+#: field:medical.appointment,specialty:0
+#: field:medical.physician,specialty:0
+msgid "Specialty"
+msgstr "Specialisme"
+
+#. module: medical
+#: field:medical.medicament,active_component:0
+msgid "active component"
+msgstr "Actief bestandsdeel"
+
+#. module: medical
+#: field:medical.newborn,apgar1:0
+msgid "APGAR 1st minute"
+msgstr "APGAR eerste Minuut"
+
+#. module: medical
+#: selection:medical.patient,housing:0
+msgid "Luxury and excellent sanitary conditions"
+msgstr "Luxe en uitstekende sanitaire voorzieningen"
+
+#. module: medical
+#: help:medical.surgery,age:0
+msgid "Patient age at the moment of the surgery. Can be estimative"
+msgstr "Leeftijd van de patiënt op het moment van opereren. Kan geschat worden"
+
+#. module: medical
+#: field:medical.puerperium.monitor,lochia_color:0
+msgid "Lochia color"
+msgstr "Lochia kleur"
+
+#. module: medical
+#: selection:medical.family.diseases,relative:0
+msgid "Cousin"
+msgstr "Neef"
+
+#. module: medical
+#: field:medical.surgery,surgeon:0
+msgid "Surgeon"
+msgstr "Chirurg"
+
+#. module: medical
+#: selection:medical.surgery,classification:0
+msgid "Optional"
+msgstr "Optioneel"
+
+#. module: medical
+#: field:medical.patient.evaluation,abdominal_circ:0
+msgid "Abdominal Circumference"
+msgstr "Abdominale omtrek"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_tree_lab
+#: model:ir.ui.menu,name:medical.medical_action_lab_tree
+msgid "Lab Tests"
+msgstr "Laboratoriumonderzoeken"
+
+#. module: medical
+#: field:medical.lab.hemogram,mch:0
+msgid "Mean Cell Hemoglobin"
+msgstr "Gemiddelde hemoglobinegehalte per erythrocyt"
+
+#. module: medical
+#: selection:medical.family.diseases,relative:0
+msgid "Sister"
+msgstr "Zus"
+
+#. module: medical
+#: help:medical.surgery,surgeon:0
+msgid "Surgeon who did the procedure"
+msgstr "Chirurg die de operatie heeft uitgevoerd"
+
+#. module: medical
+#: selection:medical.family.diseases,relative:0
+msgid "Brother"
+msgstr "Broer"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_operational_sector
+msgid "medical.operational_sector"
+msgstr "medical.operational_sector"
+
+#. module: medical
+#: field:medical.lab.hepatogram,cholesterol:0
+#: view:medical.patient.evaluation:0
+#: field:medical.patient.evaluation,cholesterol_total:0
+msgid "Cholesterol"
+msgstr "Cholesterol"
+
+#. module: medical
+#: field:medical.lab.hemogram,basophils:0
+msgid "Basophils"
+msgstr "Basofielen"
+
+#. module: medical
+#: field:medical.newborn,code:0
+msgid "Newborn ID"
+msgstr "Pasgeborene ID"
+
+#. module: medical
+#: help:medical.lab.hemogram,basophils_pct:0
+#: help:medical.lab.hemogram,bneutrophils_pct:0
+#: help:medical.lab.hemogram,eosinophils_pct:0
+#: help:medical.lab.hemogram,lymphocytes_pct:0
+#: help:medical.lab.hemogram,monocytes_pct:0
+#: help:medical.lab.hemogram,neutrophils_pct:0
+msgid "Relative value, percentage of the leukocitary formula"
+msgstr "Percentage leukocyten"
+
+#. module: medical
+#: field:medical.patient,water:0
+msgid "Running Water"
+msgstr "Stromend water"
+
+#. module: medical
+#: field:medical.lab.hepatogram,ast:0
+msgid "Aspartate Transferase"
+msgstr "Aspartaat-aminotransferase"
+
+#. module: medical
+#: field:medical.lab.hepatogram,alt:0
+msgid "Alanine Transferase"
+msgstr "Alanine-aminotransferase"
+
+#. module: medical
+#: field:medical.patient,telephone:0
+msgid "Telephone"
+msgstr "Telefoon"
+
+#. module: medical
+#: help:medical.surgery,pathology:0
+msgid "Base Condition / Reason"
+msgstr "Reden voor de ingreep"
+
+#. module: medical
+#: field:medical.patient.disease,pregnancy_warning:0
+msgid "Pregnancy warning"
+msgstr "Zwangerschaps waarschuwing"
+
+#. module: medical
+#: field:medical.patient.evaluation,loc_verbal:0
+msgid "Level of Consciousness - Verbal"
+msgstr "Niveau van bewustzijn - Verbaal"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_drugs_recreational
+#: model:ir.ui.menu,name:medical.medical_conf_drugs_recreational
+#: view:medical.drugs_recreational:0
+msgid "Recreational Drugs"
+msgstr "Recreatieve drugs"
+
+#. module: medical
+#: field:medical.newborn,name:0
+msgid "Baby's name"
+msgstr "Naam van de baby"
+
+#. module: medical
+#: help:medical.lab.hemogram,pt:0
+msgid "Prothrombin Time in seconds"
+msgstr "Protrombinetijd in seconden (PT)"
+
+
+#. module: medical
+#: field:medical.lab.hemogram,wbc:0
+msgid "White Blood Cells"
+msgstr "Witte bloedlichaampjes"
+
+
+#. module: medical
+#: field:medical.perinatal.monitor,frecuency:0
+msgid "Mother's Heart Frecuency"
+msgstr "Hartslag van de moeder"
+
+#. module: medical
+#: help:medical.test,name:0
+msgid "Test type, eg X-Ray, hemogram,biopsy..."
+msgstr "Testen operaties, bijvoorbeeld X-ray, bestellen bloedonderzoek, biopsie, enz."
+
+#. module: medical
+#: help:medical.patient,drugs:0
+msgid "Name of drugs that the patient consumes"
+msgstr "Namen van de drugs die de patiënt gebruikt"
+
+#. module: medical
+#: selection:medical.patient,ses:0
+msgid "Lower"
+msgstr "Lager"
+
+#. module: medical
+#: selection:medical.drugs_recreational,legal_status:0
+msgid "Legal"
+msgstr "Legaal"
+
+
+#. module: medical
+#: field:medical.newborn,reanimation_intubation:0
+msgid "Intubation"
+msgstr "Intubatie"
+
+#. module: medical
+#: selection:medical.family.diseases,relative:0
+msgid "Niece"
+msgstr "Nicht"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_evaluation
+msgid "Patient Evaluation"
+msgstr "Evaluatie patiënt"
+
+#. module: medical
+#: field:medical.lab.hepatogram,hdl:0
+#: field:medical.patient.evaluation,hdl:0
+msgid "HDL"
+msgstr "HDL"
+
+#. module: medical
+#: selection:medical.perinatal,fetus_presentation:0
+#: selection:medical.perinatal.monitor,fetus_position:0
+msgid "Footling Breech"
+msgstr "Voetligging"
+
+#. module: medical
+#: view:medical.perinatal:0
+msgid "Plancenta"
+msgstr "Placenta"
+
+#. module: medical
+#: field:medical.patient,domestic_violence:0
+msgid "Domestic violence"
+msgstr "Huiselijkgeweld"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_physician
+#: model:ir.ui.menu,name:medical.medical_conf_physician_add
+msgid "Physicians"
+msgstr "Medisch specialisten"
+
+#. module: medical
+#: field:medical.newborn,reanimation_oxygen:0
+msgid "Oxygen"
+msgstr "Zuurstof"
+
+#. module: medical
+#: help:medical.patient,fam_apgar_discussion:0
+msgid "Is the patient satisfied with the level talking over the problems as family ?"
+msgstr "Is de patiënt tevreden over het bespreken van de problemen met de familie?"
+
+#. module: medical
+#: field:medical.medicament,dosage:0
+msgid "Dosage Instructions"
+msgstr "Doseringsinstructies"
+
+#. module: medical
+#: field:medical.medicament,overdosage:0
+#: help:medical.medicament,overdosage:0
+msgid "Overdosage"
+msgstr "Overdosering"
+
+#. module: medical
+#: field:medical.appointment,appointment_date:0
+#: field:medical.perinatal.monitor,date:0
+#: field:medical.puerperium.monitor,date:0
+msgid "Date and Time"
+msgstr "Datum en tijd"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_patient_evaluation
+msgid "evaluation"
+msgstr "Beordeling"
+
+#. module: medical
+#: field:medical.patient,full_term:0
+msgid "Full Term"
+msgstr "Volledig"
+
+#. module: medical
+#: help:medical.patient,deaths_2nd_week:0
+msgid "Number of babies that die after the second week"
+msgstr "Aantal baby's die sterven na de tweede week"
+
+#. module: medical
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Ongeldige XML voor deze weegave!"
+
+#. module: medical
+#: field:medical.perinatal,episiotomy:0
+msgid "Espisiotomy"
+msgstr "Episiotomie"
+
+#. module: medical
+#: selection:medical.patient,education:0
+msgid "University"
+msgstr "Universiteit"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Work"
+msgstr "Werk"
+
+#. module: medical
+#: field:medical.perinatal,abortion:0
+msgid "Abortion"
+msgstr "Abortus"
+
+#. module: medical
+#: view:medical.newborn:0
+msgid "Newborn Info"
+msgstr "Pasgeborene Info"
+
+#. module: medical
+#: selection:medical.patient,ses:0
+msgid "Lower-middle"
+msgstr "Middelmattig - laag"
+
+#. module: medical
+#: view:medical.operational_sector:0
+msgid "Medical Operational Sector List"
+msgstr "Lijst van operatiegebieden"
+
+#. module: medical
+#: help:medical.patient,premature:0
+msgid "Premature Deliveries"
+msgstr "Prematuriteit"
+
+#. module: medical
+#: field:medical.insurance,type:0
+msgid "Insurance Type"
+msgstr "Soort verzekering"
+
+#. module: medical
+#: selection:medical.newborn,sex:0
+#: selection:medical.patient,sex:0
+msgid "Male"
+msgstr "Man"
+
+#. module: medical
+#: selection:medical.puerperium.monitor,lochia_color:0
+msgid "rubra"
+msgstr "Rubra"
+
+#. module: medical
+#: view:medical.newborn:0
+#: view:medical.perinatal:0
+msgid "Medication"
+msgstr "Medicatie"
+
+#. module: medical
+#: field:medical.patient,anticonceptive:0
+msgid "Anticonceptive Method"
+msgstr "Anticonceptiemethoden"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Phone call"
+msgstr "Telefonisch"
+
+#. module: medical
+#: field:medical.perinatal.monitor,bleeding:0
+msgid "Bleeding"
+msgstr "Bloedingen"
+
+#. module: medical
+#: field:medical.procedure,description:0
+msgid "ICD-10-PCS Lange Tekst"
+msgstr "ICD-10-PCS Naam"
+
+#. module: medical
+#: help:medical.patient,coffee_cups:0
+msgid "Number of cup of coffee a day"
+msgstr "Aantal koppen koffie per dag"
+
+#. module: medical
+#: field:medical.patient,hours_outside:0
+msgid "Hours outside home"
+msgstr "Uren buitenshuis"
+
+#. module: medical
+#: selection:medical.patient,housing:0
+msgid "Shanty, deficient sanitary conditions"
+msgstr "Gebrekkige sanitaire voorzieningen"
+
+#. module: medical
+#: help:medical.lab.hemogram,wbc:0
+msgid "White Blood Cells, x10^9/L"
+msgstr "Witte bloedlichaampjes x10^9/l"
+
+#. module: medical
+#: field:medical.lab.hemogram,bneutrophils:0
+msgid "Band Neutrophils"
+msgstr "Gelobde kern neutrofielen"
+
+#. module: medical
+#: selection:medical.patient,sexual_practices:0
+msgid "Risky / Unprotected sex"
+msgstr "Risico-groep (onbeschermde seks)"
+
+#. module: medical
+#: view:medical.operational_area:0
+msgid "Region Operational Area"
+msgstr "Behandelregio"
+
+#. module: medical
+#: field:medical.family.diseases,relative:0
+msgid "Relative"
+msgstr "Familielid"
+
+#. module: medical
+#: selection:medical.patient,education:0
+msgid "Secondary School"
+msgstr "Middelbare school"
+
+#. module: medical
+#: field:medical.patient,drug_addiction:0
+msgid "Drug addiction"
+msgstr "Drugsverslaafd"
+
+#. module: medical
+#: help:medical.medicament,dosage:0
+msgid "Dosage / Indications"
+msgstr "Dosering / Indicaties"
+
+#. module: medical
+#: selection:medical.patient,sexual_preferences:0
+msgid "Heterosexual"
+msgstr "Heterosexueel"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Emergengy"
+msgstr "Noodgeval"
+
+#. module: medical
+#: selection:medical.patient,sexual_preferences:0
+msgid "Transexual"
+msgstr "Transseksueel"
+
+#. module: medical
+#: field:medical.patient.evaluation,weight:0
+msgid "weight (kg)"
+msgstr "Gewicht (kg)"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Glucose"
+msgstr "Glucose"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Separated"
+msgstr "Gescheiden"
+
+#. module: medical
+#: field:medical.perinatal,start_labor_mode:0
+msgid "Labor mode"
+msgstr "Bevallingsfase"
+
+#. module: medical
+#: view:medical.newborn:0
+msgid "Tests"
+msgstr "Tests"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_insurance
+#: model:ir.ui.menu,name:medical.medical_conf_edit_insurance
+#: model:ir.ui.menu,name:medical.medical_conf_insurances
+#: view:medical.insurance:0
+msgid "Insurances"
+msgstr "Verzekering"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Hospitalary"
+msgstr "Poliklinisch"
+
+#. module: medical
+#: field:medical.newborn,medication:0
+#: field:medical.perinatal,medication:0
+msgid "Medicaments and anesthesics"
+msgstr "Medicatie en anesthetica"
+
+#. module: medical
+#: field:medical.newborn,bd:0
+msgid "Born dead"
+msgstr "Intra-Uteriene Vruchtdood"
+
+#. module: medical
+#: field:medical.surgery,classification:0
+msgid "Surgery Classification"
+msgstr "Operatie Classificatie"
+
+#. module: medical
+#: selection:medical.family.diseases,relative:0
+msgid "Uncle"
+msgstr "Oom"
+
+#. module: medical
+#: field:medical.patient.evaluation,evaluation_date:0
+#: field:medical.vaccination,date:0
+msgid "Date"
+msgstr "Datum"
+
+#. module: medical
+#: field:medical.drugs_recreational,legal_status:0
+msgid "Legal Status"
+msgstr "Classificatie legaliteit"
+
+#. module: medical
+#: help:medical.perinatal,died_being_transferred:0
+msgid "The mother died being transferred to another health institution"
+msgstr "De moeder overleed tijdens het vervoer naar een andere zorginstelling"
+
+#. module: medical
+#: selection:medical.patient,blood_type:0
+msgid "B"
+msgstr "B"
+
+#. module: medical
+#: field:res.partner.address,relationship:0
+msgid "relationship"
+msgstr "Relatie"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Gyneco / Obs"
+msgstr "Gynaecologie"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_tree_operational_sector
+#: model:ir.ui.menu,name:medical.medical_conf_edit_operational_area_sector
+msgid "Operational Sectors"
+msgstr "Behandelgebieden"
+
+#. module: medical
+#: field:medical.patient.evaluation,diastolic:0
+#: field:medical.perinatal.monitor,diastolic:0
+#: field:medical.puerperium.monitor,diastolic:0
+msgid "Diastolic Pressure"
+msgstr "Diastolische druk"
+
+#. module: medical
+#: field:medical.patient,age_start_smoking:0
+msgid "Age started to smoke"
+msgstr "Rookt sinds (leeftijd)"
+
+#. module: medical
+#: model:ir.module.module,description:medical.module_meta_information
+msgid "\n"
+"\n"
+"About Medical\n"
+"-------------\n"
+"Medical is an open source project which goal is to provide an universal Electronic Medical Record (EMR) and Hospital Information System (HIS), so doctors and institutions all over the world, independently of their economic status, will benefit from a centralized, high quality, secure and scalable system. Medical maximizes collaboration between health professionals and institutions, making emphasis on primary health care and family medicine concepts. It uses industry standards in order to produce valid statistical data for epidemiological research, as well as to export the patient data.\n"
+"\n"
+"Medical development framework is OpenERP, the leader open source ERP. OpenERP provides the environment to develop the EMR / HIS as a community, and to localize Medical to any country or region. The Medical data model has been designed so it can be used at hospitals, because it links the objects to the ERP functionality, such as reservations, financial management or supply chain management.\n"
+"\n"
+"Goal : Our goal is to provide a universal EMR / HIS, where developing countries can also benefit.\n"
+"\n"
+"Medical at a glance:\n"
+"\n"
+"    * 100% paperless patient examination and history taking\n"
+"    * Patient Administration (creation, evaluations / consultations, history ... )\n"
+"    * Strong focus on Socioeconomic Analysis\n"
+"    * Preventive medicine\n"
+"    * Genetics factors awareness\n"
+"    * Doctor Administration\n"
+"    * Lab Administration\n"
+"    * Medicine / Drugs information (vademécum)\n"
+"    * Medical stock and supply chain management\n"
+"    * Demographics and other statistical reports\n"
+"    * Financial Administration (Invoicing, ...).\n"
+"    * Designed with industry standards in mind\n"
+"    \n"
+"\n"
+"\n"
+"The data model is designed in such a way that centralizes the information, so no duplication occurs.\n"
+"\n"
+"On the other hand, medical optimizes collaboration and communication between health professionals. For example, a doctor may request an specific lab test for a patient, this is processed by the pathologist which diagnoses it and inputs the result on the system. The doctor now has all the analysis information linked to the patient chart.\n"
+"\n"
+"Medical allows to attach documents (X-rays, Biopsy results, ... ) to the Patient chart.\n"
+"\n"
+"Standards:\n"
+"The information generated and gathered in Medical should be standard. We use ICD-10 for pathologies / diseases diagnoses. For example, instead of typing an arbitrary name for the condition, the doctor will be able to choose from over 14000 mutually exclusive classified diseases. This is very important for epidemiological and other statistical studies.\n"
+"\n"
+"Similarly, the patient history will be in a format that medical centers all over the world would be able to process. Effective, paperless and fast way of practising medicine.\n"
+"\n"
+"Medical is part of the GNU solidario project : www.gnusolidario.org\n"
+"\n"
+"Security:\n"
+"It will follow the access control and security model of OpenERP 5.0\n"
+"\n"
+"Internationalization:\n"
+"The main language will be English, but it can be easily translated to any other language using OpenERP 5.0 module translation. The Spanish version will exist concurrently with the English version.\n"
+"\n"
+"Collaboration:\n"
+"In the development of \"medical\", we are working side-by-side with doctors, so they provide their real life experience to make \"Medical\" the best EMR system. Of course, the more feedback and input we get from the medical community, the more complete the system will be, so please send us your suggestions to medical@thymbra.com.\n"
+"\n"
+"\n"
+"Most of the action should occur at sourceforge, so check the main page http://sourceforge.net/projects/medical for the latest news and developer releases. \n"
+""
+msgstr ""
+
+#. module: medical
+#: field:medical.patient,family_history:0
+msgid "Family History"
+msgstr "Familiegeschiedenis"
+
+#. module: medical
+#: field:medical.patient.evaluation,loc:0
+msgid "Level of Consciousness"
+msgstr "Bewustzijnsniveau"
+
+#. module: medical
+#: field:medical.patient,excercise:0
+msgid "Excersise"
+msgstr "Lichaamsbeweging"
+
+#. module: medical
+#: field:medical.pathology,gene:0
+msgid "Gene"
+msgstr "Gen"
+
+#. module: medical
+#: help:medical.lab.hemogram,tct:0
+msgid "Thrombin Clotting Time in seconds"
+msgstr "Trombine stollingstijd in seconden"
+
+#. module: medical
+#: field:medical.ethnicity,code:0
+#: field:medical.occupation,code:0
+#: field:medical.specialty,code:0
+#: field:medical.test,code:0
+msgid "Code"
+msgstr "Nummer"
+
+#. module: medical
+#: field:medical.drugs_recreational,addiction_level:0
+msgid "Addiction Level"
+msgstr "Verslavingsniveau"
+
+#. module: medical
+#: field:medical.genetic.risk,name:0
+msgid "Official Symbol"
+msgstr "Officieel symbool"
+
+#. module: medical
+#: field:medical.patient,alcohol_beer_number:0
+msgid "Beer / day"
+msgstr "Bier / dag"
+
+#. module: medical
+#: field:medical.lab.hemogram,pt:0
+msgid "Prothrombin Time"
+msgstr "Protrombinetijd (PT)"
+
+#. module: medical
+#: field:medical.perinatal.monitor,f_frecuency:0
+msgid "Fetus heart frecuency"
+msgstr "Hartslag foetus"
+
+#. module: medical
+#: field:medical.newborn,sex:0
+#: field:medical.patient,sex:0
+msgid "Sex"
+msgstr "Geslacht"
+
+#. module: medical
+#: field:medical.patient.evaluation,temperature:0
+msgid "temperature (celsius)"
+msgstr "Lichaamstemperatuur (C)"
+
+#. module: medical
+#: field:medical.patient.evaluation,evaluation_endtime:0
+msgid "End of Evaluation"
+msgstr "Einddatum:"
+
+#. module: medical
+#: view:medical.genetic.risk:0
+msgid "Medical Genetic Risks"
+msgstr "Genetische risico's"
+
+#. module: medical
+#: field:medical.patient,drug_usage:0
+msgid "Drug Habits"
+msgstr "Drugsgebruik"
+
+
+#. module: medical
+#: field:medical.patient.disease,age:0
+msgid "Age when diagnosed"
+msgstr "Leeftijd diagnosestelling"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_procedure
+msgid "Medical Procedure"
+msgstr "Medische handeling"
+
+#. module: medical
+#: view:medical.newborn:0
+#: field:medical.newborn,disease:0
+msgid "Congenital diseases"
+msgstr "Aangeboren ziekte"
+
+
+#. module: medical
+#: selection:medical.family.diseases,relative:0
+msgid "Father"
+msgstr "Vader"
+
+#. module: medical
+#: field:medical.patient.disease,date_start_treatment:0
+msgid "Start of treatment"
+msgstr "Aanvang behandeling"
+
+#. module: medical
+#: field:medical.patient.evaluation,loc_eyes:0
+msgid "Level of Consciousness - Eyes"
+msgstr "Bewustszijnsniveau - Ogen"
+
+#. module: medical
+#: view:medical.newborn:0
+#: view:medical.pathology:0
+#: view:medical.patient:0
+#: view:medical.patient.disease:0
+#: view:medical.perinatal:0
+#: view:medical.puerperium.monitor:0
+msgid "Main"
+msgstr "Algemeen"
+
+#. module: medical
+#: selection:medical.perinatal,fetus_presentation:0
+#: selection:medical.perinatal.monitor,fetus_position:0
+msgid "Correct"
+msgstr "Correct"
+
+#. module: medical
+#: help:medical.patient,housing:0
+msgid "Housing and sanitary living conditions"
+msgstr "Toestand van de woning en sanitaire voorzieningen"
+
+#. module: medical
+#: view:medical.patient:0
+#: field:medical.patient,disease:0
+#: view:medical.patient.disease:0
+msgid "Diseases"
+msgstr "Ziekten"
+
+#. module: medical
+#: field:res.partner,alias:0
+msgid "alias"
+msgstr "Pseudoniem"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Food"
+msgstr "Voeding"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_pathology_category
+#: view:medical.pathology.category:0
+msgid "Pathology Categories"
+msgstr "Pathologie Categorieën"
+
+#. module: medical
+#: view:medical.insurance:0
+msgid "Insurance List"
+msgstr "Verzekeringen lijst"
+
+#. module: medical
+#: selection:medical.patient,rh:0
+msgid "-"
+msgstr "-"
+
+#. module: medical
+#: field:medical.patient,relative_in_prison:0
+msgid "Relative in prison"
+msgstr "Familielid in de gevangenis"
+
+#. module: medical
+#: help:medical.lab.hemogram,name:0
+#: help:medical.lab.hepatogram,name:0
+msgid "Test Identifier. It is a unique ID that correspond with an specific patient test"
+msgstr "ID Test, is een unieke ID die overeenkomt met een specifieke patiënt-test"
+
+#. module: medical
+#: help:product.product,is_medicament:0
+msgid "Check if the product is a medicament"
+msgstr "Dit product is een geneesmiddel"
+
+#. module: medical
+#: field:medical.insurance,name:0
+msgid "Number"
+msgstr "Relatienummer"
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "worsening"
+msgstr "verslechterd"
+
+#. module: medical
+#: view:medical.perinatal:0
+msgid "Puerperium"
+msgstr "Kraambed"
+
+#. module: medical
+#: field:medical.patient,currently_pregnant:0
+msgid "Currently Pregnant"
+msgstr "Momenteel zwanger"
+
+#. module: medical
+#: view:medical.medicament:0
+msgid "medicaments"
+msgstr "Medicatie"
+
+#. module: medical
+#: field:medical.drugs_recreational,name:0
+#: field:medical.family_code,name:0
+#: field:medical.medicament,name:0
+#: field:medical.operational_area,name:0
+#: field:medical.operational_sector,name:0
+#: field:medical.pathology,name:0
+#: field:medical.pathology.category,complete_name:0
+#: field:medical.vaccination,name:0
+msgid "Name"
+msgstr "Naam"
+
+#. module: medical
+#: selection:medical.perinatal,fetus_presentation:0
+#: selection:medical.perinatal.monitor,fetus_position:0
+msgid "Occiput / Cephalic Posterior"
+msgstr "Hoofdligging"
+
+#. module: medical
+#: selection:medical.puerperium.monitor,lochia_amount:0
+#: selection:medical.puerperium.monitor,lochia_odor:0
+msgid "normal"
+msgstr "normaal"
+
+#. module: medical
+#: field:medical.newborn,test_vdrl:0
+msgid "VDRL"
+msgstr "VDRL"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Other Drugs"
+msgstr "Andere Drugs"
+
+#. module: medical
+#: field:medical.patient.evaluation,signs:0
+msgid "Signs"
+msgstr "Symptomen"
+
+#. module: medical
+#: help:medical.patient.evaluation,derived_to:0
+msgid "Physician to whom scalate the case"
+msgstr "Doorverwezen naar arts"
+
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_lab_hemogram
+#: model:ir.ui.menu,name:medical.medical_lab_hemogram
+msgid "Hemograms"
+msgstr "Hemogram (Bloedbeeld)"
+
+#. module: medical
+#: field:medical.patient,prison_past:0
+msgid "Has been in prison"
+msgstr "Heeft in de gavangenis gezeten"
+
+#. module: medical
+#: field:medical.patient,premature:0
+msgid "Premature"
+msgstr "Prematuur"
+
+#. module: medical
+#: field:medical.lab,diagnosis:0
+msgid "Diagnosis"
+msgstr "Diagnose"
+
+#. module: medical
+#: help:product.product,is_vaccine:0
+msgid "Check if the product is a vaccine"
+msgstr "Het product is een vaccin"
+
+#. module: medical
+#: field:medical.lab.hemogram,hbg:0
+msgid "Glycosylated Hemoglobin"
+msgstr "Geglycosyleerde hemoglobine"
+
+#. module: medical
+#: help:medical.patient,fam_apgar_help:0
+msgid "Is the patient satisfied with the level of help coming from the family when there is a problem ?"
+msgstr "De patiënt is tevreden met de mate waarin de familie tot hulp is. "
+
+#. module: medical
+#: field:medical.perinatal,gestational_weeks:0
+msgid "Gestational weeks"
+msgstr "Zwangerschapsvoortgang (weken)"
+
+
+#. module: medical
+#: field:medical.puerperium.monitor,frecuency:0
+msgid "Heart Frecuency"
+msgstr "Hartslag"
+
+#. module: medical
+#: selection:medical.drugs_recreational,addiction_level:0
+#: selection:medical.drugs_recreational,toxicity:0
+msgid "Extreme"
+msgstr "Extreem hoog"
+
+#. module: medical
+#: selection:medical.drugs_recreational,addiction_level:0
+#: selection:medical.drugs_recreational,toxicity:0
+#: selection:medical.patient,income:0
+msgid "High"
+msgstr "Hoog"
+
+#. module: medical
+#: help:medical.insurance,category:0
+msgid "Insurance company plan / category"
+msgstr "Verzekeringsmaatschappij"
+
+
+#. module: medical
+#: help:medical.patient.disease,doctor:0
+msgid "Doctor who treated or diagnosed the patient"
+msgstr "Arts die de patiënt behandelde of de diagnose heeft gesteld"
+
+#. module: medical
+#: help:medical.lab.hemogram,monocytes:0
+msgid "Monocytes, x10^9/L"
+msgstr "Monocyten, x110^9/l"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Directions and Prescriptions"
+msgstr "Aanbevelingen en voorschriften"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_perinatal_monitor
+msgid "Perinatal monitor"
+msgstr "Kraambed monitoring"
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "healed"
+msgstr "genezen"
+
+#. module: medical
+#: field:medical.perinatal,vaginal_tearing:0
+msgid "Vaginal tearing"
+msgstr "Inscheuring vagina"
+
+#. module: medical
+#: field:medical.insurance,company:0
+msgid "Insurance Company"
+msgstr "Verzekeringsmaatschappij"
+
+#. module: medical
+#: selection:medical.drugs_recreational,legal_status:0
+msgid "Illegal"
+msgstr "Illegaal"
+
+#. module: medical
+#: field:medical.newborn,responsible:0
+msgid "Doctor in charge"
+msgstr "Verantwoordelijke arts"
+
+#. module: medical
+#: field:medical.appointment,comments:0
+msgid "Comments"
+msgstr "Kommentaar"
+
+#. module: medical
+#: field:medical.surgery,date:0
+msgid "Date of the surgery"
+msgstr "Operatiedatum"
+
+#. module: medical
+#: field:medical.pathology,category:0
+msgid "Pathology Category"
+msgstr "Pathologie Categorie"
+
+#. module: medical
+#: field:medical.test,name:0
+msgid "Test"
+msgstr "Test"
+
+#. module: medical
+#: view:medical.family.diseases:0
+msgid "Genetic Family Diseases"
+msgstr "Genetische familieziekten"
+
+#. module: medical
+#: field:medical.patient,number_of_meals:0
+msgid "Meals per day"
+msgstr "Maaltijden / dag"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Infrastructure"
+msgstr "Infrastructuur"
+
+#. module: medical
+#: field:medical.medicament,pregnancy:0
+msgid "Pregnancy and Lactancy"
+msgstr "Zwangerschap en borstvoeding"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_patient_action_form
+#: model:ir.ui.menu,name:medical.medical_add_patient
+msgid "New Patient"
+msgstr "Nieuwe patiënt invoeren"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Decease Information"
+msgstr "Overlijdensgegevens"
+
+#. module: medical
+#: field:medical.patient,eats_alone:0
+msgid "Eats alone"
+msgstr "Eet alleen"
+
+#. module: medical
+#: help:medical.appointment,institution:0
+msgid "Medical Center"
+msgstr "Zorginstelling"
+
+#. module: medical
+#: field:medical.newborn,test_audition:0
+msgid "Audition"
+msgstr ""
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_lab_hemogram
+#: view:medical.lab.hemogram:0
+msgid "Hemogram"
+msgstr "Hemogram"
+
+#. module: medical
+#: field:medical.perinatal,placenta_incomplete:0
+msgid "Incomplete Placenta"
+msgstr "Onvolledige placenta"
+
+#. module: medical
+#: field:medical.lab.hemogram,name:0
+#: field:medical.lab.hepatogram,name:0
+msgid "Test ID"
+msgstr "Test ID"
+
+#. module: medical
+#: help:medical.medicament,therapeutic_action:0
+msgid "Therapeutic action"
+msgstr "Therapeutische handeling"
+
+#. module: medical
+#: selection:medical.genetic.risk,dominance:0
+msgid "dominant"
+msgstr "dominant"
+
+#. module: medical
+#: view:medical.patient:0
+#: field:medical.patient,vaccinations:0
+msgid "Vaccinations"
+msgstr "Vaccinaties"
+
+#. module: medical
+#: help:medical.patient,fertile:0
+msgid "Check if patient is in fertile age"
+msgstr "De patiënt is op een vruchtbare leeftijd"
+
+#. module: medical
+#: field:medical.newborn,notes:0
+#: view:medical.patient:0
+#: field:medical.patient,notes:0
+#: field:medical.patient.evaluation,notes:0
+#: field:medical.perinatal,notes:0
+msgid "Notes"
+msgstr "Opmerkingen"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_puerperium_monitor
+#: view:medical.puerperium.monitor:0
+msgid "Puerperium Monitor"
+msgstr "Kraambed monitor"
+
+#. module: medical
+#: view:medical.lab.hepatogram:0
+msgid "Lab Test Type"
+msgstr "Lab test type"
+
+#. module: medical
+#: field:medical.lab.hemogram,neutrophils:0
+msgid "Neutrophils"
+msgstr "Neutrofielen"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "Appointment Information"
+msgstr "Afspraak gegevens"
+
+#. module: medical
+#: help:medical.drugs_recreational,name:0
+msgid "Name of the drug"
+msgstr "Naam van de drug"
+
+#. module: medical
+#: field:medical.patient.evaluation,info_diagnosis:0
+msgid "Presumptive Diagnosis: Extra Info"
+msgstr "Voorlopige diagnose: Extra Info"
+
+#. module: medical
+#: help:medical.pathology,code:0
+msgid "WHO - International Classification of Diseases Code"
+msgstr "WHO - Internationale Classificatie van Ziekten Code (ICD)"
+
+#. module: medical
+#: field:medical.lab.hemogram,rbc:0
+msgid "Red Blood Cells"
+msgstr "Rode Bloedlichaampjes"
+
+#. module: medical
+#: field:medical.lab.hemogram,platelets:0
+msgid "Platelets"
+msgstr "Trombocyten"
+
+#. module: medical
+#: field:medical.newborn,test_chagas:0
+msgid "Chagas"
+msgstr "Chagas"
+
+#. module: medical
+#: field:medical.drugs_recreational,info:0
+#: field:medical.insurance,notes:0
+#: view:medical.lab:0
+#: view:medical.medicament:0
+#: field:medical.medicament,notes:0
+#: view:medical.pathology:0
+#: field:medical.pathology,info:0
+#: view:medical.patient:0
+#: view:medical.patient.disease:0
+#: field:medical.patient.disease,extra_info:0
+#: view:medical.physician:0
+#: field:medical.surgery,extra_info:0
+#: view:medical.test:0
+msgid "Extra Info"
+msgstr "Extra gegevens"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_ethnicity
+msgid "medical.ethnicity"
+msgstr "medical.ethnicity"
+
+#. module: medical
+#: selection:medical.newborn,sex:0
+#: selection:medical.patient,sex:0
+msgid "Female"
+msgstr "Vrouwelijk"
+
+#. module: medical
+#: field:medical.perinatal,gravida_number:0
+msgid "Gravida #"
+msgstr "Zwangerschaps nr."
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Signs and Symptoms"
+msgstr "Ziektebeelden en Symptomen"
+
+#. module: medical
+#: field:medical.lab.hemogram,hct:0
+#: help:medical.lab.hemogram,hct:0
+msgid "Hematocrit"
+msgstr "Hematocrietwaarde"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Medications"
+msgstr "Medicijnen"
+
+#. module: medical
+#: view:medical.lab.hemogram:0
+msgid "Granulocytes"
+msgstr "Granulocyten"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Blood pressure"
+msgstr "Bloeddruk"
+
+#. module: medical
+#: help:medical.medicament,pregnancy:0
+msgid "Warnings for Pregnant Women"
+msgstr "Waarschuwing bij zwangerschap"
+
+#. module: medical
+#: field:medical.patient,second_hand_smoker:0
+msgid "Second-hand smoker"
+msgstr "Passief roker"
+
+#. module: medical
+#: field:medical.ethnicity,name:0
+#: field:medical.patient,ethnic_group:0
+msgid "Ethnic group"
+msgstr "Etnische groep"
+
+#. module: medical
+#: field:medical.genetic.risk,location:0
+msgid "Location"
+msgstr "Locatie"
+
+#. module: medical
+#: help:medical.patient,gravida:0
+msgid "Number of pregnancies"
+msgstr "Aantal zwangerschappen"
+
+#. module: medical
+#: field:medical.patient,menopausal:0
+msgid "Menopausal"
+msgstr "Menopauze"
+
+#. module: medical
+#: field:medical.perinatal,prenatal_evaluations:0
+msgid "Prenatal evaluations"
+msgstr "Prenatale evaluaties"
+
+#. module: medical
+#: help:medical.lab.hepatogram,hdl:0
+msgid "HDL - High Density Lipoprotein, (mg/dl)"
+msgstr "HDL High-Density-Lipoprotein-Cholesterol (mg/dl)"
+
+#. module: medical
+#: field:medical.genetic.risk,dominance:0
+msgid "Dominance"
+msgstr "Overheerst"
+
+#. module: medical
+#: field:medical.patient,blood_type:0
+msgid "Blood Type"
+msgstr "Bloedgroep"
+
+#. module: medical
+#: field:medical.patient,gravida:0
+msgid "Gravida"
+msgstr "Aantal zwangerschappen"
+
+#. module: medical
+#: view:medical.newborn:0
+msgid "APGAR"
+msgstr "APGAR"
+
+#. module: medical
+#: selection:medical.appointment,urgency:0
+msgid "Medical Emergency"
+msgstr "Medisch noodgeval"
+
+#. module: medical
+#: field:medical.lab.hemogram,tct:0
+msgid "TCT"
+msgstr "TCT"
+
+#. module: medical
+#: field:medical.patient.disease,is_on_treatment:0
+msgid "Currently on Treatment"
+msgstr "Momenteel onder behandeling"
+
+#. module: medical
+#: field:medical.lab.hepatogram,ldl:0
+#: field:medical.patient.evaluation,ldl:0
+msgid "LDL"
+msgstr "LDL"
+
+#. module: medical
+#: field:medical.puerperium.monitor,lochia_amount:0
+msgid "Lochia amount"
+msgstr "Hoeveelheid kraamvloed"
+
+
+#. module: medical
+#: field:medical.family_code,members_ids:0
+msgid "Members"
+msgstr "Familieleden"
+
+#. module: medical
+#: view:medical.patient:0
+#: view:medical.patient.evaluation:0
+msgid "Evaluations"
+msgstr "Evaluaties"
+
+#. module: medical
+#: field:medical.perinatal,placenta_retained:0
+msgid "Retained Placenta"
+msgstr "Ingehouden placenta"
+
+#. module: medical
+#: help:medical.medicament,active_component:0
+msgid "Active Component"
+msgstr "Actieve bestandsdeel"
+
+#. module: medical
+#: field:medical.patient,alcohol:0
+msgid "Drinks Alcohol"
+msgstr "Drink alcohol"
+
+#. module: medical
+#: field:medical.lab.hemogram,aptt:0
+msgid "APTT"
+msgstr "APTT"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_lab
+#: view:medical.test:0
+msgid "Lab Test"
+msgstr "Lab test"
+
+#. module: medical
+#: help:medical.lab.hemogram,mcv:0
+msgid "Mean Cell Volume - MCV, fL"
+msgstr "Gemiddeld celvolume (MCV)"
+
+#. module: medical
+#: field:medical.genetic.risk,chromosome:0
+#: field:medical.pathology,chromosome:0
+msgid "Affected Chromosome"
+msgstr "Getroffen Chromosoom"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_physician
+msgid "Information about the doctor"
+msgstr "Informatie over de arts"
+
+#. module: medical
+#: field:medical.patient.evaluation,tag:0
+msgid "TAGs"
+msgstr "TAGs"
+
+#. module: medical
+#: field:medical.patient.disease,treatment_description:0
+msgid "Treatment Description"
+msgstr "Beschrijving behandeling"
+
+#. module: medical
+#: selection:medical.patient,sexual_preferences:0
+msgid "Bisexual"
+msgstr "Bisexueel"
+
+#. module: medical
+#: field:medical.patient.disease,weeks_of_pregnancy:0
+msgid "Contracted in pregnancy week #"
+msgstr "Ontsluiting in zwangerschapsweek"
+
+#. module: medical
+#: help:medical.lab.hepatogram,cholesterol:0
+msgid "Cholesterol (Total), (mg/dl)"
+msgstr "Cholesterol (Totaal), (mg/dl)"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_conf_laboratory
+#: model:ir.ui.menu,name:medical.medical_laboratory_menu
+msgid "Laboratory"
+msgstr "Laboratorium"
+
+#. module: medical
+#: field:medical.patient.evaluation,loc_motor:0
+msgid "Level of Consciousness - Motor"
+msgstr "Bewustzijnsniveau - Motoriek"
+
+#. module: medical
+#: field:medical.patient,deaths_2nd_week:0
+msgid "Deceased after 2nd week"
+msgstr "Gestorven na 2 weken"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_conf_genetics
+#: view:medical.pathology:0
+msgid "Genetics"
+msgstr "Genetisch"
+
+#. module: medical
+#: field:medical.puerperium.monitor,temperature:0
+msgid "Temperature"
+msgstr "Temperatuur"
+
+#. module: medical
+#: field:medical.genetic.risk,info:0
+msgid "Information"
+msgstr "Gegevens"
+
+#. module: medical
+#: field:medical.patient,sexual_partners:0
+msgid "Sexual Partners"
+msgstr "Aantal seksuele partners"
+
+#. module: medical
+#: selection:medical.patient,fam_apgar_affection:0
+#: selection:medical.patient,fam_apgar_decisions:0
+#: selection:medical.patient,fam_apgar_discussion:0
+#: selection:medical.patient,fam_apgar_help:0
+#: selection:medical.patient,fam_apgar_timesharing:0
+msgid "Moderately"
+msgstr "Matig"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Info on Presumptive Diagnosis"
+msgstr "Info over de voorlopige diagnose"
+
+#. module: medical
+#: selection:medical.family.diseases,x_or_y:0
+msgid "Paternal"
+msgstr "Vaderlijk"
+
+#. module: medical
+#: help:medical.lab.hemogram,rbc:0
+msgid "Red Blood cell count , (10^12/L)"
+msgstr "Aantal rode bloedlichaampjes (10^12/l)"
+
+#. module: medical
+#: selection:medical.drugs_recreational,addiction_level:0
+#: selection:medical.drugs_recreational,toxicity:0
+#: selection:medical.patient,income:0
+msgid "Low"
+msgstr "Laag"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Alcohol"
+msgstr "Alcohol"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "Appointment"
+msgstr "Afspraak"
+
+#. module: medical
+#: field:medical.newborn,tod:0
+msgid "Time of Death"
+msgstr "Tijdstip van overlijden"
+
+#. module: medical
+#: field:medical.newborn,meconium:0
+#: field:medical.perinatal.monitor,meconium:0
+msgid "Meconium"
+msgstr "Meconium"
+
+#. module: medical
+#: selection:medical.patient,anticonceptive:0
+msgid "Female sterilisation"
+msgstr "Sterilisatie bij de vrouw"
+
+#. module: medical
+#: field:medical.pathology.category,active:0
+msgid "Active"
+msgstr "Actief"
+
+#. module: medical
+#: help:medical.lab.hepatogram,ast:0
+msgid "Alanine Transferase / GOT, (IU/L)"
+msgstr "Alanineaminotransferase (ALAT), (U/L)"
+
+#. module: medical
+#: field:medical.lab.hemogram,eosinophils:0
+msgid "Eosinophils"
+msgstr "Eosinofielen"
+
+#. module: medical
+#: field:medical.newborn,died_being_transferred:0
+#: field:medical.perinatal,died_being_transferred:0
+msgid "Died being transferred"
+msgstr "Bij het overbrengen getorven"
+
+#. module: medical
+#: field:medical.medicament,pregnancy_warning:0
+msgid "Pregnancy Warning"
+msgstr "Zwangerschapswaarschuwing"
+
+#. module: medical
+#: help:medical.patient,deceased:0
+msgid "Mark if the patient has died"
+msgstr "Markeer als de patiënt is overleden"
+
+#. module: medical
+#: help:medical.lab.hepatogram,ldl:0
+msgid "LDL - Low Density Lipoprotein, (mg/dl)"
+msgstr "LDL - Low Density Lipoprotein, (mg/dl)"
+
+#. module: medical
+#: field:medical.family_code,info:0
+#: field:medical.operational_area,info:0
+#: field:medical.operational_sector,info:0
+#: field:medical.patient,lifestyle_info:0
+msgid "Extra Information"
+msgstr "Extra informatie"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_specialty
+#: model:ir.ui.menu,name:medical.medical_conf_specialty
+msgid "Medical Specialties"
+msgstr "Medische Specialismen"
+
+#. module: medical
+#: view:medical.perinatal:0
+msgid "Perinatal Information"
+msgstr "Perinatale informatie"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_ethnicity
+#: model:ir.ui.menu,name:medical.medical_conf_ethnicity
+#: view:medical.ethnicity:0
+msgid "Ethnic Groups"
+msgstr "Etnische Groepen"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_family_code
+msgid "medical.family_code"
+msgstr "medical.family_code"
+
+#. module: medical
+#: help:medical.medicament,indications:0
+msgid "Indications"
+msgstr "Symptomen"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_occupation
+#: model:ir.ui.menu,name:medical.medical_conf_occupation
+msgid "Occupations"
+msgstr "Beroepen"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_conf_misc
+#: view:medical.patient.evaluation:0
+#: view:medical.perinatal:0
+msgid "Misc"
+msgstr "Diverse"
+
+#. module: medical
+#: selection:medical.patient,education:0
+msgid "Incomplete Primary School"
+msgstr "Basisschool niet afgemaakt"
+
+#. module: medical
+#: selection:medical.patient,housing:0
+msgid "Comfortable and good sanitary conditions"
+msgstr "Comfortabele en goede sanitaire voorzieningen"
+
+#. module: medical
+#: selection:medical.patient,education:0
+msgid "Incomplete Secondary School"
+msgstr "Middelbare school niet afgemaakt"
+
+#. module: medical
+#: help:medical.lab,name:0
+msgid "Lab result ID"
+msgstr "Lab resultaat ID"
+
+#. module: medical
+#: help:medical.patient.disease,pcs_code:0
+#: help:medical.surgery,name:0
+msgid "ICD-10-PCS Code 7-character string"
+msgstr "ICD-10-PCS Code kort"
+
+#. module: medical
+#: field:medical.lab.hepatogram,triglycerides:0
+msgid "Triglycerides"
+msgstr "Triglyceriden"
+
+#. module: medical
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Het object naam moet beginnen met x_ en mag geen speciale tekens bevatten!"
+
+#. module: medical
+#: help:medical.medicament,name:0
+msgid "Commercial Name"
+msgstr "Handelsbenaming"
+
+#. module: medical
+#: selection:medical.perinatal,fetus_presentation:0
+#: selection:medical.perinatal.monitor,fetus_position:0
+msgid "Frank Breech"
+msgstr "Onvolkomen stuitligging"
+
+#. module: medical
+#: field:medical.patient,excercise_minutes_day:0
+msgid "Minutes / day"
+msgstr "Minuten / dag"
+
+#. module: medical
+#: field:medical.patient,born_alive:0
+msgid "Born Alive"
+msgstr "Levend geboren"
+
+#. module: medical
+#: help:medical.puerperium.monitor,uterus_involution:0
+msgid "Distance between the symphysis pubis and the uterine fundus (S-FD) in cm"
+msgstr "Aantal centimeters ontsluiting"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_drugs_recreational
+msgid "medical.drugs_recreational"
+msgstr "medical.drugs_recreational"
+
+#. module: medical
+#: selection:medical.patient,sexual_practices:0
+msgid "Safe / Protected sex"
+msgstr "Veilige seks"
+
+#. module: medical
+#: field:medical.patient,education:0
+#: help:medical.patient,education:0
+msgid "Education Level"
+msgstr "Opleidingsniveau"
+
+#. module: medical
+#: field:medical.newborn,test_metabolic:0
+msgid "The metabolic check (\"heel stick\") has been done"
+msgstr "Hielprik is uitgevoerd"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_family_diseases
+msgid "Family Diseases"
+msgstr "Erfelijke ziekten"
+
+#. module: medical
+#: field:medical.patient.disease,status:0
+msgid "Status of the disease"
+msgstr "Stadium van de ziekte"
+
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "status quo"
+msgstr "Ongewijzigd"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+#: field:medical.patient.evaluation,diagnosis:0
+#: help:medical.patient.evaluation,diagnosis:0
+msgid "Presumptive Diagnosis"
+msgstr "Voorlopige diagnose"
+
+#. module: medical
+#: field:medical.patient,lastname:0
+msgid "Lastname"
+msgstr "Geslachtsnaam"
+
+#. module: medical
+#: help:medical.newborn,responsible:0
+msgid "Signed by the health professional"
+msgstr "Ondertekend door de specialist"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_insurance
+msgid "medical.insurance"
+msgstr "medical.insurance"
+
+#. module: medical
+#: view:medical.occupation:0
+msgid "Patient Occupation"
+msgstr "Beroep"
+
+#. module: medical
+#: field:medical.patient,prison_current:0
+msgid "Is currently in prison"
+msgstr "Zit momenteel in de gevangenis"
+
+#. module: medical
+#: field:medical.patient,working_children:0
+msgid "Working children"
+msgstr "Werkende kinderen"
+
+#. module: medical
+#: field:medical.lab.hepatogram,alp:0
+msgid "Alkaline phosphatase"
+msgstr "Alkalische fosfatase (AF)"
+
+#. module: medical
+#: field:medical.newborn,cod:0
+msgid "Cause of death"
+msgstr "Doodsoorzak"
+
+#. module: medical
+#: field:medical.surgery,pathology:0
+msgid "Base condition"
+msgstr "Standaardconditie"
+
+#. module: medical
+#: view:medical.operational_area:0
+msgid "Medical Operational Areas List"
+msgstr "Lijst met operatiegebieden"
+
+#. module: medical
+#: model:ir.module.module,shortdesc:medical.module_meta_information
+#: model:ir.ui.menu,name:medical.medical_menu
+#: view:product.product:0
+#: view:res.partner:0
+msgid "Medical"
+msgstr "Medisch"
+
+#. module: medical
+#: field:medical.patient,fam_apgar_help:0
+msgid "Help from family"
+msgstr "Hulp van de familie"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_patient_action_tree
+#: model:ir.ui.menu,name:medical.medical_edit_patient
+msgid "Edit Patients"
+msgstr "Patientgegevens wijzigen"
+
+#. module: medical
+#: field:medical.medicament,indications:0
+msgid "Indication"
+msgstr "Indicatie"
+
+#. module: medical
+#: field:medical.patient,age:0
+msgid "Patient Age"
+msgstr "Leeftijd"
+
+#. module: medical
+#: help:medical.lab.hepatogram,bilirubin:0
+msgid "Bilirubin, (mg/dl)"
+msgstr "Bilirubine, (mg / dl)"
+
+#. module: medical
+#: field:medical.insurance,member_since:0
+msgid "Member since"
+msgstr "Aangesloten sinds"
+
+#. module: medical
+#: field:medical.lab,name:0
+#: field:medical.patient,identifier:0
+#: field:medical.physician,code:0
+msgid "ID"
+msgstr "ID"
+
+#. module: medical
+#: view:medical.newborn:0
+#: field:medical.patient,deceased:0
+#: view:medical.perinatal:0
+msgid "Deceased"
+msgstr "Overleden"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Widowed"
+msgstr "Weduwe(naar)"
+
+#. module: medical
+#: field:medical.patient,fertile:0
+msgid "Fertile"
+msgstr "Vruchtbaar"
+
+#. module: medical
+#: help:medical.lab.hemogram,eosinophils:0
+msgid "Eosinophils, x10^9/L"
+msgstr "Eosinofielen, x10^9/l"
+
+#. module: medical
+#: field:medical.patient.disease,name:0
+msgid "Medical Condition"
+msgstr "Medische Conditie"
+
+#. module: medical
+#: selection:medical.patient,income:0
+msgid "Medium / Average"
+msgstr "Gemmideld"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "General"
+msgstr "Algemeen"
+
+#. module: medical
+#: help:medical.lab.hemogram,lymphocytes:0
+msgid "Lymphocytes, x10^9/L"
+msgstr "Lymfocyten, x10^9/l"
+
+#. module: medical
+#: help:medical.physician,institution:0
+msgid "Instituion where she/he works"
+msgstr "Tewerkgesteld bij"
+
+#. module: medical
+#: help:res.partner,is_institution:0
+msgid "Check if the partner is a Medical Center"
+msgstr "Aanklikken als deze relatie een zorginstelling is."
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_appointment
+msgid "medical.appointment"
+msgstr "Afspraken"
+
+#. module: medical
+#: help:medical.medicament,composition:0
+msgid "Components"
+msgstr "Bestanddeel"
+
+#. module: medical
+#: view:medical.vaccination:0
+msgid "Vaccination"
+msgstr "Vaccin"
+
+#. module: medical
+#: selection:medical.family.diseases,relative:0
+#: view:medical.perinatal.monitor:0
+msgid "Mother"
+msgstr "Moeder"
+
+#. module: medical
+#: view:medical.perinatal:0
+msgid "Labor"
+msgstr "Barensnood"
+
+#. module: medical
+#: help:medical.patient.evaluation,derived_from:0
+msgid "Physician who escalated / recommended the case"
+msgstr "Verwijzer"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_test
+#: model:ir.ui.menu,name:medical.medical_conf_test
+msgid "New Type of Lab test"
+msgstr "Nieuw type lab-test aanmaken"
+
+#. module: medical
+#: field:medical.newborn,died_at_delivery:0
+#: field:medical.perinatal,died_at_delivery:0
+msgid "Died at delivery room"
+msgstr "Stierf in de kraamkamer"
+
+#. module: medical
+#: field:medical.patient,internet:0
+msgid "Internet"
+msgstr "Internet"
+
+#. module: medical
+#: help:medical.lab.hepatogram,alp:0
+msgid "Alkaline phosphatase - ALP, (IU/L)"
+msgstr "Alkalische fosfatase - ALP, (IE/L)"
+
+#. module: medical
+#: help:medical.genetic.risk,gene_id:0
+msgid "default code from NCBI Entrez database."
+msgstr "Standaard code uit NCBI Entrez database."
+
+#. module: medical
+#: help:medical.appointment,doctor:0
+#: help:medical.physician,name:0
+msgid "Doctor Name"
+msgstr "Naam Arts"
+
+#. module: medical
+#: field:medical.drugs_recreational,street_name:0
+msgid "Street names"
+msgstr "Synoniemen"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Patient Information"
+msgstr "Patiënteninformatie"
+
+#. module: medical
+#: field:medical.appointment,doctor:0
+#: field:medical.patient.disease,doctor:0
+#: field:medical.patient.evaluation,user_id:0
+#: field:medical.physician,name:0
+#: field:res.partner,is_doctor:0
+msgid "Doctor"
+msgstr "Arts"
+
+#. module: medical
+#: help:medical.patient,ses:0
+msgid "SES - Socioeconomic Status"
+msgstr "SES - Sociaal-Economische Status"
+
+#. module: medical
+#: help:medical.perinatal,prenatal_evaluations:0
+msgid "Number of visits to the doctor during pregnancy"
+msgstr "Aantal bezoeken aan de arts tijdens de zwangerschap."
+
+#. module: medical
+#: field:medical.newborn,apgar5:0
+msgid "APGAR 5th minute"
+msgstr "APGAR 5 Minuten"
+
+#. module: medical
+#: field:medical.patient,fam_apgar_timesharing:0
+msgid "Family time sharing"
+msgstr "Tijdsbesteding met familie"
+
+#. module: medical
+#: selection:medical.perinatal,fetus_presentation:0
+#: selection:medical.perinatal.monitor,fetus_position:0
+msgid "Transverse Lie"
+msgstr "Stuitligging"
+
+#. module: medical
+#: field:medical.patient.evaluation,chief_complaint:0
+#: help:medical.patient.evaluation,chief_complaint:0
+msgid "Chief Complaint"
+msgstr "Hoofdklacht"
+
+#. module: medical
+#: field:medical.appointment,institution:0
+#: field:medical.physician,institution:0
+#: field:res.partner,is_institution:0
+msgid "Institution"
+msgstr "Instelling"
+
+#. module: medical
+#: field:medical.patient,hostile_area:0
+msgid "Hostile Area"
+msgstr "Dreigend gebied"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_test
+msgid "Type of Lab test"
+msgstr "Lab-test type"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Married"
+msgstr "Getrouwd"
+
+#. module: medical
+#: field:medical.puerperium.monitor,lochia_odor:0
+msgid "Lochia odor"
+msgstr "Geur Kraamvloed"
+
+#. module: medical
+#: field:medical.patient,television:0
+msgid "Television"
+msgstr "Televisie"
+
+#. module: medical
+#: field:medical.newborn,length:0
+msgid "Length"
+msgstr "L"
+
+#. module: medical
+#: selection:medical.family.diseases,relative:0
+msgid "Aunt"
+msgstr "Tante"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_lab_hepatogram
+#: model:ir.ui.menu,name:medical.medical_lab_hepatogram
+msgid "Hepatograms"
+msgstr "Hematogram"
+
+#. module: medical
+#: field:product.product,is_medicament:0
+msgid "Medicament"
+msgstr "Medicatie"
+
+#. module: medical
+#: field:medical.perinatal.monitor,contractions:0
+msgid "Contractions"
+msgstr "Weeën"
+
+#. module: medical
+#: view:medical.medicament:0
+msgid "Pregnancy / Lactancy"
+msgstr "Zwangerschap / Borstvoeding"
+
+#. module: medical
+#: help:medical.pathology,gene:0
+msgid "Name of the gene(s) affected"
+msgstr "Beschrijving van de aangetaste genen"
+
+#. module: medical
+#: field:medical.patient,ex_smoker:0
+msgid "Ex-smoker"
+msgstr "Ex-Roker"
+
+#. module: medical
+#: help:medical.patient.evaluation,mood:0
+msgid "1=very angry - 5=very happy"
+msgstr "1=zeer ontstemt\n"
+"5=zeer goed gestemt"
+
+#. module: medical
+#: field:medical.perinatal,gestational_days:0
+msgid "Gestational days"
+msgstr "Aantal dagen zwanger"
+
+#. module: medical
+#: field:medical.patient,single_parent:0
+msgid "Single parent family"
+msgstr "Allenstaande ouder"
+
+#. module: medical
+#: help:medical.lab.hemogram,fibrinogen:0
+msgid "Fibrinogen in g/L"
+msgstr "Fibrinogeen in g/L"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_pathology
+#: model:ir.ui.menu,name:medical.medical_conf_pathology_pathology
+#: view:medical.pathology:0
+msgid "Pathology"
+msgstr "Pathologie"
+
+#. module: medical
+#: field:medical.lab.hemogram,mcv:0
+msgid "Mean Cell Volume"
+msgstr "Gemiddeld celvolume"
+
+#. module: medical
+#: help:medical.patient,hours_outside:0
+msgid "Number of hours a day the patient spend outside the house"
+msgstr "Aantal uren dat de patiënt besteedt een dag buiten het huis."
+
+#. module: medical
+#: field:medical.patient,dod:0
+msgid "Date of Death"
+msgstr "Overlijdingsdatum"
+
+#. module: medical
+#: help:medical.patient,soft_drinks:0
+msgid "Check if the patient consumes soft drinks with sugar"
+msgstr "De patiënt drinkt suikerhoudende frisdranken."
+
+#. module: medical
+#: view:medical.lab.hepatogram:0
+#: field:medical.lab.hepatogram,bilirubin:0
+msgid "Bilirubin"
+msgstr "Bilirubine"
+
+#. module: medical
+#: field:medical.lab.hemogram,fibrinogen:0
+msgid "Fibrinogen"
+msgstr "Fibrinogeen"
+
+#. module: medical
+#: selection:medical.patient,blood_type:0
+msgid "AB"
+msgstr "AB"
+
+#. module: medical
+#: selection:medical.puerperium.monitor,lochia_amount:0
+msgid "hemorrhage"
+msgstr "Bloedingen"
+
+#. module: medical
+#: view:medical.pathology:0
+msgid "Pathology Info"
+msgstr "Pathologie (onderzoek) informatie"
+
+#. module: medical
+#: field:medical.patient,coffee_cups:0
+msgid "Cups per day"
+msgstr "Koppen per dag"
+
+#. module: medical
+#: field:medical.patient,teenage_pregnancy:0
+msgid "Teenage pregnancy"
+msgstr "Tienerzwangerschappen"
+
+#. module: medical
+#: field:medical.patient,coffee:0
+msgid "Coffee"
+msgstr "Koffie"
+
+#. module: medical
+#: selection:medical.patient,sexual_preferences:0
+msgid "Homosexual"
+msgstr "Homosexueel"
+
+#. module: medical
+#: field:medical.patient.evaluation,systolic:0
+#: field:medical.perinatal.monitor,systolic:0
+#: field:medical.puerperium.monitor,systolic:0
+msgid "Systolic Pressure"
+msgstr "Systolische (boven) druk"
+
+#. module: medical
+#: field:medical.patient.disease,pcs_code:0
+#: field:medical.procedure,name:0
+#: field:medical.surgery,name:0
+msgid "ICD-10-PCS Code"
+msgstr "ICD-10-PCS Code"
+
+#. module: medical
+#: field:medical.patient.evaluation,glycemia:0
+msgid "Glycemia"
+msgstr "Glycemiewaarden"
+
+#. module: medical
+#: field:medical.patient,sexual_preferences:0
+msgid "Sexual Preferences"
+msgstr "Sexuele voorkeur"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_reporting_menu
+msgid "Reporting"
+msgstr "Rapportage"
+
+#. module: medical
+#: view:medical.lab.hemogram:0
+msgid "Hematology"
+msgstr "Hematologie"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Ambulatory"
+msgstr "Ambulant"
+
+#. module: medical
+#: view:medical.lab.hemogram:0
+msgid "White cells"
+msgstr "Witte bloedlichaampjes"
+
+#. module: medical
+#: field:medical.patient.disease,date_stop_treatment:0
+msgid "End of treatment"
+msgstr "Einde behandeling"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_conf_menu
+msgid "Configuration"
+msgstr "Configuratie"
+
+#. module: medical
+#: help:medical.family_code,name:0
+msgid "Family code within an operational sector"
+msgstr "Familie code binnen het operatiegebied"
+
+#. module: medical
+#: field:medical.patient.evaluation,bmi:0
+msgid "Body Mass Index"
+msgstr "Body Mass Index (BMI)"
+
+#. module: medical
+#: selection:medical.patient,anticonceptive:0
+msgid "Male condom"
+msgstr "Mannencondoom"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Lifestyle"
+msgstr "Levensstijl"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Divorced"
+msgstr "Geschieden"
+
+#. module: medical
+#: field:medical.newborn,reanimation_aspiration:0
+msgid "Aspiration"
+msgstr "Ademhaling"
+
+#. module: medical
+#: field:medical.patient.evaluation,next_evaluation:0
+msgid "Next evaluation"
+msgstr "Volgende onderzoek"
+
+#. module: medical
+#: selection:medical.patient,blood_type:0
+msgid "O"
+msgstr "O"
+
+#. module: medical
+#: field:medical.patient,smoking_number:0
+msgid "Cigarretes a day"
+msgstr "Sigaretten per dag"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_report_medicament
+#: model:ir.ui.menu,name:medical.medical_list_medicament
+msgid "Medicament List"
+msgstr "Medicatielijst"
+
+#. module: medical
+#: help:medical.operational_area,name:0
+msgid "Operational Area of the city or region"
+msgstr "Inzetgebeid (stad of regio)"
+
+#. module: medical
+#: view:medical.perinatal.monitor:0
+msgid "Fetus"
+msgstr "Fetus"
+
+#. module: medical
+#: field:medical.newborn,weight:0
+msgid "Weight"
+msgstr "Gewicht"
+
+
+#. module: medical
+#: field:medical.perinatal,admission_date:0
+msgid "Admission date"
+msgstr "Opname datum"
+
+#. module: medical
+#: selection:medical.patient,ses:0
+msgid "Middle-upper"
+msgstr "Middel- bovenmatig"
+
+#. module: medical
+#: help:medical.patient.evaluation,bpm:0
+msgid "Heart rated expressed in beats per minute"
+msgstr "Hartslag per minuut"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_medicament
+msgid "medical.medicament"
+msgstr "medical.medicament"
+
+#. module: medical
+#: view:medical.patient.disease:0
+msgid "Pregnancy"
+msgstr "Zwangerschap"
+
+#. module: medical
+#: field:medical.lab.hemogram,bneutrophils_pct:0
+msgid "% Band Neutrophils"
+msgstr "% Staaf neutrofielen"
+
+#. module: medical
+#: field:medical.patient,deaths_1st_week:0
+msgid "Deceased during 1st week"
+msgstr "In de eerste week overleden"
+
+#. module: medical
+#: field:medical.perinatal.monitor,dilation:0
+msgid "Cervix dilation"
+msgstr "Cervix dilatatie"
+
+#. module: medical
+#: help:medical.lab.hemogram,neutrophils:0
+msgid "Neutrophils, x10^9/L"
+msgstr "Neutrofielen, x10^9/l"
+
+#. module: medical
+#: view:medical.perinatal.monitor:0
+msgid "Perinatal Monitor"
+msgstr "Ouderlijk toezicht"
+
+#. module: medical
+#: field:medical.patient,first_sexual_encounter:0
+msgid "Age first sexual encounter"
+msgstr "Leeftijd eerste seksuele contact"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Consciousness and Mood"
+msgstr "Bewustzijn en stemming"
+
+#. module: medical
+#: field:medical.operational_sector,operational_area:0
+msgid "Operational Area"
+msgstr "operatiegebied"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_patient_disease
+msgid "Disease info"
+msgstr "Aandoening informatie"
+
+#. module: medical
+#: field:medical.lab.hemogram,neutrophils_pct:0
+msgid "% Neutrophils"
+msgstr "% Neutrofielen"
+
+#. module: medical
+#: field:medical.newborn,reanimation_stimulation:0
+msgid "Stimulation"
+msgstr "Stimulatie"
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "chronic"
+msgstr "chronisch"
+
+#. module: medical
+#: selection:medical.patient,anticonceptive:0
+msgid "Fertility cicle awareness"
+msgstr "Ovulatiecyclus"
+
+#. module: medical
+#: view:medical.patient:0
+#: field:medical.patient,ses:0
+msgid "Socioeconomics"
+msgstr "Sociale omgeving"
+
+#. module: medical
+#: field:medical.pathology.category,name:0
+msgid "Category Name"
+msgstr "Omschrijving categorie"
+
+#. module: medical
+#: field:medical.genetic.risk,long_name:0
+msgid "Official Long Name"
+msgstr "Officiële naam"
+
+#. module: medical
+#: help:medical.patient.evaluation,tag:0
+msgid "Triacylglycerols level"
+msgstr "Triacylglycerol (TAG) spiegel "
+
+#. module: medical
+#: help:medical.specialty,name:0
+msgid "ie, Addiction Psychiatry"
+msgstr "Bijv. Verslavingspsychiatrie"
+
+#. module: medical
+#: field:medical.patient,sexual_practices:0
+msgid "Sexual Practices"
+msgstr "Sexueel actief"
+
+#. module: medical
+#: help:medical.patient,fam_apgar_decisions:0
+msgid "Is the patient satisfied with the level of making important decisions as a group ?"
+msgstr "Is de patiënt tevreden met de manier waarop belangrijke beslissingen worden genomen als een groep?"
+
+#. module: medical
+#: selection:medical.appointment,urgency:0
+#: selection:medical.perinatal,start_labor_mode:0
+msgid "Normal"
+msgstr "Normaal"
+
+#. module: medical
+#: field:medical.newborn,test_billirubin:0
+msgid "Billirubin"
+msgstr "Bilirubine"
+
+#. module: medical
+#: field:medical.patient.evaluation,directions:0
+msgid "Medical Directions"
+msgstr "Advies/voorschrift"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Family APGAR"
+msgstr "Familie APGAR"
+
+#. module: medical
+#: field:medical.lab,pathologist:0
+#: help:medical.lab,pathologist:0
+msgid "Pathologist"
+msgstr "Pathologie"
+
+#. module: medical
+#: view:medical.patient.disease:0
+msgid "Therapy"
+msgstr "Therapie"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Directions"
+msgstr "Behandelingsvoorschrifen"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Smoking"
+msgstr "Rookt"
+
+#. module: medical
+#: field:medical.newborn,died_at_the_hospital:0
+#: field:medical.perinatal,died_at_the_hospital:0
+msgid "Died at the hospital"
+msgstr "Overleden in het ziekenhuis"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Vital signs"
+msgstr "Vitale functies"
+
+#. module: medical
+#: help:medical.lab.hemogram,inr:0
+msgid "International Normalized Ratio"
+msgstr "International Normalized Ratio (INR)"
+
+#. module: medical
+#: help:medical.lab.hemogram,platelets:0
+msgid "Platelets, x10^9/L"
+msgstr "Bloedplaatjes, x10^9/l"
+
+#. module: medical
+#: field:medical.patient,trash:0
+msgid "Trash recolection"
+msgstr "Afvalscheiding"
+
+#. module: medical
+#: selection:medical.perinatal,start_labor_mode:0
+msgid "c-section"
+msgstr "C-sectie (Kijzersnede)"
+
+#. module: medical
+#: selection:medical.patient,housing:0
+msgid "Small, crowded but with good sanitary conditions"
+msgstr "Klein, vol maar met goede sanitaire voorzieningen"
+
+#. module: medical
+#: help:medical.medicament,pregnancy_warning:0
+msgid "Check when the drug can not be taken during pregnancy or lactancy"
+msgstr "Dit geneesmiddel dient niet te worden gebruikt tijdens de zwangerschap / bevalling"
+
+#. module: medical
+#: field:medical.patient,electricity:0
+msgid "Electrical supply"
+msgstr "Elektriciteitsaansluiting"
+
+#. module: medical
+#: view:medical.newborn:0
+msgid "Newborn Information"
+msgstr "Nieuwgeborene"
+
+#. module: medical
+#: field:medical.drugs_recreational,toxicity:0
+msgid "Toxicity"
+msgstr "Toxiciteit"
+
+#. module: medical
+#: help:medical.lab.hemogram,reticulocytes:0
+msgid "Reticulocytes, % of Red Blood cells"
+msgstr "Reticulocyten,% rode bloedlichaampjes"
+
+#. module: medical
+#: field:medical.perinatal,forceps:0
+msgid "Use of forceps"
+msgstr "Gebruik van de tang"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_newborn
+msgid "newborn information"
+msgstr "Nieuwgeborene"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_surgery
+#: view:medical.surgery:0
+msgid "Surgery"
+msgstr "Operatie"
+
+#. module: medical
+#: field:medical.lab.hemogram,basophils_pct:0
+msgid "% Basophils"
+msgstr "% Basofielen"
+
+#. module: medical
+#: view:medical.lab.hemogram:0
+msgid "Agranulocytes"
+msgstr "Agranulocyten"
+
+#. module: medical
+#: field:res.partner,insurance:0
+msgid "Insurance"
+msgstr "Verzekering"
+
+#. module: medical
+#: field:medical.patient,school_withdrawal:0
+msgid "School withdrawal"
+msgstr "Afgebroken opleiding"
+
+#. module: medical
+#: field:medical.patient,alcohol_wine_number:0
+msgid "Wine / day"
+msgstr "Wijn / dag"
+
+#. module: medical
+#: view:medical.perinatal:0
+msgid "Gestational period (weeks / days)"
+msgstr "Zwangerschapsperiode (weken / dagen)"
+
+#. module: medical
+#: selection:medical.patient,anticonceptive:0
+msgid "Female condom"
+msgstr "Vrouwencondoom"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptoms:0
+msgid "Symptoms"
+msgstr "Symptomen"
+
+
+#. module: medical
+#: field:medical.vaccination,observations:0
+msgid "Observations"
+msgstr "Constateringen"
+
+#. module: medical
+#: help:medical.pathology,chromosome:0
+msgid "chromosome number"
+msgstr "Aantal chromosomen"
+
+#. module: medical
+#: help:medical.patient,salt:0
+msgid "Check if patient consumes salt with the food"
+msgstr "De patiënt eet zout"
+
+#. module: medical
+#: view:medical.medicament:0
+#: field:medical.medicament,presentation:0
+msgid "Presentation"
+msgstr "Voorkomen"
+
+#. module: medical
+#: field:medical.patient.evaluation,notes_complaint:0
+msgid "Complaint details"
+msgstr "Ziektebeeld"
+
+#. module: medical
+#: selection:medical.patient,anticonceptive:0
+msgid "Contraceptive injection"
+msgstr "Prikpil"
+
+#. module: medical
+#: field:medical.patient.disease,description:0
+#: field:medical.specialty,name:0
+#: field:medical.surgery,description:0
+#: field:medical.test,info:0
+msgid "Description"
+msgstr "Omschrijving"
+
+#. module: medical
+#: field:medical.patient,fam_apgar_discussion:0
+msgid "Family discussions on problems"
+msgstr "Oneenigheid binnen de familie over probelemen"
+
+#. module: medical
+#: selection:medical.puerperium.monitor,lochia_odor:0
+msgid "offensive"
+msgstr "offensief"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Single"
+msgstr "Ongehuwd"
+
+#. module: medical
+#: field:medical.patient.evaluation,derived_to:0
+msgid "Derived to Doctor"
+msgstr "Doorverwezen aan"
+
+#. module: medical
+#: field:medical.patient.evaluation,height:0
+msgid "height (cm)"
+msgstr "lengte (cm)"
+
+#. module: medical
+#: view:medical.perinatal:0
+msgid "Monitoring"
+msgstr "Observatie"
+
+#. module: medical
+#: help:medical.patient,fam_apgar_affection:0
+msgid "Is the patient satisfied with the level of affection coming from the family ?"
+msgstr "De patiënt is tevreden met de liefde binnen de familie."
+
+#. module: medical
+#: help:medical.lab.hemogram,aptt:0
+msgid "Activated Partial Tromboplastin Time in seconds"
+msgstr "Geactiveerde partiële tromboplastinetijd (APTT, PTT) in s"
+
+#. module: medical
+#: view:medical.specialty:0
+msgid "Medical Specialty"
+msgstr "Medische specialisme"
+
+#. module: medical
+#: view:medical.lab.hepatogram:0
+msgid "Enzimes"
+msgstr "Enzymen"
+
+#. module: medical
+#: field:medical.genetic.risk,gene_id:0
+msgid "Gene ID"
+msgstr "ID van het gen"
+
+#. module: medical
+#: help:medical.lab.hemogram,hb:0
+msgid "Hemoglobin, in g/L"
+msgstr "Hemoglobine in g/l"
+
+#. module: medical
+#: field:medical.patient.evaluation,actions:0
+msgid "Procedures"
+msgstr "Procedures"
+
+#. module: medical
+#: view:medical.newborn:0
+msgid "Reanimation"
+msgstr "Reanimatie"
+
+#. module: medical
+#: view:medical.family_code:0
+msgid "Family List"
+msgstr "Famielie lijst"
+
+#. module: medical
+#: field:medical.newborn,photo:0
+#: field:medical.patient,photo:0
+msgid "Picture"
+msgstr "Foto"
+
+#. module: medical
+#: field:medical.patient,smoking:0
+msgid "Smokes"
+msgstr "Roker"
+
+#. module: medical
+#: help:medical.physician,specialty:0
+msgid "Specialty Code"
+msgstr "Code van de specialiteit"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_pathology
+#: model:ir.ui.menu,name:medical.medical_conf_pathology
+msgid "Pathologies"
+msgstr "Pathologiën"
+
+#. module: medical
+#: field:medical.lab.hemogram,bt:0
+msgid "Bleeding Time"
+msgstr "Bloedingstijd"
+
+#. module: medical
+#: field:medical.patient,soft_drinks:0
+msgid "Soft drinks (sugar)"
+msgstr "Limonade (suiker)"
+
+#. module: medical
+#: field:medical.perinatal.monitor,fundal_height:0
+#: field:medical.puerperium.monitor,uterus_involution:0
+msgid "Fundal Height"
+msgstr "Lengte foetus"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Physical Excersise"
+msgstr "Lichamelijke oefening"
+
+#. module: medical
+#: help:medical.vaccination,name:0
+msgid "Vaccine Name"
+msgstr "Naam vaccin"
+
+#. module: medical
+#: selection:medical.insurance,type:0
+msgid "Private"
+msgstr "Privé"
+
+#. module: medical
+#: help:medical.pathology,name:0
+msgid "Pathology / disease name"
+msgstr "Naam pathologie / ziekte"
+
+#. module: medical
+#: field:medical.surgery,age:0
+msgid "Patient age"
+msgstr "Leeftijd van de patiënt"
+
+#. module: medical
+#: field:medical.lab.hemogram,monocytes_pct:0
+msgid "% Monocytes"
+msgstr "% Monocyten"
+
+
+#. module: medical
+#: help:medical.drugs_recreational,street_name:0
+msgid "Common name of the drug in street jargon"
+msgstr "Gebruikelijke naam van het middel op de straat"
+

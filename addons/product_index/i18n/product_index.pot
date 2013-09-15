@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_index/i18n/product_index.pot

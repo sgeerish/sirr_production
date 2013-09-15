@@ -1,0 +1,55 @@
+<terp>
+	<data>
+
+<record model="ir.ui.view" id="hr_hr_employee_view_form4">
+			<field name="name">hr.hr.employee.view.form4</field>
+			<field name="model">hr.employee</field>
+			<field name="inherit_id" ref="hr.view_employee_form"/>
+			<field name="arch" type="xml">
+				<field name="medic_exam" position="replace" />
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="hr_hr_employee_view_form3">
+			<field name="name">hr.hr.employee.view.form3</field>
+			<field name="model">hr.employee</field>
+			<field name="inherit_id" ref="hr.view_employee_form"/>
+			<field name="arch" type="xml">
+			    <notebook position="inside">
+				<page string="Medical Exam">
+					<field name="last_medic_exam"/>
+					<field name="medic_exam" on_change="onchange_for_date_end(last_medic_exam,medic_exam_delay,medic_exam,medic_exam_delay_alert)"/>				
+					<field name="medic_exam_delay" on_change="onchange_for_date_end(last_medic_exam,medic_exam_delay,medic_exam,medic_exam_delay_alert)"/>
+					<button name="button_confirm" string="Medical Exam Done" type="object" colspan="2"/>
+					<line/>					
+					<field name="medic_exam_delay_alert" on_change="onchange_for_date_end(last_medic_exam,medic_exam_delay,medic_exam,medic_exam_delay_alert)"/>
+					<field name="email_alert"/>
+					<field name="medic_exam_alert"/>
+				</page>
+			    </notebook>
+			</field>
+		</record>
+
+
+		<record model="ir.ui.view" id="hr.view_employee_list">
+			<field name="name">hr.employee.tree</field>
+			<field name="model">hr.employee</field>
+			<!--field name="inherit_id" ref="hr.view_employee_list"/-->
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Employees" colors="blue:medic_exam_alert&lt;current_date and medic_exam&gt;current_date;red:medic_exam&lt;current_date">
+					<field name="name"/>
+					<field name="user_id"/>
+					<field name="address_id"/>
+					<field name="state"/>
+					<field name="parent_id"/>
+					<field name="medic_exam_alert"/>
+					<field name="medic_exam"/>
+				</tree>
+			</field>
+		</record>
+
+	</data>
+</terp>
+
+

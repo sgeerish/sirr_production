@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/point_of_sale/wizard/wizard_all_closed_cashbox_of_the_day.py

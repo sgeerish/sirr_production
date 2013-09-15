@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_payment_extension/wizard/__init__.py

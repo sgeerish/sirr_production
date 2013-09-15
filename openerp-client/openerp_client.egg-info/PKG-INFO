@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: openerp-client
+Version: 6.0.2
+Summary: OpenERP Client
+Home-page: http://www.openerp.com
+Author: OpenERP S.A.
+Author-email: info@openerp.com
+License: GPL-3
+Description: OpenERP is a complete ERP and CRM. The main features are accounting (analytic
+        and financial), stock management, sales and purchases management, tasks
+        automation, marketing campaigns, help desk, POS, etc. Technical features include
+        a distributed server, flexible workflows, an object database, a dynamic GUI,
+        customizable reports, and SOAP and XML-RPC interfaces.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python

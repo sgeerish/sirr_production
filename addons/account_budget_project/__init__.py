@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_budget_project/__init__.py

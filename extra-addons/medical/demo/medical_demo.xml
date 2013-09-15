@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+
+<!-- Health Centers -->
+
+		<record id="partner_institution1" model="res.partner">
+			<field name="name">GNU Solidario Hospital</field>
+			<field name="lastname"></field>
+			<field name="ref">55-4394-7777</field>
+			<field name="is_institution">1</field>
+		</record>
+
+
+		<record id="res_address_institution1" model="res.partner.address">
+			<field name="street">Avda Las Canteras 789</field>		
+			<field name="city">Las Palmas</field>
+			<field name="name">GNU Solidario Hospital</field>
+			<field name="email">info@gnusolidario.org</field>
+			<field model="res.country" name="country_id" search="[('name','=','Spain')]"/>
+			<field name="partner_id" ref="partner_institution1"/>
+		</record>
+
+<!-- Insurances -->
+
+		<record id="partner_insurance1" model="res.partner">
+			<field name="name">Insurator</field>
+			<field name="ref">333333-5566</field>
+		</record>
+
+
+		<record id="partner_doctor1" model="res.partner">
+			<field name="name">Cameron</field>
+			<field name="lastname">Cordara</field>
+			<field name="ref">55555654</field>
+			<field name="is_doctor">1</field>
+			<field name="is_person">1</field>
+			<field name="user_id" search="[('name','=','Administrator')]"/>
+		</record>
+
+		<record id="res_address_doctor1" model="res.partner.address">
+			<field name="street">Carretera del Norte</field>
+			<field name="city">Agaete</field>
+			<field name="phone">+34 928 55432534</field>
+			<field name="email">info@gnusolidario.org</field>
+			<field name="partner_id" ref="partner_doctor1"/>
+		</record>
+
+		<record id="doctor1" model="medical.physician">
+			<field name="name" ref="partner_doctor1"/>
+			<field name="institution" ref="partner_institution1"/>
+			<field name="code">94834729-283</field>
+		</record>
+
+<!-- Patients -->
+<!-- Ana -->
+		<record id="partner_patient1" model="res.partner">
+			<field name="name">Ana</field>
+			<field name="lastname">Betz</field>
+			<field name="ref">46777456-Z</field>
+			<field name="is_patient">1</field>
+                        <field name="is_person">1</field>
+			<field name="user_id" search="[('name','=','Administrator')]"/>
+		</record>
+
+		<record id="res_partner_address_1" model="res.partner.address">
+			<field name="street">Avda Marítima 5679</field>
+			<field name="city">Las Palmas</field>
+			<field name="phone">34 928 37364829</field>
+			<field name="email">medical@thymbra.com</field>
+			<field name="partner_id" ref="partner_patient1"/>
+		</record>
+
+
+		<record id="medical_insurance_1" model="medical.insurance">
+			<field name="name" ref="partner_patient1"/>
+			<field name="number">560432921</field>
+			<field name="company" ref="partner_insurance1"/>
+		</record>
+
+
+              <record id="patient1" model="medical.patient">
+                        <field name="name" ref="partner_patient1"/>
+                        <field name="dob">1970-04-04</field>
+                        <field name="sex">f</field>
+                        <field name="ethnic_group">5</field>
+                        <field name="marital_status">m</field>
+                        <field name="blood_type">A</field>
+                        <field name="rh">+</field>
+ 			<field name="primary_care_doctor" ref="doctor1"/>
+ 			<field name="current_address" ref="res_partner_address_1"/>
+ 			<field name="primary_care_doctor" ref="doctor1"/>
+ 			<field name="current_insurance" ref="medical_insurance_1"/>
+ 			<field name="critical_info">- Allergic to penicillin (anaphylaxis)
+- Type I Diabetes
+ 			</field>
+                </record>
+
+
+
+<!-- Josh -->
+		<record id="partner_patient2" model="res.partner">
+			<field name="name">Josh</field>
+			<field name="lastname">Doe</field>
+			<field name="ref">2356453-Q</field>
+			<field name="is_patient">1</field>
+                        <field name="is_person">1</field>
+			<field name="user_id" search="[('name','=','Administrator')]"/>
+		</record>
+
+		<record id="res_partner_address_2" model="res.partner.address">
+			<field name="street">Esperanza 15679</field>
+			<field name="partner_id" ref="partner_patient2"/>
+		</record>
+
+
+              <record id="patient2" model="medical.patient">
+                        <field name="name" ref="partner_patient2"/>
+                        <field name="dob">1985-10-11</field>
+                        <field name="sex">m</field>
+                        <field name="ethnic_group">5</field>
+                        <field name="marital_status">s</field>
+                        <field name="blood_type">B</field>
+                        <field name="rh">-</field>
+ 			<field name="primary_care_doctor" ref="doctor1"/>
+ 			<field name="current_address" ref="res_partner_address_2"/>
+ 			<field name="primary_care_doctor" ref="doctor1"/>
+ 			<field name="critical_info">Intravenous heroin user. 
+- TBC 
+- Cerebral toxoplasmosis
+- HIV positive
+ 			</field>
+                </record>
+
+
+
+
+
+
+		
+ 
+ <!-- Demo data for Hospital Building, Units, Wards/Rooms and beds -->
+
+		<record id="hospital_building_1" model="medical.hospital.building">
+			<field name="name">Wing 2</field>
+			<field name="institution" ref="partner_institution1"/>
+		</record>
+
+		<record id="hospital_unit_1" model="medical.hospital.unit">
+			<field name="name">Chest</field>
+			<field name="institution" ref="partner_institution1"/>
+		</record>
+
+		<record id="product_category_bed1" model="product.category">
+			<field name="name">Hospital Bed</field>
+			<field name="institution" ref="partner_institution1"/>
+		</record>
+
+
+		<record id="ward1" model="medical.hospital.ward">
+			<field name="name">Atlantico</field>
+			<field name="institution" ref="partner_institution1"/>
+			<field name="building" ref="hospital_building_1"/>
+			<field name="unit" ref="hospital_unit_1"/>
+			<field name="floor">3</field>
+			<field name="number_of_beds">5</field>
+		</record>
+
+	        <record id="product_bed_320" model="product.product">
+			<field name="list_price">100</field>
+			<field name="standard_price">100</field>
+			<field name="uom_id" ref="product.product_uom_unit"/>
+			<field name="uom_po_id" ref="product.product_uom_unit"/>
+			<field name="type">service</field>
+			<field name="is_rental">1</field>
+			<field name="name">320</field>
+			<field name="code">BED320</field>
+			<field name="is_bed">1</field>
+			<field name="categ_id" ref="product_category_bed1"/>
+	        </record>
+
+	        <record id="bed_320" model="medical.hospital.bed">
+			<field name="name" ref="product_bed_320"/>
+			<field name="ward" ref="ward1"/>
+			<field name="telephone_number">555-5100 x0320</field>
+			<field name="state">free</field>
+	        </record>
+
+
+	</data>
+</openerp>
+
+ 

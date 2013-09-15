@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/google_blogger/__init__.py

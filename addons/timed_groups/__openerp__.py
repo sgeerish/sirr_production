@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/timed_groups/__openerp__.py

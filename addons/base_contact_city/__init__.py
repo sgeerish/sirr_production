@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_contact_city/__init__.py

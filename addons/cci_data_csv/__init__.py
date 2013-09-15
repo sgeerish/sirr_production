@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_data_csv/__init__.py

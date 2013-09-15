@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/better_zip/__openerp__.py

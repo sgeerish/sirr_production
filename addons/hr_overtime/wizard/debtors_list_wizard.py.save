@@ -1,0 +1,161 @@
+# -*- coding: utf-8 -*-
+##############################################################################
+#
+#    OpenERP, Open Source Management Solution
+#    Copyright (C) 2003-2010 NS-Team (<http://www.ns-team.fr>).
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+
+import wizard
+import pooler
+import datetime
+from datetime import date
+from mx import DateTime
+from tools.translate import _
+
+debtors_list_form = '''<?xml version="1.0"?>
+<form string="Impayes Clients">
+    <group col="8">
+        <group col="2">
+        </group>
+        <group col="2">
+            <field name="code"/>
+        </group>
+        <group col="4">
+            <group colspan="4"  attrs="{'invisible': [('period','=','s')]}">
+                <group colspan="2">
+                    <field name="year"/>
+                </group>
+                <group colspan="2" >
+                    <field name="month" attrs="{'invisible': [('period','=','a')]}"/>
+                </group>
+            </group>
+            <group colspan="4">
+                <field name="invoice_date_debut"/>
+                <field name="invoice_date_fin"/>
+                
+                <field name="ech"/>
+            </group>
+            <field name="partner_id"/>
+            <field name="detail"/>
+            <field name="paid"/>
+            <field name="douteux"/>
+            <field name="categ_doubtful_id"/>
+        </group>
+    </group>
+</form>'''
+
+
+debtors_list_fields = {
+        'period': {'string':'Period', 'type':'selection', 'selection':[('m','Month'),('a','Year'),('s','Selection')]},
+        'month': {'string':'Month', 'type':'selection', 'selection':[('1','January'),('2','February'),('3','March'),('4','April'),('5','May'),('6','June'),('7','July'),('8','August'),('9','September'),('10','October'),('11','November'),('12','December')]},
+        'year': {'string':'Year', 'type':'selection', 'selection':[('2008','2008'),('2009','2009'),('2010','2010'),('2011','2001'),('2012','2012'),('2013','2013'),('2014','2014'),('2015','2015')]},
+        'date_from': {'string':'From', 'type':'date'},
+        'invoice_date_debut': {'string':'Date de Facture de', 'type':'date'},
+        'invoice_date_fin': {'string':'Date de Facture a', 'type':'date'},
+        'ech': {'string':'Echeance', 'type':'date'},        
+        'maturity': {'string':'Date de Echeance <=', 'type':'date'},        
+        'partner_id': {'string':'Client', 'type':'many2one','relation':'res.partner'},
+        'categ_doubtful_id': {'string':'Niveau Douteux', 'type':'many2one','relation':'res.partner.category'},
+        'detail':{'string':'Montrer Details?','type':'boolean'},
+        'paid':{'string':'Inclure payees?','type':'boolean'},
+        'douteux':{'string':'Seulement Douteux','type':'boolean'},
+        'code':{'string':'Code Client','type':'char'},
+    }
+
+
+class wizard_debtors_list(wizard.interface):
+
+    def _get_defaults(self, cr, uid, data, context={}):
+        now=datetime.datetime.now()
+        return data['form']
+        
+    def _get_states(self, cr, uid, data, context):
+        return 'print_report_c'
+            
+    def _get_records(self, cr, uid, data, context={}):
+        inv_obj = pooler.get_pool(cr.dbname).get('account.move.line')
+        
+    states = {
+        'init': {
+            'actions': [_get_defaults],
+            'result': {
+                'type': 'form',
+                'arch':debtors_list_form,
+                'fields':debtors_list_fields,
+                'state':[('end','Cancel'),('nextstate','Print')]
+            },
+        },
+        'nextstate' : {
+            'actions' : [],
+            'result' : {'type' : 'choice', 'next_state' : _get_states}
+        },
+
+class wizard_debtors_list(wizard.interface):
+
+    def _get_defaults(self, cr, uid, data, context={}):
+        now=datetime.datetime.now()
+        return data['form']
+
+    def _get_states(self, cr, uid, data, context):
+        return 'print_report_c'
+
+    def _get_records(self, cr, uid, data, context={}):
+        inv_obj = pooler.get_pool(cr.dbname).get('account.move.line')
+
+    states = {
+        'init': {
+            'actions': [_get_defaults],
+            'result': {
+                'type': 'form',
+                'arch':debtors_list_form,
+                'fields':debtors_list_fields,
+                'state':[('end','Cancel'),('nextstate','Print')]
+            },
+        },
+        'nextstate' : {
+            'actions' : [],
+            'result' : {'type' : 'choice', 'next_state' : _get_states}
+        },
+
+        'print_report_c': {
+            'actions': [_get_records],
+            'result': {
+                'type': 'print',
+                'name' : 'Journal Caisse',
+                'report': 'report.debtors_list',
+                'rml' : 'ns_sales_reports/report/debtors_list.jrxml',
+                'state': 'end'
+            },
+        },
+    }
+
+wizard_debtors_list('report.debtors_list.wizard')
+        'print_report_c': {
+            'actions': [_get_records],
+            'result': {
+                'type': 'print',
+                'name' : 'Journal Caisse',
+                'report': 'report.debtors_list',
+                'rml' : 'ns_sales_reports/report/debtors_list.jrxml',
+                'state': 'end'
+            },
+        },
+    }
+
+wizard_debtors_list('report.debtors_list.wizard')
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_manufacturer_extension/product_manufacturer_extension.py

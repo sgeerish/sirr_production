@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_asset/wizard/__init__.py

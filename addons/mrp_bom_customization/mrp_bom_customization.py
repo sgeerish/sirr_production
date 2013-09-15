@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/mrp_bom_customization/mrp_bom_customization.py

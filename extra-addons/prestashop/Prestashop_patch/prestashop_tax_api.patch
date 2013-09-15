@@ -1,0 +1,72 @@
+Index: classes/Tax.php
+===================================================================
+--- classes/Tax.php	(revision 13518)
++++ classes/Tax.php	(working copy)
+@@ -48,8 +48,16 @@
+ 	protected static $_product_country_tax = array();
+ 	protected static $_product_tax_via_rules = array();
+ 
++    // Fix issue with tax activation via web service
+ 	protected	$webserviceParameters = array(
+ 		'objectsNodeName' => 'taxes',
++        'fields' => array(
++                    'rate' => array( 'required' => true),
++                    'active' => array(),
++                    'deleted' => array(),
++
++                    'name' => array()   
++                ),
+ 	);
+ 	
+ 	public function getFields()
+Index: classes/TaxRule.php
+===================================================================
+--- classes/TaxRule.php	(revision 13518)
++++ classes/TaxRule.php	(working copy)
+@@ -40,6 +40,14 @@
+ 
+ 	protected 	$table = 'tax_rule';
+ 	protected 	$identifier = 'id_tax_rule';
++    //Enable web service api for tax_rules
++    protected $webserviceParameters = array(
++        'fields' => array(
++            'id_tax_rules_group' => array('xlink_resource'=> 'tax_rule_groups'),
++            'id_state' => array('xlink_resource'=> 'states'),
++            'id_country' => array('xlink_resource'=> 'countries')
++        ),
++    );
+ 
+ 	public function getFields()
+ 	{
+Index: classes/WebserviceRequest.php
+===================================================================
+--- classes/WebserviceRequest.php	(revision 13518)
++++ classes/WebserviceRequest.php	(working copy)
+@@ -260,6 +260,9 @@
+ 			'taxes' => array('description' => 'The tax rate', 'class' => 'Tax'),
+ 			'customer_messages' => array('description' => 'Customer messages', 'class' => 'CustomerMessage'),
+ 			'customer_threads' => array('description' => 'Customer threads', 'class' => 'CustomerThread'),
++            // Add tax_rules and tax_rule_groups in api list
++            'tax_rules' => array('description' => 'Tax rules entity', 'class' => 'TaxRuleCore'),
++            'tax_rule_groups' => array('description' => 'Tax rule groups', 'class' => 'TaxRulesGroupCore'),
+ 		);
+ 		ksort($resources);
+ 		return $resources;
+Index: classes/TaxRulesGroup.php
+===================================================================
+--- classes/TaxRulesGroup.php	(revision 13518)
++++ classes/TaxRulesGroup.php	(working copy)
+@@ -45,6 +45,13 @@
+ 	public static $canada_iso = 'CA';
+ 	public static $canada_states_iso = array('QC', 'PE');
+ 
++    //Enable web service api for tax_rules_groups
++    protected $webserviceParameters = array(
++        'objectsNodeName' => 'tax_rule_groups',
++        'objectNodeName' => 'tax_rule_group',
++        'fields' => array(
++        ),
++    );
+ 	public function getFields()
+ 	{
+ 		parent::validateFields();

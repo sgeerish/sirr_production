@@ -1,0 +1,52 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* medical_icd10pcs
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.0-rc1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-12-05 21:30:19+0000\n"
+"PO-Revision-Date: 2011-01-02 11:28+0700\n"
+"Last-Translator: Nguyen Thanh Phong <phong.nguyen_thanh@yahoo.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: medical_icd10pcs
+#: model:ir.module.module,shortdesc:medical_icd10pcs.module_meta_information
+msgid "Medical : Procedure Coding System .- ICD10-PCS"
+msgstr "Y khoa : Hệ thống mã hóa Thủ tục Y tế - ICD10-PCS"
+
+#. module: medical_icd10pcs
+#: model:ir.module.module,description:medical_icd10pcs.module_meta_information
+msgid ""
+"\n"
+"\n"
+"Procedure Coding System for Medical : ICD-10-PCS\n"
+"\n"
+"The ICD-10 Procedure Coding System (ICD-10-PCS) is system of medical classification used for procedural codes. The National Center for Health Statistics (NCHS) received permission from the World Health Organization (WHO) (the body responsible for publishing the International Classification of Diseases [ICD]) to create the ICD-10-PCS as a successor to Volume 3 of ICD-9-CM and a clinical modification of the original ICD-10.\n"
+"\n"
+"Each code consists of seven alphanumeric characters. The second through seventh characters mean the same thing within each section, but may mean different things in other sections. Each character can be any of 34 possible values the ten digits 0-9 and the 24 letters A-H,J-N and P-Z may be used in each character. The letters O and I excluded to avoid confusion with the numbers 0 and 1. There are no decimals in ICD-10-PCS\n"
+"\n"
+"Check http://en.wikipedia.org/wiki/ICD-10_Procedure_Coding_System\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"Hệ thống mã hóa Thủ tục Y tế : ICD-10-PCS\n"
+"\n"
+"Hệ thống mã hóa Thủ tục Y tế ICD-10 (ICD-10-PCS) là hệ thống phân loại mã số thủ tục Y tế. Trung tâm Quốc gia về Thống kê Y tế Mỹ (NCHS) được sự cho phép của Tổ chức Y tế Thế giới (WHO) (cơ quan chịu trách nhiệm về việc xuất bản Bảng phân loại bệnh quốc tế [ICD]) để tạo ra ICD-10-PCS như là phần kế thừa Phần 3 của ICD-9-CM và là thay đổi của bản gốc ICD-10\n"
+"\n"
+"Mỗi mã gồm bảy ký tự chữ cái và chữ số. Ký tự thứ hai đến thứ bảy có cùng ý nghĩa trong mỗi phần, nhưng có thể có nghĩa khác nhau trong các phần khác nhau. Mỗi ký tự có thể được chọn từ 34 giá trị gồm 10 chữ số 0-9 và 24 chữ cái A-H, J-N và P-Z. Các chữ O và I bị loại bỏ nhằm tránh nhầm lẫn với số 0 và 1. Không có dấu thập phân trong ICD-10-PCS\n"
+"\n"
+"Xem thêm thông tin tại http://en.wikipedia.org/wiki/ICD-10_Procedure_Coding_System\n"
+"\n"
+
+#~ msgid "The certificate ID of the module must be unique !"
+#~ msgstr "Mã chứng nhận của mô đun này phải là duy nhất !"
+#~ msgid "The name of the module must be unique !"
+#~ msgstr "Tên của mô đun phải duy nhất !"
+

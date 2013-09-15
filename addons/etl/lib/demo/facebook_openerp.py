@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl/lib/demo/facebook_openerp.py

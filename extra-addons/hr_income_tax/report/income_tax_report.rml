@@ -1,0 +1,842 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+       <frame id="first" x1="28.0" y1="28.0" width="539" height="786"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="3,0" stop="3,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="4,0" stop="4,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="4,0" stop="4,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="4,0" stop="4,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="0,0" stop="5,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="0,0" stop="5,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="0,0" stop="5,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="1,0" stop="6,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="1,0" stop="6,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="1,0" stop="6,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="2,0" stop="7,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="2,0" stop="7,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="2,0" stop="7,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="3,0" stop="8,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="3,0" stop="8,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="3,0" stop="8,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="4,0" stop="9,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="4,0" stop="9,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="4,0" stop="9,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="0,0" stop="10,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="0,0" stop="10,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="0,0" stop="10,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="1,0" stop="11,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="1,0" stop="11,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="1,0" stop="11,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="2,0" stop="12,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="2,0" stop="12,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="2,0" stop="12,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="3,0" stop="13,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="3,0" stop="13,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="3,0" stop="13,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="4,0" stop="14,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="4,0" stop="14,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="4,0" stop="14,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Exemption_amt_table">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#cccccc" start="0,0" stop="1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="document_table">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#cccccc" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#cccccc" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#cccccc" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#cccccc" start="0,0" stop="1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="GRID" colorName="black"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="terp_header" fontName="Helvetica-Bold" fontSize="15.0" leading="19" alignment="LEFT" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Heading 9" fontName="Helvetica-Bold" fontSize="75%" leading="NaN" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_General" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_Details" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_default_8" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Bold_8" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_tblheader_General_Centre" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="CENTER" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_General_Right" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="RIGHT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_Details_Centre" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="CENTER" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_Details_Right" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="RIGHT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_default_Right_8" fontName="Helvetica" fontSize="8.0" leading="10" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Centre_8" fontName="Helvetica" fontSize="8.0" leading="10" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_header_Right" fontName="Helvetica-Bold" fontSize="12.0" leading="15" alignment="LEFT" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_header_Centre" fontName="Helvetica-Bold" fontSize="12.0" leading="15" alignment="CENTER" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_default_address" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_9" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Bold_9" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Centre_9" fontName="Helvetica" fontSize="9.0" leading="11" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Right_9" fontName="Helvetica" fontSize="9.0" leading="11" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Right_9_Bold" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_2" fontName="Helvetica" fontSize="2.0" leading="3" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+  </stylesheet>
+  <story>
+    <para style="terp_default_9">[[ repeatIn(objects, 'o') ]] </para>
+    <para style="terp_header_Centre">Computation of Income Tax</para>
+    <para style="terp_header_Centre">[[ o.year_detail.name ]]</para>
+    <para style="terp_default_9">
+      <font color="white"> </font>
+    </para>
+    <para style="terp_default_9">
+      <font color="white"> </font>
+    </para>
+    <para style="terp_default_9">
+      <font color="white"> </font>
+    </para>
+    
+    <blockTable colWidths="179.66,179.66,179.66" style="Table1">
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Employee: [[ o.employee.name ]]</para>
+        </td>
+        <td>
+          <para style="terp_default_Bold_9">Date Of Birth: [[ o.dob ]]</para>
+        </td>
+        <td>
+          <para style="terp_default_Bold_9">Gender: [[ o.gender ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Pan No: [[ o.pan_no ]]</para>
+        </td>
+        <td>
+          <para style="terp_default_Bold_9">ESI: [[ o.esi ]]</para>
+        </td>
+        <td>
+          <para style="terp_default_Bold_9">PF: [[ o.pf ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="terp_default_Bold_9">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="219.66,159.66,159.66" style="Table1" repeatRows="1">
+      <tr>
+        <td>
+          <para style="terp_tblheader_Details">Name</para>
+        </td>
+        <td>
+          <para style="terp_tblheader_Details_Right">Amount</para>
+        </td>
+        <td>
+          <para style="terp_tblheader_Details_Right">Amount</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Gross Annual Income/Salary(Include All Allowance) </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9"> </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ o.gross_salary ]]
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Less Allowance exempt u/s 10(for Service Period)</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            [[ o.less and o.less.final_exemption_amt or 0.00 ]]
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">...</font><font>HRA Excemption</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+             [[ o.less and o.less.exemption_amt or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">...</font><font>Conveyance Allowances</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.less and o.less.con_all_hra or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">...</font><font>other Allowances </font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ get_other_allowance(o.less)['other_total'] ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Income under the Head Salaries</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ o.income_head_salary ]]
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Add :Any other Income from other sources</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ o.add_any_other_income and o.add_any_other_income.other_total or 0.00 ]]
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>Bank</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.add_any_other_income and o.add_any_other_income.bank or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>N.S.C.</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.add_any_other_income and o.add_any_other_income.nsc or 0.00 ]]
+            
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>Post office M.I.S.</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.add_any_other_income and o.add_any_other_income.mis or 0.00 ]]
+            
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>Post office Recuring Deposit</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.add_any_other_income and o.add_any_other_income.post_off_recuring or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>Term Deposit</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.add_any_other_income and o.add_any_other_income.term_dep or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>Saving Bonds</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.add_any_other_income and o.add_any_other_income.saving or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>Kishan Vikas patra</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.add_any_other_income and o.add_any_other_income.kishan or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+      <td>
+          <para style="terp_default_9"><font color="white">....</font><font>Ohter Income</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ get_other_income(o.add_any_other_income)['other_total'] ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Result (Head Income + Other Income)</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ o.income_other ]]
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Income from House Property</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+            
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ get_total_house_amt(o)['amount'] ]]
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Gross Total Income </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ o.gross_tol_inc ]]
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Less:Deduction Under 80C lines</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ o.dec_und_sec and o.dec_und_sec.total_ded or 0.00 ]]
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>PF &amp; VPF contribution</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.dec_und_sec and o.dec_und_sec.pf_vpf or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>Life Insurance Premiums</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.dec_und_sec and o.dec_und_sec.lif or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>PPF a/c Contribution</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.dec_und_sec and o.dec_und_sec.ppf or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>N.S.C</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.dec_und_sec and o.dec_und_sec.nsc1 or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>Housing Loan</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.dec_und_sec and o.dec_und_sec.house_loan or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>Tuition fees for 2 Children</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.dec_und_sec and o.dec_und_sec.tut_fees or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>E.L.S.S.</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.dec_und_sec and o.dec_und_sec.elss or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>Taxes Savings Bond</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.dec_und_sec and o.dec_und_sec.tax_sav_bond or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>FD</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.dec_und_sec and o.dec_und_sec.fd or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>80cc pension plan</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.dec_und_sec and o.dec_und_sec.pension_plan or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>80cc Other</font> </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ get_other_ded_80cc(o.dec_und_sec)['other_ded'] ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Less:Deduction Under chapter VI-A</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ o.ded_under_chp and o.ded_under_chp.total_ded1 or 0.00 ]]
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>80 D Medical Insurence Premium (for self)</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.ded_under_chp and o.ded_under_chp.mip or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>80 D Medical Insurence Premium (for parent)</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.ded_under_chp and o.ded_under_chp.mipp or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>80 E Int paid on Education Loan</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.ded_under_chp and o.ded_under_chp.int_paid_edu or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>80 D Donaton to approved for fund</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ o.ded_under_chp and o.ded_under_chp.donation_app or 0.00 ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">....</font><font>Any other Specify</font></para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ get_other_ded_6a(o.ded_under_chp)['other_ded_6a'] ]]
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Total Income </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ o.tot_income_ ]]
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Total Taxable Income(Round off to nearest 10 rupees)</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ o.tot_tax_inc ]]
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Tax on total income</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ o.tax_on_tol ]]
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Surcharge on Total Taxable income</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ get_surcharge_amt(o)['amount'] ]]
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Total Tax payable</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ o.tol_tax_pay ]]
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Add:Education cess @ [[ o.edu_cess_perc ]]%</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ o.add_edn_cess ]]
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Net Tax Payable (TDS)</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold">[[ o.net_tax_pay ]]
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Balance Tax payable/Refundable</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9_Bold"><u>[[ o.balance_tax ]]</u>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="terp_default_9">
+      <font color="white"> </font>
+    </para>
+    <para style="terp_default_Bold_9">Related Documents List:</para>
+    <para style="terp_default_9">
+      <font color="white"> </font>
+    </para>
+    <section>
+    <para style="terp_default_Bold_9">[[ repeatIn(get_document(o),'doc') ]]</para>
+    <blockTable colWidths="269.49,269.49" style="document_table">
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">[[ doc['name'] ]]</para>
+        </td>
+        <td>
+          <para style="terp_default_Bold_9">[[ doc['count'] ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    </section>
+    <para style="terp_default_9">
+      <font color="white"> </font>
+    </para>
+    <para style="terp_default_Bold_9">HRA Exemption Amount Detail:</para>
+    <para style="terp_default_9">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="269.49,269.49" style="Exemption_amt_table">
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">HRA Exemption(min of following amount)</para>
+        </td>
+        <td>
+          <para style="terp_default_Bold_9">[[ o.less and o.less.exemption_amt or 0.00 ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">...</font><font>HRA Received</font></para>
+        </td>
+        <td>
+          <para style="terp_default_9">[[ o.less and o.less.hra_rec or 0.00 ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">...</font><font>(HRA Paid -[[ o.less.ded_pec2 ]] of Basic Salary)</font></para>
+        </td>
+        <td>
+          <para style="terp_default_9">[[ get_second_amt(o)['final_amt'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_9"><font color="white">...</font><font>([[ o.less and o.less.ded_pec1 or 0.00 ]] of Basic HRA)</font></para>
+        </td>
+        <td>
+          <para style="terp_default_9">[[ get_third_amt(o.less.basic_hra,o.less.ded_pec1)['amount'] ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="terp_default_9">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>
+

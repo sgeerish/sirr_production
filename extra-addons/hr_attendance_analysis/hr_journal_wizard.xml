@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+        <!-- Attendance Computing -->
+        <wizard id="wizard_attendance_process"
+            name="hr.aa.attendance_process"
+            model="hr.aa.journal"
+            string="Process Attendance for Analysis" />
+        <menuitem action="wizard_attendance_process"
+            id="menu_attendance_process"
+            parent="hr_attendance.menu_hr_attendance"
+            type="wizard"
+            groups="hr_aa_user_group"/>
+
+        <!-- Compute Journal -->
+        <wizard id="wizard_compute_journal"
+            name="hr.aa.compute_journal"
+            model="hr.aa.journal"
+            string="Compute" />
+
+        <!-- Journal report -->
+        <delete model="ir.actions.wizard" search="[('wiz_name','like','print_journal_report')]" />
+        <wizard id="print_journal_report"
+            name="hr.aa.print_journal_report"
+            model="hr.employee"
+            keyword="client_print_multi"
+            string="Print Attendance Journal Report" />
+
+     </data>
+</openerp>
+
+<!--
+     vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+     -->

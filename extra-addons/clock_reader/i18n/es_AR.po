@@ -1,0 +1,285 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* clock_reader
+# Cristian S. Rocha <cristian.rocha@moldeointeractive.com.ar>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.15\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-04-14 18:15:42+0000\n"
+"PO-Revision-Date: 2011-04-14 15:19-0300\n"
+"Last-Translator: Cristian S. Rocha <cristian.rocha@moldeointeractive.com."
+"ar>\n"
+"Language-Team: es_AR <cristian.rocha@moldeointeractive.com.ar>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: UTF-8\n"
+"Plural-Forms: X\n"
+
+#. module: clock_reader
+#: wizard_view:clock_reader.read_clock,read:0
+msgid "Final read status"
+msgstr "Estado final del proceso"
+
+#. module: clock_reader
+#: field:clock_reader.clock,clean_at_end:0
+msgid "Clean clock at the end"
+msgstr "Limpiar reloj al final"
+
+#. module: clock_reader
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre del modelo inválido en la definición de la acción."
+
+#. module: clock_reader
+#: view:clock_reader.clock:0
+#: model:ir.model,name:clock_reader.model_clock_reader_clock
+msgid "Clock"
+msgstr "Reloj"
+
+#. module: clock_reader
+#: selection:clock_reader.clock,model:0
+msgid "F-5"
+msgstr "F-5"
+
+#. module: clock_reader
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"El nombre del objeto debe comenzar con x_ y no debe contener ningún caracter "
+"especial."
+
+#. module: clock_reader
+#: selection:hr.attendance,method:0
+msgid "Face recognition"
+msgstr "Reconocimiento de Rostro"
+
+#. module: clock_reader
+#: wizard_field:clock_reader.read_clock,read,errors:0
+msgid "Errors"
+msgstr "Errores"
+
+#. module: clock_reader
+#: field:clock_reader.clock,location_id:0
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: clock_reader
+#: field:clock_reader.clock,create_unknown_employee:0
+msgid "Create Unknown Employeers"
+msgstr "Crear empleados desconocidos"
+
+#. module: clock_reader
+#: wizard_button:clock_reader.registration_quality_report,init,print:0
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: clock_reader
+#: field:clock_reader.clock,complete_attendance:0
+msgid "Autocomplete sign in/out"
+msgstr "Autocompletar entrada/salida"
+
+#. module: clock_reader
+#: field:clock_reader.clock,tolerance:0
+msgid "Tolerance"
+msgstr "Tolerancia"
+
+#. module: clock_reader
+#: wizard_view:clock_reader.read_clock,init:0
+msgid "Start read attendance from clocks"
+msgstr "Iniciar la lectura de los relojes"
+
+#. module: clock_reader
+#: selection:clock_reader.clock,model:0
+msgid "Zkem"
+msgstr "Zkem"
+
+#. module: clock_reader
+#: field:clock_reader.clock,ignore_sign_inout:0
+msgid "Ignore sign in/outs"
+msgstr "Ignorar acciones de entradas/salidas"
+
+#. module: clock_reader
+#: model:ir.actions.wizard,name:clock_reader.read_clock
+#: model:ir.ui.menu,name:clock_reader.menu_clock_reader
+msgid "Read clocks"
+msgstr "Leer relojes"
+
+#. module: clock_reader
+#: wizard_field:clock_reader.read_clock,init,tolerance:0
+msgid "Tolerance between equivalent entries"
+msgstr "Tolerancia para entradas equivalentes"
+
+#. module: clock_reader
+#: wizard_button:clock_reader.read_clock,init,read:0
+msgid "Read"
+msgstr "Leer"
+
+#. module: clock_reader
+#: view:clock_reader.action_reason_rule:0
+msgid "Action Reason Rule"
+msgstr "Regla de razón de acción"
+
+#. module: clock_reader
+#: wizard_field:clock_reader.read_clock,read,count:0
+msgid "Number of Items loaded"
+msgstr "Número de entradas generadas"
+
+#. module: clock_reader
+#: model:ir.module.module,description:clock_reader.module_meta_information
+msgid ""
+"\n"
+"    Module to load personal assistance from Employee Time Clocks.\n"
+"\n"
+"    It' support F-5 clocks.\n"
+"    "
+msgstr ""
+"Modulo que lee las asistencias del personal desde un reloj digital.\n"
+"\n"
+"Soporta relojes tipo Zkem."
+
+#. module: clock_reader
+#: wizard_field:clock_reader.read_clock,init,override:0
+msgid "Override clock options with this options"
+msgstr "No usar las opciones del reloj"
+
+#. module: clock_reader
+#: model:ir.module.module,shortdesc:clock_reader.module_meta_information
+msgid "Clock Reader"
+msgstr "Lector de Reloj"
+
+#. module: clock_reader
+#: wizard_field:clock_reader.read_clock,init,unknown:0
+msgid "Create unknown employee"
+msgstr "Crear empleados desconocidos"
+
+#. module: clock_reader
+#: selection:hr.attendance,method:0
+msgid "Fingerprint"
+msgstr "Huellas digitales"
+
+#. module: clock_reader
+#: field:clock_reader.clock,active:0
+msgid "Active"
+msgstr "Activar"
+
+#. module: clock_reader
+#: field:clock_reader.clock,timeout:0
+msgid "Timeout (sec)"
+msgstr "Tiempo fuera (seg)"
+
+#. module: clock_reader
+#: field:hr.attendance,method:0
+msgid "Authentication method"
+msgstr "Método de Autentificación"
+
+#. module: clock_reader
+#: field:clock_reader.clock,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: clock_reader
+#: help:clock_reader.clock,tolerance:0
+msgid ""
+"In seconds, distance bettweeen attendance with same action understanded as "
+"the same attendance."
+msgstr ""
+"En segundos, distancia entre asistencias que son consideradas como "
+"equivalentes."
+
+#. module: clock_reader
+#: selection:hr.attendance,method:0
+msgid "Manual"
+msgstr "Manual"
+
+#. module: clock_reader
+#: selection:hr.attendance,method:0
+msgid "RFid"
+msgstr "RFid"
+
+#. module: clock_reader
+#: wizard_field:clock_reader.read_clock,init,ignore_signs:0
+msgid "Ignore signs in/outs"
+msgstr "Ignorar entradas de acción"
+
+#. module: clock_reader
+#: field:clock_reader.clock,uri:0
+msgid "URI"
+msgstr "URI"
+
+#. module: clock_reader
+#: wizard_field:clock_reader.read_clock,init,complete:0
+msgid "Complete attendance"
+msgstr "Asistencia completada"
+
+#. module: clock_reader
+#: wizard_field:clock_reader.registration_quality_report,init,date_from:0
+msgid "Start day of report"
+msgstr "Fecha inicial del reporte"
+
+#. module: clock_reader
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML inválido para la definición de la vista!"
+
+#. module: clock_reader
+#: field:clock_reader.clock,model:0
+msgid "Model"
+msgstr "Modelo"
+
+#. module: clock_reader
+#: selection:hr.attendance,method:0
+msgid "Automatic"
+msgstr "Automático"
+
+#. module: clock_reader
+#: model:ir.actions.wizard,name:clock_reader.wizard_registration_quality_report
+#: model:ir.ui.menu,name:clock_reader.menu_registration_quality_report
+msgid "Registration quality report"
+msgstr "Reporte de calidad de registración"
+
+#. module: clock_reader
+#: wizard_view:clock_reader.registration_quality_report,init:0
+msgid "Setup report"
+msgstr "Configuración del Reporte"
+
+#. module: clock_reader
+#: wizard_button:clock_reader.read_clock,read,end:0
+msgid "OK"
+msgstr "OK"
+
+#. module: clock_reader
+#: help:clock_reader.clock,uri:0
+msgid ""
+"Determines the URI string to connect to the clock. The URI is\n"
+"determined by each model watch. In the case of F5, for example is:\n"
+"udp://localhost:8000/"
+msgstr ""
+"Determina el URI para conectarse al reloj. La URI es determinado por cada "
+"modelo del reloj. En el caso de reloj del tipo F5 o Zkem usar: \n"
+"udp://localhost:8000/ "
+
+#. module: clock_reader
+#: wizard_field:clock_reader.registration_quality_report,init,date_to:0
+msgid "End day of report"
+msgstr "Último día del reporte"
+
+#. module: clock_reader
+#: view:clock_reader.clock:0
+#: model:ir.actions.act_window,name:clock_reader.open_view_clock
+#: model:ir.ui.menu,name:clock_reader.menu_view_clock_form
+msgid "Clocks"
+msgstr "Relojes"
+
+#. module: clock_reader
+#: selection:hr.attendance,method:0
+msgid "Keyboard"
+msgstr "Teclado"
+
+#. module: clock_reader
+#: wizard_button:clock_reader.read_clock,init,end:0
+#: wizard_button:clock_reader.registration_quality_report,init,end:0
+msgid "Cancel"
+msgstr "Cancelar"

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training_doc/wizard/__init__.py

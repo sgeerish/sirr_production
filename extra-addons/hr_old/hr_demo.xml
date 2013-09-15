@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Example employee -->
+
+        <record id="employee1" model="hr.employee">
+            <field name="name">Fabien Pinckaers</field>
+            <field name="calendar_id" ref="resource.timesheet_group1"/>
+            <!--<field name="regime">45</field>-->
+            <field name="user_id" ref="base.user_root"/>
+            <!--<field name="holiday_max">25</field>-->
+        </record>
+
+    </data>
+</openerp>

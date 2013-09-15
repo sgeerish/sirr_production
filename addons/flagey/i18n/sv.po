@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/flagey/i18n/sv.po

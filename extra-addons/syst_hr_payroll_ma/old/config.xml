@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<!--
+			inserer la configuration du module de gestion de paie dans
+			confiruration de HR
+		-->
+		<menuitem id="payroll_ma_configure" parent="hr.menu_hr_configuration"
+			name="Gestion Paie" />
+		<menuitem id="payroll_ma_configure_baremes" parent="payroll_ma_configure"
+			name="Baremes" />
+		<menuitem id="payroll_ma_configure_cotisations" parent="payroll_ma_configure"
+			name="Cotisations" />
+
+		<!--
+			################### GONFIGURATION DES COTISATIONS
+			####################
+		-->
+		<record model="ir.ui.view" id="cotisation_form">
+			<field name="name">cotisation.form</field>
+			<field name="model">hr.payroll_ma.cotisation</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="COTISATIONS">
+					<field name="code" />
+					<field name="name" />
+					<field name="tauxsalarial" />
+					<field name="tauxpatronal" />
+					<field name="plafonee" />
+					<field name="plafond" />
+					<separator string="Comptabilite" colspan="4" />
+					<field name="credit_account_id" />
+					<field name="debit_account_id" />
+
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="cotisation_tree">
+			<field name="name">cotisation.tree</field>
+			<field name="model">hr.payroll_ma.cotisation</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Cotisations">
+					<field name="code" />
+					<field name="name" />
+					<field name="tauxsalarial" />
+					<field name="tauxpatronal" />
+					<field name="plafonee" />
+					<field name="plafond" />
+					<field name="credit_account_id" />
+					<field name="debit_account_id" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="cotisation_all_act">
+			<field name="name">LES COTISATIONS</field>
+			<field name="res_model">hr.payroll_ma.cotisation</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem action="cotisation_all_act" id="cotisation_all_mi"
+			parent="payroll_ma_configure_cotisations" />
+
+		<!--################### TYPES DES COTISATIONS ####################-->
+		<record model="ir.ui.view" id="cotisation_type_form">
+			<field name="name">cotisation_type.form</field>
+			<field name="model">hr.payroll_ma.cotisation.type</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="TYPES DES COTISATIONS">
+					<field name="name" />
+					<newline/>
+					<field name="cotisation_ids" />
+
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="cotisation_type_tree">
+			<field name="name">cotisation_type.tree</field>
+			<field name="model">hr.payroll_ma.cotisation.type</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Types Cotisations">
+					<field name="name" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="cotisation_type_all_act">
+			<field name="name">LES TYPES COTISATIONS</field>
+			<field name="res_model">hr.payroll_ma.cotisation.type</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem action="cotisation_type_all_act" id="cotisation_type_all_mi"
+			parent="payroll_ma_configure_cotisations" />
+		<!--####################CONFIGURATION DE L'IR ######################-->
+		<record model="ir.ui.view" id="ir_form">
+			<field name="name">ir.form</field>
+			<field name="model">hr.payroll_ma.ir</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<!-- Description de la vue -->
+				<form string="IR">
+					<separator string="Baremes IR" colspan="4" />
+					<field name="debuttranche" />
+					<field name="fintranche" />
+					<field name="taux" />
+					<field name="somme" />
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="ir_tree">
+			<field name="name">ir.tree</field>
+			<field name="model">hr.payroll_ma.ir</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Baremes IR">
+					<field name="debuttranche" />
+					<field name="fintranche" />
+					<field name="taux" />
+					<field name="somme" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="ir_all_act">
+			<field name="name">IR</field>
+			<field name="res_model">hr.payroll_ma.ir</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<menuitem action="ir_all_act" id="ir_all_mi"
+			parent="payroll_ma_configure_baremes" />
+		<!--
+			################## Formulaire CRUD pour la prime d'ancienneté
+			########################
+		-->
+		<record model="ir.ui.view" id="anciennete_form">
+			<field name="name">anciennete.form</field>
+			<field name="model">hr.payroll_ma.anciennete</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<!-- Description de la vue -->
+				<form string="Anciennete">
+					<separator string="Baremes anciennete" colspan="4" />
+					<field name="debuttranche" />
+					<field name="fintranche" />
+					<field name="taux" />
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="anciennete_tree">
+			<field name="name">anciennete.tree</field>
+			<field name="model">hr.payroll_ma.anciennete</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Baremes anciennete">
+					<field name="debuttranche" />
+					<field name="fintranche" />
+					<field name="taux" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="anciennete_all_act">
+			<field name="name">Anciennete</field>
+			<field name="res_model">hr.payroll_ma.anciennete</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<menuitem action="anciennete_all_act" id="anciennete_all_mi"
+			parent="payroll_ma_configure_baremes" />
+
+
+		<!--
+			################################Les autres
+			parametres#######################################"
+		-->
+
+		<record model="ir.ui.view" id="parametres_form">
+			<field name="name">hr.payroll_ma.parametres.form</field>
+			<field name="model">hr.payroll_ma.parametres</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Les autres parametres">
+					<field name="smig" />
+					<field name="charge" />
+					<separator string="Les frais professionels" colspan="4" />
+					<field name="fraispro" />
+					<field name="plafond" />
+					<separator string="Impot sur le revenu" colspan="4" />
+					<field name="credit_account_id" />
+					<separator colspan="4" string="Comptabilite des salaires" />
+					<field name="salary_credit_account_id" />
+					<field name="salary_debit_account_id" />
+					<field name="analytic_account_id" required="1" />
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="parametres_tree">
+			<field name="name">hr.payroll_ma.parametres.tree</field>
+			<field name="model">hr.payroll_ma.parametres</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Les autres parametres">
+					<field name="smig" />
+					<field name="charge" />
+					<field name="fraispro" />
+					<field name="plafond" />
+					<field name="credit_account_id" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="parametres_all_act">
+			<field name="name">Parametres</field>
+			<field name="res_model">hr.payroll_ma.parametres</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<menuitem action="parametres_all_act" id="parametres_all_mi"
+			parent="payroll_ma_configure" />
+	</data>
+</openerp>

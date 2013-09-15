@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lots>
+    <lot-line type="fields" name="id">
+        <patientid type="field" name="patient_id"/>
+        <patientname type="field" name="name.name"/>
+        <patientlastname type="field" name="name.lastname"/>        
+        <dob type="field" name="dob"/>
+        <patientref type="field" name="name.ref"/>
+        <bloodtype type="field" name="blood_type"/>
+        <rh type="field" name="rh"/>
+    </lot-line>
+</lots>

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl_interface/__terp__.py

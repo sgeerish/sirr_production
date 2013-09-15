@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/mgmtsystem/__init__.py

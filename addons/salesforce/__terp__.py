@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/salesforce/__terp__.py

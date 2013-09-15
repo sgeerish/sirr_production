@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_holidays_cci/__terp__.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/medical_lab/i18n/medical_lab.pot

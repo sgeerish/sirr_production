@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="15.0" y1="42.0" width="539" height="758"/>
+    </pageTemplate>
+  </template>
+  
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P2" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="RIGHT"/>
+    <paraStyle name="P3" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="LEFT"/>
+    <paraStyle name="P4" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P5" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="RIGHT"/>
+    <paraStyle name="P6" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="LEFT"/>
+    <paraStyle name="P7" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P8" fontName="Times-Roman" fontSize="22.0" leading="27" alignment="CENTER"/>
+    <paraStyle name="P9" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P10" fontName="Times-Bold" fontSize="13.0" leading="16"/>
+    
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <paraStyle name="Table Contents" fontName="Times-Roman"/>
+    <paraStyle name="Table Heading" fontName="Times-Roman" alignment="CENTER"/>
+    <images/>
+  </stylesheet>
+  <story>
+    <para style="P1">[[repeatIn(objects,'patient')]]</para>
+    <para style="P8"><font color="blue" fontName="Times-Bold">PATIENT VACCINATION HISTORY</font></para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="55.0,117.0,115.0,89.0,45.0,78.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P5">Patient :</para>
+        </td>
+        <td>
+          <para style="P10"> [[ patient.lastname and patient.lastname + ', ' or '']]  [[ patient.name.name ]] </para>
+        </td>
+        <td>
+          <para style="P2">Patient ID :</para>
+        </td>
+        <td>
+          <para style="P1">[[ patient.patient_id ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">Date :</para>
+        </td>
+        <td>
+          <para style="P4">[[ formatLang(time.strftime('%Y-%m-%d'),date=True) ]]</para>
+        </td>
+        <td>
+          <para style="P5">Age :</para>
+        </td>
+        <td>
+          <para style="P6">[[ patient.age ]]</para>
+        </td>
+        <td>
+          <para style="P5">Sex :</para>
+        </td>
+        <td>
+          <para style="P4">[[ patient.sex== 'm' and 'Male' or patient.sex=='f' and 'Female' ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <section>
+      <blockTable colWidths="130.0,150.0,90.0,130.0" style="Table1">
+        <tr>
+          <td>
+            <para style="P10">Vaccine</para>
+          </td>
+          <td>
+            <para style="P10">Dose</para>
+          </td>
+          <td>
+            <para style="P10">Date</para>
+          </td>
+          <td>
+            <para style="P10">Observations</para>
+          </td>
+        </tr>
+      </blockTable>
+    </section>
+    <section>
+      <para style="P4">[[repeatIn(patient.vaccinations,'vaccinations')]]</para>
+      <blockTable colWidths="130.0,150.0,90.0,130.0" style="Table3">
+        <tr>
+          <td>
+            <para style="P4">[[ vaccinations.vaccine.name ]]</para>
+          </td>
+          <td>
+            <para style="P4">[[ vaccinations.dose ]]</para>
+          </td>
+          <td>
+            <para style="P4">[[ vaccinations.date.split()[0] ]]</para>
+          </td>
+          <td>
+            <para style="P4">[[ vaccinations.observations ]]</para>
+          </td>
+        </tr>
+      </blockTable>
+    </section>    
+      <para style="P1">
+        <font color="white"> </font>
+      </para>
+
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>
+

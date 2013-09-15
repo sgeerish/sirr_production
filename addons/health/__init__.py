@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/health/__init__.py

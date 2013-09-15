@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <!--template pageSize="(595.0, 842.0)" title="Daily Report" author="Cristian S. Rocha" allowSplitting="20"-->
+  <template pageSize="(842.0, 595.0)" title="Daily Report" author="Cristian S. Rocha" allowSplitting="20">
+    <pageTemplate id="first">
+      <!--frame id="first" x1="35.0" y1="35.0" width="525" height="772"/-->
+      <frame id="first" x1="28.0" y1="28.0" width="786" height="539"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="CENTER"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table_employee_detail_header">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="CENTER"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="4,-1" stop="4,-1"/>
+    </blockTableStyle>
+
+    <blockTableStyle id="tbl_detail">
+      <blockAlignment value="LEFT"/>
+      <!--blockValign value="CENTER"/-->
+      <lineStyle kind="GRID" colorName="#e6e6e6"/>
+      <!--lineStyle kind="LINEBELOW" colorName="#000000" start="0,0" stop="-1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="-1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-2" stop="-1,-2"/-->
+      <!--blockSpan start="2,0" stop="-3,0"/-->
+    </blockTableStyle>
+
+    <blockTableStyle id="Table_employee_detail_content">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="CENTER"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="4,-1" stop="4,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table_employee_total">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="CENTER"/>
+      <lineStyle kind="LINEABOVE" colorName="#ffffff" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#ffffff" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#ffffff" start="2,0" stop="2,0"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica-Bold" fontSize="11.0" leading="14" alignment="LEFT" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Standard" fontName="Helvetica"/>
+    <paraStyle name="Text body" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Table Contents" fontName="Helvetica"/>
+    <paraStyle name="Caption" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="10.0"/>
+    <paraStyle name="Caption_Bold" fontName="Helvetica-Bold" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="10.0"/>
+    <paraStyle name="Index" fontName="Helvetica"/>
+    <paraStyle name="terp_header" fontName="Helvetica-Bold" fontSize="12.0" leading="15" alignment="LEFT" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_default_8" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_9" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_header_Centre" fontName="Helvetica-Bold" fontSize="14.0" leading="17" alignment="CENTER" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_Details" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_Details_Centre" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="CENTER" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_Details_Small_Centre" fontName="Helvetica-Bold" fontSize="4.0" leading="11" alignment="CENTER" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_default_Centre_8" fontName="Helvetica" fontSize="8.0" leading="10" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Centre_9" fontName="Helvetica" fontSize="9.0" leading="11" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_8" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_9" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Bold_8" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Bold_9" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Centre_9_Bold" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="Footer" fontName="Helvetica"/>
+    <paraStyle name="Table Heading" fontName="Helvetica" alignment="CENTER"/>
+    <paraStyle name="Horizontal Line" fontName="Helvetica" fontSize="6.0" leading="8" spaceBefore="0.0" spaceAfter="14.0"/>
+    <paraStyle name="Heading 9" fontName="Helvetica-Bold" fontSize="75%" leading="NaN" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_General" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_General_Centre" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="CENTER" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_General_Right" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="RIGHT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_Details_Right" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="RIGHT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_default_Right_8" fontName="Helvetica" fontSize="8.0" leading="10" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_header_Right" fontName="Helvetica-Bold" fontSize="15.0" leading="19" alignment="LEFT" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_default_address" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Right_9" fontName="Helvetica" fontSize="9.0" leading="11" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+  </stylesheet>
+  <images/>
+  <story>
+    <para style="terp_header_Centre">Diario de Asistencia. [[ formatLang(data['form']['date_from'], date=True) ]] - [[ formatLang(data['form']['date_to'], date=True) ]]</para>
+    <para style="terp_default_8">[[ repeatIn(objects,'o') ]]</para>
+    <!--para>[[ setLang('es_AR') ]]</para-->
+
+    <!-- Empleado -->
+    <blockTable colWidths="120.0,200.0,50.0,100.0,250.0">
+    <tr>
+        <td><para style="Caption_Bold">Nombre y Apellido</para></td>
+        <td><para style="Caption">[[ o.name ]]</para></td>
+        <td><para style="Caption_Bold">Legajo</para></td>
+        <td><para style="Caption">[[ o.otherid ]]</para></td>
+        <td><para></para></td>
+    </tr>
+    </blockTable>
+
+    <!-- Resumen -->
+    <blockTable style="tbl_detail">
+    <tr>
+        <td>Fecha</td>
+        <td>Asistencias</td>
+        <section>
+            <para>[[ repeatIn(labels[1:], 'l', 'section') ]]</para>
+            <td>[[ l ]]</td>
+        </section>
+        <td>Licencias</td>
+        <td>Anotaciones</td>
+    </tr>
+    <tr>
+        <!--td>Horas</td-->
+        <td>a</td>
+        <td>b</td>
+        <section>
+            <td><para>[[ repeatIn(labels, 'l') ]] - [[ l ]]</para></td>
+        </section>
+        <td>c</td>
+        <td>d</td>
+    </tr>
+
+    <!--tr>
+        <td>
+            <para style="terp_default_Bold_9">[[ repeatIn(get_journals(o.id), 'l') ]]<font>[[ formatLang(l.date, date=True) ]]</font></para>
+            <para style="terp_default_9">Turno: [[ l.turn_id.name ]]</para>
+            <para style="terp_default_9">Sección: [[ l.department_id.name ]]</para>
+            <para style="terp_default_8">[[ l.state ]]</para>
+        </td>
+        <td>
+            <section>
+            <para>[[ repeatIn(l.attendance_ids, 'a') ]]<b>[[ a.action == 'sign_in' and 'ing' or 'egr' ]].[[ formatLang(a.name, date_time=True).split(' ')[1] ]]</b> <i>[[ a.action_desc and a.action_desc.name ]]</i></para>
+            </section>
+            <para></para>
+        </td>
+        <td>
+            <section>
+                <td>
+                    <para>[[ repeatIn(sorted_values(l.value_ids), 'ln') ]] [[ '%s - %06.2f' % ln ]]</para>
+                </td>
+            </section>
+            <para></para>
+        </td>
+        <td>
+            <section>
+            <para style="terp_default_9">[[ repeatIn(l.holiday_ids, 'h') ]]<font> [[ h.name ]] </font></para>
+            </section>
+            <para></para>
+        </td>
+        <td>
+            <para>[[ l.note ]]</para>
+        </td>
+    </tr>
+    <tr>
+        <td><para style="terp_default_8">[[ formatLang(data['form']['date_from'], date=True) ]] - [[ formatLang(data['form']['date_to'], date=True) ]]</para></td>
+        <td><para></para></td>
+        <td>
+            <section>
+            <para style="terp_default_Right_8">[[ repeatIn(get_totals(o.id), 'f') ]]<font>[[ '%s - %06.2f' % f ]]</font></para>
+            </section>
+        </td>
+        <td><para></para></td>
+        <td><para></para></td>
+    </tr-->
+    </blockTable>
+  </story>
+</document>
+
+<!--
+     vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+     -->

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training/migrations/0.1/post-01-update_parent_category_id.py

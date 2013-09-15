@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/report_auction/report_auction.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/labo_analysis/__terp__.py

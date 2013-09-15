@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_invoice_payment_term/__terp__.py

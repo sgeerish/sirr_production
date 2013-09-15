@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_interview/wizard/__init__.py

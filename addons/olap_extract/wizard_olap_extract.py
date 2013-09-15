@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/olap_extract/wizard_olap_extract.py

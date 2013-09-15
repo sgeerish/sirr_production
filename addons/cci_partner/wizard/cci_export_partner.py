@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_partner/wizard/cci_export_partner.py

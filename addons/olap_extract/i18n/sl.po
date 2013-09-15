@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/olap_extract/i18n/sl.po

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_financial_statements/__openerp__.py

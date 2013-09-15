@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_performance/report/hr_performance_report.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/label/report/report_partner_labels.py

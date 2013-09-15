@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/debit_credit_note/wizard/__init__.py

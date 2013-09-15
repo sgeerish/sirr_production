@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_refund_original/i18n/account_refund_original.pot

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/project_crm/project_crm.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/partner_ldap/wizard/__init__.py

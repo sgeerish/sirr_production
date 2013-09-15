@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_partner_surname/__openerp__.py

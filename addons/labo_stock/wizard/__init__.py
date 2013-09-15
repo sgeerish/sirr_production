@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/labo_stock/wizard/__init__.py

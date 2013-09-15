@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/partner_create/report/sale_order.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/purchase_journal/__terp__.py

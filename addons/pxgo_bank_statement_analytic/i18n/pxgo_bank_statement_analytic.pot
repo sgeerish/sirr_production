@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/pxgo_bank_statement_analytic/i18n/pxgo_bank_statement_analytic.pot

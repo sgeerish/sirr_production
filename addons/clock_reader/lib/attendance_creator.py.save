@@ -1,0 +1,197 @@
+# -*- encoding: utf-8 -*-
+##############################################################################
+#
+#    Clock Reader for OpenERP
+#    Copyright (C) 2004-2009 Moldeo Interactive CT
+#    (<http://www.moldeointeractive.com.ar>). All Rights Reserved
+#    $Id$
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+
+from .. import timeutils as tu
+import netsvc
+import pooler
+import datetime
+class MultipleAssignedCardError:
+    def __init__(self, empl_id, card_id):
+        self.empl_id = empl_id
+        self.card_id = card_id
+
+    def __str__(self):
+        return 'Employees with ids %s have the same card id: %i' % \
+                (repr(self.empl_id), self.card_id)
+
+class NotAssignedCardError:
+    def __init__(self, card_id):
+        self.card_id = card_id
+
+    def __str__(self):
+        return 'Card [%i] is not assigned.' % self.card_id
+
+class AttendanceCreator:
+    logger = netsvc.Logger()
+
+    OK = -1
+    IGNORED = 0
+    ERROR = 1
+
+    def __init__(self, cr, uid, context=None):
+        self.emp_id_ok = {}
+        self.emp_id_err = {}
+        self.emp_id_notexists = []
+        self.err = []
+        self.c = 0
+
+        self.cr = cr
+        self.uid = uid
+        self.context = context
+        self.pool = pooler.get_pool(cr.dbname)
+        self.emp_pool = self.pool.get('hr.employee')
+        self.att_pool = self.pool.get('hr.attendance')
+
+    def employee_id(self, card_id):
+        emp_ids = self.emp_pool.search(self.cr, self.uid,
+                                       [('matricule', '=', card_id)],
+                                       context=self.context)
+        if len(emp_ids) > 1:
+            raise MultipleAssignedCardError(emp_ids, card_id)
+        elif len(emp_ids) == 0:
+            raise NotAssignedCardError(card_id)
+
+        return emp_ids[0]
+
+    def exists_attendance(self, empl_id, dt, action):
+#        assert isinstance(dt, tu.datetime)
+        att_ids = self.att_pool.search(self.cr, self.uid,
+                                 [('employee_id', '=', empl_id),
+                                  ('name', '=', dt),
+                                  ('action', '=', action)],
+                                       context=self.context)
+        return len(att_ids) > 0
+
+    def create_employee(self, card_id):
+        self.emp_pool.create(self.cr, self.uid, {
+            'name': 'Unknown Employee with card id %i' % card_id,
+            'matricule': card_id,
+        })
+        return self.employee_id(card_id)
+
+    def previous_action(self, empl_id, dt, action=False):
+#        assert isinstance(dt, tu.datetime)
+        if action:
+            sql_action = "AND action = '%s'" % action
+        else:
+            sql_action = ""
+        sql = """
+	SELECT employee_id, name, action
+	FROM hr_attendance
+	WHERE
+	name::timestamp < '%s'::timestamp AND
+   	employee_id = '%s'
+   	%s
+	ORDER BY name desc
+	""" % (dt, empl_id, sql_action)
+        self.cr.execute(sql)
+        r = self.cr.dictfetchall()
+        if len(r)>0:
+            return (empl_id, tu.dt(r[0]['name']), r[0]['action'])
+        else:
+            return False
+
+    def next_action(self, empl_id, dt, action=False):
+#        assert isinstance(dt, tu.datetime)
+        if action:
+            sql_action = "AND action = '%s'" % action
+        else:
+            sql_action = ""
+        sql = """
+	SELECT employee_id, name as name, action
+	FROM hr_attendance
+	WHERE
+   	name::timestamp > '%s'::timestamp AND
+   	employee_id = '%s'
+   	%s
+	ORDER BY name asc
+	""" % (dt, empl_id, sql_action)
+        self.cr.execute(sql)
+        r = self.cr.dictfetchall()
+        if len(r)>0:
+            return (empl_id, tu.dt(r[0]['name']), r[0]['action'])
+        else:
+            return False
+
+    def create_attendance(self, empl_id, dt, action, method, tolerance=60*5,
+                          complete_attendance=False):
+#        assert isinstance(dt, tu.datetime)
+
+        self.logger.notifyChannel('wizard.clock_reader', netsvc.LOG_DEBUG,
+                               'create_attendance: CREATE: %s, %s, %s, %i'%
+                                  (dt, action, method, empl_id))
+        
+        r = self.previous_action(empl_id, dt)
+        # Equal accion
+	date_type=datetime.datetime.strptime('2010-01-01',"%Y-%m-%d")
+	uni_type=type(''.decode('utf-8'))
+	if type(dt)==uni_type:
+        	dt=datetime.datetime.strptime(dt,"%Y-%m-%d %H:%M:%S")
+        if r and r[2] == action:
+            # Equivalents
+            if type(dt)==uni_type:
+                dt=datetime.datetime.strptime(dt,"%Y-%m-%d %H:%M:%S")
+            diff=r[1] + tu.timedelta(seconds=tolerance)
+            if type(diff)==uni_type:
+                diff=datetime.datetime.strptime(diff,"%Y-%m-%d %H:%M:%S") 
+            print 'typeDiff',type(diff)
+            print 'typeDT',type(dt)
+            print date_type
+            if diff> dt:
+                self.logger.notifyChannel('wizard.clock_reader', netsvc.LOG_INFO,
+                   'create_attendance: IGNORED: multiply registries in equivalent time')
+                return AttendanceCreator.IGNORED
+            # Employee forgot sign
+            elif complete_attendance:
+                self.logger.notifyChannel('wizard.clock_reader', netsvc.LOG_DEBUG,
+                   'create_attendance: equal previus action %s %s %i' %
+                                          (tu.dt2s(r[1]), r[2], r[0]))
+                return self.create_attendance(empl_id,
+                                       r[1] + (dt - r[1])/2,
+                                       action, 'automatic',
+                                       tolerance=tolerance)
+            else:
+                return AttendanceCreator.ERROR
+        # Sign out without sign in 
+        elif not r and action == 'sign_out':
+            self.logger.notifyChannel('wizard.clock_reader', netsvc.LOG_INFO,
+               'create_attendance: IGNORED: ignore sign-out without sign-in')
+            return AttendanceCreator.IGNORED
+        # Bad inserting attendance
+        elif not r and self.next_action(empl_id, dt):
+            self.logger.notifyChannel('wizard.clock_reader', netsvc.LOG_INFO,
+               'create_attendance: IGNORED: clock try to insert an older attendance')
+            return AttendanceCreator.IGNORED
+
+        self.att_pool.create(self.cr, self.uid, {
+            'name': dt,
+            'action': action,
+            'method': method,
+            'employee_id': empl_id
+        })
+
+        self.logger.notifyChannel('wizard.clock_reader', netsvc.LOG_DEBUG,
+                               'create_attendance: DONE: %s, %s, %s, %i'%
+                                  (dt, action, method, empl_id))
+        return AttendanceCreator.OK
+

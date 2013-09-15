@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_simulator/__init__.py

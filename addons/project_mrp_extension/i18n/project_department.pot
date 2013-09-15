@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/project_mrp_extension/i18n/project_department.pot

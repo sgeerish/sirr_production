@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/fashion/__terp__.py

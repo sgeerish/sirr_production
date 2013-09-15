@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sales_purchase_seq/__init__.py

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data noupdate="0">
+
+
+
+    <record id="group_medical_user" model="res.groups">
+        <field name="name">Medical Group</field>
+    </record>
+	
+	<record model='ir.ui.menu' id='medical_conf_menu'>
+		<field name="groups_id" eval="[(6,0,[ref('group_medical_user')])]"/>
+	</record>
+
+	<record model='ir.ui.menu' id='medical_patients_menu'>
+		<field name="groups_id" eval="[(6,0,[ref('group_medical_user')])]"/>
+	</record>
+
+
+	<record model='ir.ui.menu' id='medical_conf_pathology'>
+		<field name="groups_id" eval="[(6,0,[ref('group_medical_user')])]"/>
+	</record>
+	
+	<record model='ir.ui.menu' id='medical_conf_operational_areas'>
+		<field name="groups_id" eval="[(6,0,[ref('group_medical_user')])]"/>
+	</record>
+	
+	<record model='ir.ui.menu' id='medical_conf_insurances'>
+		<field name="groups_id" eval="[(6,0,[ref('group_medical_user')])]"/>
+	</record>
+
+	<record model='ir.ui.menu' id='medical_conf_misc'>
+		<field name="groups_id" eval="[(6,0,[ref('group_medical_user')])]"/>
+	</record>
+
+
+
+</data>
+</openerp>

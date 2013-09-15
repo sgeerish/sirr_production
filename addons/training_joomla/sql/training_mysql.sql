@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training_joomla/sql/training_mysql.sql

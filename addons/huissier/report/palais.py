@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/huissier/report/palais.py

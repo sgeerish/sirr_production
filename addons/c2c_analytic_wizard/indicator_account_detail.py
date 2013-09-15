@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/c2c_analytic_wizard/indicator_account_detail.py

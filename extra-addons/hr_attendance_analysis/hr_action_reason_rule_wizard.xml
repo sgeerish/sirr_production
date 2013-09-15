@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+        <delete model="ir.actions.wizard" search="[('wiz_name','=','hr.attendance_reason_compute')]" />
+        <!-- Reason Computing -->
+        <wizard id="attendance_reason_compute"
+            name="hr.attendance_reason_compute"
+            model="hr.attendance"
+            string="Compute Reasons for Attendances" />
+    </data>
+</openerp>
+
+<!--
+     vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+     -->

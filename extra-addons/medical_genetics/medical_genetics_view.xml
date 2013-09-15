@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+<openerp>
+        <data>
+		<menuitem name="Genetics" id="medical_conf_genetics" parent="medical.medical_conf_menu"/>
+
+<!-- Genetic Risks -->
+
+                <record model="ir.ui.view" id="medical_genetic_risk_view">
+                        <field name="name">Genetic Risks</field>
+                        <field name="model">medical.genetic.risk</field>
+                        <field name="type">form</field>
+                        <field name="arch" type="xml">
+                                <form string="Medical Genetic Risks">
+					<field name="name"></field>
+					<field name="long_name"></field>
+					<newline/>
+					<field name="chromosome"></field>
+					<field name="dominance"></field>
+					<field name="location"></field>
+					<field name="gene_id"></field>
+					<newline/>
+					<field colspan="4" name="info"></field>
+					
+                                </form>
+                        </field>
+                </record>
+
+
+                <record model="ir.ui.view" id="medical_genetic_risks_tree">
+                        <field name="name">Medical Genetic Risks</field>
+                        <field name="model">medical.genetic.risk</field>
+                        <field name="type">tree</field>
+                        <field name="arch" type="xml">
+                                <tree string="Genetic Risks">
+                                        <field name="name"></field>
+                                        <field name="long_name"></field>
+                                        <field name="chromosome"></field>
+                                        <field name="dominance"></field>
+                                </tree>
+                        </field>
+                </record>
+
+
+                <record model="ir.actions.act_window" id="medical_action_genetic_risks">
+                        <field name="name">Genetic Risks</field>
+                        <field name="type">ir.actions.act_window</field>
+                        <field name="res_model">medical.genetic.risk</field>
+                        <field name="view_type">form</field>
+                        <field name="view_id" ref="medical_genetic_risks_tree"/>
+                </record>
+
+
+		<menuitem action="medical_action_genetic_risks" id="medical_conf_genetic_risks" parent="medical_conf_genetics"/>
+
+
+		<record id="view_medical_genetics_filter" model="ir.ui.view">
+			<field name="name">medical.genetics.select</field>
+			<field name="model">medical.genetic.risk</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search string="Search Patient Genetic Risks">
+
+					<separator orientation="vertical"/>
+					    <field name="name" select="1"/>
+					    <field name="long_name" select="1"/>
+					    <field name="chromosome" select="1"/>
+					    <field name="dominance" select="1"/>
+
+					<newline/>
+
+				</search>
+			</field>
+		</record>
+
+<!-- Family Diseases -->
+
+                <record model="ir.ui.view" id="medical_family_diseases_view">
+                        <field name="name">Family Diseases</field>
+                        <field name="model">medical.family.diseases</field>
+                        <field name="type">form</field>
+                        <field name="arch" type="xml">
+                                <form string="Genetic Family Diseases">
+					<field name="name" required="1"></field>
+					<field name="xory"></field>
+					<newline/>
+					<field name="relative"></field>
+                                </form>
+                        </field>
+                </record>
+
+
+                <record model="ir.ui.view" id="medical_family_diseases_tree">
+                        <field name="name">Family Diseases List</field>
+                        <field name="model">medical.family.diseases</field>
+                        <field name="type">tree</field>
+                        <field name="arch" type="xml">
+                                <tree string="Genetic Family Diseases">
+                                        <field name="name"></field>
+                                        <field name="xory"></field>
+                                        <field name="relative"></field>
+                                </tree>
+                        </field>
+                </record>
+
+
+<!-- Include Family History and Genetic Risks on the patient chart -->
+
+		<record model="ir.ui.view" id="medical_patient_view">
+			<field name="name">Patient</field>
+			<field name="model">medical.patient</field>
+                        <field name="inherit_id" ref="medical.medical_patient_view" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<notebook>
+				        <page string="Genetic Risks">
+					        <field name="genetic_risks" colspan="4" nolabel="1" widget="many2many"/>
+						<newline/>
+					        <field name="family_history" colspan="4" nolabel="1" widget="one2many_list"/>
+				        </page>
+				</notebook>
+			</field>
+		</record>
+
+	</data>
+</openerp>
+

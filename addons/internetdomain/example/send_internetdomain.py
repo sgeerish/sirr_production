@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/internetdomain/example/send_internetdomain.py

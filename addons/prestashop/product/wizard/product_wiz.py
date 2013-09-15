@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/prestashop/product/wizard/product_wiz.py

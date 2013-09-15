@@ -1,0 +1,562 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Medical\n"
+"Report-Msgid-Bugs-To: https://sourceforge.net/apps/mantisbt/medical\n"
+"POT-Creation-Date: 2010-12-05 21:32:35+0000\n"
+"PO-Revision-Date: 2011-02-05 18:26+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: Vietnamese <None>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. module: medical_lab
+#: report:patient.labtest.report:0
+msgid "Signature : ____________________________"
+msgstr "Chữ ký :  ____________________________"
+
+#. module: medical_lab
+#: model:ir.model,name:medical_lab.model_medical_lab_test_units
+msgid "medical.lab.test.units"
+msgstr "medical.lab.test.units"
+
+#. module: medical_lab
+#: field:medical.test_type,product_id:0
+msgid "Service"
+msgstr "Dịch vụ"
+
+#. module: medical_lab
+#: view:medical.lab.test.create:0
+msgid "Create Tests"
+msgstr "Tạo tiêu chí xét nghiệm"
+
+#. module: medical_lab
+#: view:medical.lab:0
+msgid "Search Lab Tests Results"
+msgstr "Tìm kết quả xét nghiệm"
+
+#. module: medical_lab
+#: view:medical.lab:0
+msgid "Laboratory Test"
+msgstr "Xét nghiệm"
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_bloodcounttestcharges0_product_template
+msgid "Blood count test charges"
+msgstr "Phí kiểm tra máu"
+
+#. module: medical_lab
+#: help:medical.lab,requestor:0
+msgid "Doctor who requested the test"
+msgstr "Bác sĩ yêu cầu xét nghiệm"
+
+#. module: medical_lab
+#: view:medical.lab.test.units:0
+msgid "Test Unit"
+msgstr "Đơn vị xét nghiệm"
+
+#. module: medical_lab
+#: view:medical.patient.lab.test:0
+msgid "Group By..."
+msgstr "Nhóm theo..."
+
+#. module: medical_lab
+#: model:ir.actions.act_window,name:medical_lab.medical_action_form_test
+#: model:ir.ui.menu,name:medical_lab.medical_conf_test
+msgid "New Type of Lab test"
+msgstr "Loại cận lâm sàng mới"
+
+#. module: medical_lab
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Tên mô hình không hợp lệ trong định nghĩa hành động"
+
+#. module: medical_lab
+#: field:medical.test_type,name:0 field:medical_test.critearea,name:0
+msgid "Test"
+msgstr "Kiểm tra"
+
+#. module: medical_lab
+#: view:medical.patient.lab.test:0
+msgid "Today"
+msgstr "Hôm nay"
+
+#. module: medical_lab
+#: view:medical.lab:0 view:medical.test_type:0
+msgid "Main Info"
+msgstr "Thông tin chính"
+
+#. module: medical_lab
+#: model:ir.actions.act_window,name:medical_lab.action_create_lab_test
+#: view:medical.lab.test.create:0
+msgid "Create Lab Test"
+msgstr "Thực hiện xét nghiệm"
+
+#. module: medical_lab
+#: field:medical.lab,test:0 field:medical_test.critearea,test_type_id:0
+msgid "Test type"
+msgstr "Loại xét nghiệm"
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_renalfunctiontestcharges0_product_template
+msgid "Renal Function test charges"
+msgstr "Phí kiểm tra chức năng thận"
+
+#. module: medical_lab
+#: model:ir.actions.report.xml,name:medical_lab.report_patient_labtest
+#: view:medical.patient:0
+msgid "Lab Tests"
+msgstr "Các cận lâm sàng"
+
+#. module: medical_lab
+#: field:medical.lab,requestor:0
+msgid "Physician"
+msgstr "Bác sĩ"
+
+#. module: medical_lab
+#: model:ir.model,name:medical_lab.model_medical_test_type
+msgid "Type of Lab test"
+msgstr "Loại xét nghiệm"
+
+#. module: medical_lab
+#: model:ir.model,name:medical_lab.model_medical_patient_lab_test
+msgid "medical.patient.lab.test"
+msgstr "medical.patient.lab.test"
+
+#. module: medical_lab
+#: report:patient.labtest:0 report:patient.labtest.report:0
+msgid "Patient ID :"
+msgstr "Mã bệnh nhân"
+
+#. module: medical_lab
+#: model:ir.actions.act_window,name:medical_lab.medical_action_lab_unit
+#: model:ir.ui.menu,name:medical_lab.medical_labtest_unit
+msgid "Lab Testing Units"
+msgstr "Các đơn vị xét nghiệm"
+
+#. module: medical_lab
+#: code:addons/medical_lab/wizard/wizard_create_lab_pos.py:0
+#: code:addons/medical_lab/wizard/wizard_create_lab_test.py:0
+#, python-format
+msgid "UserError"
+msgstr "Lỗi người dùng"
+
+#. module: medical_lab
+#: model:ir.actions.act_window,name:medical_lab.act_patient_lab_history
+msgid "Lab Reports"
+msgstr "Các báo cáo xét nghiệm"
+
+#. module: medical_lab
+#: view:medical.lab:0 field:medical.lab,critearea:0 view:medical.test_type:0
+#: field:medical.test_type,critearea:0
+#: field:medical_test.critearea,medical_lab_id:0
+msgid "Test Cases"
+msgstr "Các trường hợp kiểm tra"
+
+#. module: medical_lab
+#: constraint:product.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "Bị lỗi! Bạn không thể tạo ra loại đệ quy."
+
+#. module: medical_lab
+#: model:ir.actions.act_window,name:medical_lab.medical_action_tree_lab
+#: model:ir.ui.menu,name:medical_lab.medical_action_lab_tree
+msgid "Lab Tests Results"
+msgstr "Kết quả xét nghiệm"
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_stoolexaminationcharges0_product_template
+msgid "Stool Examination Charges"
+msgstr "Phí xét nghiệm phân"
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_endocrinology0_product_template
+msgid "Endocrinology"
+msgstr "Nội tiết học"
+
+#. module: medical_lab
+#: report:patient.labtest:0 report:patient.labtest.report:0
+msgid "Date :"
+msgstr "Ngày: "
+
+#. module: medical_lab
+#: report:patient.labtest.report:0
+msgid "LABORATORY REPORT"
+msgstr "BÁO CÁO XÉT NGHIỆM"
+
+#. module: medical_lab
+#: report:patient.labtest:0
+msgid "____________________________"
+msgstr "____________________________"
+
+#. module: medical_lab
+#: view:medical.patient.lab.test:0 field:medical.patient.lab.test,state:0
+msgid "State"
+msgstr "Trạng thái"
+
+#. module: medical_lab
+#: field:medical.patient.lab.test,name:0
+msgid "Test Type"
+msgstr "Loại xét nghiệm"
+
+#. module: medical_lab
+#: field:medical_test.critearea,units:0 report:patient.labtest.report:0
+msgid "Units"
+msgstr "Đơn vị"
+
+#. module: medical_lab
+#: code:addons/medical_lab/medical_lab.py:0
+#, python-format
+msgid "Error !"
+msgstr "Lỗi!"
+
+#. module: medical_lab
+#: field:medical.lab,date_analysis:0
+msgid "Date of the Analysis"
+msgstr "Ngày phân tích"
+
+#. module: medical_lab
+#: field:medical.patient,lab_test_ids:0
+msgid "Lab Tests Required"
+msgstr "Các xét nghiệm được yêu cầu"
+
+#. module: medical_lab
+#: view:medical.lab:0 view:medical.test_type:0
+msgid "Extra Info"
+msgstr "Thông tin thêm"
+
+#. module: medical_lab
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML không hợp lệ cho Kiến trúc Xem!"
+
+#. module: medical_lab
+#: constraint:product.template:0
+msgid "Error: UOS must be in a different category than the UOM"
+msgstr "Lỗi: UOS phải thuộc chủng loại khác với UOM"
+
+#. module: medical_lab
+#: code:addons/medical_lab/wizard/wizard_create_lab_pos.py:0
+#, python-format
+msgid "No Lab test exist for selected Dr."
+msgstr "Không có cận lâm sàng dành cho bác sĩ lựa chọn"
+
+#. module: medical_lab
+#: report:patient.labtest:0 report:patient.labtest.report:0
+msgid "Age :"
+msgstr "Tuổi :"
+
+#. module: medical_lab
+#: view:medical.lab.test.create:0 selection:medical.patient.lab.test,state:0
+msgid "Cancel"
+msgstr "Hủy"
+
+#. module: medical_lab
+#: model:ir.module.module,description:medical_lab.module_meta_information
+msgid ""
+"\n"
+"\n"
+"This modules includes lab tests: Values, reports and PoS.\n"
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"Phân hệ (mô đun) này bao gồm các chức năng liên quan đến cận lâm sàng: chỉ số, báo cáo, và PoS.\n"
+"\n"
+"\n"
+
+#. module: medical_lab
+#: report:patient.labtest:0
+msgid "Doctor :"
+msgstr "Bác sĩ :"
+
+#. module: medical_lab
+#: model:ir.model,name:medical_lab.model_medical_lab view:medical.test_type:0
+msgid "Lab Test"
+msgstr "Xét nghiệm"
+
+#. module: medical_lab
+#: report:patient.labtest:0
+msgid "LABORATORY RESULTS"
+msgstr "KẾT QUẢ XÉT NGHIỆM"
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_liverfunctiontestcharges0_product_template
+msgid "Liver Function test charges"
+msgstr "Phí xét nghiệm chức năng gan"
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_urineanalysischarges0_product_template
+msgid "Urine Analysis charges"
+msgstr "Phí phân tích nước tiểu"
+
+#. module: medical_lab
+#: report:patient.labtest:0
+msgid "Test Names"
+msgstr "Tên xét nghiệm"
+
+#. module: medical_lab
+#: field:medical_test.critearea,result:0 report:patient.labtest.report:0
+msgid "Result"
+msgstr "Kết quả"
+
+#. module: medical_lab
+#: model:ir.ui.menu,name:medical_lab.medical_conf_laboratory
+#: model:ir.ui.menu,name:medical_lab.medical_laboratory_menu
+msgid "Laboratory"
+msgstr "Phòng xét nghiệm"
+
+#. module: medical_lab
+#: view:medical.lab.test.create:0
+msgid "Do you want to generate the test(s) ?"
+msgstr "Bạn có muốn tạo các xét nghiệm này ?"
+
+#. module: medical_lab
+#: view:medical.patient.lab.test:0 field:medical.patient.lab.test,doctor_id:0
+msgid "Doctor"
+msgstr "Bác sĩ"
+
+#. module: medical_lab
+#: constraint:product.template:0
+msgid "Error: The default UOM and the purchase UOM must be in the same category."
+msgstr "Lỗi: đơn vị đo lường mặc định và đơn vị đo lường khi mua hàng phải cùng thể loại."
+
+#. module: medical_lab
+#: view:medical.lab.test.create:0
+msgid "Create Lab Tests"
+msgstr "Create Lab Tests"
+
+#. module: medical_lab
+#: report:patient.labtest:0 report:patient.labtest.report:0
+msgid "Sex :"
+msgstr "Giới tính :"
+
+#. module: medical_lab
+#: selection:medical.patient.lab.test,state:0
+msgid "Draft"
+msgstr "Dự thảo"
+
+#. module: medical_lab
+#: constraint:ir.ui.menu:0
+msgid "Error ! You can not create recursive Menu."
+msgstr "Lỗi ! Bạn không thể tạo trình đơn đệ quy."
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_semenanalysischarges0_product_template
+msgid "Semen Analysis Charges"
+msgstr "Phí phân tích tinh dịch"
+
+#. module: medical_lab
+#: report:patient.labtest:0
+msgid "Sign :"
+msgstr "Chữ ký :"
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_peripheralsmearexaminationcharges0_product_template
+msgid "Peripheral Smear Examination Charges"
+msgstr "Phí xét nghiệm Peripheral Smear"
+
+#. module: medical_lab
+#: model:ir.actions.act_window,name:medical_lab.medical_action_lab_test_request
+#: model:ir.ui.menu,name:medical_lab.medical_labtest_request
+msgid "Lab Requests"
+msgstr "Các yêu cầu xét nghiệm"
+
+#. module: medical_lab
+#: field:medical.lab,pathologist:0 help:medical.lab,pathologist:0
+msgid "Pathologist"
+msgstr "Nhà bịnh lý học"
+
+#. module: medical_lab
+#: field:medical.patient.lab.test,date:0
+msgid "Date"
+msgstr "Ngày"
+
+#. module: medical_lab
+#: model:ir.model,name:medical_lab.model_medical_test_critearea
+msgid "Lab Test Critearea"
+msgstr "Chỉ tiêu xét nghiệm"
+
+#. module: medical_lab
+#: field:medical_test.critearea,normal_range:0 report:patient.labtest.report:0
+msgid "Normal Range"
+msgstr "Phạm vi bình thường"
+
+#. module: medical_lab
+#: model:ir.actions.report.xml,name:medical_lab.report_patient_labtest_report
+msgid "Lab Report"
+msgstr "Báo cáo xét nghiệm"
+
+#. module: medical_lab
+#: model:ir.model,name:medical_lab.model_medical_lab_test_create
+msgid "medical.lab.test.create"
+msgstr "medical.lab.test.create"
+
+#. module: medical_lab
+#: help:medical.test_type,name:0
+msgid "Test type, eg X-Ray, hemogram,biopsy..."
+msgstr "Loại kiểm tra, xét nghiệm, ví dụ X-quang, huyết đồ, sinh thiết "
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_haematologycharges0_product_template
+msgid "Haematology Charges"
+msgstr "Phí Haematology"
+
+#. module: medical_lab
+#: view:medical.patient.lab.test:0
+msgid "Search Lab Tests Requests"
+msgstr "Tìm các yêu cầu về xét nghiệm"
+
+#. module: medical_lab
+#: field:medical.lab.test.units,code:0 field:medical.test_type,code:0
+msgid "Code"
+msgstr "Mã"
+
+#. module: medical_lab
+#: report:patient.labtest.report:0
+msgid "Analyte"
+msgstr ""
+
+#. module: medical_lab
+#: help:medical.lab,name:0
+msgid "Lab result ID"
+msgstr "Mã kết quả xét nghiệm"
+
+#. module: medical_lab
+#: help:medical.lab,patient:0
+msgid "Patient ID"
+msgstr "Mã bệnh nhân"
+
+#. module: medical_lab
+#: report:patient.labtest.report:0
+msgid "Doctor:"
+msgstr "Bác sĩ:"
+
+#. module: medical_lab
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Tên phải được bắt đầu bằng x_ và không bao gồm bất kỳ ký tự đặc biệt nào !"
+
+#. module: medical_lab
+#: field:medical.lab,date_requested:0
+msgid "Date requested"
+msgstr "Ngày yêu cầu"
+
+#. module: medical_lab
+#: view:medical.lab:0 help:medical.lab,test:0 view:medical.test_type:0
+msgid "Lab test type"
+msgstr "Loại xét nghiệm"
+
+#. module: medical_lab
+#: report:patient.labtest.report:0
+msgid "Pathologist :"
+msgstr "Bệnh lý học"
+
+#. module: medical_lab
+#: field:medical.test_type,info:0
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: medical_lab
+#: model:product.category,name:medical_lab.product_category_labservices0
+msgid "Lab Services"
+msgstr "Dịch vụ xét nghiệm"
+
+#. module: medical_lab
+#: selection:medical.patient.lab.test,state:0
+msgid "Tested"
+msgstr "Đã kiểm tra"
+
+#. module: medical_lab
+#: view:medical.lab.test.units:0
+msgid "Search Lab Test Units"
+msgstr "Tìm kiếm đơn vị xét nghiệm"
+
+#. module: medical_lab
+#: view:medical.test_type:0
+msgid "Search Lab Test Types"
+msgstr "Tìm kiếm loại xét nghiệm"
+
+#. module: medical_lab
+#: field:medical.lab,diagnosis:0
+msgid "Diagnosis"
+msgstr "Chẩn đoán"
+
+#. module: medical_lab
+#: field:medical.lab,patient:0 view:medical.patient.lab.test:0
+#: field:medical.patient.lab.test,patient_id:0
+msgid "Patient"
+msgstr "Bệnh nhân"
+
+#. module: medical_lab
+#: field:medical.lab,name:0
+msgid "ID"
+msgstr "Mã"
+
+#. module: medical_lab
+#: help:medical.test_type,code:0
+msgid "Short name - code for the test"
+msgstr "Tên viết tắt - mã xét nghiệm"
+
+#. module: medical_lab
+#: help:medical.patient.lab.test,doctor_id:0
+msgid "Doctor who Request the lab test."
+msgstr "Bác sĩ yêu cầu xét nghiệm"
+
+#. module: medical_lab
+#: field:medical.lab.test.units,name:0
+msgid "Unit"
+msgstr "Đơn vị"
+
+#. module: medical_lab
+#: field:medical_test.critearea,sequence:0
+msgid "Sequence"
+msgstr "Thứ tự"
+
+#. module: medical_lab
+#: report:patient.labtest:0 report:patient.labtest.report:0
+msgid "Patient :"
+msgstr "Bệnh nhân :"
+
+#. module: medical_lab
+#: field:medical.lab,results:0
+msgid "Results"
+msgstr "Các kết quả"
+
+#. module: medical_lab
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Lỗi: mã EAN không hợp lệ"
+
+#. module: medical_lab
+#: code:addons/medical_lab/medical_lab.py:0
+#, python-format
+msgid "There is no physician defined ' \\n            #                    'for current user."
+msgstr "There is no physician defined ' \\n            #                    'for current user."
+
+#. module: medical_lab
+#: model:ir.model,name:medical_lab.model_medical_patient
+msgid "Patient related information"
+msgstr "Thông tin liên quan đến bệnh nhân"
+
+#. module: medical_lab
+#: code:addons/medical_lab/wizard/wizard_create_lab_test.py:0
+#, python-format
+msgid "Test Report already created."
+msgstr "Báo cáo xét nghiệm đã được tạo"
+
+#. module: medical_lab
+#: view:medical.patient.lab.test:0
+msgid "Test Requests"
+msgstr "Các yêu cầu xét nghiệm"
+
+#. module: medical_lab
+#: model:ir.module.module,shortdesc:medical_lab.module_meta_information
+msgid "Medical : Laboratory"
+msgstr "Y khoa: Phòng xét nghiệm"

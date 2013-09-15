@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+    <record id="view_account_fixed_assets_location_form" model="ir.ui.view">
+      <field name="name">Fixed Asset Location</field>
+      <field name="model">account.fixed.assets.location</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+    	<form string="Location Changing">
+    	  <separator string="Set New Location" colspan="4"/>
+    	  <field name="name" colspan="4"/>
+    	  <field name="location" colspan="4"/>
+    	  <separator string="Notes" colspan="4"/>
+    	  <field name="note" nolabel="1" colspan="4"/>
+    	  <field name="state" invisible="1"/>
+    	  <group colspan="4">
+    	    <button icon="gtk-cancel" special="cancel" states="init" string="Cancel"/>
+    	    <button icon="gtk-execute" name="act_asset_location" states="init" string="Change Location" type="object"/>
+    	  </group>
+    	</form>
+      </field>
+    </record>
+
+    <record id="action_account_fixed_assets_location" model="ir.actions.act_window">
+      <field name="name">Change Location</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">account.fixed.assets.location</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="view_account_fixed_assets_location_form"/>
+      <field name="target">new</field>
+    </record>
+
+	</data>
+</openerp>

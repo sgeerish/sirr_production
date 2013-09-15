@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/clock_reader/wizard/registration_quality.py

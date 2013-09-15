@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/crm_bayes/__init__.py

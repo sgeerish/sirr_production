@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/crm_livechat/__terp__.py

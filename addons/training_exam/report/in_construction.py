@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training_exam/report/in_construction.py

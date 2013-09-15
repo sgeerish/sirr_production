@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/mgmtsystem_audit/__openerp__.py

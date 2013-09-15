@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl_interface/etl_connector/gcalender_connector.py

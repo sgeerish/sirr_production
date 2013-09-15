@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_fstr/reports/account_fstr_report.py

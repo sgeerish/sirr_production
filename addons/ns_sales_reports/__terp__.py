@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/ns_sales_reports/__terp__.py

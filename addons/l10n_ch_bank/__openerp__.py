@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/l10n_ch_bank/__openerp__.py

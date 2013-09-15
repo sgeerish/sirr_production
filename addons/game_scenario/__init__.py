@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/game_scenario/__init__.py

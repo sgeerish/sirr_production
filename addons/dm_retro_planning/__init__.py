@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_retro_planning/__init__.py

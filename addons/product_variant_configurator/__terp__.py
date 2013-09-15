@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_variant_configurator/__terp__.py

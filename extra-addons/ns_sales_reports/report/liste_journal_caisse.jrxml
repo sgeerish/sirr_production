@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="liste_commandes_produits" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.3310000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<subDataset name="account_voucher">
+		<queryString language="xPath">
+			<![CDATA[]]>
+		</queryString>
+		<field name="Nombre-number" class="java.lang.String">
+			<fieldDescription><![CDATA[/data/record/Nombre-number]]></fieldDescription>
+		</field>
+		<field name="Nom-name" class="java.lang.String">
+			<fieldDescription><![CDATA[/data/record/Partenaire-partner_id/Nom-name]]></fieldDescription>
+		</field>
+		<field name="Total-amount" class="java.lang.String">
+			<fieldDescription><![CDATA[/data/record/Total-amount]]></fieldDescription>
+		</field>
+		<field name="Type_par_defaut-type" class="java.lang.String">
+			<fieldDescription><![CDATA[/data/record/Type_par_defaut-type]]></fieldDescription>
+		</field>
+		<field name="Nom_du_journal-name" class="java.lang.String">
+			<fieldDescription><![CDATA[/data/record/Journal-journal_id/Nom_du_journal-name]]></fieldDescription>
+		</field>
+		<variable name="montant" class="java.lang.Float">
+			<variableExpression><![CDATA[$F{Type_par_defaut-type}='receipt' ? $F{Total-amount}:$F{Total-amount}*-1]]></variableExpression>
+		</variable>
+	</subDataset>
+	<parameter name="title" class="java.lang.String"/>
+	<parameter name="mode" class="java.lang.String"/>
+	<parameter name="detail" class="java.lang.Boolean">
+		<defaultValueExpression><![CDATA[true]]></defaultValueExpression>
+	</parameter>
+	<parameter name="level2" class="java.lang.Boolean">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="year" class="java.lang.Integer"/>
+	<parameter name="comm_rate" class="java.lang.Double">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="journal_id" class="java.lang.Float"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="Nom_du_journal-name" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Journal-journal_id/Nom_du_journal-name]]></fieldDescription>
+	</field>
+	<sortField name="User_Name-name2"/>
+	<sortField name="Category_produit"/>
+	<background>
+		<band height="50"/>
+	</background>
+	<title>
+		<band height="50"/>
+	</title>
+	<pageHeader>
+		<band height="50">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Nom_du_journal-name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="50">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[/data/record/Nombre-number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[/data/record/Partenaire-partner_id/Nom-name]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="50">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Nombre-number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Nom-name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$V{montant}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="50"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="50"/>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="50"/>
+	</lastPageFooter>
+	<summary>
+		<band height="50"/>
+	</summary>
+	<noData>
+		<band height="50"/>
+	</noData>
+</jasperReport>

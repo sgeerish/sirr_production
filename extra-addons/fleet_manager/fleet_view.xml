@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="fleet_vehicle_form" model="ir.ui.view">
+			<field name="name">fleet.vehicle.form</field>
+			<field name="model">fleet.vehicles</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="vehicles">
+					<group colspan="2" col="4">
+						<separator string="Vehicle Details" colspan="4" />
+						<field name="name" select="1" /><!--on_change="_getlastodo(name,regnno)"/-->
+						<field name="regnno" />
+						<field name="company" />
+						<field name="location" />
+					</group>
+					<separator string="Analysis Information"
+						colspan="4" />
+					<notebook>
+						<page string="Additional Details">
+							<separator string="Manufacture Details"
+								colspan="4" />
+							<field name="year" />
+							<field name="make" />
+							<field name="model" />
+							<field name="serial" />
+							<field name="type" />
+							<separator string="Current Details"
+								colspan="4" />
+							<field name="status" />
+							<field name="ownership" />
+						</page>
+						<page string="Purchase Details">
+							<field name="pdate" />
+							<field name="ppartner" />
+							<field name="pinvoice" />
+							<field name="pcost" />
+							<field name="podometer" />
+							<separator string="Warranty Expiry"
+								colspan="4" />
+							<field name="warrexp" />
+							<field name="warrexpmil" />
+							<separator string="Financial Details"
+								colspan="4" />
+							<field name="deprecperc" />
+							<field name="deprecperd" />
+							<field name="assetacc" />
+							<field name="depracc"/>
+						</page>
+						<page string="Fuel and Maintainace">
+							<field name="primarymeter" />
+							<field name="startodometer" />
+							<newline />
+							<!-- field name="lastodometer" /-->
+							<!-- field name="lastrecdate" /-->
+							<separator string="Fuel Details"
+								colspan="4" />
+							<field name="fueltype" />
+							<!--field name="fuelcardno" /-->
+							<field name="fueltankcap" />
+							<separator string="Preventive Maintainance"
+								colspan="4" />
+							<field name="schedname" />
+							<field name="cmil" />
+							<field name="bmil" />
+							<field name="bdate" />
+						</page>
+					</notebook>
+				</form>
+			</field>
+		</record>
+
+		<record id="fleet_vehicle_tree" model="ir.ui.view">
+			<field name="name">fleet.vehicle.tree</field>
+			<field name="model">fleet.vehicles</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="vehicles">
+					<field name="name" select="1" />
+					<field name="regnno" select="1" />
+					<field name="company" select="1" />
+					<field name="year" />
+					<field name="make" />
+					<field name="model" />
+					<field name="serial" />
+					<field name="type" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="fleet_fuellog_form_view" model="ir.ui.view">
+			<field name="name">fleet_fuellog_form</field>
+			<field name="model">fleet.fuellog</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Fuel Logbook">
+					<separator colspan="4" col="2"
+						string="Fuel Station Info." />
+					<field name="log_no" />
+					<field name="vendor" />
+					<field name="date" />
+					<field name="invno" />
+					<separator colspan="4" col="2"
+						string="Vehicle Info." />
+					<field name="vehicle" />
+					<field name="odometer" />
+					<field name="emp_resp" />
+					<field name="driver" />
+					<separator colspan="4" col="2"
+						string="Fuelling Info." />
+					<field name="qty"
+						on_change="calc_amount(totalcost,qty)" />
+					<field name="totalcost"
+						on_change="calc_amount(totalcost,qty)" />
+					<field name="costpl" />
+					<separator colspan="4" col="2"
+						string="Accounting Info." />
+					<field name="journal_id" />
+					<field name="currency_id" />
+					<field name="move_id" />
+					<field name="period_id" />
+					<field name="state" />
+					<group col="4">
+						<button name="proforma" string="Proforma"
+							states="draft" />
+						<!--button name="_create_moves" string="Create Move" states="proforma"/-->
+						<button name="_create_moves" string="Post Txn"
+							states="proforma" />
+						<button name="cancel_voucher" string="Cancel"
+							states="draft,proforma" />
+						<button name="_cancel_moves" string="Cancel"
+							states="posted" />
+					</group>
+				</form>
+			</field>
+		</record>
+
+		<record id="fleet_fuellog_tree_view" model="ir.ui.view">
+			<field name="name">fleet_fuellog_tree</field>
+			<field name="model">fleet.fuellog</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Fuel Log">
+					<field name="vehicle" select="1" />
+					<field name="date" select="1" />
+					<field name="invno" select="1" />
+					<field name="vendor" select="1" />
+					<field name="odometer" />
+					<field name="totalcost" />
+
+				</tree>
+			</field>
+		</record>
+		<!-- Work Order View -->
+		<record id="fleet_wo_form_view" model="ir.ui.view">
+			<field name="name">fleet_wo_form</field>
+			<field name="model">fleet.wo</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Work Orders">
+
+					<field name="wono" />
+					<field name="description" />
+					<field name="partner_id" />
+					<field name="name_divers" />
+					<field name="tel_divers" />
+					<field name="address_divers" />
+					<field name="address_intervention" />                       
+					<newline />
+					<field name="rdate" />
+					<field name="instr" />
+					<newline />
+					<separator colspan="4" col="4"
+						string="Additional Details" />
+					<notebook colspan="4">
+						<page string="Work Order Tasks">
+							<field name="tasks" nolabel="1" />
+						</page>
+					</notebook>
+                    <button name="invoice_create" string="Cree la Facture"/>
+				</form>
+			</field>
+		</record>
+		<record id="fleet_wo_tree_view" model="ir.ui.view">
+			<field name="name">fleet_wo_tree</field>
+			<field name="model">fleet.wo</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Work Orders">
+					<field name="wono" select="1" /> 
+					<field name="description" />                
+					<field name="rdate" select="1" />
+					<field name="instr" />
+				</tree>
+			</field>
+		</record>
+		<!-- Work Order Tasks View -->
+		<record id="fleet_wo_tasks_view" model="ir.ui.view">
+			<field name="name">fleet_wo_tasks_form</field>
+			<field name="model">fleet.wo.tasks</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Work Order Tasks">
+					<separator string="Task Details" colspan="4"
+						col="4" />
+					<field name="taskno" />
+					<newline />
+					<field name="servitem"
+						on_change="on_change_servitem(servitem)" />
+					<field name="vehicle" />
+					<newline />
+					<separator string="Task Management" colspan="4"
+						col="4" />
+					<field name="duedate" />
+					<field name="scheddate" />
+					<newline />
+					<field name="assignee" />
+					<field name="supervisor" />
+					<field name="state" />
+					<field name="description" />
+					<field name="problem" />
+					<field name="resolution" />
+					<field name="note"/>                    
+					<newline />
+					<separator string="Spares Required" colspan="4"
+						col="4" />
+					<field name="spares" nolabel="1" colspan="4" />
+					<separator string="Workflow Actions" colspan="4" />
+					<group colspan="2">
+						<button name="start_work" string="Start Work"
+							states="notstarted" />
+						<button name="get_approval"
+							string="Seek Approval" states="notstarted" />
+						<button name="replan" string="Re Plan"
+							states="planningneeded" />
+						<button name="issue_spares"
+							string="Issue Spares" states="awaitingparts" />
+						<button name="start_test"
+							string="Testing Started" states="inprogress" />
+						<button name="set_done" string="Task Completed"
+							states="testing,inprogress" />
+						<button name="cancel" string="Cancel Task"
+							states="notstarted,planningneeded,inprogress,awaitingparts" />
+					</group>
+				</form>
+			</field>
+		</record>
+		<record id="fleet_wo_tasks_tree" model="ir.ui.view">
+			<field name="name">fleet_wo_tasks_tree</field>
+			<field name="model">fleet.wo.tasks</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Work Order Tasks">
+					<field name="taskno" select="1" />
+					<field name="vehicle" select="1" />
+					<field name="servitem" />
+					<field name="state" select="1" />
+					<field name="duedate" />
+					<field name="assignee" select="2" />
+					<field name="supervisor" select="2" />
+                    
+				</tree>
+			</field>
+		</record>
+		<!-- Fleet wo tasks spares -->
+		<record id="fleet_wo_tasks_spares_view" model="ir.ui.view">
+			<field name="name">fleet_wo_tasks_form</field>
+			<field name="model">fleet.wo.tasks.spares</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Work Order Tasks Spare issue">
+
+					<field name="spare_req_no" />
+					<field name="product"
+						on_change="fetchunit(product)" />
+					<newline />
+					<field name="quantity" />
+					<field name="unit" />
+					<newline />
+					<field name="state" />
+				</form>
+			</field>
+		</record>
+		<record id="fleet_wo_tasks_spares_tree" model="ir.ui.view">
+			<field name="name">fleet_wo_tasks_tree</field>
+			<field name="model">fleet.wo.tasks.spares</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Work Order Tasks Spare issue">
+					<field name="spare_req_no" select="1" />
+					<field name="product" select="1" />
+					<field name="quantity" />
+					<field name="unit" />
+					<field name="state" select="1" />
+				</tree>
+			</field>
+		</record>
+		<!-- Odometer Views -->
+		<record id="fleet_odometer_form_view" model="ir.ui.view">
+			<field name="name">fleet_odometer_form</field>
+			<field name="model">fleet.odometer</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Odometer Logbook">
+					<separator colspan="4" col="4"
+						string="Record Info." />
+					<field name="vehicle" />
+					<field name="date" />
+					<field name="odometer" />
+					<field name="emp_resp" />
+				</form>
+			</field>
+		</record>
+
+		<record id="fleet_odometer_tree_view" model="ir.ui.view">
+			<field name="name">fleet_odometer_tree</field>
+			<field name="model">fleet.odometer</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Fuel Log">
+					<field name="vehicle" select="1" />
+					<field name="date" select="1" />
+					<field name="odometer" />
+				</tree>
+			</field>
+		</record>
+
+		<!-- View for Repair templates -->
+		<record id="fleet_serv_template_view" model="ir.ui.view">
+			<field name="name">fleet_serv_temp_view</field>
+			<field name="model">fleet.service.templ</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Service Templates">
+					<separator colspan="4" col="4"
+						string="Service Template" />
+					<field name="name" select="1" />
+					<field name="description" select="1" />
+					<separator colspan="4" col="4"
+						string="Service Items in template" />
+					<field name="items" nolabel="1" colspan="4"
+						widget="many2many" />
+				</form>
+			</field>
+		</record>
+		<!-- View for repair items -->
+		<record id="fleet_serv_items_view" model="ir.ui.view">
+			<field name="name">fleet_serv_items_view</field>
+			<field name="model">fleet.service.items</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Service Items">
+					<separator colspan="4" col="4"
+						string="Service Item Details" />
+					<newline />
+					<field name="name" select="1" colspan="1" />
+					<newline />
+					<field name="itemtype" select="1" colspan="1" />
+					<newline />
+					<separator colspan="4" col="4"
+						string="Service Item Occurance" />
+					<newline />
+					<field name="freqn" colspan="1" />
+					<field name="freqz" nolabel="1" colspan="1" />
+					<separator colspan="4" col="4" string="OR" />
+					<newline />
+					<field name="freqd" colspan="1" />
+					<field name="freqdz" nolabel="1" colspan="1" />
+					<separator colspan="4" col="4"
+						string="Spares Parts required for service" />
+					<field name="sparesreq" nolabel="1" colspan="4"
+						widget="one2many_list" />
+				</form>
+			</field>
+		</record>
+		<record id="fleet_service_items_tree" model="ir.ui.view">
+			<field name="name">fleet_serv_items_tree</field>
+			<field name="model">fleet.service.items</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Service Items">
+					<field name="name" select="1" />
+					<field name="itemtype" select="1" />
+					<field name="freqn" />
+					<field name="freqz" nolabel="1" string="Period" />
+					<!--label string="OR"/-->
+					<field name="freqd" nolabel="1" string="Mileage" />
+					<field name="freqdz" nolabel="1"
+						string="Distance Unit" />
+				</tree>
+			</field>
+		</record>
+		<record id="fleet_service_spares_tree" model="ir.ui.view">
+			<field name="name">fleet_serv_spare_tree</field>
+			<field name="model">fleet.service.items.spares</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Service Item Spares">
+					<field name="product" select="1" />
+					<field name="qtyreqd" select="1" />
+					<field name="unit" />
+				</tree>
+			</field>
+		</record>
+		<record id="fleet_service_spares_form" model="ir.ui.view">
+			<field name="name">fleet_serv_spare_view</field>
+			<field name="model">fleet.service.items.spares</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Service Item Spare Requirement">
+					<separator colspan="4" col="4"
+						string="Service Spare Details" />
+					<newline />
+					<field name="product" select="1" colspan="1"
+						on_change="fetchunit(product)" />
+					<newline />
+					<field name="qtyreqd" select="1" colspan="1" />
+					<newline />
+					<field name="unit" colspan="1" />
+					<newline />
+					<field name="execdate" colspan="1" />       
+					<field name="timein" colspan="1" />                    
+					<field name="timeout" colspan="1" />                    
+                    
+				</form>
+			</field>
+		</record>
+		<!-- Replace the existing HR form with modifications -->
+		<record id="view_employee_form_fleet" model="ir.ui.view">
+			<field name="name">hr.employee.form.fleet</field>
+			<field name="model">hr.employee</field>
+			<field name="inherit_id" ref="hr.view_employee_form" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="ssnid" position="replace">
+					<field name="licenseno" select="1" />
+				</field>
+			</field>
+		</record>
+		<record id="view_employee_form_fleet2" model="ir.ui.view">
+			<field name="name">hr.employee.form.fleet2</field>
+			<field name="model">hr.employee</field>
+			<field name="inherit_id" ref="hr.view_employee_form" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="sinid" position="replace">
+					<field name="licexpiry" />
+				</field>
+			</field>
+		</record>
+		<record id="view_employee_form_fleet3" model="ir.ui.view">
+			<field name="name">hr.employee.form.fleet3</field>
+			<field name="model">hr.employee</field>
+			<field name="inherit_id" ref="hr.view_employee_form" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="otherid" position="replace">
+					<field name="licensetyp" />
+					<field name="photo" widget="image" nolabel="1"
+						colspan="2" />
+				</field>
+			</field>
+		</record>
+
+		<record id="fleet_vehicles_form_act"
+			model="ir.actions.act_window">
+			<field name="name">Vehicles</field>
+			<field name="res_model">fleet.vehicles</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<!-- Add the spare_ok field to product_product -->
+		<record id="view_product_form_fleet" model="ir.ui.view">
+			<field name="name">product.product</field>
+			<field name="model">product.product</field>
+			<field name="inherit_id"
+				ref="product.product_normal_form_view" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="purchase_ok" position="after">
+					<field name="spare_ok" />
+				</field>
+			</field>
+		</record>
+		<record id="fleet_serv_items" model="ir.actions.act_window">
+			<field name="name">Service Items</field>
+			<field name="res_model">fleet.service.items</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<record id="fleet_serv_templ_view"
+			model="ir.actions.act_window">
+			<field name="name">Service Templates</field>
+			<field name="res_model">fleet.service.templ</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+		</record>
+
+		<record id="fleet_fuellog_form_act"
+			model="ir.actions.act_window">
+			<field name="name">Fuellog</field>
+			<field name="res_model">fleet.fuellog</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<record id="fleet_odometer_form_act"
+			model="ir.actions.act_window">
+			<field name="name">Odometer</field>
+			<field name="res_model">fleet.odometer</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+		</record>
+
+		<record id="fleet_odometer_tree_act"
+			model="ir.actions.act_window">
+			<field name="name">Odometer</field>
+			<field name="res_model">fleet.odometer</field>
+			<field name="view_type">tree</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<record id="fleet_wo_form_act" model="ir.actions.act_window">
+			<field name="name">Work Orders</field>
+			<field name="res_model">fleet.wo</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form,calendar</field>
+		</record>
+
+		<record id="fleet_wo_tasks_act" model="ir.actions.act_window">
+			<field name="name">Work Order Tasks</field>
+			<field name="res_model">fleet.wo.tasks</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form,calendar</field>
+		</record>
+
+		<record id="fleet_wo_tasks_spares_act"
+			model="ir.actions.act_window">
+			<field name="name">Work Order Tasks Spares</field>
+			<field name="res_model">fleet.wo.tasks.spares</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+		</record>
+	</data>
+</openerp>
+

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/portal/i18n/ar.po

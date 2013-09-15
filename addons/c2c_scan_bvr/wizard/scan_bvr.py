@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/c2c_scan_bvr/wizard/scan_bvr.py

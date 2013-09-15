@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hotel_housekeeping/report/housekeeping_report.py

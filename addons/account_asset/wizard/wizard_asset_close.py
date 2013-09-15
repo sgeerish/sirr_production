@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_asset/wizard/wizard_asset_close.py

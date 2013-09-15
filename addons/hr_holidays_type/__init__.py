@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_holidays_type/__init__.py

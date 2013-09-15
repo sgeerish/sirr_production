@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/c2c_analytic_wizard/wizard/__init__.py

@@ -1,0 +1,39 @@
+from osv import fields, osv
+import time
+import wizard
+
+class hr_overtime_wiz(wizard.interface):
+
+    def calculate_hs(self,cr,uid,ids,context=None):
+        emp_obj=self.pool.get('hr.employee')
+        att_obj=self.pool.get('hr.attendance')
+        now=datetime.datetime.now()
+        days=6
+        monday=1
+        days=now.isoweekday()+days
+        start=str((datetime.datetime.now()-datetime.timedelta(days=days)).date())
+        end=str(datetime.datetime.now().date())
+        employees=emp_obj.search(cr,uid,[])
+        absent_employees=[]
+        for employee in employees:
+            atts=att_obj.search(cr,uid,[('employee_id','=',employee.id),('day','>=',start),('day','<',end)])
+            atts=att_obj.browse(cr,uid,atts)
+            dates=[]
+            hours=0
+            for att in atts:
+                if att.day not in days:
+                    days.append(att.day)
+            for date in dates:
+                atts=att_obj.search(cr,uid,[('employee_id','=',employee.id),('day','=',date)])
+                atts=att_obj.browse(cr,uid,atts)
+                end_time=False
+                for att in atts:
+                    if len(atts)>1:
+                        if end_time:
+                            start_time=att.name
+                        else:
+                            end_time=att.name
+                if len(atts)>1:
+                    hours+=(end_time-start_time).seconds/(60*60)
+            print hours
+        return True                                            

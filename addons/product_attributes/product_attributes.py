@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_attributes/product_attributes.py

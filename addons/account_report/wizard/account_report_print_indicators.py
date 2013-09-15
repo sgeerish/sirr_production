@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_report/wizard/account_report_print_indicators.py

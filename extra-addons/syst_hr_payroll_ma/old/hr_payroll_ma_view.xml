@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<menuitem id="menu_hr_root_payroll_ma" parent="hr.menu_hr_root"
+			name="Gestion paie" />
+
+		<record id="hr_payroll_ma_form" model="ir.ui.view">
+			<field name="name">hr.payroll_ma.form</field>
+			<field name="model">hr.payroll_ma</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Bulletin de paie">
+					<group colspan="4" col="6">
+						<field name="number" />
+						<field name="journal_id" />
+						<field name="currency_id" />
+						<field name="partner_id" />
+						<field name="date_salary" />
+						<field name="period_id" on_change="onchange_period_id(period_id,partner_id)" />
+					</group>
+					<group col="6" colspan="4">
+						<field name="name" />
+						<button name="compute_all_lines" string="Calculer bulletins"
+							type="object" icon="gtk-execute" attrs="{'invisible':[('state','!=','draft')]}"/> 
+						<button name="generate_employees" string="Ajouter Employes"
+							type="object" icon="gtk-execute" attrs="{'invisible':[('state','!=','draft')]}"/>
+					</group>
+					<field colspan="4" default_get="{'bulletin_line_ids': bulletin_line_ids}" name="bulletin_line_ids" nolabel="1" widget="one2many_list" >
+					<form string="salary">
+					<group colspan="4" col="6">
+						<field name="employee_id" domain="[('active', '=',True)]" 
+							on_change="onchange_employee_id(employee_id,parent.period_id)" />
+						<field name="employee_contract_id" domain="[('employee_id', '=',employee_id)]"
+							on_change="onchange_contract_id(employee_contract_id)" />
+						<field name="name" />
+						<field name="working_days" />
+						<field name="salaire_base" />
+						<!--  <button name="compute_all_lines" string="Calculer bulletin"
+							type="object" icon="gtk-execute" context="{'period_id' : parent.period_id}"/>-->
+					</group>
+					<notebook colspan="4">
+						<page string="salary">
+							<field colspan="4" name="salary_line_ids" nolabel="1"
+								widget="one2many_list" />
+						<group colspan="4" col="6">
+							<field name="salaire_brute" />
+							<field name="salaire_brute_imposable" />
+							<field name="salaire_net_imposable" />
+							<field name="cotisations_employee" />
+							<field name="cotisations_employer" />
+							<field name="salaire_net" />
+						</group>
+						</page>
+						<page string="Info Salaire">
+							<field name="hour_base" />
+							<field name="normal_hours" />
+							<newline />
+							<separator string="Info sur salaire" colspan="4" />
+							<field name="igr" />
+							<field name="deduction" />
+							<field name="period_id" invisible="1"/>
+						</page>
+					</notebook>
+				</form>
+				<tree  string="Bulletins">
+					<field name="name" select="1"/>
+					<field name="employee_id" />
+					<field name="working_days" />
+					<field name="salaire_brute" />
+					<field name="salaire_brute_imposable" />
+					<field name="cotisations_employee" />  
+					<field name="cotisations_employer" />
+					<field name="salaire_net" /> 
+				</tree>
+					</field>
+
+					<group col="5" colspan="4">
+						<field name="state" />
+						<button name="draft_cb" string="_Draft" type="object"
+							states="confirmed,cancelled" icon="gtk-convert" />
+						<button name="confirm_cb" string="_Confirm" type="object"
+							states="draft" icon="gtk-execute" />
+						<button name="cancel_cb" string="_Cancel" type="object"
+							states="draft" icon="gtk-cancel" />
+					</group>
+				</form>
+			</field>
+		</record>
+
+		<record id="hr_payroll_ma_tree" model="ir.ui.view">
+			<field name="name">hr.payroll_ma.tree</field>
+			<field name="model">hr.payroll_ma</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree colors="blue:state=='draft'" string="Saisie mensuelle">
+					<field name="name" select='1' />
+					<field name="number" select='1' />
+					<field name="period_id" select='1' />
+					<field name="date_salary"/>
+					<field name="state" select='1' />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="hr.payroll_ma_all_act">
+			<field name="name">Saisie Mensuelle</field>
+			<field name="res_model">hr.payroll_ma</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem action="hr.payroll_ma_all_act" id="menu_hr_payroll_ma"
+			parent="menu_hr_root_payroll_ma" />
+
+
+		
+
+		<record id="salary_tree" model="ir.ui.view">
+			<field name="name">hr.payroll_ma.bulletin.tree</field>
+			<field name="model">hr.payroll_ma.bulletin</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree  string="Salaire"  editable='top'>
+					<field name="name" select="1"/>
+					<field name="employee_id"  select="1"/>
+					<field name="period_id"  select="1"/>
+					<field name="working_days" />
+					<field name="normal_hours" />
+					<field name="salaire_brute" />
+					<field name="salaire_brute_imposable" />
+					<field name="cotisations_employee" />  
+					<field name="cotisations_employer" /> 
+				</tree>
+			</field>
+		</record>
+
+		<record id="salary_form" model="ir.ui.view">
+			<field name="name">hr.payroll_ma.bulletin.form</field>
+			<field name="model">hr.payroll_ma.bulletin</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="salary">
+					<group colspan="4" col="6">
+						<field name="employee_id" domain="[('active', '=',True)]"
+							on_change="onchange_employee_id(employee_id,period_id)" />
+						<field name="employee_contract_id" domain="[('employee_id', '=',employee_id)]"
+							on_change="onchange_contract_id(employee_contract_id)" />
+						<field name="name" />
+						<field name="working_days" />
+						<field name="salaire_base" />
+						<button name="compute_all_lines" string="Calculer bulletin"
+							type="object" icon="gtk-execute" />
+					</group>
+					<notebook colspan="4">
+						<page string="salary">
+							<field colspan="4" name="salary_line_ids" nolabel="1"
+								widget="one2many_list" />
+						<group colspan="4" col="6">
+							<field name="salaire_brute" />
+							<field name="salaire_brute_imposable" />
+							<field name="salaire_net" />
+							<field name="salaire_net_imposable" />
+							<field name="cotisations_employee" />
+							<field name="cotisations_employer" />
+						</group>
+						</page>
+						<page string="Info Salaire">
+							<field name="hour_base" />
+							<field name="normal_hours" />
+							<newline />
+							<separator string="Info sur salaire" colspan="4" />
+							<field name="igr" />
+							<field name="deduction" />
+							<field name="period_id"/>
+						</page>
+					</notebook>
+				</form>
+			</field>
+		</record>
+
+		<record id="action_salary_tree" model="ir.actions.act_window">
+			<field name="name">Bulletins de paie</field>
+			<field name="res_model">hr.payroll_ma.bulletin</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem action="action_salary_tree" id="menu_bulletin"
+			parent="menu_hr_root_payroll_ma" />
+			
+	<!--
+			################################## Lignes Bulletins de paie ########################
+		-->
+
+
+		<record id="view_salary_line_tree" model="ir.ui.view">
+			<field name="name">hr.payroll_ma.bulletin.line.tree</field>
+			<field name="model">hr.payroll_ma.bulletin.line</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Ligne de salaire">
+					<field name="name" />
+					<field name="base" />
+					<field name="rate_employee" />
+					<field name="subtotal_employee" />
+					<field name="rate_employer" />
+					<field name="subtotal_employer" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_salary_line_form" model="ir.ui.view">
+			<field name="name">hr.payroll_ma.bulletin.line.form</field>
+			<field name="model">hr.payroll_ma.bulletin.line</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Ligne de salaire">
+					<notebook>
+						<page string="Line">
+							<field name="name" />
+							<field name="base" />
+							<field name="type" />
+							<field name="credit_account_id" string="compte de crédit" />
+							<field name="debit_account_id" string="compte de débit" />
+							<newline />
+							<field name="rate_employee" />
+							<field name="subtotal_employee" />
+							<field name="rate_employer" />
+							<field name="subtotal_employer" />
+						</page>
+						<page string="Notes">
+							<field colspan="4" name="note" nolabel="1" />
+						</page>
+					</notebook>
+				</form>
+			</field>
+		</record>
+				<!--
+			################################Les rubriques#######################################"
+		-->
+
+		<record model="ir.ui.view" id="rubrique_form">
+			<field name="name">hr.payroll_ma.rubrique.form</field>
+			<field name="model">hr.payroll_ma.rubrique</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Les rubriques">
+				<group col="6" colspan="4">
+					<field name="name" />
+					<field name="categorie" />
+					<field name="afficher" />
+				</group>
+					<group col="6" colspan="4"
+						attrs="{'invisible':[('categorie','==','deduction')]}">
+						<field name="type" />
+						<field name="imposable" />
+						<field name="plafond" />
+						<field name="formule" />
+						<newline/>
+						<separator colspan="6" string="soumise a" />
+						<field name="ir" />
+						<field name="anciennete" />
+						<field name="absence" />
+					</group>
+					<field name="sequence"/>
+					<newline/>
+					<field name="note" colspan="4"/>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="rubrique_tree">
+			<field name="name">hr.payroll_ma.rubrique.tree</field>
+			<field name="model">hr.payroll_ma.rubrique</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Les rubriques">
+					<field name="name" />
+					<field name="categorie" />
+					<field name="afficher" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="rubrique_all_act">
+			<field name="name">Les rubriques</field>
+			<field name="res_model">hr.payroll_ma.rubrique</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<menuitem action="rubrique_all_act" id="rubrique_all_mi"
+			parent="payroll_ma_configure" />
+
+
+		<!-- ##################Lignes de rubriques ########################-->
+		<record model="ir.ui.view" id="ligne_rubrique_form">
+			<field name="name">hr.payroll_ma.ligne_rubrique.form</field>
+			<field name="model">hr.payroll_ma.ligne_rubrique</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Lignes rubriques">
+				<group col="8" colspan="4">
+					<field name="rubrique_id" />
+					<field name="montant" />
+					<field name="taux" />
+					<field name="permanent" />
+				</group>
+					<group col="6" colspan="4"
+						attrs="{'invisible':[('permanent','==',True)]}">
+					
+						<field name="period_id" on_change="onchange_period_id(period_id)"/>
+						<field name="date_start" />
+						<field name="date_stop" />
+					</group>
+					<separator string="Commentaire" colspan="4" />
+					<field name="note" />
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="ligne_rubrique_tree">
+			<field name="name">hr.payroll_ma.ligne_rubrique.tree</field>
+			<field name="model">hr.payroll_ma.ligne_rubrique</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="rubriques">
+					<field name="rubrique_id" />
+					<field name="montant" />
+					<field name="permanent" />
+					<field name="date_start" />
+					<field name="date_stop" />
+					<field name="note" />
+				</tree>
+			</field>
+		</record>
+
+		<act_window name="Mes bulletins de paie" domain="[('employee_id', '=', active_id)]"
+			res_model="hr.payroll_ma.bulletin" src_model="hr.employee"
+			id="act_hr_employee_bulletin" />
+			
+		<act_window name="bulletins de paie" domain="[('id_payroll_ma', '=', active_id)]"
+			src_model="hr.payroll_ma" res_model="hr.payroll_ma.bulletin"
+			id="act_hr_payroo_ma_bulletin" />
+
+		<act_window name="Ecritures Comptables" res_model="account.move"
+			src_model="hr.payroll_ma" id="act_hr_payroll_ma_ecriture" />
+	</data>
+</openerp>

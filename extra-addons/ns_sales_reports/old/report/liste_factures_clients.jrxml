@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="liste_commandes_clients" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="title" class="java.lang.String"/>
+	<parameter name="mode" class="java.lang.String"/>
+	<parameter name="year" class="java.lang.Integer"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="Date" class="java.util.Date">
+		<fieldDescription><![CDATA[/data/record/Date_Invoiced-date_invoice]]></fieldDescription>
+	</field>
+	<field name="Client" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Partner-partner_id/Name-name]]></fieldDescription>
+	</field>
+	<field name="Montant" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Montant-value]]></fieldDescription>
+	</field>
+	<field name="Ref" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Description-name]]></fieldDescription>
+	</field>
+	<field name="Category_client" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Partner-partner_id/Categories-category_id/Category_Name-name]]></fieldDescription>
+	</field>
+	<field name="Marge-margin" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Marge-margin]]></fieldDescription>
+	</field>
+	<field name="Mar-margin_perc" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Mar-margin_perc]]></fieldDescription>
+	</field>
+	<field name="Discount-discount" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Discount-discount]]></fieldDescription>
+	</field>
+	<field name="Subtotal-price_subtotal" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Subtotal-price_subtotal]]></fieldDescription>
+	</field>
+	<field name="Quantity-quantity" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Quantity-quantity]]></fieldDescription>
+	</field>
+	<sortField name="Category_client"/>
+	<sortField name="Client"/>
+	<variable name="Montant_2" class="java.lang.Float" resetType="Group" resetGroup="Client" calculation="Sum">
+		<variableExpression><![CDATA[$F{Montant}]]></variableExpression>
+	</variable>
+	<variable name="Montant_1" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[$F{Montant}]]></variableExpression>
+	</variable>
+	<group name="Client">
+		<groupExpression><![CDATA[$F{Client}]]></groupExpression>
+		<groupHeader>
+			<band/>
+		</groupHeader>
+		<groupFooter>
+			<band height="20">
+				<frame>
+					<reportElement x="22" y="0" width="352" height="20"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+					<textField>
+						<reportElement x="4" y="0" width="327" height="20"/>
+						<textElement verticalAlignment="Middle"/>
+						<textFieldExpression class="java.lang.String"><![CDATA[$F{Client}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement x="374" y="0" width="100" height="20"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+					<textField pattern="#,##0.00">
+						<reportElement x="1" y="0" width="90" height="20"/>
+						<textElement textAlignment="Right" verticalAlignment="Middle"/>
+						<textFieldExpression class="java.lang.Float"><![CDATA[$V{Montant_2}]]></textFieldExpression>
+					</textField>
+				</frame>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{title}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="22" y="0" width="352" height="20" backcolor="#CCCCFF"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<staticText>
+					<reportElement x="4" y="0" width="100" height="20"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[CLIENT]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="374" y="0" width="100" height="20" backcolor="#CCCCFF"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+			</frame>
+			<staticText>
+				<reportElement x="374" y="0" width="90" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[MONTANT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="27" splitType="Stretch">
+			<textField>
+				<reportElement x="435" y="3" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" /"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="515" y="3" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="20" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="22" y="0" width="352" height="20" backcolor="#CCCCFF"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<staticText>
+					<reportElement x="298" y="0" width="44" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[TOTAL]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="374" y="0" width="100" height="20" backcolor="#CCCCFF"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textField pattern="#,##0.00">
+					<reportElement x="1" y="0" width="90" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{Montant_1}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</summary>
+</jasperReport>

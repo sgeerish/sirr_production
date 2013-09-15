@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sale_margin_delivery/__terp__.py

@@ -1,0 +1,55 @@
+<openerp>
+  <data>
+     <record model="workflow" id="tax_wrkflow"> 
+         <field name="name">Tax Workflow</field>
+         <field name="osv">Tax</field>
+         <field name="on_create">True</field>
+     </record>
+     
+     
+     <record model="workflow.activity" id="tax_draft">
+          <field name="wkf_id" ref="tax_wrkflow"/>
+          <field name="flow_start">True</field>
+          <field name="name">Draft State</field>
+          <field name="kind">function</field>
+          <field name="action">tax_draft()</field>
+    </record>
+    
+    <record model="workflow.activity" id="tax_confirm">
+          <field name="wkf_id" ref="tax_wrkflow"/>
+          <field name="flow_stop">True</field>
+          <field name="name">Confirmed</field>
+          <field name="kind">function</field>
+          <field name="action">tax_confirm()</field>
+    </record>
+    
+    <record model="workflow.activity" id="tax_cancel">
+          <field name="wkf_id" ref="tax_wrkflow"/>
+          <field name="name">Cancel</field>
+          <field name="kind">function</field>
+          <field name="action">tax_cancel()</field>
+    </record>  
+    
+    
+    
+    <record model="workflow.transition" id="tax_draft_confirm_state">
+        <field name="act_from" ref="tax_draft"/>
+        <field name="act_to" ref="tax_confirm"/>
+        <field name="signal">button_tax_confirm</field>
+   </record> 
+   
+   <record model="workflow.transition" id="tax_confirm_cancel_state">
+        <field name="act_from" ref="tax_confirm"/>
+        <field name="act_to" ref="tax_cancel"/>
+        <field name="signal">button_tax_cancel1</field>
+   </record>
+   
+   <record model="workflow.transition" id="tax_cancel_reopen_state">
+        <field name="act_from" ref="tax_cancel"/>
+        <field name="act_to" ref="tax_draft"/>
+        <field name="signal">button_tax_reopen</field>
+   </record>
+        
+  </data>
+
+</openerp> 

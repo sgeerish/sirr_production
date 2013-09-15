@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_payroll_declare/__terp__.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/mrp_production_report/__terp__.py

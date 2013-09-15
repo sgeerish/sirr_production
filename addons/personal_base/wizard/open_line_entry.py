@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/personal_base/wizard/open_line_entry.py

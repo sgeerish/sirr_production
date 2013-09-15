@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_audittrail/i18n/fr_BE.po

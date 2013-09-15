@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_payment_method/__init__.py

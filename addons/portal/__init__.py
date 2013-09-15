@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/portal/__init__.py

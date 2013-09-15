@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/event_certificate/report/report_certificate.py

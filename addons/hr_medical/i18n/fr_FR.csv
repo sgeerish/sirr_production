@@ -1,0 +1,8 @@
+
+field,"hr.employee,medic_exam_delay_alert",0,Medical examination delay alert (Days),Délai d'alerte (jours)field,"hr.employee,email_alert",0,Email for reporting,Email pour envoi
+field,"hr.employee,last_medic_exam",0,Last Medical examination date,Dernière visite médicale
+field,"hr.employee,medic_exam",0,Medical examination date,Date visite médicale
+field,"hr.employee,medic_exam_delay",0,Medical examination delay (Years),Durée entre chaque visite (années)
+field,"hr.employee,medic_exam_alert",0,Medical examination alert,Alerte visite médicale
+
+

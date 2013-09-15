@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/chricar_partner_parent_companies/__terp__.py

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+	<!---->
+	<record id="test_attendance_2_1" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_2"/>
+		<field name="name">2001-02-01 17:54:01</field>
+		<field name="action">sign_in</field>
+	</record>
+        <assert id="test_attendance_2_1" model="hr.attendance" string="Test attendance sign in for night turn">
+		<test expr="date">2001-02-01 00:00:00</test>
+		<test expr="datetime">2001-02-01 17:54:01</test>
+		<test expr="turn_date">2001-02-01 00:00:00</test>
+		<test expr="turn_start">2001-02-01 18:00:00</test>
+		<test expr="turn_end">2001-02-02 06:00:00</test>
+        </assert>
+
+	<function name="compute_reason_rules" model="hr.attendance" >
+		<value eval="[ref('test_attendance_2_1')]"/>
+	</function>
+
+	<assert id="test_attendance_2_1" model="hr.attendance" string="Computing reason rule Sign Out hr.test At time">
+		<test expr="action_desc.name">hr.test At time</test>
+        </assert>
+
+	<!---->
+	<record id="test_attendance_2_2" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_2"/>
+		<field name="name">2001-02-02 05:54:01</field>
+		<field name="action">sign_out</field>
+	</record>
+        <assert id="test_attendance_2_2" model="hr.attendance" string="Test attendance sign out for night turn">
+		<test expr="date">2001-02-02 00:00:00</test>
+		<test expr="datetime">2001-02-02 05:54:01</test>
+		<test expr="turn_date">2001-02-01 00:00:00</test>
+		<test expr="turn_start">2001-02-01 18:00:00</test>
+		<test expr="turn_end">2001-02-02 06:00:00</test>
+        </assert>
+
+	<function name="compute_reason_rules" model="hr.attendance" >
+		<value eval="[ref('test_attendance_2_2')]"/>
+	</function>
+
+        <assert id="test_attendance_2_2" model="hr.attendance" string="Computing reason rule Sign Out hr.test At time">
+		<test expr="action_desc.name">hr.test At time</test>
+        </assert>
+
+	<!---->
+	<record id="test_attendance_2_3" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_2"/>
+		<field name="name">2001-02-02 17:54:01</field>
+		<field name="action">sign_in</field>
+	</record>
+        <assert id="test_attendance_2_3" model="hr.attendance" string="Test attendance sign in for night turn in friday">
+		<test expr="date">2001-02-02 00:00:00</test>
+		<test expr="datetime">2001-02-02 17:54:01</test>
+		<test expr="turn_date">2001-02-02 00:00:00</test>
+		<test expr="turn_start">2001-02-02 18:00:00</test>
+		<test expr="turn_end">2001-02-03 06:00:00</test>
+        </assert>
+
+	<function name="compute_reason_rules" model="hr.attendance" >
+		<value eval="[ref('test_attendance_2_3')]"/>
+	</function>
+
+        <assert id="test_attendance_2_3" model="hr.attendance" string="Computing reason rule Sign Out hr.test At time">
+		<test expr="action_desc.name">hr.test At time</test>
+        </assert>
+
+	<!---->
+	<record id="test_attendance_2_4" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_2"/>
+		<field name="name">2001-02-03 05:54:01</field>
+		<field name="action">sign_out</field>
+	</record>
+        <assert id="test_attendance_2_4" model="hr.attendance" string="Test attendance sign out for night turn in friday">
+		<test expr="date">2001-02-03 00:00:00</test>
+		<test expr="datetime">2001-02-03 05:54:01</test>
+		<test expr="turn_date">2001-02-02 00:00:00</test>
+		<test expr="turn_start">2001-02-02 18:00:00</test>
+		<test expr="turn_end">2001-02-03 06:00:00</test>
+        </assert>
+
+	<function name="compute_reason_rules" model="hr.attendance" >
+		<value eval="[ref('test_attendance_2_4')]"/>
+	</function>
+
+        <assert id="test_attendance_2_4" model="hr.attendance" string="Computing reason rule Sign Out hr.test At time">
+		<test expr="action_desc.name">hr.test At time</test>
+        </assert>
+    </data>
+</openerp>
+

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/invoice_multi_currency/__terp__.py

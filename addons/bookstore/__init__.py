@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/bookstore/__init__.py

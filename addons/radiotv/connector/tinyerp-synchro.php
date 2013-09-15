@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/radiotv/connector/tinyerp-synchro.php

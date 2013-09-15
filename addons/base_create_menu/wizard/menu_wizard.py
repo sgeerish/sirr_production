@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_create_menu/wizard/menu_wizard.py

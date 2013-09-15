@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/esale_osc/__terp__.py

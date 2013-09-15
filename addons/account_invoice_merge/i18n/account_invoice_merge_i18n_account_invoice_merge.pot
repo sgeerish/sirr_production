@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_invoice_merge/i18n/account_invoice_merge_i18n_account_invoice_merge.pot

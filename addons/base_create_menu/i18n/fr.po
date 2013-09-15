@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_create_menu/i18n/fr.po

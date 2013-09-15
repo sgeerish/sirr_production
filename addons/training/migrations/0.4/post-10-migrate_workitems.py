@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training/migrations/0.4/post-10-migrate_workitems.py

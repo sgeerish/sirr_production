@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/huissier/wizard/wizard_pay_labels.py

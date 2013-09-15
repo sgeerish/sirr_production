@@ -1,0 +1,755 @@
+# Finnish translation for openobject-addons
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-08-28 16:01+0000\n"
+"PO-Revision-Date: 2010-02-24 11:09+0000\n"
+"Last-Translator: pmjt <Unknown>\n"
+"Language-Team: Finnish <fi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-04-17 04:15+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#. module: hr_holidays
+#: model:ir.ui.menu,name:hr_holidays.menu_open_ask_holidays_new
+msgid "New Holidays Request"
+msgstr "Uusi loma-anomus"
+
+#. module: hr_holidays
+#: model:ir.ui.menu,name:hr_holidays.menu_action_all_holiday
+msgid "All Holidays Requests"
+msgstr "Kaikki loma-anomukset"
+
+#. module: hr_holidays
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Virheellinen mallin nimi toimenpiteen määrittelyssä."
+
+#. module: hr_holidays
+#: field:hr.holidays.per.user,remaining_leaves:0
+msgid "Remaining Leaves"
+msgstr "Jäljellä olevat lomat"
+
+#. module: hr_holidays
+#: model:ir.actions.act_window,name:hr_holidays.action_holiday_waiting
+msgid "Requests Awaiting for Validation"
+msgstr "Tarkistusta odottavat anomukset"
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Light Blue"
+msgstr "Vaaleansininen"
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Brown"
+msgstr "Ruskea"
+
+#. module: hr_holidays
+#: xsl:holidays.summary:0
+msgid "of the"
+msgstr ""
+
+#. module: hr_holidays
+#: xsl:holidays.summary:0
+msgid "Off-Days' Summary"
+msgstr ""
+
+#. module: hr_holidays
+#: view:hr.holidays:0
+#: view:hr.holidays.per.user:0
+#: model:process.transition,name:hr_holidays.process_transition_employeeholidays0
+msgid "Employee Holidays"
+msgstr "Työntekijän lomat"
+
+#. module: hr_holidays
+#: view:hr.holidays:0
+msgid "Set to Draft"
+msgstr "Aseta luonnokseksi"
+
+#. module: hr_holidays
+#: view:hr.holidays.per.user:0
+#: field:hr.holidays.per.user,holiday_ids:0
+#: model:ir.model,name:hr_holidays.model_hr_holidays
+#: model:process.node,name:hr_holidays.process_node_holidays0
+msgid "Holidays"
+msgstr "Lomat"
+
+#. module: hr_holidays
+#: xsl:holidays.summary:0
+msgid "to"
+msgstr ""
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Light Cyan"
+msgstr ""
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Light Green"
+msgstr "Vaaleanvihreä"
+
+#. module: hr_holidays
+#: model:process.transition,name:hr_holidays.process_transition_employeedeclaration0
+msgid "Employee Declaration"
+msgstr "Työntekijän ilmoitus"
+
+#. module: hr_holidays
+#: view:hr.holidays:0
+#: selection:hr.holidays,state:0
+#: model:process.transition.action,name:hr_holidays.process_transition_action_validate0
+msgid "Validate"
+msgstr "Vahvista"
+
+#. module: hr_holidays
+#: model:process.transition,name:hr_holidays.process_transition_refusedrequest0
+msgid "Refused Request"
+msgstr "Hylätty anomus"
+
+#. module: hr_holidays
+#: model:process.node,name:hr_holidays.process_node_approved0
+msgid "Approved"
+msgstr "Hyväksytty"
+
+#. module: hr_holidays
+#: selection:hr.holidays.summary.employee,init,holiday_type:0
+msgid "Both"
+msgstr "Molemmat"
+
+#. module: hr_holidays
+#: view:hr.holidays:0
+msgid "Refuse"
+msgstr "Hylkää"
+
+#. module: hr_holidays
+#: wizard_button:hr.holidays.summary,notify,end:0
+#: wizard_button:hr.holidays.summary.employee,notify,end:0
+msgid "Ok"
+msgstr "Ok"
+
+#. module: hr_holidays
+#: model:ir.ui.menu,name:hr_holidays.menu_action_my_holiday
+msgid "My Holidays Requests"
+msgstr "Omat loma-anomukset"
+
+#. module: hr_holidays
+#: field:hr.holidays,notes:0
+#: field:hr.holidays.per.user,notes:0
+msgid "Notes"
+msgstr "Huomautukset"
+
+#. module: hr_holidays
+#: field:hr.holidays,holiday_status:0
+#: field:hr.holidays.log,holiday_status:0
+#: field:hr.holidays.per.user,holiday_status:0
+msgid "Holiday's Status"
+msgstr "Loma status"
+
+#. module: hr_holidays
+#: model:process.transition,note:hr_holidays.process_transition_refusedrequest0
+msgid "Request is refused."
+msgstr "Anomus on hylätty."
+
+#. module: hr_holidays
+#: model:ir.ui.menu,name:hr_holidays.menu_open_ask_holidays
+msgid "Holidays Management"
+msgstr "Lomien hallinta"
+
+#. module: hr_holidays
+#: xsl:holidays.summary:0
+msgid "Analyze from"
+msgstr "Analysoi"
+
+#. module: hr_holidays
+#: model:ir.actions.report.xml,name:hr_holidays.report_holidays_summary
+msgid "Summary Of Holidays"
+msgstr "Lomien yhteenveto"
+
+#. module: hr_holidays
+#: model:process.node,note:hr_holidays.process_node_calendar0
+msgid "The holiday is set in the calendar"
+msgstr "Loma on merkitty kalenteriin"
+
+#. module: hr_holidays
+#: view:hr.holidays.status:0
+msgid "Holiday status"
+msgstr "Loma status"
+
+#. module: hr_holidays
+#: model:ir.model,name:hr_holidays.model_hr_holidays_status
+msgid "Holidays Status"
+msgstr "Lomien status"
+
+#. module: hr_holidays
+#: field:hr.holidays,date_to:0
+msgid "Vacation end day"
+msgstr "Loman päättymispäivä"
+
+#. module: hr_holidays
+#: view:hr.holidays.per.user:0
+msgid "Holidays Allowed"
+msgstr "Lomat sallittuja"
+
+#. module: hr_holidays
+#: model:process.node,note:hr_holidays.process_node_legaldeclaration0
+msgid "Legal Declaration Document to declare new employee"
+msgstr "Oikeudellisen lausuman ilmoitus uudelle työntekijälle"
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Magenta"
+msgstr "Purppura"
+
+#. module: hr_holidays
+#: model:ir.model,name:hr_holidays.model_hr_holidays_per_user
+msgid "Holidays Per User"
+msgstr "Lomat per käyttäjä"
+
+#. module: hr_holidays
+#: view:hr.holidays.status:0
+msgid "Define holiday status"
+msgstr "Määritä lomastatus"
+
+#. module: hr_holidays
+#: selection:hr.holidays.summary,init,holiday_type:0
+#: selection:hr.holidays.summary.employee,init,holiday_type:0
+msgid "Confirmed"
+msgstr "Vahvistettu"
+
+#. module: hr_holidays
+#: wizard_field:hr.holidays.summary,init,date_from:0
+#: wizard_field:hr.holidays.summary.employee,init,date_from:0
+msgid "From"
+msgstr ""
+
+#. module: hr_holidays
+#: view:hr.holidays:0
+#: model:process.transition.action,name:hr_holidays.process_transition_action_confirm0
+msgid "Confirm"
+msgstr "Vahvista"
+
+#. module: hr_holidays
+#: model:ir.actions.act_window,name:hr_holidays.action_my_holiday_waiting
+#: model:ir.ui.menu,name:hr_holidays.menu_action_my_holiday_waiting
+msgid "My Awaiting Confirmation Holidays Requests"
+msgstr "Omat vahvistusta odottavat loma-anomukset"
+
+#. module: hr_holidays
+#: field:hr.holidays,user_id:0
+msgid "Employee_id"
+msgstr "Työntekijä_id"
+
+#. module: hr_holidays
+#: model:process.node,note:hr_holidays.process_node_holidaysdefinition0
+msgid "Encoding of annual available holidays."
+msgstr "Käytettävissä olevien vuosilomien koodit"
+
+#. module: hr_holidays
+#: field:hr.holidays,employee_id:0
+#: field:hr.holidays.log,employee_id:0
+#: field:hr.holidays.per.user,employee_id:0
+msgid "Employee"
+msgstr "Työntekijä"
+
+#. module: hr_holidays
+#: selection:hr.holidays,state:0
+msgid "Waiting Validation"
+msgstr "Odottaa tarkistusta"
+
+#. module: hr_holidays
+#: model:process.transition,note:hr_holidays.process_transition_employeeholidays0
+msgid "Employee get holidays"
+msgstr "Työntekijää saa lomaa"
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Light Salmon"
+msgstr "Kirkas lohenpunainen"
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Wheat"
+msgstr ""
+
+#. module: hr_holidays
+#: field:hr.holidays.log,nb_holidays:0
+msgid "Number of Holidays Requested"
+msgstr "Loma-anomuksien määrä"
+
+#. module: hr_holidays
+#: model:ir.actions.act_window,name:hr_holidays.act_hr_employee_holiday_request
+msgid "My Holiday Requests"
+msgstr "Omat loma-anomukset"
+
+#. module: hr_holidays
+#: view:hr.holidays:0
+#: view:hr.holidays.per.user:0
+msgid "Number of Days"
+msgstr "Päivien lukumäärä"
+
+#. module: hr_holidays
+#: field:hr.holidays.status,name:0
+#: model:ir.actions.act_window,name:hr_holidays.open_view_holiday_status
+#: model:ir.ui.menu,name:hr_holidays.menu_open_view_holiday_status
+msgid "Holiday Status"
+msgstr "Loma status"
+
+#. module: hr_holidays
+#: wizard_view:hr.holidays.summary,init:0
+#: wizard_view:hr.holidays.summary.employee,init:0
+msgid "Report Options"
+msgstr "Raporttiasetukset"
+
+#. module: hr_holidays
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Virheellinen XML näkymä-arkkitehtuurille!"
+
+#. module: hr_holidays
+#: model:process.node,note:hr_holidays.process_node_approved0
+msgid "His manager approves the request"
+msgstr "Esimiehensä hyväksyy anomuksen"
+
+#. module: hr_holidays
+#: model:process.transition,note:hr_holidays.process_transition_holidaysdefrequest0
+msgid "If holidays available, employee can take it and fill it."
+msgstr "Jos lomaa käytettävissä, työntekijä voi ottaa ja täyttää sen"
+
+#. module: hr_holidays
+#: wizard_view:hr.holidays.summary.employee,notify:0
+msgid "You have to select at least 1 Employee. Try again."
+msgstr "Sinun täytyy valita vähintään yksi työntekijä. Yritä uudelleen."
+
+#. module: hr_holidays
+#: model:ir.ui.menu,name:hr_holidays.menu_action_my_holiday_validate
+msgid "My Validated Holidays Requests"
+msgstr "Omat tarkistetut loma-anomukset"
+
+#. module: hr_holidays
+#: wizard_field:hr.holidays.summary.employee,init,emp:0
+msgid "Employee(s)"
+msgstr "Työntekijä(t)"
+
+#. module: hr_holidays
+#: field:hr.holidays,number_of_days:0
+msgid "Number of Days in this Holiday Request"
+msgstr "Päivien määrä tässä loma-anomuksessa"
+
+#. module: hr_holidays
+#: view:hr.holidays.per.user:0
+#: model:ir.actions.act_window,name:hr_holidays.action_holidays_per_user
+#: model:ir.ui.menu,name:hr_holidays.menu_open_holidays_per_user
+msgid "Holidays Per Employee"
+msgstr "Lomapäiviä per työntekijä"
+
+#. module: hr_holidays
+#: field:hr.holidays.status,limit:0
+msgid "Allow to override Limit"
+msgstr "Salli rajan ylittäminen"
+
+#. module: hr_holidays
+#: field:hr.holidays.log,holiday_user_id:0
+msgid "Holidays user"
+msgstr "Loma käyttäjä"
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Lavender"
+msgstr ""
+
+#. module: hr_holidays
+#: model:ir.model,name:hr_holidays.model_hr_holidays_log
+msgid "hr.holidays.log"
+msgstr "hklstön.loma.loki"
+
+#. module: hr_holidays
+#: model:ir.actions.wizard,name:hr_holidays.wizard_holidays_summary
+msgid "Print Summary of Employee's Holidays"
+msgstr "Tulosta työntekijöiden lomien yhteenveto"
+
+#. module: hr_holidays
+#: model:process.node,name:hr_holidays.process_node_calendar0
+msgid "Calendar"
+msgstr "Kalenteri"
+
+#. module: hr_holidays
+#: field:hr.holidays,date_from:0
+msgid "Vacation start day"
+msgstr "Loman aloituspäivä"
+
+#. module: hr_holidays
+#: model:ir.module.module,description:hr_holidays.module_meta_information
+msgid ""
+"Human Ressources: Holidays tracking and workflow\n"
+"\n"
+"    This module allows you to manage holidays and holidays requests. For "
+"each employee, you can also define a number of available holidays per "
+"holiday status.\n"
+"\n"
+"    Note that:\n"
+"    - A synchronisation with an internal agenda (use of the CRM module) is "
+"possible: in order to automatically create a case when an holiday request is "
+"accepted, you have to link the holidays status to a case section. You can "
+"set up this info and your colour preferences in\n"
+"                HR / Configuration / Holidays Status\n"
+"    - An employee can make a negative holiday request (holiday request of -2 "
+"days for example), this is considered by the system as an ask for more off-"
+"days. It will increase his total of that holiday status available (if the "
+"request is accepted).\n"
+"    - There are two ways to print the employee's holidays:\n"
+"        * The first will allow to choose employees by department and is used "
+"by clicking the menu item located in\n"
+"                HR / Holidays Request / Print Summary of Holidays\n"
+"        * The second will allow you to choose the holidays report for "
+"specific employees. Go on the list\n"
+"                HR / Employees / Employees\n"
+"            then select the ones you want to choose, click on the print icon "
+"and select the option\n"
+"                'Print Summary of Employee's Holidays'\n"
+"    - The wizard allows you to choose if you want to print either the "
+"Confirmed & Validated holidays or only the Validated ones. These states must "
+"be set up by a user from the group 'HR' and with the role 'holidays'. You "
+"can define these features in the security tab from the user data in\n"
+"                Administration / Users / Users\n"
+"            for example, you maybe will do it for the user 'admin'.\n"
+msgstr ""
+"Henkilöstö: Lomien seuranta ja työnkulku\n"
+"    Tämä moduuli antaa sinun hallita lomia ja loma-anomuksia. Jokaiselle "
+"työntekijälle voidaan määrittää lomapäivien määrä per loma.\n"
+"\n"
+"    Huomaa että:\n"
+"    - Synkronointi sisäisen asialistan kanssa on mahdollista (Käytä CRM "
+"moduulia): Jos haluat automaattisesti luoda tapahtuman kun loma-anomus on "
+"hyväksytty, täytyy sinun linkittää loma status tapahtuma osioon. Voit ottaa "
+"käyttöön tämän tiedon ja väriasetukset\n"
+"                HR / Asetukset / Loma status\n"
+"    - Työntekijä voi tehdä negatiivisen loma-anomuksen (esim, -2 päivää), "
+"tämä käsitellään pyyntönä lisäpäiville olla pois töistä. Tämä kasvattaa "
+"työntekijän käytettävissä olevan loman statusta (mikäli anomus "
+"hyväksytään).\n"
+"    - On kaksi tapaa tulostaa työntekijöiden lomat:\n"
+"        * Ensimmäinen tapa on valita työntekijät osastoittain, tämä tapahtuu "
+"klikkaamalla valikosta \n"
+"                HR / Loma-anomukset / Tulosta lomien yhteenveto\n"
+"        * Toinen tapa on valita lomaraportti tietyiltä työntekijöiltä. Mene "
+"\n"
+"                HR / Työntekijät / Työntekijät \n"
+"            Valitse työntekijät, klikkaa tulosta -kuvaketta ja valitse \n"
+"                'Tulosta työntekijöiden lomayhteenveto'\n"
+"    - Ohjattu toiminto antaa sinun valita joko Vahvistetut ja Tarkistetut "
+"lomat tai pelkästään Tarkistetut. Nämä tilat voi asettaa käyttäjä joka "
+"kuuluu ryhmään \"HR\" ja jonka rooli on \"lomat\". Nämä ominaisuudet voi "
+"määrittää turvallisuus välilehdeltä, joka on käyttäjätiedoissa ja joka "
+"löytyy valikosta \n"
+"                Administration / Users / Users\n"
+"            Voit esimerkiksi laittaa oikeudet tähän käyttäjälle \"admin\".\n"
+
+#. module: hr_holidays
+#: wizard_view:hr.holidays.summary,notify:0
+#: wizard_view:hr.holidays.summary.employee,notify:0
+msgid "Notification"
+msgstr "Huomautus"
+
+#. module: hr_holidays
+#: model:process.node,note:hr_holidays.process_node_holidaysrequest0
+msgid "Employee fills in a request for holidays"
+msgstr "Työntekijä täyttää loma-anomuksen"
+
+#. module: hr_holidays
+#: model:process.transition,note:hr_holidays.process_transition_setholiday0
+msgid "Holiday is set in the calendar."
+msgstr "Loma on merkitty kalenteriin."
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Light Coral"
+msgstr "Kirkas korallinpunainen"
+
+#. module: hr_holidays
+#: model:ir.actions.act_window,name:hr_holidays.action_my_holiday_available
+#: model:ir.ui.menu,name:hr_holidays.menu_action_my_holiday_available
+msgid "My Available Holidays"
+msgstr "Omat käytettävissä olevat lomat"
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Black"
+msgstr "Musta"
+
+#. module: hr_holidays
+#: model:ir.ui.menu,name:hr_holidays.menu_action_my_holiday_refuse
+msgid "My Refused Holidays Requests"
+msgstr "Omat hylätyt loma-anomukset"
+
+#. module: hr_holidays
+#: model:process.transition,name:hr_holidays.process_transition_setholiday0
+msgid "Set Holiday"
+msgstr "Aseta loma"
+
+#. module: hr_holidays
+#: model:ir.ui.menu,name:hr_holidays.menu_action_my_holiday_draft
+msgid "My Draft Holidays Requests"
+msgstr "Omat loma-anomus luonnokset"
+
+#. module: hr_holidays
+#: field:hr.holidays.per.user,max_leaves:0
+msgid "Maximum Leaves Allowed"
+msgstr "Sallittujen lomapäivien enimmäismäärä"
+
+#. module: hr_holidays
+#: field:hr.holidays,state:0
+msgid "Status"
+msgstr "Tila"
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Ivory"
+msgstr "Norsunluu"
+
+#. module: hr_holidays
+#: model:ir.actions.act_window,name:hr_holidays.action_my_holiday
+msgid "My Holidays Request"
+msgstr "Omat loma-anomukset"
+
+#. module: hr_holidays
+#: field:hr.holidays.status,color_name:0
+msgid "Color of the status"
+msgstr "Statuksen väri"
+
+#. module: hr_holidays
+#: selection:hr.holidays.summary,init,holiday_type:0
+msgid "Both Validated and Confirmed"
+msgstr "Kummatkin - Tarkistetut ja Vahvistetut"
+
+#. module: hr_holidays
+#: field:hr.holidays.per.user,leaves_taken:0
+msgid "Leaves Already Taken"
+msgstr "Lomapäivät on jo käytetty"
+
+#. module: hr_holidays
+#: xsl:holidays.summary:0
+msgid "holidays."
+msgstr "lomapäivät."
+
+#. module: hr_holidays
+#: selection:hr.holidays,state:0
+msgid "draft"
+msgstr "luonnos"
+
+#. module: hr_holidays
+#: field:hr.holidays.per.user,user_id:0
+msgid "User"
+msgstr "Käyttäjä"
+
+#. module: hr_holidays
+#: model:process.transition,note:hr_holidays.process_transition_employeedeclaration0
+msgid "Document for employee"
+msgstr "Asiakirja työntekijälle"
+
+#. module: hr_holidays
+#: field:hr.holidays.log,date:0
+msgid "Date"
+msgstr "Päivämäärä"
+
+#. module: hr_holidays
+#: model:process.transition.action,name:hr_holidays.process_transition_action_reufse0
+msgid "Reufse"
+msgstr "Hylkää"
+
+#. module: hr_holidays
+#: field:hr.holidays.status,section_id:0
+msgid "Section"
+msgstr "Alue"
+
+#. module: hr_holidays
+#: field:hr.holidays,manager_id:0
+msgid "Holiday manager"
+msgstr "Lomahallinta"
+
+#. module: hr_holidays
+#: field:hr.holidays.per.user,active:0
+#: field:hr.holidays.status,active:0
+msgid "Active"
+msgstr "Aktiivinen"
+
+#. module: hr_holidays
+#: model:ir.actions.act_window,name:hr_holidays.action_my_holiday_draft
+msgid "My Holidays Request Draft"
+msgstr "Omat loma-anomusluonnokset"
+
+#. module: hr_holidays
+#: model:process.transition,name:hr_holidays.process_transition_approvedrequest0
+msgid "Approved Request"
+msgstr "Hyväksytty anomus"
+
+#. module: hr_holidays
+#: model:process.node,name:hr_holidays.process_node_holidaysrequest0
+msgid "Holidays Request"
+msgstr "Loma-anomus"
+
+#. module: hr_holidays
+#: model:ir.ui.menu,name:hr_holidays.menu_action_holiday_waiting
+msgid "Holidays Requests Awaiting for Validation"
+msgstr "Tarkistusta odottavat loma-anomukset"
+
+#. module: hr_holidays
+#: view:hr.holidays:0
+msgid "General"
+msgstr "Yleiset"
+
+#. module: hr_holidays
+#: view:hr.holidays.per.user:0
+msgid "General Information"
+msgstr "Yleiset Tiedot"
+
+#. module: hr_holidays
+#: view:hr.holidays:0
+#: selection:hr.holidays,state:0
+#: wizard_button:hr.holidays.summary,init,end:0
+#: wizard_button:hr.holidays.summary.employee,init,end:0
+msgid "Cancel"
+msgstr "Peruuta"
+
+#. module: hr_holidays
+#: model:process.transition,name:hr_holidays.process_transition_holidaysdefrequest0
+msgid "Holidays def Request"
+msgstr ""
+
+#. module: hr_holidays
+#: selection:hr.holidays.summary,init,holiday_type:0
+#: selection:hr.holidays.summary.employee,init,holiday_type:0
+msgid "Validated"
+msgstr "Vahvistettu"
+
+#. module: hr_holidays
+#: model:ir.actions.act_window,name:hr_holidays.action_my_holiday_refuse
+msgid "My Holidays Request Refused"
+msgstr "Omat hylätyt loma-anomukset"
+
+#. module: hr_holidays
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr "Objektin nimen tulee alkaa x_ ja se ei saa sisältää erikoismerkkejä!"
+
+#. module: hr_holidays
+#: wizard_button:hr.holidays.summary,init,checkdept:0
+#: wizard_button:hr.holidays.summary.employee,init,checkemp:0
+msgid "Print"
+msgstr "Tulosta"
+
+#. module: hr_holidays
+#: model:ir.actions.wizard,name:hr_holidays.holidays_summary
+#: model:ir.ui.menu,name:hr_holidays.menu_holidays_summary
+msgid "Print Summary of Holidays"
+msgstr "Tulosta lomien yhteenveto"
+
+#. module: hr_holidays
+#: wizard_field:hr.holidays.summary,init,depts:0
+msgid "Department(s)"
+msgstr "Osasto(t)"
+
+#. module: hr_holidays
+#: field:hr.holidays,name:0
+msgid "Description"
+msgstr "Kuvaus"
+
+#. module: hr_holidays
+#: selection:hr.holidays,state:0
+#: model:process.node,name:hr_holidays.process_node_refused0
+msgid "Refused"
+msgstr "Hylätty"
+
+#. module: hr_holidays
+#: model:process.transition,note:hr_holidays.process_transition_approvedrequest0
+msgid "Request is approved."
+msgstr "Anomus on hyväksytty."
+
+#. module: hr_holidays
+#: model:process.node,name:hr_holidays.process_node_holidaysdefinition0
+msgid "Holidays Definition"
+msgstr "Loma Määritys"
+
+#. module: hr_holidays
+#: wizard_field:hr.holidays.summary,init,holiday_type:0
+#: wizard_field:hr.holidays.summary.employee,init,holiday_type:0
+msgid "Select Holiday Type"
+msgstr "Valitse lomantyyppi"
+
+#. module: hr_holidays
+#: field:hr.holidays,case_id:0
+msgid "Case"
+msgstr "Tapaus"
+
+#. module: hr_holidays
+#: field:hr.holidays,holiday_user_id:0
+msgid "Holiday per user"
+msgstr "Loma per käyttäjä"
+
+#. module: hr_holidays
+#: model:process.node,note:hr_holidays.process_node_holidays0
+msgid "Encode number of available holidays"
+msgstr "Kerro lomapäivien määrä"
+
+#. module: hr_holidays
+#: model:process.node,name:hr_holidays.process_node_legaldeclaration0
+msgid "Secretariat Social"
+msgstr "Sosiaalinen sihteeristö"
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Violet"
+msgstr "Violetti"
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Red"
+msgstr "Punainen"
+
+#. module: hr_holidays
+#: model:ir.module.module,shortdesc:hr_holidays.module_meta_information
+msgid "Human Resources: Holidays management"
+msgstr "Henkilöstö: Lomahallinta"
+
+#. module: hr_holidays
+#: model:process.process,name:hr_holidays.process_process_holidaysprocess0
+msgid "Holidays Process"
+msgstr "Lomaprosessi"
+
+#. module: hr_holidays
+#: wizard_view:hr.holidays.summary,notify:0
+msgid "You have to select at least 1 Department. Try again."
+msgstr "Sinun täytyy valita vähintään yksi osasto. Yritä uudelleen."
+
+#. module: hr_holidays
+#: model:ir.actions.act_window,name:hr_holidays.action_my_holiday_validate
+msgid "My Holidays Request Validated"
+msgstr "Omat vahvistetut loma-anomukset"
+
+#. module: hr_holidays
+#: field:hr.holidays.log,holiday_req_id:0
+msgid "Holiday Request ID"
+msgstr "Loma-anomus ID"
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Light Yellow"
+msgstr "Kirkas Keltainen"
+
+#. module: hr_holidays
+#: selection:hr.holidays.status,color_name:0
+msgid "Light Pink"
+msgstr "Kirkas Vaaleanpunainen"
+
+#. module: hr_holidays
+#: model:process.node,note:hr_holidays.process_node_refused0
+msgid "His manager refuses the request"
+msgstr "Esimies hylkää anomuksen"

@@ -1,0 +1,17 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"hr_aa_access_journal_manager","hr.aa.journal manager","model_hr_aa_journal","hr_aa_manager_group",1,1,1,1
+"hr_aa_access_journal_user","hr.aa.journal user","model_hr_aa_journal","hr_aa_user_group",1,1,1,1
+"hr_aa_access_action_reason_rule","hr.aa.action_reason_rule user","model_hr_aa_action_reason_rule","hr_aa_user_group",1,0,0,0
+"hr_aa_access_action_reason_rule","hr.aa.action_reason_rule manager","model_hr_aa_action_reason_rule","hr_aa_manager_group",1,1,1,1
+"hr_aa_access_journal_formula_rule_user","hr.aa.journal_formula_rule user","model_hr_aa_journal_formula","hr_aa_user_group",1,0,0,0
+"hr_aa_access_journal_formula_rule_manager","hr.aa.journal_formula_rule manager","model_hr_aa_journal_formula","hr_aa_manager_group",1,1,1,1
+"hr_aa_access_journal_value_rule_user","hr.aa.journal_value_rule user","model_hr_aa_journal_value","hr_aa_user_group",1,0,0,0
+"hr_aa_access_journal_value_rule_manager","hr.aa.journal_value_rule manager","model_hr_aa_journal_value","hr_aa_manager_group",1,1,1,1
+"hr_aa_access_payroll_user","hr.aa.payroll user","model_hr_aa_payroll","hr_aa_user_group",1,1,1,1
+"hr_aa_access_payroll_manager","hr.aa.payroll manager","model_hr_aa_payroll","hr_aa_manager_group",1,1,1,1
+"hr_aa_access_payroll_formula_user","hr.aa.payroll.formula user","model_hr_aa_payroll_formula","hr_aa_user_group",1,1,1,1
+"hr_aa_access_payroll_formula_manager","hr.aa.payroll.formula manager","model_hr_aa_payroll_formula","hr_aa_manager_group",1,1,1,1
+"hr_aa_access_payroll_line_user","hr.aa.payroll.line user","model_hr_aa_payroll_line","hr_aa_user_group",1,1,1,1
+"hr_aa_access_payroll_line_manager","hr.aa.payroll.line manager","model_hr_aa_payroll_line","hr_aa_manager_group",1,1,1,1
+"hr_aa_access_payroll_value_user","hr.aa.payroll.value user","model_hr_aa_payroll_value","hr_aa_user_group",1,1,1,1
+"hr_aa_access_payroll_value_manager","hr.aa.payroll.value manager","model_hr_aa_payroll_value","hr_aa_manager_group",1,1,1,1

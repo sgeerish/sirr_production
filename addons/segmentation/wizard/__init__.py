@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/segmentation/wizard/__init__.py

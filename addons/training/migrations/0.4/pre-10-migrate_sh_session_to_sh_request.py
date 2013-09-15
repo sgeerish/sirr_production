@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training/migrations/0.4/pre-10-migrate_sh_session_to_sh_request.py

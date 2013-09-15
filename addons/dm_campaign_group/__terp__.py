@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_campaign_group/__terp__.py

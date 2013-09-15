@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_listprice_upgrade/__terp__.py

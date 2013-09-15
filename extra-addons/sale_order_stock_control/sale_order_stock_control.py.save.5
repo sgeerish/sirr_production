@@ -1,0 +1,201 @@
+##############################################################################
+#
+#    OpenERP, Open Source Management Solution    
+#    Copyright (C) 2004-2009 Tiny SPRL (<http://tiny.be>). All Rights Reserved
+#    
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+from osv import fields, osv
+from tools.misc import debug
+from tools.translate import _
+class sale_order_line(osv.osv):
+    _name= "sale.order.line"
+    _inherit = "sale.order.line"
+    _columns = {
+        'stock_ok':fields.boolean('Stock ok?', required=False),
+    }
+    
+#    def update_lines_status(self, cr, uid, vals, context=None):
+#        if context is None:
+#            context={}
+#        product_pool = self.pool.get('product.product')
+#        product = product_pool.browse(cr,uid,vals['product_id'], context=context)
+#        import pdb
+#        pdb.set_trace()
+#        if vals['product_uom_qty'] > product.virtual_available:
+#            vals['stock_ok'] = False
+#        else:
+#            vals['stock_ok'] = True
+#        return vals
+#    
+#    def create(self, cr, uid, vals, context=None):
+#        """
+#        Create a new record for a model ModelName
+#        @param cr: cursor to database
+#        @param uid: id of current user
+#        @param vals: provides a data for new record
+#        @param context: context arguments, like lang, time zone
+#        
+#        @return: returns a id of new record
+#        """        
+#        if context is None:
+#            context={}
+#        vals = self.update_lines_status(cr, uid, vals)
+#        res_id = super(sale_order_line, self).create(cr, uid, vals, context)    
+#        
+#        return res_id
+#        
+#        
+#    def write(self, cr, uid, ids, vals, context=None):
+#        """
+#        Update redord(s) comes in {ids}, with new value comes as {vals}
+#        return True on success, False otherwise
+#    
+#        @param cr: cursor to database
+#        @param uid: id of current user
+#        @param ids: list of record ids to be update
+#        @param vals: dict of new values to be set
+#        @param context: context arguments, like lang, time zone
+#        
+#        @return: True on success, False otherwise
+#        """
+#        import pdb
+#        
+#        if context is None:
+#            context={}
+#        if len(ids) <= 1:
+#            if 'state' not in vals:
+#                order_id = self.browse(cr,uid,ids,context)[0].order_id.id
+#                obj_sale_order = self.pool.get('sale.order')
+#                shop_id = obj_sale_order.browse(cr,uid,order_id,context).shop_id.id
+#                context['shop'] = shop_id
+#                pdb.set_trace()    
+#                if 'product_id' not in vals:
+
+#                    order_line_pool = self.pool.get('sale.order.line')
+
+#                    for order_line in order_line_pool.browse(cr,uid, ids, context=context)    :                 
+#                        vals['product_id'] = order_line.product_id.id
+#                        vals['product_uos_qty'] = order_line.product_uos_qty
+#                        vals['product_uom_qty'] = order_line.product_uom_qty
+#                        vals['stock_ok'] = order_line.stock_ok
+#                        vals = self.update_lines_status(cr, uid, vals, context)
+
+#                else:
+#                    vals = self.update_lines_status(cr, uid, vals, context)
+#            res = super(sale_order_line, self).write(cr, uid, ids, vals, context)    
+#        else :
+#            res = super(sale_order_line, self).write(cr, uid, ids, vals, context)    
+#        return res
+        
+    
+    
+    _defaults = {
+        'stock_ok': lambda *a: True,
+    }
+
+sale_order_line()
+
+class sale_order(osv.osv):
+    _name= "sale.order"
+    _inherit = "sale.order"    
+    
+    def _check_global_status(self, cr, uid, ids, field_name, args, context=None):
+        if context is None:
+            context={}
+        result = {}
+        for order in self.browse(cr,uid,ids, context=context):
+            # print 'checking'
+            result[order.id] = True
+            if order.order_line != []:
+                for line in order.order_line:
+                    # print line.name
+                    # print line.stock_ok
+                    if line.stock_ok == False:
+                        result[order.id] = False
+            # print result
+        return result
+        # return res
+
+        
+    
+    _columns = {        'global_status': fields.function(_check_global_status, method=True, type='boolean', string='', store=False),
+    }
+    
+    _defaults = {
+        'global_status': lambda *a: True,
+    }    
+    
+    def check_order_validity(self, cr, uid, ids, context=None):
+        """
+        This method check if all order lines have enough virtual stock.
+    
+        @param cr: cursor to database
+        @param user: id of current user
+        @param ids: list of record ids to be process
+        @param context: context arguments, like lang, time zone
+        
+        @return: return a result
+        """
+        if context is None:
+            context={}
+        global_state=False
+        for order in self.browse(cr,uid,ids, context=context):
+            overstock_lines = self.check_stock(cr, uid, ids, context)    
+            self.check_emptyness(cr, uid, ids, context)
+            self.check_stock(cr, uid, ids, context)
+            global_state=order.global_status
+#            if not self.check_stock(cr, uid, ids, context):
+#                raise osv.except_osv(_('Warning'),_('This order contains product that doesn\'t have enough stock to meet the order requirement. (%s)', overstock_lines))                                                                        
+        print global_state
+        return global_state
+    
+    def check_stock(self, cr, uid, ids, context=None):
+        order = self.browse(cr,uid,ids, context=context)[0]
+        shop_id = order.shop_id.id
+        context['shop'] = shop_id
+        order_line_ids = order.order_line
+        product_pool = self.pool.get('product.product')
+        order_line_pool = self.pool.get('sale.order.line')
+        overstock_lines = []
+        
+        for order_line in order_line_ids:
+	    context['location']=order_line.location.id
+	    prod_id=order_line.product_id.id
+	    product_obj_new = self.pool.get('product.product')
+            prod=product_obj_new.browse(cr, uid, prod_id,context)
+	    print prod.name
+	    print prod.virtual_available
+	    print context
+            if order_line.product_uom_qty >= prod.virtual_available:
+                # order_line.write({'stock_ok' : False}, context)
+                overstock_lines.append(order_line.name)
+            # else:
+                # order_line.write({'stock_ok' : True}, context)
+        return overstock_lines
+            
+            
+    
+    def check_emptyness(self, cr, uid, ids, context=None):
+        if context is None:
+            context={}
+        if self.browse(cr,uid,ids, context=context)[0].order_line == []:
+            raise osv.except_osv(_('Warning'), _('Aucune ligne de commande retrouvee!'))    
+        return True        
+    
+sale_order()
+
+

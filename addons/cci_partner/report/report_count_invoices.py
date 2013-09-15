@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_partner/report/report_count_invoices.py

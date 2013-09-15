@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/event_certificate/__init__.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_fiscal_position_rule_stock/i18n/en_US.po

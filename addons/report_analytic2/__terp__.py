@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/report_analytic2/__terp__.py

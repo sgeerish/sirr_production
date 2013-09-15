@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_skill/__terp__.py

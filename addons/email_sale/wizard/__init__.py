@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/email_sale/wizard/__init__.py

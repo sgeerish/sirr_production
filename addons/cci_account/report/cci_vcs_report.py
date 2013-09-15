@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_account/report/cci_vcs_report.py

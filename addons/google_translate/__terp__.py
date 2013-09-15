@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/google_translate/__terp__.py

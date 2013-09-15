@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_holidays_cci/wizard/__init__.py

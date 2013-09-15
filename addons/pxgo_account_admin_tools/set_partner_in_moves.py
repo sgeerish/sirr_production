@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/pxgo_account_admin_tools/set_partner_in_moves.py

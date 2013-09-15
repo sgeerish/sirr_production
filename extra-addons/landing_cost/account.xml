@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record id="invoice_supplier_form_1" model="ir.ui.view">
+      <field name="name">account.invoice.supplier.form.lc</field>
+      <field name="model">account.invoice</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="account.invoice_supplier_form"/>
+      <field name="arch" type="xml">
+        <xpath 
+          expr="/form/notebook/page[@string='Invoice']/field[@name='invoice_line']/tree/field[@name='price_unit']"
+          position="after">
+            <field name="landing_cost"/>
+        </xpath>
+      </field>
+    </record>
+
+    <record id="invoice_supplier_form_2" model="ir.ui.view">
+      <field name="name">account.invoice.supplier.form.lc</field>
+      <field name="model">account.invoice</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="account.invoice_supplier_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="/form/notebook" position="inside">
+          <page string="Frais Additionels">
+            <field name="total_additional_cost"/>
+            <field name="total_quantity"/>
+            <field name="x_tax_adjust"/>            
+            <separator string="Frais Additionels" colspan="4"/>
+            <field name="additional_costs" colspan="2" nolabel="1" widget="many2many" domain="[('journal_id.type','=','purchase')]"/>
+            <field name="additional_invoices" colspan="2" nolabel="1" widget="many2many" domain="[('journal_id.type','=','purchase')]"/>
+            
+          </page>
+        </xpath>
+      </field>
+    </record>
+
+    <record id="view_move_form" model="ir.ui.view">
+      <field name="name">account.move.form.lc</field>
+      <field name="model">account.move</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="account.view_move_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="/form/group/field[@name='partner_id']" 
+          position="after">
+            <field name="cost_for_invoice"/>
+        </xpath>
+      </field>
+    </record>
+
+  </data>
+</openerp>

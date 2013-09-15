@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/loan/wizard/wizard_cheque_state_process.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sale_expected_invoice_date/sale_expected_invoice_date.py

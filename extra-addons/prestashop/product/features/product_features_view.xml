@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+<!-- PRESTASHOP Combinations -->
+
+    <record id="combinations_tree" model="ir.ui.view">
+        <field name="name">combinations.form</field>
+        <field name="model">product.combination</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Product Combinations">
+                <field name="reference"/>
+                <field name="supplier_reference"/>
+                <field name="location"/>
+                <field name="ean13"/>
+                <field name="upc"/>
+                <field name="wholesale_price"/>
+                <field name="price"/>
+                <field name="ecotax"/>
+                <field name="quantity"/>
+                <field name="weight"/>
+                <field name="default_on"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="combinations_form" model="ir.ui.view">
+        <field name="name">combinations.form</field>
+        <field name="model">product.combination</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Product Combinations">
+                <field name="reference" select="1"/>
+                <field name="supplier_reference" select="1"/>
+                <field name="location" select="1"/>
+                <field name="ean13" select="1"/>
+                <field name="upc"/>
+                <field name="wholesale_price"/>
+                <field name="price" select="1"/>
+                <field name="ecotax"/>
+                <field name="quantity"/>
+                <field name="weight"/>
+                <field name="default_on"/>
+                <field name="line_ids" colspan="4" />
+         
+            </form>
+        </field>
+    </record>
+
+   
+    <record id="combinations_act_window" model="ir.actions.act_window">
+	    <field name="name">product.combinations</field>
+	    <field name="type">ir.actions.act_window</field>
+	    <field name="res_model">product.combination</field>
+	    <field name="view_type">form</field>
+	</record>
+	
+	<record id="view_product_combination_lines_tree" model="ir.ui.view">
+        <field name="name">product.combination.lines.tree</field>
+        <field name="model">product.combination.lines</field>
+        <field name="type">tree</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+        <tree string="Combinations Lines">
+            <field name="options_value_id"/>
+            <field name="option_id"/>
+        </tree>
+        </field>
+    </record>
+    
+    <record id="view_product_combination_lines_form" model="ir.ui.view">
+        <field name="name">product.combination.lines.form</field>
+        <field name="model">product.combination.lines</field>
+        <field name="type">form</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+        <form string="Combinations Lines">
+            <field name="options_value_id"/>
+            <field name="option_id"/>
+        </form>
+        </field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="act_open_product_combination_lines_view">
+        <field name="name">Combinations Lines</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.combination.lines</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+    
+    <record model="ir.actions.act_window.view" id="act_open_product_combination_lines_view_form">
+        <field name="act_window_id" ref="act_open_product_combination_lines_view"/>
+        <field name="sequence" eval="20"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_product_combination_lines_form"/>
+    </record>
+    
+    <record model="ir.actions.act_window.view" id="act_open_product_combination_lines_view_tree">
+        <field name="act_window_id" ref="act_open_product_combination_lines_view"/>
+        <field name="sequence" eval="10"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_product_combination_lines_tree"/>
+    </record>
+    
+
+<!-- PRESTASHOP PRODUCT FEATURES VIEWS -->
+
+    <record id="prestashop_product_feature_tree" model="ir.ui.view">
+        <field name="name">product.feature.tree</field>
+        <field name="model">product.features</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Product Features">
+                <field name="name" select="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="prestashop_product_feature_form" model="ir.ui.view">
+        <field name="name">tag.form</field>
+        <field name="model">product.features</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Product Features">
+                <field name="name" colspan="4"/>
+                <field name="feature_value_lines" colspan="4"/>
+            </form>
+        </field>
+    </record>
+
+   
+    <record id="prestashop_product_feature_act_window" model="ir.actions.act_window">
+        <field name="name">Product Features</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.features</field>
+        <field name="view_type">form</field>
+    </record>
+    
+    
+    
+<!-- PRESTASHOP PRODUCT FEATURE VALUES VIEWS -->
+    
+    <record id="prestashop_product_feature_values_tree" model="ir.ui.view">
+        <field name="name">product.feature.values.tree</field>
+        <field name="model">product.feature.values</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Product Feature Values">
+                <field name="name" select="1"/>
+                <field name="custom" select="1"/>
+                <field name="feature_id" select="1"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="prestashop_product_feature_values_form" model="ir.ui.view">
+        <field name="name">product.feature.values.form</field>
+        <field name="model">product.feature.values</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Product Feature Values">
+                <field name="name" />
+                <field name="custom" />
+                <field name="feature_id" />
+            </form>
+        </field>
+    </record>
+
+   
+    <record id="prestashop_product_feature_values_act_window" model="ir.actions.act_window">
+        <field name="name">Product Feature Values</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.feature.values</field>
+        <field name="view_type">form</field>
+    </record>
+    </data>
+</openerp>

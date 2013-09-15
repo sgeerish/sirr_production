@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sale_wo_prices/i18n/sale_wo_prices.pot

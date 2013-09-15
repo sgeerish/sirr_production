@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_invoice_merge/account_invoice_merge_merge_wizard.py

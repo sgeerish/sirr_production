@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/google_calendar/wizard/synchronize_events.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_fiscal_position_rule/__openerp__.py

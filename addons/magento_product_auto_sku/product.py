@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/magento_product_auto_sku/product.py

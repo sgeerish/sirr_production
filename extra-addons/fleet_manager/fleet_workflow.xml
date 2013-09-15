@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="wkf_wo" model="workflow">
+			<field name="name">fleet.wo.tasks.simple</field>
+			<field name="osv">fleet.wo.tasks</field>
+			<field name="on_create">True</field>
+		</record>
+
+		<!-- Activity -->
+		<record id="act_notstarted" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_wo" />
+			<field name="flow_start">True</field>
+			<field name="name">notstarted</field>
+		</record>
+
+		<record id="act_planningneeded" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_wo" />
+			<field name="name">planningneeded</field>
+			<field name="kind">function</field>
+			<field name="action">write({'state':'planningneeded'})</field>
+		</record>
+
+		<record id="act_awaitingparts" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_wo" />
+			<field name="name">awaitingparts</field>
+			<field name="kind">function</field>
+			<field name="action">write({'state':'awaitingparts'})</field>
+		</record>
+
+		<record id="act_inprogress" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_wo" />
+			<field name="name">inprogress</field>
+			<field name="kind">function</field>
+			<field name="action">write({'state':'inprogress'})</field>
+		</record>
+		<record id="act_testing" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_wo" />
+			<field name="name">testing</field>
+			<field name="kind">function</field>
+			<field name="action">write({'state':'testing'})</field>
+		</record>
+		<record id="act_complete" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_wo" />
+			<field name="name">complete</field>
+			<field name="flow_stop">True</field>
+			<field name="kind">function</field>
+			<field name="action">write({'state':'complete'})</field>
+			<field name="join_mode">AND</field>
+		</record>
+
+		<!-- Transistion -->
+
+		<!--record id="notstarted_to_inprogress"
+			model="workflow.transition">
+			<field name="act_from" ref="act_notstarted" />
+			<field name="act_to" ref="act_inprogress" />
+			<field name="signal">start_work</field>
+		</record-->
+		<record id="notstarted_to_planningneeded"
+			model="workflow.transition">
+			<field name="act_from" ref="act_notstarted" />
+			<field name="act_to" ref="act_planningneeded" />
+			<field name="signal">get_approval</field>
+		</record>
+		<record id="notstarted_to_awaitingparts"
+			model="workflow.transition">
+			<field name="act_from" ref="act_notstarted" />
+			<field name="act_to" ref="act_awaitingparts" />
+			<field name="signal">start_work</field>
+		</record>
+		<record id="planningneeded_to_notstarted"
+			model="workflow.transition">
+			<field name="act_from" ref="act_planningneeded" />
+			<field name="act_to" ref="act_notstarted" />
+			<field name="signal">replan</field>
+		</record>
+		<record id="planningneeded_to_awaitingparts"
+			model="workflow.transition">
+			<field name="act_from" ref="act_planningneeded" />
+			<field name="act_to" ref="act_awaitingparts" />
+			<field name="signal">start_work</field>
+		</record>
+
+		<record id="awaitingparts_to_inprogress"
+			model="workflow.transition">
+			<field name="act_from" ref="act_awaitingparts" />
+			<field name="act_to" ref="act_inprogress" />
+			<field name="signal">issue_spares</field>
+		</record>
+		<record id="inprogress_to_testing"
+			model="workflow.transition">
+			<field name="act_from" ref="act_inprogress" />
+			<field name="act_to" ref="act_testing" />
+			<field name="signal">start_test</field>
+		</record>
+		<record id="testing_to_complete" model="workflow.transition">
+			<field name="act_from" ref="act_testing" />
+			<field name="act_to" ref="act_complete" />
+			<field name="signal">set_done</field>
+		</record>
+		<record id="inprogress_to_complete"
+			model="workflow.transition">
+			<field name="act_from" ref="act_inprogress" />
+			<field name="act_to" ref="act_complete" />
+			<field name="signal">set_done</field>
+		</record>
+	</data>
+</openerp>

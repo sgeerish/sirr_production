@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/report_hotel_restaurant/__init__.py

@@ -1,0 +1,430 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Medical\n"
+"Report-Msgid-Bugs-To: https://sourceforge.net/apps/mantisbt/medical\n"
+"POT-Creation-Date: 2010-12-05 21:36:14+0000\n"
+"PO-Revision-Date: 2011-02-05 18:41+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: German <None>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,school_withdrawal:0
+msgid "School withdrawal"
+msgstr "Schule abgebrochen"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,education:0
+msgid "Primary School"
+msgstr "Grundschule"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,education:0
+msgid "Secondary School"
+msgstr "Realschule"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,fam_apgar_decisions:0
+msgid "Family decision making"
+msgstr "Familienentscheidungen"
+
+#. module: medical_socioeconomics
+#: help:medical.patient,ses:0
+msgid "SES - Socioeconomic Status"
+msgstr "SÖS sozioökonomischer Status"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,internet:0
+msgid "Internet"
+msgstr "Internet"
+
+#. module: medical_socioeconomics
+#: view:medical.patient:0
+msgid "Main"
+msgstr "Haupt"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,ses:0
+msgid "Lower"
+msgstr "Untere"
+
+#. module: medical_socioeconomics
+#: help:medical.patient,fam_apgar_timesharing:0
+msgid "Is the patient satisfied with the level of time that they spend together ?"
+msgstr "Ist der Patient mit der Zeit, die die Familie zusammen verbringt zufrieden?"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,income:0
+msgid "Medium / Average"
+msgstr "Durchschnitt"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,trash:0
+msgid "Trash recollection"
+msgstr "Mülltrennung"
+
+#. module: medical_socioeconomics
+#: view:medical.patient:0 field:medical.patient,ses:0
+msgid "Socioeconomics"
+msgstr "Sozioökonomisch"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,ses_notes:0
+msgid "Extra info"
+msgstr "Extra Info"
+
+#. module: medical_socioeconomics
+#: help:medical.patient,hostile_area:0
+msgid "Check this box if the patient lives in a zone of high hostility (eg, war)"
+msgstr "Markeiren Sie dieses Kästchen wenn der Patient in einem feindseligen Gebiet wohnt"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,income:0
+msgid "Income"
+msgstr "Einkommen"
+
+#. module: medical_socioeconomics
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Das Objekt muss mit x_ beginnen und darf keine Sonderzeichen enthalten!"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,housing:0
+msgid "Housing conditions"
+msgstr "Zustand Wohnung"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,fam_apgar_discussion:0
+msgid "Family discussions on problems"
+msgstr "Familiendiskussion bei Problemen"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,domestic_violence:0
+msgid "Domestic violence"
+msgstr "Häusliche Gewalt"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,education:0 help:medical.patient,education:0
+msgid "Education Level"
+msgstr "Bildungsgrad"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,ses:0
+msgid "Middle-upper"
+msgstr "Mittel/Gehoben"
+
+#. module: medical_socioeconomics
+#: view:medical.patient:0
+msgid "Infrastructure"
+msgstr "Infrastruktur"
+
+#. module: medical_socioeconomics
+#: help:medical.patient,fam_apgar_decisions:0
+msgid "Is the patient satisfied with the level of making important decisions as a group ?"
+msgstr "Ist der Patient mit der Art und Weise wie Entscheidungen in der Gruppe getroffen werden zufreiden?"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,ses:0
+msgid "Middle"
+msgstr "Mittel"
+
+#. module: medical_socioeconomics
+#: help:medical.patient,fam_apgar_discussion:0
+msgid "Is the patient satisfied with the level talking over the problems as family ?"
+msgstr "Ist der Patient mit der Zeit in der Familie, in der über Probleme geredet wird, zufrieden?"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,drug_addiction:0
+msgid "Drug addiction"
+msgstr "Drogenabhängig"
+
+#. module: medical_socioeconomics
+#: model:ir.model,name:medical_socioeconomics.model_medical_occupation
+msgid "Occupation / Job"
+msgstr "Beruf / Job"
+
+#. module: medical_socioeconomics
+#: view:medical.patient:0
+msgid "Other Family issues"
+msgstr "Andere Familienangelegenheiten"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,gas:0
+msgid "Gas supply"
+msgstr "Gasversorgung"
+
+#. module: medical_socioeconomics
+#: view:medical.patient:0
+msgid "Family APGAR"
+msgstr "Familien APGAR"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,relative_in_prison:0
+msgid "Relative in prison"
+msgstr "Verwandte im Gefängnis"
+
+#. module: medical_socioeconomics
+#: help:medical.patient,fam_apgar_affection:0
+msgid "Is the patient satisfied with the level of affection coming from the family ?"
+msgstr "Ist der PAtient mit dem Zusammengehörigkeitsgefühl der Famile zufrieden?"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,ses:0
+msgid "Lower-middle"
+msgstr "Untere-Mittel"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,fam_apgar_timesharing:0
+msgid "Family time sharing"
+msgstr "Familienzeit"
+
+#. module: medical_socioeconomics
+#: help:medical.patient,housing:0
+msgid "Housing and sanitary living conditions"
+msgstr "Zustand von Wohnung und Sanitäranlagen"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,sewers:0
+msgid "Sanitary Sewers"
+msgstr "Abwaserleitung"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,ses:0
+msgid "Higher"
+msgstr "Gehoben"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,prison_current:0
+msgid "Is currently in prison"
+msgstr "Ist derzeit im Gefängnis"
+
+#. module: medical_socioeconomics
+#: help:medical.patient,works_at_home:0
+msgid "Check if the patient works at his / her house"
+msgstr "Markeiren Sie dieses Kästchen, wenn der Patient von zu Hause aus arbeiten kann"
+
+#. module: medical_socioeconomics
+#: model:ir.module.module,shortdesc:medical_socioeconomics.module_meta_information
+msgid "Medical : Socioeconomics"
+msgstr "Madical : Sozioökonomisches"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,hostile_area:0
+msgid "Hostile Area"
+msgstr "Feindseliges Gebiet"
+
+#. module: medical_socioeconomics
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Ungültige XML für die Architektur der View"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,housing:0
+msgid "Small, crowded but with good sanitary conditions"
+msgstr "Klein, Überfüllt, aber mit guten Sanitäranlagen"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,teenage_pregnancy:0
+msgid "Teenage pregnancy"
+msgstr "Teenager Schwangerschaft"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,electricity:0
+msgid "Electrical supply"
+msgstr "Stromversorgung"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,fam_apgar_affection:0
+#: selection:medical.patient,fam_apgar_decisions:0
+#: selection:medical.patient,fam_apgar_discussion:0
+#: selection:medical.patient,fam_apgar_help:0
+#: selection:medical.patient,fam_apgar_timesharing:0
+msgid "Moderately"
+msgstr "Moderat"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,education:0
+msgid "University"
+msgstr "Universität"
+
+#. module: medical_socioeconomics
+#: view:medical.patient:0
+msgid "Work"
+msgstr "Arbeit"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,television:0
+msgid "Television"
+msgstr "Fernseheer"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,fam_apgar_help:0
+msgid "Help from family"
+msgstr "Hilfe von der Familie"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,prison_past:0
+msgid "Has been in prison"
+msgstr "Wart im Gefängnis"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,housing:0
+msgid "Roomy and excellent sanitary conditions"
+msgstr "Geräumig und herforagende Sanitäranlagen"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,education:0
+#: selection:medical.patient,fam_apgar_affection:0
+#: selection:medical.patient,fam_apgar_decisions:0
+#: selection:medical.patient,fam_apgar_discussion:0
+#: selection:medical.patient,fam_apgar_help:0
+#: selection:medical.patient,fam_apgar_timesharing:0
+msgid "None"
+msgstr "Keine"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,single_parent:0
+msgid "Single parent family"
+msgstr "Alleinerziehend"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,works_at_home:0
+msgid "Works at home"
+msgstr "Arbeit zu Hause"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,telephone:0
+msgid "Telephone"
+msgstr "Telefon"
+
+#. module: medical_socioeconomics
+#: help:medical.patient,fam_apgar_help:0
+msgid "Is the patient satisfied with the level of help coming from the family when there is a problem ?"
+msgstr "Ist der Patient mit der Hilfe, die von der Familie kommt zufrieden?"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,fam_apgar_affection:0
+#: selection:medical.patient,fam_apgar_decisions:0
+#: selection:medical.patient,fam_apgar_discussion:0
+#: selection:medical.patient,fam_apgar_help:0
+#: selection:medical.patient,fam_apgar_timesharing:0
+msgid "Very much"
+msgstr "Sehr Zufrieden"
+
+#. module: medical_socioeconomics
+#: help:medical.patient,relative_in_prison:0
+msgid "Check if someone from the nuclear family - parents / sibblings  is or has been in prison"
+msgstr "Markieren Sie dieses Kästchen, wenn jemand aus der Kernfamilie im Gefängnis war"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,income:0
+msgid "Low"
+msgstr "Niedrig"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,water:0
+msgid "Running Water"
+msgstr "Fließend Wasser"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,fam_apgar_affection:0
+msgid "Family affection"
+msgstr "Familienzuneigung"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,occupation:0
+msgid "Occupation"
+msgstr "Beruf"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,education:0
+msgid "Incomplete Primary School"
+msgstr "Abgebrochene Grundschule"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,housing:0
+msgid "Comfortable and good sanitary conditions"
+msgstr "Komfortabel und gute Sanitäranlagen"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,income:0
+msgid "High"
+msgstr "Hoch"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,education:0
+msgid "Incomplete Secondary School"
+msgstr "Abgebrochene Realschule"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,hours_outside:0
+msgid "Hours outside home"
+msgstr "Stunden außerhalb der Wohnung"
+
+#. module: medical_socioeconomics
+#: view:medical.patient:0
+msgid "Extra Info"
+msgstr "Extra Info"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,housing:0
+msgid "Shanty, deficient sanitary conditions"
+msgstr "Klein, Schlechte Sanitäranlagen"
+
+#. module: medical_socioeconomics
+#: model:ir.model,name:medical_socioeconomics.model_medical_patient
+msgid "Patient related information"
+msgstr "PAtienteninformationen"
+
+#. module: medical_socioeconomics
+#: selection:medical.patient,housing:0
+msgid "Luxury and excellent sanitary conditions"
+msgstr "Luxuriös und Exzellente Sanitäranlagen"
+
+#. module: medical_socioeconomics
+#: help:medical.patient,hours_outside:0
+msgid "Number of hours a day the patient spend outside the house"
+msgstr "Anzahl der Stunden pro Tag, die der PAtient außerhalb der Wohnung verbringt"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,sexual_abuse:0
+msgid "Sexual abuse"
+msgstr "Sexuell mißbraucht"
+
+#. module: medical_socioeconomics
+#: field:medical.patient,working_children:0
+msgid "Working children"
+msgstr "Arbeitende Kinder"
+
+#. module: medical_socioeconomics
+#: model:ir.module.module,description:medical_socioeconomics.module_meta_information
+msgid ""
+"\n"
+"\n"
+"This module takes care of the input of all the socio-economic factors that influence the health of the individual / family and society.\n"
+"\n"
+"Among others, we include the following factors :\n"
+"\n"
+"- Living conditions\n"
+"- Educational level\n"
+"- Infrastructure (electricity, sewers, ... )\n"
+"- Family affection ( APGAR )\n"
+"- Drug addiction \n"
+"- Hostile environment\n"
+"- Teenage Pregnancy\n"
+"- Working children\n"
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"Dieses Modul fügt Sozioökonomische Aspekte zum Medical Modul hinzu.\n"
+"\n"
+"\n"

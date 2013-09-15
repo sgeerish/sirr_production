@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_reports_india/__terp__.py

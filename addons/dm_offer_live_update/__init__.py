@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_offer_live_update/__init__.py

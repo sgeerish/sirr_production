@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        
+        <record id="view_delivery_handlings_tree" model="ir.ui.view">
+            <field name="name">delivery.handlings.tree</field>
+            <field name="model">delivery.handlings</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Delivery">
+                    <field name="carrier_id"/>
+                    <field name="price_range_id"/>
+                    <field name="weight_range_id"/>
+                    <field name="zone_id"/>
+                    <field name="price"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_delivery_handlings_form" model="ir.ui.view">
+            <field name="name">delivery.handlings.form</field>
+            <field name="model">delivery.handlings</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Delivery">
+                    <field name="carrier_id" />
+                    <field name="price_range_id" domain="[('type','=','price')]"/>
+                    <field name="weight_range_id" domain="[('type','=','weight')]"/>
+                    <field name="zone_id" required="1"/>
+                    <field name="price" required="1"/>
+                </form>
+            </field>
+        </record>
+        <record id="action_delivery_handlings_form" model="ir.actions.act_window">
+            <field name="name">Delivery Handlings</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">delivery.handlings</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help">Create and manage the delivery methods you need for your sales activities. Each delivery method can be assigned to a price list which computes the price of the delivery according to the products sold or delivered.</field>
+        </record>
+        <menuitem action="action_delivery_handlings_form" id="menu_action_delivery_carrier_form" parent="delivery.menu_delivery" groups="base.group_extended"/>
+        
+<!--   INHERIT OBJECTS OF DELIVERY MODULE -->
+
+        <record id="view_delivery_carrier_form_presta" model="ir.ui.view">
+            <field name="name">delivery.carrier.form.presta</field>
+            <field name="model">delivery.carrier</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="delivery.view_delivery_carrier_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/field[@name='product_id']" position="after">
+                    <field name="url" select="1"/>
+                    <field name="is_free" select="1"/>
+                    <field name="delay" select="1"/>
+                </xpath>
+            </field>
+        </record>
+        
+        <record id="view_delivery_grid_line_form" model="ir.ui.view">
+            <field name="name">delivery.grid.line.form</field>
+            <field name="model">delivery.grid.line</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="delivery.view_delivery_grid_line_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/field[@name='variable_factor']" position="after">
+                    <field name="min_value" />
+                </xpath>
+            </field>
+        </record>
+        
+        <record id="action_delivery_grid_line_form" model="ir.actions.act_window">
+            <field name="name">Delivery Price/Weight Range Lines</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">delivery.grid.line</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help">The delivery price list allows you to compute the cost and sales price of the delivery according to the weight of the products and other criteria. You can define several price lists for one delivery method, per country or a zone in a specific country defined by a postal code range.</field>
+        </record>
+        <menuitem action="action_delivery_grid_line_form" id="menu_action_delivery_grid_line_form" parent="delivery.menu_delivery"/>
+    </data>
+</openerp>

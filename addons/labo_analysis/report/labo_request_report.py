@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/labo_analysis/report/labo_request_report.py

@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<!--  The defined view are inherited to add the prestashop fields -->
+<openerp>
+	<data>
+
+		<menuitem id="menu_main_prestashop" name="Prestashop"/>
+
+		<!-- Product View -->
+		<record model="ir.ui.view" id="product_normal_form_view">
+			<field name="name">product.product.form.prestashop</field>
+			<field name="model">product.product</field>
+			<field name="inherit_id" ref="product.product_normal_form_view" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<notebook position="inside">
+					<page string="Prestashop">
+						<separator string="Prestashop Information" colspan="4"/>
+						<field name="exportable" position="inside"/>
+						<field name="prestashop_id" position="inside" readonly="1"/>
+						<field name="updated" position="inside" readonly="1"/>
+					</page>
+				</notebook>
+			</field>
+		</record>
+		
+        <!-- Short decription field label -->
+        <record model="ir.ui.view" id="product_normal_form_view_short_desc">
+			<field name="name">product.product.form.prestashop.short.desc</field>
+			<field name="model">product.product</field>
+			<field name="inherit_id" ref="product.product_normal_form_view" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<separator string="Sale Description" position="replace" >
+                    <separator string="Short Description" />
+                </separator>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="product_product_tree_view">
+			<field name="name">product.product.tree.prestashop</field>
+			<field name="model">product.product</field>
+			<field name="inherit_id" ref="product.product_product_tree_view" />
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Products">
+					<field name="exportable" position="after"/>
+					<field name="prestashop_id" position="inside" readonly="1"/>
+					<field name="updated" position="inside" readonly="1"/>
+				</tree>
+			</field>
+		</record>
+		
+		
+		<!-- Category View -->
+		<record model="ir.ui.view" id="product_category_form_view">
+			<field name="name">product.category.form.prestashop</field>
+			<field name="model">product.category</field>
+			<field name="inherit_id" ref="product.product_category_form_view" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Product Categories">
+					<separator string="Prestashop Information" colspan="4" position="after"/>
+					<field name="exportable" position="inside"/>
+					<field name="prestashop_id" position="inside" readonly="1"/>
+					<field name="updated" position="inside" readonly="1"/>
+				</form>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="product_category_tree_view">
+			<field name="name">product.category.tree.prestashop</field>
+			<field name="model">product.category</field>
+			<field name="inherit_id" ref="product.product_category_list_view" />
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Product Categories">
+					<field name="exportable" position="after"/>
+					<field name="prestashop_id" position="inside" readonly="1"/>
+					<field name="updated" position="inside" readonly="1"/>
+				</tree>
+			</field>
+		</record>
+		
+		<!-- Web Action / Menuitem / View	-->
+		<record model="ir.actions.act_window" id="action_prestashop_web_form">
+			<field name="name">Prestashop Web</field>
+			<field name="res_model">prestashop.config</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem name="Prestashop Web" id="menu_prestashop_web_form" parent="menu_main_prestashop"
+			action="action_prestashop_web_form" />
+		<record model="ir.ui.view" id="view_prestashop_web_form">
+			<field name="name">prestashop.config.form</field>
+			<field name="model">prestashop.config</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Prestashop Web">
+					<separator string="Prestashop Connection Information" colspan="4" />
+					<field name="prestashop_name" />
+					<newline />
+					<field name="prestashop_flag" />
+                    <newline/>
+                    <field name="prestashop_host" />
+                    <newline/>
+                    <field name="price_list_id" />
+                    <newline/>                
+				</form>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="view_prestashop_web_tree">
+			<field name="name">prestashop.config.tree</field>
+			<field name="model">prestashop.config</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Prestashop Web">
+					<field name="prestashop_name" />
+					<field name="prestashop_host" />
+					<field name="prestashop_flag" />
+				</tree>
+			</field>
+		</record>
+		
+		<!-- Tax view -->
+		<record model="ir.ui.view" id="tax_prestashop_form_view">
+			<field name="name">tax.form.prestashop</field>
+			<field name="model">account.tax</field>
+			<field name="inherit_id" ref="account.view_tax_form" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<notebook position="inside">
+					<page string="Prestashop">
+						<separator string="Prestashop Information" colspan="4"/>
+						<field name="prestashop_id" position="inside" readonly="1"/>
+						<field name="updated" position="inside" readonly="1"/>
+					</page>
+				</notebook>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="tax_prestashop_tree_view">
+			<field name="name">tax.tree.prestashop</field>
+			<field name="model">account.tax</field>
+			<field name="inherit_id" ref="account.view_tax_tree" />
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Account Tax">
+					<field name="prestashop_id" position="inside" readonly="1"/>
+					<field name="updated" position="inside" readonly="1"/>
+				</tree>
+			</field>
+		</record>
+	</data>
+</openerp>

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/prestashop/wizard/prestashop_tax_synchronize.py

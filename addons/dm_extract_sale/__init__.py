@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_extract_sale/__init__.py

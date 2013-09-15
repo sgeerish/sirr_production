@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/multi_company/i18n/hr_HR.po

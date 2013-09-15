@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_emailvision/__terp__.py

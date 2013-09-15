@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+<!-- PRESTASHOP LANGUAGE VIEWS -->
+
+	<record id="prestashop_lang_tree" model="ir.ui.view">
+	    <field name="name">prestashop.lang.tree</field>
+	    <field name="model">prestashop.lang</field>
+	    <field name="type">tree</field>
+	    <field name="arch" type="xml">
+	        <tree string="Prestashop Languages">
+	            <field name="name"/>
+	            <field name="language_code"/>
+	            <field name="iso_code"/>
+	            <field name="is_rtl"/>
+	            <field name="active"/>
+	       </tree>
+	    </field>
+	</record>
+
+	<record id="prestashop_lang_form" model="ir.ui.view">
+	    <field name="name">prestashop.lang.form</field>
+	    <field name="model">prestashop.lang</field>
+	    <field name="type">form</field>
+	    <field name="arch" type="xml">
+	        <form string="Prestashop Languages">
+	        	<group col="6" colspan="4">
+	            	<field name="name"/>
+	           		<field name="language_code" />
+	            	<field name="iso_code"/>
+	            	<field name="date_format_lite"/>
+	      		    <field name="date_format_full"/>
+	      		    <field name="lang_id"/>
+	            	<newline/>
+					<field name="active" />
+					<field name="is_rtl" />
+	   		    </group>
+	        </form>
+		</field>
+	</record>
+    
+	<record id="prestashop_lang_search" model="ir.ui.view">
+	    <field name="name">prestashop.lang.search</field>
+	    <field name="model">prestashop.lang</field>
+	    <field name="type">search</field>
+	    <field name="arch" type="xml">
+	        <search string="Prestashop Languages">
+				<group>
+				  <separator orientation="vertical"/>
+					<field name="name"/>
+					<field name="language_code"/>
+					<field name="iso_code"/>
+					<field name="is_rtl"/>
+				</group>
+	        </search>
+	    </field>
+	</record>
+
+	<record id="prestashop_lang_act_window" model="ir.actions.act_window">
+	    <field name="name">Prestashop Languages</field>
+	    <field name="res_model">prestashop.lang</field>
+	    <field name="view_type">form</field>
+	    <field name="context">{'active_test': False}</field>
+		<field name="search_view_id" ref="prestashop_lang_search"/>
+	</record>
+	
+	<record id="base.lang_en" model="res.lang">
+            <field name="code">en_US</field>
+            <field name="iso_code">en</field>
+            <field name="name">English</field>
+            <field name="translatable">True</field>
+        </record>
+
+	</data>
+</openerp>

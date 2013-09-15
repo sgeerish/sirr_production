@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/profile_dm/__init__.py

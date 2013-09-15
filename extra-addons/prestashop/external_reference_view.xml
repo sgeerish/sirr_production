@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        
+        <act_window id="act_sale_order_line_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="sale.order.line"
+            domain="[('res_id', '=', active_id), ('res_model','=','sale.order.line')]"/>
+        
+        <act_window id="act_tax_rule_group_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="tax.rule.group"
+            domain="[('res_id', '=', active_id), ('res_model','=','tax.rule.group')]"/>
+           
+        <act_window id="act_tax_rules_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="tax.rules"
+            domain="[('res_id', '=', active_id), ('res_model','=','tax.rules')]"/>
+        
+        <act_window id="act_sale_order_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="sale.order"
+            domain="[('res_id', '=', active_id), ('res_model','=','sale.order')]"/>
+            
+        <act_window id="act_sale_order_state_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="sale.order.state"
+            domain="[('res_id', '=', active_id), ('res_model','=','sale.order.state')]"/>
+        
+        <act_window id="act_delivery_handlings_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="delivery.handlings"
+            domain="[('res_id', '=', active_id), ('res_model','=','delivery.handlings')]"/>
+        
+        <act_window id="act_delivery_grid_line_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="delivery.grid.line"
+            domain="[('res_id', '=', active_id), ('res_model','=','delivery.grid.line')]"/>
+            
+        <act_window id="act_delivery_carrier_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="delivery.carrier"
+            domain="[('res_id', '=', active_id), ('res_model','=','delivery.carrier')]"/> 
+            
+        <act_window id="act_product_features_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="product.features"
+            domain="[('res_id', '=', active_id), ('res_model','=','product.features')]"/> 
+            
+        <act_window id="act_product_feature_values_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="product.feature.values"
+            domain="[('res_id', '=', active_id), ('res_model','=','product.feature.values')]"/> 
+            
+        <act_window id="act_res_partner_category_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="res.partner.category"
+            domain="[('res_id', '=', active_id), ('res_model','=','res.partner.category')]"/> 
+        
+        <act_window id="act_res_partner_address_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="res.partner.address"
+            domain="[('res_id', '=', active_id), ('res_model','=','res.partner.address')]"/> 
+            
+        <act_window id="act_res_currency_ext_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="res.currency"
+            domain="[('res_id', '=', active_id), ('res_model','=','res.currency')]"/>    
+        
+		<act_window id="act_res_lang_ext_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="res.lang"
+            domain="[('res_id', '=', active_id), ('res_model','=','res.lang')]"/>    
+
+        <act_window id="act_res_partner_ext_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="res.partner"
+            domain="[('res_id', '=', active_id), ('res_model','=','res.partner')]"/>
+            
+        <act_window id="act_res_country_ext_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="res.country"
+            domain="[('res_id', '=', active_id), ('res_model','=','res.country')]"/>
+            
+        <act_window id="act_res_zone_ext_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="tr.presta.zone"
+            domain="[('res_id', '=', active_id), ('res_model','=','tr.presta.zone')]"/>
+            
+        <act_window id="act_res_country_state_ext_ref"
+            name="External Reference"
+            res_model="external.reference"
+            src_model="res.country.state"
+            domain="[('res_id', '=', active_id), ('res_model','=','res.country.state')]"/>
+
+        <record id="view_external_reference_tree" model="ir.ui.view">
+            <field name="name">external.reference.tree</field>
+            <field name="model">external.reference</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+            <tree string="External Reference">
+                <field name="res_model"/>
+                <field name="res_id"/>
+                <field name="ext_id"/>
+                <field name="external_reference_id"/>
+            </tree>
+            </field>
+        </record>
+        
+        <record id="view_external_reference_form" model="ir.ui.view">
+            <field name="name">external.reference.form</field>
+            <field name="model">external.reference</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+            <form string="External Reference">
+                <field name="res_model" select="1"/>
+                <field name="res_id" select="1"/>
+                <field name="ext_id" select="1"/>
+                <field name="external_reference_id" select="1"/>
+            </form>
+            </field>
+        </record>
+        
+        <record id="view_external_reference_search" model="ir.ui.view">
+            <field name="name">external.reference.search</field>
+            <field name="model">external.reference</field>
+            <field name="type">search</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+            <search string="External Reference">
+                <field name="res_model" select="True"/>
+                <field name="res_id" select="True"/>
+                <field name="ext_id" select="True"/>
+                <field name="external_reference_id" select="True"/>
+            </search>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="act_open_external_reference_view">
+            <field name="name">External Reference</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">external.reference</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_external_reference_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        
+        <record model="ir.actions.act_window.view" id="act_open_external_reference_view_form">
+            <field name="act_window_id" ref="act_open_external_reference_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_external_reference_form"/>
+        </record>
+        
+        <record model="ir.actions.act_window.view" id="act_open_external_reference_view_tree">
+            <field name="act_window_id" ref="act_open_external_reference_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_external_reference_tree"/>
+        </record>
+        
+        <menuitem id="menu_external_reference"
+            parent="base.menu_custom"
+            sequence="20"
+            action="act_open_external_reference_view"/>
+
+        <record id="view_prestashop_log_tree" model="ir.ui.view">
+            <field name="name">prestashop.log.tree</field>
+            <field name="model">prestashop.log</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+            <tree string="Log">
+                <field name="create_date"/>
+                <field name="user_id"/>
+                <field name="shop_id"/>
+                <field name="state"/>
+                <field name="res_model"/>
+                <field name="sync_type"/>
+                <field name="msg"/>
+            </tree>
+            </field>
+        </record>
+        
+        <record id="view_prestashop_log_form" model="ir.ui.view">
+            <field name="name">prestashop.log.form</field>
+            <field name="model">prestashop.log</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+            <form string="Log">
+                <field name="create_date" select="1"/>
+                <field name="user_id" select="1"/>
+                <field name="shop_id" select="1"/>
+                <field name="state" select="1"/>
+                <field name="res_model" select="1"/>
+                <field name="sync_type" select="1"/>
+                <field name="msg" select="1"/>
+            </form>
+            </field>
+        </record>
+        
+        <record id="view_prestashop_log_search" model="ir.ui.view">
+            <field name="name">prestashop.log.search</field>
+            <field name="model">prestashop.log</field>
+            <field name="type">search</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+            <search string="Log">
+                <filter  string="Info" domain="[('state','=','info')]"/>
+                <filter  string="Error" domain="[('state','=','error')]"/>
+                <separator orientation="vertical"/>
+                <filter  string="Import" domain="[('sync_type','=','import')]"/>
+                <filter  string="Export" domain="[('sync_type','=','export')]"/>
+                <separator orientation="vertical"/>
+                <newline/>
+                <field name="create_date" select="1"/>
+                <field name="user_id" select="1"/>
+                <field name="shop_id" select="1"/>
+                <field name="state" select="1"/>
+                <field name="res_model" select="1"/>
+                <field name="sync_type" select="1"/>
+                <field name="msg" select="1"/>
+                <newline/>
+                <group expand="0" string="Group By..." colspan="4" col="10" groups="base.group_extended">
+                    <filter string="Sync Type"  domain="[]" context="{'group_by':'sync_type'}"/>
+                    <filter string="State"  domain="[]" context="{'group_by':'state'}"/>
+                    <filter string="Users"  domain="[]" context="{'group_by':'user_id'}"/>
+                    <filter string="Shops"  domain="[]" context="{'group_by':'shop_id'}"/>
+                    <filter string="Model"  domain="[]" context="{'group_by':'res_model'}"/>
+                </group>
+            </search>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="act_open_prestashop_log_view">
+            <field name="name">Log</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">prestashop.log</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_prestashop_log_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        
+        <record model="ir.actions.act_window.view" id="act_open_prestashop_log_view_form">
+            <field name="act_window_id" ref="act_open_prestashop_log_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_prestashop_log_form"/>
+        </record>
+        
+        <record model="ir.actions.act_window.view" id="act_open_prestashop_log_view_tree">
+            <field name="act_window_id" ref="act_open_prestashop_log_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_prestashop_log_tree"/>
+        </record>
+        
+        <menuitem id="menu_prestashop_log"
+            parent="base.menu_custom"
+            sequence="20"
+            action="act_open_prestashop_log_view"/>
+    </data>
+</openerp>

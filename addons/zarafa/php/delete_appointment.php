@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/zarafa/php/delete_appointment.php

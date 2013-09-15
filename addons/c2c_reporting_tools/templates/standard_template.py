@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/c2c_reporting_tools/templates/standard_template.py

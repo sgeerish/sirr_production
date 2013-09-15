@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_clock_reader_user,"clock_reader.clock user",model_clock_reader_clock,group_clock_reader_user,1,1,1,1
+access_clock_reader_manager,"clock_reader.clock manager",model_clock_reader_clock,group_clock_reader_manager,1,1,1,1

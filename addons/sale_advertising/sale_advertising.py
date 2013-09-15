@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sale_advertising/sale_advertising.py

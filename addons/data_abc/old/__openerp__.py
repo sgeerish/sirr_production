@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/data_abc/old/__openerp__.py

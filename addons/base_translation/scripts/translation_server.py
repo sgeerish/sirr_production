@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_translation/scripts/translation_server.py

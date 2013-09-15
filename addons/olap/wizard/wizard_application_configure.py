@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/olap/wizard/wizard_application_configure.py

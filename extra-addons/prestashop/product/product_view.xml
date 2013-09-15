@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="prestashop_product_category_form_view_inherit" model="ir.ui.view">
+            <field name="name">prestashop.product.category.form.inherit</field>
+            <field name="model">product.category</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/field[@name='type']" position="after">
+                	<separator string="Prestashop Details" colspan="4"/>
+                	<field name="description"/>
+                	<field name="meta_keywords"/>
+                	<field name="meta_description"/>
+                	<field name="link_rewrite"/>
+                </xpath>
+            </field>
+        </record>
+  
+       <record id="prestashop_product_normal_form_view_inherit" model="ir.ui.view">
+            <field name="name">prestashop.product.normal.form.inherit</field>
+            <field name="model">product.product</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook" position="inside">
+                    <page string="Shops" attrs="{'invisible':[('presta_exportable','==',0)]}">
+                        <field name="shop_ids" colspan="4" nolabel="1"/>
+                    </page>
+
+                    <page string="Images" attrs="{'invisible':[('presta_exportable','==',0)]}">
+                        <field name="image_ids" colspan="4" nolabel="1">
+                            <tree string="Images">
+                                <field name="product_id"/>
+                                <field name="attachment_id"/>
+                            </tree>
+                            <form string="Image">
+							<group col="4" colspan="4">
+                                <field name="product_id"/>
+                                <field name="attachment_id"/>
+                            </group>
+                                <field name="image_data" widget="image" nolabel="1" colspan="2"/>
+                            </form>
+
+                        </field>
+                    </page>
+
+                    <page string="Prestashop" attrs="{'invisible':[('presta_exportable','==',0)]}">
+                        <group col="6" colspan="4">
+                            <field name="date_add"/>
+                            <field name="condition"/>
+                            <field name="out_of_stock"/>
+                            <field name="link_rewrite"/>
+                            <field name="meta_keywords"/>
+                            <field name="meta_description"/>
+                            <field name="meta_title"/>
+                            <field name="location"/>
+                            <field name="upc"/>
+                            <field name="available_later"/>
+                            <field name="available_now"/>
+                            <field name="unity"/>
+
+                            <field name="wholesale_price"/>
+                            <field name="quantity"/>
+                            <field name="minimal_quantity"/>
+                            <field name="additional_shipping_cost"/>
+                            <field name="width"/>
+                            <field name="depth"/>
+                            <field name="height"/>
+                            
+                            <field name="tag_id"/>
+                            <field name="tax_rule_group_id"/>
+                            <group col="6" colspan="4">
+                            <field name="show_price"/>
+                        	<field name="quantity_discount"/>
+                        	<field name="customizable"/>
+                        	<field name="on_sale"/>
+                        	<field name="online_only"/>
+                        	<field name="available_for_order"/>
+                        	<field name="is_carrier"/>
+                        	</group>
+                                
+                        </group>
+                        <field name="product_features_ids" colspan="4"/>
+                        <field name="product_options_values_id" colspan="4"/>
+                        <field name="combination_ids" colspan="4"/>
+                        
+                    </page>
+				</xpath>
+				<xpath expr="/form/group/group/field[@name='purchase_ok']" position="after">
+                       <field name="presta_exportable"/>
+				</xpath>
+            </field>
+        </record>
+        
+	</data>
+</openerp>

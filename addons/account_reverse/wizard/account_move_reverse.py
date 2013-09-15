@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_reverse/wizard/account_move_reverse.py

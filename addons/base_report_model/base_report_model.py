@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_report_model/base_report_model.py

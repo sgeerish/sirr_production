@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/openerp_dia/import_view_openerp.py

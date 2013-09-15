@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/project_event/project_event.py

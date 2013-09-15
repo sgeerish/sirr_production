@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_payment_rules/__terp__.py

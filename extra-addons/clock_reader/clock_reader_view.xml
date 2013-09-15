@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+	<!-- Clock -->
+        <record id="view_clock_form" model="ir.ui.view">
+            <field name="name">clock_reader.clock.form</field>
+            <field name="model">clock_reader.clock</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Clock">
+                    <group colspan="4" col="4">
+                        <field name="name" select="1"/>
+                        <field name="active" select="2"/>
+			<newline/>
+                        <field name="model" select="2"/>
+                        <field name="uri"/>
+                        <field name="timeout"/>
+                        <field name="location_id"/>
+			<newline/>
+			<field name="create_unknown_employee"/>
+			<field name="ignore_sign_inout"/>
+			<field name="complete_attendance"/>
+			<field name="clean_at_end"/>
+			<field name="tolerance"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="view_clock_tree" model="ir.ui.view">
+            <field name="name">clock_reader.clock.tree</field>
+            <field name="model">clock_reader.clock</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Clocks">
+                        <field name="name"/>
+                        <field name="uri"/>
+                        <field name="location_id"/>
+                        <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+	<!-- Action Rule -->
+        <record id="view_action_reason_rule_form" model="ir.ui.view">
+            <field name="name">clock_reader.action_reason_rule.form</field>
+            <field name="model">clock_reader.action_reason_rule</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Action Reason Rule">
+                    <group colspan="4" col="4">
+                        <field name="name" select="1"/>
+                        <field name="active" select="2"/>
+                        <field name="action" select="1"/>
+                        <field name="seq"/>
+                        <field name="rule" colspan="4"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="view_action_reason_rule_tree" model="ir.ui.view">
+            <field name="name">clock_reader.action_reason_rule.tree</field>
+            <field name="model">clock_reader.action_reason_rule</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Action Reason Rule">
+                        <field name="seq"/>
+                        <field name="name"/>
+                        <field name="action"/>
+                </tree>
+            </field>
+        </record>
+
+	<!-- Attendance -->
+        <record id="view_clock_attendance_tree" model="ir.ui.view">
+            <field name="name">hr.attendance.tree</field>
+            <field name="model">hr.attendance</field>
+            <field name="type">tree</field>
+	    <field name="inherit_id" ref="hr_attendance.view_attendance_tree"/>
+            <field name="arch" type="xml">
+            	<field name="name" position="after">
+			<field name="method"/>
+		</field>
+            </field>
+        </record>
+
+        <record id="view_clock_attendance_form" model="ir.ui.view">
+            <field name="name">hr.attendance.form</field>
+            <field name="model">hr.attendance</field>
+            <field name="type">form</field>
+	    <field name="inherit_id" ref="hr_attendance.view_attendance_form"/>
+            <field name="arch" type="xml">
+            	<field name="action" position="after">
+			<field name="method"/>
+		</field>
+            </field>
+        </record>
+
+	<!-- Window Actions -->
+        <record id="open_view_clock" model="ir.actions.act_window">
+            <field name="name">Clocks</field>
+            <field name="res_model">clock_reader.clock</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem
+            id="menu_view_clock_form"
+            action="open_view_clock"
+	    parent="hr.menu_hr_configuration"
+	    groups="group_clock_reader_manager"/>
+
+    </data>
+</openerp>
+

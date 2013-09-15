@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/nan_sale_delivery/__init__.py

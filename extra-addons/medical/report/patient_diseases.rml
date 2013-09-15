@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="15.0" y1="42.0" width="539" height="758"/>
+    </pageTemplate>
+
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBELOW" colorName="black"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="GRID" colorName="black"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P2" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="RIGHT"/>
+    <paraStyle name="P3" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="LEFT"/>
+    <paraStyle name="P4" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P5" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="RIGHT"/>
+    <paraStyle name="P6" fontName="Times-Roman" fontSize="13.0" leading="16" alignment="LEFT"/>
+    <paraStyle name="P7" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P8" fontName="Times-Roman" fontSize="22.0" leading="27" alignment="CENTER"/>
+    <paraStyle name="P9" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P10" fontName="Times-Bold" fontSize="13.0" leading="16"/>
+    <paraStyle name="P11" fontName="Times-Roman" fontSize="13.0" leading="16"/>
+    <paraStyle name="P12" fontName="Times-Roman" fontSize="10.0" leading="16"/>
+    <paraStyle name="P13" fontName="Times-Roman" fontSize="10.0" leading="16" alignment="CENTER"/>
+    
+            
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <paraStyle name="Table Contents" fontName="Times-Roman"/>
+    <paraStyle name="Table Heading" fontName="Times-Roman" alignment="CENTER"/>
+    <images/>
+  </stylesheet>
+  <story>
+    <para style="P1">[[repeatIn(objects,'patient')]]</para>
+    <para style="P8"><font color="blue" fontName="Times-Bold">PATIENT DISEASE SUMMARY REPORT</font></para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    
+    <blockTable colWidths="55.0,117.0,115.0,89.0,45.0,78.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P5">Patient :</para>
+        </td>
+        <td>
+          <para style="P10"> [[ patient.lastname and patient.lastname + ', ' or '']]  [[ patient.name.name ]] </para>
+        </td>
+        <td>
+          <para style="P2">Patient ID :</para>
+        </td>
+        <td>
+          <para style="P1">[[ patient.patient_id ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">Date :</para>
+        </td>
+        <td>
+          <para style="P4">[[ formatLang(time.strftime('%Y-%m-%d'),date=True) ]]</para>
+        </td>
+        <td>
+          <para style="P5">Age :</para>
+        </td>
+        <td>
+          <para style="P6">[[ patient.age ]]</para>
+        </td>
+        <td>
+          <para style="P5">Sex :</para>
+        </td>
+        <td>
+          <para style="P4">[[ patient.sex== 'm' and 'Male' or patient.sex=='f' and 'Female' ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <section>
+
+      <blockTable colWidths="500.0" style="Table1">
+        <tr>
+          <td>
+            <para style="P10"><font color="red">Important information about the patient diseases, allergies and procedures:</font></para>
+	    <para style="P1">
+      		<font color="white"> </font>
+    	    </para>
+            <para style="P11"> [[patient.critical_info]] </para>
+
+          </td>
+        </tr>  
+      </blockTable>
+      
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+
+
+
+      <blockTable colWidths="170.0,50.0,40.0,30.0,45.0,80.0,75.0" style="Table2">
+        <tr>
+          <td>
+            <para style="P12">Disease (ICD-10)</para>
+          </td>
+          <td>
+            <para style="P12">Severity</para>
+          </td>
+          <td>
+            <para style="P12">Status</para>
+          </td>
+          <td>
+            <para style="P12">Active</para>
+          </td>
+          <td>
+            <para style="P12">Infectious</para>
+          </td>
+          <td>
+            <para style="P12">Diagnosed</para>
+          </td>
+          <td>
+            <para style="P12">Remarks</para>
+          </td>
+        </tr>
+      </blockTable>
+
+      <section>
+      <para style="P12">[[repeatIn(patient.diseases,'diseases')]]</para>      
+      <blockTable colWidths="170.0,50.0,40.0,30.0,45.0,80.0,75.0" style="Table3">
+        <tr>
+          <td>
+            <para style="P12">[[ diseases.pathology.name ]]</para>
+          </td>
+          <td>
+            <para style="P12">[[ diseases.disease_severity=='1_mi' and 'Mild' or diseases.disease_severity=='2_mo' and 'Moderate' or diseases.disease_severity=='3_sv' and 'Severe']]</para>
+          </td>
+          <td>
+            <para style="P12">[[ diseases.status=='c' and 'Chronic' or diseases.status=='s' and 'Status Quo' or diseases.status=='h' and 'Healed' or diseases.status=='i' and 'Improving' or diseases.status=='w' and 'Worsening']]</para>
+          </td>
+          <td>
+            <para style="P13">[[ diseases.is_active and '*' ]]</para>
+          </td>
+          <td>
+            <para style="P13">[[ diseases.is_infectious and '*' ]]</para>
+          </td>
+          <td>
+            <para style="P12">[[ (diseases.diagnosed_date == 'False') and ' '  or diseases.diagnosed_date]]</para>
+          </td>
+          <td>
+            <para style="P12">[[ diseases.short_comment ]]</para>
+          </td>
+
+        </tr>
+      </blockTable>
+      </section>
+      
+      <para style="P1">
+        <font color="white"> </font>
+      </para>
+    </section>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>
+

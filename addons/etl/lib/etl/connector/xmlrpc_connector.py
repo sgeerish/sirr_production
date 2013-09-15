@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl/lib/etl/connector/xmlrpc_connector.py

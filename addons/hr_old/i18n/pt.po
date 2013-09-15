@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_old/i18n/pt.po

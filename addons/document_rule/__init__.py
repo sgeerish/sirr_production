@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/document_rule/__init__.py

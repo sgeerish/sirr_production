@@ -1,0 +1,5 @@
+<openerp>
+<data>
+<wizard id="wizard_invoice_merge" model="account.invoice" name="account.invoice.merge.wizard" string="Merge invoices" multi="True" keyword="client_action_multi" menu="True" groups="base.group_user"/>
+</data>
+</openerp>

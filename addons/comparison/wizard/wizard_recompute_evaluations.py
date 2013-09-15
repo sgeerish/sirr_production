@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/comparison/wizard/wizard_recompute_evaluations.py

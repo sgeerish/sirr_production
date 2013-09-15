@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/wiki_files/__init__.py

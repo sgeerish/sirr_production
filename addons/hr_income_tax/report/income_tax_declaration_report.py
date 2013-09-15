@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_income_tax/report/income_tax_declaration_report.py

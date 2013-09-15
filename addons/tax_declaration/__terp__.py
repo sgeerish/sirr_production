@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/tax_declaration/__terp__.py

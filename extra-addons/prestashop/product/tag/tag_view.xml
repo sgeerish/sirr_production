@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+<!-- PRESTASHOP TAG VIEWS -->
+
+	<record id="prestashop_tag_tree" model="ir.ui.view">
+	    <field name="name">prestashop.tag.tree</field>
+	    <field name="model">prestashop.tag</field>
+	    <field name="type">tree</field>
+	    <field name="arch" type="xml">
+	        <tree string="Prestashop Tags">
+	            <field name="name" select="1"/>
+            </tree>
+	    </field>
+	</record>
+
+	<record id="prestashop_tag_form" model="ir.ui.view">
+	    <field name="name">tag.form</field>
+	    <field name="model">prestashop.tag</field>
+	    <field name="type">form</field>
+	    <field name="arch" type="xml">
+	        <form string="Prestashop Tags">
+				<field name="name" colspan="4"/>
+	   		    <separator colspan="4"/>
+	        </form>
+		</field>
+	</record>
+   
+	<record id="prestashop_tag_act_window" model="ir.actions.act_window">
+	    <field name="name">Prestashop Tags</field>
+	    <field name="type">ir.actions.act_window</field>
+	    <field name="res_model">prestashop.tag</field>
+	    <field name="view_type">form</field>
+	</record>
+	</data>
+</openerp>

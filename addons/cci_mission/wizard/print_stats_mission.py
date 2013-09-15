@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_mission/wizard/print_stats_mission.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sale_intercompany_auto/i18n/sale_intercomapny_auto.pot

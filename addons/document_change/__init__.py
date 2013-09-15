@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/document_change/__init__.py

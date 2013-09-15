@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_account/cci_account.py

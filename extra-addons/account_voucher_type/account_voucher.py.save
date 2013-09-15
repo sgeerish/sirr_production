@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+
+from osv import fields, osv
+import time
+from datetime import datetime
+
+class account_payment_type()
+    _inherit = 'crm.meeting'
+    
+    _columns = {
+        'partner_machine_id':fields.many2one('partner.machine','Machine/Vehicule'),
+        'counter_start':fields.float('Compteur Debut'),
+        'counter_end':fields.float('Compteur End'),
+        'phone':fields.char('Telephone', size=32, required=True),
+        'intervention_type_id':fields.many2one('intervention.type','Type Intervention'),
+        
+    }
+
+crm_meeting()

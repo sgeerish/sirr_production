@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/personal_base/wizard/__init__.py

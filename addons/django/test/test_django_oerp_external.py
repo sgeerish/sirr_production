@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/django/test/test_django_oerp_external.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_fiscal_position_name/wizard/__init__.py

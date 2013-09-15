@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Tasks SYSTEM "Tasks-4.2.dtd">
+<!-- eric4 tasks file for project OpenERP -->
+<!-- Saved: 2011-08-02, 16:57:41 -->
+<Tasks version="4.2">
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: not correct fix but required a frech values before reading it.</Summary>
+    <Description></Description>
+    <Created>2011-08-02, 10:52:36</Created>
+    <Resource>
+      <Filename>account/invoice.py</Filename>
+      <Linenumber>964</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: Use context from arguments</Summary>
+    <Description></Description>
+    <Created>2011-08-02, 10:52:36</Created>
+    <Resource>
+      <Filename>account/invoice.py</Filename>
+      <Linenumber>1005</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: implement messages system</Summary>
+    <Description></Description>
+    <Created>2011-08-02, 10:52:36</Created>
+    <Resource>
+      <Filename>account/invoice.py</Filename>
+      <Linenumber>1043</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: use currency's formatting function</Summary>
+    <Description></Description>
+    <Created>2011-08-02, 10:52:36</Created>
+    <Resource>
+      <Filename>account/invoice.py</Filename>
+      <Linenumber>1226</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: may be we can remove this method if not used anyware</Summary>
+    <Description></Description>
+    <Created>2011-08-02, 10:56:43</Created>
+    <Resource>
+      <Filename>account_voucher/account_voucher.py</Filename>
+      <Linenumber>604</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: is there any other alternative then the voucher type ??</Summary>
+    <Description></Description>
+    <Created>2011-08-02, 10:56:43</Created>
+    <Resource>
+      <Filename>account_voucher/account_voucher.py</Filename>
+      <Linenumber>671</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="True">
+    <Summary>FIXME: the method should return the list of invoices created (invoice_ids)</Summary>
+    <Description></Description>
+    <Created>2011-08-02, 11:43:44</Created>
+    <Resource>
+      <Filename>sale/sale.py</Filename>
+      <Linenumber>371</Linenumber>
+    </Resource>
+  </Task>
+</Tasks>

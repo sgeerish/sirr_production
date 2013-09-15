@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/profiler/__openerp__.py

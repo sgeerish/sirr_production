@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/memento_idea/wizard/__init__.py

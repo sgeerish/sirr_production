@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_address_category/__init__.py

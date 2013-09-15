@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/purchase_tender/__init__.py

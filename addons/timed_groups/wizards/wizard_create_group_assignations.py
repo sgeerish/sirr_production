@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/timed_groups/wizards/wizard_create_group_assignations.py

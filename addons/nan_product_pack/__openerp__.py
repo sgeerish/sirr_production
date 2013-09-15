@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/nan_product_pack/__openerp__.py

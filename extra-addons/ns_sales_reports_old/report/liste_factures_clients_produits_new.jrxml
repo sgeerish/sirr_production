@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="liste_commandes_clients" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.8150000000000004"/>
+	<property name="ireport.x" value="8"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="title" class="java.lang.String"/>
+	<parameter name="mode" class="java.lang.String"/>
+	<parameter name="year" class="java.lang.Integer"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="Ref" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Invoice_Ref-invoice_id/Description-name]]></fieldDescription>
+	</field>
+	<field name="Client" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Invoice_Ref-invoice_id/Partner-partner_id/Name-name]]></fieldDescription>
+	</field>
+	<field name="Date" class="java.util.Date">
+		<fieldDescription><![CDATA[/data/record/Invoice_Ref-invoice_id/Date_Invoiced-date_invoice]]></fieldDescription>
+	</field>
+	<field name="Produit" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Product-product_id/Product_Template-product_tmpl_id/Name-name]]></fieldDescription>
+	</field>
+	<field name="Category_produit" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Product-product_id/Product_Template-product_tmpl_id/Category-categ_id/Name-name]]></fieldDescription>
+	</field>
+	<field name="Category_client" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Invoice_Ref-invoice_id/Partner-partner_id/Categories-category_id/Category_Name-name]]></fieldDescription>
+	</field>
+	<field name="Montant" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Montant-value]]></fieldDescription>
+	</field>
+	<field name="Qte" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Qte_vendue-sold_qty]]></fieldDescription>
+	</field>
+	<field name="Weight" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Product-product_id/Product_Template-product_tmpl_id/Net_weight-weight_net]]></fieldDescription>
+	</field>
+	<field name="Description" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Description-name]]></fieldDescription>
+	</field>
+	<field name="Discount-discount" class="java.lang.Double">
+		<fieldDescription><![CDATA[/data/record/Discount-discount]]></fieldDescription>
+	</field>
+	<field name="Marge-margin" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Marge-margin]]></fieldDescription>
+	</field>
+	<field name="Mar-margin_perc" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Mar-margin_perc]]></fieldDescription>
+	</field>
+	<field name="Reference-code" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Product-product_id/Reference-code]]></fieldDescription>
+	</field>
+	<field name="Reference-ref" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Partner-partner_id/Reference-ref]]></fieldDescription>
+	</field>
+	<field name="Name-name" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Product-product_id/Product_Template-product_tmpl_id/Name-name]]></fieldDescription>
+	</field>
+	<sortField name="Category_client"/>
+	<sortField name="Client"/>
+	<sortField name="Category_produit"/>
+	<sortField name="Produit"/>
+	<sortField name="Description"/>
+	<variable name="Montant_1" class="java.lang.Float" resetType="Group" resetGroup="Produit" calculation="Sum">
+		<variableExpression><![CDATA[$F{Montant}]]></variableExpression>
+	</variable>
+	<variable name="Montant_2" class="java.lang.Float" resetType="Group" resetGroup="Client" calculation="Sum">
+		<variableExpression><![CDATA[$F{Montant}]]></variableExpression>
+	</variable>
+	<variable name="Montant_3" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[$F{Montant}]]></variableExpression>
+	</variable>
+	<variable name="Qte_1" class="java.lang.Integer" resetType="Group" resetGroup="Produit" calculation="Sum">
+		<variableExpression><![CDATA[$F{Qte}]]></variableExpression>
+	</variable>
+	<variable name="Qte_2" class="java.lang.Integer" resetType="Group" resetGroup="Client" calculation="Sum">
+		<variableExpression><![CDATA[$F{Qte}]]></variableExpression>
+	</variable>
+	<variable name="prod_or_desc" class="java.lang.String">
+		<variableExpression><![CDATA[($F{Produit}==""?$F{Description}:$F{Produit})]]></variableExpression>
+	</variable>
+	<variable name="Montant_4" class="java.lang.Float" resetType="Group" resetGroup="Description" calculation="Sum">
+		<variableExpression><![CDATA[$F{Montant}]]></variableExpression>
+	</variable>
+	<variable name="Qte_3" class="java.lang.Integer" resetType="Group" resetGroup="Description" calculation="Sum">
+		<variableExpression><![CDATA[$F{Qte}]]></variableExpression>
+	</variable>
+	<variable name="Discount_Prod" class="java.lang.Float" resetType="Group" resetGroup="Produit" calculation="Average">
+		<variableExpression><![CDATA[$F{Discount-discount}]]></variableExpression>
+	</variable>
+	<variable name="Discount_Client" class="java.lang.Float" resetType="Group" resetGroup="Client" calculation="Average">
+		<variableExpression><![CDATA[$F{Discount-discount}]]></variableExpression>
+	</variable>
+	<variable name="Discount_subtotal" class="java.lang.Float" resetType="Group" resetGroup="Description" calculation="Average">
+		<variableExpression><![CDATA[$F{Discount-discount}]]></variableExpression>
+	</variable>
+	<variable name="Discount_total" class="java.lang.Float" calculation="Average">
+		<variableExpression><![CDATA[$F{Discount-discount}]]></variableExpression>
+	</variable>
+	<variable name="Qte_3_1" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{Qte}]]></variableExpression>
+	</variable>
+	<variable name="Qte_3_1_2" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[$F{Qte}]]></variableExpression>
+	</variable>
+	<variable name="Marge_prod" class="java.lang.Float" resetType="Group" resetGroup="Produit" calculation="Sum">
+		<variableExpression><![CDATA[$F{Marge-margin}]]></variableExpression>
+	</variable>
+	<variable name="Marge_client" class="java.lang.Float" resetType="Group" resetGroup="Client" calculation="Sum">
+		<variableExpression><![CDATA[$F{Marge-margin}]]></variableExpression>
+	</variable>
+	<variable name="Marge_descrip" class="java.lang.Float" resetType="Group" resetGroup="Description" calculation="Sum">
+		<variableExpression><![CDATA[$F{Marge-margin}]]></variableExpression>
+	</variable>
+	<variable name="marge_total" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[$F{Marge-margin}]]></variableExpression>
+	</variable>
+	<variable name="Marge_prod_1" class="java.lang.Float" resetType="Group" resetGroup="Produit" calculation="Average">
+		<variableExpression><![CDATA[$F{Mar-margin_perc}]]></variableExpression>
+	</variable>
+	<variable name="Marge_client_1" class="java.lang.Float" resetType="Group" resetGroup="Client" calculation="Average">
+		<variableExpression><![CDATA[$F{Mar-margin_perc}]]></variableExpression>
+	</variable>
+	<variable name="Marge_descrip_1" class="java.lang.Float" resetType="Group" resetGroup="Description" calculation="Average">
+		<variableExpression><![CDATA[$F{Mar-margin_perc}]]></variableExpression>
+	</variable>
+	<variable name="marge_total_1" class="java.lang.Float" calculation="Average">
+		<variableExpression><![CDATA[$F{Mar-margin_perc}]]></variableExpression>
+	</variable>
+	<variable name="montant_client" class="java.lang.Float" resetType="Group" resetGroup="Client" calculation="Sum">
+		<variableExpression><![CDATA[$F{Montant}]]></variableExpression>
+	</variable>
+	<group name="Client">
+		<groupExpression><![CDATA[$F{Client}]]></groupExpression>
+		<groupHeader>
+			<band height="28">
+				<frame>
+					<reportElement mode="Opaque" x="0" y="0" width="555" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.0"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textField>
+						<reportElement x="104" y="0" width="228" height="14"/>
+						<textElement verticalAlignment="Middle">
+							<font size="8" isBold="true"/>
+						</textElement>
+						<textFieldExpression class="java.lang.String"><![CDATA[$F{Client}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="4" y="0" width="87" height="14"/>
+						<textElement verticalAlignment="Bottom">
+							<font size="8" isBold="true"/>
+						</textElement>
+						<textFieldExpression class="java.lang.String"><![CDATA[$F{Reference-ref}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement mode="Opaque" x="0" y="14" width="332" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+					<staticText>
+						<reportElement x="4" y="0" width="100" height="14"/>
+						<textElement verticalAlignment="Middle">
+							<font size="8"/>
+						</textElement>
+						<text><![CDATA[PRODUIT]]></text>
+					</staticText>
+					<frame>
+						<reportElement mode="Transparent" x="0" y="0" width="332" height="14" isRemoveLineWhenBlank="true" backcolor="#CCCCFF"/>
+						<box>
+							<pen lineWidth="0.25"/>
+							<topPen lineWidth="0.25"/>
+							<leftPen lineWidth="0.25"/>
+							<bottomPen lineWidth="0.25"/>
+							<rightPen lineWidth="0.25"/>
+						</box>
+					</frame>
+				</frame>
+				<frame>
+					<reportElement mode="Opaque" x="396" y="14" width="39" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+					<staticText>
+						<reportElement x="2" y="0" width="32" height="14"/>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font size="8"/>
+						</textElement>
+						<text><![CDATA[Remise]]></text>
+					</staticText>
+				</frame>
+				<frame>
+					<reportElement mode="Opaque" x="332" y="14" width="64" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+					<staticText>
+						<reportElement x="0" y="0" width="60" height="14"/>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font size="8"/>
+						</textElement>
+						<text><![CDATA[CA Net HT]]></text>
+					</staticText>
+				</frame>
+				<frame>
+					<reportElement mode="Opaque" x="435" y="14" width="64" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+				</frame>
+				<staticText>
+					<reportElement x="435" y="14" width="60" height="14"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Marge]]></text>
+				</staticText>
+				<frame>
+					<reportElement mode="Opaque" x="499" y="14" width="55" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+					<staticText>
+						<reportElement x="0" y="0" width="55" height="14"/>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font size="8"/>
+						</textElement>
+						<text><![CDATA[% Marge / CA]]></text>
+					</staticText>
+				</frame>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="20">
+				<frame>
+					<reportElement mode="Opaque" x="332" y="0" width="64" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+					<textField pattern="#,##0.00;-#,##0.00">
+						<reportElement x="0" y="0" width="56" height="14"/>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font size="8"/>
+						</textElement>
+						<textFieldExpression class="java.lang.Float"><![CDATA[$V{montant_client}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement mode="Opaque" x="396" y="0" width="39" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+				</frame>
+				<frame>
+					<reportElement mode="Opaque" x="435" y="0" width="64" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+				</frame>
+				<frame>
+					<reportElement mode="Transparent" x="396" y="0" width="39" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+				</frame>
+				<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="false">
+					<reportElement x="391" y="0" width="39" height="14"/>
+					<box leftPadding="0" rightPadding="3"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{Discount_Client}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement x="437" y="0" width="58" height="14"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{Marge_client}]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement mode="Opaque" x="499" y="0" width="55" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+				</frame>
+				<frame>
+					<reportElement mode="Transparent" x="499" y="0" width="55" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+				</frame>
+				<frame>
+					<reportElement mode="Opaque" x="0" y="0" width="332" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+					<staticText>
+						<reportElement x="0" y="0" width="38" height="14"/>
+						<textElement verticalAlignment="Bottom">
+							<font size="8" isBold="true"/>
+						</textElement>
+						<text><![CDATA[TOTAL]]></text>
+					</staticText>
+				</frame>
+				<textField>
+					<reportElement x="39" y="0" width="87" height="14"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{Reference-ref}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00 %">
+					<reportElement x="499" y="0" width="50" height="14"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{Marge_client}/$V{Montant_2}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="Produit">
+		<groupExpression><![CDATA[$F{Produit}]]></groupExpression>
+		<groupHeader>
+			<band/>
+		</groupHeader>
+		<groupFooter>
+			<band height="14">
+				<frame>
+					<reportElement x="0" y="0" width="554" height="14" isRemoveLineWhenBlank="true">
+						<printWhenExpression><![CDATA[($V{Montant_1}>0) || ($V{Montant_1}>0)]]></printWhenExpression>
+					</reportElement>
+					<frame>
+						<reportElement mode="Transparent" x="0" y="0" width="437" height="14" isRemoveLineWhenBlank="true" backcolor="#CCCCFF"/>
+						<box>
+							<pen lineWidth="0.0"/>
+							<topPen lineWidth="0.0"/>
+							<leftPen lineWidth="0.0"/>
+							<bottomPen lineWidth="0.0"/>
+							<rightPen lineWidth="0.0"/>
+						</box>
+						<frame>
+							<reportElement x="396" y="0" width="39" height="14"/>
+							<box>
+								<pen lineWidth="0.25"/>
+								<topPen lineWidth="0.25"/>
+								<leftPen lineWidth="0.25"/>
+								<bottomPen lineWidth="0.25"/>
+								<rightPen lineWidth="0.25"/>
+							</box>
+						</frame>
+						<textField>
+							<reportElement x="4" y="0" width="64" height="14"/>
+							<textElement verticalAlignment="Bottom">
+								<font size="8"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{Reference-code}]]></textFieldExpression>
+						</textField>
+						<textField pattern="###0.00;-###0.00" isBlankWhenNull="true">
+							<reportElement x="396" y="0" width="35" height="14" isRemoveLineWhenBlank="true"/>
+							<box leftPadding="0" rightPadding="3"/>
+							<textElement textAlignment="Right" verticalAlignment="Bottom">
+								<font size="8"/>
+							</textElement>
+							<textFieldExpression class="java.lang.Float"><![CDATA[$V{Discount_Prod}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="91" y="0" width="240" height="14"/>
+							<textElement verticalAlignment="Bottom">
+								<font size="8"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{Name-name}]]></textFieldExpression>
+						</textField>
+						<frame>
+							<reportElement x="68" y="0" width="263" height="14"/>
+						</frame>
+						<frame>
+							<reportElement x="68" y="0" width="264" height="14"/>
+							<box>
+								<pen lineWidth="0.25"/>
+								<topPen lineWidth="0.25"/>
+								<leftPen lineWidth="0.25"/>
+								<bottomPen lineWidth="0.25"/>
+								<rightPen lineWidth="0.25"/>
+							</box>
+						</frame>
+						<frame>
+							<reportElement x="0" y="0" width="68" height="14"/>
+							<frame>
+								<reportElement x="0" y="0" width="68" height="14"/>
+								<box>
+									<pen lineWidth="0.25"/>
+									<topPen lineWidth="0.25"/>
+									<leftPen lineWidth="0.25"/>
+									<bottomPen lineWidth="0.25"/>
+									<rightPen lineWidth="0.25"/>
+								</box>
+							</frame>
+						</frame>
+					</frame>
+					<frame>
+						<reportElement mode="Transparent" x="332" y="0" width="64" height="14" backcolor="#CCCCFF"/>
+						<box>
+							<pen lineWidth="0.25"/>
+							<topPen lineWidth="0.25"/>
+							<leftPen lineWidth="0.25"/>
+							<bottomPen lineWidth="0.25"/>
+							<rightPen lineWidth="0.25"/>
+						</box>
+						<textField isStretchWithOverflow="true" pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+							<reportElement x="0" y="0" width="60" height="14"/>
+							<box leftPadding="0" rightPadding="3"/>
+							<textElement textAlignment="Right" verticalAlignment="Bottom">
+								<font size="8"/>
+							</textElement>
+							<textFieldExpression class="java.lang.Float"><![CDATA[$V{Montant_1}]]></textFieldExpression>
+						</textField>
+					</frame>
+					<frame>
+						<reportElement mode="Transparent" x="435" y="0" width="64" height="14" backcolor="#CCCCFF"/>
+						<box>
+							<pen lineWidth="0.25"/>
+							<topPen lineWidth="0.25"/>
+							<leftPen lineWidth="0.25"/>
+							<bottomPen lineWidth="0.25"/>
+							<rightPen lineWidth="0.25"/>
+						</box>
+						<textField pattern="#,##0.00;-#,##0.00">
+							<reportElement x="2" y="0" width="58" height="14"/>
+							<textElement textAlignment="Right" verticalAlignment="Middle">
+								<font size="8"/>
+							</textElement>
+							<textFieldExpression class="java.lang.Float"><![CDATA[$V{Marge_prod}]]></textFieldExpression>
+						</textField>
+					</frame>
+				</frame>
+				<frame>
+					<reportElement mode="Transparent" x="499" y="0" width="55" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+					<frame>
+						<reportElement mode="Transparent" x="0" y="0" width="55" height="14" backcolor="#CCCCFF"/>
+						<box>
+							<pen lineWidth="0.25"/>
+							<topPen lineWidth="0.25"/>
+							<leftPen lineWidth="0.25"/>
+							<bottomPen lineWidth="0.25"/>
+							<rightPen lineWidth="0.25"/>
+						</box>
+						<textField pattern="#,##0.00 %" isBlankWhenNull="true">
+							<reportElement x="0" y="0" width="50" height="14"/>
+							<textElement textAlignment="Right" verticalAlignment="Middle">
+								<font size="8"/>
+							</textElement>
+							<textFieldExpression class="java.lang.Float"><![CDATA[$V{Marge_prod}/$V{Montant_1}]]></textFieldExpression>
+						</textField>
+					</frame>
+				</frame>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="Description">
+		<groupExpression><![CDATA[$F{Description}]]></groupExpression>
+		<groupFooter>
+			<band height="14">
+				<printWhenExpression><![CDATA[$F{Produit}==""]]></printWhenExpression>
+				<frame>
+					<reportElement mode="Transparent" x="332" y="0" width="64" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+				</frame>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement x="332" y="0" width="60" height="14"/>
+					<box leftPadding="0" rightPadding="3"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{Montant_4}]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement mode="Transparent" x="435" y="0" width="64" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+				</frame>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement x="437" y="0" width="58" height="14"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{Marge_descrip}]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement mode="Transparent" x="499" y="0" width="55" height="14" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+					<textField pattern="#,##0.00 %">
+						<reportElement x="0" y="0" width="50" height="14"/>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font size="8"/>
+						</textElement>
+						<textFieldExpression class="java.lang.Float"><![CDATA[$V{Marge_descrip}/$V{Montant_4}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<textField pattern="###0.00;-###0.00" isBlankWhenNull="true">
+					<reportElement x="393" y="0" width="38" height="14"/>
+					<box leftPadding="0" rightPadding="3"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{Discount_subtotal}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="91" y="0" width="228" height="14"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{Name-name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="4" y="0" width="64" height="14"/>
+					<box>
+						<pen lineWidth="0.0"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Bottom">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{Reference-code}]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement x="0" y="0" width="68" height="14"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+				</frame>
+				<frame>
+					<reportElement x="396" y="0" width="39" height="14"/>
+					<box>
+						<pen lineWidth="0.25"/>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+				</frame>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{title}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="435" y="6" width="80" height="14"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" /"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="515" y="6" width="40" height="14"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="38" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="128" y="18" width="159" height="20" backcolor="#CCCCFF"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="376" y="18" width="54" height="20" backcolor="#CCCCFF"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textField pattern="###0.00;-###0.00">
+					<reportElement x="0" y="0" width="54" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{Discount_total}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="430" y="18" width="74" height="20" backcolor="#CCCCFF"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement x="0" y="0" width="74" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{marge_total}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="282" y="18" width="94" height="20" backcolor="#CCCCFF"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;-#,##0.00">
+					<reportElement x="0" y="0" width="94" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{Montant_3}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="504" y="18" width="51" height="20" backcolor="#CCCCFF"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textField pattern="###0.00;-###0.00">
+					<reportElement x="16" y="0" width="34" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{marge_total_1}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<staticText>
+				<reportElement x="128" y="18" width="137" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

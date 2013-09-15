@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/report_partner_contact/__init__.py

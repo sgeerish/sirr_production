@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl_interface/etl/lib/etl_test/etl_test.py

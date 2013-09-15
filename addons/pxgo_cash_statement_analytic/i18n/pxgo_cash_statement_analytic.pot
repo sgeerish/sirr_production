@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/pxgo_cash_statement_analytic/i18n/pxgo_cash_statement_analytic.pot

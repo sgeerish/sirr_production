@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/edi/__init__.py

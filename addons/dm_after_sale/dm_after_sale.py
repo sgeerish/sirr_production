@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_after_sale/dm_after_sale.py

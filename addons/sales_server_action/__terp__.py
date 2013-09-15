@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sales_server_action/__terp__.py

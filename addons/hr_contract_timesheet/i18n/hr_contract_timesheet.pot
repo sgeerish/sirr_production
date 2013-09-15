@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_contract_timesheet/i18n/hr_contract_timesheet.pot

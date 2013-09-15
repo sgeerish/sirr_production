@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/medical_lab/wizard/__init__.py

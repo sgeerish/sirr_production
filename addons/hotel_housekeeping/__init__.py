@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hotel_housekeeping/__init__.py

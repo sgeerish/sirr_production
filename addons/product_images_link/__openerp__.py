@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_images_link/__openerp__.py

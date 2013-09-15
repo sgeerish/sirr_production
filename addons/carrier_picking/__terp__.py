@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/carrier_picking/__terp__.py

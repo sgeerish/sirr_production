@@ -1,0 +1,378 @@
+<?xml version="1.0" ?>
+<openerp>
+        <data>
+
+
+
+<!-- Perinatal -->
+
+	<record model="ir.ui.view" id="medical_perinatal_view">
+		<field name="name">Perinatal</field>
+		<field name="model">medical.perinatal</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Perinatal Info">
+			<notebook>
+			<page string="Perinatal">
+
+				<group>
+					<group string="Main">
+						<field name="admission_date"></field>
+						<field name="dismissed"></field>
+						<field name="name"></field>
+						<field name="gravida_number"></field>
+					</group>
+					<group string="Gestational period (weeks / days)">
+						<field name="gestational_weeks" nolabel="1" ></field>
+						<field name="gestational_days" nolabel="1" ></field>
+						<field name="prenatal_evaluations"></field>
+						<field name="abortion"></field>
+					</group>
+				</group>
+				<newline/>
+				<group string="Monitoring">
+					<field name="monitoring" nolabel="1" widget="one2many_list"></field>
+				</group>
+				<newline/>
+				<group>
+					<group string="Labor">				
+						<group>
+							<field name="start_labor_mode"></field>
+							<field name="fetus_presentation"></field>
+						</group>
+						<newline/>
+						<group colspan="4" string="Medication and notes">
+							<field name="medication" nolabel="1"></field>
+							<field name="notes" nolabel="1"></field>
+						</group>
+						
+						<group string="Misc">
+							<field name="placenta_incomplete"></field>
+							<field name="placenta_retained"></field>
+							<field name="episiotomy"></field>
+							<field name="vaginal_tearing"></field>
+							<field name="forceps"></field>
+						</group>
+
+					</group>
+				</group>
+				<newline/>
+				<group string="Deceased">
+					<field name="died_at_delivery"></field>									
+					<field name="died_at_the_hospital"></field>									
+					<field name="died_being_transferred"></field>									
+				</group>
+			</page>
+
+			<page string="Newborn">
+				<field name="newborn" nolabel="1" widget="one2many_list"></field>
+			</page>
+			<page string="Puerperium">
+				<field name="puerperium_monitor" nolabel="1" widget="one2many_list"></field>
+			</page>	
+			</notebook>
+
+			</form>
+		</field>
+	</record>
+
+
+
+	<record model="ir.ui.view" id="medical_perinatal_tree">
+		<field name="name">Perinatal info</field>
+		<field name="model">medical.perinatal</field>
+		<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string='Perinatal Information'>
+					<field name="name"></field>
+					<field name="gravida_number"></field>
+					<field name="admission_date"></field>
+					<field name="gestational_weeks"></field>
+				</tree>
+			</field>
+	</record>
+
+
+
+
+
+
+<!-- Puerperium -->
+
+
+	<record model="ir.ui.view" id="medical_puerperium_monitor_view">
+		<field name="name">Puerperium Monitor</field>
+		<field name="model">medical.puerperium.monitor</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Puerperium Monitor">
+				<group colspan="4" string="Main">
+					<field name="date"></field>
+					<newline/>
+					<field name="systolic"></field>
+					<field name="diastolic"></field>
+					<field name="frequency"></field>
+					<newline/>
+					<field name="temperature"></field>
+					<field name="uterus_involution"></field>
+					<newline/>
+				</group>
+				<newline/>
+				<group colspan="4" string="Lochia">
+					<field name="lochia_amount"></field>
+					<field name="lochia_color"></field>
+					<field name="lochia_odor"></field>
+					<newline/>
+				</group>
+			</form>
+		</field>
+	</record>
+
+
+
+
+	<record model="ir.ui.view" id="medical_puerperium_monitor_tree">
+		<field name="name">Puerperium Monitor</field>
+		<field name="model">medical.puerperium.monitor</field>
+		<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string='Puerperium Monitor'>
+					<field name="date"></field>
+					<field name="systolic"></field>
+					<field name="diastolic"></field>
+					<field name="frequency"></field>
+					<field name="temperature"></field>
+					<field name="uterus_involution"></field>
+					<field name="lochia_amount"></field>
+					<field name="lochia_color"></field>
+					<field name="lochia_odor"></field>
+				</tree>
+			</field>
+	</record>
+
+
+
+
+
+
+<!-- Perinatal Monitoring -->
+
+	<record model="ir.ui.view" id="medical_perinatal_monitor_view">
+		<field name="name">Perinatal Monitor</field>
+		<field name="model">medical.perinatal.monitor</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Perinatal Monitor">
+				<group colspan="4" string="Mother">
+					<field name="date"></field>
+					<newline/>
+					<field name="systolic"></field>
+					<field name="diastolic"></field>
+					<field name="frequency"></field>
+					<newline/>
+					<field name="contractions"></field>
+					<field name="dilation"></field>
+					<field name="fundal_height"></field>
+					<newline/>
+				</group>
+				<newline/>
+				<group colspan="4" string="Fetus">
+					<field name="fetus_position"></field>
+					<field name="f_frequency"></field>
+					<newline/>
+				</group>
+				<newline/>
+				<group colspan="4" string="Complications">
+					<field name="bleeding"></field>									
+					<field name="meconium"></field>									
+				</group>
+				<newline/>
+			</form>
+		</field>
+	</record>
+
+
+
+
+	<record model="ir.ui.view" id="medical_perinatal_monitor_tree">
+		<field name="name">Perinatal Monitor</field>
+		<field name="model">medical.perinatal.monitor</field>
+		<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string='Perinatal Monitor'>
+					<field name="date"></field>
+					<field name="systolic"></field>
+					<field name="diastolic"></field>
+					<field name="frequency"></field>
+					<field name="dilation"></field>
+					<field name="fetus_position"></field>
+					<field name="f_frequency"></field>
+					<field name="bleeding"></field>
+					<field name="meconium"></field>
+				</tree>
+			</field>
+	</record>
+
+
+<!-- Newborn -->
+
+	<record model="ir.ui.view" id="medical_newborn_view">
+		<field name="name">Newborn</field>
+		<field name="model">medical.newborn</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Newborn Info">
+			<notebook>
+				<page string="Main">
+				<group string="Main">
+					<group>
+						<field name="name"></field>
+						<field name="sex"></field>
+						<field name="birth_date"></field>
+						<field name="dismissed"></field>
+						<field name="code"></field>
+						<field name="length"></field>
+						<field name="weight"></field>
+						<field name="cephalic_perimeter"></field>
+						<field name="meconium"></field>
+						<field name="responsible"></field>
+					</group>	
+					<group>
+						<field name="photo" nolabel="1" widget="image"/>
+					</group>
+
+				</group>
+				<newline/>
+				<group string="APGAR">
+					<field name="apgar1"></field>
+					<field name="apgar5"></field>
+				</group>
+				<newline/>
+				<group>
+					<group string="Reanimation">
+						<field name="reanimation_stimulation"></field>
+						<field name="reanimation_aspiration"></field>
+						<field name="reanimation_intubation"></field>
+						<field name="reanimation_mask"></field>
+						<field name="reanimation_oxygen"></field>
+					</group>
+					<group string="Tests">
+						<field name="test_vdrl"></field>
+						<field name="test_toxo"></field>
+						<field name="test_chagas"></field>
+						<field name="test_billirubin"></field>
+						<field name="test_audition"></field>
+						<field name="test_metabolic"></field>
+					</group>
+				</group>	
+				<newline/>
+				<group string="Congenital diseases">
+					<field name="congenital_diseases" nolabel="1" widget="one2many_list"></field>
+				</group>
+				<newline/>
+				<group string="Medications">
+					<field name="medication" nolabel="1"></field>
+				</group>
+								
+				</page>	
+				<page string="Other">	
+					<group colspan="4" string="Notes">
+						<field name="notes" nolabel="1"></field>
+					</group>
+					<newline/>
+					<group string="Deceased">						
+																			
+						<group >
+							<field name="bd"></field>
+							<field name="died_at_delivery"></field>
+							<field name="died_at_the_hospital"></field>
+							<field name="died_being_transferred"></field>
+							<field name="tod"></field>
+							<field name="cod"></field>
+
+						</group>
+					</group>
+				</page>
+			</notebook>
+			</form>
+		</field>
+	</record>
+
+
+
+
+
+	<record model="ir.ui.view" id="medical_newborn_tree">
+		<field name="name">Newborn info</field>
+		<field name="model">medical.newborn</field>
+		<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string='Newborn Information'>
+					<field name="birth_date"></field>
+					<field name="code"></field>
+					<field name="name"></field>
+					<field name="sex"></field>
+					<field name="length"></field>
+					<field name="weight"></field>
+				</tree>
+			</field>
+	</record>
+
+
+
+
+<!-- Include the Gynecological and Obstetric pages into the Patient History -->
+
+		<record model="ir.ui.view" id="medical_patient_view">
+			<field name="name">Patient</field>
+			<field name="model">medical.patient</field>
+                        <field name="inherit_id" ref="medical.medical_patient_view" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<notebook>
+				        <page string="Gyneco / Obs" attrs="{'invisible':[('sex','=','m')]}">
+						<notebook>
+							<page string="Gyneco"> 						
+								<group colspan="2" string="General">
+									<field name="fertile"></field>
+									<field name="currently_pregnant"></field>
+									<field name="menarche"></field>
+									<field name="menopausal"></field>
+									<field name="menopause"></field>
+								</group>
+								<group colspan="2" string="Prevention and Screening">
+									<field name="breast_self_examination"></field>
+									<newline/>
+									<field name="mammography"></field>
+									<field name="mammography_last"></field>
+									<field name="pap_test"></field>
+									<field name="pap_test_last"></field>
+									<field name="colposcopy"></field>
+									<field name="colposcopy_last"></field>
+								
+								</group>
+							</page>
+							<page string="Obstetrics">
+								<group colspan="2" string="Obstetric">
+									<field name="gpa"></field>
+									<field name="gravida"></field>
+									<field name="full_term"></field>
+									<field name="born_alive"></field>
+									<field name="deaths_1st_week"></field>
+									<field name="premature"></field>
+									<field name="deaths_2nd_week"></field>
+									<field name="abortions"></field>
+								</group>
+								<group colspan="2" string="Perinatal">
+									<field name="perinatal" colspan="4" nolabel="1" widget="one2many_list"/>
+								</group>
+							</page>
+						</notebook>
+				        </page>
+				</notebook>
+
+			</field>
+		</record>
+	</data>
+</openerp>
+

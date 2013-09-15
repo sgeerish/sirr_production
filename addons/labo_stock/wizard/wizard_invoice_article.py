@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/labo_stock/wizard/wizard_invoice_article.py

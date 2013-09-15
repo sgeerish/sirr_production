@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/clock_reader/test/server_f5.py

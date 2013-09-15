@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/discount_campaign/discount_campaign.py

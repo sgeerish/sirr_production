@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training/migrations/0.2/post-01-fill_purchase_order_contact.py

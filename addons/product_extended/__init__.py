@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_extended/__init__.py

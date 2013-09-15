@@ -1,0 +1,17 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_external_reference","external.reference","model_external_reference","base.group_user",1,1,1,1
+"access_tr_presta_zone","tr.presta.zone","model_tr_presta_zone","base.group_user",1,1,1,1
+"access_prestashop_lang","prestashop.lang","model_prestashop_lang","base.group_extended",1,1,1,1
+"access_prestashop_tag","prestashop.tag","model_prestashop_tag","base.group_user",1,1,1,1
+"access_product_options","product.options","model_product_options","base.group_user",1,1,1,1
+"access_product_options_value","product.options.value","model_product_options_value","base.group_user",1,1,1,1
+"access_product_features","product.features","model_product_features","base.group_user",1,1,1,1
+"access_product_feature_values","product.feature.values","model_product_feature_values","base.group_user",1,1,1,1
+"access_delivery_handlings","delivery_handlings","model_delivery_handlings","base.group_user",1,1,1,1
+"access_sale_order_state","sale.order.state","model_sale_order_state","base.group_user",1,1,1,1
+"access_image_image","image.image","model_image_image","base.group_user",1,1,1,1
+"access_image_types","image.types","model_image_types","base.group_user",1,1,1,1
+"access_product_combination","product.combination","model_product_combination","base.group_user",1,1,1,1
+"access_tax_rule_group","tax.rule.group","model_tax_rule_group","base.group_user",1,1,1,1
+"access_tax_rule","tax.rules","model_tax_rules","base.group_user",1,1,1,1
+"access_product_combination_lines","product.combination.lines","model_product_combination_lines","base.group_user",1,1,1,1

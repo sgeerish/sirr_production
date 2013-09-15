@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sale_forecast/wizard/sale_forecast_wizard.py

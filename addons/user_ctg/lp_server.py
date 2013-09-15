@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/user_ctg/lp_server.py

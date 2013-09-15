@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/jasper_reports/java/lib/update-jasper-reports.sh

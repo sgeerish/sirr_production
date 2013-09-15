@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/crm_livechat/crm-lc/crm_lc.egg-info/dependency_links.txt

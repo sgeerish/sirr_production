@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+	<!--
+	     Verifico que esta bien asignado el turno para una asistencia de entrada a primera hora.
+	     Esta verificación se realiza un día martes. En el medio de los turnos asignados.
+	     -->
+	<!---->
+	<record id="test_attendance_1_1" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_1"/>
+		<field name="name">2001-02-01 05:54:01</field>
+		<field name="action">sign_in</field>
+	</record>
+        <assert id="test_attendance_1_1" model="hr.attendance" string="Test attendance 1_1 is now checked">
+		<test expr="date">2001-02-01 00:00:00</test>
+		<test expr="datetime">2001-02-01 05:54:01</test>
+		<test expr="turn_date">2001-02-01 00:00:00</test>
+		<test expr="turn_start">2001-02-01 06:00:00</test>
+		<test expr="turn_end">2001-02-01 18:00:00</test>
+        </assert>
+
+	<!---->
+	<record id="test_attendance_1_2" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_1"/>
+		<field name="name">2001-02-01 18:54:01</field>
+		<field name="action">sign_out</field>
+	</record>
+        <assert id="test_attendance_1_2" model="hr.attendance" string="Test attendance 1_2 is now checked">
+		<test expr="date">2001-02-01 00:00:00</test>
+		<test expr="datetime">2001-02-01 18:54:01</test>
+		<test expr="turn_date">2001-02-01 00:00:00</test>
+		<test expr="turn_start">2001-02-01 06:00:00</test>
+		<test expr="turn_end">2001-02-01 18:00:00</test>
+        </assert>
+    </data>
+</openerp>
+

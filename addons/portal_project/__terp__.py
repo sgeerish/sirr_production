@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/portal_project/__terp__.py

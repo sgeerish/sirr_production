@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+	<!-- Read Clock -->
+	<wizard id="read_clock"
+		model="clock_reader.clock"
+		name="clock_reader.read_clock"
+		keyword="client_action_multi"
+		string="Read clocks" />
+	<menuitem action="read_clock"
+		id="menu_clock_reader"
+		parent="hr_attendance.menu_hr_attendance"
+		type="wizard"
+		groups="group_clock_reader_user"/>
+	<!-- Registration quality report -->
+	<wizard id="wizard_registration_quality_report"
+		model="hr.attendance"
+		name="clock_reader.registration_quality_report"
+		string="Registration quality report" />
+	<menuitem action="wizard_registration_quality_report"
+		id="menu_registration_quality_report"
+		parent="hr.menu_hr_reporting"
+		type="wizard"
+		groups="group_clock_reader_user"/>
+     </data>
+</openerp>
+

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_cash_discount/__terp__.py

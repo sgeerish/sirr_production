@@ -1,0 +1,107 @@
+# -*- coding: utf-8 -*-
+##############################################################################
+#
+#    OpenERP, Open Source Management Solution
+#    Copyright (C) 2004-2010 Tiny SPRL (<http://tiny.be>).
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+import time
+import datetime
+from mx import DateTime
+from report import report_sxw
+import pooler
+
+class journal(report_sxw.rml_parse):
+    def __init__(self, cr, uid, name, context):
+        super(journal, self).__init__(cr, uid, name, context=context)
+        self.localcontext.update( {
+            'time': time,
+            'getLines': self._lines_get,
+            'getLines2':self._lines_get2,
+            'getLines3':self._lines_get3,
+            'getLines4':self._lines_get4,
+            'getReglement':self._get_reg,
+        })
+        self.context = context
+
+    def _lines_get(self, statement):
+        statement_obj = pooler.get_pool(self.cr.dbname).get('account.bank.statement')
+        journal_obj = pooler.get_pool(self.cr.dbname).get('account.journal')
+        moveline_obj = pooler.get_pool(self.cr.dbname).get('account.move.line')        
+        journal=statement.journal_id
+        st_date=statement.date
+        movelines = moveline_obj.search(self.cr, self.uid,
+                [('journal_id', '=', journal.id),('account_id.user_type.code','in',['receivable','payable']),('date','=',st_date),('state','not in',['cancel','draft'])])
+        # print movelines
+        movelines = moveline_obj.browse(self.cr, self.uid, movelines)
+        return movelines
+    
+    def _get_reg(self,voucher_line):
+        voucher_obj = pooler.get_pool(self.cr.dbname).get('account.voucher')        
+        vouchers=voucher_obj.browse(self.cr,self.uid,voucher_line)
+        amount=0
+        for line in vouchers.line_cr_ids:
+            amount+=line.amount
+        for line in vouchers.line_dr_ids:
+            amount-=line.amount        
+        return amount
+
+    def _lines_get3(self, statement):
+        statement_obj = pooler.get_pool(self.cr.dbname).get('account.bank.statement')
+        journal_obj = pooler.get_pool(self.cr.dbname).get('account.journal')
+        moveline_obj = pooler.get_pool(self.cr.dbname).get('account.move.line')        
+        voucher_obj = pooler.get_pool(self.cr.dbname).get('account.voucher')        
+        journal=statement.journal_id
+        st_date=statement.date
+        vouchers = voucher_obj.search(self.cr, self.uid,
+                [('journal_id', '=', journal.id),('date','=',st_date),('state','not in',['cancel','draft'])])
+        # print movelines
+        vouchers.reverse()
+        vouchers = voucher_obj.browse(self.cr, self.uid, vouchers)
+        return vouchers
+        
+    def _lines_get4(self, statement):
+        statement_obj = pooler.get_pool(self.cr.dbname).get('account.bank.statement')
+        journal_obj = pooler.get_pool(self.cr.dbname).get('account.journal')
+        moveline_obj = pooler.get_pool(self.cr.dbname).get('account.move.line')        
+        voucher_obj = pooler.get_pool(self.cr.dbname).get('account.voucher')        
+        journal=statement.x_journal_id
+        st_date=statement.date
+        vouchers = voucher_obj.search(self.cr, self.uid,
+                [('journal_id', '=', journal.id),('date','=',st_date),('state','not in',['cancel','draft'])])
+        # print movelines
+        vouchers.reverse()
+        vouchers = voucher_obj.browse(self.cr, self.uid, vouchers)
+        return vouchers
+        
+    def _lines_get2(self, statement):
+        statement_obj = pooler.get_pool(self.cr.dbname).get('account.bank.statement')
+        journal_obj = pooler.get_pool(self.cr.dbname).get('account.journal')
+        moveline_obj = pooler.get_pool(self.cr.dbname).get('account.move.line')        
+        journal=statement.journal_id
+        st_date=statement.date
+        movelines = moveline_obj.search(self.cr, self.uid,[('account_id','=',journal.default_debit_account_id.id),('date','<=',st_date),('state','=','valid')])
+        movelines = moveline_obj.browse(self.cr, self.uid, movelines)
+        return movelines
+        
+report_sxw.report_sxw('report.account.bank.statement.caisse', 'account.bank.statement',
+        'addons/account/report/account_print_overdue.rml', parser=journal)
+        
+report_sxw.report_sxw('report.account.bank.statement.chq', 'account.bank.statement',
+        'addons/account/report/account_print_overdue.rml', parser=journal)
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+

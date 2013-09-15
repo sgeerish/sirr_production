@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+    <record id="view_account_fixed_assets_close_form" model="ir.ui.view">
+      <field name="name">Close Fixed Asset</field>
+      <field name="model">account.fixed.assets.close</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+	<form string="Method Suppression">
+	  <group col="4" colspan="4" states="init" fill="0">
+	    <separator string="General information" colspan="4"/>
+	    <field name="name" colspan="4"/>
+	    <field name="whole_asset" colspan="4"/>    
+	    <separator string="Notes" colspan="4"/>
+	    <field name="note" nolabel="1" colspan="4"/>
+	    <field name="state" invisible="1"/>
+	  </group>
+	  <group colspan="4">
+	    <button icon="gtk-cancel" special="cancel" states="init" string="Cancel"/>
+	    <button icon="gtk-execute" name="act_asset_supress" states="init" string="Suppress Depreciation" type="object"/>
+	  </group>
+	</form>
+      </field>
+    </record>
+
+    <record id="action_account_fixed_assets_close" model="ir.actions.act_window">
+      <field name="name">Close</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">account.fixed.assets.close</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="view_account_fixed_assets_close_form"/>
+      <field name="target">new</field>
+    </record>
+
+	</data>
+</openerp>

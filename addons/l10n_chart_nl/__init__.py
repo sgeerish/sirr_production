@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/l10n_chart_nl/__init__.py

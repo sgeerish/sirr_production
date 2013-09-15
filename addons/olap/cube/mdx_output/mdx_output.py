@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/olap/cube/mdx_output/mdx_output.py

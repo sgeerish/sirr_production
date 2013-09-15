@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/board_restaurant/__terp__.py

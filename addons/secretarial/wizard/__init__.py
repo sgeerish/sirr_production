@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/secretarial/wizard/__init__.py

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	<!--
+	======================
+	contract
+	======================
+	-->
+	<record id="hr_aa_contract_view_form" model="ir.ui.view">
+            <field name="name">hr.mastropor.hr.contract.view.form</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="working_hours_per_day" position="replace"/>
+                    <field name="function" position="after">
+                       <field name="department_id" select="1"/>
+                       <field name="turn_id" select="1"/>
+                       <field name="working_hours_per_day" select="1"/>
+                    </field>
+                </data>
+	    </field>
+	</record>
+
+	<record id="hr_aa_employee_view_tree" model="ir.ui.view">
+            <field name="name">hr.mastropor.hr.employee.view.tree</field>
+            <field name="model">hr.employee</field>
+	    <field name="inherit_id" ref="hr.view_employee_tree"/>
+            <field name="arch" type="xml">
+                <field name="name" position="before">
+		   <field name="otherid"/>
+		</field>
+	    </field>
+	</record>
+
+	<record id="hr_aa_employee_view_form" model="ir.ui.view">
+            <field name="name">hr.mastropor.hr.employee.view.form</field>
+            <field name="model">hr.employee</field>
+	    <field name="inherit_id" ref="hr_contract.hr_hr_employee_view_form2"/>
+            <field name="arch" type="xml">
+		<data>
+		<xpath expr="//notebook/page[@string='Contracts']/field/tree/field[@name='working_hours_per_day']" position="replace"/>
+		<xpath expr="//notebook/page[@string='Contracts']/field/tree/field[@name='function']" position="after">
+			<field name="department_id" select="1"/>
+			<field name="turn_id" colspan="2" select="1"/>
+                        <field name="working_hours_per_day" select="1"/>
+		</xpath>
+
+		<xpath expr="//notebook/page[@string='Contracts']/field/form/field[@name='working_hours_per_day']" position="replace"/>
+		<xpath expr="//notebook/page[@string='Contracts']/field/form/field[@name='function']" position="replace"/>
+		<xpath expr="//notebook/page[@string='Contracts']/field/form/field[@name='name']" position="after">
+			<field name="function" select="1"/>
+			<field name="department_id" select="1"/>
+			<field name="turn_id" colspan="2" select="1"/>
+                        <field name="working_hours_per_day" select="1"/>
+		</xpath>
+		</data>
+	    </field>
+	</record>
+
+    <record id="hr_contract_action_tree" model="ir.actions.act_window">
+        <field name="name">Contracts</field>
+        <field name="res_model">hr.contract</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_hr_contract"
+        action="hr_contract_action_tree"
+        parent="hr.menu_hr_root"
+        groups="hr.group_hr_user"
+        />
+
+    </data>
+</openerp>
+
+<!--
+     vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+     -->

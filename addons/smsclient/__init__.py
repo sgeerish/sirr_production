@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/smsclient/__init__.py

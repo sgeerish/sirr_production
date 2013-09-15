@@ -1,0 +1,63 @@
+<openerp>
+  <data>
+    <record id="view_prestashop_installer" model="ir.ui.view">
+      <field name="name">prestashop.installer.view</field>
+      <field name="model">prestashop.installer</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="base.res_config_view_base"/>
+      <field name="arch" type="xml">
+        <data>
+          <form position="attributes">
+            <attribute name="string">Sale Shop Configuration</attribute>
+          </form>
+
+          <separator string="title" position="attributes">
+            <attribute name="string">Configure Your Shop Application</attribute>
+          </separator>
+          <xpath expr="//label[@string='description']"
+                 position="attributes">
+            <attribute name="string">Enhance your core Shop Application with additional functionalities.</attribute>
+          </xpath>
+          <xpath expr='//separator[@string="vsep"]' position='attributes'>
+              <attribute name='rowspan'>13</attribute>
+              <attribute name='string'></attribute>
+          </xpath>
+          <group string="res_config_contents" position="replace">
+          <group colspan="8">
+          		<field name="shop_id" required="1" colspan="8"/>
+      			<separator string="Prestashop Configuration" colspan="8"/>
+   				<group col="4" colspan="4">
+       			<field name="server_url" />
+       			<field name="server_key" />
+       			</group>
+                <group col="4" colspan="4">
+                	<field name="validate_https"/>
+                 	<field name="debug"/>
+                </group>
+       			<field name="prestashop_config_path" />
+       	        <newline/>
+           		<button string="Test Connection" type="object" name="test_connection" colspan="2" icon="gtk-network"/>
+            </group>
+            </group>
+        </data>
+      </field>
+    </record>
+
+    <record id="action_prestashop_installer" model="ir.actions.act_window">
+      <field name="name">Prestashop Application Configuration</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">prestashop.installer</field>
+      <field name="view_id" ref="view_prestashop_installer"/>
+      <field name="view_type">form</field>
+      <field name="view_mode">form</field>
+      <field name="target">new</field>
+    </record>
+
+    <record id="prestashop_installer_todo" model="ir.actions.todo">
+        <field name="action_id" ref="action_prestashop_installer"/>
+        <field name="sequence">3</field>
+        <field name="restart">always</field>
+        <field eval="[(6,0,[ref('base.group_extended')])]" name="groups_id"/>
+    </record>
+  </data>
+</openerp>

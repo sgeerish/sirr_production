@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_financial_report/wizard/wizard_print_journal_entries.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/landing_cost/__init__.py

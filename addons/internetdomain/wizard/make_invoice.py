@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/internetdomain/wizard/make_invoice.py

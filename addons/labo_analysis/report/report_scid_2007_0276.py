@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/labo_analysis/report/report_scid_2007_0276.py

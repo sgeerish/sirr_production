@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/ns_sales_reports/wizard/voucher_wizard.py

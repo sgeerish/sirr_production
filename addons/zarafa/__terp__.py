@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/zarafa/__terp__.py

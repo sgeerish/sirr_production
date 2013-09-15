@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/c2c_refresh_so_lines/i18n/sv.po

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/jasper_reports/doc/jasper_reports.rst

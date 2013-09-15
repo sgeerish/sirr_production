@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/document_webdav_old/__init__.py

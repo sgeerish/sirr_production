@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_attendance_analysis/interface.py

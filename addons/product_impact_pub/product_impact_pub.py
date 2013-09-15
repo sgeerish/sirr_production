@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_impact_pub/product_impact_pub.py

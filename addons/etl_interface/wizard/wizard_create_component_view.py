@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl_interface/wizard/wizard_create_component_view.py

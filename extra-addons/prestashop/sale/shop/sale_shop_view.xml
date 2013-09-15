@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="sale_shop_form_view_prestashop">
+        	<field name="name">sale.shop.form.prestashop</field>
+            <field name="model">sale.shop</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="sale.view_shop_form"/>
+            <field name="arch" type="xml">
+            	<xpath expr="/form/field[@name='project_id']" position="after">
+                	<field name="enable_prestashop"/>
+                    	<notebook colspan="4" attrs="{'invisible':[('enable_prestashop','==',0)]}">
+                        	<page string="Preshtashop" >
+                            	<separator string="Prestashop Configuration" colspan="4"/>
+                                <group col="4" colspan="4">
+                                    <field name="server_url" attrs="{'required':[('enable_prestashop','!=',False)]}"/>
+                                    <field name="server_key" attrs="{'required':[('enable_prestashop','!=',False)]}"/>
+                                </group>
+                                <group col="6" colspan="4">
+                                    <field name="validate_https"/>
+                                    <field name="debug"/>
+                                    <field name="verified"/>
+                                 </group>
+                                 <group col="4" colspan="4">
+                                    <field name="prestshop_version" />
+                                    <field name="prestashop_config_path" attrs="{'required':[('enable_prestashop','!=',False)]}"/>
+                                </group>
+                                <field name="categ_id"/>
+                                <group col="4" colspan="4">     
+                               		<button string="Test Connection" type="object" name="test_connection" colspan="2" icon="gtk-network"/>
+                              		<button string="Approve Connection" type="object" name="approve_shop" colspan="2" icon="gtk-ok" />
+                               </group>
+                            </page>
+                            <page string="Import/Export">
+                                <field name="last_sync_date" string="Product Sync Date" readonly="1"/>
+                                <field name="last_image_sync_date" string="Image Sync Date" readonly="1"/>
+                                <newline/>
+                                     <button string="1. Import Languages"  type="object" name="import_language" icon="terp-translate"/>
+                                     <button string="2. Import Address Configurations"  type="object" name="import_addresses_config" icon="terp-personal+"/>
+
+                                     <button string="3. Import Account Configurations"  type="object" name="import_account_config" icon="terp-account"/>
+                                     <button string="4. Import Product Categories"  type="object" name="import_product_categories" icon="gtk-indent"/>
+                                     <button string="5. Import Product Attributes"  type="object" name="import_product_attributes" icon="gtk-preferences"/>
+                                     <button string="6. Import Product"  type="object" name="import_product" icon="gtk-sort-descending"/>
+
+                                     <button string="7. Import Customers &amp; Addresses"  type="object" name="import_partner_addresses" icon="terp-personal"/>
+                                     <button string="8. Export Products"  type="object" name="export_product" icon="gtk-sort-ascending"/>
+                                     <button string="9. Import Sale Order"  type="object" name="import_sale_order" icon="terp-sale"/>
+                                     <button string="10. Update Sale Order Status"  type="object" name="import_sale_order_update" icon="terp-stage"/>
+                                     <button string="11. Import Images" type="object" name="import_images" icon="terp-stock_symbol-selection"/>
+                                     <button string="12. Export Images" type="object" name="export_images" icon="gtk-select-color"/>
+				    	 <button string="I'm busy..Please Take Care"  type="object" name="sync_all" colspan="4" icon="gtk-execute"/>
+
+                            </page>
+                            <page string="Language">
+                                <separator string="Languages" colspan="4"/>
+                                <field name="lang_ids" nolabel="1" colspan="4"/>
+                            </page>
+                            <page string="Products Info">
+                                <separator string="Products" colspan="4"/>
+                                <field name="product_ids" colspan="4" nolabel="1"/>
+                            </page>
+                	</notebook>
+            	</xpath>
+        	</field>
+        </record>
+     </data>
+</openerp>

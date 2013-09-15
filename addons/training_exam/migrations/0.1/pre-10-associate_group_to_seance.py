@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training_exam/migrations/0.1/pre-10-associate_group_to_seance.py

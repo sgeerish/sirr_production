@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/smtpclient/ir_model.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/partner_spam/wizard/wizard_spam.py

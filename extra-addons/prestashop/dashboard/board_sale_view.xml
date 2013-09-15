@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+       	<record id="view_shop_tree_presta" model="ir.ui.view">
+            <field name="name">sale.shop</field>
+            <field name="model">sale.shop</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Sales Shop">
+                    <field name="name"/>
+                    <field name="warehouse_id"/>
+                    <field name="pricelist_id"/>
+		    <button string="1. Import Languages"  type="object" name="import_language" icon="terp-translate"/>
+		     <button string="2. Import Address Configurations"  type="object" name="import_addresses_config" icon="terp-personal+"/>
+
+		     <button string="3. Import Account Configurations"  type="object" name="import_account_config" icon="terp-account"/>
+		     <button string="4. Import Product Categories"  type="object" name="import_product_categories" icon="gtk-indent"/>
+		     <button string="5. Import Product Attributes"  type="object" name="import_product_attributes" icon="gtk-preferences"/>
+		     <button string="6. Import Product"  type="object" name="import_product" icon="gtk-sort-descending"/>
+
+		     <button string="7. Import Customers &amp; Addresses"  type="object" name="import_partner_addresses" icon="terp-personal"/>
+		     <button string="8. Export Products"  type="object" name="export_product" icon="gtk-sort-ascending"/>
+		     <button string="9. Import Sale Order"  type="object" name="import_sale_order" icon="terp-sale"/>
+		     <button string="10. Update Sale Order Status"  type="object" name="import_sale_order_update" icon="terp-stage"/>
+		     <button string="11. Import Images" type="object" name="import_images" icon="terp-stock_symbol-selection"/>
+		     <button string="12. Export Images" type="object" name="export_images" icon="gtk-select-color"/>
+		     <button string="I'm busy..Please Take Care"  type="object" name="sync_all" colspan="4" icon="gtk-execute"/>
+                </tree>
+            </field>
+        </record>
+
+		<record id="action_shop_presta" model="ir.actions.act_window">
+		    <field name="name">Shop</field>
+		    <field name="res_model">sale.shop</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="domain">[('enable_prestashop','=',True)]</field>
+		    <field name="view_id" ref="view_shop_tree_presta"/>
+		</record>
+    	
+    	
+    	 <record id="product_product_tree_view_presta" model="ir.ui.view">
+            <field name="name">product.product.tree</field>
+            <field name="model">product.product</field>
+            <field name="type">tree</field>
+            <field name="inherit_id" ref="product.product_product_tree_view"/>
+            <field name="arch" type="xml">
+            <xpath expr="/tree[@string='Products']" position="replace">
+
+<tree colors="red:virtual_available&lt;0;blue:virtual_available&gt;=0 and state in ('draft', 'end', 'obsolete');black:virtual_available&gt;=0 and state not in ('draft', 'end', 'obsolete')" string="Products">
+                    <field name="default_code"/>
+                    <field name="name"/>
+                    <field name="categ_id" invisible="1"/>
+                    <field name="qty_available"/>
+                    <field name="virtual_available"/>
+                    <field name="lst_price"/>
+                    <field name="price" invisible="not context.get('pricelist',False)"/>
+                    <field name="standard_price"/>
+		    <button name="%(action_product_sync_wizard)d"  string="Sync" type="action" icon="gtk-execute"/>
+                </tree>
+           </xpath>
+            </field>
+        </record>
+        
+    	<record id="action_product_presta_dashboard" model="ir.actions.act_window">
+		    <field name="name">Products To Sync</field>
+		    <field name="res_model">product.product</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="domain">[('presta_exportable','=',True)]</field>
+		    <field name="view_id" ref="product_product_tree_view_presta"/>
+		</record>
+    	
+    	
+    	
+    <!-- Quotations -->
+    
+		<record id="view_quotations_tree" model="ir.ui.view">
+	       <field name="name">sale.quotations.tree</field>
+	       <field name="model">sale.order</field>
+	       <field name="type">tree</field>
+	       <field name="arch" type="xml">
+	           <tree string="Quotations">
+	               <field name="date_order"/>
+	               <field name="name"/>
+	               <field name="partner_id"/>
+	               <field name="user_id" />
+	               <field name="amount_untaxed" />
+	               <field name="amount_total"/>
+	               <button name="order_confirm" states="draft" string="Confirm Order" icon="gtk-apply"/>
+	               <button name="%(sale.action_view_sale_advance_payment_inv)d" string="Advance Invoice"
+                                    type="action" icon="gtk-execute" states="draft,manual" groups="base.group_extended"/>
+	               <button name="cancel" states="draft" string="Cancel Order" icon="gtk-cancel"/>
+	               <!-- <button name="%(account.account_invoices)d" string="Print Invoice" type="action" icon="gtk-print" states="draft,open,paid,proforma,sale,proforma2"/> -->
+	              <button name="%(sale.report_sale_order)d" string="Print Quotation" type="action" icon="gtk-print"/>
+	              	 
+	           </tree>
+	       </field>
+		</record>
+
+		<record id="action_sale_quotation" model="ir.actions.act_window">
+		    <field name="name">Quotations</field>
+		    <field name="res_model">sale.order</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="domain">[('state','=','draft')]</field>
+		    <field name="view_id" ref="view_quotations_tree"/>
+		</record>
+		
+		<!-- Confirmed Sale Orders -->
+		
+		<record id="view_confirmed_tree" model="ir.ui.view">
+	       <field name="name">sale.confirmed.tree</field>
+	       <field name="model">sale.order</field>
+	       <field name="type">tree</field>
+	       <field name="arch" type="xml">
+	           <tree string="Confirmed Orders">
+	               <field name="date_order"/>
+	               <field name="name"/>
+	               <field name="partner_id"/>
+	               <field name="user_id" />
+	               <field name="amount_untaxed" />
+	               <field name="amount_total"/>
+	               <button name="manual_invoice" states="manual" string="Create Final Invoice" icon="gtk-go-forward" type="object"/>
+	               <button name="%(sale.report_sale_order)d" string="Print Order" type="action" icon="gtk-print"/>
+	           </tree>
+	       </field>
+		</record>
+
+		<record id="action_sale_confirm" model="ir.actions.act_window">
+		    <field name="name">Confirmed Orders</field>
+		    <field name="res_model">sale.order</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="domain">[('state','in',('progress','manual'))]</field>
+		    <field name="view_id" ref="view_confirmed_tree"/>
+		</record>
+		
+		<!-- Confirmed Invoices -->
+		
+		<record id="view_confirmed_invoice_tree" model="ir.ui.view">
+	       <field name="name">invloice.confirmed.tree</field>
+	       <field name="model">account.invoice</field>
+	       <field name="type">tree</field>
+	       <field name="inherit_id"  ref="account.invoice_tree"/>
+	       <field name="arch" type="xml">
+	           <xpath expr="/tree/button[@name='invoice_open']" position="after">
+                   <button name="%(account.account_invoices)d" string="Print Invoice" type="action" icon="gtk-print" states="draft,open,paid,proforma,sale,proforma2"/>
+	           </xpath>
+	       </field>
+		</record>
+		
+		<record id="action_invoice_tree_confirm_invoice" model="ir.actions.act_window">
+            <field name="name">Confirmed Invoices</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,calendar,graph</field>
+            <field name="view_id" ref="account.invoice_tree"/>
+            <field name="context">{'type':'out_invoice'}</field>
+            <field name="domain">[('state','=','open'),('type','=','out_invoice')]</field>
+       
+        </record>
+        
+        <!-- Payment Lines -->
+   
+        <record id="view_confirmed_voucher_tree" model="ir.ui.view">
+	       <field name="name">account.voucher.tree</field>
+	       <field name="model">account.voucher</field>
+	       <field name="type">tree</field>
+	       <field name="inherit_id"  ref="account_voucher.view_voucher_tree"/>
+	       <field name="arch" type="xml">
+	           <xpath expr="/tree/button[@name='proforma_voucher']" position="after">
+                   <button name="%(account_voucher.report_account_voucher_print)d" string="Print Voucher" type="action" icon="gtk-print"/>
+	           </xpath>
+	       </field>
+		</record>
+        
+        <record id="action_vendor_receipt" model="ir.actions.act_window">
+            <field name="name">Customer Payment</field>
+            <field name="res_model">account.voucher</field>
+            <field name="view_type">form</field>
+            <field name="domain">[('journal_id.type', 'in', ['bank', 'cash']), ('type','=','receipt')]</field>
+            <field name="context">{'type':'receipt'}</field>
+            <field name="search_view_id" ref="account_voucher.view_voucher_filter_customer_pay"/>
+            <field name="view_id" eval="False"/>
+            <field name="target">current</field>
+            <field name="help">Sales payment allows you to register the payments you receive from your customers. In order to record a payment, you must enter the customer, the payment method (=the journal) and the payment amount. OpenERP will propose to you automatically the reconciliation of this payment with the open invoices or sales receipts.</field>
+        </record>
+        
+		<!-- Delivery Orders -->
+		
+		<record id="view_picking_out_tree1" model="ir.ui.view">
+            <field name="name">stock.picking.out.tree</field>
+            <field name="model">stock.picking</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree colors="blue:state in ('draft');grey:state in ('cancel');red:state not in ('cancel', 'done') and date &lt; current_date" string="Delivery Orders">
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="origin"/>
+                    <field name="date"/>
+                    <field name="min_date"/>
+                    <field name="invoice_state"/>
+                    <field name="state"/>
+                    <button name="button_cancel" states="assigned,confirmed,draft" string="_Cancel" icon="gtk-cancel"/>
+                    <button name="draft_force_assign" states="draft" string="Process Later" type="object" icon="gtk-ok"/>
+                    <button name="draft_validate" states="draft" string="Process Now" type="object" icon="gtk-yes"/>
+                    <button name="action_assign" states="confirmed" string="Check Availability" type="object" groups="base.group_extended" icon="gtk-find"/>
+                    <button name="force_assign" states="confirmed" string="Force Availability" type="object" icon="gtk-jump-to"/>
+                    <button name="action_process" states="assigned" string="Process" type="object" icon="gtk-go-forward"/>
+                    <button name="%(stock.act_stock_return_picking)d" string="Return Products" states="done" type="action" icon="gtk-execute"/>
+                    <button name="%(stock.action_stock_invoice_onshipping)d" string="Create Invoice" attrs="{'invisible': ['|','|',('state','&lt;&gt;','done'),('invoice_state','=','invoiced'),('invoice_state','=','none')]}"  type="action" icon="terp-gtk-go-back-rtl"/>
+                    <button name="%(delivery.report_shipping)d" string="Print Delivery Order"  type="action" icon="gtk-print"/>
+                </tree>
+            </field>
+        </record>
+		
+		<record id="action_picking_out_tree" model="ir.actions.act_window">
+            <field name="name">Delivery Orders</field>
+            <field name="res_model">stock.picking</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,calendar</field>
+            <field name="domain">[('type','=','out')]</field>
+            <field name="context">{'form_view_ref':'stock.view_picking_out_form'}</field>
+            <field name="view_id" eval="view_picking_out_tree1"/>
+        </record>
+
+		<!-- Sales By Customer -->
+		
+	    <record id="view_sales_by_cust_tree" model="ir.ui.view">
+	        <field name="name">view.sales.by.cust.tree</field>
+	        <field name="model">sale.report</field>
+	        <field name="type">tree</field>
+	        <field name="arch" type="xml">
+	            <tree string="Sales By Customer">
+	                <field name="partner_id" />
+	                <field name="product_id" />
+	                <field name="price_total" />
+	                <field name="user_id" invisible="1"/>
+	                <field name="month" invisible="1"/>
+	                <field name="uom_name" invisible="1"/>
+	                <field name="categ_id" invisible="1"/>
+	                <field name="analytic_account_id" invisible="1" groups="analytic.group_analytic_accounting"/>
+	                <field name="state" invisible="1"/>
+	                <field name="shop_id" invisible="1"/>
+	                <field name="company_id" invisible="1" groups="base.group_multi_company"/>
+	                <field name="day" invisible="1"/>
+	                <field name="year" invisible="1"/>
+	                <field name="date" invisible="1"/>
+	            </tree>
+	        </field>
+	    </record>
+		<record id="action_view_sales_by_cust" model="ir.actions.act_window">
+	        <field name="name">Sales by Customer</field>
+	        <field name="res_model">sale.report</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,graph</field>
+	        <field name="domain">[('state','in',('manual','progress','done')),('year','=', time.strftime('%Y'))]</field>
+	        <field name="context">{'search_default_order_partner_id':1,'group_by_no_leaf':0,'group_by':['partner_id', 'product_id']}</field>
+	        <field name="view_id" ref="view_sales_by_cust_tree"/>
+    </record>
+    
+    <!-- Sales By Shop -->
+    
+    <record id="view_sales_by_shop_tree" model="ir.ui.view">
+        <field name="name">view.sales.by.shop.tree</field>
+        <field name="model">sale.report</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Sales By Shop">
+                <field name="shop_id" />
+                <field name="month" invisible="1"/>
+				<field name="partner_id"/>
+                <field name="product_id" />
+                <field name="price_total" />
+                <field name="user_id" invisible="1"/>
+                <field name="uom_name" invisible="1"/>
+                <field name="categ_id" invisible="1"/>
+                <field name="analytic_account_id" invisible="1" groups="analytic.group_analytic_accounting"/>
+                <field name="state" invisible="1"/>
+                <field name="company_id" invisible="1" groups="base.group_multi_company"/>
+                <field name="day" invisible="1"/>
+                <field name="year" invisible="1"/>
+                <field name="date" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+	<record id="action_view_sales_by_shop" model="ir.actions.act_window">
+        <field name="name">Sales by Shop</field>
+        <field name="res_model">sale.report</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,graph</field>
+        <field name="domain">[('state','in',('manual','progress','done')),('year','=', time.strftime('%Y'))]</field>
+        <field name="context">{'search_default_order_shop_id':1,'group_by_no_leaf':0,'group_by':['shop_id', 'partner_id','product_id']}</field>
+        <field name="view_id" ref="view_sales_by_shop_tree"/>
+   </record>
+   
+   <!-- Sales By Product -->
+   
+    <record id="view_sales_by_product_tree" model="ir.ui.view">
+        <field name="name">view.sales.by.product.tree</field>
+        <field name="model">sale.report</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Sales By Product">
+                <field name="product_id" />
+                <field name="month" invisible="1"/>
+				<field name="partner_id"/>
+                <field name="shop_id" invisible="1"/>
+                <field name="price_total" />
+                <field name="user_id" invisible="1"/>
+                <field name="uom_name" invisible="1"/>
+                <field name="categ_id" invisible="1"/>
+                <field name="analytic_account_id" invisible="1" groups="analytic.group_analytic_accounting"/>
+                <field name="state" invisible="1"/>
+                <field name="company_id" invisible="1" groups="base.group_multi_company"/>
+                <field name="day" invisible="1"/>
+                <field name="year" invisible="1"/>
+                <field name="date" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+	<record id="action_view_sales_by_product" model="ir.actions.act_window">
+        <field name="name">Sales by Product</field>
+        <field name="res_model">sale.report</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,graph</field>
+        <field name="domain">[('state','in',('manual','progress','done')),('year','=', time.strftime('%Y'))]</field>
+        <field name="context">{'search_default_order_product_id':1,'group_by_no_leaf':0,'group_by':['product_id','partner_id']}</field>
+        <field name="view_id" ref="view_sales_by_product_tree"/>
+   </record>
+   
+    
+        <record id="board_note_sale_type" model="board.note.type">
+            <field name="name">Sales</field>
+        </record>
+
+        <record id="board_sales_form" model="ir.ui.view">
+            <field name="name">board.sales.form</field>
+            <field name="model">board.board</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Sales Dashboard">
+                    <hpaned position="100">
+                        <child1>
+                        	<action colspan="4" name="%(action_shop_presta)d" string="Webshop"/>
+                        	<action name="%(action_sale_confirm)d" string="Confirmed Orders"/>
+                        	<action name="%(action_sale_quotation)d" string="Quotations"/>
+                        	<action name="%(account.action_invoice_tree_pending_invoice)d" string="Draft Invoices"/>
+                        	<action name="%(account_voucher.action_vendor_receipt)d" string="Customer Payment"/>
+                        	<action name="%(action_product_presta_dashboard)d" string="Products To Sync"/>
+                        	<action name="%(sale.action_sales_by_partner)d" string="Sales per Customer in last 90 days"/>
+                        </child1>
+                        <child2>
+                        	<action name="%(action_invoice_tree_confirm_invoice)d" string="Confirmed Invoices"/>
+                        	<action name="%(action_picking_out_tree)d" string="Delivery Orders"/>
+                        	<action name="%(sale.action_view_sales_by_month)d" string="Sales per Month"/>
+                        	<action name="%(action_view_sales_by_cust)d" string="Sales per Customer"/>
+                        	<action name="%(action_view_sales_by_product)d" string="Sales per Product"/>
+                            <action name="%(action_view_sales_by_shop)d" string="Sales per Shop"/>
+                        	<action name="%(sale.action_sales_product_total_price)d" string="Sales by Product's Category in last 90 days"/>
+                        </child2>
+                    </hpaned>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_board_sales" model="ir.actions.act_window">
+            <field name="name">Prestashop Dashboard</field>
+            <field name="res_model">board.board</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="board_sales_form"/>
+        </record>
+
+        <menuitem action="open_board_sales" icon="terp-graph" id="menu_board_sales" parent="board.menu_dasboard" sequence="3"/>
+    </data>
+</openerp>

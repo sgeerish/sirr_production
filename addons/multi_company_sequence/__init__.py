@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/multi_company_sequence/__init__.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/md_hr_course/i18n/fr_BE.po

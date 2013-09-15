@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl/specs/menus/list_component20090112.txt

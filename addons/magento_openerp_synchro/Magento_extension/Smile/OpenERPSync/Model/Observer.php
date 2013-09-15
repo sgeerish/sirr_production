@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/magento_openerp_synchro/Magento_extension/Smile/OpenERPSync/Model/Observer.php

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/electronic_report_intrastat/__init__.py

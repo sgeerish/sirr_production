@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/esale_joomla/__init__.py

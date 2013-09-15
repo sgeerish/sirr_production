@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_invoice_india/i18n/account_invoice_india.pot

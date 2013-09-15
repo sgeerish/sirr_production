@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/medical_gyneco/__init__.py

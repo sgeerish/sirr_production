@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/radiotv/report/broadcast_compact_report.py

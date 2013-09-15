@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm/wizard/dm_so_after_sale_action.py

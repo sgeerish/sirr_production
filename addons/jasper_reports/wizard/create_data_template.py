@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/jasper_reports/wizard/create_data_template.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/md_hr_contract/__terp__.py

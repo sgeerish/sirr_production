@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training_exam/migrations/0.3/post-10-add-id-to-some-tables.py

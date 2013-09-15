@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    	<record id="action_order_line_tree_presta" model="ir.actions.act_window">
+            <field name="name">Sale Order Lines</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order.line</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="sale.view_order_line_form2"/>
+    	</record>
+        
+        
+    <!-- PRESTASHOP SALE ORDER STATES VIEWS -->
+    
+    	<record id="prestashop_sale_order_state_tree" model="ir.ui.view">
+        	<field name="name">sale.order.state.tree</field>
+        	<field name="model">sale.order.state</field>
+        	<field name="type">tree</field>
+        	<field name="arch" type="xml">
+           		<tree string="Order States">
+                	<field name="name" select="1"/>
+                	<field name="template" select="1"/>
+                	<field name="send_mail" select="1"/>
+                	<field name="logable" select="1"/>
+                	<field name="invoice" select="1"/>
+                	<field name="delivery" select="1"/>
+            	</tree>
+        	</field>
+    	</record>
+
+		<record id="prestashop_sale_order_state_form" model="ir.ui.view">
+    		<field name="name">sale.order.state.form</field>
+        	<field name="model">sale.order.state</field>
+        	<field name="type">form</field>
+       		<field name="arch" type="xml">
+            	<form string="Order States">
+                	<field name="name" select="1" required="1"/>
+                	<field name="template" select="1" required="1"/>
+                	<field name="send_mail" select="1"/>
+                	<field name="logable" select="1"/>
+                	<field name="invoice" select="1"/>
+                	<field name="delivery" select="1"/>
+            	</form>
+        	</field>
+    	</record>
+
+   
+    	<record id="prestashop_sale_order_state_act_window" model="ir.actions.act_window">
+        	<field name="name">Order States</field>
+        	<field name="type">ir.actions.act_window</field>
+       		<field name="res_model">sale.order.state</field>
+        	<field name="view_type">form</field>
+   		</record>
+ 
+    	<record id="view_order_form_presta" model="ir.ui.view">
+            <field name="name">sale.order.form.presta</field>
+            <field name="model">sale.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                	<xpath expr="/form/notebook/page[@string='History']" position="after">
+                    	<page string="Prestashop">
+	                        <field name="presta_exported"/>
+	                        <field name="invoice_number" />
+	                        <field name="delivery_number" />
+	                        <field name="secure_key" />
+	                        <field name="payment" />
+	                        <field name="gift_message" />
+	                        <field name="shipping_number" />
+	                        <field name="invoice_date" />
+	                        <field name="delivery_date" />
+	                        <field name="conversion_rate" />
+	                        <field name="current_state_id" />
+	                        <field name="total_discounts" />
+	                        <field name="total_paid" />
+	                        <field name="total_paid_real" />
+	                        <field name="total_products" />
+	                        <field name="total_products_wt" />
+	                        <field name="total_shipping" />
+	                        <field name="carrier_tax_rate" />
+	                        <field name="total_wrapping" />
+	                        <field name="recyclable"/>
+	                        <field name="gift"/>
+                    	</page>
+                	</xpath>
+            </field>
+ 		</record>
+    </data>
+</openerp>

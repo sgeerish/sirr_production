@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/mrp_production_report/report/__init__.py

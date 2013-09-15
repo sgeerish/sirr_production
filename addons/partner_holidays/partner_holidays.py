@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/partner_holidays/partner_holidays.py

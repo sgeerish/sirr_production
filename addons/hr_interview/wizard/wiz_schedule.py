@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_interview/wizard/wiz_schedule.py

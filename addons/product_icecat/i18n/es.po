@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_icecat/i18n/es.po

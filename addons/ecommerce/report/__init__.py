@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/ecommerce/report/__init__.py

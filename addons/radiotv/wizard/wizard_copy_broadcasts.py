@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/radiotv/wizard/wizard_copy_broadcasts.py

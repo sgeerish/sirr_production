@@ -1,0 +1,6552 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Medical\n"
+"Report-Msgid-Bugs-To: https://sourceforge.net/apps/mantisbt/medical\n"
+"POT-Creation-Date: 2010-12-05 20:18:28+0000\n"
+"PO-Revision-Date: 2011-02-05 17:30+0000\n"
+"Last-Translator: mangosteen <phong.nguyen_thanh@yahoo.com>\n"
+"Language-Team: Vietnamese <None>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. module: medical
+#: model:product.template,name:medical.product_190_product_template
+msgid "lithium carbonate"
+msgstr "lithium carbonate"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_reporting_menu
+msgid "Reporting"
+msgstr "Báo cáo"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.LEF
+msgid "Leaf"
+msgstr "Phiến mỏng"
+
+#. module: medical
+#: help:medical.patient.evaluation,loc:0
+msgid "Level of Consciousness - on Glasgow Coma Scale :  1=coma - 15=normal"
+msgstr "Mức độ ý thức (theo thang hôn mê Glasgow): 1 = hôn mê - 15 = bình thường"
+
+#. module: medical
+#: model:product.template,name:medical.product_324_product_template
+msgid "tamoxifen"
+msgstr "tamoxifen"
+
+#. module: medical
+#: model:product.template,name:medical.product_136_product_template
+msgid "flucytosine"
+msgstr "flucytosine"
+
+#. module: medical
+#: model:product.template,name:medical.product_169_product_template
+msgid "intraperitoneal dialysis solution (of appropriate composition)"
+msgstr "giải pháp lọc máu nội màng bụng (trong thành phần phù hợp)"
+
+#. module: medical
+#: help:medical.prescription.line,short_comment:0
+msgid "Short comment on the specific drug"
+msgstr "Nhận xét ngắn về một loại thuốc cụ thể"
+
+#. module: medical
+#: view:medical.prescription.order:0
+msgid "Search Patient Prescriptions"
+msgstr "Tìm kiếm Đơn thuốc của bệnh nhân"
+
+#. module: medical
+#: model:product.template,name:medical.product_288_product_template
+#: model:product.template,name:medical.product_289_product_template
+msgid "rifampicin + isoniazid + pyrazinamide"
+msgstr "rifampicin + isoniazid + pyrazinamide"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_43
+msgid "Translingual"
+msgstr "Qua lưỡi"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Information on Diagnosis"
+msgstr "Thông tin về Chẩn đoán"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_46
+msgid "Ventimask"
+msgstr ""
+
+#. module: medical
+#: model:product.template,name:medical.product_105_product_template
+msgid "dithranol"
+msgstr "dithranol"
+
+#. module: medical
+#: model:product.template,name:medical.product_297_product_template
+msgid "senna"
+msgstr "Lá khô cây Cassia acutifolia"
+
+#. module: medical
+#: field:medical.patient.evaluation,jaundice:0
+msgid "Jaundice"
+msgstr "Bệnh vàng da"
+
+#. module: medical
+#: field:medical.medication.template,dose_unit:0
+#: field:medical.patient.medication,dose_unit:0
+#: field:medical.prescription.line,dose_unit:0
+msgid "dose unit"
+msgstr "Liều đơn vị"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "Today"
+msgstr "Hôm nay"
+
+#. module: medical
+#: field:medical.patient.evaluation,mood:0
+msgid "Mood"
+msgstr "Tâm trạng"
+
+#. module: medical
+#: model:ir.model,name:medical.model_product_product
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: medical
+#: model:product.template,name:medical.product_319_product_template
+msgid "sulfamethoxazole"
+msgstr "sulfamethoxazole"
+
+#. module: medical
+#: model:product.template,name:medical.product_264_product_template
+msgid "procainamide"
+msgstr "procainamide"
+
+#. module: medical
+#: view:medical.medicament:0 view:medical.patient:0
+#: view:medical.patient.evaluation:0 view:medical.physician:0
+msgid "Main Info"
+msgstr "Thông tin chính"
+
+#. module: medical
+#: help:res.partner,is_person:0
+msgid "Check if the partner is a person."
+msgstr "Đánh dấu nếu đối tác là một người."
+
+#. module: medical
+#: model:medical.drug.form,name:medical.ONT
+msgid "Ointment"
+msgstr "Pô mát"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PSSR
+msgid "Powder for suspension sustained release"
+msgstr "Bột cho dung dịch huyền phù duy trì phóng thích"
+
+#. module: medical
+#: model:product.template,name:medical.product_110_product_template
+msgid "efavirenz (EFV or EFZ)"
+msgstr "efavirenz (EFV or EFZ)"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.LOT
+msgid "Lotion"
+msgstr "Thuốc xức, thuốc rửa"
+
+#. module: medical
+#: view:medical.procedure:0
+msgid "Search Medical Procedures"
+msgstr "Tìm kiếm các thủ tục Y khoa"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.LIP
+msgid "Liposome"
+msgstr "Hạt mỡ"
+
+#. module: medical
+#: model:product.template,name:medical.product_153_product_template
+msgid "heparin sodium"
+msgstr "heparin sodium"
+
+#. module: medical
+#: selection:medical.medication.template,duration_period:0
+#: selection:medical.patient.medication,duration_period:0
+#: selection:medical.prescription.line,duration_period:0
+msgid "months"
+msgstr "tháng"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Stop :"
+msgstr "Dừng lại :"
+
+#. module: medical
+#: field:medical.prescription.line,quantity:0
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: medical
+#: model:product.template,name:medical.product_224_product_template
+msgid "neostigmine"
+msgstr "neostigmine"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Prescription date :"
+msgstr "Ngày kê toa:"
+
+#. module: medical
+#: field:medical.patient.evaluation,respiratory_rate:0
+msgid "Respiratory Rate"
+msgstr "Số lần động tác thở"
+
+#. module: medical
+#: model:product.template,name:medical.product_351_product_template
+msgid "zidovudine"
+msgstr "zidovudine"
+
+#. module: medical
+#: field:medical.appointment,doctor:0 field:medical.appointment,user_id:0
+#: field:medical.patient.disease,doctor:0
+#: field:medical.patient.medication,doctor:0 view:medical.physician:0
+#: field:medical.physician,name:0
+msgid "Physician"
+msgstr "Bác sĩ"
+
+#. module: medical
+#: model:product.template,name:medical.product_339_product_template
+msgid "urea"
+msgstr "urê"
+
+#. module: medical
+#: help:medical.patient.evaluation,cholesterol_total:0
+msgid "Last cholesterol reading. Can be approximative"
+msgstr "Ngày kiểm tra cholesterol lần cuối cùng. Có thể ước tính"
+
+#. module: medical
+#: model:product.template,name:medical.product_30_product_template
+msgid "atenolol"
+msgstr "atenolol"
+
+#. module: medical
+#: model:product.template,name:medical.product_139_product_template
+msgid "fluoxetine"
+msgstr "fluoxetine"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_arthralgia:0
+msgid "Arthralgia"
+msgstr "Đau khớp"
+
+#. module: medical
+#: help:medical.patient.evaluation,loc_eyes:0
+msgid "Eyes Response - Glasgow Coma Scale - 1 to 4"
+msgstr "Phản ứng mắt - Thước đo hôn mê Glasgow - 1 đến 4"
+
+#. module: medical
+#: help:medical.installer.modules,medical_gyneco:0
+msgid ""
+"This module includes :\n"
+"\n"
+"                - Gynecological Information\n"
+"\n"
+"                - Obstetric information\n"
+" \n"
+"                - Perinatal Information and monitoring\n"
+"\n"
+"                - Puerperium. "
+msgstr ""
+"Mô đun này bao gồm:\n"
+"\n"
+"                - Thông tin phụ khoa\n"
+"\n"
+"                - Thông tin sản khoa\n"
+" \n"
+"                - Thông tin chu sinh và theo dõi chu sinh\n"
+"\n"
+"                - Sinh đẻ. "
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_orthopnea:0
+msgid "Orthopnea"
+msgstr "Khó thở nằm"
+
+#. module: medical
+#: model:product.template,name:medical.product_249_product_template
+msgid "phenoxymethylpenicillin"
+msgstr "phenoxymethylpenicillin"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Mental Status"
+msgstr "Tình trạng tâm thần"
+
+#. module: medical
+#: report:patient.diseases:0 report:patient.medications:0
+#: report:patient.vaccinations:0
+msgid "Patient ID :"
+msgstr "Mã bệnh nhân:"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Mental Assessment and Impairments"
+msgstr "Mental Assessment and Impairments"
+
+#. module: medical
+#: model:product.template,name:medical.product_303_product_template
+msgid "sodium hydrogen carbonate"
+msgstr "sodium hydrogen carbonate"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_xerostomia:0
+msgid "Xerostomia"
+msgstr "Xerostomia"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_melena:0
+msgid "Melena"
+msgstr "Đại tiện máu đen"
+
+#. module: medical
+#: field:medical.patient.evaluation,derived_from:0
+msgid "Derived from Doctor"
+msgstr "Có nguồn gốc từ Bác sĩ"
+
+#. module: medical
+#: view:medical.drug.route:0
+msgid "Search Drug Administration Route"
+msgstr "Tìm kiếm các cách sử dụng thuốc"
+
+#. module: medical
+#: field:medical.medication.template,duration:0
+#: field:medical.patient.medication,duration:0
+#: field:medical.prescription.line,duration:0
+msgid "Treatment duration"
+msgstr "Thời gian chữa trị"
+
+#. module: medical
+#: field:medical.patient.evaluation,object_recognition:0
+msgid "Object Recognition"
+msgstr "Xác định đối tượng"
+
+#. module: medical
+#: model:product.template,name:medical.product_93_product_template
+msgid "deferoxamine"
+msgstr "deferoxamine"
+
+#. module: medical
+#: view:medical.dose.unit:0
+msgid "Search Medicament Dose Units"
+msgstr "Tìm kiếm các đơn vị liều lượng"
+
+#. module: medical
+#: help:res.partner,is_doctor:0
+msgid "Check if the partner is a doctor"
+msgstr "Kiểm tra xem đối tác có phải là một bác sĩ"
+
+#. module: medical
+#: model:product.template,name:medical.product_233_product_template
+msgid "norethisterone"
+msgstr "norethisterone"
+
+#. module: medical
+#: constraint:product.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "Bị lỗi! Bạn không thể tạo ra loại đệ quy."
+
+#. module: medical
+#: model:product.template,name:medical.product_13_product_template
+msgid "amikacin"
+msgstr "amikacin"
+
+#. module: medical
+#: help:medical.patient.evaluation,vocabulary:0
+msgid "Check this box if the patient lacks basic intelectual capacity, when she/he can not describe elementary objects"
+msgstr "Đánh dấu nếu bệnh nhân thiếu năng lực trí tuệ cơ bản, khi cô / anh ta không thể mô tả các đối tượng cơ bản"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Form :"
+msgstr "Dạng thuốc :"
+
+#. module: medical
+#: field:medical.patient.evaluation,ascites:0
+msgid "Ascites"
+msgstr "Cổ trướng"
+
+#. module: medical
+#: model:product.template,name:medical.product_228_product_template
+msgid "nicotinamide"
+msgstr "nicotinamide"
+
+#. module: medical
+#: model:ir.model,name:medical.model_res_partner
+msgid "Partner"
+msgstr "Đối tác"
+
+#. module: medical
+#: model:product.template,name:medical.product_95_product_template
+msgid "dextran"
+msgstr "dextran"
+
+#. module: medical
+#: field:medical.patient.disease,is_infectious:0
+msgid "Infectious Disease"
+msgstr "Bệnh truyền nhiễm"
+
+#. module: medical
+#: view:medical.occupation:0 field:medical.occupation,name:0
+msgid "Occupation"
+msgstr "Nghề nghiệp"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Tel :"
+msgstr "Điện thoại: "
+
+#. module: medical
+#: model:product.template,name:medical.product_321_product_template
+msgid "sulfasalazine"
+msgstr "sulfasalazine"
+
+#. module: medical
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Tên mô hình không hợp lệ trong định nghĩa hành động"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TAB
+msgid "Tablet"
+msgstr "Thuốc viên nén"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_8
+msgid "Immerse (Soak) Body Part "
+msgstr "Phần cơ thể bị ngâm"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_paresthesia:0
+msgid "Paresthesia"
+msgstr "Yếu liệt"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TPT
+msgid "Toothpaste"
+msgstr "Kem đánh răng"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SPCAP
+msgid "Sprinkle capsule"
+msgstr "Viên nang phóng thích chậm"
+
+#. module: medical
+#: help:medical.patient.evaluation,erithema:0
+#: help:medical.patient.evaluation,hypertonia:0
+#: help:medical.patient.evaluation,hypotonia:0
+msgid "Please also encode the correspondent disease on the patient disease history."
+msgstr "Xin vui lòng cũng mã hóa các bệnh liên quan trong lịch sử bệnh của bệnh nhân."
+
+#. module: medical
+#: model:product.template,name:medical.product_290_product_template
+msgid "ritonavir"
+msgstr "ritonavir"
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "healed"
+msgstr "lành"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SUP
+msgid "Suppository"
+msgstr "Thuốc đạn"
+
+#. module: medical
+#: selection:medical.insurance,type:0
+msgid "State"
+msgstr "Trạng thái"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TAP
+msgid "Tape"
+msgstr "Băng bằng vải"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_22
+msgid "Intrauterine "
+msgstr "Trong tử cung"
+
+#. module: medical
+#: view:medical.medication.dosage:0
+msgid "Search Medication Common Dosages"
+msgstr "Tìm kiếm các liều lượng thông dụng"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.DRE
+msgid "Dressing"
+msgstr "Băng vết thương"
+
+#. module: medical
+#: field:medical.patient.evaluation,bpm:0
+msgid "Heart Rate"
+msgstr "Nhịp tim"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_vomiting:0
+msgid "Vomiting"
+msgstr "Ói mửa"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.IMP
+msgid "Implant"
+msgstr "Cấy "
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_13
+msgid "Intradermal "
+msgstr "Nội bì"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_drug_route
+msgid "medical.drug.route"
+msgstr "medical.drug.route"
+
+#. module: medical
+#: field:medical.medicament,therapeutic_action:0
+msgid "Therapeutic effect"
+msgstr "Tác dụng trị liệu"
+
+#. module: medical
+#: field:medical.patient,rh:0
+msgid "Rh"
+msgstr "Rh"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_headache:0
+msgid "Headache"
+msgstr "Nhức đầu"
+
+#. module: medical
+#: model:product.template,name:medical.product_222_product_template
+msgid "neomycin sulfate"
+msgstr "neomycin sulfate"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GDR
+msgid "Granule for suspension delayed release"
+msgstr "Thuốc hạt cho dung dịch huyền phù phóng thích chậm"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.act_appointment_patient
+#: field:medical.appointment,patient:0 view:medical.patient:0
+#: field:medical.patient,name:0 view:medical.patient.evaluation:0
+#: field:medical.patient.medication,patient_id:0
+#: field:res.partner,is_patient:0
+msgid "Patient"
+msgstr "Bệnh nhân"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.WAF
+msgid "Wafer"
+msgstr "Bánh kẹp nhỏ"
+
+#. module: medical
+#: field:medical.drug.form,name:0 field:medical.medication.template,form:0
+#: field:medical.patient.medication,form:0
+#: field:medical.prescription.line,form:0
+msgid "Form"
+msgstr "Mẫu"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_menorrhagia:0
+msgid "Menorrhagia"
+msgstr "Chứng rong kinh"
+
+#. module: medical
+#: selection:medical.patient,rh:0
+msgid "+"
+msgstr "+"
+
+#. module: medical
+#: model:product.template,name:medical.product_213_product_template
+msgid "metoclopramide"
+msgstr "metoclopramide"
+
+#. module: medical
+#: model:product.template,name:medical.product_246_product_template
+msgid "permethrin"
+msgstr "permethrin"
+
+#. module: medical
+#: help:medical.medication.dosage,abbreviation:0
+msgid "Dosage abbreviation, such as tid in the US or tds in the UK"
+msgstr "Viết tắt liều lượng, ví dụ tid ở Mỹ hoặc tds ở Anh "
+
+#. module: medical
+#: model:product.template,name:medical.product_106_product_template
+msgid "DL‐methionine"
+msgstr "DL‐methionine"
+
+#. module: medical
+#: field:medical.patient.evaluation,heart_extra_sounds:0
+msgid "Heart Extra Sounds"
+msgstr "Tiếng tim thêm"
+
+#. module: medical
+#: field:medical.medication.template,qty:0
+#: field:medical.patient.medication,qty:0
+#: field:medical.prescription.line,qty:0
+msgid "x"
+msgstr "x"
+
+#. module: medical
+#: field:medical.patient,vaccinations:0
+msgid "Vaccinations"
+msgstr "Chủng ngừa"
+
+#. module: medical
+#: model:product.template,name:medical.product_20_product_template
+msgid "amphotericin B"
+msgstr "amphotericin B"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_conf_pathology_categories
+msgid "Categories"
+msgstr "Chủng loại"
+
+#. module: medical
+#: model:product.template,name:medical.product_298_product_template
+msgid "silver sulfadiazine"
+msgstr "sulfadiazine bạc"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_operational_area
+msgid "medical.operational_area"
+msgstr "medical.operational_area"
+
+#. module: medical
+#: field:medical.patient.disease,diagnosed_date:0
+msgid "Date of Diagnosis"
+msgstr "Ngày chẩn đoán"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_prescription_order
+msgid "prescription order"
+msgstr "để theo toa"
+
+#. module: medical
+#: help:medical.medication.dosage,name:0
+msgid "Common frequency name"
+msgstr "Tên tần số thông dụng"
+
+#. module: medical
+#: field:medical.patient.evaluation,ldl:0
+msgid "Last LDL"
+msgstr "LDL lần cuối cùng"
+
+#. module: medical
+#: constraint:product.template:0
+msgid "Error: UOS must be in a different category than the UOM"
+msgstr "Error: UOS must be in a different category than the UOM"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "My Patients"
+msgstr "Bệnh nhân của tôi"
+
+#. module: medical
+#: model:product.template,name:medical.product_282_product_template
+msgid "retinol"
+msgstr "retinol"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.BIS
+msgid "Biscuit"
+msgstr "Chưa tráng men"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Periodic control"
+msgstr "Kiểm tra định kỳ"
+
+#. module: medical
+#: model:product.template,name:medical.product_259_product_template
+msgid "potassium iodide"
+msgstr "kali iodide"
+
+#. module: medical
+#: report:patient.diseases:0 report:patient.medications:0
+#: report:patient.vaccinations:0 report:prescription.order:0
+msgid "Age :"
+msgstr "Tuổi :"
+
+#. module: medical
+#: view:medical.patient.disease:0 report:patient.diseases:0
+msgid "Infectious"
+msgstr "Truyền nhiễm"
+
+#. module: medical
+#: selection:medical.medication.template,duration_period:0
+#: selection:medical.medication.template,frequency_unit:0
+#: selection:medical.patient.medication,duration_period:0
+#: selection:medical.patient.medication,frequency_unit:0
+#: selection:medical.prescription.line,duration_period:0
+#: selection:medical.prescription.line,frequency_unit:0
+msgid "hours"
+msgstr "giờ"
+
+#. module: medical
+#: model:product.template,name:medical.product_40_product_template
+msgid "benzoic acid"
+msgstr "benzoic acid"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_medication_dosage
+msgid "Medicament Common Dosage combinations"
+msgstr "Các liều thuốc chữa bệnh kết hợp phổ biến"
+
+#. module: medical
+#: selection:medical.patient,blood_type:0
+msgid "O"
+msgstr "O"
+
+#. module: medical
+#: model:product.template,name:medical.product_124_product_template
+msgid "ethanol"
+msgstr "ethanol"
+
+#. module: medical
+#: field:medical.medication.template,duration_period:0
+#: field:medical.patient.medication,duration_period:0
+#: field:medical.prescription.line,duration_period:0
+msgid "Treatment period"
+msgstr "Giai đoạn điều trị"
+
+#. module: medical
+#: view:medical.medicament:0 view:medical.patient.medication:0
+#: view:medical.prescription.line:0
+msgid "Dosage"
+msgstr "Liều dùng"
+
+#. module: medical
+#: help:medical.patient.evaluation,dehydration:0
+msgid "Check this box if the patient show signs of dehydration. If not associated to a disease, please encode the correspondent disease on the patient disease history. For example, Volume Depletion, E86 in ICD-10 encoding"
+msgstr "Đánh dấu nếu bệnh nhân có dấu hiệu mất nước. Nếu không liên quan đến bệnh, xin hãy mã hóa các bệnh liên quan trong lịch sử bệnh của bệnh nhân. Ví dụ, Khối lượng suy giảm, E86 trong mã hóa ICD-10"
+
+#. module: medical
+#: view:medical.hospital.building:0
+msgid "Health Center Building Info"
+msgstr "Thông tin tòa nhà Trung tâm Y tế"
+
+#. module: medical
+#: model:product.template,name:medical.product_292_product_template
+msgid "rubella vaccine"
+msgstr "Thuốc chủng ngừa sởi rubella"
+
+#. module: medical
+#: model:product.template,name:medical.product_83_product_template
+msgid "condoms"
+msgstr "bao cao su"
+
+#. module: medical
+#: model:product.template,name:medical.product_21_product_template
+msgid "ampicillin"
+msgstr "ampicillin"
+
+#. module: medical
+#: help:medical.patient.evaluation,lung_adventitious_sounds:0
+msgid "Crackles, wheezes, ronchus.."
+msgstr "Tiếng thổi, khò khè, tiếng rên,v.v..."
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_cervical_pain:0
+msgid "Cervical Pain"
+msgstr "Đau cổ"
+
+#. module: medical
+#: model:product.template,name:medical.product_271_product_template
+msgid "protamine sulfate"
+msgstr "protamine sulfate"
+
+#. module: medical
+#: help:medical.hospital.ward,private:0
+msgid "Check this option for private room"
+msgstr "Đánh dấu để chọn phòng riêng"
+
+#. module: medical
+#: view:medical.medicament:0 field:medical.medicament,adverse_reaction:0
+#: field:medical.patient.medication,adverse_reaction:0
+msgid "Adverse Reactions"
+msgstr "Phản ứng phụ"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_20
+msgid "Intrasynovial "
+msgstr "Trong bao hoạt dịch"
+
+#. module: medical
+#: model:product.template,name:medical.product_128_product_template
+msgid "ethionamide"
+msgstr "ethionamide"
+
+#. module: medical
+#: view:medical.operational_sector:0
+msgid "Region Operational Sector"
+msgstr "Khu vực hoạt động"
+
+#. module: medical
+#: help:medical.medicament,presentation:0
+msgid "Packaging"
+msgstr "Đóng gói"
+
+#. module: medical
+#: field:medical.family_code,operational_sector:0
+msgid "Operational Sector"
+msgstr "Lĩnh vực hoạt động"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_metrorrhagia:0
+msgid "Metrorrhagia"
+msgstr "Xuất huyết tử cung"
+
+#. module: medical
+#: help:medical.patient.evaluation,respiratory_rate:0
+msgid "Respiratory rate expressed in breaths per minute"
+msgstr "Số lần động tác thở được thể hiện bằng số nhịp thở trong một phút"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_prescription_line
+msgid "Basic prescription object"
+msgstr "Đối tượng kê toa cơ bản"
+
+#. module: medical
+#: model:product.template,name:medical.product_118_product_template
+msgid "epinephrine (adrenaline)"
+msgstr "epinephrine (adrenaline)"
+
+#. module: medical
+#: field:medical.insurance,name:0
+msgid "Owner"
+msgstr "Chủ"
+
+#. module: medical
+#: field:medical.prescription.order,user_id:0 report:prescription.order:0
+msgid "Prescribing Doctor"
+msgstr "Bác sĩ kê toa"
+
+#. module: medical
+#: view:medical.operational_area:0
+msgid "Search Operational Area"
+msgstr "Tìm kiếm khu vực hoạt động"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_patient_action_form
+#: model:ir.ui.menu,name:medical.medical_add_patient
+msgid "New Patient"
+msgstr "Bệnh nhân mới"
+
+#. module: medical
+#: field:medical.patient.evaluation,hypotonia:0
+msgid "Hypotonia"
+msgstr "Giảm trương lực, nhược trương. Giảm huyết áp, hạ huyết áp"
+
+#. module: medical
+#: field:medical.prescription.order,prescription_line:0
+msgid "Prescription line"
+msgstr "Theo toa"
+
+#. module: medical
+#: field:medical.insurance,category:0
+msgid "Category"
+msgstr "Loại"
+
+#. module: medical
+#: model:product.template,name:medical.product_349_product_template
+msgid "yellow fever vaccine"
+msgstr "Vắc xin ngừa bệnh sốt vàng da"
+
+#. module: medical
+#: field:medical.patient.evaluation,palpebral_ptosis:0
+msgid "Palpebral Ptosis"
+msgstr "Sa mí mắt"
+
+#. module: medical
+#: view:medical.appointment:0 view:medical.patient:0
+#: field:medical.patient,user_id:0 field:medical.patient.evaluation,user_id:0
+#: report:patient.medications:0 field:res.partner,is_doctor:0
+msgid "Doctor"
+msgstr "Bác sĩ"
+
+#. module: medical
+#: model:product.template,name:medical.product_335_product_template
+msgid "trimethoprim"
+msgstr "trimethoprim"
+
+#. module: medical
+#: model:product.template,name:medical.product_257_product_template
+msgid "potassium chloride"
+msgstr "potassium chloride"
+
+#. module: medical
+#: model:product.template,name:medical.product_328_product_template
+msgid "tetanus vaccine"
+msgstr "Vắc xin ngừa uốn ván"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Pre-arraganged appointment"
+msgstr "Cuộc hẹn đặt trước"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Qty :"
+msgstr "Số lượng :"
+
+#. module: medical
+#: model:product.category,name:medical.generic
+msgid "Generics"
+msgstr ""
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_weight_change:0
+msgid "Sudden weight change"
+msgstr "Thay đổi đột ngột về trọng lượng"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PEC
+msgid "Powder enteric coated"
+msgstr "Bột tráng ruột"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_polyuria:0
+msgid "Polyuria"
+msgstr "Đa niệu"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PEF
+msgid "Powder effervescent"
+msgstr "Bột sủi"
+
+#. module: medical
+#: selection:medical.hospital.bed,bed_type:0
+msgid "Low Air Loss"
+msgstr "Mất không khí"
+
+#. module: medical
+#: field:medical.patient,evaluation_ids:0
+msgid "Evaluation"
+msgstr "Đánh giá"
+
+#. module: medical
+#: model:product.template,name:medical.product_193_product_template
+msgid "lumefantrine"
+msgstr "lumefantrine"
+
+#. module: medical
+#: field:medical.insurance,member_exp:0
+#: field:medical.vaccination,vaccine_expiration_date:0
+msgid "Expiration date"
+msgstr "Ngày hết hạn"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.COR
+msgid "Cord"
+msgstr "Dây"
+
+#. module: medical
+#: model:product.template,name:medical.product_338_product_template
+msgid "typhoid vaccine"
+msgstr "vắc xin ngừa thương hàn"
+
+#. module: medical
+#: model:product.template,name:medical.product_201_product_template
+msgid "mefloquine"
+msgstr "mefloquine"
+
+#. module: medical
+#: help:medical.speciality,code:0
+msgid "ie, ADP"
+msgstr "có nghĩa là, ADP"
+
+#. module: medical
+#: model:product.template,name:medical.product_115_product_template
+msgid "emtricitabine + tenofovir"
+msgstr "emtricitabine + tenofovir"
+
+#. module: medical
+#: view:medical.medicament:0
+msgid "Search Medicament"
+msgstr "Tìm thuốc"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_19
+msgid "Intraperitoneal "
+msgstr "Nội màng bụng"
+
+#. module: medical
+#: help:medical.patient.evaluation,hba1c:0
+msgid "Last Glycated Hb level. Can be approximative."
+msgstr "Last Glycated Hb level. Can be approximative."
+
+#. module: medical
+#: help:medical.patient.evaluation,acropachy:0
+msgid "Check if the patient shows acropachy / clubbing"
+msgstr "Kiểm tra xem bệnh nhân có bị chứng ngón tay (ngón chân) dùi trống/ngón hình chùy"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TDL
+msgid "Teat dilator"
+msgstr "Nong núm vú"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.act_patient_appointments
+#: model:ir.actions.act_window,name:medical.medical_action_form_appointment
+#: model:ir.ui.menu,name:medical.medical_appointment_menu
+#: model:ir.ui.menu,name:medical.medical_conf_appointment_add
+#: view:medical.appointment:0
+msgid "Appointments"
+msgstr "Cuộc hẹn"
+
+#. module: medical
+#: help:medical.vaccination,vaccine:0
+msgid "Vaccine Name. Make sure that the vaccine (product) has all the proper information at product level. Information such as provider, supplier code, tracking number, etc.. This information must always be present. If available, please copy / scan the vaccine leaflet and attach it to this record"
+msgstr "Tên vắc xin. Đảm bảo rằng vắc xin (sản phẩm) có tất cả thông tin thích hợp ở mức độ sản phẩm. Thông tin như nhà cung cấp, mã nhà cung cấp, số theo dõi, v.v.. Những thông tin này phải luôn được cập nhật. Nếu có thể, hãy copy/scan hướng dẫn sử dụng của vắc xin và đính kèm vào"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SPS
+msgid "Suppository sustained release"
+msgstr "Thuốc đạn duy trì phóng thích"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GER
+msgid "Gel controlled release"
+msgstr "Keo kiểm soát phóng thích"
+
+#. module: medical
+#: model:product.template,name:medical.product_98_product_template
+msgid "didanosine (ddI)"
+msgstr "didanosine (ddI)"
+
+#. module: medical
+#: model:product.template,name:medical.product_43_product_template
+msgid "benzyl benzoate"
+msgstr "benzyl benzoate"
+
+#. module: medical
+#: help:product.product,is_bed:0
+msgid "Check if the product is a bed on the medical center"
+msgstr "Kiểm tra xem sản phẩm có phải là giường của trung tâm y tế"
+
+#. module: medical
+#: model:product.template,name:medical.product_127_product_template
+msgid "ethinylestradiol + norethisterone"
+msgstr "ethinylestradiol + norethisterone"
+
+#. module: medical
+#: model:product.template,name:medical.product_207_product_template
+msgid "metformin"
+msgstr "metformin"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TDIS
+msgid "Tablet dispersible"
+msgstr "Thuốc có thể phân tán"
+
+#. module: medical
+#: view:medical.family_code:0
+msgid "Family Members"
+msgstr "Thành viên gia đình"
+
+#. module: medical
+#: model:product.template,name:medical.product_65_product_template
+msgid "chloroquine"
+msgstr "chloroquine"
+
+#. module: medical
+#: model:product.template,name:medical.product_35_product_template
+msgid "barium sulfate"
+msgstr "barium sulfate"
+
+#. module: medical
+#: help:medical.patient,general_info:0
+msgid "General information about the patient"
+msgstr "Thông tin tổng quát về bệnh nhân"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Glasgow Coma Scale"
+msgstr "Thang mức độ tỉnh táo Glasgow"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_myalgia:0
+msgid "Myalgia"
+msgstr "Chứng nhức gân"
+
+#. module: medical
+#: view:medical.hospital.bed:0 field:medical.hospital.bed,name:0
+#: field:product.product,is_bed:0
+msgid "Bed"
+msgstr "Giường"
+
+#. module: medical
+#: field:res.partner,is_person:0
+msgid "Person"
+msgstr "Người"
+
+#. module: medical
+#: field:medical.pathology,protein:0
+msgid "Protein involved"
+msgstr "Có liên quan đến Protein"
+
+#. module: medical
+#: view:medical.patient:0 view:medical.patient.medication:0
+msgid "Medication"
+msgstr "Điều trị"
+
+#. module: medical
+#: view:medical.directions:0
+msgid "Search Medical Directions"
+msgstr "Tìm hướng điều trị"
+
+#. module: medical
+#: report:patient.vaccinations:0 field:product.product,is_vaccine:0
+msgid "Vaccine"
+msgstr "Vắc xin"
+
+#. module: medical
+#: field:medical.patient.evaluation,peau_dorange:0
+msgid "Peau d orange"
+msgstr "Piel de naranja"
+
+#. module: medical
+#: model:product.template,name:medical.product_240_product_template
+msgid "oxytocin"
+msgstr "oxytocin"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_dizziness:0
+msgid "Dizziness"
+msgstr "Chóng mặt"
+
+#. module: medical
+#: help:medical.patient,identifier:0
+msgid "Social Security Number or National ID"
+msgstr "Số an sinh xã hội hoặc CMND"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_34
+msgid "Oral"
+msgstr "Đường miệng"
+
+#. module: medical
+#: field:medical.directions,procedure:0 view:medical.procedure:0
+msgid "Procedure"
+msgstr "Thủ tục"
+
+#. module: medical
+#: field:medical.patient.evaluation,praxis:0
+msgid "Praxis"
+msgstr "Thói quen"
+
+#. module: medical
+#: model:product.template,name:medical.product_96_product_template
+msgid "diaphragms"
+msgstr "màng ngừa thai cho phụ nữ"
+
+#. module: medical
+#: model:product.template,name:medical.product_56_product_template
+msgid "cefazolin"
+msgstr "cefazolin"
+
+#. module: medical
+#: model:product.template,name:medical.product_304_product_template
+msgid "sodium lactate"
+msgstr "sodium lactate"
+
+#. module: medical
+#: model:product.template,name:medical.product_24_product_template
+msgid "antivenom immunoglobulin"
+msgstr "globulin miễn dịch kháng nọc"
+
+#. module: medical
+#: field:medical.patient,family_code:0
+msgid "Family"
+msgstr "Gia đình"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_tree_operational_area
+#: model:ir.ui.menu,name:medical.medical_conf_edit_operational_area_tree
+#: model:ir.ui.menu,name:medical.medical_conf_operational_areas
+msgid "Operational Areas"
+msgstr "Khu vực hoạt động"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Start :"
+msgstr "Bắt đầu :"
+
+#. module: medical
+#: help:medical.pathology,protein:0
+msgid "Name of the protein(s) affected"
+msgstr "Tên của các loại protein bị ảnh hưởng"
+
+#. module: medical
+#: model:product.template,name:medical.product_84_product_template
+msgid "copper‐containing device"
+msgstr "copper‐containing device"
+
+#. module: medical
+#: help:medical.medicament,active_component:0
+msgid "Active Component"
+msgstr "Họat chất"
+
+#. module: medical
+#: field:medical.patient,marital_status:0
+msgid "Marital Status"
+msgstr "Tình trạng hôn nhân"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_vaginal_discharge:0
+msgid "Vaginal Discharge"
+msgstr "Xả âm đạo"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GUM
+msgid "Gum chewable"
+msgstr "Kẹo gôm nhai được"
+
+#. module: medical
+#: model:product.template,name:medical.product_186_product_template
+msgid "levonorgestrel‐releasing implant"
+msgstr "levonorgestrel‐releasing implant"
+
+#. module: medical
+#: field:medical.directions,name:0 view:medical.patient:0
+#: field:medical.patient.disease,name:0
+#: field:medical.patient.evaluation,name:0
+#: field:medical.patient.medication,name:0
+#: field:medical.prescription.order,name:0 field:medical.vaccination,name:0
+msgid "Patient ID"
+msgstr "Mã bệnh nhân"
+
+#. module: medical
+#: help:medical.physician,code:0
+msgid "MD License ID"
+msgstr "Mã giấy phép bác sĩ"
+
+#. module: medical
+#: field:medical.patient.evaluation,height:0
+msgid "Height (cm)"
+msgstr "Chiều cao (cm)"
+
+#. module: medical
+#: view:medical.ethnicity:0
+msgid "Ethnicity"
+msgstr "Dân tộc"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_anorexia:0
+msgid "Anorexia"
+msgstr "Bịnh ăn mất ngon"
+
+#. module: medical
+#: model:product.template,name:medical.product_196_product_template
+msgid "mannitol"
+msgstr "mannitol"
+
+#. module: medical
+#: model:product.template,name:medical.product_166_product_template
+msgid "insulin"
+msgstr "insulin"
+
+#. module: medical
+#: model:product.template,name:medical.product_170_product_template
+msgid "iodine"
+msgstr "i-ốt"
+
+#. module: medical
+#: view:medical.medicament:0 field:medical.medicament,storage:0
+msgid "Storage Conditions"
+msgstr "Điều kiện bảo quản"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SWA
+msgid "Swab"
+msgstr "Miếng gạc"
+
+#. module: medical
+#: selection:medical.patient.disease,allergy_type:0
+msgid "Misc Allergy"
+msgstr "Các dị ứng khác"
+
+#. module: medical
+#: view:medical.patient.disease:0
+msgid "Allergies"
+msgstr "Dị ứng"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_installer_modules
+msgid "medical.installer.modules"
+msgstr "medical.installer.modules"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_47
+msgid "Wound"
+msgstr "Vết thương"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_12
+msgid "Intracervical (uterus) "
+msgstr "Trong cổ tử cung (tử cung)"
+
+#. module: medical
+#: field:medical.hospital.ward,microwave:0
+msgid "Microwave"
+msgstr "Lò vi sóng"
+
+#. module: medical
+#: model:product.template,name:medical.product_268_product_template
+msgid "promethazine"
+msgstr "promethazine"
+
+#. module: medical
+#: model:product.template,name:medical.product_302_product_template
+msgid "sodium fluoride"
+msgstr "sodium fluoride"
+
+#. module: medical
+#: model:product.template,name:medical.product_265_product_template
+msgid "procaine benzylpenicillin"
+msgstr "procain penicillin G"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SUS
+msgid "Suspension"
+msgstr "Dịch huyết phù"
+
+#. module: medical
+#: view:medical.medicament:0 field:medical.medicament,composition:0
+msgid "Composition"
+msgstr "Thành phần"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_tree_medicament
+#: model:ir.ui.menu,name:medical.medical_conf_medicaments
+#: model:ir.ui.menu,name:medical.medical_edit_medicament
+#: model:product.category,name:medical.medicament
+msgid "Medicaments"
+msgstr "Thuốc"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_39
+msgid "Sublingual"
+msgstr "Dưới lưỡi"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_3
+msgid "Dental "
+msgstr "Nha khoa"
+
+#. module: medical
+#: help:res.partner,is_patient:0
+msgid "Check if the partner is a patient"
+msgstr "Đánh dấu nếu đối tác là một bệnh nhân"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_prescription
+#: model:ir.ui.menu,name:medical.medical_conf_prescription
+#: field:medical.patient,prescriptions:0
+msgid "Prescriptions"
+msgstr "Đơn thuốc"
+
+#. module: medical
+#: model:product.template,name:medical.product_12_product_template
+msgid "amidotrizoate"
+msgstr "amidotrizoate"
+
+#. module: medical
+#: field:medical.installer.modules,medical_invoice:0
+msgid "Medical Invoicing"
+msgstr "Hóa đơn Y tế"
+
+#. module: medical
+#: model:product.template,name:medical.product_347_product_template
+msgid "warfarin"
+msgstr "warfarin"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_orthostatic_hypotension:0
+msgid "Orthostatic hypotension"
+msgstr "Hạ huyết áp thế đứng"
+
+#. module: medical
+#: model:product.template,name:medical.product_301_product_template
+msgid "sodium chloride"
+msgstr "sodium chloride"
+
+#. module: medical
+#: model:product.template,name:medical.product_125_product_template
+msgid "ethinylestradiol"
+msgstr "ethinylestradiol"
+
+#. module: medical
+#: field:medical.patient.evaluation,nipple_discharge:0
+msgid "Nipple Discharge"
+msgstr "Xả núm vú"
+
+#. module: medical
+#: help:medical.medication.template,indication:0
+#: help:medical.patient.medication,indication:0
+#: help:medical.prescription.line,indication:0
+msgid "Choose a disease for this medicament from the disease list. It can be an existing disease of the patient or a prophylactic."
+msgstr "Chọn một bệnh cho thuốc chữa bệnh này từ danh sách bệnh. Nó có thể là một căn bệnh hiện tại của bệnh nhân hoặc dự phòng"
+
+#. module: medical
+#: model:product.template,name:medical.product_225_product_template
+msgid "nevirapine"
+msgstr "nevirapine"
+
+#. module: medical
+#: model:product.template,name:medical.product_209_product_template
+msgid "methotrexate"
+msgstr "methotrexate"
+
+#. module: medical
+#: model:product.template,name:medical.product_232_product_template
+msgid "nitrous oxide"
+msgstr "nitrous oxide"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_abdominal_pain:0
+msgid "Abdominal Pain"
+msgstr "Đau bụng"
+
+#. module: medical
+#: model:product.template,name:medical.product_334_product_template
+msgid "triclabendazole"
+msgstr "triclabendazole"
+
+#. module: medical
+#: view:medical.prescription.order:0
+msgid "Patient and Doctor Information"
+msgstr "Thông tin bệnh nhân và bác sĩ"
+
+#. module: medical
+#: field:medical.patient.evaluation,notes:0 view:medical.patient.medication:0
+#: view:medical.prescription.order:0
+msgid "Notes"
+msgstr "Ghi chú"
+
+#. module: medical
+#: selection:medical.hospital.ward,gender:0
+msgid "Men Ward"
+msgstr "Khu nam giới"
+
+#. module: medical
+#: model:product.template,name:medical.product_108_product_template
+msgid "doxorubicin"
+msgstr "doxorubicin"
+
+#. module: medical
+#: selection:medical.patient,blood_type:0
+msgid "A"
+msgstr "A"
+
+#. module: medical
+#: field:medical.hospital.ward,tv:0
+msgid "Television"
+msgstr "Tivi"
+
+#. module: medical
+#: model:product.template,name:medical.product_149_product_template
+msgid "griseofulvin"
+msgstr "griseofulvin"
+
+#. module: medical
+#: help:medical.medication.template,common_dosage:0
+#: help:medical.patient.medication,common_dosage:0
+#: help:medical.prescription.line,common_dosage:0
+msgid "Common / standard dosage frequency for this medicament"
+msgstr "Liều dùng phổ biến/tiêu chuẩn cho thuốc chữa bệnh này"
+
+#. module: medical
+#: view:medical.family_code:0
+msgid "Search Families"
+msgstr "Tìm kiếm gia đình"
+
+#. module: medical
+#: model:product.template,name:medical.product_279_product_template
+msgid "rabies immunoglobulin"
+msgstr "Globulin miễn dịch bệnh dại"
+
+#. module: medical
+#: model:product.template,name:medical.product_113_product_template
+msgid "emtricitabine"
+msgstr "emtricitabine"
+
+#. module: medical
+#: help:medical.patient.evaluation,symptom_orthostatic_hypotension:0
+msgid "If not associated to a disease,please encode it on the patient disease history. For example,  I95.1 in ICD-10 encoding"
+msgstr "Nếu không liên quan đến bệnh, xin hãy mã hóa nó trên lịch sử bệnh của bệnh nhân. Ví dụ, I95.1 trong mã hóa ICD-10"
+
+#. module: medical
+#: view:medical.patient.disease:0 field:medical.patient.disease,pathology:0
+#: help:medical.patient.disease,pathology:0
+msgid "Disease"
+msgstr "Bệnh sử"
+
+#. module: medical
+#: model:product.template,name:medical.product_250_product_template
+msgid "phenytoin"
+msgstr "phenytoin"
+
+#. module: medical
+#: model:product.template,name:medical.product_33_product_template
+msgid "azithromycin"
+msgstr "azithromycin"
+
+#. module: medical
+#: field:medical.patient.evaluation,abstraction:0
+msgid "Abstraction"
+msgstr "Trừu tượng"
+
+#. module: medical
+#: model:product.template,name:medical.product_8_product_template
+msgid "alcuronium"
+msgstr "alcuronium"
+
+#. module: medical
+#: help:medical.medication.template,duration:0
+#: help:medical.medication.template,duration_period:0
+#: help:medical.patient.medication,duration:0
+#: help:medical.patient.medication,duration_period:0
+#: help:medical.prescription.line,duration:0
+#: help:medical.prescription.line,duration_period:0
+msgid "Period that the patient must take the medication. in minutes, hours, days, months, years or indefinately"
+msgstr "Giai đoạn mà bệnh nhân phải dùng thuốc điều trị: trong bao nhiêu phút, giờ, ngày, tháng, năm hoặc vô thời hạn"
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "improving"
+msgstr "tiến triển"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PATCH
+msgid "Patch"
+msgstr "Miếng băng dính"
+
+#. module: medical
+#: model:product.template,name:medical.product_285_product_template
+msgid "rifampicin"
+msgstr "rifampicin"
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "status quo"
+msgstr "hiện trạng"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_stress:0
+msgid "Stressed-out"
+msgstr "Căng thẳng"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.POR
+msgid "Pellet (oral)"
+msgstr "Viên thuốc tròn (đường miệng)"
+
+#. module: medical
+#: field:medical.patient,cod:0
+msgid "Cause of Death"
+msgstr "Nguyên nhân tử vong"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_constipation:0
+msgid "Constipation"
+msgstr "Táo bón"
+
+#. module: medical
+#: field:medical.patient.disease,is_active:0
+msgid "Active disease"
+msgstr "Bệnh đang hoạt động"
+
+#. module: medical
+#: field:medical.installer.modules,medical_gyneco:0
+msgid "Medical Gyneco / Obstetrics"
+msgstr "Y khoa: Sản phụ khoa"
+
+#. module: medical
+#: model:product.template,name:medical.product_141_product_template
+msgid "folic acid"
+msgstr "axit folic"
+
+#. module: medical
+#: model:product.template,name:medical.product_156_product_template
+msgid "human normal immunoglobulin"
+msgstr "human normal immunoglobulin"
+
+#. module: medical
+#: model:product.template,name:medical.product_306_product_template
+msgid "sodium nitroprusside"
+msgstr "natri nitroprusside"
+
+#. module: medical
+#: model:product.template,name:medical.product_326_product_template
+msgid "tenofovir disoproxil fumarate"
+msgstr "tenofovir disoproxil fumarate"
+
+#. module: medical
+#: field:res.partner,alias:0
+msgid "alias"
+msgstr "Bí danh"
+
+#. module: medical
+#: model:product.template,name:medical.product_189_product_template
+msgid "lidocaine + epinephrine (adrenaline)"
+msgstr "lidocaine + epinephrine (adrenaline)"
+
+#. module: medical
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Lỗi: mã EAN không hợp lệ"
+
+#. module: medical
+#: model:product.template,name:medical.product_208_product_template
+msgid "methadone"
+msgstr "methadone"
+
+#. module: medical
+#: field:medical.installer.modules,medical_genetics:0
+msgid "Medical Genetics"
+msgstr "Y khoa: Di truyền"
+
+#. module: medical
+#: field:medical.patient.evaluation,weight:0
+msgid "Weight (kg)"
+msgstr "Cân nặng (kg)"
+
+#. module: medical
+#: model:product.template,name:medical.product_29_product_template
+msgid "asparaginase"
+msgstr "asparaginase"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_vaccination
+msgid "medical.vaccination"
+msgstr "medical.vaccination"
+
+#. module: medical
+#: view:medical.patient.medication:0 view:medical.prescription.line:0
+msgid "Specific Dosage"
+msgstr "Liều dùng cụ thể"
+
+#. module: medical
+#: model:product.template,name:medical.product_60_product_template
+msgid "charcoal, activated"
+msgstr "Than hoạt tính"
+
+#. module: medical
+#: help:medical.patient,user_id:0
+msgid "Physician that logs in the local Medical system (HIS), on the health center. It doesn't necesarily has do be the same as the Primary Care doctor"
+msgstr "Physician that logs in the local Medical system (HIS), on the health center. It doesn't necesarily has do be the same as the Primary Care doctor"
+
+#. module: medical
+#: view:medical.hospital.unit:0
+msgid "Health Center Unit Info"
+msgstr "Thông tin của đơn vị trung tâm y tế"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PMD
+msgid "Metered dose pump"
+msgstr "Liều lượng đo lường khí dung"
+
+#. module: medical
+#: help:medical.patient.evaluation,head_circumference:0
+msgid "Head circumference"
+msgstr "Chu vi đầu"
+
+#. module: medical
+#: view:medical.physician:0
+msgid "Search Physician"
+msgstr "Tìm kiếm bác sỹ"
+
+#. module: medical
+#: model:product.template,name:medical.product_341_product_template
+msgid "vancomycin"
+msgstr "vancomycin"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_patient
+msgid "Patient related information"
+msgstr "Thông tin liên quan đến bệnh nhân"
+
+#. module: medical
+#: model:product.template,name:medical.product_151_product_template
+msgid "haloperidol"
+msgstr "haloperidol"
+
+#. module: medical
+#: help:medical.appointment,patient:0 help:medical.patient,name:0
+msgid "Patient Name"
+msgstr "Tên bệnh nhân"
+
+#. module: medical
+#: model:ir.actions.report.xml,name:medical.report_patient_medications
+#: view:medical.patient:0
+msgid "Medication History"
+msgstr "Lịch sử điều trị"
+
+#. module: medical
+#: selection:medical.medication.template,duration_period:0
+#: selection:medical.patient.medication,duration_period:0
+#: selection:medical.prescription.line,duration_period:0
+msgid "years"
+msgstr "năm"
+
+#. module: medical
+#: model:product.template,name:medical.product_16_product_template
+msgid "amlodipine"
+msgstr "amlodipine"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.JAM
+msgid "Jam"
+msgstr "Dạng keo"
+
+#. module: medical
+#: field:medical.physician,info:0
+msgid "Extra info"
+msgstr "Thông tin bổ sung"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_amnesia:0
+msgid "Amnesia"
+msgstr "Chứng hay quên"
+
+#. module: medical
+#: selection:medical.patient.evaluation,mood:0
+msgid "Disgust"
+msgstr "Chán ghét"
+
+#. module: medical
+#: model:product.template,name:medical.product_119_product_template
+msgid "ergocalciferol"
+msgstr "ergocalciferol"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Indication :"
+msgstr "Chỉ định: "
+
+#. module: medical
+#: model:product.template,name:medical.product_182_product_template
+msgid "levamisole"
+msgstr "levamisole"
+
+#. module: medical
+#: model:product.template,name:medical.product_242_product_template
+msgid "paracetamol"
+msgstr "paracetamol"
+
+#. module: medical
+#: view:medical.hospital.ward:0
+msgid "Health Center Ward Info"
+msgstr "Thông tin khu vực trung tâm y tế"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_2
+msgid "Buccal "
+msgstr "Má, miệng"
+
+#. module: medical
+#: model:product.template,name:medical.product_263_product_template
+msgid "primaquine"
+msgstr "primaquine"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_photophobia:0
+msgid "Photophobia"
+msgstr "Fotofobia"
+
+#. module: medical
+#: selection:medical.hospital.ward,state:0
+msgid "Full"
+msgstr "Đầy"
+
+#. module: medical
+#: help:medical.patient.evaluation,loc_motor:0
+msgid "Motor Response - Glasgow Coma Scale - 1 to 6"
+msgstr "Phản ứng vận động cơ - Thước đo hôn me Glasgow - 1 đến 6"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Emergency"
+msgstr "Cấp cứu"
+
+#. module: medical
+#: help:medical.hospital.ward,bio_hazard:0
+msgid "Check this option if there is biological hazard"
+msgstr "Đánh dấu lựa chọn này nếu có nguy hiểm sinh học"
+
+#. module: medical
+#: model:product.template,name:medical.product_184_product_template
+msgid "levodopa + carbidopa"
+msgstr "levodopa + carbidopa"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_24
+msgid "Mouth/Throat "
+msgstr "Miệng/Họng"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "Specialty"
+msgstr "Chuyên khoa"
+
+#. module: medical
+#: help:medical.installer.modules,medical_icd10:0
+msgid "This module will install WHO International Classification of Diseases 10th Revision."
+msgstr "Mô đun này sẽ cài đặt Phân loại bệnh quốc tế (ICD) của WHO, phiên bản 10."
+
+#. module: medical
+#: model:product.template,name:medical.product_235_product_template
+msgid "nystatin"
+msgstr "nystatin"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_21
+msgid "Intrathecal "
+msgstr "Nội tủy mạc"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_odynophagia:0
+msgid "Odynophagia"
+msgstr "(chứng) nuốt đau"
+
+#. module: medical
+#: view:medical.drug.form:0
+msgid "Search Medicament Presentation"
+msgstr "Tìm kiếm các loại đóng gói thuốc"
+
+#. module: medical
+#: model:product.template,name:medical.product_275_product_template
+msgid "pyridoxine"
+msgstr "pyridoxine"
+
+#. module: medical
+#: field:medical.patient.evaluation,arritmia:0
+msgid "Arritmias"
+msgstr "Loạn nhịp"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_32
+msgid "Other/Miscellaneous"
+msgstr "Các đường dùng khác"
+
+#. module: medical
+#: selection:medical.medication.template,frequency_unit:0
+#: selection:medical.patient.medication,frequency_unit:0
+#: selection:medical.prescription.line,frequency_unit:0
+msgid "weeks"
+msgstr "tuần"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Take during"
+msgstr "Uống trong lúc"
+
+#. module: medical
+#: model:product.template,name:medical.product_17_product_template
+msgid "amodiaquine"
+msgstr "amodiaquine"
+
+#. module: medical
+#: field:medical.patient.evaluation,abdominal_circ:0
+msgid "Abdominal Circumference"
+msgstr "Chu vi bụng"
+
+#. module: medical
+#: model:product.template,name:medical.product_214_product_template
+msgid "metronidazole"
+msgstr "metronidazole"
+
+#. module: medical
+#: model:product.template,name:medical.product_300_product_template
+msgid "sodium calcium edetate"
+msgstr "sodium calcium edetate"
+
+#. module: medical
+#: model:product.template,name:medical.product_51_product_template
+msgid "calcium folinate"
+msgstr "calcium folinate"
+
+#. module: medical
+#: model:product.template,name:medical.product_308_product_template
+msgid "sodium valproate"
+msgstr "sodium valproate"
+
+#. module: medical
+#: view:medical.hospital.ward:0
+msgid "Search Health Center Wards"
+msgstr "Tìm kiếm theo khu bệnh"
+
+#. module: medical
+#: model:product.template,name:medical.product_58_product_template
+msgid "ceftazidime"
+msgstr "ceftazidime"
+
+#. module: medical
+#: field:medical.patient.evaluation,lung_adventitious_sounds:0
+msgid "Lung Adventitious sounds"
+msgstr "Tiếng phổi bất thường"
+
+#. module: medical
+#: model:product.template,name:medical.product_333_product_template
+msgid "timolol"
+msgstr "timolol"
+
+#. module: medical
+#: model:product.template,name:medical.product_273_product_template
+msgid "pyrazinamide"
+msgstr "pyrazinamide"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SMD
+msgid "Spray metered dose"
+msgstr "Liều phun với đồng hồ đo"
+
+#. module: medical
+#: view:medical.patient.disease:0
+#: field:medical.patient.disease,short_comment:0 report:patient.diseases:0
+msgid "Remarks"
+msgstr "Ghi chú"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_operational_sector
+msgid "medical.operational_sector"
+msgstr "medical.operational_sector"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SUT
+msgid "Suture"
+msgstr "Đường khâu (vết thương)"
+
+#. module: medical
+#: help:medical.patient.evaluation,masses:0
+msgid "Check when there are findings of masses / tumors / lumps"
+msgstr "Marque esta casilla si el paciente presenta algún tumor o bulto"
+
+#. module: medical
+#: model:product.template,name:medical.product_200_product_template
+msgid "medroxyprogesterone acetate + estradiol"
+msgstr "medroxyprogesterone acetate + estradiol"
+
+#. module: medical
+#: model:product.template,name:medical.product_256_product_template
+msgid "polyvidone iodine"
+msgstr "polyvidone iodine"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Vital Signs"
+msgstr "Sinh hiệu"
+
+#. module: medical
+#: model:product.template,name:medical.product_236_product_template
+msgid "ofloxacin"
+msgstr "ofloxacin"
+
+#. module: medical
+#: model:product.template,name:medical.product_261_product_template
+msgid "praziquantel"
+msgstr "praziquantel"
+
+#. module: medical
+#: report:patient.vaccinations:0
+msgid "PATIENT VACCINATION HISTORY"
+msgstr "LỊCH SỬ TIÊM CHỦNG CỦA BỆNH NHÂN"
+
+#. module: medical
+#: model:product.template,name:medical.product_284_product_template
+msgid "riboflavin"
+msgstr "riboflavin"
+
+#. module: medical
+#: selection:medical.insurance,type:0
+msgid "Labour Union / Syndical"
+msgstr "Liên đoàn Lao động / Hội đoàn"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Immunizations"
+msgstr "Tiêm chủng"
+
+#. module: medical
+#: model:product.template,name:medical.product_281_product_template
+msgid "ranitidine"
+msgstr "ranitidine"
+
+#. module: medical
+#: model:product.template,name:medical.product_239_product_template
+msgid "oxygen"
+msgstr "oxy"
+
+#. module: medical
+#: report:patient.medications:0
+msgid "Start"
+msgstr "Bắt đầu"
+
+#. module: medical
+#: model:product.template,name:medical.product_255_product_template
+msgid "poliomyelitis vaccine"
+msgstr "Vắc xin ngừa bạch hầu, uốn ván, ho gà, bại liệt."
+
+#. module: medical
+#: model:product.template,name:medical.product_143_product_template
+msgid "gentamicin"
+msgstr "gentamicin"
+
+#. module: medical
+#: selection:medical.patient.evaluation,mood:0
+msgid "Sad"
+msgstr "Triste"
+
+#. module: medical
+#: field:medical.medication.dosage,abbreviation:0
+msgid "Abbreviation"
+msgstr "Viết tắt"
+
+#. module: medical
+#: field:medical.patient.disease,pregnancy_warning:0
+msgid "Pregnancy warning"
+msgstr "Cảnh báo thai nghén"
+
+#. module: medical
+#: field:medical.patient.evaluation,loc_verbal:0
+msgid "Level of Consciousness - Verbal"
+msgstr "Mức độ ý thức - Nói"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "</para>           <para style=\"P12\">Tel:"
+msgstr "</para>           <para style=\"P12\">Tel:"
+
+#. module: medical
+#: view:medical.medicament:0
+msgid "medicament"
+msgstr "Dược phẩm"
+
+#. module: medical
+#: selection:medical.hospital.bed,bed_type:0
+msgid "Low Bed"
+msgstr "Low Bed"
+
+#. module: medical
+#: model:product.template,name:medical.product_231_product_template
+msgid "nitrofurantoin"
+msgstr "nitrofurantoin"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SRS
+msgid "Syrup sustained release"
+msgstr "Thuốc siro duy trì phóng thích"
+
+#. module: medical
+#: help:medical.patient,current_address:0
+msgid "Contact information. You may choose from the different contacts and addresses this patient has"
+msgstr "Información de contacto. Se puede elegir entre los diferentes contactos y direcciones del paciente"
+
+#. module: medical
+#: help:medical.patient.evaluation,edema:0
+msgid "Please also encode the correspondent disease on the patient disease history. For example,  R60.1 in ICD-10 encoding"
+msgstr "Xin vui lòng cũng mã hóa các bệnh liên quan trong lịch sử bệnh của bệnh nhân. Ví dụ, mã hóa R60.1 trong ICD-10"
+
+#. module: medical
+#: view:medical.patient.disease:0 report:patient.medications:0
+msgid "End"
+msgstr "Kết thúc"
+
+#. module: medical
+#: help:medical.patient.evaluation,alopecia:0
+msgid "Check when alopecia - including androgenic - is present"
+msgstr "Kiểm tra khi xuất hiện rụng tóc - bao gồm nam hóa"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.INS
+msgid "Insert"
+msgstr "Chèn vào"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PWSO
+msgid "Powder for solution"
+msgstr "Thuốc bột để pha thành dung dịch"
+
+#. module: medical
+#: model:product.template,name:medical.product_142_product_template
+msgid "furosemide"
+msgstr "furosemide"
+
+#. module: medical
+#: model:product.template,name:medical.product_52_product_template
+msgid "calcium gluconate"
+msgstr "calcium gluconate"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.FLS
+msgid "Floss"
+msgstr "Chỉ nha khoa"
+
+#. module: medical
+#: field:medical.hospital.ward,bio_hazard:0
+msgid "Bio Hazard"
+msgstr "Nguy hiểm sinh học"
+
+#. module: medical
+#: field:medical.patient.evaluation,pressure_ulcers:0
+msgid "Pressure Ulcers"
+msgstr "Loét áp lực"
+
+#. module: medical
+#: view:medical.patient:0 field:medical.patient,identifier:0
+msgid "SSN"
+msgstr "Mã số bảo hiểm xã hội"
+
+#. module: medical
+#: field:medical.prescription.line,prnt:0
+msgid "Print"
+msgstr "Print"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_evaluation
+msgid "Patient Evaluation"
+msgstr "Đánh giá bệnh nhân"
+
+#. module: medical
+#: field:medical.medication.template,dose:0
+#: field:medical.patient.medication,dose:0
+#: field:medical.prescription.line,dose:0 report:patient.vaccinations:0
+msgid "Dose"
+msgstr "Liều lượng"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_urethral_discharge:0
+msgid "Urethral Discharge"
+msgstr "Secreción uretral"
+
+#. module: medical
+#: view:medical.pathology:0
+msgid "Search Diseases"
+msgstr "Tìm kiếm bệnh"
+
+#. module: medical
+#: model:product.template,name:medical.product_211_product_template
+msgid "methylrosanilinium chloride (gentian violet)"
+msgstr "methylrosanilinium chloride (gentian violet)"
+
+#. module: medical
+#: help:medical.patient.evaluation,osat:0
+msgid "Oxygen Saturation (arterial)."
+msgstr "Bão hòa ôxy (động mạch)"
+
+#. module: medical
+#: selection:medical.patient.evaluation,mood:0
+msgid "Flat"
+msgstr "Đơn điệu"
+
+#. module: medical
+#: model:product.template,name:medical.product_312_product_template
+msgid "stavudine (d4T)"
+msgstr "stavudine (d4T)"
+
+#. module: medical
+#: model:product.template,name:medical.product_27_product_template
+msgid "artesunate"
+msgstr "artesunate"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_37
+msgid "Soaked Dressing"
+msgstr "Băng ngâm"
+
+#. module: medical
+#: field:medical.medicament,dosage:0
+msgid "Dosage Instructions"
+msgstr "Hướng dẫn liều dùng"
+
+#. module: medical
+#: field:medical.medicament,overdosage:0 help:medical.medicament,overdosage:0
+msgid "Overdosage"
+msgstr "Quá liều"
+
+#. module: medical
+#: selection:medical.appointment,patient_status:0
+msgid "Outpatient"
+msgstr "Bệnh nhân ngoại trú"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SPR
+msgid "Spray"
+msgstr "Phun xịt"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "ID  :"
+msgstr "Mã số  :"
+
+#. module: medical
+#: field:medical.appointment,appointment_date:0
+msgid "Date and Time"
+msgstr "Ngày và Thời gian"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_patient_evaluation
+msgid "evaluation"
+msgstr "đánh giá"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_menu view:product.product:0
+#: view:res.partner:0
+msgid "Medical"
+msgstr "Y khoa"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_sore_throat:0
+msgid "Sore throat"
+msgstr "Viêm họng"
+
+#. module: medical
+#: view:medical.patient.medication:0 view:medical.prescription.line:0
+msgid "Common Dosage"
+msgstr "Liều phổ biến"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.action_medical_installer
+msgid "Medical Management Configuration"
+msgstr "Cấu hình Quản lý Y khoa"
+
+#. module: medical
+#: model:product.template,name:medical.product_28_product_template
+msgid "ascorbic acid"
+msgstr "axit ascorbic"
+
+#. module: medical
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML không hợp lệ cho Kiến trúc Xem!"
+
+#. module: medical
+#: view:medical.pathology.category:0
+msgid "Search Disease Categories"
+msgstr "Tìm kiếm theo loại bệnh"
+
+#. module: medical
+#: model:product.template,name:medical.product_39_product_template
+msgid "benznidazole"
+msgstr "benznidazole"
+
+#. module: medical
+#: model:product.template,name:medical.product_26_product_template
+msgid "artemether + lumefantrine"
+msgstr "artemether + lumefantrine"
+
+#. module: medical
+#: help:medical.installer.modules,medical_inpatient:0
+msgid ""
+"This module will hold all the processes related to Inpatient (Patient hospitalization)\n"
+"\n"
+"                - Patient Registration\n"
+"\n"
+"                - Bed reservation\n"
+"\n"
+"                - Hospitalization\n"
+"\n"
+"                - Nursing Plan\n"
+"\n"
+"                - Discharge Plan\n"
+"\n"
+"                - Reporting"
+msgstr ""
+"Mô đun này bao gồm toàn bộ các quy trình liên quan đến bệnh nhân nội trú (Bệnh nhân nhập viện)\n"
+"\n"
+"                - Đăng ký bệnh nhân\n"
+"\n"
+"                - Đặt giường\n"
+"\n"
+"                - Nhập viện\n"
+"\n"
+"                - Kế hoạch điều dưỡng\n"
+"\n"
+"                - Kế hoạch xuất viện\n"
+"\n"
+"                - Báo cáo"
+
+#. module: medical
+#: model:product.template,name:medical.product_152_product_template
+msgid "halothane"
+msgstr "halothane"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "</para>           <para style=\"P12\">Lic. ID :"
+msgstr "</b></para>           <para style=\"P12\">Mã giấy phép :"
+
+#. module: medical
+#: model:product.template,name:medical.product_101_product_template
+msgid "diloxanide"
+msgstr "diloxanide"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "</para>"
+msgstr "</para>"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_hemoptysis:0
+msgid "Hemoptysis"
+msgstr "Khái huyết, ho máu"
+
+#. module: medical
+#: model:product.template,name:medical.product_204_product_template
+msgid "melarsoprol"
+msgstr "melarsoprol"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Patient Contact Information"
+msgstr "Thông tin liên hệ của bệnh nhân"
+
+#. module: medical
+#: model:product.template,name:medical.product_221_product_template
+msgid "nelfinavir (NFV)"
+msgstr "nelfinavir (NFV)"
+
+#. module: medical
+#: model:product.template,name:medical.product_133_product_template
+msgid "ferrous salt"
+msgstr "ferrous salt"
+
+#. module: medical
+#: model:product.template,name:medical.product_191_product_template
+msgid "lopinavir"
+msgstr "lopinavir"
+
+#. module: medical
+#: view:medical.operational_sector:0
+msgid "Medical Operational Sector List"
+msgstr "Danh sách khu vực hoạt động y tế"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_6
+msgid "Gastrostomy Tube "
+msgstr "Ống mở thông dạ dày"
+
+#. module: medical
+#: field:medical.insurance,type:0
+msgid "Insurance Type"
+msgstr "Loại bảo hiểm"
+
+#. module: medical
+#: selection:medical.patient,sex:0
+msgid "Male"
+msgstr "Nam"
+
+#. module: medical
+#: report:patient.diseases:0
+msgid "Important information about the patient diseases, allergies and procedures:"
+msgstr "Thông tin quan trọng về bệnh của bệnh nhân, các dị ứng và thủ tục:"
+
+#. module: medical
+#: model:product.template,name:medical.product_94_product_template
+msgid "dexamethasone"
+msgstr "dexamethasone"
+
+#. module: medical
+#: field:medical.dose.unit,name:0 field:medical.hospital.ward,unit:0
+msgid "Unit"
+msgstr "Đơn vị"
+
+#. module: medical
+#: help:medical.patient.evaluation,calculation_ability:0
+msgid "Check this box if the patient can not do simple arithmetic problems"
+msgstr "Đánh dấu ô này nếu bệnh nhân không thể làm các vấn đề số học đơn giản"
+
+#. module: medical
+#: field:medical.prescription.line,refills:0
+msgid "Refills #"
+msgstr "Nạp số #"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Phone call"
+msgstr "Cuộc gọi"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TRD
+msgid "Tablet rapid dissolve"
+msgstr "Thuốc hòa tan nhanh"
+
+#. module: medical
+#: selection:medical.medication.template,duration_period:0
+#: selection:medical.medication.template,frequency_unit:0
+#: selection:medical.patient.medication,duration_period:0
+#: selection:medical.patient.medication,frequency_unit:0
+#: selection:medical.prescription.line,duration_period:0
+#: selection:medical.prescription.line,frequency_unit:0
+msgid "days"
+msgstr "ngày"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Signs"
+msgstr "Dấu sinh hiệu"
+
+#. module: medical
+#: selection:medical.appointment,urgency:0
+msgid "Urgent"
+msgstr "Khẩn"
+
+#. module: medical
+#: view:medical.drug.route:0
+msgid "Medicament Administration Routes"
+msgstr "Đường dùng/cách dùng thuốc"
+
+#. module: medical
+#: model:product.template,name:medical.product_217_product_template
+msgid "misoprostol"
+msgstr "misoprostol"
+
+#. module: medical
+#: field:medical.patient.evaluation,hematoma:0
+msgid "Hematomas"
+msgstr "Hematomas"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TEA
+msgid "Tea herbal"
+msgstr "Trà thảo mộc"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_directions
+msgid "medical.directions"
+msgstr "medical.directions"
+
+#. module: medical
+#: view:medical.operational_area:0
+msgid "Region Operational Area"
+msgstr "Khu vực phẫu thuật"
+
+#. module: medical
+#: help:medical.patient.evaluation,pressure_ulcers:0
+msgid "Check when Decubitus / Pressure ulcers are present"
+msgstr "Kiểm tra khi xuất hiện các vết loét tư thế nằm/loét áp lực"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_syncope:0
+msgid "Syncope"
+msgstr "Sự bất tỉnh"
+
+#. module: medical
+#: model:product.template,name:medical.product_251_product_template
+msgid "phytomenadione"
+msgstr "phytomenadione"
+
+#. module: medical
+#: help:medical.medicament,dosage:0
+msgid "Dosage / Indications"
+msgstr "Liều dùng / Chỉ dẫn"
+
+#. module: medical
+#: field:medical.prescription.line,review:0
+msgid "Review"
+msgstr "Tái khám"
+
+#. module: medical
+#: model:product.template,name:medical.product_100_product_template
+msgid "digoxin"
+msgstr "digoxin"
+
+#. module: medical
+#: model:product.template,name:medical.product_305_product_template
+msgid "sodium nitrite"
+msgstr "sodium nitrite"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_hoarseness:0
+msgid "Hoarseness"
+msgstr "Khản giọng"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_family_code
+msgid "medical.family_code"
+msgstr "medical.family_code"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Route :"
+msgstr "Đường dùng:"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Anthropometry"
+msgstr "Nhân trắc"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_4
+msgid "Epidural "
+msgstr "Ngoài màng cứng"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_9
+msgid "Intra-arterial "
+msgstr "Nội động mạch"
+
+#. module: medical
+#: selection:medical.hospital.bed,bed_type:0
+msgid "Clinitron"
+msgstr "Clinitron"
+
+#. module: medical
+#: help:medical.patient.medication,doctor:0
+msgid "Physician who prescribed the medicament"
+msgstr "Physician who prescribed the medicament"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Glucose"
+msgstr "Glucose"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Separated"
+msgstr "Ly thân"
+
+#. module: medical
+#: model:product.template,name:medical.product_72_product_template
+msgid "ciprofloxacin"
+msgstr "ciprofloxacin"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_insurance
+#: model:ir.ui.menu,name:medical.medical_conf_edit_insurance
+#: model:ir.ui.menu,name:medical.medical_conf_insurances
+#: view:medical.insurance:0
+msgid "Insurances"
+msgstr "Bảo hiểm"
+
+#. module: medical
+#: model:product.template,name:medical.product_19_product_template
+msgid "amoxicillin + clavulanic acid"
+msgstr "amoxicillin + clavulanic acid"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.EVT
+msgid "Tablet effervescent"
+msgstr "Viên sủi"
+
+#. module: medical
+#: help:medical.hospital.building,name:0
+msgid "Name of the building within the institution"
+msgstr "Tên của tòa nhà trong cơ sở y tế"
+
+#. module: medical
+#: help:medical.patient,primary_care_doctor:0
+msgid "Current primary care / family doctor"
+msgstr "Bác sĩ gia đình/chăm sóc y tế chính hiện tại"
+
+#. module: medical
+#: model:product.template,name:medical.product_129_product_template
+msgid "ethosuximide"
+msgstr "ethosuximide"
+
+#. module: medical
+#: model:product.template,name:medical.product_78_product_template
+msgid "clomipramine"
+msgstr "clomipramine"
+
+#. module: medical
+#: field:medical.appointment,patient_status:0
+msgid "Patient status"
+msgstr "Tình trạng bệnh nhân"
+
+#. module: medical
+#: help:medical.hospital.ward,number_of_beds:0
+msgid "Number of patients per ward"
+msgstr "Số lượng bệnh nhân một khu "
+
+#. module: medical
+#: model:product.template,name:medical.product_316_product_template
+msgid "sulfadiazine"
+msgstr "sulfadiazine"
+
+#. module: medical
+#: model:product.template,name:medical.product_120_product_template
+msgid "ergometrine"
+msgstr "ergometrine"
+
+#. module: medical
+#: model:product.template,name:medical.product_187_product_template
+msgid "levothyroxine"
+msgstr "levothyroxine"
+
+#. module: medical
+#: view:medical.appointment:0 field:medical.vaccination,date:0
+#: report:patient.vaccinations:0
+msgid "Date"
+msgstr "Date"
+
+#. module: medical
+#: view:medical.patient.disease:0
+msgid "Therapy"
+msgstr "Liệu pháp"
+
+#. module: medical
+#: field:medical.patient.evaluation,tag:0
+msgid "Last TAGs"
+msgstr "TAGs cuối cùng"
+
+#. module: medical
+#: model:product.template,name:medical.product_145_product_template
+msgid "glucose"
+msgstr "glucose"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_drug_form
+msgid "medical.drug.form"
+msgstr "medical.drug.form"
+
+#. module: medical
+#: field:medical.installer.modules,medical_lifestyle:0
+msgid "Medical Lifestyle"
+msgstr "Thói quen sinh hoạt"
+
+#. module: medical
+#: selection:medical.patient,blood_type:0
+msgid "B"
+msgstr "B"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_astenia:0
+msgid "Astenia"
+msgstr "Astenia"
+
+#. module: medical
+#: model:ir.actions.report.xml,name:medical.report_patient_diseases
+msgid "Diseases Report"
+msgstr "Báo cáo bệnh tật"
+
+#. module: medical
+#: help:medical.pathology,name:0
+msgid "Disease name"
+msgstr "Tên bệnh"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Patient Critical Information"
+msgstr "Thông tin quan trọng về bệnh nhân"
+
+#. module: medical
+#: help:medical.patient.evaluation,symptom_pain_intensity:0
+msgid "Pain intensity from 0 (no pain) to 10 (worst possible pain)"
+msgstr "Cường độ đau từ 0 (không đau) đến 10 (mức độ đau đớn nhất có thể)"
+
+#. module: medical
+#: model:product.template,name:medical.product_134_product_template
+msgid "ferrous salt + folic acid"
+msgstr "Muối sắt (II) + axit folic"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_tree_operational_sector
+#: model:ir.ui.menu,name:medical.medical_conf_edit_operational_area_sector
+msgid "Operational Sectors"
+msgstr "Các khu vực phẫu thuật"
+
+#. module: medical
+#: help:medical.medication.template,dose:0
+#: help:medical.patient.medication,dose:0
+#: help:medical.prescription.line,dose:0
+msgid "Amount of medication (eg, 250 mg ) each time the patient takes it"
+msgstr "Liều lượng thuốc (ví dụ 250 mg) mỗi lần bệnh nhân phải uống"
+
+#. module: medical
+#: field:medical.patient.evaluation,diastolic:0
+msgid "Diastolic Pressure"
+msgstr "Huyết áp tâm trương"
+
+#. module: medical
+#: model:product.template,name:medical.product_293_product_template
+msgid "salbutamol"
+msgstr "salbutamol"
+
+#. module: medical
+#: model:product.template,name:medical.product_260_product_template
+msgid "potassium permanganate"
+msgstr "potassium permanganate"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_amenorrhea:0
+msgid "Amenorrhea"
+msgstr "Vô kinh/mất kinh"
+
+#. module: medical
+#: field:medical.patient.evaluation,loc:0
+msgid "Level of Consciousness"
+msgstr "Mức độ ý thức"
+
+#. module: medical
+#: selection:medical.hospital.bed,state:0
+msgid "Reserved"
+msgstr "Để riêng"
+
+#. module: medical
+#: field:medical.pathology,gene:0
+msgid "Gene"
+msgstr "Gen"
+
+#. module: medical
+#: selection:medical.medication.template,duration_period:0
+#: selection:medical.medication.template,frequency_unit:0
+#: selection:medical.patient.medication,duration_period:0
+#: selection:medical.patient.medication,frequency_unit:0
+#: selection:medical.prescription.line,duration_period:0
+#: selection:medical.prescription.line,frequency_unit:0
+msgid "minutes"
+msgstr "phút"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_hospital_bed
+#: model:ir.ui.menu,name:medical.medical_conf_hospital_bed_add
+msgid "Health Center beds"
+msgstr "Giường bệnh trung tâm y tế"
+
+#. module: medical
+#: model:product.template,name:medical.product_174_product_template
+msgid "isoniazid + ethambutol"
+msgstr "isoniazid + ethambutol"
+
+#. module: medical
+#: field:medical.patient,primary_care_doctor:0
+msgid "Primary Care Doctor"
+msgstr "BS điều trị chính"
+
+#. module: medical
+#: field:medical.drug.form,code:0 field:medical.drug.route,code:0
+#: field:medical.ethnicity,code:0 field:medical.hospital.building,code:0
+#: field:medical.hospital.unit,code:0 field:medical.medication.dosage,code:0
+#: field:medical.occupation,code:0 field:medical.pathology,code:0
+#: field:medical.patient.disease,pcs_code:0 field:medical.procedure,name:0
+#: field:medical.speciality,code:0
+msgid "Code"
+msgstr "Mã"
+
+#. module: medical
+#: help:medical.patient,current_insurance:0
+msgid "Insurance information. You may choose from the different insurances belonging to the patient"
+msgstr "Thông tin bảo hiểm. Bạn có thể chọn từ nhiều công ty bảo hiểm của bệnh nhân"
+
+#. module: medical
+#: field:medical.patient.evaluation,orientation:0
+msgid "Orientation"
+msgstr "Định hướng"
+
+#. module: medical
+#: help:medical.patient,critical_info:0
+msgid "Write any important information on the patient's disease, surgeries, allergies, ..."
+msgstr "Viết bất cứ thông tin quan trọng về bệnh tật, phẫu thuật, dị ứng, v.v của bệnh nhân"
+
+#. module: medical
+#: model:product.template,name:medical.product_36_product_template
+msgid "BCG vaccine"
+msgstr "Vắc-xin BCG"
+
+#. module: medical
+#: view:medical.patient:0 field:medical.patient,sex:0
+msgid "Sex"
+msgstr "Giới tính"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_15
+msgid "Intrahepatic Artery "
+msgstr "Động mạch trong gan"
+
+#. module: medical
+#: field:medical.medication.dosage,name:0
+#: field:medical.medication.template,common_dosage:0
+#: field:medical.medication.template,frequency:0
+#: field:medical.patient.medication,common_dosage:0
+#: field:medical.patient.medication,frequency:0
+#: field:medical.prescription.line,common_dosage:0
+#: field:medical.prescription.line,frequency:0
+msgid "Frequency"
+msgstr "Tần suất"
+
+#. module: medical
+#: field:medical.patient.evaluation,evaluation_endtime:0
+msgid "End of Evaluation"
+msgstr "Kết thúc đánh giá"
+
+#. module: medical
+#: field:medical.hospital.bed,bed_type:0
+msgid "Bed Type"
+msgstr "Loại giường"
+
+#. module: medical
+#: field:medical.patient.medication,course_completed:0
+msgid "Course Completed"
+msgstr "Hoàn tất"
+
+#. module: medical
+#: field:medical.patient,photo:0
+msgid "Picture"
+msgstr "Hình"
+
+#. module: medical
+#: model:product.template,name:medical.product_253_product_template
+msgid "pneumococcal vaccine"
+msgstr "Vắc xin phế cầu khuẩn"
+
+#. module: medical
+#: model:product.template,name:medical.product_63_product_template
+msgid "chlorhexidine"
+msgstr "chlorhexidine"
+
+#. module: medical
+#: model:product.template,name:medical.product_173_product_template
+msgid "isoniazid"
+msgstr "isoniazid"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.EML
+msgid "Emulsion"
+msgstr "Nhũ tương"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Lipids"
+msgstr "Lipid"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.BAR
+msgid "Bar chewable"
+msgstr "Thanh nhai được"
+
+#. module: medical
+#: field:medical.patient.disease,age:0
+msgid "Age when diagnosed"
+msgstr "Tuổi khi chẩn đoán"
+
+#. module: medical
+#: model:product.template,name:medical.product_180_product_template
+msgid "lamivudine"
+msgstr "lamivudine"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_pruritus:0
+msgid "Pruritus"
+msgstr "Ngứa"
+
+#. module: medical
+#: model:product.template,name:medical.product_82_product_template
+msgid "codeine"
+msgstr "codeine"
+
+#. module: medical
+#: help:medical.patient,deceased:0
+msgid "Mark if the patient has died"
+msgstr "Đánh dấu nếu bệnh nhân đã qua đời"
+
+#. module: medical
+#: help:medical.physician,speciality:0
+msgid "Speciality Code"
+msgstr "Mã Chuyên khoa"
+
+#. module: medical
+#: model:product.template,name:medical.product_248_product_template
+msgid "phenobarbital"
+msgstr "phenobarbital"
+
+#. module: medical
+#: field:medical.medicament,active_component:0
+msgid "Active component"
+msgstr "Hoạt chất"
+
+#. module: medical
+#: help:medical.patient.evaluation,praxis:0
+msgid "Check this box if the patient is unable to make voluntary movements"
+msgstr "Đánh dấu ô này nếu bệnh nhân không thể thực hiện các chuyển động chủ động"
+
+#. module: medical
+#: model:product.template,name:medical.product_47_product_template
+msgid "bleomycin"
+msgstr "bleomycin"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PAD
+msgid "Pad"
+msgstr "Miếng đệm"
+
+#. module: medical
+#: model:product.template,name:medical.product_317_product_template
+msgid "sulfadoxine"
+msgstr "sulfadoxine"
+
+#. module: medical
+#: field:medical.patient.evaluation,loc_eyes:0
+msgid "Level of Consciousness - Eyes"
+msgstr "Mức độ ý thức - Mắt"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Doctor signature"
+msgstr "Chữ ký bác sĩ"
+
+#. module: medical
+#: field:medical.prescription.order,notes:0
+msgid "Prescription Notes"
+msgstr "Ghi chú kê toa"
+
+#. module: medical
+#: model:product.template,name:medical.product_97_product_template
+msgid "diazepam"
+msgstr "diazepam"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Address :"
+msgstr "Địa chỉ:"
+
+#. module: medical
+#: field:medical.installer.modules,medical_inpatient:0
+msgid "Medical Inpatient"
+msgstr "Bệnh nhân nội trú"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.action_medical_pathology_tree
+#: model:ir.model,name:medical.model_medical_pathology
+#: model:ir.ui.menu,name:medical.medical_conf_pathology
+#: model:ir.ui.menu,name:medical.medical_conf_pathology_tree
+#: view:medical.patient:0 field:medical.patient,diseases:0
+#: view:medical.patient.disease:0
+msgid "Diseases"
+msgstr "Bệnh sử"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.CART
+msgid "Cartridge"
+msgstr "Cartridge"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+#: field:medical.patient.evaluation,symptom_pain:0
+msgid "Pain"
+msgstr "Đau"
+
+#. module: medical
+#: view:medical.insurance:0
+msgid "Insurance List"
+msgstr "Danh sách bảo hiểm"
+
+#. module: medical
+#: selection:medical.patient,rh:0
+msgid "-"
+msgstr "-"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SPG
+msgid "Sponge"
+msgstr "Gạc"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.KIT
+msgid "Kit"
+msgstr "Gói dụng cụ"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_40
+msgid "Topical"
+msgstr "Khu trú"
+
+#. module: medical
+#: model:product.template,name:medical.product_bed_320_product_template
+msgid "320"
+msgstr "320"
+
+#. module: medical
+#: help:medical.installer.modules,medical_lifestyle:0
+msgid "Allow to enter Patient's lifestyle details."
+msgstr "Cho phép xem/nhập chi tiết lối sống, thói quen của bệnh nhân."
+
+#. module: medical
+#: model:product.template,name:medical.product_283_product_template
+msgid "ribavirin"
+msgstr "ribavirin"
+
+#. module: medical
+#: help:product.product,is_medicament:0
+msgid "Check if the product is a medicament"
+msgstr "Đánh dấu nếu sản phẩm là thuốc"
+
+#. module: medical
+#: help:medical.patient.evaluation,violent:0
+msgid "Check this box if the patient is agressive or violent at the moment"
+msgstr "Đánh dấu vào ô này nếu bệnh nhân có hành vi hung hăng hoặc bạo lực tại thời điểm hiện tại"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_hematemesis:0
+msgid "Hematemesis"
+msgstr "Hematemesis"
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "worsening"
+msgstr "xấu đi"
+
+#. module: medical
+#: model:product.template,name:medical.product_11_product_template
+msgid "aluminium hydroxide"
+msgstr "aluminium hydroxide"
+
+#. module: medical
+#: help:res.partner.address,relationship:0
+msgid "Include the relationship with the patient - friend, co-worker, brother, ...- "
+msgstr "Include the relationship with the patient - friend, co-worker, brother, ...- "
+
+#. module: medical
+#: help:medical.prescription.order,prescription_id:0
+msgid "Type in the ID of this prescription"
+msgstr "Nhập mã của toa thuốc này"
+
+#. module: medical
+#: model:product.template,name:medical.product_199_product_template
+msgid "medroxyprogesterone acetate"
+msgstr "medroxyprogesterone acetate"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_28
+msgid "Nasal Prongs"
+msgstr "Ngạnh mũi"
+
+#. module: medical
+#: field:medical.family_code,name:0 field:medical.hospital.building,name:0
+#: field:medical.hospital.unit,name:0 field:medical.hospital.ward,name:0
+#: field:medical.medicament,name:0 field:medical.operational_area,name:0
+#: field:medical.operational_sector,name:0 field:medical.pathology,name:0
+#: field:medical.pathology.category,complete_name:0
+#: field:medical.vaccination,vaccine:0
+msgid "Name"
+msgstr "Tên"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_diplopia:0
+msgid "Diplopia"
+msgstr "Chứng song thị"
+
+#. module: medical
+#: selection:medical.patient.evaluation,mood:0
+msgid "Rage"
+msgstr "Giận dữ"
+
+#. module: medical
+#: model:product.template,name:medical.product_311_product_template
+msgid "stavudine"
+msgstr "stavudine"
+
+#. module: medical
+#: field:medical.installer.modules,medical_surgery:0
+msgid "Medical Surgery"
+msgstr "Phẫu thuật Y Khoa"
+
+#. module: medical
+#: model:product.template,name:medical.product_59_product_template
+msgid "ceftriaxone"
+msgstr "ceftriaxone"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SOL
+msgid "Solution"
+msgstr "Thuốc nước"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_report_medicament
+#: model:ir.ui.menu,name:medical.medical_list_medicament
+msgid "Medicament List"
+msgstr "Danh sách thuốc"
+
+#. module: medical
+#: help:medical.installer.modules,medical_surgery:0
+msgid "Medical Surgery module used for patient's surgery details."
+msgstr "Mô đun Phẫu thuật Y khoa dùng cho chi tiết phẫu thuật của bệnh nhân."
+
+#. module: medical
+#: model:product.template,name:medical.product_188_product_template
+msgid "lidocaine"
+msgstr "lidocaine"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Diagnosis"
+msgstr "Chẩn đoán"
+
+#. module: medical
+#: model:product.template,name:medical.product_313_product_template
+msgid "stavudine + lamivudine + nevirapine"
+msgstr "stavudine + lamivudine + nevirapine"
+
+#. module: medical
+#: field:medical.hospital.ward,refrigerator:0
+msgid "Refrigetator"
+msgstr "Tủ lạnh"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Search Patients"
+msgstr "Tìm bệnh nhân"
+
+#. module: medical
+#: help:product.product,is_vaccine:0
+msgid "Check if the product is a vaccine"
+msgstr "Kiểm tra xem sản phẩm có phải là vắc xin"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_36
+msgid "Rebreather Mask"
+msgstr "Mặt nạ hỗ trợ thở"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_dysphagia:0
+msgid "Dysphagia"
+msgstr "Chứng khó nuốt"
+
+#. module: medical
+#: model:product.template,name:medical.product_167_product_template
+msgid "insulin injection (soluble)"
+msgstr "tiêm insulin (hòa tan)"
+
+#. module: medical
+#: model:product.template,name:medical.product_320_product_template
+msgid "sulfamethoxazole + trimethoprim"
+msgstr "sulfamethoxazole + trimethoprim"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GEF
+msgid "Granule effervescent"
+msgstr "Hạt sủi"
+
+#. module: medical
+#: model:product.template,name:medical.product_336_product_template
+msgid "tropicamide"
+msgstr "tropicamide"
+
+#. module: medical
+#: selection:medical.patient.disease,disease_severity:0
+msgid "Severe"
+msgstr "Nghiêm trọng"
+
+#. module: medical
+#: field:medical.patient.evaluation,actions:0
+msgid "Actions"
+msgstr "Hành động"
+
+#. module: medical
+#: model:product.template,name:medical.product_350_product_template
+msgid "zidovudine (ZDV or AZT)"
+msgstr "zidovudine (ZDV or AZT)"
+
+#. module: medical
+#: field:medical.patient.evaluation,notes_complaint:0
+msgid "Complaint details"
+msgstr "Chi tiết bệnh"
+
+#. module: medical
+#: help:medical.insurance,category:0
+msgid "Insurance company plan / category"
+msgstr "Loại công ty bảo hiểm"
+
+#. module: medical
+#: help:medical.patient.evaluation,malnutrition:0
+msgid "Check this box if the patient show signs of malnutrition. If not associated to a disease, please encode the correspondent disease on the patient disease history. For example, Moderate protein-energy malnutrition, E44.0 in ICD-10 encoding"
+msgstr "Đánh dấu hộp này nếu bệnh nhân có dấu hiệu suy dinh dưỡng. Nếu không liên quan đến bệnh, xin hãy mã hóa các bệnh liên quan trong lịch sử bệnh của bệnh nhân. Ví dụ, suy dinh dưỡng vừa do thiếu protein năng lượng, E44.0 trong mã hóa ICD-10"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_pathology
+#: model:ir.ui.menu,name:medical.medical_conf_pathology_pathology
+msgid "New Disease"
+msgstr "Bệnh mới"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_dysuria:0
+msgid "Dysuria"
+msgstr "Khó tiểu"
+
+#. module: medical
+#: model:product.template,name:medical.product_185_product_template
+msgid "levonorgestrel"
+msgstr "levonorgestrel"
+
+#. module: medical
+#: model:product.template,name:medical.product_327_product_template
+msgid "testosterone"
+msgstr "testosterone"
+
+#. module: medical
+#: model:product.template,name:medical.product_71_product_template
+msgid "cilastatin"
+msgstr "cilastatin"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.action_medical_procedure_report
+msgid "Medical Procedures Report"
+msgstr "Medical Procedures Report"
+
+#. module: medical
+#: model:product.template,name:medical.product_76_product_template
+msgid "clofazimine"
+msgstr "clofazimine"
+
+#. module: medical
+#: selection:medical.hospital.bed,state:0
+#: selection:medical.hospital.ward,state:0
+msgid "Not available"
+msgstr "Không có sẵn"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_33
+msgid "Perfusion"
+msgstr "Truyền dịch"
+
+#. module: medical
+#: view:medical.patient.disease:0
+#: field:medical.patient.disease,disease_severity:0 report:patient.diseases:0
+msgid "Severity"
+msgstr "Mức độ nghiêm trọng"
+
+#. module: medical
+#: field:medical.insurance,company:0
+msgid "Insurance Company"
+msgstr "Công ty bảo hiểm"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_pollakiuria:0
+msgid "Pollakiuiria"
+msgstr "Tiểu rát"
+
+#. module: medical
+#: model:product.template,name:medical.product_92_product_template
+msgid "daunorubicin"
+msgstr "daunorubicin"
+
+#. module: medical
+#: help:medical.patient.evaluation,cough:0
+msgid "If not associated to a disease, please encode it on the patient disease history."
+msgstr "Nếu không liên quan đến bệnh, xin hãy mã hóa nó trên lịch sử bệnh của bệnh nhân"
+
+#. module: medical
+#: field:medical.appointment,comments:0 field:medical.directions,comments:0
+msgid "Comments"
+msgstr "Ý kiến"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.action_medical_procedure_tree
+#: model:ir.ui.menu,name:medical.medical_conf_procedure
+#: model:ir.ui.menu,name:medical.medical_procedure_list
+msgid "Medical Procedures"
+msgstr "Các thủ thuật y khoa"
+
+#. module: medical
+#: view:medical.appointment:0 view:medical.patient:0
+msgid "Group By..."
+msgstr "Nhóm theo..."
+
+#. module: medical
+#: help:medical.operational_sector,name:0
+msgid "Region included in an operational area"
+msgstr "Khu vực bao gồm trong một khu vực hoạt động"
+
+#. module: medical
+#: model:product.template,name:medical.product_7_product_template
+msgid "albendazole"
+msgstr "albendazole"
+
+#. module: medical
+#: view:medical.physician:0
+msgid "Physician Information"
+msgstr "Thông tin Bác sĩ"
+
+#. module: medical
+#: model:product.template,name:medical.product_219_product_template
+msgid "mumps vaccine"
+msgstr "Thuốc chủng ngừa bệnh quai bị"
+
+#. module: medical
+#: field:medical.hospital.ward,ac:0
+msgid "Air Conditioning"
+msgstr "Điều hòa không khí"
+
+#. module: medical
+#: help:medical.patient,patient_id:0
+msgid "Patient Identifier provided by the Health Center. Is not the patient id from the partner form"
+msgstr "Thông tin nhận dạng bệnh nhân cung cấp bởi Trung tâm Y tế. Không phải mã bệnh nhân từ mẫu của đối tác. "
+
+#. module: medical
+#: field:medical.patient.evaluation,miosis:0
+msgid "Miosis"
+msgstr "Co đồng tử, hẹp đồng tử"
+
+#. module: medical
+#: model:product.template,name:medical.product_111_product_template
+msgid "efavirenz + emtricitabine + tenofovir"
+msgstr "efavirenz + emtricitabine + tenofovir"
+
+#. module: medical
+#: field:medical.medicament,pregnancy:0
+msgid "Pregnancy and Lactancy"
+msgstr "Mang thai và cho con bú"
+
+#. module: medical
+#: model:product.template,name:medical.product_69_product_template
+msgid "cholera vaccine"
+msgstr "Thuốc chủng ngừa bệnh tả"
+
+#. module: medical
+#: view:medical.installer.modules:0
+msgid "title"
+msgstr "cách xưng hô"
+
+#. module: medical
+#: help:medical.medication.dosage,code:0
+msgid "Dosage Code, such as SNOMED, 229798009 = 3 times per day"
+msgstr "Mã liều lượng, ví dụ SNOMED, 229798009 = 3 lần /ngày"
+
+#. module: medical
+#: field:medical.patient.disease,treatment_description:0
+msgid "Treatment Description"
+msgstr "Mô tả phác đồ điều trị"
+
+#. module: medical
+#: model:product.template,name:medical.product_168_product_template
+msgid "intermediate‐acting insulin"
+msgstr "intermediate‐acting insulin"
+
+#. module: medical
+#: field:medical.vaccination,dose:0
+msgid "Dose Number"
+msgstr "Liều số"
+
+#. module: medical
+#: selection:medical.hospital.bed,state:0
+msgid "Free"
+msgstr "Trống"
+
+#. module: medical
+#: field:medical.patient.medication,discontinued:0
+msgid "Discontinued"
+msgstr "Kết thúc"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.CAP
+msgid "Capsule"
+msgstr "Bao con nhộng"
+
+#. module: medical
+#: model:product.template,name:medical.product_25_product_template
+msgid "artemether"
+msgstr "artemether"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TABC
+msgid "Tablet chewable"
+msgstr "Viên nhai"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.ELX
+msgid "Elixir"
+msgstr "Cồn ngọt"
+
+#. module: medical
+#: field:medical.patient.evaluation,jugular_engorgement:0
+msgid "Tremor"
+msgstr "Run"
+
+#. module: medical
+#: view:medical.hospital.bed:0
+msgid "Search Health Center Beds"
+msgstr "Tìm kiếm theo giường bệnh"
+
+#. module: medical
+#: model:ir.actions.report.xml,name:medical.report_patient_vaccinations
+msgid "Vaccination History"
+msgstr "Lịch sử Tiêm chủng"
+
+#. module: medical
+#: model:product.template,name:medical.product_41_product_template
+msgid "benzoic acid + salicylic acid"
+msgstr "benzoic acid + salicylic acid"
+
+#. module: medical
+#: help:medical.patient.disease,is_infectious:0
+msgid "Check if the patient has an infectious / transmissible disease"
+msgstr "Kiểm tra xem bệnh nhân có bị bệnh nhiễm trùng/bệnh truyền nhiễm"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_10
+msgid "Intrabursal "
+msgstr "Trong bìu, túi"
+
+#. module: medical
+#: help:medical.medicament,therapeutic_action:0
+msgid "Therapeutic action"
+msgstr "Hành động trị liệu"
+
+#. module: medical
+#: model:product.template,name:medical.product_266_product_template
+msgid "procarbazine"
+msgstr "procarbazine"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_mood_swings:0
+msgid "Mood Swings"
+msgstr "Rối loạn trạng thái"
+
+#. module: medical
+#: model:product.template,name:medical.product_6_product_template
+msgid "aciclovir"
+msgstr "aciclovir"
+
+#. module: medical
+#: help:medical.pathology,code:0
+msgid "Specific Code for the Disease (eg, ICD-10, SNOMED...)"
+msgstr "Mã cụ thể của bệnh (ví dụ, ICD-10, SNOMED...)"
+
+#. module: medical
+#: field:medical.patient.evaluation,hba1c:0
+msgid "Glycated Hemoglobin"
+msgstr "Hemoglobina glucosilada"
+
+#. module: medical
+#: help:medical.patient.medication,discontinued_reason:0
+msgid "Short description for discontinuing the treatment"
+msgstr "Mô tả ngắn gọn về việc ngừng điều trị"
+
+#. module: medical
+#: field:medical.installer.modules,medical_icd10:0
+msgid "Medical ICD-10"
+msgstr "Y khoa ICD-10"
+
+#. module: medical
+#: help:medical.patient.evaluation,hdl:0
+msgid "Last HDL Cholesterol reading. Can be approximative"
+msgstr "Lần đọc HDL Cholesterol cuối. Có thể được ước lượng"
+
+#. module: medical
+#: selection:medical.patient.disease,allergy_type:0
+msgid "Drug Allergy"
+msgstr "Dị ứng thuốc"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_nocturia:0
+msgid "Nocturia"
+msgstr "Tiểu đêm"
+
+#. module: medical
+#: model:product.template,name:medical.product_81_product_template
+msgid "coal tar"
+msgstr "coal tar"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_pain_intensity:0
+msgid "Pain intensity"
+msgstr "Cường độ đau"
+
+#. module: medical
+#: field:medical.installer.modules,medical_lab:0
+msgid "Medical Lab"
+msgstr "Xét nghiệm"
+
+#. module: medical
+#: model:product.template,name:medical.product_226_product_template
+msgid "nevirapine (NVP)"
+msgstr "nevirapine (NVP)"
+
+#. module: medical
+#: model:product.template,name:medical.product_165_product_template
+msgid "influenza vaccine"
+msgstr "Vắc xin ngừa cảm cúm"
+
+#. module: medical
+#: help:medical.patient.evaluation,ldl:0
+msgid "Last LDL Cholesterol reading. Can be approximative"
+msgstr "Ngày kiểm tra LDL Cholesterol lần cuối. Có thể ước tính."
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "Appointment Information"
+msgstr "Thông tin đặt hẹn"
+
+#. module: medical
+#: model:product.template,name:medical.product_90_product_template
+msgid "dactinomycin"
+msgstr "dactinomycin"
+
+#. module: medical
+#: field:medical.patient.evaluation,info_diagnosis:0
+msgid "Presumptive Diagnosis: Extra Info"
+msgstr "Chẩn đoán dự đoán: Thông tin bổ sung"
+
+#. module: medical
+#: model:product.template,name:medical.product_79_product_template
+msgid "clotrimazole"
+msgstr "clotrimazole"
+
+#. module: medical
+#: field:medical.patient.evaluation,temperature:0
+msgid "Temperature (celsius)"
+msgstr "Nhiệt độ (C)"
+
+#. module: medical
+#: field:medical.hospital.ward,floor:0
+msgid "Floor Number"
+msgstr "Tầng số"
+
+#. module: medical
+#: help:medical.hospital.bed,name:0
+msgid "Bed Number"
+msgstr "Số giường"
+
+#. module: medical
+#: field:medical.patient.evaluation,cholesterol_total:0
+msgid "Last Cholesterol"
+msgstr "Last Cholesterol"
+
+#. module: medical
+#: model:product.template,name:medical.product_346_product_template
+msgid "vincristine"
+msgstr "vincristine"
+
+#. module: medical
+#: model:product.template,name:medical.product_22_product_template
+msgid "anti‐D immunoglobulin (human)"
+msgstr "anti‐D immunoglobulin (human)"
+
+#. module: medical
+#: model:product.template,name:medical.product_146_product_template
+msgid "glucose with sodium chloride"
+msgstr "glucose with sodium chloride"
+
+#. module: medical
+#: help:medical.hospital.bed,telephone_number:0
+msgid "Telephone number / Extension"
+msgstr "Số điện thoại / Máy nhánh"
+
+#. module: medical
+#: field:medical.hospital.bed,extra_info:0
+#: field:medical.hospital.building,extra_info:0
+#: field:medical.hospital.unit,extra_info:0
+#: field:medical.hospital.ward,extra_info:0 field:medical.insurance,notes:0
+#: view:medical.medicament:0 field:medical.medicament,notes:0
+#: view:medical.pathology:0 field:medical.pathology,info:0
+#: view:medical.patient.disease:0 field:medical.patient.disease,extra_info:0
+#: field:medical.patient.medication,notes:0 view:medical.physician:0
+msgid "Extra Info"
+msgstr "Thông tin thêm"
+
+#. module: medical
+#: model:product.template,name:medical.product_121_product_template
+msgid "erythromycin"
+msgstr "erythromycin"
+
+#. module: medical
+#: selection:medical.patient,sex:0
+msgid "Female"
+msgstr "Nữ"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_vesical_tenesmus:0
+msgid "Vesical Tenesmus"
+msgstr "Vesical Tenesmus"
+
+#. module: medical
+#: model:product.template,name:medical.product_178_product_template
+msgid "kanamycin"
+msgstr "kanamycin"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.ECT
+msgid "Tablet enteric coated"
+msgstr "Thuốc viên tráng ruột"
+
+#. module: medical
+#: model:product.template,name:medical.product_318_product_template
+msgid "sulfadoxine + pyrimethamine"
+msgstr "sulfadoxine + pyrimethamine"
+
+#. module: medical
+#: report:patient.diseases:0
+msgid "Disease (ICD-10)"
+msgstr "Bệnh (ICD-10)"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_eye_glasses:0
+msgid "Eye glasses"
+msgstr "Mắt kính"
+
+#. module: medical
+#: field:medical.patient,medications:0
+msgid "Medications"
+msgstr "Các phép trị liệu"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Evaluation Summary"
+msgstr "Khai bệnh chi tiết"
+
+#. module: medical
+#: model:product.template,name:medical.product_237_product_template
+msgid "oral rehydration salts"
+msgstr "muối bù nước đường uống"
+
+#. module: medical
+#: model:product.template,name:medical.product_230_product_template
+msgid "nifurtimox"
+msgstr "nifurtimox"
+
+#. module: medical
+#: field:medical.hospital.ward,internet:0
+msgid "Internet Access"
+msgstr "Có thể sử dụng Internet"
+
+#. module: medical
+#: help:medical.installer.modules,medical_socioeconomics:0
+msgid "Allow to enter social economic details of Patient."
+msgstr "Cho phép nhập chi tiết thông tin kinh tế xã hội của bệnh nhân."
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_epistaxis:0
+msgid "Epistaxis"
+msgstr "Chảy máu cam"
+
+#. module: medical
+#: field:medical.ethnicity,name:0 field:medical.patient,ethnic_group:0
+msgid "Ethnic group"
+msgstr "Dân tộc"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_blurry_vision:0
+msgid "Blurry vision"
+msgstr "Tầm nhìn bị mờ"
+
+#. module: medical
+#: model:product.template,name:medical.product_205_product_template
+msgid "meningococcal meningitis vaccine"
+msgstr "Vắc xin ngừa viêm màng não"
+
+#. module: medical
+#: selection:medical.patient.evaluation,mood:0
+msgid "Euphoria"
+msgstr "Eufórico"
+
+#. module: medical
+#: model:product.template,name:medical.product_50_product_template
+msgid "calamine lotion"
+msgstr "thuốc xứt, thuốc rửa calamine"
+
+#. module: medical
+#: help:medical.patient.disease,short_comment:0
+msgid "Brief, one-line remark of the disease. Longer description will go on the Extra info field"
+msgstr "Ngắn gọn, một dòng ghi chú về bệnh. Mô tả chi tiết sẽ được thể hiện ở mục thông tin bổ sung."
+
+#. module: medical
+#: field:medical.patient.evaluation,violent:0
+msgid "Violent Behaviour"
+msgstr "Hành vi bạo lực"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_occupation
+msgid "Occupation / Job"
+msgstr "Nghề Nghiệp / Việc làm"
+
+#. module: medical
+#: help:medical.installer.modules,medical_lab:0
+msgid "Medical Lab module used for Lab Management and lab test reports and invoicing."
+msgstr "Mô đun Xét nghiệm Y khoa dùng cho Quản trị xét nghiệm và báo cáo xét nghiệm và lập hóa đơn."
+
+#. module: medical
+#: help:medical.patient.medication,is_active:0
+msgid "Check this option if the patient is currently taking the medication"
+msgstr "Đánh dấu tùy chọn này nếu bệnh nhân đang uống thuốc"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_dose_unit
+msgid "medical.dose.unit"
+msgstr "medical.dose.unit"
+
+#. module: medical
+#: field:medical.appointment,name:0
+msgid "Appointment ID"
+msgstr "Mã cuộc hẹn"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PEN
+msgid "Pencil"
+msgstr "Bút chì"
+
+#. module: medical
+#: field:medical.patient,blood_type:0
+msgid "Blood Type"
+msgstr "Nhóm máu"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_1
+msgid "Apply Externally "
+msgstr "Dùng ngoài da"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_tinnitus:0
+msgid "Tinnitus"
+msgstr "Tiếng ù tai"
+
+#. module: medical
+#: selection:medical.appointment,urgency:0
+msgid "Medical Emergency"
+msgstr "Cấp cứu y tế"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.AEM
+msgid "Aerosol metered-dose"
+msgstr "Bình phun với đồng hồ đo liều"
+
+#. module: medical
+#: field:res.partner.address,relative_id:0
+msgid "Relative Partner ID"
+msgstr "Relative Partner ID"
+
+#. module: medical
+#: field:medical.patient.disease,is_on_treatment:0
+msgid "Currently on Treatment"
+msgstr "Hiện đang điều trị"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_insomnia:0
+msgid "Insomnia"
+msgstr "Chứng mất ngủ"
+
+#. module: medical
+#: field:medical.patient.evaluation,lynphadenitis:0
+msgid "Linphadenitis"
+msgstr "Viêm hạch bạch huyết"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_5
+msgid "Endotrachial Tube"
+msgstr "Ống nội khí quản"
+
+#. module: medical
+#: field:medical.appointment,institution:0
+msgid "Health Center"
+msgstr "Trung tâm y tế"
+
+#. module: medical
+#: model:product.template,name:medical.product_323_product_template
+msgid "suxamethonium"
+msgstr "suxamethonium"
+
+#. module: medical
+#: field:medical.family_code,members_ids:0
+msgid "Members"
+msgstr "Thành viên"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_30
+msgid "Ophthalmic"
+msgstr "Thuốc chữa mắt"
+
+#. module: medical
+#: field:medical.medicament,qty_available:0
+msgid "Quantity Available"
+msgstr "Số lượng sẵn có"
+
+#. module: medical
+#: help:medical.patient.evaluation,cyanosis:0
+msgid "If not associated to a disease, please encode it on the patient disease history. For example,  R23.0 in ICD-10 encoding"
+msgstr "Nếu không liên quan đến bệnh, xin hãy mã hóa nó trên lịch sử bệnh của bệnh nhân. Ví dụ, mã hóa R23.0 trong ICD-10"
+
+#. module: medical
+#: view:medical.patient:0 view:medical.patient.evaluation:0
+msgid "Evaluations"
+msgstr "Thăm khám"
+
+#. module: medical
+#: field:medical.patient.evaluation,cough:0
+msgid "Cough"
+msgstr "Ho"
+
+#. module: medical
+#: view:medical.drug.form:0
+msgid "Medicament Form"
+msgstr "Toa thuốc"
+
+#. module: medical
+#: model:product.template,name:medical.product_67_product_template
+msgid "chlorphenamine"
+msgstr "chlorphenamine"
+
+#. module: medical
+#: model:product.template,name:medical.product_179_product_template
+msgid "ketamine"
+msgstr "ketamine"
+
+#. module: medical
+#: model:product.template,name:medical.product_45_product_template
+msgid "betamethasone"
+msgstr "betamethasone"
+
+#. module: medical
+#: selection:medical.hospital.ward,state:0
+msgid "Beds available"
+msgstr "Giường còn trống"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_paralysis:0
+msgid "Paralysis"
+msgstr "Liệt"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SOP
+msgid "Soap bar"
+msgstr "Thanh xà phòng"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_44
+msgid "Urethral"
+msgstr "Niệu đạo"
+
+#. module: medical
+#: help:medical.patient.evaluation,orientation:0
+msgid "Check this box if the patient is disoriented in time and/or space"
+msgstr "Đánh dấu ô này nếu bệnh nhân bị mất phương hướng về thời gian và/hoặc không gian"
+
+#. module: medical
+#: model:product.template,name:medical.product_272_product_template
+msgid "pyrantel"
+msgstr "pyrantel"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_chest_pain:0
+msgid "Chest Pain"
+msgstr "Đau ngực"
+
+#. module: medical
+#: view:medical.patient.disease:0 report:patient.diseases:0
+msgid "Diagnosed"
+msgstr "Chẩn đoán"
+
+#. module: medical
+#: model:product.template,name:medical.product_322_product_template
+msgid "suramin sodium"
+msgstr "suramin sodium"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_45
+msgid "Vaginal"
+msgstr "Âm đạo"
+
+#. module: medical
+#: help:medical.patient.evaluation,miosis:0
+#: help:medical.patient.evaluation,mydriasis:0
+msgid "If not associated to a disease, please encode it on the patient disease history. For example,  H57.0 in ICD-10 encoding"
+msgstr "Nếu không liên quan đến bệnh, xin hãy mã hóa nó trên lịch sử bệnh của bệnh nhân, ví dụ, H57.0 trong mã hóa ICD-10"
+
+#. module: medical
+#: field:medical.patient.evaluation,osat:0
+msgid "Oxygen Saturation"
+msgstr "Bão hòa Oxy"
+
+#. module: medical
+#: model:product.template,name:medical.product_203_product_template
+msgid "meglumine iotroxate"
+msgstr "meglumine iotroxate"
+
+#. module: medical
+#: model:product.template,name:medical.product_296_product_template
+msgid "selenium sulfide"
+msgstr "selenium sulfide"
+
+#. module: medical
+#: model:product.template,name:medical.product_155_product_template
+msgid "hepatitis B vaccine"
+msgstr "Vắc xin viêm gan siêu vi B"
+
+#. module: medical
+#: model:product.template,name:medical.product_314_product_template
+msgid "streptokinase"
+msgstr "streptokinase"
+
+#. module: medical
+#: model:product.template,name:medical.product_215_product_template
+msgid "miconazole"
+msgstr "miconazole"
+
+#. module: medical
+#: view:medical.hospital.unit:0
+msgid "Search Health Center Units"
+msgstr "Tìm kiếm đơn vị của TTYT"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_physician
+msgid "Information about the doctor"
+msgstr "Thông tin về bác sĩ"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.BLS
+msgid "Bolus"
+msgstr "Viên thuốc to"
+
+#. module: medical
+#: help:medical.patient.evaluation,abstraction:0
+msgid "Check this box if the patient presents abnormalities in abstract reasoning"
+msgstr "Đánh dấu hộp này nếu bệnh nhân có biểu hiện bất thường trong lý luận trừu tượng"
+
+#. module: medical
+#: model:product.template,name:medical.product_18_product_template
+msgid "amoxicillin"
+msgstr "amoxicillin"
+
+#. module: medical
+#: field:medical.patient.disease,weeks_of_pregnancy:0
+msgid "Contracted in pregnancy week #"
+msgstr "Có cơn gò ở tuần mang thai thứ #"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_patient_action_tree
+#: model:ir.ui.menu,name:medical.medical_edit_patient
+#: model:ir.ui.menu,name:medical.medical_patients_menu
+msgid "Patients"
+msgstr "Bệnh nhân"
+
+#. module: medical
+#: model:product.template,name:medical.product_150_product_template
+msgid "Haemophilus influenzae type b vaccine"
+msgstr "Haemophilus influenzae type b vaccine"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.LOZ
+msgid "Lozenge"
+msgstr "Viên thuốc hình thoi"
+
+#. module: medical
+#: field:medical.patient.evaluation,dehydration:0
+msgid "Dehydration"
+msgstr "Mất nước"
+
+#. module: medical
+#: field:medical.patient.evaluation,petechiae:0
+msgid "Petechiae"
+msgstr "Petequias"
+
+#. module: medical
+#: model:product.template,name:medical.product_5_product_template
+msgid "acetylsalicylic acid"
+msgstr "acetylsalicylic acid"
+
+#. module: medical
+#: model:product.template,name:medical.product_157_product_template
+msgid "hydralazine"
+msgstr "hydralazine"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GLO
+msgid "Globules"
+msgstr "Thuốc giọt"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GRT
+msgid "Graft"
+msgstr "Mô ghép"
+
+#. module: medical
+#: selection:medical.patient.disease,allergy_type:0
+msgid "Misc Contraindication"
+msgstr "Contraindicaciones varias"
+
+#. module: medical
+#: field:medical.patient.evaluation,loc_motor:0
+msgid "Level of Consciousness - Motor"
+msgstr "Mức thức - Vận động"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "</para>           <para style=\"P12\">email :"
+msgstr "</para>           <para style=\"P12\">email :"
+
+#. module: medical
+#: model:product.template,name:medical.product_103_product_template
+msgid "diphtheria antitoxin"
+msgstr "thuốc kháng độc bạch hầu"
+
+#. module: medical
+#: view:medical.pathology:0
+msgid "Genetics"
+msgstr "Chủng loại"
+
+#. module: medical
+#: field:medical.patient.evaluation,erithema:0
+msgid "Erithema"
+msgstr "Ban đỏ"
+
+#. module: medical
+#: view:medical.speciality:0
+msgid "Medical Speciality"
+msgstr "Chuyên khoa y tế"
+
+#. module: medical
+#: field:medical.patient.evaluation,increased_fremitus:0
+msgid "Increased Fremitus"
+msgstr "Increased Fremitus"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_11
+msgid "Intracardiac "
+msgstr "Nội tim"
+
+#. module: medical
+#: model:product.template,name:medical.product_171_product_template
+msgid "iohexol"
+msgstr "iohexol"
+
+#. module: medical
+#: model:product.template,name:medical.product_137_product_template
+msgid "fluorescein"
+msgstr "fluorescein"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_diarrhea:0
+msgid "Diarrhea"
+msgstr "Tiêu chảy"
+
+#. module: medical
+#: view:medical.ethnicity:0
+msgid "Search Ethnicities"
+msgstr "Tìm kiếm theo dân tộc"
+
+#. module: medical
+#: help:medical.medication.template,frequency:0
+#: help:medical.patient.medication,frequency:0
+#: help:medical.prescription.line,frequency:0
+msgid "Time in between doses the patient must wait (ie, for 1 pill each 8 hours, put here 8 and select 'hours' in the unit field"
+msgstr "Time in between doses the patient must wait (ie, for 1 pill each 8 hours, put here 8 and select 'hours' in the unit field"
+
+#. module: medical
+#: model:product.category,name:medical.vaccine
+msgid "Vaccines"
+msgstr "Vắc xin"
+
+#. module: medical
+#: model:product.template,name:medical.product_160_product_template
+msgid "hydroxocobalamin"
+msgstr "hydroxocobalamin"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_pathology_category
+#: view:medical.pathology.category:0
+msgid "Disease Categories"
+msgstr "Loại bệnh"
+
+#. module: medical
+#: constraint:ir.ui.menu:0
+msgid "Error ! You can not create recursive Menu."
+msgstr "Error ! You can not create recursive Menu."
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_hospital_bed
+msgid "medical.hospital.bed"
+msgstr "medical.hospital.bed"
+
+#. module: medical
+#: selection:medical.patient.disease,disease_severity:0
+msgid "Moderate"
+msgstr "Trung bình"
+
+#. module: medical
+#: model:product.template,name:medical.product_329_product_template
+msgid "tetracaine"
+msgstr "tetracaine"
+
+#. module: medical
+#: model:product.template,name:medical.product_164_product_template
+msgid "indinavir (IDV)"
+msgstr "indinavir (IDV)"
+
+#. module: medical
+#: help:res.partner.address,relative_id:0
+msgid "If the relative is also a patient, please include it here"
+msgstr "Nếu người thân cũng là bệnh nhân, xin vui long thêm vào đây"
+
+#. module: medical
+#: model:product.template,name:medical.product_270_product_template
+msgid "propylthiouracil"
+msgstr "propylthiouracil"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_hospital_building
+#: model:ir.ui.menu,name:medical.medical_conf_hospital_building_add
+msgid "Health Center Buildings"
+msgstr "Tòa nhà trung tâm y tế"
+
+#. module: medical
+#: model:product.template,name:medical.product_99_product_template
+msgid "diethylcarbamazine"
+msgstr "diethylcarbamazine"
+
+#. module: medical
+#: field:medical.patient.evaluation,head_circumference:0
+msgid "Head Circumference"
+msgstr "Chu vi vòng đầu"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "Appointment"
+msgstr "Cuộc hẹn"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_ear_discharge:0
+msgid "Ear Discharge"
+msgstr "Xả tai"
+
+#. module: medical
+#: field:medical.patient.evaluation,vocabulary:0
+msgid "Vocabulary"
+msgstr "Từ vựng"
+
+#. module: medical
+#: model:product.template,name:medical.product_337_product_template
+msgid "tuberculin, purified protein derivative (PPD)"
+msgstr "Tubeculin tinh chế PPD, "
+
+#. module: medical
+#: help:medical.installer.modules,medical_invoice:0
+msgid "This module add functionality to create invoices for doctor's consulting charge."
+msgstr "Mô đun này bổ sung chức năng tạo hóa đơn cho phí khám, tư vấn của bác sĩ."
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PLS
+msgid "Plaster"
+msgstr "Thạch cao"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Refills :"
+msgstr "Làm đầy lại :"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.CMT
+msgid "Cement"
+msgstr "Men chân răng"
+
+#. module: medical
+#: help:medical.patient.evaluation,bpm:0
+msgid "Heart rate expressed in beats per minute"
+msgstr "Nhịp tim (nhịp/phút)"
+
+#. module: medical
+#: selection:medical.hospital.ward,gender:0
+msgid "Unisex"
+msgstr "Unisex"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SYR
+msgid "Syrup"
+msgstr "Si rô"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_16
+msgid "Intramuscular "
+msgstr "Trong cơ"
+
+#. module: medical
+#: view:medical.directions:0 field:medical.patient.evaluation,directions:0
+msgid "Plan"
+msgstr "Kế hoạch"
+
+#. module: medical
+#: model:product.template,name:medical.product_227_product_template
+msgid "niclosamide"
+msgstr "niclosamide"
+
+#. module: medical
+#: model:product.template,name:medical.product_267_product_template
+msgid "proguanil"
+msgstr "proguanil"
+
+#. module: medical
+#: field:medical.pathology.category,active:0 view:medical.patient.disease:0
+#: field:medical.patient.medication,is_active:0 report:patient.diseases:0
+msgid "Active"
+msgstr "Có hiệu lực"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_polydipsia:0
+msgid "Polydipsia"
+msgstr "Khát nhiều"
+
+#. module: medical
+#: help:medical.prescription.line,prnt:0
+msgid "Check this box to print this line of the prescription."
+msgstr "Đánh dấu vào ô này để in dòng này của đơn thuốc."
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Review :"
+msgstr "Tái khám : "
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GEL
+msgid "Gel"
+msgstr "Keo"
+
+#. module: medical
+#: model:product.template,name:medical.product_57_product_template
+msgid "cefixime"
+msgstr "cefixime"
+
+#. module: medical
+#: model:product.template,name:medical.product_234_product_template
+msgid "norethisterone enantate"
+msgstr "norethisterone enantate"
+
+#. module: medical
+#: model:product.template,name:medical.product_244_product_template
+msgid "penicillamine"
+msgstr "penicillamine"
+
+#. module: medical
+#: model:ir.actions.report.xml,name:medical.report_prescription_order
+#: view:medical.prescription.line:0 view:medical.prescription.order:0
+msgid "Prescription"
+msgstr "Đơn thuốc"
+
+#. module: medical
+#: field:medical.medication.template,route:0
+#: field:medical.patient.medication,route:0
+#: field:medical.prescription.line,route:0
+msgid "Administration Route"
+msgstr "Đường dùng"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.LIQ
+msgid "Liquid"
+msgstr "Chất lỏng"
+
+#. module: medical
+#: help:medical.vaccination,vaccine_lot:0
+msgid "Please check on the vaccine (product) production lot number and tracking number when available !"
+msgstr "Xin vui lòng kiểm tra số hiệu sản xuất (production lot number) và số theo dõi trên vắc-xin!"
+
+#. module: medical
+#: field:medical.medicament,pregnancy_warning:0
+msgid "Pregnancy Warning"
+msgstr "Cảnh báo khi mang thai"
+
+#. module: medical
+#: model:product.template,name:medical.product_345_product_template
+msgid "vinblastine"
+msgstr "vinblastine"
+
+#. module: medical
+#: field:medical.patient.evaluation,decreased_fremitus:0
+msgid "Decreased Fremitus"
+msgstr "Decreased Fremitus"
+
+#. module: medical
+#: model:product.template,name:medical.product_70_product_template
+msgid "ciclosporin"
+msgstr "ciclosporin"
+
+#. module: medical
+#: field:medical.family_code,info:0 field:medical.operational_area,info:0
+#: field:medical.operational_sector,info:0
+msgid "Extra Information"
+msgstr "Thông tin bổ sung"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_speciality
+#: model:ir.ui.menu,name:medical.medical_conf_speciality
+msgid "Medical Specialties"
+msgstr "Các chuyên khoa"
+
+#. module: medical
+#: model:product.template,name:medical.product_54_product_template
+msgid "carbamazepine"
+msgstr "carbamazepine"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PIC
+msgid "Piece chewable"
+msgstr "Viên nhai"
+
+#. module: medical
+#: model:product.template,name:medical.product_15_product_template
+msgid "amitriptyline"
+msgstr "amitriptyline"
+
+#. module: medical
+#: model:product.template,name:medical.product_154_product_template
+msgid "hepatitis A vaccine"
+msgstr "Thuốc chủng ngừa viêm gan siêu vi A"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_ethnicity
+msgid "medical.ethnicity"
+msgstr "medical.ethnicity"
+
+#. module: medical
+#: field:medical.pathology,category:0
+msgid "Disease Category"
+msgstr "Loại bệnh"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_medication_template
+msgid "Template for medication"
+msgstr "Mẫu đơn thuốc"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_18
+msgid "Intraocular "
+msgstr "Trong mắt"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.DPS
+msgid "Drops"
+msgstr "Giọt"
+
+#. module: medical
+#: model:product.template,name:medical.product_325_product_template
+msgid "tenofovir"
+msgstr "tenofovir"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_ethnicity
+#: model:ir.ui.menu,name:medical.medical_conf_ethnicity
+#: view:medical.ethnicity:0
+msgid "Ethnic Groups"
+msgstr "Dân tộc"
+
+#. module: medical
+#: help:medical.medication.template,form:0
+#: help:medical.patient.medication,form:0
+#: help:medical.prescription.line,form:0
+msgid "Drug form, such as tablet or gel"
+msgstr "Dạng thuốc, ví dụ như thuốc viên hoặc dạng gel"
+
+#. module: medical
+#: help:medical.medicament,indications:0
+msgid "Indications"
+msgstr "Chỉ dẫn"
+
+#. module: medical
+#: field:medical.installer.modules,medical_socioeconomics:0
+msgid "Medical Socioeconomics"
+msgstr "Medical Socioeconomics"
+
+#. module: medical
+#: model:product.template,name:medical.product_114_product_template
+msgid "emtricitabine (FTC)"
+msgstr "emtricitabine (FTC)"
+
+#. module: medical
+#: field:medical.medication.template,start_treatment:0
+#: field:medical.patient.disease,date_start_treatment:0
+#: field:medical.patient.medication,start_treatment:0
+#: field:medical.prescription.line,start_treatment:0
+msgid "Start of treatment"
+msgstr "Bắt đầu điều trị"
+
+#. module: medical
+#: field:medical.prescription.line,name:0
+#: field:medical.prescription.order,prescription_id:0
+msgid "Prescription ID"
+msgstr "Mã toa thuốc"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_patient_disease
+msgid "Disease info"
+msgstr "Thông tin về bệnh"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_hospital_unit
+#: model:ir.ui.menu,name:medical.medical_conf_hospital_unit_add
+msgid "Health Center Units"
+msgstr "Các khoa của trung tâm y tế"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_conf_misc
+msgid "Misc"
+msgstr "Linh tinh khác"
+
+#. module: medical
+#: field:medical.insurance,number:0
+msgid "Number"
+msgstr "Số"
+
+#. module: medical
+#: model:product.template,name:medical.product_64_product_template
+msgid "chlorine base compound"
+msgstr "cơ sở hợp chất clo"
+
+#. module: medical
+#: help:medical.patient.evaluation,derived_to:0
+msgid "Physician to whom escalate / derive the case"
+msgstr "Bác sĩ nhận/chuyển bệnh"
+
+#. module: medical
+#: model:product.template,name:medical.product_310_product_template
+msgid "spironolactone"
+msgstr "spironolactone"
+
+#. module: medical
+#: field:res.partner,lastname:0 help:res.partner,lastname:0
+msgid "Last Name"
+msgstr "Họ"
+
+#. module: medical
+#: model:product.template,name:medical.product_192_product_template
+msgid "lopinavir + ritonavir (LPV/r)"
+msgstr "lopinavir + ritonavir (LPV/r)"
+
+#. module: medical
+#: model:ir.actions.report.xml,name:medical.report_patient_label
+msgid "Patient Card"
+msgstr "Thẻ bệnh nhân"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_abdominal_distension:0
+msgid "Abdominal Distension"
+msgstr "Bụng chướng"
+
+#. module: medical
+#: field:medical.patient,admissions_ids:0
+msgid "Admission / Discharge"
+msgstr "Nhập viện / Xuất viện"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_gingival_bleeding:0
+msgid "Gingival Bleeding"
+msgstr "Chảy máu nướu răng"
+
+#. module: medical
+#: model:product.template,name:medical.product_295_product_template
+msgid "saquinavir (SQV)"
+msgstr "saquinavir (SQV)"
+
+#. module: medical
+#: model:product.template,name:medical.product_307_product_template
+msgid "sodium thiosulfate"
+msgstr "sodium thiosulfate"
+
+#. module: medical
+#: model:product.template,name:medical.product_87_product_template
+msgid "cypionate"
+msgstr "cypionate"
+
+#. module: medical
+#: view:medical.hospital.bed:0
+msgid "Health Center Bed Info"
+msgstr "Thông tin giường bệnh trung tâm y tế"
+
+#. module: medical
+#: field:medical.patient.disease,allergy_type:0
+msgid "Allergy type"
+msgstr "Loại dị ứng"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_31
+msgid "Otic"
+msgstr "Tai"
+
+#. module: medical
+#: model:product.template,name:medical.product_32_product_template
+msgid "azathioprine"
+msgstr "azathioprine"
+
+#. module: medical
+#: model:product.template,name:medical.product_86_product_template
+msgid "cycloserine"
+msgstr "cycloserine"
+
+#. module: medical
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "The Object name must start with x_ and not contain any special character !"
+
+#. module: medical
+#: help:medical.patient.medication,adverse_reaction:0
+msgid "Specific side effects or adverse reactions that the patient experienced"
+msgstr "Các tác dụng phụ hoặc phản ứng trái ngược cụ thể mà bệnh nhân đã trải qua"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_14
+msgid "Inhalation "
+msgstr "Hít vào"
+
+#. module: medical
+#: model:product.template,name:medical.product_104_product_template
+msgid "diphtheria vaccine"
+msgstr "Vắc xin ngừa bạch hầu"
+
+#. module: medical
+#: help:medical.medicament,name:0
+msgid "Commercial Name"
+msgstr "Tên thương mại"
+
+#. module: medical
+#: field:medical.patient.evaluation,masses:0
+msgid "Masses"
+msgstr "Đa số"
+
+#. module: medical
+#: view:medical.pathology:0 view:medical.patient.disease:0
+msgid "Main"
+msgstr "Chính"
+
+#. module: medical
+#: model:product.template,name:medical.product_62_product_template
+msgid "chloramphenicol"
+msgstr "chloramphenicol"
+
+#. module: medical
+#: help:medical.patient.evaluation,knowledge_current_events:0
+msgid "Check this box if the patient can not respond to public notorious events"
+msgstr "Đánh dấu vào ô này nếu bệnh nhân không có phản ứng với các sự kiện công chúng nổi tiếng"
+
+#. module: medical
+#: field:medical.patient.evaluation,breast_asymmetry:0
+msgid "Breast Asymmetry"
+msgstr "Vú không đối xứng"
+
+#. module: medical
+#: report:patient.medications:0
+msgid "PATIENT MEDICATION HISTORY"
+msgstr "LỊCH SỬ ĐIỀU TRỊ CỦA BỆNH NHÂN"
+
+#. module: medical
+#: model:product.template,name:medical.product_245_product_template
+msgid "pentamidine"
+msgstr "pentamidine"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.IER
+msgid "Insert extended release"
+msgstr ""
+
+#. module: medical
+#: help:medical.patient.evaluation,glycemia:0
+msgid "Last blood glucose level. Can be approximative."
+msgstr "Mức glucose máu lần cuối cùng. Có thể ước tính."
+
+#. module: medical
+#: help:medical.appointment,institution:0
+#: help:medical.hospital.building,institution:0
+#: help:medical.hospital.unit,institution:0
+#: help:medical.hospital.ward,institution:0
+msgid "Medical Center"
+msgstr "Trung tâm y khoa"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_hospital_ward
+#: model:ir.ui.menu,name:medical.medical_conf_hospital_ward_add
+msgid "Health Center Wards"
+msgstr "Khu vực trung tâm y tế"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GRA
+msgid "Granules"
+msgstr "Thuốc hạt"
+
+#. module: medical
+#: model:ir.module.module,shortdesc:medical.module_meta_information
+msgid "Medical : Free Health and Hospital Information System"
+msgstr "Y khoa: Hệ thống thông tin Y tế và Bệnh viện tự do và miễn phí"
+
+#. module: medical
+#: field:medical.patient.evaluation,diagnosis:0
+#: help:medical.patient.evaluation,diagnosis:0
+msgid "Presumptive Diagnosis"
+msgstr "Chẩn đoán sơ bộ"
+
+#. module: medical
+#: field:medical.patient,lastname:0
+msgid "Lastname"
+msgstr "Họ"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PSU
+msgid "Powder for suspension"
+msgstr "Bột cho dung dịch huyền phù"
+
+#. module: medical
+#: model:product.template,name:medical.product_9_product_template
+msgid "allopurinol"
+msgstr "allopurinol"
+
+#. module: medical
+#: field:medical.patient.evaluation,hdl:0
+msgid "Last HDL"
+msgstr "HDL lần cuối cùng"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_insurance
+msgid "medical.insurance"
+msgstr "medical.insurance"
+
+#. module: medical
+#: help:medical.medication.template,admin_times:0
+#: help:medical.patient.medication,admin_times:0
+#: help:medical.prescription.line,admin_times:0
+msgid "Suggested administration hours. For example, at 08:00, 13:00 and 18:00 can be encoded like 08 13 18"
+msgstr "Suggested administration hours. For example, at 08:00, 13:00 and 18:00 can be encoded like 08 13 18"
+
+#. module: medical
+#: view:medical.occupation:0
+msgid "Patient Occupation"
+msgstr "Nghề nghiệp của bệnh nhân"
+
+#. module: medical
+#: field:medical.patient,current_address:0
+msgid "Address"
+msgstr "Địa chỉ"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.BEA
+msgid "Bead"
+msgstr "Hạt"
+
+#. module: medical
+#: field:medical.patient.evaluation,bronchophony:0
+msgid "Bronchophony"
+msgstr "Tiếng vang phế quản"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PST
+msgid "Paste"
+msgstr "Hồ bột"
+
+#. module: medical
+#: help:medical.medication.template,dose_unit:0
+#: help:medical.patient.medication,dose_unit:0
+#: help:medical.prescription.line,dose_unit:0
+msgid "Unit of measure for the medication to be taken"
+msgstr "Đơn vị đo lường thuốc để sử dụng"
+
+#. module: medical
+#: view:medical.hospital.unit:0
+msgid "Health Center Building"
+msgstr "Tòa nhà Trung tâm y tế"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.DCH
+msgid "Douche"
+msgstr "Vòi nước"
+
+#. module: medical
+#: view:medical.operational_area:0
+msgid "Medical Operational Areas List"
+msgstr "Danh sách các khu vực hoạt động y tế"
+
+#. module: medical
+#: model:product.template,name:medical.product_344_product_template
+msgid "verapamil"
+msgstr "verapamil"
+
+#. module: medical
+#: model:product.template,name:medical.product_107_product_template
+msgid "dopamine"
+msgstr "dopamine"
+
+#. module: medical
+#: field:medical.patient.evaluation,heart_murmurs:0
+msgid "Heart Murmurs"
+msgstr "Tiếng thổi tim"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PSS
+msgid "Powder sustained release"
+msgstr "Bột cho duy trì phóng thích"
+
+#. module: medical
+#: model:product.template,name:medical.product_286_product_template
+msgid "rifampicin + isoniazid"
+msgstr "rifampicin + isoniazid"
+
+#. module: medical
+#: model:product.template,name:medical.product_53_product_template
+msgid "capreomycin"
+msgstr "capreomycin"
+
+#. module: medical
+#: help:medical.physician,name:0
+msgid "Physician's Name, from the partner list"
+msgstr "Physician's Name, from the partner list"
+
+#. module: medical
+#: field:medical.medicament,indications:0
+#: field:medical.medication.template,indication:0
+#: field:medical.patient.medication,indication:0
+#: field:medical.prescription.line,indication:0 report:patient.medications:0
+msgid "Indication"
+msgstr "Công dụng"
+
+#. module: medical
+#: field:medical.patient,age:0
+msgid "Patient Age"
+msgstr "Tuổi bệnh nhân"
+
+#. module: medical
+#: model:product.template,name:medical.product_91_product_template
+msgid "dapsone"
+msgstr "dapsone"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_sexual_dysfunction:0
+msgid "Sexual Dysfunction"
+msgstr "Rối loạn chức năng sinh dục"
+
+#. module: medical
+#: model:product.template,name:medical.product_353_product_template
+msgid "zidovudine + lamivudine + nevirapine"
+msgstr "zidovudine + lamivudine + nevirapine"
+
+#. module: medical
+#: model:product.template,name:medical.product_112_product_template
+msgid "eflornithine"
+msgstr "eflornithine"
+
+#. module: medical
+#: field:medical.insurance,member_since:0
+msgid "Member since"
+msgstr "Thành viên từ"
+
+#. module: medical
+#: field:medical.patient,patient_id:0 field:medical.physician,code:0
+msgid "ID"
+msgstr "Mã"
+
+#. module: medical
+#: field:medical.patient,deceased:0
+msgid "Deceased"
+msgstr "Đã chết"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.TDR
+msgid "Tablet delayed release"
+msgstr "Viên nén phóng thích chậm"
+
+#. module: medical
+#: model:product.template,name:medical.product_254_product_template
+msgid "podophyllum resin"
+msgstr "podophyllum resin"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Widowed"
+msgstr "Góa chồng/vợ"
+
+#. module: medical
+#: model:ir.model,name:medical.model_res_partner_address
+msgid "Partner Addresses"
+msgstr "Partner Addresses"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Remarks :"
+msgstr "Ghi chú/nhận xét :"
+
+#. module: medical
+#: help:medical.patient.evaluation,peau_dorange:0
+msgid "Check if the patient has prominent pores in the skin of the breast"
+msgstr "Kiểm tra xem bệnh nhân có lỗ chân lông nổi bật trong làn da của vú"
+
+#. module: medical
+#: field:medical.installer.modules,medical_icd10pcs:0
+msgid "Medical ICD-10-PCS"
+msgstr "Medical ICD-10-PCS"
+
+#. module: medical
+#: model:product.template,name:medical.product_144_product_template
+msgid "glibenclamide"
+msgstr "glibenclamide"
+
+#. module: medical
+#: report:patient.diseases:0 report:patient.medications:0
+#: report:patient.vaccinations:0
+msgid "Patient :"
+msgstr "Bệnh nhân :"
+
+#. module: medical
+#: selection:medical.hospital.bed,state:0
+msgid "Occupied"
+msgstr "Có người"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_procedure
+msgid "Medical Procedure"
+msgstr "Thủ thuật y khoa"
+
+#. module: medical
+#: help:medical.patient,family_code:0
+msgid "Family Code"
+msgstr "Mã số gia đình"
+
+#. module: medical
+#: selection:medical.hospital.bed,bed_type:0
+msgid "Circo Electric"
+msgstr "Điện"
+
+#. module: medical
+#: model:product.template,name:medical.product_287_product_template
+msgid "rifampicin + isoniazid + ethambutol"
+msgstr "rifampicin + isoniazid + ethambutol"
+
+#. module: medical
+#: help:medical.physician,institution:0
+msgid "Instituion where she/he works"
+msgstr "Nơi làm việc"
+
+#. module: medical
+#: model:product.category,name:medical.product_category_bed1
+msgid "Hospital Bed"
+msgstr "Giường bệnh viện"
+
+#. module: medical
+#: model:product.template,name:medical.product_131_product_template
+msgid "factor IX complex (coagulation factors, II, VII, IX, X) concentrate"
+msgstr "factor IX complex (coagulation factors, II, VII, IX, X) concentrate"
+
+#. module: medical
+#: field:medical.medicament,price:0
+msgid "Price"
+msgstr "Giá"
+
+#. module: medical
+#: help:medical.patient.evaluation,evaluation_date:0
+msgid "Enter or select the date / ID of the appointment related to this evaluation"
+msgstr "Nhập hoặc chọn ngày/mã cuộc hẹn liên quan đến đánh giá này"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_dyspnea:0
+msgid "Dyspnea"
+msgstr "Chứng khó thở"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_hospital_unit
+msgid "medical.hospital.unit"
+msgstr "medical.hospital.unit"
+
+#. module: medical
+#: model:product.template,name:medical.product_176_product_template
+msgid "ivermectin"
+msgstr "ivermectin"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_appointment
+msgid "medical.appointment"
+msgstr "medical.appointment"
+
+#. module: medical
+#: model:product.template,name:medical.product_73_product_template
+msgid "cisplatin"
+msgstr "cisplatin"
+
+#. module: medical
+#: model:product.template,name:medical.product_126_product_template
+msgid "ethinylestradiol + levonorgestrel"
+msgstr "ethinylestradiol + levonorgestrel"
+
+#. module: medical
+#: view:medical.vaccination:0
+msgid "Vaccination"
+msgstr "Chủng ngừa"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_new_appointment
+#: model:ir.ui.menu,name:medical.medical_conf_new_appointment
+msgid "New Appointment"
+msgstr "Cuộc hẹn mới"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_patient_medication
+msgid "Patient Medication"
+msgstr "Điều trị bệnh nhân"
+
+#. module: medical
+#: field:medical.patient.disease,status:0
+msgid "Status of the disease"
+msgstr "Tình trạng bệnh"
+
+#. module: medical
+#: model:product.template,name:medical.product_10_product_template
+msgid "aluminium diacetate"
+msgstr "aluminium diacetate"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_42
+msgid "Transdermal"
+msgstr "Dùng thuốc ngoài da"
+
+#. module: medical
+#: view:medical.prescription.line:0
+msgid "Prescription lines"
+msgstr "Dòng trên toa thuốc"
+
+#. module: medical
+#: model:product.template,name:medical.product_44_product_template
+msgid "benzylpenicillin"
+msgstr "benzylpenicillin"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_thoracic_pain:0
+msgid "Thoracic Pain"
+msgstr "Đau ngực"
+
+#. module: medical
+#: view:medical.speciality:0
+msgid "Search Medical Specialties"
+msgstr "Tìm kiếm theo chuyên khoa"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "DoB :"
+msgstr "Ngày sinh:"
+
+#. module: medical
+#: field:medical.patient.evaluation,evaluation_type:0
+msgid "Evaluation Type"
+msgstr "Loại đánh giá"
+
+#. module: medical
+#: model:product.template,name:medical.product_122_product_template
+msgid "estradiol cypionate"
+msgstr "estradiol cypionate"
+
+#. module: medical
+#: selection:medical.patient.evaluation,mood:0
+msgid "Happy"
+msgstr "Vui vẻ"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_41
+msgid "Tracheostomy"
+msgstr "(thủ thuật ) mở thông khí quản"
+
+#. module: medical
+#: field:medical.procedure,description:0
+msgid "Long Text"
+msgstr "Tên đầy đủ"
+
+#. module: medical
+#: selection:medical.patient.disease,allergy_type:0
+msgid "Food Allergy"
+msgstr "Dị ứng thức ăn"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "email :"
+msgstr "thư điện tử :"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Patient Information"
+msgstr "Thông tin bệnh nhân"
+
+#. module: medical
+#: field:medical.patient.evaluation,mydriasis:0
+msgid "Mydriasis"
+msgstr "Midriasis"
+
+#. module: medical
+#: model:product.template,name:medical.product_61_product_template
+msgid "chlorambucil"
+msgstr "chlorambucil"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.GAS
+msgid "Gas"
+msgstr "Khí tê"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SRC
+msgid "Sustained release capsule"
+msgstr "Viên nhộng duy trì phóng thích"
+
+#. module: medical
+#: model:product.template,name:medical.product_148_product_template
+msgid "glyceryl trinitrate"
+msgstr "glyceryl trinitrate"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_lumbar_pain:0
+msgid "Lumbar Pain"
+msgstr "Đau thắt lưng"
+
+#. module: medical
+#: field:medical.patient.evaluation,cyanosis:0
+msgid "Cyanosis"
+msgstr "Chứng xanh da"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SLT
+msgid "Tablet sublingual"
+msgstr "Thuốc viên đặt dưới lưỡi"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.PMX
+msgid "Drug premix"
+msgstr "Thuốc trộn sẵn"
+
+#. module: medical
+#: field:medical.patient.evaluation,chief_complaint:0
+#: help:medical.patient.evaluation,chief_complaint:0
+msgid "Chief Complaint"
+msgstr "Lý do đến khám"
+
+#. module: medical
+#: field:medical.hospital.building,institution:0
+#: field:medical.hospital.unit,institution:0
+#: field:medical.hospital.ward,institution:0
+#: field:medical.physician,institution:0
+#: field:medical.vaccination,institution:0 field:res.partner,is_institution:0
+msgid "Institution"
+msgstr "Tổ chức bệnh viện"
+
+#. module: medical
+#: help:medical.patient.evaluation,symptom_eye_glasses:0
+msgid "Eye glasses or contact lenses"
+msgstr "Mắt kính hoặc kính sát tròng"
+
+#. module: medical
+#: view:medical.hospital.building:0 field:medical.hospital.ward,building:0
+msgid "Building"
+msgstr "Tòa nhà"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_dose
+#: model:ir.ui.menu,name:medical.medical_conf_dose view:medical.dose.unit:0
+msgid "Medicament Units"
+msgstr "Đơn vị thuốc chữa bệnh"
+
+#. module: medical
+#: model:product.template,name:medical.product_277_product_template
+msgid "quinidine"
+msgstr "quinidine"
+
+#. module: medical
+#: model:product.template,name:medical.product_262_product_template
+msgid "prednisolone"
+msgstr "prednisolone"
+
+#. module: medical
+#: model:product.template,name:medical.product_138_product_template
+msgid "fluorouracil"
+msgstr "fluorouracil"
+
+#. module: medical
+#: selection:medical.medication.template,frequency_unit:0
+#: selection:medical.patient.medication,frequency_unit:0
+#: selection:medical.prescription.line,frequency_unit:0
+msgid "when required"
+msgstr "khi được yêu cầu"
+
+#. module: medical
+#: field:medical.hospital.bed,telephone_number:0
+msgid "Telephone Number"
+msgstr "Số điện thoại"
+
+#. module: medical
+#: model:product.template,name:medical.product_181_product_template
+msgid "lamivudine (3TC)"
+msgstr "lamivudine (3TC)"
+
+#. module: medical
+#: constraint:product.template:0
+msgid "Error: The default UOM and the purchase UOM must be in the same category."
+msgstr "Error: The default UOM and the purchase UOM must be in the same category."
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Married"
+msgstr "Kết hôn"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SHP
+msgid "Shampoo"
+msgstr "Dầu gội đầu"
+
+#. module: medical
+#: model:product.template,name:medical.product_218_product_template
+msgid "morphine"
+msgstr "morphine"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.WIP
+msgid "Wipe "
+msgstr "Lau"
+
+#. module: medical
+#: model:product.template,name:medical.product_130_product_template
+msgid "etoposide"
+msgstr "etoposide"
+
+#. module: medical
+#: model:product.template,name:medical.product_340_product_template
+msgid "valproic acid"
+msgstr "valproic acid"
+
+#. module: medical
+#: report:patient.diseases:0
+msgid "PATIENT DISEASE SUMMARY REPORT"
+msgstr "BÁO CÁO TÓM TẮT BỆNH SỬ CỦA BỆNH NHÂN"
+
+#. module: medical
+#: model:product.template,name:medical.product_34_product_template
+msgid "bacitracin"
+msgstr "bacitracin"
+
+#. module: medical
+#: help:medical.medicament,composition:0
+msgid "Components"
+msgstr "Thành phần"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.ENM
+msgid "Enema"
+msgstr "Dung dịch thụt"
+
+#. module: medical
+#: model:product.template,name:medical.product_175_product_template
+msgid "isosorbide dinitrate"
+msgstr "isosorbide dinitrate"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_hospital_ward
+msgid "medical.hospital.ward"
+msgstr "medical.hospital.ward"
+
+#. module: medical
+#: model:product.template,name:medical.product_75_product_template
+msgid "clindamycin"
+msgstr "clindamycin"
+
+#. module: medical
+#: model:product.template,name:medical.product_109_product_template
+msgid "doxycycline"
+msgstr "doxycycline"
+
+#. module: medical
+#: model:product.template,name:medical.product_332_product_template
+msgid "thiopental"
+msgstr "thiopental"
+
+#. module: medical
+#: view:medical.vaccination:0
+msgid "Patient Vaccinations"
+msgstr "Chủng ngừa của bệnh nhân"
+
+#. module: medical
+#: model:product.template,name:medical.product_172_product_template
+msgid "ipratropium bromide"
+msgstr "ipratropium bromide"
+
+#. module: medical
+#: view:medical.medicament:0
+msgid "Pregnancy / Lactancy"
+msgstr "Thai nghén / Cho con bú"
+
+#. module: medical
+#: help:medical.pathology,gene:0
+msgid "Name of the gene(s) affected"
+msgstr "Tên của (các) gen bị ảnh hưởng"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_pelvic_pain:0
+msgid "Pelvic Pain"
+msgstr "Đau khung chậu"
+
+#. module: medical
+#: help:medical.hospital.bed,ward:0
+msgid "Ward or room"
+msgstr "Khu hoặc phòng"
+
+#. module: medical
+#: help:medical.appointment,doctor:0
+msgid "Physician's Name"
+msgstr "Tên bác sĩ"
+
+#. module: medical
+#: selection:medical.appointment,patient_status:0
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Inpatient"
+msgstr "Bệnh nhân nội trú"
+
+#. module: medical
+#: model:product.template,name:medical.product_210_product_template
+msgid "methyldopa"
+msgstr "methyldopa"
+
+#. module: medical
+#: report:patient.diseases:0 report:patient.medications:0
+#: report:patient.vaccinations:0
+msgid "Sex :"
+msgstr "Giới tính:"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.action_medical_pathology_category_form
+#: model:ir.actions.act_window,name:medical.action_medical_pathology_category_tree
+#: model:ir.ui.menu,name:medical.medical_conf_pathology_category
+#: model:ir.ui.menu,name:medical.medical_pathology_cat_struc
+#: view:medical.pathology.category:0
+msgid "Disease categories"
+msgstr "Loại bệnh"
+
+#. module: medical
+#: model:product.template,name:medical.product_55_product_template
+msgid "carbidopa"
+msgstr "carbidopa"
+
+#. module: medical
+#: model:product.template,name:medical.product_315_product_template
+msgid "streptomycin"
+msgstr "streptomycin"
+
+#. module: medical
+#: help:medical.patient.disease,pcs_code:0
+msgid "Procedure code, for example, ICD-10-PCS Code 7-character string"
+msgstr "Mã thủ tục, ví dụ, ICD-10-PCS Mã chuỗi 7 ký tự"
+
+#. module: medical
+#: selection:medical.patient.evaluation,mood:0
+msgid "Fear"
+msgstr "Sợ hãi"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_nausea:0
+msgid "Nausea"
+msgstr "Buồn nôn"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_chest_pain_excercise:0
+msgid "Chest Pain on excercise only"
+msgstr "Đau ngực do vận động"
+
+#. module: medical
+#: report:patient.diseases:0 report:patient.medications:0
+#: report:patient.vaccinations:0
+msgid "Date :"
+msgstr "Ngày:"
+
+#. module: medical
+#: field:medical.patient,dod:0
+msgid "Date of Death"
+msgstr "Ngày mất"
+
+#. module: medical
+#: model:product.template,name:medical.product_343_product_template
+msgid "vecuronium"
+msgstr "vecuronium"
+
+#. module: medical
+#: view:medical.medicament:0
+msgid "medicaments"
+msgstr "thuốc"
+
+#. module: medical
+#: field:medical.patient.evaluation,gynecomastia:0
+msgid "Gynecomastia"
+msgstr "Ginecomastia"
+
+#. module: medical
+#: selection:medical.hospital.bed,bed_type:0
+msgid "Gatch Bed"
+msgstr "Gatch Bed"
+
+#. module: medical
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Telemedicine"
+msgstr "Y học từ xa"
+
+#. module: medical
+#: model:product.template,name:medical.product_247_product_template
+msgid "pertussis vaccine"
+msgstr "Vắc xin ho gà"
+
+#. module: medical
+#: model:product.template,name:medical.product_331_product_template
+msgid "thiamine"
+msgstr "thiamine"
+
+#. module: medical
+#: field:medical.prescription.order,pharmacy:0
+msgid "Pharmacy"
+msgstr "Nhà thuốc"
+
+#. module: medical
+#: model:product.template,name:medical.product_159_product_template
+msgid "hydrocortisone"
+msgstr "hydrocortisone"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Notes:"
+msgstr "Ghi chú:"
+
+#. module: medical
+#: field:medical.pathology.category,child_ids:0
+msgid "Children Category"
+msgstr "Nhóm trẻ em"
+
+#. module: medical
+#: view:medical.hospital.ward:0
+msgid "Health Center Ward"
+msgstr "Khu trung tâm y tế"
+
+#. module: medical
+#: help:medical.appointment,speciality:0
+msgid "Medical Speciality / Sector"
+msgstr "Chuyên khoa / Ngành"
+
+#. module: medical
+#: help:medical.patient.evaluation,derived_from:0
+msgid "Physician who escalated / derived the case"
+msgstr "Bác sĩ đã leo thang / nguồn gốc các trường hợp"
+
+#. module: medical
+#: model:product.template,name:medical.product_2_product_template
+msgid "abacavir (ABC)"
+msgstr "abacavir (ABC)"
+
+#. module: medical
+#: help:medical.patient.evaluation,loc_verbal:0
+msgid "Verbal Response - Glasgow Coma Scale - 1 to 5"
+msgstr "Phản ứng nói - Thước đo Hôn mê Glasgow - 1 đến 5"
+
+#. module: medical
+#: model:product.template,name:medical.product_135_product_template
+msgid "fluconazole"
+msgstr "fluconazole"
+
+#. module: medical
+#: view:medical.pathology:0
+msgid "Pathology Info"
+msgstr "Thông tin bệnh học"
+
+#. module: medical
+#: selection:medical.patient,blood_type:0
+msgid "AB"
+msgstr "AB"
+
+#. module: medical
+#: help:medical.patient.evaluation,tag:0
+msgid "Triacylglycerols (triglicerides) level. Can be approximative"
+msgstr "Mức độ Triacylglycerols (triglicerides). Có thể ước tính"
+
+#. module: medical
+#: selection:medical.medication.template,duration_period:0
+#: selection:medical.patient.medication,duration_period:0
+#: selection:medical.prescription.line,duration_period:0
+msgid "indefinite"
+msgstr "không xác định"
+
+#. module: medical
+#: field:medical.prescription.line,allow_substitution:0
+msgid "Allow substitution"
+msgstr "Cho phép thay thế"
+
+#. module: medical
+#: field:res.partner.address,relationship:0
+msgid "Relationship"
+msgstr "Quan hệ"
+
+#. module: medical
+#: field:medical.patient,dob:0
+msgid "Date of Birth"
+msgstr "Ngày sinh"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_35
+msgid "Rectal"
+msgstr "Trực tràng"
+
+#. module: medical
+#: field:medical.hospital.ward,number_of_beds:0
+msgid "Number of beds"
+msgstr "Số lượng giường"
+
+#. module: medical
+#: selection:medical.patient.disease,disease_severity:0
+msgid "Mild"
+msgstr "Nhẹ"
+
+#. module: medical
+#: help:medical.patient.evaluation,object_recognition:0
+msgid "Check this box if the patient suffers from any sort of gnosia disorders, such as agnosia, prosopagnosia ..."
+msgstr "Đánh dấu nếu bệnh nhân bị bất kỳ rối loạn gnosia, như agnosia, prosopagnosia ..."
+
+#. module: medical
+#: model:product.template,name:medical.product_162_product_template
+msgid "imipenem + cilastatin"
+msgstr "imipenem + cilastatin"
+
+#. module: medical
+#: model:product.template,name:medical.product_354_product_template
+msgid "zinc sulfate"
+msgstr "zinc sulfate"
+
+#. module: medical
+#: selection:medical.appointment,patient_status:0
+#: selection:medical.patient.evaluation,evaluation_type:0
+msgid "Ambulatory"
+msgstr "Đến bằng băng-ca"
+
+#. module: medical
+#: view:medical.hospital.building:0
+msgid "Search Health Center Buildings"
+msgstr "Tìm kiếm các tòa nhà Trung tâm Y tế"
+
+#. module: medical
+#: field:medical.medication.template,frequency_unit:0
+#: field:medical.patient.medication,frequency_unit:0
+#: field:medical.prescription.line,frequency_unit:0
+msgid "unit"
+msgstr "đơn vị"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_polyphagia:0
+msgid "Polyphagia"
+msgstr "Polifagia"
+
+#. module: medical
+#: model:product.template,name:medical.product_280_product_template
+msgid "rabies vaccine"
+msgstr "Vắc xin ngừa bệnh dại"
+
+#. module: medical
+#: model:product.template,name:medical.product_197_product_template
+msgid "measles vaccine"
+msgstr "Vắc xin ngừa bệnh sởi"
+
+#. module: medical
+#: field:medical.medication.template,end_treatment:0
+#: field:medical.patient.disease,date_stop_treatment:0
+#: field:medical.patient.medication,end_treatment:0
+#: field:medical.prescription.line,end_treatment:0
+msgid "End of treatment"
+msgstr "Kết thúc điều trị"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_conf_menu
+msgid "Configuration"
+msgstr "Cấu hình"
+
+#. module: medical
+#: help:medical.family_code,name:0
+msgid "Family code within an operational sector"
+msgstr "Mã gia đình trong một khu vực hoạt động"
+
+#. module: medical
+#: field:medical.patient.evaluation,judgment:0
+msgid "Jugdment"
+msgstr "Discernimiento"
+
+#. module: medical
+#: field:medical.patient.evaluation,bmi:0
+msgid "Body Mass Index"
+msgstr "Body Mass Index"
+
+#. module: medical
+#: field:medical.hospital.bed,state:0 field:medical.hospital.ward,state:0
+#: view:medical.patient.disease:0 report:patient.diseases:0
+msgid "Status"
+msgstr "Tình trạng"
+
+#. module: medical
+#: model:product.template,name:medical.product_258_product_template
+msgid "potassium ferric hexacyano‐ferrate(II) ‐2H20 (Prussian blue)"
+msgstr "potassium ferric hexacyano‐ferrate(II) ‐2H20 (Prussian blue)"
+
+#. module: medical
+#: help:medical.medication.template,medicament:0
+#: help:medical.patient.medication,medicament:0
+#: help:medical.prescription.line,medicament:0
+msgid "Prescribed Medicament"
+msgstr "Thuốc theo toa"
+
+#. module: medical
+#: model:product.template,name:medical.product_194_product_template
+msgid "magnesium hydroxide"
+msgstr "magnesium hydroxide"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Divorced"
+msgstr "Ly hôn"
+
+#. module: medical
+#: model:product.template,name:medical.product_212_product_template
+msgid "methylthioninium chloride (methylene blue)"
+msgstr "methylthioninium chloride (methylene blue)"
+
+#. module: medical
+#: selection:medical.medication.template,frequency_unit:0
+#: selection:medical.patient.medication,frequency_unit:0
+#: selection:medical.prescription.line,frequency_unit:0
+msgid "seconds"
+msgstr "giây"
+
+#. module: medical
+#: field:medical.patient.evaluation,hypertonia:0
+msgid "Hypertonia"
+msgstr "Hypertonia"
+
+#. module: medical
+#: field:medical.patient.evaluation,calculation_ability:0
+msgid "Calculation Ability"
+msgstr "Khả năng tính toán"
+
+#. module: medical
+#: field:medical.patient.evaluation,next_evaluation:0
+msgid "Next Appointment"
+msgstr "Cuộc hẹn tiếp theo/Tái khám "
+
+#. module: medical
+#: model:product.template,name:medical.product_216_product_template
+msgid "mifepristone"
+msgstr "mifepristone"
+
+#. module: medical
+#: model:product.template,name:medical.product_4_product_template
+msgid "acetylcysteine"
+msgstr "acetylcysteine"
+
+#. module: medical
+#: view:medical.patient:0
+msgid "Patient General Information"
+msgstr "Thông tin chung về bệnh nhân"
+
+#. module: medical
+#: field:medical.hospital.ward,guest_sofa:0
+msgid "Guest sofa-bed"
+msgstr "Sofa-giường cho khách"
+
+#. module: medical
+#: help:medical.operational_area,name:0
+msgid "Operational Area of the city or region"
+msgstr "Vùng hoạt động của thành phố hoặc khu vực"
+
+#. module: medical
+#: view:medical.pathology:0
+msgid "Pathology"
+msgstr "Bệnh lý học"
+
+#. module: medical
+#: help:medical.installer.modules,medical_genetics:0
+msgid "This module allows Family history and genetic risksThe module includes hereditary risks, family history and genetic disorders.In this module we include the NCBI and Genecard information, more than 4200 genes associated to diseases"
+msgstr "Mô đun này cho phép theo dõi lịch sử gia đình và rủi ro di truyền. Mô đun này bao gồm các rủi ro di truyền, lịch sử gia đình và rối loạn di tryền. Trong mô đun này chúng tôi bao gồm thông tin NCBI và Genecard, hơn 4200 gen liên quan đến các bệnh"
+
+#. module: medical
+#: selection:medical.hospital.bed,bed_type:0
+msgid "Electric"
+msgstr "Điện"
+
+#. module: medical
+#: field:medical.prescription.line,short_comment:0
+msgid "Comment"
+msgstr "Chú thích"
+
+#. module: medical
+#: selection:medical.hospital.bed,bed_type:0
+msgid "Stretcher"
+msgstr "Giường căng vải"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_rinorrhea:0
+msgid "Rinorrhea"
+msgstr "Rinorrea"
+
+#. module: medical
+#: field:medical.patient.evaluation,edema:0
+msgid "Edema"
+msgstr "Phù"
+
+#. module: medical
+#: model:product.template,name:medical.product_89_product_template
+msgid "dacarbazine"
+msgstr "dacarbazine"
+
+#. module: medical
+#: field:medical.installer.modules,config_logo:0
+msgid "Image"
+msgstr "Hình ảnh"
+
+#. module: medical
+#: help:medical.vaccination,institution:0
+msgid "Medical Center where the patient is being or was vaccinated"
+msgstr "TTYT/BV nơi bệnh nhân được chích ngừa"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SDR
+msgid "Suspension delayed release"
+msgstr "Dung dịch huyền phù phóng thích chậm"
+
+#. module: medical
+#: model:product.template,name:medical.product_276_product_template
+msgid "pyrimethamine"
+msgstr "pyrimethamine"
+
+#. module: medical
+#: field:medical.hospital.bed,ward:0
+msgid "Ward"
+msgstr "Khu"
+
+#. module: medical
+#: model:product.template,name:medical.product_195_product_template
+msgid "magnesium sulfate"
+msgstr "magne sulfate"
+
+#. module: medical
+#: model:product.template,name:medical.product_352_product_template
+msgid "zidovudine + lamivudine"
+msgstr "zidovudine + lamivudine"
+
+#. module: medical
+#: field:medical.appointment,speciality:0 field:medical.physician,speciality:0
+msgid "Speciality"
+msgstr "Chuyên khoa"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_medicament
+msgid "medical.medicament"
+msgstr "điều trị.thuốc"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.POW
+msgid "Powder"
+msgstr "Bột"
+
+#. module: medical
+#: model:product.template,name:medical.product_274_product_template
+msgid "pyridostigmine"
+msgstr "pyridostigmine"
+
+#. module: medical
+#: view:medical.patient.disease:0
+msgid "Pregnancy"
+msgstr "Mang thai"
+
+#. module: medical
+#: model:product.template,name:medical.product_102_product_template
+msgid "dimercaprol"
+msgstr "dimercaprol"
+
+#. module: medical
+#: field:medical.hospital.ward,telephone:0
+msgid "Telephone access"
+msgstr "Được sử đụng điện thoại"
+
+#. module: medical
+#: field:medical.appointment,urgency:0
+msgid "Urgency Level"
+msgstr "Cấp độ khẩn"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "Information"
+msgstr "Thông tin"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_disturb_sleep:0
+msgid "Disturbed Sleep"
+msgstr "Giấc ngủ bị quấy rầy"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SRD
+msgid "Disc sustained release"
+msgstr "Đĩa phóng thích liên tục"
+
+#. module: medical
+#: field:medical.patient.evaluation,acropachy:0
+msgid "Acropachy"
+msgstr "Acropachy"
+
+#. module: medical
+#: model:product.template,name:medical.product_269_product_template
+msgid "propranolol"
+msgstr "propranolol"
+
+#. module: medical
+#: model:ir.module.module,description:medical.module_meta_information
+msgid ""
+"\n"
+"\n"
+"About Medical\n"
+"-------------\n"
+"Medical is a multi-user, highly scalable, centralized Electronic Medical Record (EMR) and Hospital Information System for openERP.\n"
+"\n"
+"Medical provides a free universal Health and Hospital Information System, so doctors and institutions all over the world, specially in developing countries will benefit from a centralized, high quality, secure and scalable system.\n"
+"\n"
+"\n"
+"Medical at a glance:\n"
+"\n"
+"\n"
+"    * Strong focus in family medicine and Primary Health Care\n"
+"\n"
+"    * Major interest in Socio-economics (housing conditions, substance abuse, education...)\n"
+"\n"
+"    * Diseases and Medical procedures standards (like ICD-10 / ICD-10-PCS ...)\n"
+"\n"
+"    * Patient Genetic and Hereditary risks : Over 4200 genes related to diseases (NCBI / Genecards)\n"
+"\n"
+"    * Epidemiological and other statistical reports\n"
+"\n"
+"    * 100% paperless patient examination and history taking\n"
+"\n"
+"    * Patient Administration (creation, evaluations / consultations, history ... )\n"
+"\n"
+"    * Doctor Administration\n"
+"\n"
+"    * Lab Administration\n"
+"\n"
+"    * Medicine / Drugs information (vademécum)\n"
+"\n"
+"    * Medical stock and supply chain management\n"
+"\n"
+"    * Hospital Financial Administration\n"
+"\n"
+"    * Designed with industry standards in mind\n"
+"\n"
+"    * Open Source : Licensed under GPL \n"
+"\n"
+"\n"
+"\n"
+"Most of the action should occur at sourceforge, so check the main page http://sourceforge.net/projects/medical for the latest news and developer releases. \n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"Giới thiệu về Medical\n"
+"-------------\n"
+"Medical là một hệ thống phần mềm đa người dùng, khả năng mở rộng cao, quản lý tập trung các Bệnh án điện tử (Electronic Medical Record - EMR) và hệ thống thông tin y tế (Health Information System - HIS) dựa trên nền OpenERP.\n"
+"\n"
+"Medical cung cấp tự do và miễn phí hệ thống thông tin y tế và bệnh viện, do đó, các bác sĩ và các tổ chức trên toàn thế giới, đặc biệt ở các nước đang phát triển sẽ hưởng lợi từ một trung tâm chất lượng cao, an toàn và khả năng mở rộng hệ thống.\n"
+"\n"
+"\n"
+"Các chức năng cơ bản của Medical:\n"
+"\n"
+"\n"
+"    * Tập trung vào Chăm sóc sức khỏe ban đầu và trong gia đình\n"
+"\n"
+"    * Đề cao mối quan tâm vào thông tin kinh tế xã hội (điều kiện nhà ở, lạm dụng thuốc/chất kích thích, giáo dục ...)\n"
+"\n"
+"    * Các bệnh và các thủ tục y tế tiêu chuẩn (như ICD-10 / ICD-10-PCS ...)\n"
+"\n"
+"    * Các nguy cơ di truyền và gien: Hơn 4.200 gen liên quan đến bệnh (NCBI / Genecards)\n"
+"\n"
+"    * Dịch tễ học và báo cáo thống kê khác\n"
+"\n"
+"    * 100% không cần giấy tờ cho quá trình khám và lịch sử tham gia của bệnh nhân\n"
+"\n"
+"    * Quản trị Bệnh nhân (tạo mới, đánh giá / tham vấn, lịch sử ...)\n"
+"\n"
+"    * Quản trị Bác sĩ\n"
+"\n"
+"    * Quản trị Xét nghiệm\n"
+"\n"
+"    * Thông tin Thuốc (vademécum)\n"
+"\n"
+"    * Quản lý thông tin thuốc và chuỗi cung ứng thuốc \n"
+"\n"
+"    * Quản trị tài chính Bệnh viện\n"
+"\n"
+"    * Được thiết kế với tiêu chuẩn công nghiệp\n"
+"\n"
+"    * Open Source: theo giấy phép GPL\n"
+"\n"
+"\n"
+"\n"
+"Hầu hết các hoạt động được tiến hành tại SourceForge, do đó, kiểm tra các trang chính http://sourceforge.net/projects/medical cho những tin tức mới nhất và phiên bản phát triển.\n"
+"\n"
+
+#. module: medical
+#: field:medical.operational_sector,operational_area:0
+msgid "Operational Area"
+msgstr "Khu vực hoạt động"
+
+#. module: medical
+#: field:medical.patient.evaluation,evaluation_date:0
+msgid "Evaluation Date"
+msgstr "Ngày đánh giá"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.action_partner_health_center
+#: model:ir.ui.menu,name:medical.medical_conf_hospital
+#: model:ir.ui.menu,name:medical.menu_health_center_form
+msgid "Health Centers"
+msgstr "Các Trung tâm y tế"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Treatment Plan"
+msgstr "Phác đồ điều trị"
+
+#. module: medical
+#: model:product.template,name:medical.product_85_product_template
+msgid "cyclophosphamide"
+msgstr "cyclophosphamide"
+
+#. module: medical
+#: model:product.template,name:medical.product_198_product_template
+msgid "mebendazole"
+msgstr "mebendazole"
+
+#. module: medical
+#: model:product.template,name:medical.product_309_product_template
+msgid "spectinomycin"
+msgstr "spectinomycin"
+
+#. module: medical
+#: selection:medical.patient.disease,status:0
+msgid "chronic"
+msgstr "mãn tính"
+
+#. module: medical
+#: field:medical.pathology.category,name:0
+msgid "Category Name"
+msgstr "Tên chủng loại"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_38
+msgid "Subcutaneous"
+msgstr "Dưới da"
+
+#. module: medical
+#: model:product.template,name:medical.product_220_product_template
+msgid "naloxone"
+msgstr "naloxone"
+
+#. module: medical
+#: field:medical.patient.medication,discontinued_reason:0
+msgid "Reason for discontinuation"
+msgstr "Lý do ngưng điều trị"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.ECC
+msgid "Capsule enteric-coated"
+msgstr "Viên nhộng tráng ruột"
+
+#. module: medical
+#: model:product.template,name:medical.product_14_product_template
+msgid "amiloride"
+msgstr "Amiloride"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Nutrition"
+msgstr "Dinh dưỡng"
+
+#. module: medical
+#: help:medical.speciality,name:0
+msgid "ie, Addiction Psychiatry"
+msgstr "tức là, Nghiện tâm thần"
+
+#. module: medical
+#: field:medical.installer.modules,progress:0
+msgid "Configuration Progress"
+msgstr "Cấu hình đang thực hiện"
+
+#. module: medical
+#: selection:medical.appointment,urgency:0
+#: selection:medical.patient.evaluation,mood:0
+msgid "Normal"
+msgstr "Bình thường"
+
+#. module: medical
+#: view:medical.medication.dosage:0
+msgid "Medication Dosage"
+msgstr "Liều lượng thuốc"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_proctorrhagia:0
+msgid "Proctorrhagia"
+msgstr "Chảy máu trực tràng"
+
+#. module: medical
+#: view:medical.operational_sector:0
+msgid "Search Operational Sector"
+msgstr "Tìm kiếm theo khu vực hoạt động"
+
+#. module: medical
+#: model:product.template,name:medical.product_3_product_template
+msgid "acetazolamide"
+msgstr "acetazolamide"
+
+#. module: medical
+#: model:product.template,name:medical.product_42_product_template
+msgid "benzoyl peroxide"
+msgstr "benzoyl peroxide"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.MWH
+msgid "Mouthwash gargle"
+msgstr "Nước súc miệng"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Every"
+msgstr "Mỗi"
+
+#. module: medical
+#: help:medical.hospital.ward,name:0
+msgid "Ward / Room code"
+msgstr "Mã khoa/phòng"
+
+#. module: medical
+#: view:medical.occupation:0
+msgid "Search Occupations"
+msgstr "Tìm kiếm nghề nghiệp"
+
+#. module: medical
+#: field:medical.medication.template,admin_times:0
+#: field:medical.patient.medication,admin_times:0
+#: field:medical.prescription.line,admin_times:0
+msgid "Admin hours"
+msgstr "Giờ khám bệnh"
+
+#. module: medical
+#: model:product.template,name:medical.product_74_product_template
+msgid "clavulanic acid"
+msgstr "clavulanic acid"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Doctor user ID"
+msgstr "Mã người dùng bác sĩ"
+
+#. module: medical
+#: model:product.template,name:medical.product_348_product_template
+msgid "water for injection"
+msgstr "nước để tiêm"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.AER
+msgid "Aerosol with propellants"
+msgstr "Khí dung với máy đẩy"
+
+#. module: medical
+#: model:product.template,name:medical.product_241_product_template
+msgid "p‐aminosalicylic acid"
+msgstr "p‐aminosalicylic acid"
+
+#. module: medical
+#: help:medical.medicament,pregnancy_warning:0
+msgid "Check when the drug can not be taken during pregnancy or lactancy"
+msgstr "Đánh dấu nếu thuốc không dùng được trong khi mang thai hoặc cho con bú"
+
+#. module: medical
+#: model:product.template,name:medical.product_46_product_template
+msgid "biperiden"
+msgstr "lưỡng cực"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.act_prescription_orders
+msgid "Prescription Orders"
+msgstr "Yêu cầu kê toa"
+
+#. module: medical
+#: field:medical.patient,critical_info:0
+msgid "Important disease, allergy or procedures information"
+msgstr "Bệnh nghiêm trọng, dị ứng hoặc thông tin về các thủ tục"
+
+#. module: medical
+#: help:medical.patient.disease,age:0
+msgid "Patient age at the moment of the diagnosis. Can be estimative"
+msgstr "Tuổi bệnh nhân tại thời điểm chẩn đoán bệnh. Có thể ước lượng"
+
+#. module: medical
+#: field:medical.hospital.ward,private_bathroom:0
+msgid "Private Bathroom"
+msgstr "Phòng tắm riêng"
+
+#. module: medical
+#: model:product.template,name:medical.product_117_product_template
+msgid "ephedrine"
+msgstr "ephedrine"
+
+#. module: medical
+#: help:medical.patient,age:0
+msgid ""
+"It shows the age of the patient in years(y), months(m) and days(d).\n"
+"If the patient has died, the age shown is the age at time of death, the age corresponding to the date on the death certificate. It will show also \"deceased\" on the field"
+msgstr ""
+"It shows the age of the patient in years(y), months(m) and days(d).\n"
+"If the patient has died, the age shown is the age at time of death, the age corresponding to the date on the death certificate. It will show also \"deceased\" on the field"
+
+#. module: medical
+#: model:product.template,name:medical.product_202_product_template
+msgid "meglumine antimoniate"
+msgstr "meglumine antimoniate"
+
+#. module: medical
+#: field:medical.patient.evaluation,breast_lump:0
+msgid "Breast Lumps"
+msgstr "Cục u ở vú"
+
+#. module: medical
+#: model:product.template,name:medical.product_123_product_template
+msgid "ethambutol"
+msgstr "ethambutol"
+
+#. module: medical
+#: model:product.template,name:medical.product_48_product_template
+msgid "bupivacaine"
+msgstr "bupivacaine"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_occupation
+#: model:ir.ui.menu,name:medical.medical_conf_occupation
+msgid "Occupations"
+msgstr "Nghề nghiệp"
+
+#. module: medical
+#: model:product.template,name:medical.product_140_product_template
+msgid "fluphenazine"
+msgstr "fluphenazine"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_25
+msgid "Mucous Membrane"
+msgstr "Niêm mạc"
+
+#. module: medical
+#: field:medical.prescription.order,prescription_date:0
+msgid "Prescription Date"
+msgstr "Ngày kê toa"
+
+#. module: medical
+#: model:product.template,name:medical.product_116_product_template
+msgid "enalapril"
+msgstr "enalapril"
+
+#. module: medical
+#: field:medical.patient.disease,is_allergy:0
+msgid "Allergic Disease"
+msgstr "Bệnh dị ứng"
+
+#. module: medical
+#: field:medical.vaccination,vaccine_lot:0
+msgid "Lot Number"
+msgstr "Số hiệu sản xuất"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_23
+msgid "Intravenous "
+msgstr "Trong tĩnh mạch"
+
+#. module: medical
+#: help:medical.pathology,chromosome:0
+msgid "chromosome number"
+msgstr "nhiễm sắc thể số"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.SRT
+msgid "Sustained release tablet"
+msgstr "Viên nén duy trì phóng thích"
+
+#. module: medical
+#: view:medical.patient:0 field:medical.patient,general_info:0
+msgid "General Information"
+msgstr "Thông tin tổng quát"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.UNS
+msgid "Unassigned"
+msgstr "Chưa được quy định"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_speciality
+msgid "medical.speciality"
+msgstr "medical.speciality"
+
+#. module: medical
+#: model:product.template,name:medical.product_23_product_template
+msgid "antitetanus immunoglobulin (human)"
+msgstr "antitetanus immunoglobulin (human)"
+
+#. module: medical
+#: model:product.template,name:medical.product_158_product_template
+msgid "hydrochlorothiazide"
+msgstr "hydrochlorothiazide"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_17
+msgid "Intranasal "
+msgstr "Trong mũi"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "Prescription ID :"
+msgstr "Mã toa thuốc :"
+
+#. module: medical
+#: help:medical.medication.template,route:0
+#: help:medical.patient.medication,route:0
+#: help:medical.prescription.line,route:0
+msgid "HL7 or other standard drug administration route code."
+msgstr "Mã HL7 hoặc các chuẩn khác về cách dùng/đường dùng thuốc."
+
+#. module: medical
+#: field:medical.pathology,chromosome:0
+msgid "Affected Chromosome"
+msgstr "Nhiễm sắc thể bị ảnh hưởng"
+
+#. module: medical
+#: help:medical.medicament,pregnancy:0
+msgid "Warnings for Pregnant Women"
+msgstr "Các cảnh báo đối với phụ nữ mang thai"
+
+#. module: medical
+#: field:medical.patient,current_insurance:0 field:res.partner,insurance:0
+msgid "Insurance"
+msgstr "Bảo hiểm"
+
+#. module: medical
+#: help:medical.patient.evaluation,memory:0
+msgid "Check this box if the patient has problems in short or long term memory"
+msgstr "Đánh dấu vào ô này nếu bệnh nhân có vấn đề về trí nhớ ngắn hạn hoặc dài hạn"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.CRM
+msgid "Cream"
+msgstr "Thuốc mỡ"
+
+#. module: medical
+#: model:product.template,name:medical.product_229_product_template
+msgid "nifedipine"
+msgstr "nifedipine"
+
+#. module: medical
+#: model:product.template,name:medical.product_38_product_template
+msgid "benzathine benzylpenicillin"
+msgstr "benzathine benzylpenicillin"
+
+#. module: medical
+#: field:medical.pathology.category,parent_id:0
+msgid "Parent Category"
+msgstr "Loại cha mẹ"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_vertigo:0
+msgid "Vertigo"
+msgstr "Sự chóng mặt"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_29
+msgid "Nasotrachial Tube"
+msgstr "Nasotrachial Tube"
+
+#. module: medical
+#: field:medical.patient.evaluation,nipple_inversion:0
+msgid "Nipple Inversion"
+msgstr "Pezón invertido"
+
+#. module: medical
+#: report:prescription.order:0
+msgid "<para style=\"P12\">"
+msgstr "<para style=\"P12\">"
+
+#. module: medical
+#: model:product.template,name:medical.product_88_product_template
+msgid "cytarabine"
+msgstr "cytarabine"
+
+#. module: medical
+#: model:product.template,name:medical.product_147_product_template
+msgid "glutaral"
+msgstr "glutaral"
+
+#. module: medical
+#: model:product.template,name:medical.product_161_product_template
+msgid "ibuprofen"
+msgstr "ibuprofen"
+
+#. module: medical
+#: field:medical.patient.evaluation,nystagmus:0
+msgid "Nystagmus"
+msgstr "Rung giật nhãn cầu"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_dysmenorrhea:0
+msgid "Dysmenorrhea"
+msgstr "Đau bụng kinh"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Symptoms"
+msgstr "Các triệu chứng"
+
+#. module: medical
+#: help:medical.installer.modules,medical_icd10pcs:0
+msgid "Medical International Classification of Diseases 10th Revision - Procedure Coding System, used to code the surgical and therapeutic procedures"
+msgstr "Phân loại bệnh quốc tế phiên bản 10 sửa đổi - Hệ thống mã hóa thủ tục, dùng để mã hóa các thủ tục phẫu thuật và chữa bệnh"
+
+#. module: medical
+#: model:product.template,name:medical.product_291_product_template
+msgid "rotavirus vaccine"
+msgstr "Vắc xin Rotavirus"
+
+#. module: medical
+#: model:product.template,name:medical.product_206_product_template
+msgid "mercaptopurine"
+msgstr "mercaptopurine"
+
+#. module: medical
+#: field:medical.vaccination,observations:0 report:patient.vaccinations:0
+msgid "Observations"
+msgstr "Theo dõi/quan sát"
+
+#. module: medical
+#: model:product.template,name:medical.product_177_product_template
+msgid "Japanese encephalitis vaccine"
+msgstr "Thuốc chủng ngừa viêm não Nhật Bản"
+
+#. module: medical
+#: field:medical.patient.evaluation,memory:0
+msgid "Memory"
+msgstr "Trí nhớ"
+
+#. module: medical
+#: model:product.template,name:medical.product_132_product_template
+msgid "factor VIII concentrate"
+msgstr "Yếu tố VIII cô đặc"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.OVU
+msgid "Ovules"
+msgstr "Noãn"
+
+#. module: medical
+#: model:product.template,name:medical.product_80_product_template
+msgid "cloxacillin"
+msgstr "cloxacillin"
+
+#. module: medical
+#: view:medical.medicament:0 field:medical.medicament,presentation:0
+msgid "Presentation"
+msgstr "Trình bày"
+
+#. module: medical
+#: model:product.template,name:medical.product_68_product_template
+msgid "chlorpromazine"
+msgstr "chlorpromazine"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.RING
+msgid "Ring slow release"
+msgstr "Vòng phóng thích chậm"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_tree_family_code
+#: model:ir.ui.menu,name:medical.medical_conf_edit_family_code
+msgid "Families"
+msgstr "Gia đình"
+
+#. module: medical
+#: field:medical.dose.unit,desc:0 field:medical.speciality,name:0
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: medical
+#: field:medical.patient.evaluation,goiter:0
+msgid "Goiter"
+msgstr "Bướu cổ"
+
+#. module: medical
+#: field:medical.patient.evaluation,alopecia:0
+msgid "Alopecia"
+msgstr "Rụng tóc"
+
+#. module: medical
+#: help:res.partner,is_institution:0
+msgid "Check if the partner is a Medical Center"
+msgstr "Kiểm tra xem đối tác có phải là trung tâm y tế"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_26
+msgid "Nasal"
+msgstr "Mũi"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Single"
+msgstr "Độc thân"
+
+#. module: medical
+#: field:medical.patient.evaluation,derived_to:0
+msgid "Derived to Doctor"
+msgstr "Chuyển đến bác sĩ"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_hospital_building
+msgid "medical.hospital.building"
+msgstr "medical.hospital.building"
+
+#. module: medical
+#: model:product.template,name:medical.product_163_product_template
+msgid "immunoglobulin"
+msgstr "globulin miễn dịch"
+
+#. module: medical
+#: field:medical.patient.evaluation,xerosis:0
+msgid "Xerosis"
+msgstr "Khô"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_27
+msgid "Nasogastric"
+msgstr "Thông dạ dày qua đường mũi"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.CDR
+msgid "Capsule delayed release"
+msgstr "Viên nhộng phóng thích chậm"
+
+#. module: medical
+#: model:product.template,name:medical.product_31_product_template
+msgid "atropine"
+msgstr "atropine"
+
+#. module: medical
+#: field:medical.medication.template,medicament:0
+#: field:medical.patient.medication,medicament:0
+#: field:medical.prescription.line,medicament:0 report:patient.medications:0
+#: field:product.product,is_medicament:0
+msgid "Medicament"
+msgstr "Thuốc"
+
+#. module: medical
+#: model:product.template,name:medical.product_299_product_template
+msgid "simvastatin"
+msgstr "simvastatin"
+
+#. module: medical
+#: view:medical.patient.evaluation:0
+msgid "Procedures"
+msgstr "Thủ tục"
+
+#. module: medical
+#: selection:medical.hospital.ward,gender:0
+msgid "Women Ward"
+msgstr "Khu vực phụ nữ"
+
+#. module: medical
+#: model:product.template,name:medical.product_252_product_template
+msgid "pilocarpine"
+msgstr "pilocarpine"
+
+#. module: medical
+#: help:medical.patient.disease,doctor:0
+msgid "Physician who treated or diagnosed the patient"
+msgstr "Physician who treated or diagnosed the patient"
+
+#. module: medical
+#: view:medical.family_code:0
+msgid "Family List"
+msgstr "Danh sách gia đình"
+
+#. module: medical
+#: model:product.template,name:medical.product_342_product_template
+msgid "varicella vaccine"
+msgstr "Vắc xin ngừa trái rạ"
+
+#. module: medical
+#: model:product.template,name:medical.product_278_product_template
+msgid "quinine"
+msgstr "quinine"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_action_form_physician
+#: model:ir.ui.menu,name:medical.medical_conf_physician_list
+#: model:ir.ui.menu,name:medical.medical_conf_physicians
+msgid "Physicians"
+msgstr "Bác sĩ"
+
+#. module: medical
+#: field:medical.patient.evaluation,knowledge_current_events:0
+msgid "Knowledge of Current Events"
+msgstr "Kiến thức về các sự kiện hiện tại"
+
+#. module: medical
+#: field:medical.hospital.ward,gender:0
+msgid "Gender"
+msgstr "Giới tính"
+
+#. module: medical
+#: field:medical.drug.route,name:0
+msgid "Route"
+msgstr "Đường dùng"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.STP
+msgid "Strip"
+msgstr "Dải"
+
+#. module: medical
+#: help:medical.patient.evaluation,nystagmus:0
+msgid "If not associated to a disease, please encode it on the patient disease history. For example,  H55 in ICD-10 encoding"
+msgstr "Nếu không liên quan đến bệnh, xin hãy mã hóa nó trên lịch sử bệnh của bệnh nhân. Ví dụ, H55 trong mã hóa ICD-10"
+
+#. module: medical
+#: model:product.template,name:medical.product_49_product_template
+msgid "caffeine citrate"
+msgstr "cafein xitrat"
+
+#. module: medical
+#: help:medical.medication.template,qty:0
+#: help:medical.patient.medication,qty:0 help:medical.prescription.line,qty:0
+msgid "Quantity of units (eg, 2 capsules) of the medicament"
+msgstr "Số lượng đơn vị thuốc (ví dụ 2 viên nhộng)"
+
+#. module: medical
+#: model:product.template,name:medical.product_330_product_template
+msgid "tetracycline"
+msgstr "tetracycline"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_rectal_tenesmus:0
+msgid "Rectal Tenesmus"
+msgstr "Trực tràng Tenesmus"
+
+#. module: medical
+#: field:medical.patient.evaluation,malnutrition:0
+msgid "Malnutrition"
+msgstr "Suy dinh dưỡng"
+
+#. module: medical
+#: report:patient.medications:0
+msgid "Act"
+msgstr "Hành vi"
+
+#. module: medical
+#: model:medical.drug.route,name:medical.route_7
+msgid "GU Irrigant "
+msgstr "GU Irrigant"
+
+#. module: medical
+#: field:medical.patient.evaluation,systolic:0
+msgid "Systolic Pressure"
+msgstr "Huyết áp tâm thu"
+
+#. module: medical
+#: model:product.template,name:medical.product_66_product_template
+msgid "chloroxylenol"
+msgstr "chloroxylenol"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "My appointments"
+msgstr "Cuộc hẹn của tôi"
+
+#. module: medical
+#: view:medical.appointment:0
+msgid "Search Appointments"
+msgstr "Tìm cuộc hẹn"
+
+#. module: medical
+#: model:product.template,name:medical.product_238_product_template
+msgid "oxamniquine"
+msgstr "oxamniquine"
+
+#. module: medical
+#: help:medical.hospital.unit,name:0
+msgid "Name of the unit, eg Neonatal, Intensive Care, ..."
+msgstr "Tên đơn vị, ví dụ như Trẻ sơ sinh, Chăm sóc đặc biệt, ..."
+
+#. module: medical
+#: model:product.template,name:medical.product_223_product_template
+msgid "neomycin sulfate + bacitracin"
+msgstr "neomycin sulfate + bacitracin"
+
+#. module: medical
+#: field:medical.patient.evaluation,symptom_otalgia:0
+msgid "Otalgia"
+msgstr "Đau tai"
+
+#. module: medical
+#: help:medical.patient.evaluation,arritmia:0
+#: help:medical.patient.evaluation,ascites:0
+#: help:medical.patient.evaluation,heart_extra_sounds:0
+#: help:medical.patient.evaluation,jaundice:0
+#: help:medical.patient.evaluation,jugular_engorgement:0
+#: help:medical.patient.evaluation,lynphadenitis:0
+#: help:medical.patient.evaluation,palpebral_ptosis:0
+msgid "If not associated to a disease, please encode it on the patient disease history"
+msgstr "Nếu không liên quan đến bệnh, xin hãy mã hóa nó trên lịch sử bệnh của bệnh nhân"
+
+#. module: medical
+#: view:medical.insurance:0
+msgid "Search Insurances"
+msgstr "Tìm kiếm bảo hiểm"
+
+#. module: medical
+#: view:medical.patient.disease:0
+msgid "Allergy"
+msgstr "Dị ứng"
+
+#. module: medical
+#: help:medical.patient.evaluation,judgment:0
+msgid "Check this box if the patient can not interpret basic scenario solutions"
+msgstr "Chọn hộp này nếu bệnh nhân không thể giải thích giải pháp kịch bản cơ bản"
+
+#. module: medical
+#: field:medical.hospital.ward,private:0 selection:medical.insurance,type:0
+msgid "Private"
+msgstr "Riêng tư"
+
+#. module: medical
+#: field:medical.patient.disease,healed_date:0
+msgid "Healed"
+msgstr "Lành"
+
+#. module: medical
+#: model:product.template,name:medical.product_183_product_template
+msgid "levodopa"
+msgstr "levodopa"
+
+#. module: medical
+#: model:product.template,name:medical.product_37_product_template
+msgid "beclometasone"
+msgstr "beclometasone"
+
+#. module: medical
+#: model:medical.drug.form,name:medical.STK
+msgid "Stick"
+msgstr "Dán dính"
+
+#. module: medical
+#: model:product.template,name:medical.product_77_product_template
+msgid "clomifene"
+msgstr "clomifene"
+
+#. module: medical
+#: field:medical.patient.evaluation,glycemia:0
+msgid "Glycemia"
+msgstr "glucoza huyết"
+
+#. module: medical
+#: model:product.template,name:medical.product_294_product_template
+msgid "salicylic acid"
+msgstr "salicylic acid"
+
+#. module: medical
+#: model:product.template,name:medical.product_243_product_template
+msgid "paromomycin"
+msgstr "paromomycin"

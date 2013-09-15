@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/chricar_product_gtin/__openerp__.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_jasper_report/wizard/general_ledger.py

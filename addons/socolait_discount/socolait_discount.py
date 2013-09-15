@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/socolait_discount/socolait_discount.py

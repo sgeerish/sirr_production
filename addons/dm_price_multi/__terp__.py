@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_price_multi/__terp__.py

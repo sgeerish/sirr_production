@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_simulation/wizard/wizard_account_chart.py

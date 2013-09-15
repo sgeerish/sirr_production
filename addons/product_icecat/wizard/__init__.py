@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_icecat/wizard/__init__.py

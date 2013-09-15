@@ -1,0 +1,8 @@
+RE:lib/(?!populate.sh).*
+.*
+*.egg-info
+*.orig
+bin/
+build/
+dist/
+include/

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <record id="base.group_allow_out" model="res.groups">
+        <field name="name">Authorisation Sortie</field>
+    </record>
+</data>
+</openerp>

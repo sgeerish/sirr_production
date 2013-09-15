@@ -1,0 +1,557 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Medical\n"
+"Report-Msgid-Bugs-To: https://sourceforge.net/apps/mantisbt/medical\n"
+"POT-Creation-Date: 2010-12-05 21:32:35+0000\n"
+"PO-Revision-Date: 2011-02-05 18:28+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: Turkish <None>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: tr\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. module: medical_lab
+#: report:patient.labtest.report:0
+msgid "Signature : ____________________________"
+msgstr ""
+
+#. module: medical_lab
+#: model:ir.model,name:medical_lab.model_medical_lab_test_units
+msgid "medical.lab.test.units"
+msgstr ""
+
+#. module: medical_lab
+#: field:medical.test_type,product_id:0
+msgid "Service"
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.lab.test.create:0
+msgid "Create Tests"
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.lab:0
+msgid "Search Lab Tests Results"
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.lab:0
+msgid "Laboratory Test"
+msgstr ""
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_bloodcounttestcharges0_product_template
+msgid "Blood count test charges"
+msgstr ""
+
+#. module: medical_lab
+#: help:medical.lab,requestor:0
+msgid "Doctor who requested the test"
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.lab.test.units:0
+msgid "Test Unit"
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.patient.lab.test:0
+msgid "Group By..."
+msgstr ""
+
+#. module: medical_lab
+#: model:ir.actions.act_window,name:medical_lab.medical_action_form_test
+#: model:ir.ui.menu,name:medical_lab.medical_conf_test
+msgid "New Type of Lab test"
+msgstr ""
+
+#. module: medical_lab
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: medical_lab
+#: field:medical.test_type,name:0 field:medical_test.critearea,name:0
+msgid "Test"
+msgstr "Test"
+
+#. module: medical_lab
+#: view:medical.patient.lab.test:0
+msgid "Today"
+msgstr "Bugün"
+
+#. module: medical_lab
+#: view:medical.lab:0 view:medical.test_type:0
+msgid "Main Info"
+msgstr ""
+
+#. module: medical_lab
+#: model:ir.actions.act_window,name:medical_lab.action_create_lab_test
+#: view:medical.lab.test.create:0
+msgid "Create Lab Test"
+msgstr ""
+
+#. module: medical_lab
+#: field:medical.lab,test:0 field:medical_test.critearea,test_type_id:0
+msgid "Test type"
+msgstr "Test türü"
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_renalfunctiontestcharges0_product_template
+msgid "Renal Function test charges"
+msgstr ""
+
+#. module: medical_lab
+#: model:ir.actions.report.xml,name:medical_lab.report_patient_labtest
+#: view:medical.patient:0
+msgid "Lab Tests"
+msgstr ""
+
+#. module: medical_lab
+#: field:medical.lab,requestor:0
+msgid "Physician"
+msgstr ""
+
+#. module: medical_lab
+#: model:ir.model,name:medical_lab.model_medical_test_type
+msgid "Type of Lab test"
+msgstr ""
+
+#. module: medical_lab
+#: model:ir.model,name:medical_lab.model_medical_patient_lab_test
+msgid "medical.patient.lab.test"
+msgstr ""
+
+#. module: medical_lab
+#: report:patient.labtest:0 report:patient.labtest.report:0
+msgid "Patient ID :"
+msgstr "Hasta Kimliği:"
+
+#. module: medical_lab
+#: model:ir.actions.act_window,name:medical_lab.medical_action_lab_unit
+#: model:ir.ui.menu,name:medical_lab.medical_labtest_unit
+msgid "Lab Testing Units"
+msgstr ""
+
+#. module: medical_lab
+#: code:addons/medical_lab/wizard/wizard_create_lab_pos.py:0
+#: code:addons/medical_lab/wizard/wizard_create_lab_test.py:0
+#, python-format
+msgid "UserError"
+msgstr ""
+
+#. module: medical_lab
+#: model:ir.actions.act_window,name:medical_lab.act_patient_lab_history
+msgid "Lab Reports"
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.lab:0 field:medical.lab,critearea:0 view:medical.test_type:0
+#: field:medical.test_type,critearea:0
+#: field:medical_test.critearea,medical_lab_id:0
+msgid "Test Cases"
+msgstr ""
+
+#. module: medical_lab
+#: constraint:product.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr ""
+
+#. module: medical_lab
+#: model:ir.actions.act_window,name:medical_lab.medical_action_tree_lab
+#: model:ir.ui.menu,name:medical_lab.medical_action_lab_tree
+msgid "Lab Tests Results"
+msgstr "Laboratuvar test Sonuçları"
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_stoolexaminationcharges0_product_template
+msgid "Stool Examination Charges"
+msgstr ""
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_endocrinology0_product_template
+msgid "Endocrinology"
+msgstr ""
+
+#. module: medical_lab
+#: report:patient.labtest:0 report:patient.labtest.report:0
+msgid "Date :"
+msgstr "Tarih:"
+
+#. module: medical_lab
+#: report:patient.labtest.report:0
+msgid "LABORATORY REPORT"
+msgstr ""
+
+#. module: medical_lab
+#: report:patient.labtest:0
+msgid "____________________________"
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.patient.lab.test:0 field:medical.patient.lab.test,state:0
+msgid "State"
+msgstr ""
+
+#. module: medical_lab
+#: field:medical.patient.lab.test,name:0
+msgid "Test Type"
+msgstr "Test Türü"
+
+#. module: medical_lab
+#: field:medical_test.critearea,units:0 report:patient.labtest.report:0
+msgid "Units"
+msgstr ""
+
+#. module: medical_lab
+#: code:addons/medical_lab/medical_lab.py:0
+#, python-format
+msgid "Error !"
+msgstr "Hata!"
+
+#. module: medical_lab
+#: field:medical.lab,date_analysis:0
+msgid "Date of the Analysis"
+msgstr ""
+
+#. module: medical_lab
+#: field:medical.patient,lab_test_ids:0
+msgid "Lab Tests Required"
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.lab:0 view:medical.test_type:0
+msgid "Extra Info"
+msgstr "İlave Bilgiler"
+
+#. module: medical_lab
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: medical_lab
+#: constraint:product.template:0
+msgid "Error: UOS must be in a different category than the UOM"
+msgstr ""
+
+#. module: medical_lab
+#: code:addons/medical_lab/wizard/wizard_create_lab_pos.py:0
+#, python-format
+msgid "No Lab test exist for selected Dr."
+msgstr ""
+
+#. module: medical_lab
+#: report:patient.labtest:0 report:patient.labtest.report:0
+msgid "Age :"
+msgstr "Yaş:"
+
+#. module: medical_lab
+#: view:medical.lab.test.create:0 selection:medical.patient.lab.test,state:0
+msgid "Cancel"
+msgstr "Iptal"
+
+#. module: medical_lab
+#: model:ir.module.module,description:medical_lab.module_meta_information
+msgid ""
+"\n"
+"\n"
+"This modules includes lab tests: Values, reports and PoS.\n"
+"\n"
+"\n"
+msgstr ""
+
+#. module: medical_lab
+#: report:patient.labtest:0
+msgid "Doctor :"
+msgstr "Doktor:"
+
+#. module: medical_lab
+#: model:ir.model,name:medical_lab.model_medical_lab view:medical.test_type:0
+msgid "Lab Test"
+msgstr ""
+
+#. module: medical_lab
+#: report:patient.labtest:0
+msgid "LABORATORY RESULTS"
+msgstr ""
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_liverfunctiontestcharges0_product_template
+msgid "Liver Function test charges"
+msgstr ""
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_urineanalysischarges0_product_template
+msgid "Urine Analysis charges"
+msgstr ""
+
+#. module: medical_lab
+#: report:patient.labtest:0
+msgid "Test Names"
+msgstr "Test İsimleri"
+
+#. module: medical_lab
+#: field:medical_test.critearea,result:0 report:patient.labtest.report:0
+msgid "Result"
+msgstr "Sonuç"
+
+#. module: medical_lab
+#: model:ir.ui.menu,name:medical_lab.medical_conf_laboratory
+#: model:ir.ui.menu,name:medical_lab.medical_laboratory_menu
+msgid "Laboratory"
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.lab.test.create:0
+msgid "Do you want to generate the test(s) ?"
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.patient.lab.test:0 field:medical.patient.lab.test,doctor_id:0
+msgid "Doctor"
+msgstr "Doktor"
+
+#. module: medical_lab
+#: constraint:product.template:0
+msgid "Error: The default UOM and the purchase UOM must be in the same category."
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.lab.test.create:0
+msgid "Create Lab Tests"
+msgstr ""
+
+#. module: medical_lab
+#: report:patient.labtest:0 report:patient.labtest.report:0
+msgid "Sex :"
+msgstr "Cinsiyet:"
+
+#. module: medical_lab
+#: selection:medical.patient.lab.test,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: medical_lab
+#: constraint:ir.ui.menu:0
+msgid "Error ! You can not create recursive Menu."
+msgstr ""
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_semenanalysischarges0_product_template
+msgid "Semen Analysis Charges"
+msgstr ""
+
+#. module: medical_lab
+#: report:patient.labtest:0
+msgid "Sign :"
+msgstr ""
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_peripheralsmearexaminationcharges0_product_template
+msgid "Peripheral Smear Examination Charges"
+msgstr ""
+
+#. module: medical_lab
+#: model:ir.actions.act_window,name:medical_lab.medical_action_lab_test_request
+#: model:ir.ui.menu,name:medical_lab.medical_labtest_request
+msgid "Lab Requests"
+msgstr "Laboratuvar İstekleri"
+
+#. module: medical_lab
+#: field:medical.lab,pathologist:0 help:medical.lab,pathologist:0
+msgid "Pathologist"
+msgstr ""
+
+#. module: medical_lab
+#: field:medical.patient.lab.test,date:0
+msgid "Date"
+msgstr "Tarih"
+
+#. module: medical_lab
+#: model:ir.model,name:medical_lab.model_medical_test_critearea
+msgid "Lab Test Critearea"
+msgstr ""
+
+#. module: medical_lab
+#: field:medical_test.critearea,normal_range:0 report:patient.labtest.report:0
+msgid "Normal Range"
+msgstr ""
+
+#. module: medical_lab
+#: model:ir.actions.report.xml,name:medical_lab.report_patient_labtest_report
+msgid "Lab Report"
+msgstr "Laboratuvar Raporu"
+
+#. module: medical_lab
+#: model:ir.model,name:medical_lab.model_medical_lab_test_create
+msgid "medical.lab.test.create"
+msgstr ""
+
+#. module: medical_lab
+#: help:medical.test_type,name:0
+msgid "Test type, eg X-Ray, hemogram,biopsy..."
+msgstr ""
+
+#. module: medical_lab
+#: model:product.template,name:medical_lab.product_product_haematologycharges0_product_template
+msgid "Haematology Charges"
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.patient.lab.test:0
+msgid "Search Lab Tests Requests"
+msgstr ""
+
+#. module: medical_lab
+#: field:medical.lab.test.units,code:0 field:medical.test_type,code:0
+msgid "Code"
+msgstr "Kod"
+
+#. module: medical_lab
+#: report:patient.labtest.report:0
+msgid "Analyte"
+msgstr ""
+
+#. module: medical_lab
+#: help:medical.lab,name:0
+msgid "Lab result ID"
+msgstr "Laboratuvar sonuç Kimliği"
+
+#. module: medical_lab
+#: help:medical.lab,patient:0
+msgid "Patient ID"
+msgstr "Hasta Kimliği"
+
+#. module: medical_lab
+#: report:patient.labtest.report:0
+msgid "Doctor:"
+msgstr "Doktor:"
+
+#. module: medical_lab
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: medical_lab
+#: field:medical.lab,date_requested:0
+msgid "Date requested"
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.lab:0 help:medical.lab,test:0 view:medical.test_type:0
+msgid "Lab test type"
+msgstr "Laboratuvar test türü"
+
+#. module: medical_lab
+#: report:patient.labtest.report:0
+msgid "Pathologist :"
+msgstr "Patolog:"
+
+#. module: medical_lab
+#: field:medical.test_type,info:0
+msgid "Description"
+msgstr "Açıklama"
+
+#. module: medical_lab
+#: model:product.category,name:medical_lab.product_category_labservices0
+msgid "Lab Services"
+msgstr "Laboratuar Hizmetleri"
+
+#. module: medical_lab
+#: selection:medical.patient.lab.test,state:0
+msgid "Tested"
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.lab.test.units:0
+msgid "Search Lab Test Units"
+msgstr ""
+
+#. module: medical_lab
+#: view:medical.test_type:0
+msgid "Search Lab Test Types"
+msgstr "Lab. Test Türleri Arama"
+
+#. module: medical_lab
+#: field:medical.lab,diagnosis:0
+msgid "Diagnosis"
+msgstr "Tanı"
+
+#. module: medical_lab
+#: field:medical.lab,patient:0 view:medical.patient.lab.test:0
+#: field:medical.patient.lab.test,patient_id:0
+msgid "Patient"
+msgstr "Hasta"
+
+#. module: medical_lab
+#: field:medical.lab,name:0
+msgid "ID"
+msgstr ""
+
+#. module: medical_lab
+#: help:medical.test_type,code:0
+msgid "Short name - code for the test"
+msgstr ""
+
+#. module: medical_lab
+#: help:medical.patient.lab.test,doctor_id:0
+msgid "Doctor who Request the lab test."
+msgstr ""
+
+#. module: medical_lab
+#: field:medical.lab.test.units,name:0
+msgid "Unit"
+msgstr "Birim"
+
+#. module: medical_lab
+#: field:medical_test.critearea,sequence:0
+msgid "Sequence"
+msgstr "Sıra"
+
+#. module: medical_lab
+#: report:patient.labtest:0 report:patient.labtest.report:0
+msgid "Patient :"
+msgstr "Hasta:"
+
+#. module: medical_lab
+#: field:medical.lab,results:0
+msgid "Results"
+msgstr "Sonuçlar"
+
+#. module: medical_lab
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Hata: Geçersiz EAN kodu"
+
+#. module: medical_lab
+#: code:addons/medical_lab/medical_lab.py:0
+#, python-format
+msgid "There is no physician defined ' \\n            #                    'for current user."
+msgstr ""
+
+#. module: medical_lab
+#: model:ir.model,name:medical_lab.model_medical_patient
+msgid "Patient related information"
+msgstr "Hasta ile ilgili bilgiler"
+
+#. module: medical_lab
+#: code:addons/medical_lab/wizard/wizard_create_lab_test.py:0
+#, python-format
+msgid "Test Report already created."
+msgstr "Test Raporu zaten oluşturdu."
+
+#. module: medical_lab
+#: view:medical.patient.lab.test:0
+msgid "Test Requests"
+msgstr ""
+
+#. module: medical_lab
+#: model:ir.module.module,shortdesc:medical_lab.module_meta_information
+msgid "Medical : Laboratory"
+msgstr ""

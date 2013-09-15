@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--
+        ======================
+        hr.aa.payroll.formula
+        ======================
+        -->
+        <record id="view_hr_aa_payroll_formula_form" model="ir.ui.view">
+            <field name="name">hr.aa.payroll.formula.form</field>
+            <field name="model">hr.aa.payroll.formula</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Payroll formula">
+                    <group colspan="4" col="6">
+                        <field name="name" select="1"/>
+                        <field name="code" select="2"/>
+                        <field name="label" select="2"/>
+                        <field name="default"/>
+                        <field name="active" select="1"/>
+                        <field name="seq"/>
+                    </group>
+                    <group colspan="4" col="4" expand="1">
+                        <field name="formula" nolabel="1" colspan="4"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hr_aa_payroll_formula_tree" model="ir.ui.view">
+            <field name="name">hr.aa.payroll.formula.tree</field>
+            <field name="model">hr.aa.payroll.formula</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Day line">
+                    <field name="seq"/>
+                    <field name="name" select="1"/>
+                    <field name="code" select="1"/>
+                    <field name="label" select="1"/>
+                    <field name="default"/>
+                    <field name="active" select="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--
+        ===================
+        hr.aa.payroll
+        ===================
+        -->
+        <record id="view_hr_aa_payroll_form" model="ir.ui.view">
+            <field name="name">hr.aa.payroll.form</field>
+            <field name="model">hr.aa.payroll</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Payroll">
+                    <group colspan="4" col="6">
+                        <field name="name"/>
+                        <field name="date_from" select="1"/>
+                        <field name="date_to" select="1"/>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="General">
+                            <group colspan="4" col="4" expand="1">
+                                <field name="line_ids" nolabel="1"/>
+                            </group>
+                            <group colspan="4" col="7">
+                                <field name="state" select="1"/>
+                                <button name="confirm" states="draft" string="Confirm" type="workflow"/>
+                                <button name="unconfirm" states="confirmed" string="Cancel" type="workflow"/>
+                            </group>
+                        </page>
+                        <page string="Note">
+                            <group colspan="4" expand="1">
+                                <field name="note" nolabel="1"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hr_aa_payroll_tree" model="ir.ui.view">
+            <field name="name">hr.aa.payroll.tree</field>
+            <field name="model">hr.aa.payroll</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Payroll">
+                    <field name="name"/>
+                    <field name="date_from" select="1"/>
+                    <field name="date_to" select="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_view_hr_aa_payroll_formula" model="ir.actions.act_window">
+            <field name="name">Payroll formulas</field>
+            <field name="res_model">hr.aa.payroll.formula</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem
+            id="menu_open_view_hr_aa_payroll_formula_form"
+            action="open_view_hr_aa_payroll_formula"
+            parent="hr.menu_hr_configuration"
+            groups="hr_aa_manager_group"
+            />
+
+        <record id="open_view_hr_aa_payroll" model="ir.actions.act_window">
+            <field name="name">Payroll</field>
+            <field name="res_model">hr.aa.payroll</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem
+            id="menu_open_view_hr_aa_payroll_form"
+            action="open_view_hr_aa_payroll"
+            parent="hr.menu_hr_root"
+            groups="hr_aa_manager_group"
+        />
+
+    </data>
+</openerp>
+
+<!--
+     vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+     -->

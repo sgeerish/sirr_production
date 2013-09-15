@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sale_pricelist_recalculation/wizard/wizard_sale_pricelist_recalculation.py

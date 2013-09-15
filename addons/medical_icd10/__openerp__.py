@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/medical_icd10/__openerp__.py

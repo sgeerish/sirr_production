@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/fleet_manager/__init__.py

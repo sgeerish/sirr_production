@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_crm_profile/wizard/__init__.py

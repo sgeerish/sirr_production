@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/marketing/campaign/wizard/wizard_campaign_partner_add.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl/lib/demo/xmlrpc_out_example.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_as_reject_paymethod/__terp__.py

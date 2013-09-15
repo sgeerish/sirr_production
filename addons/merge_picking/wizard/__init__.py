@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/merge_picking/wizard/__init__.py

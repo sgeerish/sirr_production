@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <report 
+            string="Bulletin de paie" 
+            name="hr.payroll_ma.bulletin"
+            model="hr.payroll_ma.bulletin"
+            id="hr_payroll_ma_bulletin"
+            rml="syst_hr_payroll_ma/report/bulletin.rml"
+            header="True"
+            />
+         <report 
+            string="REGLEMENTS" 
+            name="hr.payroll_ma.regelements"
+            model="hr.payroll_ma"
+            id="hr_payroll_ma_regelements"
+            rml="syst_hr_payroll_ma/report/reglements.rml"
+            header="True"
+            />
+  
+            <report 
+          	auto="False" 
+          	id="journal_paie_report" 
+          	model="hr.payroll_ma" 
+          	name="journal.paie" 
+          	rml="syst_hr_payroll_ma/report/journal_paie_report.rml"
+          	menu = "False" 
+          	string="Journal de paie" />
+  
+          	<report 
+          	auto="False" 
+          	id="net_payer_report" 
+          	model="hr.payroll_ma.bulletin" 
+          	name="net.payer" 
+          	rml="syst_hr_payroll_ma/report/net_payer_report.rml"
+          	menu = "False" 
+          	string="Ordre Virement" />
+          	
+			<report 
+          	auto="False" 
+          	id="etat_9421_report" 
+          	model="hr.payroll_ma" 
+          	name="etat.9421" 
+          	rml="syst_hr_payroll_ma/report/etat_9421_report.rml"
+          	menu = "False" 
+          	string="etat 9421" />
+    </data>
+</openerp>

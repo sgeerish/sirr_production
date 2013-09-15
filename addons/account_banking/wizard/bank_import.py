@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_banking/wizard/bank_import.py

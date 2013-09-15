@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_module_recorder/__terp__.py

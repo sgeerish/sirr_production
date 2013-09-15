@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_partner_address/__terp__.py

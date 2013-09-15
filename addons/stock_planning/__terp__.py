@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/stock_planning/__terp__.py

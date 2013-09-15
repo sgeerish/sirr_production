@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_country/__init__.py

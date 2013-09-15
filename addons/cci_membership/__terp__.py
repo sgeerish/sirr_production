@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_membership/__terp__.py

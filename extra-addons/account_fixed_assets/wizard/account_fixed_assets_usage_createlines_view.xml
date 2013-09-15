@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+        <wizard
+            string="Usage Lines"
+            model="account.fixed.assets.method"
+            name="account.fixed.assets.usage.createlines"
+            id="action_account_fixed_assets_usage_createlines"
+            
+            menu="False"/>
+
+	</data>
+</openerp>

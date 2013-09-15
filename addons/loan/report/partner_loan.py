@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/loan/report/partner_loan.py

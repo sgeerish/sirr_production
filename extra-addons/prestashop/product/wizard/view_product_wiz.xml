@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_product_sync_wizard" model="ir.ui.view">
+            <field name="name">Prestashop Shop</field>
+            <field name="model">prodcut.sync.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product">
+                    <field name="shop_ids" domain="[('enable_prestashop','=','True')]" colspan="4"/>
+                    <button special="cancel" string="Cancel" icon="gtk-cancel" colspan="2"/>
+                    <button name="export_product"  string="Export Product" type="object" icon="gtk-execute" colspan="2"/>
+               </form>
+            </field>
+        </record>
+
+        <record id="action_product_sync_wizard" model="ir.actions.act_window">
+            <field name="name">Prestashop Shop</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">prodcut.sync.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_product_sync_wizard"/>
+            <field name="target">new</field>
+            <field name="multi">True</field>
+        </record>
+        
+        <act_window name="Prestashop Shop"
+            res_model="prodcut.sync.wizard"
+            src_model="product.product"
+            view_mode="form"
+            target="new"
+            key2="client_action_multi"
+            id="act_product_sync_wizard"/>
+        
+    </data>
+</openerp>

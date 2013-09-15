@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_l10nbe_domiciliation/report/account_invoice.py

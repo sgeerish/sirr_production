@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_partner_relation/__init__.py

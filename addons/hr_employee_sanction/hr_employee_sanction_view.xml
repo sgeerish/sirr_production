@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+    <record model="ir.ui.view" id="view_hr_employee_sanction_form">
+        <field name="name">hr.employee.sanction.form</field>
+        <field name="model">hr.employee.sanction</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="hr.employee.sanction">
+                <field name="type" select="1"/>
+                <field name="motif" select="1"/>
+                <field name="date" select="2"/>
+                <field name="name" select="0"/>
+
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_hr_employee_sanction_tree">
+        <field name="name">hr.employee.sanction.tree</field>
+        <field name="model">hr.employee.sanction</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="hr.employee.sanction">
+                <field name="type"/>
+                <field name="motif"/>
+                <field name="date"/>
+                <field name="name"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_hr_employee_sanction">
+        <field name="name">employee</field>
+        <field name="res_model">hr.employee.sanction</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form,calendar</field>
+    </record>
+
+        
+</data>
+</openerp>

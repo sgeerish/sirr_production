@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/membership_card/wizard/__init__.py

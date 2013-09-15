@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sale_wo_prices/__terp__.py

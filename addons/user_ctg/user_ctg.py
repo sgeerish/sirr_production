@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/user_ctg/user_ctg.py

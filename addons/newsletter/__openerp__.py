@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/newsletter/__openerp__.py

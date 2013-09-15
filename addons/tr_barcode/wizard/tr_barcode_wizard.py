@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/tr_barcode/wizard/tr_barcode_wizard.py

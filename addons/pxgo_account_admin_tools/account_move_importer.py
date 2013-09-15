@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/pxgo_account_admin_tools/account_move_importer.py

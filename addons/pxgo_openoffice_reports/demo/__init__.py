@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/pxgo_openoffice_reports/demo/__init__.py

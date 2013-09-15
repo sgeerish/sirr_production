@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+	<record id="test_attendance_1_9" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_1"/>
+		<field name="name">2001-02-05 07:54:01</field>
+		<field name="action">sign_in</field>
+	</record>
+
+	<function name="compute_reason_rules" model="hr.attendance" >
+		<value eval="[ref('test_attendance_1_9')]"/>
+	</function>
+        <assert id="test_attendance_1_9" model="hr.attendance" string="Computing Sing in late without advise">
+		<test expr="action_desc.name">hr.test Late without advise</test>
+        </assert>
+
+	<record id="test_attendance_1_10" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_1"/>
+		<field name="name">2001-02-05 16:04:01</field>
+		<field name="action">sign_out</field>
+	</record>
+
+	<function name="compute_reason_rules" model="hr.attendance" >
+		<value eval="[ref('test_attendance_1_10')]"/>
+	</function>
+        <assert id="test_attendance_1_10" model="hr.attendance" string="Computing Sing out early without advise">
+		<test expr="action_desc.name">hr.test Early without advise</test>
+        </assert>
+
+    </data>
+</openerp>
+

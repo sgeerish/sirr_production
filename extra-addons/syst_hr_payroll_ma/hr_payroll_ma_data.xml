@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data noupdate="0">
+
+		<record model="hr.payroll_ma.parametres" id="parametres_data_8">
+			<field name="smig">0</field>
+			<field name="charge">2000</field>
+			<field name="fraispro">0</field>
+			<field name="plafond">0</field>
+		</record>
+
+		<record model="hr.payroll_ma.cotisation" id="cotisation_data_9">
+			<field name="code">CNaPS</field>
+			<field name="name">CNaPS</field>
+			<field name="tauxsalarial">1</field>
+			<field name="tauxpatronal">13</field>
+			<field name="plafonee">TRUE</field>
+			<field name="plafond">7621763.20</field>
+		</record>
+		<record model="hr.payroll_ma.cotisation" id="cotisation_data_10">
+			<field name="code">SMIA</field>
+			<field name="name">SMIA</field>
+			<field name="tauxsalarial">1</field>
+			<field name="tauxpatronal">5</field>
+			<field name="plafonee">TRUE</field>
+			<field name="plafond">7621763.20</field>
+		</record>
+		<record model="hr.payroll_ma.cotisation" id="cotisation_data_11">
+			<field name="code">OSTIE </field>
+			<field name="name">OSTIE</field>
+			<field name="tauxsalarial">1</field>
+			<field name="tauxpatronal">5</field>
+			<field name="plafonee">TRUE</field>
+			<field name="plafond">7621763.20</field>
+		</record>
+		<record model="hr.payroll_ma.cotisation" id="cotisation_data_12">
+			<field name="code">allocationsFam</field>
+			<field name="name">Couverture des allocations familiales</field>
+			<field name="tauxsalarial">0</field>
+			<field name="tauxpatronal">0</field>
+			<field name="plafond">0</field>
+		</record>
+
+		<!-- donnee pour l'impot sur le revenue -->
+
+		<!-- donnee pour l'impot sur le revenue -->
+
+		<record model="hr.payroll_ma.ir" id="ir_data1">
+			<field name="debuttranche">0</field>
+			<field name="fintranche">250000</field>
+			<field name="taux">0</field>
+			<field name="somme">0</field>
+		</record>
+		<record model="hr.payroll_ma.ir" id="ir_data2">
+			<field name="debuttranche">250001</field>
+			<field name="fintranche">2147483647</field>
+			<field name="taux">22</field>
+			<field name="somme">250000</field>
+		</record>
+		
+
+		<!-- donnee pour la prime de l'anciennete -->
+
+		<record id="account.analytic_salary_journal" model="account.analytic.journal">
+			<field name="name">journal des salaires</field>
+			<field name="code">SAL</field>
+			<field name="type">general</field>
+		</record>
+		<!--<record id="account.salary_journal" model="account.journal">
+			<field name="name">journal des salaires</field>
+			<field name="code">SAL</field>
+			<field name="type">general</field>
+			<field name="analytic_journal_id" ref="account.analytic_salary_journal"/>
+			<field name="view_id" ref="account.account_journal_view" />
+			<field name="sequence_id" ref="account.sequence_sale_journal" />
+			<field name="user_id" ref="base.user_root" />
+		</record>-->
+	</data>
+</openerp>

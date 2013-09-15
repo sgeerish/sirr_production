@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/tr_barcode/__init__.py

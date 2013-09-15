@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_membership/wizard/members_total_sold.py

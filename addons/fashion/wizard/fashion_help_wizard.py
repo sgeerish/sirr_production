@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/fashion/wizard/fashion_help_wizard.py

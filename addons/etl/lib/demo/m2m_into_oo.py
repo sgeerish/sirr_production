@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl/lib/demo/m2m_into_oo.py

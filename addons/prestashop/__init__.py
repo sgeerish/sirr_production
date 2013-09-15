@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/prestashop/__init__.py

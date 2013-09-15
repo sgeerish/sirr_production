@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/gnucash/gnc2out.py

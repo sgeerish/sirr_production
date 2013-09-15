@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+        <!--delete model="hr.aa.payroll" search="[('date_from','=','2001-02-01')]" /-->
+
+        <record id="test_formula_normal_hours" model="hr.aa.payroll.formula">
+            <field name="name">hr.test Normal hours</field>
+            <field name="code">normal_hours</field>
+            <field name="label">Normal Hours</field>
+            <field name="formula">
+                lambda line, days: (
+                    sum([ day.v_normal_hours for day in days ])
+                )
+            </field>
+            <field name="default">.0</field>
+            <field name="seq">100</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="test_formula_extra_hours" model="hr.aa.payroll.formula">
+            <field name="name">hr.test Extra hours</field>
+            <field name="code">extra_hours</field>
+            <field name="label">Extra Hours</field>
+            <field name="formula">
+                lambda line, days: (
+                    sum([ day.v_extra_hours for day in days ])
+                )
+            </field>
+            <field name="default">.0</field>
+            <field name="seq">100</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="test_formula_free_hours" model="hr.aa.payroll.formula">
+            <field name="name">hr.test Free hours</field>
+            <field name="code">free_hours</field>
+            <field name="label">Free Hours</field>
+            <field name="formula">
+                lambda line, days: (
+                    sum([ day.v_free_hours for day in days ])
+                )
+            </field>
+            <field name="default">.0</field>
+            <field name="seq">100</field>
+            <field name="active">True</field>
+        </record>
+
+        <function name="build" model="hr.aa.payroll">
+            <value eval="'2001-02-01'"/>
+            <value eval="'2001-03-01'"/>
+        </function>
+    </data>
+</openerp>
+
+<!--
+     vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+     -->
+

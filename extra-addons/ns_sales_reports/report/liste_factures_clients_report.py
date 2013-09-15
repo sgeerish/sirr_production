@@ -1,0 +1,250 @@
+# -*- encoding: utf-8 -*-
+##############################################################################
+#
+#    OpenERP, Open Source Management Solution	
+#    Copyright (C) 2003-2010 NS-Team (<http://www.ns-team.fr>). All Rights Reserved
+#    $Id$
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+import jasper_reports
+from osv import osv,fields 
+import pooler
+import datetime
+from mx import DateTime
+
+def liste_stock_move( cr, uid, ids, data, context ):
+    return {
+      'ids': data['form']['ids'],
+      'parameters': {'partner_id':data['form']['partner_id'],'title':data['form']['title'] , 'mode':data['form']['period'], 'year':int(data['form']['year']),'stock_start':data['form']['stock_start'],'location_id':data['form']['location_id']
+                },
+   }
+
+jasper_reports.report_jasper(
+   'report.ns_sales_reports.stock_move',
+   'stock.move',
+   parser=liste_stock_move
+)
+def situation_mfi( cr, uid, ids, data, context ):
+    return {
+      'ids': data['form']['ids'],
+      'parameters': {
+      'title':data['form']['title'],
+      'detail':data['form']['detail'],      
+      'clients':data['form']['clients'],
+      'stock':data['form']['stock'],
+      'portefeuile':data['form']['portefeuille']
+                },
+   }
+
+jasper_reports.report_jasper(
+   'report.report.situation_mfi',
+   'account.move.line',
+   parser=situation_mfi
+)
+def debtors_list( cr, uid, ids, data, context ):
+    return {
+      'ids': data['form']['ids'],
+      'parameters': {'detail':data['form']['detail'],'paid':data['form']['paid'],'partner_id':data['form']['partner_id'],'title':data['form']['title'] , 'mode':data['form']['period'], 'year':int(data['form']['year'])
+                },
+   }
+
+jasper_reports.report_jasper(
+   'report.report.debtors_list',
+   'account.move.line',
+   parser=debtors_list
+)
+def situation( cr, uid, ids, data, context ):
+    return {
+      'parameters': {'title':data['form']['title'] , 'depot':data['form']['location_id'], 'date_to':data['form']['date_to']
+                },
+   }
+
+jasper_reports.report_jasper(
+   'report.report.situation',
+   'account.move.line',
+   parser=situation
+)
+def achats (cr, uid, ids, data, context ):
+    return {
+      'ids': data['form']['ids'],
+      'parameters': {'detail':data['form']['detail'],'partner_id':data['form']['partner_id'],'title':data['form']['title'] , 'mode':data['form']['period'], 'year':int(data['form']['year'])
+                },
+   }
+
+jasper_reports.report_jasper(
+   'report.report.achats',
+   'account.invoice.line',
+   parser=achats
+)
+
+
+def liste_factures_clients( cr, uid, ids, data, context ):
+    return {
+      'ids': data['form']['ids'],
+      'parameters': {'title':data['form']['title'] , 'mode':data['form']['period'], 'year':int(data['form']['year'])
+                },
+   }
+
+jasper_reports.report_jasper(
+   'report.ns_sales_reports.liste_factures_clients',
+   'account.invoice',
+   parser=liste_factures_clients
+)
+
+def liste_factures_clients_produits( cr, uid, ids, data, context ):
+    return {
+      'ids': data['form']['ids'],
+      'parameters': {'title':data['form']['title'] , 'mode':data['form']['period'], 'year':int(data['form']['year'])
+                },
+   }
+
+jasper_reports.report_jasper(
+   'report.ns_sales_reports.liste_factures_clients_produits',
+   'account.invoice.line',
+   parser=liste_factures_clients_produits
+)
+
+def liste_factures_produits( cr, uid, ids, data, context ):
+    return {
+      'ids': data['form']['ids'],
+      'parameters': {'title':data['form']['title'] , 'mode':data['form']['period']
+                        , 'detail':data['form']['detail'], 'year':int(data['form']['year'])
+                },
+   }
+
+jasper_reports.report_jasper(
+   'report.ns_sales_reports.liste_factures_produits_c',
+   'account.invoice.line',
+   parser=liste_factures_produits
+)
+
+def liste_factures_produits_com( cr, uid, ids, data, context ):
+    return {
+      'ids': data['form']['ids'],
+      'parameters': {'comm_rate':data['form']['comm_rate'],'title':data['form']['title'] , 'mode':data['form']['period'],'detail':data['form']['detail'], 'year':int(data['form']['year'])
+                },
+   }
+
+jasper_reports.report_jasper(
+   'report.ns_sales_reports.liste_factures_produits_c_com',
+   'account.invoice.line',
+   parser=liste_factures_produits_com
+)
+
+def liste_factures_produits_com_summ( cr, uid, ids, data, context ):
+    return {
+      'ids': data['form']['ids'],
+      'parameters': {'comm_rate':data['form']['comm_rate'],'title':data['form']['title'] , 'mode':data['form']['period'],'detail':data['form']['detail'], 'year':int(data['form']['year'])
+                },
+   }
+
+jasper_reports.report_jasper(
+   'report.ns_sales_reports.liste_factures_produits_c_com_summ',
+   'account.invoice.line',
+   parser=liste_factures_produits_com_summ
+)
+
+
+def liste_factures_produits_cat( cr, uid, ids, data, context ):
+    return {
+      'ids': data['form']['ids'],
+      'parameters': {'comm_rate':data['form']['comm_rate'],'title':data['form']['title'] , 'mode':data['form']['period'],'detail':data['form']['detail'], 'year':int(data['form']['year'])
+                },
+   }
+
+jasper_reports.report_jasper(
+   'report.ns_sales_reports.liste_factures_produits_c_cat',
+   'account.invoice.line',
+   parser=liste_factures_produits_com
+)
+
+def liste_factures_produits_idc( cr, uid, ids, data, context ):
+    return {
+      'ids': data['form']['ids'],
+      'parameters': {'comm_rate':data['form']['comm_rate'],'title':data['form']['title'] , 'mode':data['form']['period'],'detail':data['form']['detail'], 'year':int(data['form']['year']),'paid':data['form']['paid']},
+   }
+
+jasper_reports.report_jasper(
+   'report.ns_sales_reports.liste_factures_produits_c_idc',
+   'account.invoice.line',
+   parser=liste_factures_produits_com
+)
+
+
+def liste_journal_caisse( cr, uid, ids, data, context ):
+    return {
+      'ids': data['form']['ids'],
+      'parameters': {'journal_id':data['form']['journal_id'],'title':data['form']['title'] , 'mode':data['form']['period'],'detail':data['form']['detail'], 'year':int(data['form']['year'])
+                },
+   }
+
+jasper_reports.report_jasper(
+   'report.ns_sales_reports.liste_journal_caisse',
+   'account.voucher',
+   parser=liste_journal_caisse
+)
+
+class account_invoice(osv.osv):
+    _name = 'account.invoice'
+    _inherit = 'account.invoice'
+
+    def _value(self, cr, uid, ids, name, args, context=None):
+        res = {}
+        for invoice in self.browse(cr,uid,ids, context=context):
+            if invoice.type in ['in_refund','out_refund']:
+                res[invoice.id] =  -invoice.amount_untaxed
+            else:
+                res[invoice.id] =  invoice.amount_untaxed
+        return res
+
+    _columns = {
+        'value': fields.function(_value, method=True, digits=(16, 2),string='Montant'),
+    }
+account_invoice()
+
+class account_invoice_line(osv.osv):
+    _name = 'account.invoice.line'
+    _inherit = 'account.invoice.line'
+
+    def _value(self, cr, uid, ids, name, args, context=None):
+        res = {}
+        for invoiceline in self.browse(cr,uid,ids, context=context):
+            if invoiceline.invoice_id.type in ['in_refund','out_refund']:
+                res[invoiceline.id] =  -invoiceline.price_subtotal
+            else:
+                res[invoiceline.id] =  invoiceline.price_subtotal
+        return res
+
+    def _sold_qty(self, cr, uid, ids, name, args, context=None):
+        res = {}
+        for invoiceline in self.browse(cr,uid,ids, context=context):
+            if invoiceline.invoice_id.type in ['in_refund','out_refund']:
+#                In the case of refund, the result is an estimate.
+#                We cannot know from the invoice if the product has been returned or if
+#                it is just a reduction in price
+#                res[invoiceline.id] =  -invoiceline.quantity
+                res[invoiceline.id] =  0.0 
+            else:
+                res[invoiceline.id] =  invoiceline.quantity
+        return res
+
+    _columns = {
+        'value': fields.function(_value, method=True, digits=(16, 2),string='Montant'),
+        'sold_qty': fields.function(_sold_qty, method=True, digits=(16, 2),string='Qte vendue'),
+    }
+account_invoice_line()
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+

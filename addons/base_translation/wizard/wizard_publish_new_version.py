@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_translation/wizard/wizard_publish_new_version.py

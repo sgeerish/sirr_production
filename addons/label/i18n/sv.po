@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/label/i18n/sv.po

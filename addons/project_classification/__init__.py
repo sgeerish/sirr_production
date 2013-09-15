@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/project_classification/__init__.py

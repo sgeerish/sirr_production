@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/mgmtsystem_nonconformity_project/__openerp__.py

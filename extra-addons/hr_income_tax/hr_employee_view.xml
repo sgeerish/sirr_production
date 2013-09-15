@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data>  
+    <record model="ir.ui.view" id="view_employee_form_inherit1">
+        <field name="name">hr.employee.form.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <field name="otherid" position="after">
+                <group col="4" colspan="2">
+                    <separator string="PAN/ESI/PF IDs" colspan="4"/>
+                    <field name="pan" select="1" colspan="4"/>
+                    <field name="esi" colspan='4'/>
+                    <field name="pf"/>
+                 </group>  
+            </field>
+        </field>
+    </record>
+    </data>
+</openerp>

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/ecommerce/partner/__init__.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/olap/cube/mdx_input/__init__.py

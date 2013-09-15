@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/analytic_partners/report/__init__.py

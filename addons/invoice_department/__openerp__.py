@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/invoice_department/__openerp__.py

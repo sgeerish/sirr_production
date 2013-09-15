@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_sale_multichannels/i18n/es.po

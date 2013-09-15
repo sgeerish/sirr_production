@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/google_earth/wizard/google_map_turnover.py

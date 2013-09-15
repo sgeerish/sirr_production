@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_images_repository/wizard/load_product_media.py

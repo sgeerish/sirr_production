@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_order_entry/dm_order_entry.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hotel/wizard/__init__.py

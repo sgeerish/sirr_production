@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_bob_import/__init__.py

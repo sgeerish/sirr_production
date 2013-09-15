@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/md_hr_employee/__init__.py

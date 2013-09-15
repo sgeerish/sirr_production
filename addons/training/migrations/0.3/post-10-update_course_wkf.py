@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training/migrations/0.3/post-10-update_course_wkf.py

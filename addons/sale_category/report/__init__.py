@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sale_category/report/__init__.py

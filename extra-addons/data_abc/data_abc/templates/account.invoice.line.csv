@@ -1,0 +1,7 @@
+"id","invoice_id:id","product_id:id","quantity","discount","price_unit","invoice_line_tax_id.id","name","account_id.id"
+1,"FAA13788","SID_FPLA_006",16,5,7990,25,"Fer plat 25*3MM 6M00 3,54kg - barres",846
+2,"FAA13788","SID_FPLA_007",10,5,9615,25,"Fer plat 30*3MM 6M00 4,26kg - barres",846
+3,"FAA13788","OUT_PINC_021",12,15,1010,25,"Pinceau 2""1/2 6cm -boîte de 12 pcs CIBALOC",846
+4,"FAA13788","OUT_PINC_021",12,15,1010,25,"Pinceau 2""1/2 6cm -boîte de 12 pcs CIBALOC",846
+5,"FAA13788","OUT_PINC_022",12,15,1392,25,"Pinceau 3"" 7,5cm -boîte de 12 pcs CIBALOC",846
+6,"FAA13788","OUT_PINC_023",12,15,2208,25,"Pinceau 4"" 10cm -boîte de 12 pcs CIBALOC",846

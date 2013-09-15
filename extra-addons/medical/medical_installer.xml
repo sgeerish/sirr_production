@@ -1,0 +1,60 @@
+<openerp>
+    <data>
+        <record id="view_medical_modules_installer" model="ir.ui.view">
+            <field name="name">medical.installer.modules.form</field>
+            <field name="model">medical.installer.modules</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base.res_config_installer"/>
+            <field name="arch" type="xml">
+                <data>
+                    <form position="attributes">
+                        <attribute name="string">Medical Management Configuration</attribute>
+                    </form>
+                    <separator string="title" position="attributes">
+                         <attribute name="string">Configure Health &amp; Hospital Information System</attribute>
+
+                    </separator>
+                    <xpath expr="//label[@string='description']" position="attributes">
+                        <attribute name="string">Add extra Medical functionality</attribute>
+                    </xpath>
+                    <xpath expr="//button[@string='Install Modules']" position="attributes">
+                        <attribute name="string">Configure</attribute>
+                    </xpath>
+                    <xpath expr='//separator[@string="vsep"]' position='attributes'>
+                        <attribute name='string'></attribute>
+                    </xpath>
+                    <group colspan="8">
+                        <field name="medical_socioeconomics"/>
+                        <field name="medical_lifestyle"/>
+                        <field name="medical_genetics"/>
+                        <field name="medical_lab"/>
+                        <field name="medical_surgery"/>
+	                    <field name="medical_icd10"/>
+                        <field name="medical_gyneco"/>
+                        <field name="medical_inpatient"/>
+	                    <field name="medical_invoice"/>	                    
+	                    <field name="medical_icd10pcs"/>	                    
+                    </group>
+                </data>
+            </field>
+        </record>
+
+        <record id="action_medical_installer" model="ir.actions.act_window">
+            <field name="name">Medical Management Configuration</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">medical.installer.modules</field>
+            <field name="view_id" ref="view_medical_modules_installer"/>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <record id="medical_installer_todo" model="ir.actions.todo">
+            <field name="action_id" ref="action_medical_installer"/>
+            <field name="sequence">5</field>
+            <field name="restart">always</field>
+            <field eval="[(6,0,[ref('base.group_extended')])]" name="groups_id"/>
+        </record>
+
+    </data>
+</openerp>

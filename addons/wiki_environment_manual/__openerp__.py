@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/wiki_environment_manual/__openerp__.py

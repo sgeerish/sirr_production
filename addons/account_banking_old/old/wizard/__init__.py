@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_banking_old/old/wizard/__init__.py

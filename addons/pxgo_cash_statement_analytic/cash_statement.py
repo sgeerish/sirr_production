@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/pxgo_cash_statement_analytic/cash_statement.py

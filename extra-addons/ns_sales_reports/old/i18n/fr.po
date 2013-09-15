@@ -1,0 +1,567 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* ns_sales_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.9\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-10-03 13:16:02+0000\n"
+"PO-Revision-Date: 2010-10-03 13:16:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ns_sales_reports
+#: model:ir.actions.report.xml,name:ns_sales_reports.ns_sales_reports_fac_liste_factures_clients
+#: model:ir.actions.wizard,name:ns_sales_reports.jreports_liste_factures_clients_wizard
+#: model:ir.ui.menu,name:ns_sales_reports.jreports_liste_factures_clients_menu
+#: wizard_view:jreports.ns_sales_clients.wizard,init:0
+msgid "Revenue per customer"
+msgstr "CA par client"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "$F{Category_produit}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "$V{Montant_1}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,month:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,month:0
+#: selection:jreports.ns_sales_products.wizard,init,month:0
+msgid "March"
+msgstr "Mars"
+
+#. module: ns_sales_reports
+#: code:addons\ns_sales_reports\wizard\liste_factures_produits_wizard.py:0
+#, python-format
+msgid "Revenue per product - "
+msgstr "CA par produit - "
+
+#. module: ns_sales_reports
+#: code:addons\ns_sales_reports\wizard\liste_factures_clients_wizard.py:0
+#, python-format
+msgid "Revenue per customer - "
+msgstr "CA par client - "
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,year:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,year:0
+#: selection:jreports.ns_sales_products.wizard,init,year:0
+msgid "2015"
+msgstr ""
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,year:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,year:0
+#: selection:jreports.ns_sales_products.wizard,init,year:0
+msgid "2014"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "TOTAL"
+msgstr ""
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,year:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,year:0
+#: selection:jreports.ns_sales_products.wizard,init,year:0
+msgid "2010"
+msgstr ""
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,year:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,year:0
+#: selection:jreports.ns_sales_products.wizard,init,year:0
+msgid "2013"
+msgstr ""
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,year:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,year:0
+#: selection:jreports.ns_sales_products.wizard,init,year:0
+msgid "2012"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "/data/record/Product-product_id/Barquette_Neutre-barq_id/Product_Template-product_tmpl_id/Name-name"
+msgstr ""
+
+#. module: ns_sales_reports
+#: wizard_view:jreports.ns_sales_products.wizard,init:0
+msgid "Revenue per product category"
+msgstr "CA par catégorie de produits"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "$F{Montant}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: model:ir.module.module,shortdesc:ns_sales_reports.module_meta_information
+msgid "ns_sales_reports"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+msgid "$V{Montant_2}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+msgid "/data/record/Partner-partner_id/Categories-category_id/Category_Name-name"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "/data/record/Montant-value"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+msgid "/data/record/Description-name"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+msgid "/data/record/Date_Invoiced-date_invoice"
+msgstr ""
+
+#. module: ns_sales_reports
+#: wizard_field:jreports.ns_sales_clients.wizard,init,date_from:0
+#: wizard_field:jreports.ns_sales_clients_products.wizard,init,date_from:0
+#: wizard_field:jreports.ns_sales_products.wizard,init,date_from:0
+msgid "From"
+msgstr "De "
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "/data/record/Product-product_id/Product_Template-product_tmpl_id/Name-name"
+msgstr ""
+
+#. module: ns_sales_reports
+#: wizard_field:jreports.ns_sales_products.wizard,init,report:0
+msgid "Rapport"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "$V{Qte_1}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+msgid "($V{Montant_1}>0) || ($V{Montant_1}>0)"
+msgstr ""
+
+#. module: ns_sales_reports
+#: wizard_button:jreports.ns_sales_clients.wizard,init,print_report:0
+#: wizard_button:jreports.ns_sales_clients_products.wizard,init,print_report:0
+#: wizard_button:jreports.ns_sales_products.wizard,init,nextstate:0
+msgid "Print"
+msgstr "Imprimer"
+
+#. module: ns_sales_reports
+#: code:addons\ns_sales_reports\wizard\liste_factures_clients_produits_wizard.py:0
+#: code:addons\ns_sales_reports\wizard\liste_factures_clients_wizard.py:0
+#: code:addons\ns_sales_reports\wizard\liste_factures_produits_wizard.py:0
+#, python-format
+msgid " to "
+msgstr " au "
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+msgid "/data/record/Product-product_id/Product_Template-product_tmpl_id/Net_weight-weight_net"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "CATEGORIE"
+msgstr "CATEGORIE"
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,month:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,month:0
+#: selection:jreports.ns_sales_products.wizard,init,month:0
+msgid "July"
+msgstr "Juillet"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "$F{Qte}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+msgid "$V{Qte_1}*$F{Weight}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+msgid "$V{Qte_2}*$F{Weight}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: model:ir.actions.report.xml,name:ns_sales_reports.ns_sales_reports_fac_liste_factures_produits_c
+#: model:ir.actions.wizard,name:ns_sales_reports.jreports_liste_factures_produits_wizard
+#: model:ir.ui.menu,name:ns_sales_reports.jreports_liste_factures_produits_menu
+msgid "Revenue per Product"
+msgstr "CA par produit"
+
+#. module: ns_sales_reports
+#: wizard_field:jreports.ns_sales_products.wizard,init,hideproducts:0
+msgid "Show category summary only"
+msgstr "Ne montrer que le total par catégorie"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "$F{Produit}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "!$P{detail}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,period:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,period:0
+#: selection:jreports.ns_sales_products.wizard,init,period:0
+msgid "Selection"
+msgstr "De ... à ..."
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "MONTANT"
+msgstr "MONTANT"
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,month:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,month:0
+#: selection:jreports.ns_sales_products.wizard,init,month:0
+msgid "September"
+msgstr "Septembre"
+
+#. module: ns_sales_reports
+#: wizard_field:jreports.ns_sales_clients.wizard,init,draft:0
+#: wizard_field:jreports.ns_sales_clients_products.wizard,init,draft:0
+#: wizard_field:jreports.ns_sales_products.wizard,init,draft:0
+msgid "Include draft invoices?"
+msgstr "Inclure les factures brouillon?"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+msgid "/data/record/Invoice_Ref-invoice_id/Partner-partner_id/Categories-category_id/Category_Name-name"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "$P{detail}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: wizard_field:jreports.ns_sales_clients.wizard,init,month:0
+#: selection:jreports.ns_sales_clients.wizard,init,period:0
+#: wizard_field:jreports.ns_sales_clients_products.wizard,init,month:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,period:0
+#: wizard_field:jreports.ns_sales_products.wizard,init,month:0
+#: selection:jreports.ns_sales_products.wizard,init,period:0
+msgid "Month"
+msgstr "Mois"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+msgid "CLIENT"
+msgstr "CLIENT"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "($V{Montant_1}>0)"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "/data/record/Qte_vendue-sold_qty"
+msgstr ""
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_products.wizard,init,report:0
+msgid "per Category"
+msgstr "par Catégorie"
+
+#. module: ns_sales_reports
+#: model:ir.ui.menu,name:ns_sales_reports.menu_ns_sales_reports
+msgid "Sales Reports"
+msgstr "Rapports de Chiffre d'Affaires"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "/data/record/Product-product_id/Cat.-fac_type"
+msgstr ""
+
+#. module: ns_sales_reports
+#: model:ir.actions.wizard,name:ns_sales_reports.jreports_liste_factures_clients_produits_wizard
+#: model:ir.ui.menu,name:ns_sales_reports.jreports_liste_factures_clients_produits_menu
+#: wizard_view:jreports.ns_sales_clients_products.wizard,init:0
+msgid "Revenue per customer per product"
+msgstr "CA par client par produit"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "\" \" + $V{PAGE_NUMBER}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,month:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,month:0
+#: selection:jreports.ns_sales_products.wizard,init,month:0
+msgid "August"
+msgstr "Aout"
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,month:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,month:0
+#: selection:jreports.ns_sales_products.wizard,init,month:0
+msgid "June"
+msgstr "Juin"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "$V{Montant_5}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "QTE"
+msgstr "QTE"
+
+#. module: ns_sales_reports
+#: model:ir.actions.report.xml,name:ns_sales_reports.ns_sales_reports_fac_liste_factures_clients_produits
+msgid "Revenue per customer per Product"
+msgstr "CA par client par produit"
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,month:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,month:0
+#: selection:jreports.ns_sales_products.wizard,init,month:0
+msgid "November"
+msgstr "Novembre"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "PRODUIT"
+msgstr "PRODUIT"
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,month:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,month:0
+#: selection:jreports.ns_sales_products.wizard,init,month:0
+msgid "October"
+msgstr "Octobre"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+msgid "$F{Client}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,month:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,month:0
+#: selection:jreports.ns_sales_products.wizard,init,month:0
+msgid "January"
+msgstr "Janvier"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "true"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+msgid "POIDS"
+msgstr "POIDS"
+
+#. module: ns_sales_reports
+#: wizard_field:jreports.ns_sales_clients.wizard,init,period:0
+#: wizard_field:jreports.ns_sales_clients_products.wizard,init,period:0
+#: wizard_field:jreports.ns_sales_products.wizard,init,period:0
+msgid "Period"
+msgstr "Période"
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,month:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,month:0
+#: selection:jreports.ns_sales_products.wizard,init,month:0
+msgid "December"
+msgstr "Decembre"
+
+#. module: ns_sales_reports
+#: wizard_button:jreports.ns_sales_clients.wizard,init,end:0
+#: wizard_button:jreports.ns_sales_clients_products.wizard,init,end:0
+#: wizard_button:jreports.ns_sales_products.wizard,init,end:0
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "false"
+msgstr ""
+
+#. module: ns_sales_reports
+#: wizard_field:jreports.ns_sales_clients.wizard,init,date_to:0
+#: wizard_field:jreports.ns_sales_clients_products.wizard,init,date_to:0
+#: wizard_field:jreports.ns_sales_products.wizard,init,date_to:0
+msgid "To"
+msgstr "A"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "$V{Montant_3}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "\"Page \"+$V{PAGE_NUMBER}+\" /\""
+msgstr ""
+
+#. module: ns_sales_reports
+#: code:addons\ns_sales_reports\wizard\liste_factures_clients_produits_wizard.py:0
+#: code:addons\ns_sales_reports\wizard\liste_factures_clients_wizard.py:0
+#: code:addons\ns_sales_reports\wizard\liste_factures_produits_wizard.py:0
+#, python-format
+msgid "From "
+msgstr "Du "
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,month:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,month:0
+#: selection:jreports.ns_sales_products.wizard,init,month:0
+msgid "May"
+msgstr "Mai"
+
+#. module: ns_sales_reports
+#: model:ir.module.module,description:ns_sales_reports.module_meta_information
+msgid "Sales Reports using Jasper Reports"
+msgstr "Rapports de vente avec Jasper Reports"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+msgid "/data/record/Partner-partner_id/Name-name"
+msgstr ""
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,month:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,month:0
+#: selection:jreports.ns_sales_products.wizard,init,month:0
+msgid "February"
+msgstr "Fevrier"
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,month:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,month:0
+#: selection:jreports.ns_sales_products.wizard,init,month:0
+msgid "April"
+msgstr "Avril"
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "/data/record/Invoice_Ref-invoice_id/Description-name"
+msgstr ""
+
+#. module: ns_sales_reports
+#: code:addons\ns_sales_reports\wizard\liste_factures_clients_produits_wizard.py:0
+#, python-format
+msgid "Revenue per customer per product - "
+msgstr "CA par client par produit - "
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "/data/record/Invoice_Ref-invoice_id/Date_Invoiced-date_invoice"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+msgid "/data/record/Invoice_Ref-invoice_id/Partner-partner_id/Name-name"
+msgstr ""
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,year:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,year:0
+#: selection:jreports.ns_sales_products.wizard,init,year:0
+msgid "2001"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients:0
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "$P{title}"
+msgstr ""
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,period:0
+#: wizard_field:jreports.ns_sales_clients.wizard,init,year:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,period:0
+#: wizard_field:jreports.ns_sales_clients_products.wizard,init,year:0
+#: selection:jreports.ns_sales_products.wizard,init,period:0
+#: wizard_field:jreports.ns_sales_products.wizard,init,year:0
+msgid "Year"
+msgstr "Année"
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,year:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,year:0
+#: selection:jreports.ns_sales_products.wizard,init,year:0
+msgid "2008"
+msgstr ""
+
+#. module: ns_sales_reports
+#: selection:jreports.ns_sales_clients.wizard,init,year:0
+#: selection:jreports.ns_sales_clients_products.wizard,init,year:0
+#: selection:jreports.ns_sales_products.wizard,init,year:0
+msgid "2009"
+msgstr ""
+
+#. module: ns_sales_reports
+#: rml:ns_sales_reports.liste_factures_clients_produits:0
+#: rml:ns_sales_reports.liste_factures_produits_c:0
+msgid "/data/record/Product-product_id/Product_Template-product_tmpl_id/Category-categ_id/Name-name"
+msgstr ""
+

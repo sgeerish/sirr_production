@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/reminder/__init__.py

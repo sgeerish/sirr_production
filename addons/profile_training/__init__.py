@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/profile_training/__init__.py

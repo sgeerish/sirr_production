@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sequence_postgres/__init__.py

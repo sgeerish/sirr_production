@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/l10n_be_postal_subscriber/l10n_be_postal_subscriber.py

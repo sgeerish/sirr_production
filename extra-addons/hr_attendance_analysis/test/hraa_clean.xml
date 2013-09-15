@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+	<!--delete model="hr.aa.journal" search="[('date','&lt;','2002-01-01 00:00:00')]" /-->
+	<!--delete model="hr.aa.attendance" search="[('name','&lt;','2002-01-01 00:00:00')]" /-->
+	<!--delete model="hr.aa.journal_formula" search="[('name','like','%hr.test%')]" /-->
+
+	<!--delete model="hr.contract" search="[('name','like','%hr.test%')]" /-->
+	<!--delete model="hr.employee" search="[('name','like','%hr.test%')]" /-->
+
+	<!--delete model="hr.timesheet" search="[('name','like','%hr.test%')]" /-->
+	<!--delete model="hr.timesheet.group" search="[('name','like','%hr.test%')]" /-->
+
+	<!--delete model="hr.department" search="[('name','like','%hr.test%')]" /-->
+	<!--delete model="res.partner.function" search="[('name','like','%hr.test%')]" /-->
+	<!--delete model="hr.action.reason" search="[('name','like','%hr.test%')]" /-->
+	<!--delete model="hr.holidays" search="[('date_from','&lt;','2002-01-01 00:00:00')]" /-->
+	<!--delete model="hr.holidays.status" search="[('name','like','%hr.test%')]" /-->
+	<!--delete model="hr.aa.action_reason_rule" search="[('name','like','%hr.test%')]" /-->
+    </data>
+</openerp>
+
+<!--
+     vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+     -->
+

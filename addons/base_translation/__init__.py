@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/base_translation/__init__.py

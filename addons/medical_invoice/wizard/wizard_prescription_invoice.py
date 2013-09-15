@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/medical_invoice/wizard/wizard_prescription_invoice.py

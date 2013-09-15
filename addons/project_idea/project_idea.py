@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/project_idea/project_idea.py

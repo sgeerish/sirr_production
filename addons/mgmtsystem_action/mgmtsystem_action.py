@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/mgmtsystem_action/mgmtsystem_action.py

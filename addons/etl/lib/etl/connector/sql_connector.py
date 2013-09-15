@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl/lib/etl/connector/sql_connector.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/data_smtp/__openerp__.py

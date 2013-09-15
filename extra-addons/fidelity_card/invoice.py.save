@@ -1,0 +1,41 @@
+# -*- encoding: utf-8 -*-
+##############################################################################
+#
+#    OpenERP, Open Source Management Solution
+#    Copyright (c) 2010 Acysos S.L. (http://acysos.com) All Rights Reserved.
+#                       Ignacio Ibeas <ignacio@acysos.com>
+#    $Id$
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+
+from osv import osv, fields
+import tools
+import os
+
+# Sale order
+class account_invoice(osv.osv):
+    _inherit = 'account.invoice'
+    _columns = {
+        'card_redemption_id': fields.many2one('fidelity.card.redemption', 'Bon d\'Achat', states={'draft': [('readonly', False)]}, required=False),
+    }
+
+    def action_create_fidelity_points(self, cr, uid, ids, *args):
+        for inv in self.browse(cr, uid, ids):
+		amount=inv.amount_total
+		card=self.pool.get('fidelity.card').search(cr,uid,[('','','')])
+        return True
+
+account_invoice()

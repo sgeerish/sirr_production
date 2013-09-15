@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_employee_overtime_form">
+            <field name="name">hr.employee.form.overtime</field>
+            <field name="model">hr.employee</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <field name="job_id" position="after">
+                <field name="allow_overtime" select="1"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>

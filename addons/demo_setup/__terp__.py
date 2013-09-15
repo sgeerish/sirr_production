@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/demo_setup/__terp__.py

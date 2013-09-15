@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_employee_zentyal_form">
+            <field name="name">hr.employee.form.zentyal</field>
+            <field name="model">hr.employee</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+		<page string="Personal Information" position="after">
+			<page string="Zentyal">
+                            <group col="2">
+                            <field name="nickname"/>
+                            <field name="alias"/>
+                            <field name="password" password="True"/>
+                            <button name="create_zentyal_user" type="object" string="Creation Utilisateur Zentyal"/>
+                            </group>
+			</page>
+		</page>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="company_form_view">
+            <field name="name">res.company.form.inherit.users_zentyal</field>
+            <field name="model">res.company</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook/page[@string='Configuration']" position="inside">                    
+                            <field name="server_name"/>
+                            <field name="server_user"/>
+                            <field name="server_password" password="True"/>
+                            <field name="create_user_script"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

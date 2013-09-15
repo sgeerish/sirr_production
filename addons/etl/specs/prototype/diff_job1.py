@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/etl/specs/prototype/diff_job1.py

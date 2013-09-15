@@ -1,0 +1,11 @@
+.*
+*.egg-info
+*.orig
+build/
+RE:^bin/
+RE:^dist/
+RE:^include/
+
+RE:^share/
+RE:^man/
+RE:^lib/

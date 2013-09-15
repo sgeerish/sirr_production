@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/huissier/barcode/code39.py

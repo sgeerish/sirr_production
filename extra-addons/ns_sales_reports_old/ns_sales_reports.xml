@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<report string="Revenue per customer" model="account.invoice" auto="True" name="ns_sales_reports.liste_factures_clients" rml="ns_sales_reports/report/liste_factures_clients.jrxml" id="ns_sales_reports_fac_liste_factures_clients" menu="False" header="False" />
+		<report string="Revenue per customer per Product" model="account.invoice.line" auto="True" name="ns_sales_reports.liste_factures_clients_produits" rml="ns_sales_reports/report/liste_factures_clients_produits.jrxml" id="ns_sales_reports_fac_liste_factures_clients_produits" menu="False" header="False" />
+		<report string="Revenue per Product" model="account.invoice.line" auto="True" name="ns_sales_reports.liste_factures_produits_c" rml="ns_sales_reports/report/liste_factures_produits_c.jrxml" id="ns_sales_reports_fac_liste_factures_produits_c" menu="False" header="False" />
+		<report string="Revenue Product-Commercial" model="account.invoice.line" auto="True" name="ns_sales_reports.liste_factures_produits_c_com" rml="ns_sales_reports/report/liste_factures_produits_c_com.jrxml" id="ns_sales_reports_fac_liste_factures_produits_c_com" menu="False" header="False" />
+        </data>
+</openerp>

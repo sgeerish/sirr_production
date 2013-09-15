@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_images_olbs/product_images.py

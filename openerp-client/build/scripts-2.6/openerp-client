@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /usr/local/lib/python2.6/dist-packages/openerp-client
+exec /usr/bin/python ./openerp-client.py $@

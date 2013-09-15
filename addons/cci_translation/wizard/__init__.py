@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_translation/wizard/__init__.py

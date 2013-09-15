@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/training_exam/migrations/0.2/post-10-cleanup-exam-participations.py

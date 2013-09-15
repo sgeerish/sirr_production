@@ -1,0 +1,10 @@
+Lista de tareas a realizar.
+
+DONE: Generar estadísticas de empleados que no cargan sus asistencias por el reloj.
+2) Filtrar por "Authenticated Method". Esto es útil para el administrador de recursos humanos, que permite controlar si existieron entradas automáticas que haya que corregir.
+3) Agregar el "Authenticated Method" a la vista de árbol.
+4) Poder asignar motivo de la acción desde el reloj.
+5) Unificar todos los tiempos a datetime.datetime
+6) Incluir dependencias de python:
+	https://bitbucket.org/johnmc/zkemapi
+

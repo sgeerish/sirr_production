@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/memento_idea/__init__.py

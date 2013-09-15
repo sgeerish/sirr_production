@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/django/__openerp__.py

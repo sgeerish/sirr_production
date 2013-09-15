@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/sale_intercompany_auto/__terp__.py

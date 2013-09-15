@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_last_module/__init__.py

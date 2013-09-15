@@ -1,0 +1,848 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* prestashop_openerp_sync
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-12-07 07:22+0000\n"
+"PO-Revision-Date: 2011-12-07 07:22+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.shop,enable_prestashop:0
+#: view:sale.shop.form.prestashop:0
+msgid "Prestashop Enabled"
+msgstr "Abilita Prestashop"
+
+
+#. module: prestashop_openerp_sync
+#: view:sale.shop.form.prestashop:0
+#: field:sale.shop,prestshop_version:0
+msgid "Prestshop Version"
+msgstr "Prestshop Version"
+
+#. module: prestashop_openerp_sync
+#: field:sale.shop,server_key:0
+#: view:sale.shop.form.prestashop:0
+msgid "Server Key"
+msgstr "Server delle chiavi"
+
+#. module: prestashop_openerp_sync
+#: field:sale.shop,server_url:0
+#: view:sale.shop.form.prestashop:0
+msgid "Server URL"
+msgstr "URL du serveur"
+
+#. module: prestashop_openerp_sync
+#: field:sale.shop,name:0
+#: view:sale.shop.form.prestashop:0
+msgid "Shop Name"
+msgstr "Nome Negozio"
+
+#. module: prestashop_openerp_sync
+#: field:sale.shop,validate_https:0
+msgid "Validate HTTPS"
+msgstr "Convalida HTTPS"
+
+
+#. module: prestashop_openerp_sync
+#: view:sale.shop.form.prestashop:0
+#: field:sale.shop,debug:0
+msgid "Debug"
+msgstr "Debug"
+
+
+#. module: prestashop_openerp_sync
+#: view:sale.shop.form.prestashop:0
+#: field:sale.shop,prestashop_config_path:0
+msgid "Configuration File Path"
+msgstr "File di configurazione Path"
+
+
+#. module: prestashop_openerp_sync
+#: view:sale.shop.form.prestashop:0
+#: field:sale.shop,lang_ids:0
+msgid "Language"
+msgstr "Lingua"
+
+
+#. module: prestashop_openerp_sync
+#: view:sale.shop.form.prestashop:0
+#: field:sale.shop:0
+msgid "Get Connection"
+msgstr "Get Connection"
+
+
+#. module: prestashop_openerp_sync
+#: view:res.presta.country.state.form:0
+#: field:res.country,display_tax_label:0
+msgid "Display Tax Label"
+msgstr "Display fiscale Label"
+
+
+
+#. module: prestashop_openerp_sync
+#: view:res.presta.country.state.form:0
+#: field:res.country,contains_states:0
+msgid "Contain States"
+msgstr "Contenere gli Stati"
+
+
+#. module: prestashop_openerp_sync
+#: view:res.presta.country.state.form:0
+#: field:res.country,currency_id:0
+msgid "Currency"
+msgstr "Valuta"
+
+
+#. module: prestashop_openerp_sync
+#: view:res.presta.country.state.form:0
+#: field:res.country,need_identification_number:0
+msgid "Need Identification Number"
+msgstr "Hai bisogno di numero di identificazione"
+
+
+#. module: prestashop_openerp_sync
+#: view:res.presta.country.state.form:0
+#: view:res.partner.category.presta:0
+#: field:res.country,active:0
+#: field:res.partner.category,active:0
+msgid "Active"
+msgstr "Attivo"
+
+
+#. module: prestashop_openerp_sync
+#: view:res.presta.country.state.form:0
+#: field:res.country,import:0
+msgid "Import"
+msgstr "Importare"
+
+
+
+#. module: prestashop_openerp_sync
+#: view:res.partner.title.form:0
+#: field:res.partner.title,domain:0
+msgid "Domain"
+msgstr "dominio"
+
+
+#. module: prestashop_openerp_sync
+#: view:res.bank.form:0
+#: field:res.bank,code:0
+msgid "Code"
+msgstr "codice"
+
+
+
+#. module: prestashop_openerp_sync
+#: view:product.feature.values.form:0
+#: field:product.feature.values,feature_value_lines:0
+msgid "Feature Values"
+msgstr "Feature Valori"
+
+
+#. module: prestashop_openerp_sync
+#: view:product.feature.values.form:0
+#: field:product.feature.values,feature_id:0
+msgid "Product Features"
+msgstr "Caratteristiche del prodotto"
+
+
+#. module: prestashop_openerp_sync
+#: view:product.feature.values.form:0
+#: field:product.feature.values,custom:0
+msgid "Custom"
+msgstr "costume"
+
+
+#. module: prestashop_openerp_sync
+#: view:tag.form:0
+#: field:product.feature.values,import_from_prestashop:0
+msgid "Import/Export Tag"
+msgstr "Import / Export-Tag"
+
+
+#. module: prestashop_openerp_sync
+#: view:product.options.form :0
+#: field:product.options,public_name:0
+msgid "Public Name"
+msgstr "Nome pubblico"
+
+
+
+#. module: prestashop_openerp_sync
+#: view:product.options.form:0
+#: view:product.options_value.form:0
+#: field:product.options.value,prod_opt_id:0
+#: field:product.options,prod_opt_value_lines:0
+msgid "Product Option Value"
+msgstr "Prodotto Value Option"
+
+
+#. module: prestashop_openerp_sync
+#: view:product.options_value.form:0
+#: field:product.options.value,import_from_prestashop:0
+msgid "Import/Export Product Options Value"
+msgstr "Import / Export Product opzioni di valore"
+
+
+
+#. module: prestashop_openerp_sync
+#: view:presta.res.partner.form.inherit:0
+#: field:res.partner,lastname:0
+msgid "Last Name"
+msgstr "cognome"
+
+
+#. module: prestashop_openerp_sync
+#: view:presta.res.partner.form.inherit:0
+#: field:res.partner,birthday:0
+msgid "Birthday"
+msgstr "Compleanno"
+
+
+#. module: prestashop_openerp_sync
+#: view:presta.res.partner.form.inherit:0
+#: field:res.partner,newsletter:0
+msgid "Newsletter"
+msgstr "Notiziario"
+
+
+#. module: prestashop_openerp_sync
+#: view:presta.res.partner.form.inherit:0
+#: field:res.partner,is_manufacturer:0
+msgid "Manufacturer"
+msgstr "Fabbricante"
+
+
+#. module: prestashop_openerp_sync
+#: view:presta.res.partner.form.inherit:0
+#: field:res.partner,is_guest:0
+msgid "Is Guest"
+msgstr "È ospite"
+
+
+#. module: prestashop_openerp_sync
+#: view:presta.res.partner.form.inherit:0
+#: field:res.partner,import_export_customer:0
+msgid "Import/Export Customer"
+msgstr "Import / Export clienti"
+
+
+
+#. module: prestashop_openerp_sync
+#: view:external.reference.form:0
+#: field:external.reference,res_model:0
+msgid "Model"
+msgstr "Modello"
+
+
+#. module: prestashop_openerp_sync
+#: view:external.reference.form:0
+#: field:external.reference,res_id:0
+msgid "Res Id"
+msgstr "Res Id"
+
+
+#. module: prestashop_openerp_sync
+#: view:external.reference.form:0
+#: field:external.reference,ext_id:0
+msgid "External Id"
+msgstr "Id esterno"
+
+
+#. module: prestashop_openerp_sync
+#: view:external.reference.form:0
+#: field:external.reference,external_reference_id:0
+msgid "External Reference"
+msgstr "Riferimento esterno"
+
+
+#. module: prestashop_openerp_sync
+#: view:res.partner.category.presta:0
+#: field:res.partner.category,name:0
+msgid "Category Name"
+msgstr "Nome della Categoria"
+
+
+#. module: prestashop_openerp_sync
+#: view:res.partner.category.presta:0
+#: field:res.partner.category,parent_id:0
+msgid "Parent Category"
+msgstr "Parent Categoria"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.shop,last_sync_date:0
+#: view:sale.shop.form.prestashop:0
+msgid "Product Sync Date"
+msgstr "Product Data Sync"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.shop,last_image_sync_date:0
+#: view:sale.shop.form.prestashop:0
+msgid "Image Sync Date"
+msgstr "Immagine Sync Data"
+
+
+#. module: prestashop_openerp_sync
+#: field:prestashop.lang,iso_code:0
+#: view:prestashop.lang.form:0
+msgid "ISO Code"
+msgstr "Codice ISO"
+
+#. module: prestashop_openerp_sync
+#: field:prestashop.lang,date_format_lie:0
+#: view:prestashop.lang.form:0
+msgid "Date format"
+msgstr "Formato data"
+
+
+#. module: prestashop_openerp_sync
+#: field:prestashop.lang,date_format_full:0
+#: view:prestashop.lang.form:0
+msgid "Date format(full)"
+msgstr "Data formato (full)"
+
+
+#. module: prestashop_openerp_sync
+#: field:prestashop.lang,lang_id:0
+#: view:prestashop.lang.form:0
+msgid "Language"
+msgstr "Lingua"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:prestashop.lang,active:0
+#: view:prestashop.lang.form:0
+msgid "Active"
+msgstr "Attivo"
+
+
+#. module: prestashop_openerp_sync
+#: field:prestashop.lang,is_rtl:0
+#: view:prestashop.lang.form:0
+msgid "Is rtl"
+msgstr "E 'rtl"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,date_add:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Create Date"
+msgstr "Data di creazione"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,condition:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Condition"	
+msgstr "Condizione"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,associations:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Associations"	
+msgstr "Associazioni"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,meta_description:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Meta Description"
+msgstr "Meta Description"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,upc:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "UPC"
+msgstr "UPC"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,unity:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Unity"
+msgstr "Unità"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,minimal_quantity:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Minimal Qty"	
+msgstr "Quantità minima"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,depth:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Depth"
+msgstr "Profondità"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,tax_rule_group_id:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Tax Rule Group"
+msgstr "Tax Rule Group"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,show_price:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Show Price"	
+msgstr "Mostra il prezzo"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,on_sale:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "On Sale"
+msgstr "On Sale"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,is_carrier:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Is Carrier"
+msgstr "È Carrier"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,quantity_discount:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Qty. Discount"
+msgstr "Qty. Sconto"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,product_features_ids:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Product Features"
+msgstr "Caratteristiche del prodotto"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,product_options_values_id:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Product Option Values"	
+msgstr "Prodotto opzione Valori"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,combination_ids:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Product Combinations"	
+msgstr "Combinazioni di prodotti"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,link_rewrite:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Link Rewrite"
+msgstr "Collegamento Rewrite"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,meta_title:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Meta Title"
+msgstr "Meta Title"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,available_later:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Available Later"
+msgstr "Disponibile tardi"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,wholesale_price:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Wholesale Price"
+msgstr "Prezzo all'ingrosso"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,additional_shipping_cost:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Additional Shipping Cost"
+msgstr "Costi di spedizione aggiuntive"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,height:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Height"
+msgstr "Altezza"
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,meta_keywords:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Meta Keywords"
+msgstr "Meta parole chiave"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,location:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Location"	
+msgstr "Posizione"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,available_now:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Available Now"	
+msgstr "Disponibile ora"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,quantity:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Quantity"
+msgstr "Quantità"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,width:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Width"
+msgstr "Larghezza"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,tag_id:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Prestashop Tag"	
+msgstr "Prestashop Tag"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,customizable:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Customizable"
+msgstr "Personalizzabile"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:product.product,available_for_order:0
+#: view:prestashop.product.normal.form.inherit:0
+msgid "Available for Order"	
+msgstr"Disponibile per l'ordine"
+
+
+#. module: prestashop_openerp_sync
+#: field:image.image,product_id:0
+#: view:image.image.form:0
+msgid "Product"	
+msgstr"Prodotto"
+
+
+#. module: prestashop_openerp_sync
+#: field:image.image,categ_id:0
+#: view:image.image.form:0
+msgid "Category"	
+msgstr"Categoria"
+
+
+#. module: prestashop_openerp_sync
+#: field:image.image,supplier_id:0
+#: view:image.image.form:0
+msgid "Supplier"	
+msgstr"Fornitore"
+
+#. module: prestashop_openerp_sync
+#: field:image.image,manufacturer_id:0
+#: view:image.image.form:0
+msgid "Manufacturer"	
+msgstr"Fabbricante"
+
+
+#. module: prestashop_openerp_sync
+#: field:image.image,language_id:0
+#: view:image.image.form:0
+msgid "Language"	
+msgstr"Lingua"
+
+
+#. module: prestashop_openerp_sync
+#: field:image.image,attachment_id:0
+#: view:image.image.form:0
+msgid "File"	
+msgstr"File"
+
+
+#. module: prestashop_openerp_sync
+#: field:image.image,type_id:0
+#: view:image.image.form:0
+msgid "Image Type"	
+msgstr"Tipo di immagine"
+
+
+#. module: prestashop_openerp_sync
+#: field:image.type,name:0
+#: view:image.types.form:0
+msgid "Name"
+msgstr"Nome"
+
+
+#. module: prestashop_openerp_sync
+#: field:image.type,width:0
+#: view:image.types.form:0
+msgid "Width"
+msgstr"Breite"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:image.type,height:0
+#: view:image.types.form:0
+msgid "Hieght"
+msgstr"Hieght"
+
+
+#. module: prestashop_openerp_sync
+#: field:image.type,products:0
+#: view:image.types.form:0
+msgid "Products"
+msgstr"Prodotti"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:image.type,categories:0
+#: view:image.types.form:0
+msgid "Categories"	
+msgstr"Categorie"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:image.type,suppliers:0
+#: view:image.types.form:0
+msgid "Suppliers"
+msgstr"Fornitori"
+
+
+#. module: prestashop_openerp_sync
+#: field:image.type,scenes:0
+#: view:image.types.form:0
+msgid "Scenes"	
+msgstr"Scene"
+
+
+#. module: prestashop_openerp_sync
+#: field:image.type,stores:0
+#: view:image.types.form:0
+msgid "Stores"
+msgstr"Negozi"
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,presta_exported:0
+#: view:sale.order.form.presta:0
+msgid "Exported"
+msgstr"Esportato"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,invoice_number:0
+#: view:sale.order.form.presta:0
+msgid "Invoice Number"
+msgstr"Numero fattura"
+
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,delivery_number:0
+#: view:sale.order.form.presta:0
+msgid "Delivery Number"
+msgstr"Consegna Number"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,secure_key:0
+#: view:sale.order.form.presta:0
+msgid "Secure Key"
+msgstr"Secure Key"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,payment:0
+#: view:sale.order.form.presta:0
+msgid "Payment"
+msgstr"Pagamento"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,gift_message:0
+#: view:sale.order.form.presta:0
+msgid "Gift"
+msgstr"Regalo"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,shipping_number:0
+#: view:sale.order.form.presta:0
+msgid "Shipping Number"
+msgstr"Spedizione Number"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,invoice_date:0
+#: view:sale.order.form.presta:0
+msgid "Invoice Date"
+msgstr"Data fattura"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,delivery_date:0
+#: view:sale.order.form.presta:0
+msgid "Delivery Date"
+msgstr"Data di consegna"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,conversion_rate:0
+#: view:sale.order.form.presta:0
+msgid "Conversion Rate"
+msgstr"Tasso di conversione"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,current_state_id:0
+#: view:sale.order.form.presta:0
+msgid "Current State"
+msgstr"Stato attuale"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,total_discounts:0
+#: view:sale.order.form.presta:0
+msgid "Total Discounts"
+msgstr"Sconti totali"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,total_paid:0
+#: view:sale.order.form.presta:0
+msgid "Total Paid"
+msgstr"Totale pagamento"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,total_paid_real:0
+#: view:sale.order.form.presta:0
+msgid "Total Real Paid"
+msgstr"Reale totale versato"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,total_products:0
+#: view:sale.order.form.presta:0
+msgid "Total Products"
+msgstr"Totale prodotti"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,total_products_wt:0
+#: view:sale.order.form.presta:0
+msgid "Total Weight"
+msgstr"Peso totale"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,total_shipping:0
+#: view:sale.order.form.presta:0
+msgid "Total Shipping"
+msgstr"Totale Spese di spedizione"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,carrier_tax_rate:0
+#: view:sale.order.form.presta:0
+msgid "Carrier Tax Rate"
+msgstr"Carrier Aliquota d'imposta"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,total_wrapping:0
+#: view:sale.order.form.presta:0
+msgid "Total Wrapping"
+msgstr"Wrapping totale"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order,recyclable:0
+#: view:sale.order.form.presta:0
+msgid "Recyclable"
+msgstr"Riciclabile"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order.state,name:0
+#: view:sale.order.state.form :0
+msgid "Name"
+msgstr"nome"
+
+#. module: prestashop_openerp_sync
+#: field:sale.order.state,template:0
+#: view:sale.order.state.form :0
+msgid "Template"
+msgstr"sagoma"
+
+#. module: prestashop_openerp_sync
+#: field:sale.order.state,send_mail:0
+#: view:sale.order.state.form :0
+msgid "Send Email"
+msgstr"Invia email"
+
+#. module: prestashop_openerp_sync
+#: field:sale.order.state,logable:0
+#: view:sale.order.state.form :0
+msgid "Logable"
+msgstr"Logable"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order.state,invoice:0
+#: view:sale.order.state.form :0
+msgid "Invoice"
+msgstr"fattura"
+
+
+#. module: prestashop_openerp_sync
+#: field:sale.order.state,delivery:0
+#: view:sale.order.state.form :0
+msgid "Delivery"
+msgstr"consegna"
+

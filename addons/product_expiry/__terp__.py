@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_expiry/__terp__.py

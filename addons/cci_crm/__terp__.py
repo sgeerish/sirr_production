@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_crm/__terp__.py

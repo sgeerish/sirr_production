@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/product_price_history/product_price_history.py

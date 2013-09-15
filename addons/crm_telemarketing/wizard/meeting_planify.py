@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/crm_telemarketing/wizard/meeting_planify.py

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+    <delete model="ir.actions.wizard" search="[('wiz_name','like','hr_mastropor.')]" />
+        <!-- Print Payroll Document -->
+        <report id="hr_aa_payroll_print"
+            model="hr.aa.payroll"
+            name="hr.aa.payroll_print"
+            keyword="client_print_multi"
+            xsl='addons/hr_attendance_analysis/report/payroll_report.xsl'
+            string="Print Payroll Document"/>
+    </data>
+</openerp>
+
+<!--
+     vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+     -->

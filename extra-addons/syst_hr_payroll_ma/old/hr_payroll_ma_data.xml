@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data noupdate="0">
+
+		<record model="hr.payroll_ma.parametres" id="parametres_data8">
+			<field name="smig">2500</field>
+			<field name="charge">30</field>
+			<field name="fraispro">20</field>
+			<field name="plafond">2500</field>
+		</record>
+
+		<record model="hr.payroll_ma.cotisation" id="cotisation_data7">
+			<field name="code">CNSS</field>
+			<field name="name">CNSS</field>
+			<field name="tauxsalarial">4.29</field>
+			<field name="tauxpatronal">8.6</field>
+			<field name="plafonee">TRUE</field>
+			<field name="plafond">6000</field>
+		</record>
+
+		<record model="hr.payroll_ma.cotisation" id="cotisation_data6">
+			<field name="code">allocationsFam</field>
+			<field name="name">Couverture des allocations familiales</field>
+			<field name="tauxsalarial">0</field>
+			<field name="tauxpatronal">6.4</field>
+			<field name="plafond">0</field>
+		</record>
+
+		<record model="hr.payroll_ma.cotisation" id="cotisation_data5">
+			<field name="code">formationPro</field>
+			<field name="name">Taxe de formation professionnelle</field>
+			<field name="tauxsalarial">0</field>
+			<field name="tauxpatronal">1.6</field>
+			<field name="plafond">0</field>
+		</record>
+
+		<record model="hr.payroll_ma.cotisation" id="cotisation_data4">
+			<field name="code">AMO</field>
+			<field name="name">AMO</field>
+			<field name="tauxsalarial">2</field>
+			<field name="tauxsatronal">2</field>
+			<field name="plafond">0</field>
+		</record>
+
+		<record model="hr.payroll_ma.cotisation" id="cotisation_data3">
+			<field name="code">participationAMO</field>
+			<field name="name">participation AMO</field>
+			<field name="tauxsalarial">0</field>
+			<field name="tauxpatronal">1.5</field>
+			<field name="plafond">0</field>
+		</record>
+
+		<record model="hr.payroll_ma.cotisation" id="cotisation_data2">
+			<field name="code">CIMR</field>
+			<field name="name">CIMR</field>
+			<field name="tauxsalarial">6</field>
+			<field name="tauxpatronal">7.8</field>
+			<field name="plafond">0</field>
+		</record>
+
+		<record model="hr.payroll_ma.cotisation" id="cotisation_data1">
+			<field name="code">MUTUELLE</field>
+			<field name="name">MUTUELLE</field>
+			<field name="tauxsalarial">3</field>
+			<field name="tauxpatronal">6</field>
+			<field name="plafond">0</field>
+		</record>
+
+		<!-- donnee pour l'impot sur le revenue -->
+
+		<!-- donnee pour l'impot sur le revenue -->
+
+		<record model="hr.payroll_ma.ir" id="ir_data1">
+			<field name="debuttranche">0</field>
+			<field name="fintranche">30000</field>
+			<field name="taux">0</field>
+			<field name="somme">0</field>
+		</record>
+		<record model="hr.payroll_ma.ir" id="ir_data2">
+			<field name="debuttranche">30001</field>
+			<field name="fintranche">50000</field>
+			<field name="taux">10</field>
+			<field name="somme">3000</field>
+		</record>
+		<record model="hr.payroll_ma.ir" id="ir_data3">
+			<field name="debuttranche">50001</field>
+			<field name="fintranche">60000</field>
+			<field name="taux">20</field>
+			<field name="somme">8000</field>
+		</record>
+		<record model="hr.payroll_ma.ir" id="ir_data4">
+			<field name="debuttranche">60001</field>
+			<field name="fintranche">80000</field>
+			<field name="taux">30</field>
+			<field name="somme">14000</field>
+		</record>
+		<record model="hr.payroll_ma.ir" id="ir_data5">
+			<field name="debuttranche">80001</field>
+			<field name="fintranche">180000</field>
+			<field name="taux">34</field>
+			<field name="somme">17200</field>
+		</record>
+		<record model="hr.payroll_ma.ir" id="ir_data6">
+			<field name="debuttranche">180001</field>
+			<field name="fintranche">999999999</field>
+			<field name="taux">38</field>
+			<field name="somme">24400</field>
+		</record>
+
+		<!-- donnee pour la prime de l'anciennete -->
+
+		<record model="hr.payroll_ma.anciennete" id="anciennete_data1">
+			<field name="debuttranche">0</field>
+			<field name="fintranche">2</field>
+			<field name="taux">0</field>
+		</record>
+
+		<record model="hr.payroll_ma.anciennete" id="anciennete_data2">
+			<field name="debuttranche">2</field>
+			<field name="fintranche">5</field>
+			<field name="taux">5</field>
+		</record>
+		<record model="hr.payroll_ma.anciennete" id="anciennete_data3">
+			<field name="debuttranche">5</field>
+			<field name="fintranche">12</field>
+			<field name="taux">10</field>
+		</record>
+		<record model="hr.payroll_ma.anciennete" id="anciennete_data4">
+			<field name="debuttranche">12</field>
+			<field name="fintranche">20</field>
+			<field name="taux">15</field>
+		</record>
+		<record model="hr.payroll_ma.anciennete" id="anciennete_data5">
+			<field name="debuttranche">20</field>
+			<field name="fintranche">25</field>
+			<field name="taux">20</field>
+		</record>
+		<record model="hr.payroll_ma.anciennete" id="anciennete_data6">
+			<field name="debuttranche">25</field>
+			<field name="fintranche">60</field>
+			<field name="taux">25</field>
+		</record>
+		<record id="account.analytic_salary_journal" model="account.analytic.journal">
+			<field name="name">journal des salaires</field>
+			<field name="code">SAL</field>
+			<field name="type">general</field>
+		</record>
+		<record id="account.salary_journal" model="account.journal">
+			<field name="name">journal des salaires</field>
+			<field name="code">SAL</field>
+			<field name="type">general</field>
+			<field name="analytic_journal_id" ref="account.analytic_salary_journal"/>
+			<field name="view_id" ref="account.account_journal_view" />
+			<field name="sequence_id" ref="account.sequence_sale_journal" />
+			<field name="user_id" ref="base.user_root" />
+		</record>
+
+	</data>
+</openerp>

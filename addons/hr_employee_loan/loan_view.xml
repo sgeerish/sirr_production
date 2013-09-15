@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+    <record model="ir.ui.view" id="view_hr_employee_loan_form">
+        <field name="name">hr.employee.loan.form</field>
+        <field name="model">hr.employee.loan</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="hr.employee.loan">
+                <field name="name" select="1"/>
+                <field name="date_start" select="2"/>
+                <field name="date_end" select="0"/>
+
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_hr_employee_loan_tree">
+        <field name="name">hr.employee.loan.tree</field>
+        <field name="model">hr.employee.loan</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="hr.employee.loan">
+                <field name="name"/>
+                <field name="date_start"/>
+                <field name="date_end"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_hr_employee_loan">
+        <field name="name">Employee</field>
+        <field name="res_model">hr.employee.loan</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+        
+</data>
+</openerp>

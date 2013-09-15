@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/partner_credit_limit/__init__.py

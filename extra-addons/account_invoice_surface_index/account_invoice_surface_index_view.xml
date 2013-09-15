@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+    <record model="ir.ui.view" id="view_account_invoice_line_form">
+        <field name="name">account.invoice.line.form</field>
+        <field name="model">account.invoice.line</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="account.invoice.line">
+                <field name="index_start" select="1"/>
+                <field name="index_end" select="2"/>
+                <field name="room_area" select="0"/>
+                <field name="global_bill" select="0"/>
+                <field name="building_area" select="0"/>
+
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_account_invoice_line_tree">
+        <field name="name">account.invoice.line.tree</field>
+        <field name="model">account.invoice.line</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="account.invoice.line">
+                <field name="index_start"/>
+                <field name="index_end"/>
+                <field name="room_area"/>
+                <field name="global_bill"/>
+                <field name="building_area"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_account_invoice_line">
+        <field name="name">line</field>
+        <field name="res_model">account.invoice.line</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem name="account/invoice/line" id="menu_account_invoice_line" action="action_account_invoice_line"/>
+
+        
+</data>
+</openerp>

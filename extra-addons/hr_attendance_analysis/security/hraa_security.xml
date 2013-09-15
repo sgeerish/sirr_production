@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data noupdate="1">
+    <record id="hr_aa_user_group" model="res.groups">
+        <field name="name">Human Resources / Attendance Analisys User</field>
+    </record>
+    <record id="hr_aa_manager_group" model="res.groups">
+        <field name="name">Human Resources / Attendance Analisys Manager</field>
+    </record>
+</data>
+</openerp>
+
+<!--
+    vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+    -->

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/cci_event/wizard/cci_confirm_registrations.py

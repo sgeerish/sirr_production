@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/hr_change_password/__init__.py

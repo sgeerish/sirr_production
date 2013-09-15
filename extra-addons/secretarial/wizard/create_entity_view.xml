@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+<wizard
+    string="Change Password"
+    model="res.partner"
+    name="secretarial.create.entity"
+    menu="False"
+    id="wizard_secretarial_create_entity"/>
+
+<menuitem
+    name="Secretarial/New Entity"
+    id="menu_new_entity"
+    type="wizard"
+    action="wizard_secretarial_create_entity"/>
+
+</data>
+</openerp>

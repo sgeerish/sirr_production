@@ -1,0 +1,35 @@
+from osv import fields, osv
+import time
+
+
+class hr_employee(osv.osv):
+    _inherit = "hr.employee"
+
+    _columns = {
+        'dernier_pointage' : fields.function('Dernier Pointage'),
+	'product_id':fields.many2one('product.product','Produit'),
+    }
+hr_employee()
+
+class hr_overtime(osv.osv):
+    _name = "hr.overtime"
+    _description = "Calcul Heures Supplementaires"
+    
+    _columns={
+        'employee_id':fields.many2one('hr.employee','Employee'),
+        'user_id':fields.many2one('res.users','Demandeur'),
+        'valid_user_id':fields.many2one('res.users','Validation'),
+        'heure_depart':fields.datetime('Depart'),
+        'pointeuse':fields.datetime('Pointeuse'),
+        'name':fields.char('Motif',size=64),
+        'state': fields.selection([
+            ('draft', 'Demande'),
+            ('valid', 'Valide'),
+            ('refused', 'Refuse'),
+            ], 'Etat', readonly=True, select=True),
+        
+    }
+    _defaults = {
+        'user_id': lambda obj, cr, uid, context: uid,
+}
+hr_overtime()

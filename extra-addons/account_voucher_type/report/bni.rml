@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(496.0,227.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+       <setFont name="Times-Roman" size="8"/>
+      <frame id="first" x1="0.0" y1="12.0" width="488" height="196"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+  </stylesheet>
+  <story>
+<para  fontName="Helvetica" fontSize="8.0">[[ repeatIn(objects,'o') ]]</para>
+<illustration height="15" width="144">
+<setFont name="DejaVu Sans" size="8"/>
+<drawString x="110.0" y="-10.0" >[[ total_text(o.amount) ]] </drawString>
+<drawString x="400.0" y="-35.0">***[[o.amount]]***</drawString>
+<drawString x="75.0" y="-45.0">[[ o.tire and o.tire or o.partner_id.name ]] </drawString>
+<drawString x="300.0" y="-80.0">Antananarivo</drawString>
+<drawString x="410.0" y="-80.0">[[formatLang(o.date,date=True)]]</drawString>
+</illustration>
+  </story>
+</document>

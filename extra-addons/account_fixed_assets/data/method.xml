@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+        <record id="fixed_assets_method_01" model="account.fixed.assets.method">
+            <field name="name">DB 40-5-1</field>
+            <field name="method">decbalance</field>
+            <field name="method_progress_factor">0.40</field>
+            <field name="state">draft</field>
+            <field name="method_duration">5</field>
+            <field name="method_freq">1</field>
+        </record>
+        <record id="fixed_assets_method_02" model="account.fixed.assets.method">
+            <field name="name">DB 25-5-1</field>
+            <field name="method">decbalance</field>
+            <field name="method_progress_factor">0.25</field>
+            <field name="state">draft</field>
+            <field name="method_duration">5</field>
+            <field name="method_freq">1</field>
+        </record>
+        
+    </data>
+</openerp>

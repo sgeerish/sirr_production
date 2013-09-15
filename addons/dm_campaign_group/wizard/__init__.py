@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_campaign_group/wizard/__init__.py

@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/report_analytic2/report_analytic2.py

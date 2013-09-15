@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/olap/wizard/wizard_load_configured_table.py

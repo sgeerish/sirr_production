@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/asterisk/wizard/__init__.py

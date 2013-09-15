@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/dm_product_media/dm_product_media.py

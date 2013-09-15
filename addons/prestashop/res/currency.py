@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/prestashop/res/currency.py

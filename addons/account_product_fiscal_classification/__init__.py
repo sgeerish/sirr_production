@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/account_product_fiscal_classification/__init__.py

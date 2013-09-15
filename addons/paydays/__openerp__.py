@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/paydays/__openerp__.py

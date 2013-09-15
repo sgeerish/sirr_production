@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/jasper_server/report/__init__.py

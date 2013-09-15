@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/carrier_picking/i18n/ca.po

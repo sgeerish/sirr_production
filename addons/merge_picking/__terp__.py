@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/merge_picking/__terp__.py

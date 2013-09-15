@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+	<!---->
+	<record id="test_attendance_1_13" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_1"/>
+		<field name="name">2001-02-07 06:56:00</field>
+		<field name="action">sign_in</field>
+	</record>
+
+	<record id="test_holidays_1_3" model="hr.holidays">
+		<field name="name">Empleado 1 Sing in lately valided</field>
+		<field name="employee_id" ref="test_employee_1"/>
+		<field name="manager_id">1</field>
+		<field name="holiday_status" ref="test_late_advise"/>
+		<field name="state">validate</field>
+		<field name="number_of_days">1</field>
+		<field name="date_from">2001-02-07 00:00:00</field>
+		<field name="date_to">2001-02-07 07:00:00</field>
+	</record>
+
+        <assert id="test_attendance_1_13" model="hr.attendance" string="Test attendance sign in latly with validated">
+		<test expr="date">2001-02-07 00:00:00</test>
+		<test expr="datetime">2001-02-07 06:56:00</test>
+		<test expr="turn_date">2001-02-07 00:00:00</test>
+		<test expr="turn_start">2001-02-07 06:00:00</test>
+		<test expr="turn_end">2001-02-07 18:00:00</test>
+		<test expr="holidays[0].name">Empleado 1 Sing in lately valided</test>
+		<test expr="len(confirmed_holidays)==0"/>
+		<test expr="len(validated_holidays)==1"/>
+		<test expr="len(refused_holidays)==0"/>
+		<test expr="not has_confirmed_holidays"/>
+		<test expr="has_validated_holidays"/>
+		<test expr="not has_refused_holidays"/>
+        </assert>
+
+	<function name="compute_reason_rules" model="hr.attendance" >
+		<value eval="[ref('test_attendance_1_13')]"/>
+	</function>
+
+        <assert id="test_attendance_1_13" model="hr.attendance" string="Computing Sing in latly with permission">
+		<test expr="action_desc.name">hr.test Late with permission</test>
+        </assert>
+
+	<!---->
+
+	<record id="test_attendance_1_14" model="hr.attendance">
+		<field name="employee_id" ref="test_employee_1"/>
+		<field name="name">2001-02-07 16:04:01</field>
+		<field name="action">sign_out</field>
+	</record>
+
+	<record id="test_holidays_1_4" model="hr.holidays">
+		<field name="name">Empleado 1 Sing out early valided</field>
+		<field name="employee_id" ref="test_employee_1"/>
+		<field name="manager_id">1</field>
+		<field name="holiday_status" ref="test_early_advise"/>
+		<field name="state">validate</field>
+		<field name="number_of_days">1</field>
+		<field name="date_from">2001-02-07 16:00:00</field>
+		<field name="date_to">2001-02-07 23:00:00</field>
+	</record>
+
+        <assert id="test_attendance_1_14" model="hr.attendance" string="Test attendance sign out early with validated">
+		<test expr="date">2001-02-07 00:00:00</test>
+		<test expr="datetime">2001-02-07 16:04:01</test>
+		<test expr="turn_date">2001-02-07 00:00:00</test>
+		<test expr="turn_start">2001-02-07 06:00:00</test>
+		<test expr="turn_end">2001-02-07 18:00:00</test>
+		<test expr="holidays[0].name">Empleado 1 Sing out early valided</test>
+		<test expr="len(confirmed_holidays)==0"/>
+		<test expr="len(validated_holidays)==1"/>
+		<test expr="len(refused_holidays)==0"/>
+		<test expr="not has_confirmed_holidays"/>
+		<test expr="has_validated_holidays"/>
+		<test expr="not has_refused_holidays"/>
+        </assert>
+
+	<function name="compute_reason_rules" model="hr.attendance" >
+		<value eval="[ref('test_attendance_1_14')]"/>
+	</function>
+
+        <assert id="test_attendance_1_14" model="hr.attendance" string="Computing Sing out early with permission">
+		<test expr="action_desc.name">hr.test Early with permission</test>
+        </assert>
+
+    </data>
+</openerp>
+

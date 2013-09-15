@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<record model="ir.ui.view" id="sale_order_stock_control.view_sale_order_form_inherit">
+			<field name="name">sale_order_stock_control.sale.order.form.inherit</field>
+			<field name="model">sale.order</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="sale.view_order_form"/>
+			<field name="priority">40</field>
+			<field name="arch" type="xml">
+        <!--<xpath expr="/form/notebook/page/field/tree" position="replace">
+					<tree colors="red:stock_ok == False" string="Sales Order Lines" position="replace" >
+						<field colspan="4" name="name" />
+						<field name="product_uom_qty" string="Qty" />
+						<field name="product_uom" string="UoM"/>
+						<field name="discount"/>
+						<field name="price_unit"/>
+						<field name="price_subtotal"/>
+						<field name="stock_ok" invisible="0"/>						
+					</tree>
+				</xpath>-->
+				<xpath expr="/form/notebook/page/group/button[@name='order_confirm']" position="replace">
+					<group col="16">
+						<button name="check_order_validity" states="draft" type="object" string="Verification Stock" icon="gtk-execute"/>
+<!--						<button name="order_confirm" type="workflow" states="draft" string="Confirm Order" icon="gtk-apply"/>-->
+					<button name="order_confirm" type="workflow" states="draft" string="Confirm Order" icon="gtk-apply" attrs="{'invisible':['|',('global_status','=',False),('state','&lt;&gt;','draft')]}"/>
+<!--						<button name="order_force_confirm" type="workflow" states="draft" string="Force confirm Order" icon="gtk-apply" attrs="{'invisible':['|',('global_status','=',True),('state','&lt;&gt;','draft')]}"/>										-->
+					</group>
+						<field name="global_status" string="Global Status"/>
+				</xpath>
+			</field>
+		</record>	
+    			
+	</data>
+</openerp>

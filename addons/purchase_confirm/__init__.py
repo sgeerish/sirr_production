@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/purchase_confirm/__init__.py

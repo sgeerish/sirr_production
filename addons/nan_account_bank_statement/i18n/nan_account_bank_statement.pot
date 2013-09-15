@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/nan_account_bank_statement/i18n/nan_account_bank_statement.pot

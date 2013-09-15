@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+        <!-- Compute Journal -->
+        <wizard id="wizard_compute_payroll"
+            name="hr.aa.compute_payroll"
+            model="hr.aa.payroll"
+            string="Compute" />
+
+       <!-- Payroll Build -->
+        <wizard id="wizard_build_payroll"
+            name="hr.aa.build_payroll"
+            model="hr.employee"
+            string="Build Payroll Document" />
+    </data>
+</openerp>
+
+<!--
+     vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+     -->

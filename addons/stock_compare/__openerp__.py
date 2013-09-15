@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/stock_compare/__openerp__.py

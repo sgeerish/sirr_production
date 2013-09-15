@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+  
+  	<!-- Document Type  -->
+	<record model="document.proof.type" id="doc_type1">
+		<field name="name">Computation of Income and Tax</field>
+		<field name="shortcut">Comp-IT</field>
+	</record>
+	<record model="document.proof.type" id="doc_type2">
+		<field name="name">Self Assessment Challan Receipt</field>
+		<field name="shortcut">SACR</field>
+	</record>
+	<record model="document.proof.type" id="doc_type3">
+		<field name="name">Life Insurance Premium Receipt</field>
+		<field name="shortcut">LIPR</field>
+	</record>
+	<record model="document.proof.type" id="doc_type4">
+		<field name="name">Medical Insurance Premium Receipt</field>
+		<field name="shortcut">MIPR</field>
+	</record>
+	<record model="document.proof.type" id="doc_type5">
+		<field name="name">Salary Certificate/Pay Slip</field>
+		<field name="shortcut">Sal-C/PS</field>
+	</record>
+	<record model="document.proof.type" id="doc_type6">
+		<field name="name">Other</field>
+		<field name="shortcut">Other</field>
+	</record>
+  
+  
+  <!-- Income Tax Rule Demo -->
+	<record model="income.tax.rule" id="it_r1">
+		<field name="gender">male</field>
+		<field name="fully_exampt_amt">180000</field>
+	</record>
+	<record model="income.tax.rule" id="it_r2">
+		<field name="gender">female</field>
+		<field name="fully_exampt_amt">190000</field>
+	</record>
+	
+	<!-- For Male Rules Detail -->
+	<record model="level.category" id="it_ml_cat1">
+		<field name="seq_no">1</field>
+		<field name="name">L1</field>
+		<field name="st_amt">180000.00</field>
+		<field name="end_amt">300000.00</field>
+		<field name="perc">10.00</field>
+		<field name="it_rule" ref="it_r1"/>
+   </record>
+   
+	<record model="level.category" id="it_ml_cat2">
+		<field name="seq_no">2</field>
+		<field name="name">L2</field>
+		<field name="st_amt">300000.00</field>
+		<field name="end_amt">500000.00</field>
+		<field name="perc">20.00</field>
+		<field name="it_rule" ref="it_r1"/>
+   </record>
+
+	<record model="level.category" id="it_ml_cat3">
+		<field name="seq_no">3</field>
+		<field name="name">L3</field>
+		<field name="st_amt">500000.00</field>
+		<field name="end_amt">1000000.00</field>
+		<field name="perc">30.00</field>
+		<field name="it_rule" ref="it_r1"/>
+   </record>
+
+	<record model="level.category" id="it_ml_cat4">
+		<field name="seq_no">4</field>
+		<field name="name">L4</field>
+		<field name="st_amt">1000000.00</field>
+		<field name="end_amt">0.00</field>
+		<field name="perc">30.00</field>
+		<field name="it_rule" ref="it_r1"/>
+   </record>
+
+
+	<!-- For Female Rules Detail -->
+	<record model="level.category" id="it_fml_cat1">
+		<field name="seq_no">1</field>
+		<field name="name">L1</field>
+		<field name="st_amt">190000.00</field>
+		<field name="end_amt">300000.00</field>
+		<field name="perc">10.00</field>
+		<field name="it_rule" ref="it_r2"/>
+   </record>
+   
+	<record model="level.category" id="it_fml_cat2">
+		<field name="seq_no">2</field>
+		<field name="name">L2</field>
+		<field name="st_amt">300000.00</field>
+		<field name="end_amt">500000.00</field>
+		<field name="perc">20.00</field>
+		<field name="it_rule" ref="it_r2"/>
+   </record>
+
+	<record model="level.category" id="it_fml_cat3">
+		<field name="seq_no">3</field>
+		<field name="name">L3</field>
+		<field name="st_amt">500000.00</field>
+		<field name="end_amt">1000000.00</field>
+		<field name="perc">30.00</field>
+		<field name="it_rule" ref="it_r2"/>
+   </record>
+
+	<record model="level.category" id="it_fml_cat4">
+		<field name="seq_no">4</field>
+		<field name="name">L4</field>
+		<field name="st_amt">1000000.00</field>
+		<field name="end_amt">0.00</field>
+		<field name="perc">30.00</field>
+		<field name="it_rule" ref="it_r2"/>
+   </record>
+</data>
+</openerp>
+        

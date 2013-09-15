@@ -1,0 +1,1 @@
+/home/openerp/production/extra-addons/prestashop/Prestashop_Module/openerp/openerpsynchro.php
